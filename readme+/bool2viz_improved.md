@@ -1,4 +1,4 @@
-# Improving Boolean-to-Visibility converter
+# WPF: Improving Boolean-to-Visibility converter
 Imagine :high_brightness:Lights:high_brightness: elements on the *View* that are switched by `bool Power` in *ViewModel*.\
 It's appealing to couple them with the .NET native [BooleanToVisibilityConverter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.booleantovisibilityconverter).
 
