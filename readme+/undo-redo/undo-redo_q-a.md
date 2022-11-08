@@ -1,13 +1,20 @@
 # Undo/Redo stack Q&A
-+ **Is stack homogenous?**
 
++ **Is stack homogenous?**\
 Yeaps, but generic.
-+ Where's `Clear()`? 
 
++ **What for could i need Undo only without Redo?**\
+The nature of application may not suppose ability to redo. Consider a seat reservation in highly competitive scenarios, dependency on other decisions or must-be-unique random actions.
+
++ **Why there's RedoAll() but no UndoAll()?**\
+`RedoAll()` will unconditionally restore the most recent state, while limited size stack only the oldest stored (which can be original or not).
+
++ **Where's `Clear()`?**\
 Use `new()`.
-+ **Is stack's limit mandatory?**
 
++ **Is stack's limit mandatory?**\
 Nope. When not specified/applied, no check is done. It's reasonable when the number of actions is predictable.
+
 + **How to raise events like PropertyChanged for value itself, CanUndo i.a.? Or get hooks, like <code>OnChanged</code>.**
 - [x] Override setters and realization methods
 
@@ -16,9 +23,4 @@ Nope. When not specified/applied, no check is done. It's reasonable when the num
 1) Setting would be ambigous (is it new value within stack or new object initialization?). Casting would deprive `=` of brevity. Direct initialization will hide the type (is **1** `short`, `uint` or `long`?).
 2) operators `implicit`\\`explicit` are static - what about access to instance props and methods?
 
-# Third parties, copyrights and licences
-- Most pictograms and images are bounty of [Visual Studio Image Library](https://www.microsoft.com/en-us/download/details.aspx?id=35825). Please refer to its EULA.
 
-- Some pieces of code are courtesy of edu and Q&A sites (stackoverflow, codeproject and others).
-
-- The app take advantage of renowned 3d party libraries and frameworks, like [fluent assertions](https://fluentassertions.com/).
