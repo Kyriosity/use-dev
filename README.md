@@ -4,4 +4,4 @@
 |- Windows\
 |--- [Converters](readme+/bool2viz_improved.md)
 - Parts\
-|- Undo/Redo stack
+|- [Undo/Redo extension](readme+/undo-redo/.reversible_intro.md)
