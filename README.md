@@ -4,4 +4,4 @@
 |- Windows\
 |--- [Converters](readme+/bool2viz_improved.md)
 - Parts\
-|- [Undo/Redo extension](readme+/undo-redo/.reversible_intro.md)
+|- [Undo/Redo extension](readme+/undo-redo)
