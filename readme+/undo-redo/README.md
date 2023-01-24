@@ -4,15 +4,15 @@
 <p dir="rtl";><i>Merriam-Webster dictionary</i></p>
 
 &nbsp;\
-Ability to __undo__ and then, likely, __redo__ actions is constituent and multifaceted for most applications. Besides traditional usage Undo-Redo may replace tedious confirmation ("are you sure"), run wizards, explore tree structures. 
+Ability to __undo__ and then, likely, __redo__ actions is constituent and multi-plugged for most applications. Besides traditional usage Undo-Redo may replace tedious confirmation ("are you sure"), run wizards, explore tree structures. 
 
-Let's knock ourselves out to implement a _reversible_ provider in a project, deserving positive review and integration.
+Let's knock ourselves out to implement _reversible_ in a project, deserving just two words of others:&nbsp;`using Reversible;`.
 
-We'll begin with a little demonstration:
+We'll serve first the following *antipasto* of a very basic feature:
 
-> :clamp: __some C# attributes are cut for emphasis__
+&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;:exclamation: __C# is degraded here for emphasis__&nbsp;:exclamation:
 <details>
-<summary>:chess_pawn:&nbsp;<ins>&nbsp;Take a dummy class of a reputable mental project&nbsp;</ins></summary>
+<summary>:chess_pawn:&nbsp;<ins>&nbsp;Take a dummy class of an obvious domain&nbsp;</ins></summary>
 
 ```csharp
 class Chess<T>
@@ -70,9 +70,9 @@ game.Move("e6");
 </details>  
 
 &nbsp;\
-Next, the __[Handbook](readme+/handbook)__ will cover the vast of other features and use cases along with inspired [Q&A](readme+/reversible_q-a.md).
+If this has whetted your appetite, the __[Handbook](readme+/handbook)__ will share recipies of further features and use cases backed by [Q&A](readme+/reversible_q-a.md).
 
-Your inevitable question... __Isn't that all an over-engineering of indexed element?__ <sup>:hammer:</sup>&nbsp; It's up to you to answer while [Rationale](readme+/reversible_reason.md) backed by [Posers & Decisions](readme+/reversible_posers.md) shall justify the efforts.\
+However ... __isn't that all an over-engineering of indexed element?__ <sup>:hammer:</sup>&nbsp; You decide, while [Rationale](readme+/reversible_reason.md) along with [Posers & Decisions](readme+/reversible_posers.md) tries to advocate our efforts.\
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>:hammer:</sup><sub>For instance, `Moves[i]` for current value, `i--` for undo and `i++` for redo.</sub>
 
-Code for the sample above is too trivial to deserve your look into the repository, but not the whole project, which you may follow in [Developer book](readme+/devbook), contribute to it or rework for own purposes.
+`UndoOnly` for the snippet above is too trivial to deserve your look into the repository but not the whole project, which you may follow in [Developer book](readme+/devbook), contribute to it or rework for own purposes.
