@@ -8,11 +8,9 @@ Ability to __undo__ and then, likely, __redo__ actions is constituent and multi-
 
 Let's knock ourselves out to implement _reversible_ in a project, deserving just two words of others:&nbsp;`using Reversible;`.
 
-We'll serve first the following *antipasto* of a very basic feature:
-
-&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;&nbsp;&nbsp;&nbsp;:exclamation: __C# is degraded here for emphasis__&nbsp;:exclamation:
+Next snippets of C#, degraded for emphasis, feature some basics:
 <details>
-<summary>:chess_pawn:&nbsp;<ins>&nbsp;Take a dummy class of an obvious domain&nbsp;</ins></summary>
+<summary>:chess_pawn:&nbsp;<ins>&nbsp;Model a popular subject&nbsp;</ins></summary>
 
 ```csharp
 class Chess<T>
@@ -45,7 +43,7 @@ using Reversible;
 public class IndulgentChess<T> : Chess<T>, IUndoable
 {
     IUndoable<T> _backup = UndoOnly.Empty<T>();
-    override T _move { get => _backup.Value; set => _backup.Value = value; }
+    override T _move { get => _backup.Item; set => _backup.Item = value; }
 
     void Undo(int steps = 1) => _backup.Undo(steps);
 }
@@ -70,7 +68,7 @@ game.Move("e6");
 </details>  
 
 &nbsp;\
-If this has whetted your appetite, the __[Handbook](readme+/handbook)__ will share recipies of further features and use cases backed by [Q&A](readme+/reversible_q-a.md).
+If these "antipasti" have aroused your appetite to *redo*, the __[Handbook](readme+/handbook)__ will share recipies of further features and use cases backed by [Q&A](readme+/reversible_q-a.md).
 
 However ... __isn't that all an over-engineering of indexed element?__ <sup>:hammer:</sup>&nbsp; You decide, while [Rationale](readme+/reversible_reason.md) along with [Posers & Decisions](readme+/reversible_posers.md) tries to advocate our efforts.\
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>:hammer:</sup><sub>For instance, `Moves[i]` for current value, `i--` for undo and `i++` for redo.</sub>
