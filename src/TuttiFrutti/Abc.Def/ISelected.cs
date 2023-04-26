@@ -1,4 +1,4 @@
-﻿namespace Abc.Def;
+﻿namespace Abc;
 public interface ISelected
 {
     int Index { get; }

@@ -1,4 +1,4 @@
-﻿namespace Abc.Coll.Def;
+﻿namespace Abc.Coll;
 
 public interface ICollOps<T>
 {
@@ -7,8 +7,3 @@ public interface ICollOps<T>
     void Remove(int at = -1, int count = 1);
 }
 
-public interface IItemsAccu<T> : ICollOps<T> //, IAdjustedInput<T>
-{
-    T this[int index] { get; }
-    IReadOnlyCollection<T> Items { get; }
-}

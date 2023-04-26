@@ -1,4 +1,4 @@
-﻿namespace Abc.Def.Restraints;
+﻿namespace Abc.Ctrl;
 public interface ILimited : IRestraint
 {
     int Max { get; }
