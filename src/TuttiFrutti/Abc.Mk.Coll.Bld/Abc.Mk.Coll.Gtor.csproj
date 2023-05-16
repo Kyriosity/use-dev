@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Abc.Def\Abc.csproj" />
+    <ProjectReference Include="..\Abc.Coll.Bld\Abc.Coll.Gtor.csproj" />
+    <ProjectReference Include="..\Abc.Coll\Abc.Mk.Coll.csproj" />
   </ItemGroup>
 
 </Project>
