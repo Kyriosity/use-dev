@@ -1,7 +1,7 @@
 ﻿using Abc.Coll.Gtor;
 namespace Test_Learn.Abc.Coll.Operate;
 
-public class Adding
+public class Addition
 {
     [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
     public void Append(IAdjustedItemsBuilder builder) {
@@ -61,15 +61,29 @@ public class Removal
         coll.RemoveLast();
         Assert.That(coll.Items.SequenceEqual(new[] { 2 }));
 
-        var open = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        var debut = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
         var middle = new[] { -78, -79, -80, -81, -82, -83, -84, -85 };
         var end = new[] { 707, 737, 747, 777, 787 };
-        coll = builder.Of(open.Concat(middle).Concat(end));
+        coll = builder.Of(debut.Concat(middle).Concat(end));
 
-        coll.RemoveFirst(open.Length);
+        coll.RemoveFirst(debut.Length);
         Assert.That(coll.Items.SequenceEqual(middle.Concat(end)), Is.True);
         coll.RemoveLast(end.Length);
         Assert.That(coll.Items.SequenceEqual(middle), Is.True);
+    }
+}
+
+public class ConditionalRemoval
+{
+    [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
+    public void ByPredicate(IAdjustedItemsBuilder builder) {
+        var words = builder.Of(Dummies.Text.LoremIpsum.Split());
+        words.Remove(x => true);
+        Assert.That(words.Items, Has.Count.EqualTo(0));
+
+        var indeces = builder.Of(Sequences.ZeroToEleven);
+        indeces.Remove(x => x is < 3 or > 5, out var numRemoved);
+        Assert.That(indeces.Items.SequenceEqual(new[] { 3, 4, 5 }));
     }
 }
 
@@ -91,18 +105,30 @@ public class Chained
 
     [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
     public void Remove(IAdjustedItemsBuilder builder) {
-        var metals = builder.Of("lead", "silver", "gold", "arsenic", "cadmium", "platinum", "mercury", "chromium", "beryllium");
-        metals.RemoveLast(3).RemoveAt(3, 2).RemoveFirst();
+        var metals = builder.Of("lead",
+            "silver", "gold", "arsenic", "cadmium", "platinum",
+            "mercury", "chromium", "beryllium");
+        metals.RemoveLast(3).
+            RemoveAt(3, 2).
+            RemoveFirst();
         Assert.That(metals.Items.SequenceEqual(new[] { "silver", "gold", "platinum" }));
     }
 
     [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
     public void AddRemove(IAdjustedItemsBuilder builder) {
         var coll = builder.Of(-1);
-
         coll.Add(Sequences.ZeroToEleven).RemoveLast(10).Add(-1);
-
         Assert.That(coll.Items.SequenceEqual(new[] { -1, 0, 1, -1 }));
+
+        var euroCities = new[] { "Warszawa", "München", "London", "København", "Porto", "Madrid" };
+
+        var foreign = builder.Of("Salut");
+        foreign.Add("bonne", "soirée").
+            Add(euroCities).
+            Remove(x => !x.ToCharArray().Any(sy => sy is (< 'a' or > 'z') and (< 'A' or > 'Z'))).
+            Add("Gesundheit");
+
+        Assert.That(foreign.Items.SequenceEqual(new[] { "soirée", "München", "København", "Gesundheit", }), Is.True);
     }
 
 }

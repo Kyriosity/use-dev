@@ -14,4 +14,9 @@ public class ListAccu<T> : AccuOnColl<T, List<T>>
 
         return this;
     }
+
+    public override ICollOps<T> Remove(Predicate<T> match, out int num) {
+        num = _items.RemoveAll(match);
+        return this;
+    }
 }

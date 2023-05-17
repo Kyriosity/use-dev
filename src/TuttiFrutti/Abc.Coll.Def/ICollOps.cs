@@ -7,4 +7,6 @@ public interface ICollOps<T>
     ICollOps<T> RemoveFirst(int count = 1);
     ICollOps<T> RemoveLast(int count = 1);
     ICollOps<T> RemoveAt(int index, int count = 1);
+    ICollOps<T> Remove(Predicate<T> match);
+    ICollOps<T> Remove(Predicate<T> match, out int num);
 }
