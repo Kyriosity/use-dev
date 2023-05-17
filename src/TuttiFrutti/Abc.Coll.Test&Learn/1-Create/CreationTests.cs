@@ -1,5 +1,6 @@
 ﻿using Abc.Coll.Gtor;
 using Abc.Mk.Coll;
+using Abc.Test.Data;
 
 namespace Test_Learn.Abc.Coll.Create;
 public class CreationTests
@@ -15,7 +16,7 @@ public class CreationTests
         nums.Add(1, 2, 3);
 
         var words = new ListAccu<string>();
-        words.Add(Providers.LoremIpsum_SplitToWords);
+        words.Add(Dummies.Text.LoremIpsum.Split());
     }
 
     [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
@@ -27,7 +28,7 @@ public class CreationTests
 
         var nums = builder.Of(1, 2, 3);
 
-        var words = builder.Of(Providers.LoremIpsum_SplitToWords);
+        var words = builder.Of(Dummies.Text.LoremIpsum.Split());
     }
 }
 

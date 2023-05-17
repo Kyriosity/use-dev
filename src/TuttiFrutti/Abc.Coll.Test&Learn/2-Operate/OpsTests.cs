@@ -1,4 +1,6 @@
 ﻿using Abc.Coll.Gtor;
+using Abc.Test.Data;
+
 namespace Test_Learn.Abc.Coll.Operate;
 
 public class Addition
@@ -10,8 +12,9 @@ public class Addition
         Assert.That(pi.Items, Has.Count.EqualTo(1));
 
         var words = builder.Of<string>();
-        words.Add(Providers.LoremIpsum_SplitToWords);
-        Assert.That(words.Items, Has.Count.EqualTo(Providers.LoremIpsum_SplitToWords.Length).And.Count.GreaterThan(1));
+        var loremIpsumSplit = Dummies.Text.LoremIpsum.Split();
+        words.Add(loremIpsumSplit);
+        Assert.That(words.Items, Has.Count.EqualTo(loremIpsumSplit.Length).And.Count.GreaterThan(1));
 
         var swift = builder.Of("veni", "vidi");
         swift.Add("vici");
@@ -43,12 +46,12 @@ public class Removal
 
     [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
     public void ByIndexRange(IAdjustedItemsBuilder builder) {
-        var accu = builder.Of(Sequences.ZeroToEleven);
+        var accu = builder.Of(Dummies.Sequences.ZeroToEleven);
         const int numToKeep = 4;
         accu.RemoveAt(2, accu.Items.Count - numToKeep);
         Assert.That(accu.Items.SequenceEqual(new[] { 0, 1, 10, 11 }));
 
-        accu = builder.Of(Sequences.ZeroToEleven);
+        accu = builder.Of(Dummies.Sequences.ZeroToEleven);
         accu.RemoveAt(0, accu.Items.Count);
         Assert.That(accu.Items, Has.Count.EqualTo(0));
     }
@@ -81,7 +84,7 @@ public class ConditionalRemoval
         words.Remove(x => true);
         Assert.That(words.Items, Has.Count.EqualTo(0));
 
-        var indeces = builder.Of(Sequences.ZeroToEleven);
+        var indeces = builder.Of(Dummies.Sequences.ZeroToEleven);
         indeces.Remove(x => x is < 3 or > 5, out var numRemoved);
         Assert.That(indeces.Items.SequenceEqual(new[] { 3, 4, 5 }));
     }
@@ -117,7 +120,7 @@ public class Chained
     [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
     public void AddRemove(IAdjustedItemsBuilder builder) {
         var coll = builder.Of(-1);
-        coll.Add(Sequences.ZeroToEleven).RemoveLast(10).Add(-1);
+        coll.Add(Dummies.Sequences.ZeroToEleven).RemoveLast(10).Add(-1);
         Assert.That(coll.Items.SequenceEqual(new[] { -1, 0, 1, -1 }));
 
         var euroCities = new[] { "Warszawa", "München", "London", "København", "Porto", "Madrid" };
@@ -142,7 +145,7 @@ public class Mistakes
         Assert.That(() => emptyColl.RemoveLast(), Throws.TypeOf<ArgumentOutOfRangeException>());
         Assert.That(() => emptyColl.RemoveAt(0), Throws.TypeOf<ArgumentOutOfRangeException>());
 
-        var words = builder.Of(Providers.LoremIpsum_SplitToWords);
+        var words = builder.Of(Dummies.Text.LoremIpsum.Split());
         var count = words.Items.Count;
         Assert.That(() => words.RemoveFirst(1 + count), Throws.TypeOf<ArgumentException>());
         Assert.That(() => words.RemoveLast(1 + count), Throws.TypeOf<ArgumentOutOfRangeException>());

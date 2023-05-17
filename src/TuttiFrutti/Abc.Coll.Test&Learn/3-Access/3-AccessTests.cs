@@ -1,4 +1,6 @@
 ﻿using Abc.Coll.Gtor;
+using Abc.Test.Data;
+
 namespace Test_Learn.Abc.Coll.Access;
 
 public class Items
@@ -9,13 +11,13 @@ public class Items
         Assert.That(coll.Items, Has.Count.EqualTo(0));
         Assert.That(coll.Items.ToArray(), Is.Not.Null);
 
-        var words = builder.Of(Providers.LoremIpsum_SplitToWords);
+        var words = builder.Of(Dummies.Text.LoremIpsum.Split());
         Assert.That(string.Join(" ", words.Items), Is.EqualTo(Dummies.Text.LoremIpsum));
     }
 
     [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
     public void Index(IAdjustedItemsBuilder builder) {
-        var coll = builder.Of(Sequences.ZeroToEleven);
+        var coll = builder.Of(Dummies.Sequences.ZeroToEleven);
 
         for (int i = 0; i < coll.Items.Count; i++)
             Assert.That(coll[i], Is.EqualTo(i));
@@ -23,11 +25,11 @@ public class Items
 
     [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
     public static void IndexBack(IAdjustedItemsBuilder builder) {
-        var coll = builder.Of(Sequences.ZeroToEleven);
+        var coll = builder.Of(Dummies.Sequences.ZeroToEleven);
         const int indexOfLast = -1;
-        Assert.That(Sequences.ZeroToEleven.Last(), Is.EqualTo(coll[indexOfLast]));
+        Assert.That(Dummies.Sequences.ZeroToEleven.Last(), Is.EqualTo(coll[indexOfLast]));
         int indexOfFirstReverse = -coll.Items.Count;
-        Assert.That(Sequences.ZeroToEleven.First(), Is.EqualTo(coll[indexOfFirstReverse]));
+        Assert.That(Dummies.Sequences.ZeroToEleven.First(), Is.EqualTo(coll[indexOfFirstReverse]));
 
         var depth = -coll.Items.Count;
         const int indexOfPenult = -2;
@@ -40,7 +42,7 @@ public class Mistakes
 {
     [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
     public static void IndexOutside(IAdjustedItemsBuilder builder) {
-        var coll = builder.Of(Providers.LoremIpsum_SplitToWords);
+        var coll = builder.Of(Dummies.Text.LoremIpsum.Split());
 
         Assert.That(() => coll[coll.Items.Count], Throws.TypeOf<ArgumentOutOfRangeException>());
         Assert.That(() => coll[-1 - coll.Items.Count], Throws.TypeOf<ArgumentOutOfRangeException>());
