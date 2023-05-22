@@ -2,12 +2,17 @@
 
 public interface IItem { }
 
-public interface IItemed<T> : IItem
+public interface IItem<T> : IItem
 {
-    T? Item { get; }
+    abstract T? Item { get; }
 }
 
-public interface IItem<T> : IItemed<T>
+public interface IItemed<T> : IItem<T>
+{
+    new T? Item { get; init; }
+}
+
+public interface IItemSettable<T> : IItem<T>
 {
     new T? Item { get; set; }
 }

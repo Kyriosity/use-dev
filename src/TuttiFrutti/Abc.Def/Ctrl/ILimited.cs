@@ -1,10 +1,15 @@
 ﻿namespace Abc.Ctrl;
-public interface ILimited : IRestraint
+public interface ILimit<T> : IRestraint
 {
-    int Max { get; }
+    T Max { get; }
 }
 
-public interface ILimitable : ILimited
+public interface ILimited<T> : ILimit<T>
+{
+    new int Max { get; init; }
+}
+
+public interface ILimitable<T> : ILimit<T>
 {
     new int Max { get; set; }
 }

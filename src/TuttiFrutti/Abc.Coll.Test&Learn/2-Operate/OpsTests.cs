@@ -5,8 +5,8 @@ namespace Test_Learn.Abc.Coll.Operate;
 
 public class Addition
 {
-    [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
-    public void Append(IAdjustedItemsBuilder builder) {
+    [Test, TestCaseSource(typeof(Providers), nameof(Providers.AllTypesItemsAccuBuilders))]
+    public void Append(ICollBuilder<object> builder) {
         var pi = builder.Of<double>();
         pi.Add(Math.PI);
         Assert.That(pi.Items, Has.Count.EqualTo(1));
@@ -24,8 +24,8 @@ public class Addition
 
 public class Removal
 {
-    [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
-    public void ByIndexSingle(IAdjustedItemsBuilder builder) {
+    [Test, TestCaseSource(typeof(Providers), nameof(Providers.AllTypesItemsAccuBuilders))]
+    public void ByIndexSingle(ICollBuilder<object> builder) {
         var coll = builder.Of('A', 'B', 'C');
         coll.RemoveAt(0);
         Assert.That(coll.Items.SequenceEqual(new[] { 'B', 'C' }));
@@ -41,23 +41,24 @@ public class Removal
         coll = builder.Of('A', 'B', 'C');
         coll.RemoveAt(2);
         Assert.That(coll.Items.SequenceEqual(new[] { 'A', 'B' }));
-
     }
 
-    [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
-    public void ByIndexRange(IAdjustedItemsBuilder builder) {
+    [Test, TestCaseSource(typeof(Providers), nameof(Providers.AllTypesItemsAccuBuilders))]
+    public void ByIndexRange(ICollBuilder<object> builder) {
         var accu = builder.Of(Dummies.Sequences.ZeroToEleven);
         const int numToKeep = 4;
         accu.RemoveAt(2, accu.Items.Count - numToKeep);
         Assert.That(accu.Items.SequenceEqual(new[] { 0, 1, 10, 11 }));
+
+        var aaa = double.Epsilon;
 
         accu = builder.Of(Dummies.Sequences.ZeroToEleven);
         accu.RemoveAt(0, accu.Items.Count);
         Assert.That(accu.Items, Has.Count.EqualTo(0));
     }
 
-    [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
-    public void FromEdge(IAdjustedItemsBuilder builder) {
+    [Test, TestCaseSource(typeof(Providers), nameof(Providers.AllTypesItemsAccuBuilders))]
+    public void FromEdge(ICollBuilder<object> builder) {
         var coll = builder.Of(1, 2, 3);
         coll.RemoveFirst();
         Assert.That(coll.Items.SequenceEqual(new[] { 2, 3 }));
@@ -78,8 +79,8 @@ public class Removal
 
 public class ConditionalRemoval
 {
-    [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
-    public void ByPredicate(IAdjustedItemsBuilder builder) {
+    [Test, TestCaseSource(typeof(Providers), nameof(Providers.AllTypesItemsAccuBuilders))]
+    public void ByPredicate(ICollBuilder<object> builder) {
         var words = builder.Of(Dummies.Text.LoremIpsum.Split());
         words.Remove(x => true);
         Assert.That(words.Items, Has.Count.EqualTo(0));
@@ -92,8 +93,8 @@ public class ConditionalRemoval
 
 public class Chained
 {
-    [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
-    public void Add(IAdjustedItemsBuilder builder) {
+    [Test, TestCaseSource(typeof(Providers), nameof(Providers.AllTypesItemsAccuBuilders))]
+    public void Add(ICollBuilder<object> builder) {
         var math = builder.Of<double>();
         math.Add(Math.PI).Add(Math.E).Add(Math.Tau);
         Assert.That(math.Items.SequenceEqual(new[] { Math.PI, Math.E, Math.Tau }), Is.True);
@@ -106,8 +107,8 @@ public class Chained
         Assert.That(string.Join(" ", words.Items), Is.EqualTo(Dummies.Text.PangramEn));
     }
 
-    [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
-    public void Remove(IAdjustedItemsBuilder builder) {
+    [Test, TestCaseSource(typeof(Providers), nameof(Providers.AllTypesItemsAccuBuilders))]
+    public void Remove(ICollBuilder<object> builder) {
         var metals = builder.Of("lead",
             "silver", "gold", "arsenic", "cadmium", "platinum",
             "mercury", "chromium", "beryllium");
@@ -117,13 +118,13 @@ public class Chained
         Assert.That(metals.Items.SequenceEqual(new[] { "silver", "gold", "platinum" }));
     }
 
-    [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
-    public void AddRemove(IAdjustedItemsBuilder builder) {
+    [Test, TestCaseSource(typeof(Providers), nameof(Providers.AllTypesItemsAccuBuilders))]
+    public void AddRemove(ICollBuilder<object> builder) {
         var coll = builder.Of(-1);
         coll.Add(Dummies.Sequences.ZeroToEleven).RemoveLast(10).Add(-1);
         Assert.That(coll.Items.SequenceEqual(new[] { -1, 0, 1, -1 }));
 
-        var euroCities = new[] { "Warszawa", "München", "London", "København", "Porto", "Madrid" };
+        var euroCities = new[] { "Madrid", "Warszawa", "München", "London", "København", "Porto" };
 
         var foreign = builder.Of("Salut");
         foreign.Add("bonne", "soirée").
@@ -133,13 +134,12 @@ public class Chained
 
         Assert.That(foreign.Items.SequenceEqual(new[] { "soirée", "München", "København", "Gesundheit", }), Is.True);
     }
-
 }
 
 public class Mistakes
 {
-    [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
-    public static void OnRemove(IAdjustedItemsBuilder builder) {
+    [Test, TestCaseSource(typeof(Providers), nameof(Providers.AllTypesItemsAccuBuilders))]
+    public static void OnRemove(ICollBuilder<object> builder) {
         var emptyColl = builder.Of<int>();
         Assert.That(() => emptyColl.RemoveFirst(), Throws.TypeOf<ArgumentOutOfRangeException>());
         Assert.That(() => emptyColl.RemoveLast(), Throws.TypeOf<ArgumentOutOfRangeException>());

@@ -19,8 +19,8 @@ public class CreationTests
         words.Add(Dummies.Text.LoremIpsum.Split());
     }
 
-    [Test, TestCaseSource(typeof(Providers), nameof(Providers.ItemsAccuBuilders))]
-    public void Build(IAdjustedItemsBuilder builder) {
+    [Test, TestCaseSource(typeof(Providers), nameof(Providers.AllTypesItemsAccuBuilders))]
+    public void Build(ICollBuilder<object> builder) {
         var emptyColl = builder.Of<object>();
 
         var semaphore = builder.Of(true);
