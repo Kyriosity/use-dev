@@ -1,7 +1,7 @@
 ﻿using Abc.Coll.Gtor;
 using Abc.Test.Data;
 
-namespace Test_Learn.Abc.Coll.Operate;
+namespace Abc.Test_Learn.Coll.Operate;
 
 public class Addition
 {

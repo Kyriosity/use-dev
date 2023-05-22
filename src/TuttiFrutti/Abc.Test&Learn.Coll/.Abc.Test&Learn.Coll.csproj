@@ -29,8 +29,9 @@
     <PackageReference Include="coverlet.collector" Version="3.2.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Abc.Coll\Abc.Mk.Coll.csproj" />
-    <ProjectReference Include="..\Abc.Mk.Coll.Bld\Abc.Mk.Coll.Gtor.csproj" />
+    <ProjectReference Include="..\Abc.Coll.Gtor\Abc.Coll.Gtor.csproj" />
+    <ProjectReference Include="..\Abc.Mk.Coll.Gtor\Abc.Mk.Coll.Gtor.csproj" />
+    <ProjectReference Include="..\Abc.Mk.Coll\Abc.Mk.Coll.csproj" />
     <ProjectReference Include="..\Abc.Test.Data\Abc.Test.Data.csproj" />
   </ItemGroup>
   <PropertyGroup>

@@ -1,4 +1,5 @@
 ﻿using Abc.Coll;
+
 namespace Abc.Mk.Coll;
 
 public class ListAccu<T> : AccuOnColl<T, List<T>>

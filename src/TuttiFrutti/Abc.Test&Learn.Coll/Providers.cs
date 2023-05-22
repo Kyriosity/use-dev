@@ -1,5 +1,6 @@
 ﻿using Abc.Mk.Coll.Gtor;
-namespace Test_Learn.Abc.Coll;
+
+namespace Abc.Test_Learn.Coll;
 internal static class Providers
 {
     public static IEnumerable<TestCaseData> AllTypesItemsAccuBuilders {

@@ -1,8 +1,9 @@
-﻿using Abc.Coll.Gtor;
+﻿
+using Abc.Coll.Gtor;
 using Abc.Mk.Coll;
 using Abc.Test.Data;
 
-namespace Test_Learn.Abc.Coll.Create;
+namespace Abc.Test_Learn.Coll.Create;
 public class CreationTests
 {
     [Test]

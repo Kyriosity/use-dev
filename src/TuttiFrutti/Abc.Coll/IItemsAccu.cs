@@ -1,4 +1,5 @@
 ﻿using Abc.Xform;
+
 namespace Abc.Coll;
 
 public interface IItemsAccu<T> : ICollOps<T>

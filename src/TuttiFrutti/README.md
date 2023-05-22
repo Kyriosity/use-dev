@@ -2,12 +2,12 @@
 
 This makes up a bundle of basic projects. Common definitions, basic implementation, wrappers.
 
-## Acronyms you shall know
+## Names and acronyms used here
 
 Naming of projects and folders, namespaces highly relies on acronyms:
 
 `Abc` - Basics: common or shared stuff as base of applications\
-`Mk` - Make: implementation\
+`Mk` - Make: implementation, instantiate defined interfaces\
 `Gtor` - Generators: builders, factories, providers of classes/objects (contra to `ctor` - direct constructor)
 
 `Err` - Errors: definition of exceptions and their messages\
@@ -16,9 +16,14 @@ Naming of projects and folders, namespaces highly relies on acronyms:
 
 `Coll` - Collections: definitions, declarations and implementation of\
 `Accu` - Accumulator: an umbrella term for grouping of items, that can be over *collection* or not\
-`Rvrs` - Reversible
+
 
 ### Reserved
 
 `Var`, `Var...` - Variant(s) of definition or implementation\
 ...
+
+## Further
+
+See readme's in other project folders
+

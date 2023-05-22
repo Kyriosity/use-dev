@@ -1,7 +1,7 @@
 ﻿using Abc.Coll.Gtor;
 using Abc.Test.Data;
 
-namespace Test_Learn.Abc.Coll.Access;
+namespace Abc.Test_Learn.Coll.Access;
 public class Items
 {
     [Test, TestCaseSource(typeof(Providers), nameof(Providers.AllTypesItemsAccuBuilders))]
