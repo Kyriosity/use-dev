@@ -4,14 +4,15 @@ This makes up a bundle of basic projects. Common definitions, basic implementati
 
 ## Names and acronyms used here
 
-Naming of projects and folders, namespaces highly relies on acronyms:
+Naming of projects and folders, namespaces highly relies on acronyms:\
+`Prop`, `Props` - property, properties
 
 `Abc` - Basics: common or shared stuff as base of applications\
 `Mk` - Make: implementation, instantiate defined interfaces\
 `Gtor` - Generators: builders, factories, providers of classes/objects (contra to `ctor` - direct constructor)
 
-`Err` - Errors: definition of exceptions and their messages\
-`Ctrl` - Controls: restraints, limits\
+`Err` - Errors: definition of exceptions and their relevant issues (like messages)\
+`Ltd` - Limited: constraints, restraints, restrictions, limits\
 `Xform` - Transformations: like interception of input, setters
 
 `Coll` - Collections: definitions, declarations and implementation of\
@@ -25,5 +26,5 @@ Naming of projects and folders, namespaces highly relies on acronyms:
 
 ## Further
 
-See readme's in other project folders
+See *readme*'s in other project folders.
 
