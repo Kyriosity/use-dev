@@ -1,6 +1,4 @@
-﻿using Abc.Xform;
-
-namespace Abc.Coll;
+﻿namespace Abc.Coll;
 
 public interface IItemsAccu<T> : ICollOps<T>
 {
@@ -8,4 +6,4 @@ public interface IItemsAccu<T> : ICollOps<T>
     IReadOnlyCollection<T> Items { get; }
 }
 
-public interface IAdjustedItems<T> : IItemsAccu<T>, IAdjustedInput<T> { }
+public interface IItemsCollSized<T> : IItemsAccu<T> { }

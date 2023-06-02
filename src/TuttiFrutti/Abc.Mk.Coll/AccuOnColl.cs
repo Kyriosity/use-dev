@@ -1,8 +1,7 @@
 ﻿using Abc.Coll;
-
 namespace Abc.Mk.Coll;
 
-public abstract class AccuOnColl<T, C> : IAdjustedItems<T> where C : ICollection<T>, new()
+public abstract class AccuOnColl<T, C> : IItemsAccu<T> where C : ICollection<T>, new()
 {
     protected C _items = new();
 

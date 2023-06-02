@@ -15,7 +15,7 @@ public class AdjustedItemsBuilder<R> : ICollBuilder<R>
     public AdjustedItemsBuilder(Func<R, R> onSet) { _onSet = onSet; }
 
     public IItemsAccu<T> Of<T>(IEnumerable<T> items) where T : R {
-        var accu = FAccu<T>();
+        var accu = AccuRealization<T>();
         accu.Add(items);
         return accu;
     }
@@ -29,5 +29,5 @@ public class AdjustedItemsBuilder<R> : ICollBuilder<R>
 
     public IItemsAccu<T> Of<T>(T item) where T : R => Of(new[] { item });
 
-    protected virtual IAdjustedItems<T> FAccu<T>() where T : R => new ListAccu<T>() { OnSet = x => (T)_onSet(x) };
+    protected virtual IItemsAccu<T> AccuRealization<T>() where T : R => new ListAccu<T>() { OnSet = x => (T)_onSet(x) };
 }

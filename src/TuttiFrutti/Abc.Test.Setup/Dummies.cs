@@ -1,9 +1,10 @@
-﻿namespace Abc.Test.Data;
+﻿namespace Abc.Test.Setup;
 
 public static class Dummies
 {
     public static class Text
     {
+        public const string AbcEnCaps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         public const string PangramEn = "the quick brown fox jumps over the lazy dog";
 
         public const string LoremIpsum = "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor " +

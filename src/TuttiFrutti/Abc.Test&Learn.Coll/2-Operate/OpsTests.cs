@@ -1,6 +1,5 @@
 ﻿using Abc.Coll.Gtor;
-using Abc.Test.Data;
-
+using Abc.Test.Setup;
 namespace Abc.Test_Learn.Coll.Operate;
 
 public class Addition
@@ -49,8 +48,6 @@ public class Removal
         const int numToKeep = 4;
         accu.RemoveAt(2, accu.Items.Count - numToKeep);
         Assert.That(accu.Items.SequenceEqual(new[] { 0, 1, 10, 11 }));
-
-        var aaa = double.Epsilon;
 
         accu = builder.Of(Dummies.Sequences.ZeroToEleven);
         accu.RemoveAt(0, accu.Items.Count);
