@@ -1,5 +1,4 @@
 ﻿using NUnit.Framework;
-using Telerik.JustMock;
 
 namespace Abc.Test.Setup;
 public static class TestArgs
@@ -25,6 +24,7 @@ public static class TestArgs
         get {
             yield return new TestCaseData("Dummy");
             yield return new TestCaseData("0123456789");
+            yield return new TestCaseData(string.Empty);
             yield return new TestCaseData("                    ");
             yield return new TestCaseData(Dummies.Text.AbcEnCaps);
             yield return new TestCaseData("ASCII sample: A1&+,-%777_ascii");
@@ -76,7 +76,9 @@ public static class TestArgs
     public static class Objects_IScenarioToChange
     {
         public static IEnumerable<TestCaseData> Cloneable() {
-            yield return new TestCaseData(Mock.Create<ICloneable>());
+            yield return new TestCaseData($"{nameof(ICloneable)} for test");
+            yield return new TestCaseData(default(ICloneable));
+
 
         }
     }

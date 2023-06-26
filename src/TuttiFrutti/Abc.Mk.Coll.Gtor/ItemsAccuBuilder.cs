@@ -3,7 +3,7 @@ using Abc.Coll.Gtor;
 
 namespace Abc.Mk.Coll.Gtor;
 
-public class PlainItemsAccuBuilder : AdjustedItemsBuilder<object>
+public class Accu : AdjustedItemsBuilder<object>
 {
     public ICollBuilder<R> OnSet<R>(Func<R, R> xlate) => new AdjustedItemsBuilder<R>(xlate);
 }

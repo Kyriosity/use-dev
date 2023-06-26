@@ -1,4 +1,6 @@
 ﻿using Abc.Err.Sys;
+using Abc.Prop;
+
 namespace Abc.Mk;
 
 public class SealedHolder<T> : IItem<T>
@@ -31,10 +33,6 @@ public class Accessor<T>
         get {
             return _value;
         }
-    }
-
-    public static implicit operator T(Accessor<T> value) {
-        return value.Value;
     }
 }
 

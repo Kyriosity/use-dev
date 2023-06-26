@@ -8,7 +8,7 @@
 
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
-    <AppDesignerFolder>1-Properties</AppDesignerFolder>
+    <AppDesignerFolder>1-Prop</AppDesignerFolder>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,7 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Abc.Mk\Abc.Mk.csproj" />
     <ProjectReference Include="..\Abc.Test.Setup\Abc.Test.Setup.csproj" />
     <ProjectReference Include="..\Abc\Abc.csproj" />
   </ItemGroup>
