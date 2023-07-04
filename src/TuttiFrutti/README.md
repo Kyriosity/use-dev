@@ -5,9 +5,12 @@ This makes up a bundle of basic projects. Common definitions, basic implementati
 ## Names and acronyms used here
 
 Naming of projects and folders, namespaces highly relies on acronyms:\
+`Abc` - Basics: common or shared stuff as base of applications\
+`Imp` - Implementation
+
 `Prop`, `Props` - property, properties
 
-`Abc` - Basics: common or shared stuff as base of applications\
+
 `Mk` - Make: implementation, instantiate defined interfaces\
 `Gtor` - Generators: builders, factories, providers of classes/objects (contra to `ctor` - direct constructor)
 

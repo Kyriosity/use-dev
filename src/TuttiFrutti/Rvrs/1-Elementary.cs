@@ -1,16 +1,15 @@
 ﻿namespace Rvrs;
-
 public interface IReversible { }
 
 public interface IBack : IReversible
 {
-    void Undo();
+    void Undo(int steps = 1);
     int StepsUndo();
 }
 
 public interface IForth : IReversible
 {
-    void Redo();
+    void Redo(int steps = 1);
     int StepsRedo();
 }
 

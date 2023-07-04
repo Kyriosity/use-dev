@@ -7,12 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="README.md" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Abc.Coll\Abc.Coll.csproj" />
     <ProjectReference Include="..\Abc.Prop\Abc.Item.csproj" />
+    <ProjectReference Include="..\Abc\Abc.csproj" />
+    <ProjectReference Include="..\Imp.Rvrs\Imp.Rvrs.csproj" />
+    <ProjectReference Include="..\Rvrs\Rvrs.csproj" />
   </ItemGroup>
 
 </Project>

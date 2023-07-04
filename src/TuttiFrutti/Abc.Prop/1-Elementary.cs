@@ -1,18 +1,20 @@
 ﻿namespace Abc.Item;
 
 public interface IDistinct { }
+public interface IDistinct<T> : IDistinct { }
 
-public interface IProped<T> : IDistinct
+public interface IGet<T> : IDistinct<T>
 {
-    T? Item { get; }
+    T? Value { get; }
 }
 
-public interface IInit<T> : IProped<T>
+public interface IInit<T> : IGet<T>
 {
-    new T? Item { get; init; }
+    new T? Value { get; init; }
 }
 
-public interface IMutable<T> : IProped<T>
+public interface IMutable<T> : IGet<T>
 {
-    new T? Item { get; set; }
+    new T? Value { get; set; }
 }
+

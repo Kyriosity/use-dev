@@ -7,3 +7,6 @@ public interface IItemsAccu<T> : ICollOps<T>
 }
 
 public interface IItemsCollSized<T> : IItemsAccu<T> { }
+
+
+public interface IIndexedColl<T> : IItemsAccu<T>, ISelectable { }
