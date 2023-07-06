@@ -1,7 +1,12 @@
-### Guide
-- Foundation (clay)\
+### Roadmap
+
++ **Foundation** (clay)\
 |- Guards\
-|- Windows\
-|--- [Converters](readme+/bool2viz_improved.md)
-- Parts\
+|- WPF\
+|--- [Bool-Vis. converter](readme+/bool2viz_improved.md)
++ **Features**\
+|- Multifacet value
++ **Parts**\
 |- [Undo/Redo extension](readme+/undo-redo)
++ **Templates**\
+|- Task-based
