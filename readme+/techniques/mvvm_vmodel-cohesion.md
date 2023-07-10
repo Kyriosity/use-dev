@@ -2,7 +2,7 @@
 
 ## Classic aggregation
 
-As [Microsoft guidelines](https://docs.microsoft.com/en-us/archive/msdn-magazine/2009/february/patterns-wpf-apps-with-the-model-view-viewmodel-design-pattern) suggest ViewModels will usually aggregate Models in straightforward fashion:
+As [Microsoft guidelines](https://docs.microsoft.com/en-us/archive/msdn-magazine/2009/february/patterns-wpf-apps-with-the-model-view-viewmodel-design-pattern) suggest ViewModels will usually aggregate Models in a straightforward fashion:
 
 <details>
   <summary><ins>&nbsp;Ordinary aggregation - sketch&nbsp;</ins></summary>
@@ -39,12 +39,12 @@ There's nothing foul in this practice but an itchy call of "Don't repeat yoursel
 
 |   |  |
 | ------------- | ------------- |
-| Let's regard model as a parent class, <br/>from which ViewModels can be derived:<br/><br/><br/><br/>| ![VModel cohesion diagram](../../_rsc/images/MVP_vm-model-cohesion.jpg)  |
+| Let's regard model as a parent class, <br/>from which ViewModels can be derived:<br/><br/><br/><br/>| ![VModel cohesion diagram](../_rsc/images/MVP_vm-model-cohesion.jpg)  |
 
 ### Downcasting workaround
 
 An issue of the inheritance is that C# prevents pure downcasting, but there're workarounds possible:\
-|- [Downcasting impedance](../../../readme+/design/readme+/cs_downcast-impedance.md)
+|- [Downcasting impedance](cs_downcast-impedance.md)
 
 ### What about ViewModelBase
 
