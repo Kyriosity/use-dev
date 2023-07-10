@@ -3,17 +3,19 @@
 |- **WPF**\
 |--- [Bool-Vis. converter](readme+/bool2viz_improved.md)
 
-+ **Features**\
-|- _to be written_
-
 + **Parts**\
 |- Multifacet value\
 |- [Undo/Redo extension](readme+/undo-redo)
 
 + **Techniques/Templates**\
+|- Downcasting impedance\
 |- [Read-write combinations with varying properties](readme+/techniques/vary-props.md)\
-|- Promise-oriented template\
 |- **WPF**\
-|--- Notificaton orchestration\
-|--- [MVVM-Cohesion](readme+/techniques/mvvm_vmodel-cohesion.md)
+|--- [Notificaton orchestration](readme+/techniques//mvvm_notification-orchestration.md)\
+|--- [Model-ViewModel cohesion](readme+/techniques/mvvm_vmodel-cohesion.md)
+
++ **Templates**\
+|- Promise-oriented MVVM
+
+
 
