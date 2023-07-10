@@ -1,19 +1,19 @@
-### Roadmap
-
 + **Foundation** (clay)\
 |- Guards\
-|- WPF\
+|- **WPF**\
 |--- [Bool-Vis. converter](readme+/bool2viz_improved.md)
 
 + **Features**\
-|- [Varying property](readme+/features/vary-prop.md)\
-|- WPF\
-|--- Notificaton orchestration\
-|--- MVVM-Cohesion
+|- _to be written_
 
 + **Parts**\
 |- Multifacet value\
 |- [Undo/Redo extension](readme+/undo-redo)
 
-+ **Templates**\
-|- Task-based
++ **Techniques/Templates**\
+|- [Read-write combinations with varying properties](readme+/techniques/vary-props.md)\
+|- Promise-oriented template\
+|- **WPF**\
+|--- Notificaton orchestration\
+|--- [MVVM-Cohesion](readme+/techniques/mvvm_vmodel-cohesion.md)
+
