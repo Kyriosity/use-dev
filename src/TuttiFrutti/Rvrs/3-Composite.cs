@@ -9,7 +9,6 @@ public interface IItem<T> : IReversible { }
 public interface IUndoItem<T> : IItem<T>, IMutable<T>, IBack { }
 public interface IUndoRedoItem<T> : IUndoItem<T>, IForth { }
 
-
 public interface IReversibleOnColl<T, TColl> : IItem<T> where TColl : IItemsAccu<T>
 {
     TColl Coll { get; }
