@@ -1,3 +1,0 @@
-# Multifaceted value
-
-

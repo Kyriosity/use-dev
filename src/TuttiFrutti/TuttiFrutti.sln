@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.6.33617.297
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abc", "Abc", "{1614A4D0-2346-4B46-A7BF-08558A77E046}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "🔄️ Parts.Reversible", "🔄️ Parts.Reversible", "{CE17C9A1-B0A6-4B8E-9ED6-3F0DAF591CBE}"
 	ProjectSection(SolutionItems) = preProject
@@ -13,6 +16,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_🦉_Test&Learn", "_🦉_Test&Learn", "{F7B61D03-3AA9-45B3-B13F-0943CB215EBA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abc", "Abc", "{165121F7-C307-4E2A-A5BD-AE59D3D824CB}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Coll", "Coll", "{6F70E2A7-27B9-4520-BEDD-B8F1BE86BB67}"
 EndProject
@@ -56,18 +62,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parts", "Parts", "{6556E1C8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "💎 MutifacetValue", "💎 MutifacetValue", "{765E3AE6-D581-468A-A041-68D4B756A069}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1ECEE155-4F01-4CAB-8032-F1940579793E}"
-	ProjectSection(SolutionItems) = preProject
-		README.md = README.md
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "💎_🦉_Test&Learn", "💎_🦉_Test&Learn", "{0F00A047-09B3-4236-9D47-7867A9498CBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N-Val", "N-Val\N-Val.csproj", "{B716F989-3E00-47BA-9A06-E9680FE28B0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N-Val", "N-Val\N-Val.csproj", "{B716F989-3E00-47BA-9A06-E9680FE28B0F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "💎_📖_ Read&Know", "💎_📖_ Read&Know", "{DE33B0E1-1D55-410B-AF1B-14B17A47CBA4}"
+	ProjectSection(SolutionItems) = preProject
+		MulfifacetValue-README.md = MulfifacetValue-README.md
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N-Val.Test&Learn", "N-Val.Test&Learn\N-Val.Test&Learn.csproj", "{7242745E-B034-43AD-ADE9-6FF57AC706E4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N-Val.Test&Learn", "N-Val.Test&Learn\N-Val.Test&Learn.csproj", "{7242745E-B034-43AD-ADE9-6FF57AC706E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mk.N-Val", "Mk.N-Val\Mk.N-Val.csproj", "{C19C535F-267E-447F-AC84-1A3CEF730452}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "📊_Samples", "📊_Samples", "{A568B6F1-5AE5-455F-A5A1-1D14FDB7F4CD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TD.N-Val", "TD.N-Val\TD.N-Val.csproj", "{12B1ED78-1F73-4DE0-AC6C-152172367F2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -139,6 +149,14 @@ Global
 		{7242745E-B034-43AD-ADE9-6FF57AC706E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7242745E-B034-43AD-ADE9-6FF57AC706E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7242745E-B034-43AD-ADE9-6FF57AC706E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C19C535F-267E-447F-AC84-1A3CEF730452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C19C535F-267E-447F-AC84-1A3CEF730452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C19C535F-267E-447F-AC84-1A3CEF730452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C19C535F-267E-447F-AC84-1A3CEF730452}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12B1ED78-1F73-4DE0-AC6C-152172367F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B1ED78-1F73-4DE0-AC6C-152172367F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B1ED78-1F73-4DE0-AC6C-152172367F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B1ED78-1F73-4DE0-AC6C-152172367F2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -169,6 +187,9 @@ Global
 		{B716F989-3E00-47BA-9A06-E9680FE28B0F} = {765E3AE6-D581-468A-A041-68D4B756A069}
 		{DE33B0E1-1D55-410B-AF1B-14B17A47CBA4} = {765E3AE6-D581-468A-A041-68D4B756A069}
 		{7242745E-B034-43AD-ADE9-6FF57AC706E4} = {0F00A047-09B3-4236-9D47-7867A9498CBF}
+		{C19C535F-267E-447F-AC84-1A3CEF730452} = {765E3AE6-D581-468A-A041-68D4B756A069}
+		{A568B6F1-5AE5-455F-A5A1-1D14FDB7F4CD} = {0F00A047-09B3-4236-9D47-7867A9498CBF}
+		{12B1ED78-1F73-4DE0-AC6C-152172367F2E} = {A568B6F1-5AE5-455F-A5A1-1D14FDB7F4CD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C57594B1-16AE-49CA-8B93-C41A39EB7666}

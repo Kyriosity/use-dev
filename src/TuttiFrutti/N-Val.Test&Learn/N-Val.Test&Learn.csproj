@@ -18,4 +18,10 @@
     <PackageReference Include="coverlet.collector" Version="3.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Abc\Abc.csproj" />
+    <ProjectReference Include="..\Mk.N-Val\Mk.N-Val.csproj" />
+    <ProjectReference Include="..\TD.N-Val\TD.N-Val.csproj" />
+  </ItemGroup>
+
 </Project>

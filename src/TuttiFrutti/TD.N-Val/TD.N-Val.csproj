@@ -2,13 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <RootNamespace>N_Val</RootNamespace>
+    <RootNamespace>TD.N_Val</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Abc\Abc.csproj" />
-  </ItemGroup>
 
 </Project>

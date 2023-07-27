@@ -12,13 +12,13 @@ Naming of projects and folders, namespaces highly relies on acronyms:\
 
 
 `Mk` - Make: implementation, instantiate defined interfaces\
-`Gtor` - Generators: builders, factories, providers of classes/objects (contra to `ctor` - direct constructor)
+`Bld` - builders 
 
 `Err` - Errors: definition of exceptions and their relevant issues (like messages)\
 `Ltd` - Limited: constraints, restraints, restrictions, limits\
 `Xform` - Transformations: like interception of input, setters
 
-`Coll` - Collections: definitions, declarations and implementation of\
+`Coll` - Collections: definitions, declarations and implementation of them\
 `Accu` - Accumulator: an umbrella term for grouping of items, that can be over *collection* or not\
 
 

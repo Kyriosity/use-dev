@@ -19,7 +19,7 @@ public class UndoOnlyItem<T> : IUndoItem<T>
 
     public void Undo(int steps = 1) => _coll.RemoveLast(steps);
 
-    private ListAccu<T?> _coll = new ListAccu<T?>(); // ToDo: interface
+    private readonly ListAccu<T?> _coll = new(); // ToDo: interface
 }
 
 
