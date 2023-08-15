@@ -11,4 +11,8 @@
     <ProjectReference Include="..\N-Val\N-Val.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Arithmetic\" />
+  </ItemGroup>
+
 </Project>

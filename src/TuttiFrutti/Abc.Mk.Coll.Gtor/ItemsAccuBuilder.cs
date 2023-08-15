@@ -21,7 +21,7 @@ public class AdjustedItemsBuilder<R> : ICollBuilder<R>
     }
 
     public IItemsAccu<T> Of<T>(params T[] items) where T : R {
-        var listed = new List<T>();
+        var listed = new List<T> { };
         foreach (var item in items)
             listed.Add(item);
         return Of(listed);

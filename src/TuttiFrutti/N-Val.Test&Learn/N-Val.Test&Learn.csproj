@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Abc.Test.Setup\Abc.Test.Setup.csproj" />
     <ProjectReference Include="..\Abc\Abc.csproj" />
     <ProjectReference Include="..\Mk.N-Val\Mk.N-Val.csproj" />
     <ProjectReference Include="..\TD.N-Val\TD.N-Val.csproj" />
