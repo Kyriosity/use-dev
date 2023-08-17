@@ -4,7 +4,7 @@
 |--- [Bool-Vis. converter](readme+/bool2viz_improved.md)
 
 + **Parts**\
-|- Multifacet value\
+|- [Multifaceted value (N-Val)](readme+/N-Val)\
 |- [Undo/Redo extension](readme+/undo-redo)
 
 + **Techniques/Templates**\
