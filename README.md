@@ -5,11 +5,11 @@
 
 + **Parts**\
 |- [Multifaceted value (N-Val)](readme+/N-Val)\
-|- [Undo/Redo extension](readme+/undo-redo)
+|- [Undo/Redo extension](readme+/undo-redo) 🚧
 
 + **Techniques/Templates**\
 |- Downcasting impedance\
-|- [Read-write combinations with varying properties](readme+/techniques/vary-props.md)\
+|- [Jagged-props interfaces](readme+/techniques/jagged-props.md)\
 |- **WPF**\
 |--- [Notificaton orchestration](readme+/techniques//mvvm_notification-orchestration.md)\
 |--- [Model-ViewModel cohesion](readme+/techniques/mvvm_vmodel-cohesion.md)
