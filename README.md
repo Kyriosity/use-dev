@@ -4,10 +4,10 @@
 |--- [Bool-Vis. converter](readme+/bool2viz_improved.md)
 
 + **Parts**\
-|- [Multifaceted value (N-Val)](readme+/N-Val)\
-|- [Undo/Redo extension](readme+/undo-redo) 🚧
+|- 💠 [Multifaceted value (N-Val)](readme+/N-Val)\
+|- :arrows_counterclockwise: [Undo/Redo extension](readme+/undo-redo) 🚧
 
-+ **Techniques/Templates**\
++ **Techniques/Patterns**\
 |- Downcasting impedance\
 |- [Jagged-props interfaces](readme+/techniques/jagged-props.md)\
 |- **WPF**\
