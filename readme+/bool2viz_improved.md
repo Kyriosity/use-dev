@@ -1,11 +1,12 @@
-# WPF: Improving Boolean-to-Visibility converter
-Imagine :high_brightness:Lights:high_brightness: elements on the *View* that are switched by `bool Power` in *ViewModel*.\
-It's appealing to couple them with the .NET native [BooleanToVisibilityConverter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.booleantovisibilityconverter).
+# WPF - Boolean-to-Visibility converter - Making it better
 
-Now suppose, :flashlight:Emergency lights:flashlight: will be switched on when the power is off. To spare either a `PowerOff` property with logic, or inverse counterpart `InvertedBooleanToVisibilityConverter`, or elaborated [triggers](https://docs.microsoft.com/en-us/dotnet/api/system.windows.style.triggers) let's sketch:
+Imagine :high_brightness:Lights:high_brightness: elements on the *View* that are switched by `bool Voltage` in its *ViewModel*. That's appealing to couple them with the .NET native [BooleanToVisibilityConverter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.booleantovisibilityconverter).
+
+Now suppose, :flashlight:Emergency lights:flashlight: will be switched on when the _Voltage_ is off. To spare either a `VoltageOff` property with logic, or a counterpart `InvertedBooleanToVisibilityConverter`, or elaborated [triggers](https://docs.microsoft.com/en-us/dotnet/api/system.windows.style.triggers) let's sketch:
 
 <details>
-<summary><b>Invertible BooleanToVisibility converter</b></summary>
+<summary><ins>&nbsp;Invertible BooleanToVisibility converter&nbsp;</ins></summary>
+&nbsp;
 
 ```csharp
 public class BooleanToVisibilityConverter : IValueConverter
@@ -19,24 +20,26 @@ public class BooleanToVisibilityConverter : IValueConverter
     /// ConvertBack(...
 }
 ``` 
-... in XAML:
+XAML:
 
  ```xaml
 <local:BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
 <local:BooleanToVisibilityConverter x:Key="InvertedBooleanToVisibility" Invert="True" />
 ```
+\__________________________________________
 </details>
 
 The above draft is fairly acceptable, but let's hone once and for good a decent solution:
+
 + supporting any constant of [Visibility](https://docs.microsoft.com/en-us/dotnet/api/system.windows.visibility)
 + handling *null* for bool
 + smarter named&nbsp;<sup>:raising_hand:</sup>
 
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>:raising_hand:</sup><sub>Original naming is longish and ambiguous. [Viz](https://en.wikipedia.org/wiki/Viz.) will be at least shorter than [Visibility](https://www.merriam-webster.com/dictionary/visibility) (which must have been *Display*); *Vs* (versus) implies two-way, while *To* - one-way conversion.</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>:raising_hand:</sup><sub>Original naming is longish and ambiguous. [Viz](https://en.wikipedia.org/wiki/Viz.) will be at least shorter than [Visibility](https://www.merriam-webster.com/dictionary/visibility) (which must have been *Display*); *Vs* (versus) implies two-way, while *To* - one-way conversion.</sub>
 
-Let's demonstrate the named benefits with:
 <details>
-<summary><b>Declaration in XAML</b></summary>
+<summary><ins>&nbsp;How these benefits will look in XAML&nbsp;</ins></summary>
+&nbsp;
 
  ```xaml
 <local:BoolVsVizConverter x:Key="BoolToViz/>
@@ -47,7 +50,7 @@ Let's demonstrate the named benefits with:
 <local:BoolVsVizConverter x:Key="BoolVsViz" DefaultBack="False"/>
 
 ```
-
+\__________________________________________
 </details>
 
 That is backed up by this code: [BoolVsVizConverter](..//foundation/Clay/Win/Converters/BoolVsVizConverter.cs) 

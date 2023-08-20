@@ -4,12 +4,12 @@
 |--- [Bool-Vis. converter](readme+/bool2viz_improved.md)
 
 + **Parts**\
-|- Multifacet value\
-|- [Undo/Redo extension](readme+/undo-redo)
+|- 💠 [Multifaceted value (N-Val)](readme+/N-Val)\
+|- :arrows_counterclockwise: [Undo/Redo extension](readme+/undo-redo) 🚧
 
-+ **Techniques/Templates**\
++ **Techniques/Patterns**\
 |- Downcasting impedance\
-|- [Read-write combinations with varying properties](readme+/techniques/vary-props.md)\
+|- [Jagged-props interfaces](readme+/techniques/jagged-props.md)\
 |- **WPF**\
 |--- [Notificaton orchestration](readme+/techniques//mvvm_notification-orchestration.md)\
 |--- [Model-ViewModel cohesion](readme+/techniques/mvvm_vmodel-cohesion.md)
