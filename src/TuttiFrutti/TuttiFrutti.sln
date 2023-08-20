@@ -60,7 +60,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Imp.Rvrs", "Imp.Rvrs\Imp.Rv
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parts", "Parts", "{6556E1C8-9E8C-4614-A6D9-80DF821F4D03}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "💎 MutifacetValue", "💎 MutifacetValue", "{765E3AE6-D581-468A-A041-68D4B756A069}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "💠MutifacetValue 💠", "💠MutifacetValue 💠", "{765E3AE6-D581-468A-A041-68D4B756A069}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "💎_🦉_Test&Learn", "💎_🦉_Test&Learn", "{0F00A047-09B3-4236-9D47-7867A9498CBF}"
 EndProject
@@ -68,7 +68,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N-Val", "N-Val\N-Val.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "💎_📖_ Read&Know", "💎_📖_ Read&Know", "{DE33B0E1-1D55-410B-AF1B-14B17A47CBA4}"
 	ProjectSection(SolutionItems) = preProject
-		MulfifacetValue-README.md = MulfifacetValue-README.md
+		README_Multifacet-Value(N-Val).md = README_Multifacet-Value(N-Val).md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N-Val.Test&Learn", "N-Val.Test&Learn\N-Val.Test&Learn.csproj", "{7242745E-B034-43AD-ADE9-6FF57AC706E4}"

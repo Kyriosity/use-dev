@@ -3,17 +3,22 @@ using N_Val.Phys.Temperature;
 using System.Numerics;
 
 namespace N_Val.Test_Learn.Casting;
-public class OpenCloseCastTests
+public class OpenCloseCastDemo
 {
     [Test]
     public void ForExample() {
-        ITemp<int> oven = Temperature.Celsius(1000);
+        var heating = Temperature.Celsius(1000);
 
-#if FALSE // COULD COMPILE
-        oven.Fahrenheit = 451;
+        heating.Fahrenheit = 451;
+        heating[In.Fahrenheit] = 7;
+
+        ITemp<int> sealedHeating = heating;
+#if FALSE // == COULD_COMPILE
+        heating.Fahrenheit = 451;
+        heating[In.Fahrenheit] = 7;
 #endif
 
-        Assert.That(oven, Has.Property(nameof(Temperature.Celsius)));
+        Assert.That(heating, Has.Property(nameof(Temperature.Celsius)));
     }
 
     [Test]

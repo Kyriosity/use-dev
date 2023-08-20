@@ -1,5 +1,5 @@
 ﻿namespace N_Val.Phys.Temperature;
-public enum Unit
+public enum In
 {
     Undefined = 0,
 

@@ -5,7 +5,7 @@ namespace Mk.N_Val.Phys.Temperature.Build;
 public interface IResultOutput
 {
     ITemp<N> Celsius<N>() where N : INumber<N>;
-    IValueOuput this[Unit unit] => new ValueOutput(unit);
+    IValueOuput this[In unit] => new ValueOutput(unit);
 }
 
 public interface IValueOuput
@@ -15,8 +15,8 @@ public interface IValueOuput
 
 public class ValueOutput : IValueOuput
 {
-    private readonly Unit _unit;
-    public ValueOutput(Unit unit) {
+    private readonly In _unit;
+    public ValueOutput(In unit) {
         _unit = unit;
     }
 

@@ -6,24 +6,33 @@ public static class TestArgs
 {
     public static class Temperatures
     {
-        public readonly static object[] MutitypeNumerics_KelvinCelciusFahrenheit = {
-            new object[] { "Minus math op value", (K: -1234.567, C: -1507.717, F: -2681.8906, delta: 0.00000001) },
+        public static readonly (float K, float C, float F, float delta) WaterBoiling = (373.15F, 100.0F, 212.00F, 0.00005F);
+        public static readonly (decimal K, decimal C, decimal F, decimal delta) WaterTriplePoint = (273.16M, C: 0.01M, F: 32.018M, delta: 0.001M);
+        public static readonly (int K, int C, int F, int delta) SunSurface = (5772, 5499, 9930, 1);
+        public static readonly (double K, double C, double F, double delta) AbsZero = (0.00, -273.15, -459.67, 0.00000000001);
+        public static readonly (double K, double C, double F, double delta) QuicksilverMelting = (234.32, -38.83, -37.894, 0.000001);
+        public static readonly (int K, int C, int F, int delta) GoldMelting = (1337, 1064, 1947, 1);
 
-            new object[] { "Potassium atoms < abs. 0", (K: -0.000000001, C: -273.150000001, F: -459.6700000018, delta: 0.00000000001) }, // www.mpg.de/research/negative-absolute-temperature
-            new object[] { "Absolute zero", (K: 0.00, C: -273.15, F: -459.67, delta: 0.00000000001) },
+        public readonly static object[] MutitypeNumerics_KelvinCelciusFahrenheit = {
+            new object[] { nameof(WaterBoiling), WaterBoiling },
+            new object[] { nameof(WaterTriplePoint),  WaterTriplePoint },
+
+            new object[] { "Minus math op value", (-1234.567, -1507.717, -2681.8906, delta: 0.00000001) },
+
+            new object[] { "Potassium atoms < abs. 0", (-0.000000001, -273.150000001, -459.6700000018, 0.00000000001) }, // www.mpg.de/research/negative-absolute-temperature
+   
             new object[] { "Recorded min on Earth", (K: 183.95, C: -89.2, F: -128.56, delta: 0.000000001) },
 
-            new object[] { "Water boiling", (K: (float)373.15, C: (float)100.0, F: (float)212.00, delta: (float)0.00005) },
-            new object[] { "Water triple point", (K: (decimal)273.16, C: (decimal)0.01, F: (decimal)32.018, delta: (decimal)0.001) },
+            new object[] { nameof(AbsZero), AbsZero },
 
-            new object[] { "Quicksilver melting", (K: 234.3, C: -38.83, F: -38.001999999999, delta: 0.02) },
-            new object[] { "Gold melting", (K: 1337, C: 1064, F: 1947, delta: 1) },
-            new object[] { "Sun surface", (K: 5772, C: 5499, F: 9930, delta: 1) },
+            new object[] { nameof(QuicksilverMelting), QuicksilverMelting},
+            new object[] { nameof(GoldMelting), GoldMelting },
+            new object[] { nameof(SunSurface), SunSurface},
             new object[] { "Hottest in Universe", (K: _uniHottest, C: _uniHottest, F: _uniHottestF, delta: deltaForHugeNumbers) }
         };
 
-        private const float _uniHottest = (float)142_000_000_000_000_000_000_000_000_000_000.00;
-        private const float _uniHottestF = (float)255_599_999_999_999_999_999_999_999_999_989.00;
+        private const float _uniHottest = 142_000_000_000_000_000_000_000_000_000_000.00F;
+        private const float _uniHottestF = 255_599_999_999_999_999_999_999_999_999_989.00F;
 
         private const float deltaForHugeNumbers = _uniHottest / 100;
 
@@ -42,9 +51,9 @@ public static class TestArgs
                 (0.24, F, 17.2, K, expected: (val: 12.23, unit: F, delta: 0.22)),
             };
 
-            private const Unit K = Unit.Kelvin;
-            private const Unit C = Unit.Celsius;
-            private const Unit F = Unit.Fahrenheit;
+            private const In K = In.Kelvin;
+            private const In C = In.Celsius;
+            private const In F = In.Fahrenheit;
         }
     }
 }

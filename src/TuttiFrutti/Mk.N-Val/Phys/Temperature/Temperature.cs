@@ -5,10 +5,20 @@ using System.Numerics;
 
 namespace Mk.N_Val.Phys.Temperature;
 
-public class Temperature<N> : WiredValues<N, Unit>, ITempEdit<N> where N : INumber<N>
+public class ConstTemperature<N> : WiredValues<N, In>, ITemp<N> where N : INumber<N>
 {
-    public N Kelvin { get => Get(Unit.Kelvin); set => Set(value, Unit.Kelvin); }
-    public N Celsius { get => Get(Unit.Celsius); set => Set(value, Unit.Celsius); }
-    public N Fahrenheit { get => Get(Unit.Fahrenheit); set => Set(value, Unit.Fahrenheit); }
-    protected override IConversion<N, Unit> Conversion => new TemperatureFunctions<N>();
+    public N this[In unit] => Get(unit);
+    public N Kelvin { get; }
+    public N Celsius { get; }
+    public N Fahrenheit { get; }
+}
+
+public class Temperature<N> : ConstTemperature<N>, ITempEdit<N> where N : INumber<N>
+{
+    public new N this[In unit] { get => Get(unit); set => Set(value, unit); }
+
+    public new N Kelvin { get => Get(In.Kelvin); set => Set(value, In.Kelvin); }
+    public new N Celsius { get => Get(In.Celsius); set => Set(value, In.Celsius); }
+    public new N Fahrenheit { get => Get(In.Fahrenheit); set => Set(value, In.Fahrenheit); }
+    protected override IConversion<N, In> Conversion => new TemperatureFunctions<N>();
 }
