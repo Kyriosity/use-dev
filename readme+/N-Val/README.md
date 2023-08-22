@@ -9,32 +9,45 @@ Alias: _**N-Val**_ :diamond_shape_with_a_dot_inside:
 
 You may find the folklore right above dull but not pointless. Math relies on pure numbers, and computers operate with them. However **and** chiefly, for devs **and** users, the inputs **and** outputs of software abstractions anchor to the material world.
 
-And in the material world, even named values are devoid of meaning unless categorized. _Age_ of `7` can be months and years, `Smith` can be given, surname and trademark. A surface temperature of `36.6` is natural if Celsius for humans and Kelvin for the dark side of Neptune. Close approach to Mars as 33.900.000 sounds authentic both in miles and kilometers<sup>:rocket:</sup>.
+And in the material world, even named values are devoid of meaning unless categorized. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>:rocket:</sup> ...miles [according to NASA](https://mars.nasa.gov/all-about-mars/night-sky/close-approach/)
+* _Age_ of `7` can be months and years, `Smith` can be given, surname and trademark.
+* A surface temperature of `36.6` is natural in _Celsius_ for humans and in _Kelvin_ for .
+* Close approach to Mars as 33.900.000 sounds authentic both in miles and kilometers<sup>:rocket:</sup>.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>:rocket:</sup> ...miles [according to NASA](https://mars.nasa.gov/all-about-mars/night-sky/close-approach/)
 
 ## So what's the problem?
 
-The object-oriented design fits well with custom categorization but no popular programming language has pre-programmed structures, especially for physical units. 
+Object-oriented design fits fine with custom categorization but no popular programming language pre-determines standards and definitions, particularly for physical units. 
 
 Thus applications 
 
  - rely on context (and open door for disastrous scenarios),
  - imply a single system of categorization, e.g. SI for physical values (quite limited even within a single culture and location),
- - style procedural like `const absZero_Kelvin = 0` is unambigous but ugly to the OOP,
+ - style procedural like `const absZero_Kelvin = 0` is unambiguous but ugly to the object-oriented sight,
  - implement own solution (which re-invents the wheel).
 
-## CRITICIZE BUT PROPOSE
+## Solution
 
-Simply to have a shared solution based on experience of custom.
-
-### Declare like a pro
+Just a shared one based on the experience of those tailored.
 
 ```csharp
-var temp = Temperature.Celsius();
+var heating = Temperature.Celsius(27.6);
+
 ```
 
-## Design decision, principal to know
+. NET Solution:\
+|- Tests\
+|- Source code
+
+Features and Design decisions\
+
+|- Arithmetic overloads\
+|- Comparison\
+|- Indexing\
+|- Fabrics\
+|- Hooks
 
 ## Beyond the first sketch
 
