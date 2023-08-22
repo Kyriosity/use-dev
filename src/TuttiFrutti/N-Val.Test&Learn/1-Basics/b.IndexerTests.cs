@@ -1,18 +1,10 @@
 ﻿using Mk.N_Val.Phys.Temperature.Build;
 using N_Val.Phys.Temperature;
+using N_Val.Test_Learn.Setup;
 using System.Numerics;
-using TD.N_Val;
 
 namespace N_Val.Test_Learn.Basics;
 
-public static class Providers
-{
-    public readonly static object[] MutitypeNumerics = {
-        Temperature.Celsius(TestArgs.Temperatures.WaterBoiling.C),
-        Temperature.Fahrenheit(TestArgs.Temperatures.WaterBoiling.F),
-        Temperature.Fahrenheit(TestArgs.Temperatures.SunSurface.K),
-    };
-}
 public class IndexerTests
 {
     [TestCaseSource(typeof(Providers), nameof(Providers.MutitypeNumerics))]
@@ -30,13 +22,11 @@ public class IndexerTests
     }
 
     [TestCase(In.Celsius, -20.2), TestCase(In.Fahrenheit, 451), TestCase(In.Kelvin, 123_500_700_999)]
-    public void IndexByVariable<N>(In unit, N val) where N : INumber<N> {
+    public void IndexBySuppliedVariable<N>(In unit, N val) where N : INumber<N> {
         var holder = Temperature.Kelvin(N.Zero);
         holder[unit] = val;
         Assert.That(holder[unit], Is.Not.EqualTo(N.Zero));
     }
-
-    // ToDo: FOR !
 
     [Test]
     public void ShortcutIndex() {

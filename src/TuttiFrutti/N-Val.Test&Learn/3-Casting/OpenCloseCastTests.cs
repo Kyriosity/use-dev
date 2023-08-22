@@ -6,14 +6,14 @@ namespace N_Val.Test_Learn.Casting;
 public class OpenCloseCastDemo
 {
     [Test]
-    public void ForExample() {
+    public void Demo() {
         var heating = Temperature.Celsius(1000);
 
         heating.Fahrenheit = 451;
         heating[In.Fahrenheit] = 7;
 
         ITemp<int> sealedHeating = heating;
-#if FALSE // == COULD_COMPILE
+#if FALSE // COULD_COMPILE
         heating.Fahrenheit = 451;
         heating[In.Fahrenheit] = 7;
 #endif
@@ -36,7 +36,7 @@ public class OpenCloseCastDemo
         Assert.That(calibration, Has.Property(nameof(Temperature.Kelvin)));
     }
 
-    private ITemp<N> MustBeSomeLogicComplexerThanLambdaOrLinq<N>(IEnumerable<ITemp<N>> points) where N : INumber<N> {
+    private static ITemp<N> MustBeSomeLogicComplexerThanLambdaOrLinq<N>(IEnumerable<ITemp<N>> points) where N : INumber<N> {
         var magicNumber = N.CreateChecked(7.77);
         //var res = points.Sum(x => x.Kelvin);
         return Temperature.Celsius(magicNumber);

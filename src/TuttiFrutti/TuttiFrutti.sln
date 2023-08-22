@@ -75,9 +75,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N-Val.Test&Learn", "N-Val.T
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mk.N-Val", "Mk.N-Val\Mk.N-Val.csproj", "{C19C535F-267E-447F-AC84-1A3CEF730452}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "📊_Samples", "📊_Samples", "{A568B6F1-5AE5-455F-A5A1-1D14FDB7F4CD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "📊_Setup", "📊_Setup", "{A568B6F1-5AE5-455F-A5A1-1D14FDB7F4CD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TD.N-Val", "TD.N-Val\TD.N-Val.csproj", "{12B1ED78-1F73-4DE0-AC6C-152172367F2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestData.N-Val", "TD.N-Val\TestData.N-Val.csproj", "{12B1ED78-1F73-4DE0-AC6C-152172367F2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

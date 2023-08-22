@@ -1,12 +1,12 @@
 ﻿using Mk.N_Val.Phys.Temperature.Build;
 using System.Numerics;
-using TD.N_Val;
+using TestData.N_Val.Temperatures;
 
 namespace N_Val.Test_Learn.Declaration;
 
 public class InstanceTests
 {
-    [TestCaseSource(typeof(TestArgs.Temperatures), nameof(TestArgs.Temperatures.MutitypeNumerics_KelvinCelciusFahrenheit))]
+    [TestCaseSource(typeof(Mixture), nameof(Mixture.NumericTypes))]
     public void CreateAndCrossCompare<N>(string id, (N kelvin, N celsius, N fahrenheit, N delta) values) where N : INumber<N> {
         var baseK = Temperature.Kelvin(values.kelvin);
         var baseC = Temperature.Celsius(values.celsius);
@@ -22,7 +22,7 @@ public class InstanceTests
         Assert.That(baseK.Fahrenheit, Is.EqualTo(baseF.Fahrenheit).Within(values.delta), $"K->F ({id})");
     }
 
-    [TestCaseSource(typeof(TestArgs.Temperatures), nameof(TestArgs.Temperatures.MutitypeNumerics_KelvinCelciusFahrenheit))]
+    [TestCaseSource(typeof(Mixture), nameof(Mixture.NumericTypes))]
     public void CreateAndReAssign<N>(string id, (N K, N C, N F, N delta) values) where N : INumber<N> {
         var temperature = Temperature.Kelvin(values.K);
         var bulb = values.delta + N.CreateChecked(1);
