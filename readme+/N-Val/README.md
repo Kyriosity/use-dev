@@ -12,7 +12,7 @@ You may find the folklore right above dull but not pointless. Math relies on pur
 And in the material world, even named values remain meaningless unless categorized. 
 
 * _Age_ of `7` can be months and years, `Smith` can be given, surname and trademark.
-* A surface temperature of `36.6` is natural in _Celsius_ for humans and in _Kelvin_ for far space objects.
+* A temperature of `36.6` is natural in _Celsius_ for humans and in _Kelvin_ for supercoductivity.
 * Close approach to Mars as 33.900.000 sounds authentic both in miles and kilometers<sup>:rocket:</sup>.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>:rocket:</sup> ...miles [according to NASA](https://mars.nasa.gov/all-about-mars/night-sky/close-approach/)
@@ -55,8 +55,8 @@ Features and Design decisions\
 ## Beyond the first sketch
 
 Unions of values as square\
-Value vs presentation\
-Math optimization (function chaining, straightening camel calcs, accumulating inaccuracy, caching, unmanaged code, tree search)\
+Value vs. presentation\
+Math optimization (function chaining, straightening camel calculations (incl. intermediate overflow), accumulating inaccuracy, caching, unmanaged code, tree search)\
 Differing types beyond a value
 
 ### PHYSICAL VALUES ARE A SEPARATE BIG SUB-DOMAIN
@@ -65,7 +65,7 @@ Unit systems
 
 ### NOT ONLY PHYSICAL VALUES (UValues) 
 
-Currency exchange
+Currency exchange (especially in years with inflation/deflation)
 
 ### NOT ONLY NUMBERS (
 
