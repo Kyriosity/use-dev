@@ -1,18 +1,16 @@
 ﻿using TestData.N_Val.Temperatures.Vals;
 
 namespace TestData.N_Val.Temperatures;
-public static class Mixture
+public static class Mix
 {
     public readonly static object[] NumericTypes = {
-            //new object[] { "+ longest", Positive.Longest },
-            //new object[] { "+ tiny", Positive.Tiny},
-            //new object[] { "- whole num", Negative.Integer },
-            //new object[] { "- float-pt num", Negative.Precise },
-            //new object[] { "- tiny num", Negative.Longest },
+            new object[] { "+ tiny", Positive.Tiny},
+            new object[] { "- whole num", Negative.Integer },
+            new object[] { "- float-pt num", Negative.Precise },
 
-            //new object[] { "0K", Zero.Kelvin},
-            //new object[] { "0C", Zero.Celsius},
-            //new object[] { "0F", Zero.Fahrenheit},
+            new object[] { "0 K", Zero.Kelvin},
+            new object[] { "0 C", Zero.Celsius},
+            new object[] { "0 F", Zero.Fahrenheit},
 
             new object[] { "Water boiling", Water.Boiling },
             new object[] { "WaterTriplePoint",  Water.TriplePoint },
@@ -37,4 +35,15 @@ public static class Mixture
             new object[] { "Sun core", Cosmo.SunCore },
             new object[] { "Sun surface", Cosmo.SunSurface },
         };
+
+    public readonly static object[] HugeValues = {
+            new object[] { "+ huge whole", Positive.HugeWhole },
+            new object[] { "- huge whole", Negative.HugeWhole },
+    };
+
+    public readonly static object[] UltraValues = {
+        new object[] { "+ longest", Positive.Longest },
+        new object[] { "- longest", Negative.Longest },
+    };
+
 }

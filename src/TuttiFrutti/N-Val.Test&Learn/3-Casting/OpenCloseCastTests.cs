@@ -12,13 +12,13 @@ public class OpenCloseCastDemo
         heating.Fahrenheit = 451;
         heating[In.Fahrenheit] = 7;
 
-        ITemp<int> sealedHeating = heating;
+        ITemp<int> fixedHeating = heating;
+        var fixedCelsius = fixedHeating.Celsius;
 #if FALSE // COULD_COMPILE
-        heating.Fahrenheit = 451;
-        heating[In.Fahrenheit] = 7;
+        fixedHeating.Fahrenheit = 451;
+        fixedHeating[In.Fahrenheit] = 7;
 #endif
-
-        Assert.That(heating, Has.Property(nameof(Temperature.Celsius)));
+        Assert.That(fixedHeating, Has.Property(nameof(Temperature.Celsius)));
     }
 
     [Test]
