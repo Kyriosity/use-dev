@@ -9,7 +9,7 @@ Alias: _**N-Val**_ :diamond_shape_with_a_dot_inside:
 
 You may find the folklore right above dull but not pointless. Math relies on pure numbers, and computers operate with them. However **and** chiefly, for devs **and** users, the inputs **and** outputs of software abstractions anchor to the material world.
 
-And in the material world, even named values remain meaningless unless categorized. 
+And in the material world, even named values remain meaningless unless classified. 
 
 * _Age_ of `7` can be months and years, `Smith` can be given, surname and trademark.
 * A temperature of `36.6` is natural in _Celsius_ for humans and in _Kelvin_ for supercoductivity.
@@ -28,7 +28,7 @@ Thus applications
  - style procedural like `const absZero_Kelvin = 0` is unambiguous but ugly to the object-oriented sight,
  - implement a tailored solution.
 
-## Solution
+## Answer to the problem
 
 Just a shared one based on the experience of those tailored.
 
@@ -51,6 +51,10 @@ Features and Design decisions\
 |- Indexing\
 |- Fabrics\
 |- Hooks
+
+## Is multifaceted the right word?
+
+Is the term and project not too pretentious, while it's a straightforward conversion?
 
 ## Beyond the first sketch
 
