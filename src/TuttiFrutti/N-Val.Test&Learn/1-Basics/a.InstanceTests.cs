@@ -40,9 +40,4 @@ public class InstanceTests
         temperature.Kelvin = vals.K - bulb;
         Assert.That(temperature.Fahrenheit, Is.Not.EqualTo(vals.F), $"Kelvin={vals.K - bulb}");
     }
-
-    [TestCase]
-    public void DeclareConstants() {
-        Assert.Ignore("Implemented next with fabrics");
-    }
 }

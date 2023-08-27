@@ -1,4 +1,5 @@
 ﻿using Mk.N_Val.Phys.Temperature.Build;
+using Mk.N_Val.Phys.Temperature.Const;
 using N_Val.Phys.Temperature;
 using N_Val.Test_Learn.Setup;
 using System.Numerics;
@@ -29,11 +30,17 @@ public class IndexerTests
     }
 
     [Test]
-    public void ShortcutIndex() {
+    public void ShortenIndex() {
         var temperature = Temperature.Celsius(961.8);
         var absoluteValue = temperature[K];
         temperature[C]++;
         Assert.That(temperature, Has.Property(nameof(Temperature.Kelvin)));
+
+        Assert.That(Melting.Platinum[C], Is.LessThan(Melting.Tungsten[C]));
+
+        var hottestCreated = Plasma.QuarkGluon.CERN_2012[K];
+        Assert.That(hottestCreated, Is.GreaterThan(Sun.Core[K]));
+
     }
 
     private readonly In K = In.Kelvin;

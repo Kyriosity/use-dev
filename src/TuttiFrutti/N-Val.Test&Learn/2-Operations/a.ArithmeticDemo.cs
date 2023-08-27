@@ -1,7 +1,7 @@
 ﻿using Mk.N_Val.Phys.Temperature.Build;
 
 namespace N_Val.Test_Learn.Operations;
-public class ArithmeticsDemo
+public class ArithmeticDemo
 {
     [Test]
     public void HowToAdd() {

@@ -5,7 +5,6 @@ public static class Negative
 
     public static readonly (double K, double C, double F, double delta) Precise = (-1234.567, -1507.717, -2681.8906, delta: 0.00000001);
 
-
     public static readonly (long K, long C, long F, long delta) HugeWhole = (-4_999_999_999_999_999_727, -5_000_000_000_000_000_000, -9_000_000_000_000_000_000 + 32, delta: 1);
 
     public static readonly (long K, long C, long F, long delta) Longest = (-5_124_095_576_030_430_959, -5_124_095_576_030_431_232, -9_223_372_036_854_775_807, delta: 1);

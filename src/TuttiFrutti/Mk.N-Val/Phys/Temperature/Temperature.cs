@@ -1,16 +1,17 @@
-﻿using Mk.N_Val.Phys.Temperature.Conversions;
+﻿using Abc.Err.Sys;
+using Mk.N_Val.Phys.Temperature.Conversions;
 using N_Val;
 using N_Val.Phys.Temperature;
 using System.Numerics;
 
 namespace Mk.N_Val.Phys.Temperature;
 
-public class ConstTemperature<N> : WiredValues<N, In>, ITemp<N> where N : INumber<N>
+public abstract class ConstTemperature<N> : WiredValues<N, In>, ITemp<N> where N : INumber<N>
 {
     public N this[In unit] => Get(unit);
-    public N Kelvin { get; }
-    public N Celsius { get; }
-    public N Fahrenheit { get; }
+    public N Kelvin => NotImplemented.Throw();
+    public N Celsius => NotImplemented.Throw();
+    public N Fahrenheit => NotImplemented.Throw();
 }
 
 public class Temperature<N> : ConstTemperature<N>, ITempEdit<N> where N : INumber<N>

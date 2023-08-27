@@ -11,3 +11,4 @@ public interface ITempEdit<N> : ITemp<N>, IMutableKelvin<N>, IMutableCelsius<N>,
 {
     new N this[In unit] { get; set; }
 }
+

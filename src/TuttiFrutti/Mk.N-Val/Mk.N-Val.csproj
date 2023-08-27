@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Abc\Abc.csproj" />
     <ProjectReference Include="..\N-Val\N-Val.csproj" />
   </ItemGroup>
 
