@@ -15,17 +15,26 @@ public class CustomConsantsTests
         Assert.That(Space.Outer.Kelvin, Is.GreaterThan(Univ.AbsZero.Kelvin));
 
         var ambient = Temperature.Celsius(21.3);
-        var kWhForTea = 4.2 * 0.5 * (Water.Boiling.Kelvin - ambient.Kelvin) / 3600; // well, energy for state trans
+        var kWhForTea = 4.2 * 0.5 * (Water.Boiling.Kelvin - ambient.Kelvin) / 3600; // well, w/out energy for state transition
     }
 
     [TestCase]
     public void Create() {
-        var nonsense = Temperature.Const(kelvin: 1, celsius: 1, fahrenheit: 1);
+        var finalBookTitle = Temperature.Const.Fahrenheit(451);
 
-        var subtractStep = Temperature.Const(-100, -373.15, -639.67);
+        var seasonMaiSeptemberWaterSurface = new[] { 20.27, 22.9, 25.31, 24.88, 22.15 };
+        var averagedSeaWater = Temperature.Const.Celsius(seasonMaiSeptemberWaterSurface.Average());
 
-        var measuredSeaWater = Temperature.Const(kelvin: 27.35, celsius: 23.2, fahrenheit: 1947);
+        var subtractStep = Temperature.Const.KeCeFa(kelvin: -100, celsius: -373.15, fahrenheit: -639.67);
+        var nonsense = Temperature.Const.KeCeFa(1, 1, 1);
 
-        //var finalBookTitle = Temperature.Const.Fahrenheit(451);
+        var roughBenchmark = Temperature.Const.KeCeFa(kelvin: 310.0, celsius: 37.0, fahrenheit: 98.0);
+        var idealAlloyMelting = Temperature.Const.KeCeFa(1_570.7_605_418, 1_297.6_105_418, 2_367.69_897_524);
+    }
+
+    public void CreateExplicitlyTyped() {
+        var middleSeatemperature = Temperature.Celsius<short>(23);
+
+        var alphaCentauriYearlyRecord = Temperature.Kelvin<float>(5015.2f);
     }
 }
