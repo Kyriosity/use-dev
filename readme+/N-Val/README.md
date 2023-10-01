@@ -1,23 +1,22 @@
-# Multifaceted Value
+🚧🚧🚧 ... **DRAFT** ... 🚧🚧🚧
+# Multifaceted Value :diamond_shape_with_a_dot_inside: (_aka_ **N-Val**)
 
-Alias: _**N-Val**_ :diamond_shape_with_a_dot_inside:
-
----
-<div dir="rtl">!Gauges?&nbsp;&nbsp;&nbsp;-&nbsp;300&nbsp;-</dir>
-<div dir="rtl">?What 300?&nbsp;&nbsp;&nbsp;-&nbsp;What gauges&nbsp;-</dir>
+<div dir="rtl">?Gauges&nbsp;-</dir>
+<div dir="rtl">!300&nbsp;-</dir>
+<div dir="rtl">?What 300&nbsp;-</dir>
+<div dir="rtl">?What gauges&nbsp;-</dir>
 <p>&nbsp;</p>
 
-You may find the folklore right above dull but not pointless. Math relies on pure numbers, and computers operate with them. However **and** chiefly, for devs **and** users, the inputs **and** outputs of software abstractions anchor to the material world.
+You may find the folklore right above dull but not pointless. Math relies on pure numbers, computers operate on pure digits, but not developers and users. The inputs **and** outputs of software abstractions sooner or later anchor to the material world and therein even named values remain meaningless unless categorized in units. 
 
-And in the material world, even named values remain meaningless unless classified. 
+* Child's _age_ of `7` can be months and years, `Smith` can be given, surname and trademark.
+* A temperature of `36.6` may speak of humans in _Celsius_ and about superconductivity in _Kelvin_.
+* Close approach to Mars as 33.900.000 sounds credible both in miles and kilometers<sup>:rocket:</sup>.
 
-* _Age_ of `7` can be months and years, `Smith` can be given, surname and trademark.
-* A temperature of `36.6` is natural in _Celsius_ for humans and in _Kelvin_ for supercoductivity.
-* Close approach to Mars as 33.900.000 sounds authentic both in miles and kilometers<sup>:rocket:</sup>.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>:rocket:</sup> <sub>miles [according to NASA](https://mars.nasa.gov/all-about-mars/night-sky/close-approach/)</sub>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>:rocket:</sup> ...miles [according to NASA](https://mars.nasa.gov/all-about-mars/night-sky/close-approach/)
 
-## So what's the problem?
+## What's the challenge?
 
 The object-oriented design fits fine with custom categorization but no popular programming language pre-determines standards and definitions, particularly for physical units. 
 
