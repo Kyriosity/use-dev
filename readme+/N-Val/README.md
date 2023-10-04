@@ -15,10 +15,9 @@ You may find the folklore right above dull but not pointless. Math relies on pur
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>:rocket:</sup> <sub>miles [according to NASA](https://mars.nasa.gov/all-about-mars/night-sky/close-approach/)</sub>
 
+## What's the problem?
 
-## What's the challenge?
-
-The object-oriented design fits fine with custom categorization but no popular programming language pre-determines standards and definitions, particularly for physical units. 
+The object-oriented design fits fine with custom categorization but no mainstream (programming) language pre-determines standards and definitions, particularly for physical units. 
 
 Thus applications 
 
@@ -54,6 +53,12 @@ Features and Design decisions\
 ## Is multifaceted the right word?
 
 Is the term and project not too pretentious, while it's a straightforward conversion?
+
+## Principal decision
+
+### Math ops overload
+
+### Equality overload and Equal override
 
 ## Beyond the first sketch
 
