@@ -7,17 +7,18 @@
 <div dir="rtl">?What gauges&nbsp;-</dir>
 <p>&nbsp;</p>
 
-You may find the folklore right above dull but not pointless. Math relies on pure numbers, computers operate on pure digits, but not developers and users. The inputs **and** outputs of software abstractions sooner or later anchor to the material world and therein even named values remain meaningless unless categorized in units. 
+You may find the folklore right above dull but not pointless. Math relies on pure numbers, computers operate on pure digits but not developers and users. 
+
+The inputs and outputs of applications sooner or later anchor to the material world and therein even named numbers (values❗) remain meaningless unless categorized in (physical ❗) units. 
 
 * Child's _age_ of `7` can be months and years, `Smith` can be given, surname and trademark.
 * A temperature of `36.6` may speak of humans in _Celsius_ and about superconductivity in _Kelvin_.
-* Close approach to Mars as 33.900.000 sounds credible both in miles and kilometers<sup>:rocket:</sup>.
+* Close approach to Mars as 33.900.000 sounds credible in miles and kilometers...\
+<sub>...miles [according to NASA](https://mars.nasa.gov/all-about-mars/night-sky/close-approach/)</sub>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>:rocket:</sup> <sub>miles [according to NASA](https://mars.nasa.gov/all-about-mars/night-sky/close-approach/)</sub>
+BIG NAV !
 
-## What's the problem?
-
-The object-oriented design fits fine with custom categorization but no mainstream (programming) language pre-determines standards and definitions, particularly for physical units. 
+## Status quo
 
 Thus applications 
 
@@ -26,7 +27,11 @@ Thus applications
  - style procedural like `const absZero_Kelvin = 0` is unambiguous but ugly to the object-oriented sight,
  - implement a tailored solution.
 
-## Answer to the problem
+All of these are workarounds and malpractices. LIST OF ACCIDENTS !
+
+The object-oriented design facilitates custom categorization but no mainstream (programming) language offers pre-determined standards and definitions, particularly for physical units and constants. 
+
+## What this project does
 
 Just a shared one based on the experience of those tailored.
 
@@ -60,6 +65,14 @@ Is the term and project not too pretentious, while it's a straightforward conver
 
 ### Equality overload and Equal override
 
+It's a rational rush after implementing the instantiation to overload math operators.
+
+<details>
+<summary>Which will appear meaningless after short pondering</summary> 
+ Even 0 based values won't help
+
+</details>
+ 
 ## Beyond the first sketch
 
 Unions of values as square\
