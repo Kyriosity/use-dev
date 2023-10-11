@@ -9,10 +9,10 @@
 
 + **Techniques/Patterns**\
 |- Downcasting impedance\
-|- [Jagged-props interfaces](readme+/techniques/jagged-props.md)\
-|- **WPF**\
-|--- [Notificaton orchestration](readme+/techniques//mvvm_notification-orchestration.md)\
-|--- [Model-ViewModel cohesion](readme+/techniques/mvvm_vmodel-cohesion.md)
+|- [Jagged interfaces on "fluid" props](readme+/techniques/jagged-props.md)\
+|- **WPF / MVVM**\
+|--- [Notificaton orchestration](readme+/techniques//mvvm/mvvm_notification-orchestration.md)\
+|--- [Model-ViewModel cohesion](readme+/techniques/mvvm/mvvm_vmodel-cohesion.md)
 
 + **Templates**\
 |- Promise-oriented MVVM
