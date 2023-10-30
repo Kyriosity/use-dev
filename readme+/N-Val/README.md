@@ -1,91 +1,29 @@
-# Multifaceted Value
+            🚧🚧🚧 ... **DRAFT** ... 🚧🚧🚧
+            ... REMOVE the LABEL ON the RELEASE ...
+# Multifaceted Value :diamond_shape_with_a_dot_inside: (_aka_ **N-Val**)
 
-Alias: _**N-Val**_ :diamond_shape_with_a_dot_inside:
-
----
-<div dir="rtl">!Gauges?&nbsp;&nbsp;&nbsp;-&nbsp;300&nbsp;-</dir>
-<div dir="rtl">?What 300?&nbsp;&nbsp;&nbsp;-&nbsp;What gauges&nbsp;-</dir>
+<div dir="rtl">?Gauges&nbsp;-</div>
+<div dir="rtl">!300&nbsp;-</div>
+<div dir="rtl">?What 300&nbsp;-</div>
+<div dir="rtl">?What gauges&nbsp;-</div>
 <p>&nbsp;</p>
 
-You may find the folklore right above dull but not pointless. Math relies on pure numbers, and computers operate with them. However **and** chiefly, for devs **and** users, the inputs **and** outputs of software abstractions anchor to the material world.
+ You may find the folklore right above dull but not pointless. Math relies on pure numbers, computers operate on pure digits but not developers and users.  
+ 
+ The inputs and outputs of applications anchor to the material world, where even named values are meaningless without unit, category or benchmark. 
 
-And in the material world, even named values remain meaningless unless classified. 
+- A child's age of `7` can be months and years.
+- Temperature of `36.6` looks native in _Kelvin_ for liquid gases and in _Celsius_ - for medicine.
+- Close approach to Mars as `33.900.000` seems credible in miles and kilometers <sup>(miles according to [NASA](https://mars.nasa.gov/all-about-mars/night-sky/close-approach/))</sup>
+- `Jack` can be given (not only on birth), family, and business name.
+- `1K` in a hard currency has temporal purchase ability with dissimilar curves for essential goods, 1GB of RAM, and gold ounce
 
-* _Age_ of `7` can be months and years, `Smith` can be given, surname and trademark.
-* A temperature of `36.6` is natural in _Celsius_ for humans and in _Kelvin_ for supercoductivity.
-* Close approach to Mars as 33.900.000 sounds authentic both in miles and kilometers<sup>:rocket:</sup>.
+Values in applications may
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>:rocket:</sup> ...miles [according to NASA](https://mars.nasa.gov/all-about-mars/night-sky/close-approach/)
+ - rely on context<sup>:warning:</sup>,
+ - imply a single system of categorization, e.g. SI for physical values<sup>:warning:</sup> (rather limited scope),
+ - style in old fashion like `const Temperature_AbsZero_Kelvin = 0.00` (unambiguous but ugly to the object-oriented sight),
+ - implement a tailored solution - here we will try to make a shared one.
 
-## So what's the problem?
-
-The object-oriented design fits fine with custom categorization but no popular programming language pre-determines standards and definitions, particularly for physical units. 
-
-Thus applications 
-
- - rely on context (and open door for disastrous scenarios),
- - imply a single system of categorization, e.g. SI for physical values (rather limited even within a single culture and location, or enterprise),
- - style procedural like `const absZero_Kelvin = 0` is unambiguous but ugly to the object-oriented sight,
- - implement a tailored solution.
-
-## Answer to the problem
-
-Just a shared one based on the experience of those tailored.
-
-```csharp
-var heating = Temperature.Celsius(27.6);
-var spaceZero = Temperature.Kelvin<double>(2.725);
-var stationAmbient = Temperature.Celsius(20);
-var diffENTROPY = NASA.CALC_ENTROPY(soundEuroAustronaut.Fahrenheit - spaceZero);
-
-```
-
-. NET Solution:\
-|- Tests\
-|- Source code
-
-Features and Design decisions\
-
-|- Arithmetic overloads\
-|- Comparison\
-|- Indexing\
-|- Fabrics\
-|- Hooks
-
-## Is multifaceted the right word?
-
-Is the term and project not too pretentious, while it's a straightforward conversion?
-
-## Beyond the first sketch
-
-Unions of values as square\
-Value vs. presentation\
-Math optimization (function chaining, straightening camel calculations (incl. intermediate overflow), accumulating inaccuracy, caching, unmanaged code, tree search)\
-Differing types beyond a value
-
-### PHYSICAL VALUES ARE A SEPARATE BIG SUB-DOMAIN
-
-Unit systems
-
-### NOT ONLY PHYSICAL VALUES (UValues) 
-
-Currency exchange (especially in years with inflation/deflation)
-
-### NOT ONLY NUMBERS (
-
-Hashes of value\
-Translation\
-Movie scores from diff db
-
-## Implementation
--> .NET Solution\
-Uses:
-|- Jagged-set interfaces
-|- 
-
-| Jagged-set interfaces 
-|- 
-| Jagged-set interfaces 
-|- 
-
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>:warning:</sup>&nbsp;<sub>Both open wide the gate to errors, including ill-famed techno-disasters.</sub>
 
