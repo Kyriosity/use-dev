@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33617.297
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abc", "Abc", "{1614A4D0-2346-4B46-A7BF-08558A77E046}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_🔤 Abc", "_🔤 Abc", "{1614A4D0-2346-4B46-A7BF-08558A77E046}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "🔄️ Parts.Reversible", 
 		Rvrs\README.md = Rvrs\README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_🦉_Test&Learn", "_🦉_Test&Learn", "{F7B61D03-3AA9-45B3-B13F-0943CB215EBA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!🦉_Test&Learn", "!🦉_Test&Learn", "{F7B61D03-3AA9-45B3-B13F-0943CB215EBA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abc", "Abc", "{165121F7-C307-4E2A-A5BD-AE59D3D824CB}"
 	ProjectSection(SolutionItems) = preProject
@@ -22,7 +22,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abc", "Abc", "{165121F7-C30
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Coll", "Coll", "{6F70E2A7-27B9-4520-BEDD-B8F1BE86BB67}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Coll", "Coll", "{85D39578-FB30-4ACF-80A4-C11C44756831}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-Coll", "2-Coll", "{85D39578-FB30-4ACF-80A4-C11C44756831}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "⚙️_setup", "⚙️_setup", "{3682DD02-2AF0-4AE6-940E-128E08F24F0E}"
 EndProject
@@ -68,6 +68,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N-Val", "N-Val\N-Val.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "💠_📖_ Read&Know", "💠_📖_ Read&Know", "{DE33B0E1-1D55-410B-AF1B-14B17A47CBA4}"
 	ProjectSection(SolutionItems) = preProject
+		draft.md = draft.md
 		README_Multifacet-Value(N-Val).md = README_Multifacet-Value(N-Val).md
 	EndProjectSection
 EndProject
@@ -81,7 +82,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestData.N-Val", "TD.N-Val\
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abc.WPF", "Abc.WPF", "{BB318299-B208-45BB-B836-4BE6F405C6B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Win.Clay", "Win.Clay\Win.Clay.csproj", "{644CF48D-3993-4952-9E44-A5961B08509B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Win.Clay", "Win.Clay\Win.Clay.csproj", "{644CF48D-3993-4952-9E44-A5961B08509B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

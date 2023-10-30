@@ -1,8 +1,10 @@
 ﻿using Abc.Err.Sys;
+using N_Val;
 using N_Val.Phys.Temperature;
 using System.Numerics;
 
-readonly struct ConstTemp<N> : ITemp<N> where N : INumber<N>
+namespace Mk.N_Val.Phys.Temperature.Build.Const;
+class Stub<N> : IMultifacetValue<N>, ITemperature<N> where N : INumber<N>
 {
     public N this[In unit] => From(unit);
 
@@ -12,7 +14,7 @@ readonly struct ConstTemp<N> : ITemp<N> where N : INumber<N>
 
     public required N Fahrenheit { get; init; }
 
-    private N From(In unit) {
+    protected virtual N From(In unit) {
         if (In.Kelvin == unit)
             return Kelvin;
         if (In.Celsius == unit)
@@ -20,6 +22,6 @@ readonly struct ConstTemp<N> : ITemp<N> where N : INumber<N>
         if (In.Fahrenheit == unit)
             return Fahrenheit;
 
-        return Argument<In>.Throw(unit.ToString());
+        return Argument<In>.Throw(unit.ToString($"\"{unit}\" not supported"));
     }
 }

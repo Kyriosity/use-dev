@@ -1,7 +1,10 @@
-﻿using System.Numerics;
+﻿namespace N_Val;
 
-namespace N_Val;
+public interface IMultifacetValue<T> { }
 
-public interface IFacetValue { }
-public interface IFacetValue<N> : IFacetValue where N : INumber<N> { }
-
+public interface IValueByUnit<T, U> : IMultifacetValue<T> where U : Enum
+{
+    public T Get(out U unit);
+    public T Get(U unit);
+    public void Set(T value, U unit);
+}

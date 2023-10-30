@@ -12,7 +12,7 @@ public class CustomConsantsTests
         Assert.That(Water.TriplePoint.Kelvin,
             Is.EqualTo(iceMelting.Kelvin).Within(0.02), "ice-water Kelvin");
 
-        Assert.That(Space.Outer.Kelvin, Is.GreaterThan(Univ.AbsZero.Kelvin));
+        Assert.That(Space.Outer.Kelvin, Is.GreaterThan(Gen.AbsZero.Kelvin));
 
         var ambient = Temperature.Celsius(21.3);
         var kWhForTea = 4.2 * 0.5 * (Water.Boiling.Kelvin - ambient.Kelvin) / 3600; // well, w/out energy for state transition
@@ -25,11 +25,11 @@ public class CustomConsantsTests
         var seasonMaiSeptemberWaterSurface = new[] { 20.27, 22.9, 25.31, 24.88, 22.15 };
         var averagedSeaWater = Temperature.Const.Celsius(seasonMaiSeptemberWaterSurface.Average());
 
-        var subtractStep = Temperature.Const.KeCeFa(kelvin: -100, celsius: -373.15, fahrenheit: -639.67);
-        var nonsense = Temperature.Const.KeCeFa(1, 1, 1);
+        var subtractStep = Temperature.Const.All(kelvin: -100, celsius: -373.15, fahrenheit: -639.67);
+        var nonsense = Temperature.Const.All(1, 1, 1);
 
-        var roughBenchmark = Temperature.Const.KeCeFa(kelvin: 310.0, celsius: 37.0, fahrenheit: 98.0);
-        var idealAlloyMelting = Temperature.Const.KeCeFa(1_570.7_605_418, 1_297.6_105_418, 2_367.69_897_524);
+        var roughBenchmark = Temperature.Const.All(kelvin: 310.0, celsius: 37.0, fahrenheit: 98.0);
+        var idealAlloyMelting = Temperature.Const.All(1_570.7_605_418, 1_297.6_105_418, 2_367.69_897_524);
     }
 
     public void CreateExplicitlyTyped() {

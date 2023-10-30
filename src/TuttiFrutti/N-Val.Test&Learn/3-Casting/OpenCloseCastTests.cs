@@ -12,7 +12,7 @@ public class OpenCloseCastDemo
         heating.Fahrenheit = 451;
         heating[In.Fahrenheit] = 7;
 
-        ITemp<int> fixedHeating = heating;
+        ITemperature<int> fixedHeating = heating;
         var fixedCelsius = fixedHeating.Celsius;
 #if FALSE // COULD_COMPILE
         fixedHeating.Fahrenheit = 451;
@@ -36,7 +36,7 @@ public class OpenCloseCastDemo
         Assert.That(calibration, Has.Property(nameof(Temperature.Kelvin)));
     }
 
-    private static ITemp<N> MustBeSomeLogicComplexerThanLambdaOrLinq<N>(IEnumerable<ITemp<N>> points) where N : INumber<N> {
+    private static ITemperature<N> MustBeSomeLogicComplexerThanLambdaOrLinq<N>(IEnumerable<ITemperature<N>> points) where N : INumber<N> {
         var magicNumber = N.CreateChecked(7.77);
         //var res = points.Sum(x => x.Kelvin);
         return Temperature.Celsius(magicNumber);
