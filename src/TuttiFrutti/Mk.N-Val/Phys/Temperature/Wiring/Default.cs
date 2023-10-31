@@ -1,5 +1,4 @@
-﻿using Mk.N_Val.Phys.Temperature.Conversions;
-using N_Val.Phys.Temperature;
+﻿using N_Val.Phys.Temperature;
 using System.Numerics;
 
 namespace Mk.N_Val.Phys.Temperature.Wiring;

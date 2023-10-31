@@ -8,7 +8,7 @@ public class InstanceTests
 {
     [TestCaseSource(typeof(Mix), nameof(Mix.NumericTypes))]
     [TestCaseSource(typeof(Mix), nameof(Mix.HugeValues))]
-    [Ignore("ToDo: Fix")]
+    [TestCaseSource(typeof(Mix), nameof(Mix.ControlPoints))]
     public void CreateAndCrossCompare<N>(string id, (N kelvin, N celsius, N fahrenheit, N delta) vals) where N : INumber<N> {
         var baseK = Temperature.Kelvin(vals.kelvin);
         var baseC = Temperature.Celsius(vals.celsius);
@@ -25,7 +25,6 @@ public class InstanceTests
     }
 
     [TestCaseSource(typeof(Mix), nameof(Mix.NumericTypes))]
-    [Ignore("ToDo: Fix")]
     public void CreateAndReAssign<N>(string id, (N K, N C, N F, N delta) vals) where N : INumber<N> {
         var temperature = Temperature.Kelvin(vals.K);
         var bulb = vals.delta + N.CreateChecked(1);

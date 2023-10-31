@@ -46,4 +46,8 @@ public static class Mix
         new object[] { "- longest", Negative.Longest },
     };
 
+    public readonly static object[] ControlPoints = {
+        new object[] { "F=C intersection", Intersection.FahrnheitWithCelsius },
+        new object[] { "F=K intersection", Intersection.FahrnheitWithKelvin },
+    };
 }
