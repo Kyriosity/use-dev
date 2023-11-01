@@ -7,15 +7,15 @@ public static class Negative
 
     public static readonly (long K, long C, long F, long delta) HugeWhole = (-4_999_999_999_999_999_727, -5_000_000_000_000_000_000, -9_000_000_000_000_000_000 + 32, delta: 1);
 
-    public static readonly (long K, long C, long F, long delta) Longest = (-5_124_095_576_030_430_959, -5_124_095_576_030_431_232, -9_223_372_036_854_775_807, delta: 1);
+    public static readonly (long K, long C, long F, long delta) OpLimit = (-5_124_095_576_030_430_959, -5_124_095_576_030_431_232, long.MaxValue, delta: 1);
 }
 
 public static class Positive
 {
     public static readonly (double K, double C, double F, double delta) Tiny = (0.000_000_000_743, -273.149999999257, -459.6699999986626, 0.000_000_000_001);
     public static readonly (ulong K, ulong C, ulong F, ulong delta) HugeWhole = (10_000_000_000_000_000_273, 10_000_000_000_000_000_000, 18_000_000_000_000_000_032, delta: 1);
-    public static readonly (ulong K, ulong C, ulong F, ulong delta) Longest = (10_248_191_152_060_862_737, 10_248_191_152_060_862_464, 18_446_744_073_709_551_615, delta: 1);
-
+    // ToDo: move to func module
+    public static readonly (ulong K, ulong C, ulong F, ulong delta) OpLimit = (10_248_191_152_060_862_737, 10_248_191_152_060_862_464, 18_446_744_073_709_551_615, delta: 1);
 }
 
 public static class Zero

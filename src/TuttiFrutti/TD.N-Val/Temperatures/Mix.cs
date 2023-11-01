@@ -41,10 +41,10 @@ public static class Mix
             new object[] { "- huge whole", Negative.HugeWhole },
     };
 
-    public readonly static object[] UltraValues = {
-        new object[] { "+ longest", Positive.Longest },
-        new object[] { "- longest", Negative.Longest },
-    };
+    //public readonly static object[] UltraValues = { // ToDo: move to func module
+    //    new object[] { "+ longest", Positive.OpLimit },
+    //    new object[] { "- longest", Negative.OpLimit },
+    //};
 
     public readonly static object[] ControlPoints = {
         new object[] { "F=C intersection", Intersection.FahrnheitWithCelsius },
