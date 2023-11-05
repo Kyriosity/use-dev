@@ -6,9 +6,9 @@ using System.Numerics;
 namespace Mk.N_Val.Phys.Temperature.Build;
 public static class Temperature
 {
-    public static ITempEdit<N> Kelvin<N>(N value) where N : INumber<N> => Temperature<Default>.Kelvin(value);
-    public static ITempEdit<N> Celsius<N>(N value) where N : INumber<N> => Temperature<Default>.Celsius(value);
-    public static ITempEdit<N> Fahrenheit<N>(N value) where N : INumber<N> => Temperature<Default>.Fahrenheit(value);
+    public static ITempEdit<N> Kelvin<N>(N value) where N : INumber<N> => Temperature<UniDirect>.Kelvin(value);
+    public static ITempEdit<N> Celsius<N>(N value) where N : INumber<N> => Temperature<UniDirect>.Celsius(value);
+    public static ITempEdit<N> Fahrenheit<N>(N value) where N : INumber<N> => Temperature<UniDirect>.Fahrenheit(value);
 
     public static class Const
     {

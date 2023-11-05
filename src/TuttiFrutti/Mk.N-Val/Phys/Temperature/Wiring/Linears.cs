@@ -2,7 +2,7 @@
 using System.Numerics;
 
 namespace Mk.N_Val.Phys.Temperature.Wiring;
-public static class UniLinears // KD, ToDo: move to func mdl!
+public static class Linears // KD, ToDo: move to func mdl!
 {
     public static N C2K<N>(N x) where N : INumber<N> => x + N.CreateChecked(Gen.KelvinOffset);
     public static N K2C<N>(N x) where N : INumber<N> => x - N.CreateChecked(Gen.KelvinOffset);
