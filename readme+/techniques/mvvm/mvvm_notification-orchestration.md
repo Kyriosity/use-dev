@@ -3,7 +3,7 @@
 A little reminder. WPF built-in [DataContext](https://learn.microsoft.com/dotnet/desktop/wpf/data/how-to-specify-the-binding-source) has only to raise `PropertyChanged`<sup>:raising_hand:</sup> with the name of the item, which value bound elements must re-evaluate.\
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>:raising_hand:</sup>&nbsp;<sub>'Changed' deceives, since it's the most suitable cause but not the essence of the event.</sub>
 
-WPF developers must know the easy [Microsoft recipe](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/data/how-to-implement-property-change-notification): `set {field = value; OnPropertyChanged();}`. It's enough for flat unsophisticated forms but development meets:
+WPF developers must know the easy [Microsoft recipe](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/data/how-to-implement-property-change-notification): `set {field = value; OnPropertyChanged();}`. It's enough for flat unsophisticated forms but casual development meets ...
 
 * tied and calculated values,
 * groups and hierarchies of cross-dependent ViewModels, 
@@ -13,8 +13,8 @@ WPF developers must know the easy [Microsoft recipe](https://learn.microsoft.com
 <details>
 <summary><ins>&nbsp;And then if a ViewModel were printed on a board it would look:&nbsp;</ins></summary></summary>
 &nbsp;
-   
-![Spaghetti wires snapshot from bigmessowires.com/](../_rsc/images/bigmessowires.com_wired-circuit.jpg)\
+
+[![Spaghetti wires snapshot from bigmessowires.com](../../_rsc/images/bigmessowires.com_wired-circuit.jpg)](https://github.com/Kyriosity/read-write/tree/main/readme%2B/pencraft/readme%2B/_rsc)\
 (*Found on bigmessowires.com*)\
 \________________________________________________________________________________________
 </details>
@@ -26,8 +26,7 @@ WPF developers must know the easy [Microsoft recipe](https://learn.microsoft.com
 <summary><ins>&nbsp;Another snapshot from the same site may give the cue:&nbsp;</ins></summary></summary>
 &nbsp;
 
-![Order illustration of chips from bigmessowires.com/](../_rsc/images/bigmessowires.com_inegrated-circuit.jpg)
-
+[![Spaghetti wires snapshot from bigmessowires.com](../../_rsc/images/bigmessowires.com_inegrated-circuit.jpg)](https://github.com/Kyriosity/read-write/tree/main/readme%2B/pencraft/readme%2B/_rsc)\
 (*Found on bigmessowires.com*)\
 \________________________________________________________________________________________
 </details>
@@ -46,7 +45,7 @@ interface IOrchestrating
 Besides the order, such an approach will add up the next possibilities:
 
 + optimization (e.g. blackout notifications for hidden UI parts),
-+ easy swap of notification schemes,
++ straight "hot swap" of notification schemes,
 + hooks for tracing, logging, whatever.
 
 ## Commands and messages
