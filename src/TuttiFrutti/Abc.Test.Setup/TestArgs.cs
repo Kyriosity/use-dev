@@ -25,7 +25,7 @@ public static class TestArgs
             yield return new TestCaseData("Dummy");
             yield return new TestCaseData("0123456789");
             yield return new TestCaseData(string.Empty);
-            yield return new TestCaseData("                    ");
+            yield return new TestCaseData(string.Empty.PadLeft(11));
             yield return new TestCaseData(Dummies.Text.AbcEnCaps);
             yield return new TestCaseData("ASCII sample: A1&+,-%777_ascii");
 
