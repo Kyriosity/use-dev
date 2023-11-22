@@ -40,7 +40,7 @@ Nothing foul in this practice but an itchy call of "Don't repeat yourself". Furt
 
 |   |  |
 | ------------- | ------------- |
-| Let's regard model as a parent class, <br/>from which ViewModels can be derived:<br/><br/><br/><br/>| ![VModel cohesion diagram](../_rsc/images/MVP_vm-model-cohesion.jpg)  |
+| Let's regard model as a parent class, <br/>from which ViewModels can be derived:<br/><br/><br/><br/>| ![VModel cohesion diagram](../../_rsc/images/MVP_vm-model-cohesion.jpg)  |
 
 ### Downcasting workaround
 
@@ -58,7 +58,7 @@ The idea assumes that model classes are open for development or alteration. The 
 
 ### Related topics
 
-Inheriting miscellaneous ViewModels from the root Model for different needs may use _Jagged interfaces_.
+Inheriting miscellaneous ViewModels from the root Model for different needs may use _Jagged interfaces_.\
 ... TO BE CONTINUED ...
 
 ## Alternatives
