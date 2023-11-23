@@ -9,6 +9,7 @@
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
     <AppDesignerFolder>1-Prop</AppDesignerFolder>
+    <LangVersion>preview</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>

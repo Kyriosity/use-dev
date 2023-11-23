@@ -5,6 +5,7 @@
     <RootNamespace>N_Val</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <LangVersion>preview</LangVersion>
   </PropertyGroup>
 
 </Project>
