@@ -1,4 +1,4 @@
-﻿namespace Units.Phys.Temperature;
+﻿namespace Meas.Units.Phys.Temperature;
 public enum In
 {
     Undefined = 0,

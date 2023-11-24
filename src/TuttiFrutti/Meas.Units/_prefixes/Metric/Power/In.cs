@@ -1,4 +1,4 @@
-﻿namespace Units.Prefix.Metric.Power;
+﻿namespace Meas.Units.Prefix.Metric.Power;
 public enum In // : IPow10
 {
     quecto = -30,
@@ -30,4 +30,5 @@ public enum In // : IPow10
     quetta = 30
 }
 
-public interface IPow10 { }
+
+

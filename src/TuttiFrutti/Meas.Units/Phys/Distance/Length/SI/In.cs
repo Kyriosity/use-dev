@@ -1,5 +1,5 @@
-﻿namespace Units.Phys.Distance.Length.SI;
-public enum In //~ implements IFactored, IRatioScaled
+﻿namespace Meas.Units.Phys.Distance.Length.SI;
+public enum In //~ implements IFactored, IRatioScaled, IBase10 (i.e. IRatioScaled)
 {
     Undefined = 0,
 
@@ -15,3 +15,4 @@ public enum In //~ implements IFactored, IRatioScaled
     Megameter = 1_000_000,
     Gigameter = 1_000_000_000,
 }
+

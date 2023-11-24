@@ -1,4 +1,5 @@
-﻿namespace Units.Fin.Currency.Obsolete;
+﻿namespace Meas.Units.Fin.Currency.Obsolete;
+
 public enum In
 {
     _DM, // Deutshe Mark -> Euro

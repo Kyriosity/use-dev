@@ -1,4 +1,4 @@
-﻿namespace Units.Fin.Currency;
+﻿namespace Meas.Units.Fin.Currency;
 public enum In
 {
     None, // default

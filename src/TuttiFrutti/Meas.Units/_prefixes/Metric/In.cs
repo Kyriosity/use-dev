@@ -1,4 +1,4 @@
-﻿namespace Units.Prefix.Metric;
+﻿namespace Meas.Units.Prefix.Metric;
 public enum In : long
 {
     //zepto = -1_000_000_000_000_000_000_000, // too large for enum
@@ -23,4 +23,3 @@ public enum In : long
     exa = 1_000_000_000_000_000_000,
     //zetta = 1_000_000_000_000_000_000_000,
 }
-

@@ -1,4 +1,4 @@
-﻿namespace Units._prefixes.Binary.Power;
+﻿namespace Meas.Units.Prefix.Binary.Power;
 public enum In // : IPow2
 {
     Base = 0,
@@ -11,5 +11,3 @@ public enum In // : IPow2
     zebi = 70,
     yobi = 80
 }
-
-public interface IPow2 { }
