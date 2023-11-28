@@ -1,4 +1,4 @@
-﻿namespace Meas.Units.Prefix.Metric.Power;
+﻿namespace Meas.Units.Prefix.Metric.Exponent;
 public enum In // : IPow10
 {
     quecto = -30,
