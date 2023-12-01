@@ -4,7 +4,7 @@ using System.Numerics;
 
 namespace Mk.N_Val.Phys.Temperature;
 
-public abstract class ClosedTemp<N, F> : NumWiredValues<N, In, F>, ITemperature<N> where N : INumber<N> where F : IFuncStore<In>, new()
+public abstract class ClosedTemp<N, F> : FuncWiredValues<N, In, F>, ITemperature<N> where N : INumber<N> where F : IFuncStore<In>, new()
 {
     public N this[In unit] => Get(unit);
     public N Kelvin => NotImplemented.Throw();
@@ -14,7 +14,7 @@ public abstract class ClosedTemp<N, F> : NumWiredValues<N, In, F>, ITemperature<
 
 public class Temp<N, F> : ClosedTemp<N, F>, ITempEdit<N> where N : INumber<N> where F : IFuncStore<In>, new()
 {
-    public new N this[In unit] { get => Get(unit); set => Set(value, unit); }
+    public N this[In unit] { get => Get(unit); set => Set(value, unit); }
 
     public new N Kelvin { get => Get(In.Kelvin); set => Set(value, In.Kelvin); }
     public new N Celsius { get => Get(In.Celsius); set => Set(value, In.Celsius); }

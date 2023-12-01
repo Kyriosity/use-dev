@@ -5,12 +5,9 @@ namespace Mk.N_Val.Phys.Temperature.Wiring;
 
 public class UniDirect : IFuncStore<In>
 {
-
-    public Func<N, N> For<N>(In from, In to) where N : INumber<N> {
+    public Func<N, N> Between<N>(In from, In to) where N : INumber<N> {
         if (from == to)
             return x => x;
-
-        var aaa = typeof(N);
 
         if (In.Kelvin == from) {
             if (In.Celsius == to)

@@ -1,7 +1,14 @@
 ﻿using System.Numerics;
 namespace Mk.N_Val;
 
-public interface IFuncStore<U> where U : Enum // ToDo: Refactor to separate module
+public interface IFuncStore<U> : ISameConverter<U> where U : Enum { }
+
+public interface ISameConverter<T>
 {
-    Func<N, N> For<N>(U from, U to) where N : INumber<N>;
+    Func<N, N> Between<N>(T from, T to) where N : INumber<N>;
+}
+
+public interface IDiverseConverter<U> where U : Enum
+{
+    Func<N1, N2> Between<N1, N2>(U from, U to) where N1 : INumber<N1> where N2 : INumber<N2>;
 }
