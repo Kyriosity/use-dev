@@ -1,7 +1,7 @@
-﻿namespace Meas.Units.Base.Si.Derived;
+﻿namespace Meas.Units.Names.Si.Derived;
 internal class Base
 {
-    public static readonly Dictionary<string, string> NameAbbr = new Dictionary<string, string> {
+    public static readonly Dictionary<string, string> NameAbbr = new(StringComparer.InvariantCultureIgnoreCase) {
         { "hertz", "Hz" },
         { "radian", "rad" },
         { "steradian", "sr" },

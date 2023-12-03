@@ -8,6 +8,9 @@
 
   <ItemGroup>
     <Folder Include="Samples\Metric\Extremes\" />
+    <Folder Include="Samples\Phys\Length\" />
+    <Folder Include="Samples\Phys\Temperature\" />
+    <Folder Include="Samples\Phys\Weight\" />
   </ItemGroup>
 
 </Project>

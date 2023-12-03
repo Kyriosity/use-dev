@@ -87,7 +87,7 @@ public static class Multitype
           // centric
           [3_104, "deca", "=", 310_400, "deci"],
           [(uint)4_321, "hecto", "=", (uint)43_210_000, "centi"],
-          [-3_104, "killo", "=", -310_400, "milli"],
+          [-3_104, "kilo", "=", -310_400, "milli"],
           [(long)-3_000_000_000_000, "micro", "=", (long)-3, "mega"],
           [(ulong)1_000_000_000_000_000_000, "nano", "=", (ulong)1, "giga"],
 

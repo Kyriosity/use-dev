@@ -1,8 +1,8 @@
-﻿namespace Meas.Units.Base.Si;
+﻿namespace Meas.Units.Names.Si;
 
 public static class Base
 {
-    public readonly static Dictionary<string, string> NameAbbr = new() {
+    public readonly static Dictionary<string, string> NameAbbr = new(StringComparer.InvariantCultureIgnoreCase) {
         {  "meter", "m" },
         {  "second", "s" },
         {  "gram", "g" },
