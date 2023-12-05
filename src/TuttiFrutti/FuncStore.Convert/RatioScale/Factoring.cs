@@ -7,10 +7,10 @@ public class Factoring<U> : IFuncStore<U> where U : Enum, IConvertible
         var divider = to.ToInt64(null);
 
         return x => {
-            var resAccu = double.CreateChecked(x);
-            resAccu = 0 < divider ? resAccu / divider : resAccu * -divider;
-            resAccu = 0 < multiplier ? resAccu * multiplier : resAccu / -multiplier;
-            return N.CreateChecked(resAccu);
+            var calcAccu = double.CreateChecked(x);
+            calcAccu = 0 < divider ? calcAccu / divider : calcAccu * -divider;
+            calcAccu = 0 < multiplier ? calcAccu * multiplier : calcAccu / -multiplier;
+            return N.CreateChecked(calcAccu);
         };
     }
 }

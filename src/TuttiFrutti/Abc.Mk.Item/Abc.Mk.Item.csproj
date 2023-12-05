@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>preview</LangVersion>
@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Abc.Prop\Abc.Item.csproj" />
+    <ProjectReference Include="..\Code.Setup\Abc.Ext.csproj" />
   </ItemGroup>
 
 </Project>

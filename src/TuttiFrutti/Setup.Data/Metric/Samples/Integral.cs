@@ -1,6 +1,6 @@
-﻿namespace Data.Setup.Samples.Metric.WholeNumbers;
+﻿namespace Data.Setup.Metric.Samples;
 
-public static class Multitype
+public static class MathIntegral
 {
     public readonly static object[][] Based = {
             [(double)1.00, "base", "~", 1_000_000_000_000_000_000_000_000_000_000.00, "quecto"],
@@ -43,13 +43,13 @@ public static class Multitype
             [1_000_000, "base", "=", 1, "mega"],
 
             [1_000_000_000, "base", "=", 1, "giga"],
-            [(uint)4_000_000_000, "base", "=", (uint)4, "giga"],
+            [4_000_000_000, "base", "=", (uint)4, "giga"],
 
             [1_000_000_000_000, "base", "=", 1, "tera"],
 
             [1_000_000_000_000_000, "base", "=", 1, "peta"],
             [(ulong)2_000_000_000_000_000, "base", "=", (ulong)2, "peta"],
-            [(long)-3_000_000_000_000_000, "base", "=", (long)-3, "peta"],
+            [-3_000_000_000_000_000, "base", "=", (long)-3, "peta"],
 
             [(float)1_000_000_000_000_000_000_000.00, "base", "~", (float)1.00, "zetta"],
             [(double)4_000_000_000_000_000_000_000_000.00, "base", "~", (double)4.00, "yotta"],
@@ -88,7 +88,7 @@ public static class Multitype
           [3_104, "deca", "=", 310_400, "deci"],
           [(uint)4_321, "hecto", "=", (uint)43_210_000, "centi"],
           [-3_104, "kilo", "=", -310_400, "milli"],
-          [(long)-3_000_000_000_000, "micro", "=", (long)-3, "mega"],
+          [-3_000_000_000_000, "micro", "=", (long)-3, "mega"],
           [(ulong)1_000_000_000_000_000_000, "nano", "=", (ulong)1, "giga"],
 
 

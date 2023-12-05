@@ -1,4 +1,4 @@
-﻿namespace Abc.Err.Sys;
+﻿namespace Abc.Ext.Errors.Sys;
 public static class InvalidOperation
 {
     public static dynamic Throw() => throw new InvalidOperationException();

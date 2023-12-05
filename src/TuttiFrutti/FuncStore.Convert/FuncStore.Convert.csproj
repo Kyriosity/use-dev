@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Abc\Abc.csproj" />
+    <ProjectReference Include="..\Code.Setup\Abc.Ext.csproj" />
   </ItemGroup>
 
 </Project>

@@ -7,10 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Samples\Metric\Extremes\" />
-    <Folder Include="Samples\Phys\Length\" />
-    <Folder Include="Samples\Phys\Temperature\" />
-    <Folder Include="Samples\Phys\Weight\" />
+    <Folder Include="Metric\Extremes\" />
+    <Folder Include="Metric\Phys\Length\" />
+    <Folder Include="Metric\Phys\Temperature\" />
+    <Folder Include="Samples\" />
   </ItemGroup>
 
 </Project>

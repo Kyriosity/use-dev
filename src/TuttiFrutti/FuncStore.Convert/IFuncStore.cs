@@ -1,4 +1,4 @@
-﻿global using Abc.Err.Sys;
+﻿using Abc.Ext.Errors.Sys;
 using System.Numerics;
 
 namespace FuncStore.Convert;
