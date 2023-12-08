@@ -2,7 +2,7 @@
 |- Guards\
 |- Exceptions extensions\
 |- **WPF**\
-|--- [Bool-Vis. converter](readme+/bool2viz_improved.md)
+|--- [Bool-Vis. converter](readme+/snippets/wpf/bool2viz_improved.md)
 
 + **Parts**\
 |- 💠 [Multifaceted value (U-Val)](readme+/PARTS/U-Val)\
@@ -10,14 +10,14 @@
 |- Variant builders
 
 + **Techniques/Patterns**\
-|- Downcasting impedance\
-|- [Jagged interfaces on "fluid" props](readme+/techniques/jagged-props.md)\
+|- [Downcasting impedance](readme+/decisions/cs-downcast_impedance.md)\
+|- [Jagged interfaces on "fluid" props](readme+/decisions/cs-jagged_props.md)\
 |- **WPF / MVVM**\
-|--- [Notificaton orchestration](readme+/techniques//mvvm/mvvm_notification-orchestration.md)\
-|--- [Model-ViewModel cohesion](readme+/techniques/mvvm/mvvm_vmodel-cohesion.md)
+|--- [Notificaton orchestration](readme+/decisions/mvvm/mvvm-notification_orchestration.md)\
+|--- [Model-ViewModel cohesion](readme+/decisions/mvvm/mvvm-vmodel_cohesion.md)
 
 + **Templates**\
-|- Promise-oriented MVVM (Task as a model)
+|- [Promise-oriented MVVM (Task as a model)](readme+/decisions/cs-think_tasks.md)
 
 + **Testing**\
 |- Gradual Assert
