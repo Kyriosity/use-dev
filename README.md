@@ -5,8 +5,8 @@
 |--- [Bool-Vis. converter](readme+/bool2viz_improved.md)
 
 + **Parts**\
-|- 💠 [Multifaceted value (N-Val)](readme+/N-Val)\
-|- 🔄 [Undo/Redo extension](readme+/undo-redo) 🚧\
+|- 💠 [Multifaceted value (U-Val)](readme+/PARTS/U-Val)\
+|- 🔄 [Undo/Redo extension](readme+/PARTS/Rvrs) 🚧\
 |- Variant builders
 
 + **Techniques/Patterns**\
