@@ -20,4 +20,4 @@
 |--- [Promise-oriented MVVM (Task as a model)](readme+/decisions/cs-think_tasks.md)
 
 + **Testing**\
-|- Gradual Assert
+|- [Gradual assert](decisions/testing/ut-gradual_assert.md)
