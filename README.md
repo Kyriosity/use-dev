@@ -15,9 +15,9 @@
 |--- [Jagged interfaces on "fluid" props](readme+/decisions/cs-jagged_props.md)\
 |- **WPF / MVVM**\
 |--- [Notificaton orchestration](readme+/decisions/mvvm/mvvm-notification_orchestration.md)\
-|--- [Model-ViewModel cohesion](readme+/decisions/mvvm/mvvm-vmodel_cohesion.md)
+|--- [Model-ViewModel cohesion](readme+/decisions/mvvm/mvvm-vmodel_cohesion.md)\
 |- **Templates**\
 |--- [Promise-oriented MVVM (Task as a model)](readme+/decisions/cs-think_tasks.md)
 
 + **Testing**\
-|- [Gradual assert](decisions/testing/ut-gradual_assert.md)
+|- [Gradual assert](readme+/decisions/testing/ut-gradual_assert.md)
