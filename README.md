@@ -20,4 +20,5 @@
 |--- [Promise-oriented MVVM (Task as a model)](readme+/decisions/cs-think_tasks.md)
 
 + **Testing**\
-|- [Gradual assert](readme+/decisions/testing/ut-gradual_assert.md)
+|- Unit tests - 3D remake\
+|--- [Gradual assert](readme+/decisions/testing/ut-gradual_assert.md)
