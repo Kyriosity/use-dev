@@ -1,20 +1,19 @@
             🚧🚧🚧 ... **DRAFT** ... 🚧🚧🚧
             ... REMOVE the LABEL when RELEASED ...
-# Multifaceted Value :diamond_shape_with_a_dot_inside: (_aka_ **U-Val**)
+# Multifaceted Value :diamond_shape_with_a_dot_inside: (includes **U-Val**)
 
 <div dir="rtl">?Gauges&nbsp;-</div>
 <div dir="rtl">!300&nbsp;-</div>
 <div dir="rtl">?What 300&nbsp;-</div>
 <div dir="rtl">?What gauges&nbsp;-</div>
 <p>&nbsp;</p>
-
  You may find the folklore right above dull but not pointless. Math relies on pure numbers, computers operate on pure digits but not developers and users.  
  
- The inputs and outputs of applications anchor to the material world, where even named values are meaningless without unit, category or benchmark. 
+ The inputs and outputs of applications anchor to the material world, where even named values are meaningless without unit, category, or benchmark. 
 
 - A child's age of `7` can be months and years.
 - Temperature of `36.6` looks native in _Kelvin_ for liquid gases and in _Celsius_ - for medicine.
-- Close approach to Mars as `33.900.000` seems credible in miles and kilometers <sup>(miles according to [NASA](https://mars.nasa.gov/all-about-mars/night-sky/close-approach/))</sup>
+- Close approach to Mars as `33'900'000` seems credible in miles and kilometers <sup>(miles according to [NASA](https://mars.nasa.gov/all-about-mars/night-sky/close-approach/))</sup>
 - `Jack` can be family, given (not only on birth), and branded name.
 - `$1'000` or `1'000€` has temporal purchase ability with dissimilar curves for essential goods, 1GB of RAM, and gold ounce
 
@@ -26,6 +25,28 @@ Values in applications may
  - implement a tailored solution - here we will try to make a shared one.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>:warning:</sup>&nbsp;<sub>Both open wide the gate to errors, including ill-famed techno-disasters.</sub>
+
+|- **Features and omissions**\
+|--- Arithmetic ops\
+|--- Comparisson\
+|--- Cache\
+
+|- Handbook\
+|- Description\
+
+|- **Used decisions**\
+|-- General\
+|--- Testing - gradula\
+|-- Specific
+
+|- **Source code**\
+|--- MeasData\
+|--- Funcs\
+|----- Tests\
+|--- U-Val
+
+|- **What's next**\
+|--- ❄️ Project snowflake
 
 ## Features and omissions
 
@@ -39,8 +60,4 @@ This [shabby meme](https://github.com/Kyriosity/read-write/blob/main/readme%2B/p
  
 You must already know the right conclusion: only for common-zero factored units.
 
-## Overload of equality
 
-Short answer no.
-
-## Cache
