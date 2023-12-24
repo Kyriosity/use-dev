@@ -1,4 +1,4 @@
-﻿using Abc.Ext.setup;
+﻿using Abc.Ext.Setup;
 using System.Runtime.CompilerServices;
 
 namespace Abc.Ext.Errors.Sys;

@@ -1,9 +1,8 @@
-﻿namespace Abc.Ext.setup;
+﻿namespace Abc.Ext.Setup;
 internal static class Arg
 {
     internal const string NotSubmitted = "<?n/submitted?>";
     internal const string Required = "<!req/arg!>";
-
 }
 
 internal static class Caller
