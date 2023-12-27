@@ -19,5 +19,8 @@ You can simply create the nu interfaces, as I
 
 + allows easy auto-generation (e.g. with T4)
 
-### Dynamic
+### Stubbing the interface
 
+The easiest way is to have the "full open" class and cast it to the interface.
+
+DYNAMIC !
