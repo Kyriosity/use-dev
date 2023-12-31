@@ -1,6 +1,12 @@
-# C# - Tasks as properties backup
+> 🚧 ... DRAFT ... 🚧
 
-Seasoned developers used to defer initialization/calculation to less or more "heavy" entities. In C# either with `Lazy<...>` or custom code like this:
+# C# - Tasks as model
+
+## Critique: Laziness
+
+In the olden days, developers used to defer initialization/calculation of less or more "heavy" entities. This allows to **a)**&nbsp;load the stuff on&nbsp;demand only, **b)**&nbsp;spread resources peaks, **c)**&nbsp;split suspense, which nevertheless remains.
+
+In C# you can do it either with `Lazy<...>` or custom code like this:
 <details>
 <summary><ins>&nbsp;Deferred loading snipped&nbsp;</ins></summary>
 &nbsp;
@@ -11,16 +17,20 @@ private BigAndHeavy? _ram;
   ```
 </details>
 
-This allows to **a)**&nbsp;load the stuff on&nbsp;demand only, **b)**&nbsp;spread resources peaks, **c)**&nbsp;split suspense. Nonetheless, the suspense remains.
+However nowadays it's an anti-pattern.
 
-The power and storage of home laptops are excessive and mostly idle<sup>:video_game:</sup>, while platforms like .NET ensure the background running of multiple processes. Thus it's not crucial to delay tasks but to complete them as much as possible in the background, and seamlessly produce results when required.
+The power and storage even of home laptops are multicore, excessive, and mostly idle<sup>:video_game:</sup>, while platforms like .NET ensure the background running of multiple processes. The story got inverted - it's not crucial to delay tasks but to complete them as much as possible earlier and in the background, and then seamlessly produce results when required.
 
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>:video_game:</sup> <sub>We mean usual office, browsers, business applications, and dev environments - not high performance servers, top games, video processing or mining.</sub>
+It doesn't matter if you "pre-load" dozen things, of which only one will be selected by the user (e.g. next wizard page dependent on differing selections). Compare to warehouses, where it costs to keep a supply of goods, for a single purpose to be delivered within a day when the customer orders.
 
-## Tasks
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>:video_game:</sup> <sub>We mean usual office, browsers, business applications, and dev environments (not high-performance servers, top games, video processing or mining).</sub>
 
-🚧... TO BE CONTINUED ... 🚧
+## Critique
 
-## Beyond simple scenarios
+Well-known templates (e.g. MVVM), as an idea and shared implementations, give a static picture of models. Developers bind to properties, which are a constant value, calculated, or brought by a service, read from a database.
 
-🚧... TO BE WRITTEN ... 🚧
+Sometimes this works as a clock in "greenhouse" conditions, but with any step inside it begins to UI + DEPENDENCY BREAK
+
+## Proposed solution: VP?
+
+
