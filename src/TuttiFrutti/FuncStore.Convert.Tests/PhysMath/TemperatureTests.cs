@@ -6,15 +6,17 @@ using System.Numerics;
 
 namespace FuncStore.Convert.Tests.RatioScale;
 
-[TestBy<FuncStore.Convert.Temperature.Basic>()] // Options: IGNORE UNPARSED, SKIP
+[TestBy<FuncStore.Convert.Temperature.Basic>()] // ToDecide: arguments may parametrize FuncStore
 public class TemperatureTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible
 {
-    [TestOf<Theory, Nature, PhaseChange>("limit: 3", "ROUND: 0.00", "type: int", "LINQ: Where(C > 0)")] // All
+    [TestOf<Theory, Nature, PhaseChange>()] // ToDecide: arguments may filter and fine-tune test data
     public void Approve<N>((N val, TUnit unit) left, (N val, TUnit unit) right, string name, string cat, string @class) where N : INumber<N> {
         var typFactoryTestCase = typeof(TStore).Name;
         var typInTestCase = typeof(TUnit).FullName;
 
         ConvertBackForth(left, right);
+
+        // Assert call 
     }
 }

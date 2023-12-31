@@ -14,7 +14,7 @@ public abstract class ArrangeAct<TStore, TUnit> : Arrange<TUnit>
         var func = _funcs.For<N>(from.unit, to.unit);
 
         if (func is null)
-            Assert.Inconclusive($"{_funcs}<{typeof(TUnit).Name}>({from}->{to}) not/available");
+            Assert.Ignore($"{_funcs}<{typeof(TUnit).Name}>({from}->{to}) not/available");
         else // ToDo: EVALUATE: FINE! | TOLERATED | FAIL
             Assert.That(func(from.val), Is.EqualTo(to.val).Within(1));
     }
