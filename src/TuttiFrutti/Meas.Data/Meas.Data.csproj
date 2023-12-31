@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="_setup\DirExtensions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Code.Setup\Abc.Ext.csproj" />
+    <ProjectReference Include="..\Meas.Org\Meas.Org.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Mass\Nature\" />
+  </ItemGroup>
+
+</Project>

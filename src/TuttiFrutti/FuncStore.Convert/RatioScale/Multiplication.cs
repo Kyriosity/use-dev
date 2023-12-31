@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 namespace FuncStore.Convert.RatioScale;
-public class Factoring<U> : IFuncStore<U> where U : Enum, IConvertible
+public class Multiplication<U> : IFuncStore<U> where U : Enum, IConvertible
 {
     public Func<N, N> For<N>(U from, U to) where N : INumber<N> {
         var multiplier = from.ToInt64(null);
@@ -14,3 +14,4 @@ public class Factoring<U> : IFuncStore<U> where U : Enum, IConvertible
         };
     }
 }
+

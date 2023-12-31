@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Phys\Weight\" />
+    <Folder Include="Phys\Distance\Angle\" />
   </ItemGroup>
 
   <ItemGroup>

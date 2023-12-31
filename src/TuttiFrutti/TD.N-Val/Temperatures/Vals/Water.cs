@@ -1,4 +1,6 @@
 ﻿namespace TestData.N_Val.Temperatures.Vals;
+
+[Obsolete]
 public static class Water
 {
     public static readonly (float K, float C, float F, float delta) Boiling = (373.15F, 100.0F, 212.00F, 0.00005F);

@@ -1,7 +1,9 @@
 ﻿namespace Meas.Units.Prefix.Metric;
+
+//[Factored]
 public enum In : long
 {
-    //zepto = -1_000_000_000_000_000_000_000, // too large for enum
+    //zepto = -1_000_000_000_000_000_000_000, // too large for long
     atto = -1_000_000_000_000_000_000,
     femto = -1_000_000_000_000_000,
     pico = -1_000_000_000_000,
@@ -23,3 +25,4 @@ public enum In : long
     exa = 1_000_000_000_000_000_000,
     //zetta = 1_000_000_000_000_000_000_000,
 }
+

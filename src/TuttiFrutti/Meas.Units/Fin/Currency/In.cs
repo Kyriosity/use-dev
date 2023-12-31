@@ -1,7 +1,8 @@
 ﻿namespace Meas.Units.Fin.Currency;
 public enum In
 {
-    None, // default
+    Undefined = 0, // default
+
     USD,
     CAD,
     NZD, // New Zealand dollar

@@ -9,6 +9,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Abc\Abc.csproj" />
     <ProjectReference Include="..\Code.Setup\Abc.Ext.csproj" />
+    <ProjectReference Include="..\Math.Phys\Math.Phys.csproj" />
+    <ProjectReference Include="..\Meas.Units\Meas.Units.csproj" />
   </ItemGroup>
 
 </Project>

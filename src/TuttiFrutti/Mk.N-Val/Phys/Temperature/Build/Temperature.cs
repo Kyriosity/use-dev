@@ -4,6 +4,8 @@ using N_Val.Phys.Temperature;
 using System.Numerics;
 
 namespace Mk.N_Val.Phys.Temperature.Build;
+
+[Obsolete]
 public static class Temperature
 {
     public static ITempEdit<N> Kelvin<N>(N value) where N : INumber<N> => Temperature<UniDirect>.Kelvin(value);

@@ -1,5 +1,9 @@
-﻿namespace Meas.Units.Prefix.Metric.Exponent;
-public enum In // : IPow10
+﻿using Meas.Units.Metadata;
+
+namespace Meas.Units.Prefix.Metric.Exponent;
+
+[Factored(10)]
+public enum In
 {
     quecto = -30,
     ronto = -27,

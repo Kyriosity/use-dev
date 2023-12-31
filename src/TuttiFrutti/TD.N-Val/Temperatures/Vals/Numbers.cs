@@ -18,6 +18,7 @@ public static class Positive
     public static readonly (ulong K, ulong C, ulong F, ulong delta) OpLimit = (10_248_191_152_060_862_737, 10_248_191_152_060_862_464, 18_446_744_073_709_551_615, delta: 1);
 }
 
+[Obsolete]
 public static class Zero
 {
     public static readonly (double K, double C, double F, double delta) Kelvin = (0, -273.15, -459.67, 0.000_000_001);
@@ -26,6 +27,7 @@ public static class Zero
 }
 
 
+[Obsolete]
 public static class Intersection
 {
     private static readonly double _intersectionFC = -40;

@@ -1,18 +1,22 @@
-﻿namespace Meas.Units.Phys.Distance.Length.SI;
+﻿using Meas.Units.Metadata;
+
+namespace Meas.Units.Phys.Distance.Length.SI;
+
+[Metric]
 public enum In //~ implements IFactored, IRatioScaled, IBase10 (i.e. IRatioScaled)
 {
     Undefined = 0,
 
-    Nanometer = -1_000_000_000,
-    Micrometer = -1_000_000,
-    Millimeter = -1_000,
-    Centimeter = -100,
-    Decimeter = -10,
-    Meter = 1,
-    DekaMeter = 10,
-    Hectometer = 100,
-    Kilometer = 1_000,
-    Megameter = 1_000_000,
-    Gigameter = 1_000_000_000,
+    nanometer = -1_000_000_000,
+    micrometer = -1_000_000,
+    millimeter = -1_000,
+    centimeter = -100,
+    decimeter = -10,
+    metre = 1,
+    dekameter = 10,
+    hectometer = 100,
+    kilometre = 1_000,
+    megameter = 1_000_000,
+    gigameter = 1_000_000_000,
 }
 
