@@ -8,16 +8,19 @@ public class TestByAttribute<TStore>(params string[] _) : TestFixtureAttribute(_
     private static readonly Type? _typeOfUnit = DeriveUnitArgument(_typeOfStore);
 
     private static Type? DeriveUnitArgument(Type type) {
-        // ToDesign: exact match of interface
-        var allFaces = _typeOfStore.GetInterfaces();
-        var faces = _typeOfStore.GetInterfaces().Where(
-            iface => iface.Name.StartsWith(nameof(IFuncStore)) && 0 < iface.GenericTypeArguments.Length);
+        var funcStoreInterfaces = _typeOfStore.GetInterfaces().Where(t => t.GetInterfaces().Any(b => b == typeof(IFuncStore)));
+        if (!funcStoreInterfaces.Any())
+            Argument<IFuncStore>.Throw($"`{_typeOfStore}` has no interface derived from {nameof(IFuncStore)}");
 
-        if (!faces.Any())
-            Argument<IFuncStore>.Throw($"Generic \"{nameof(IFuncStore)}\" not implemented in {_typeOfStore}");
+        var unitGenerics = funcStoreInterfaces.Where(iface => 0 < iface.GenericTypeArguments.Length)
+            .SelectMany(x => x.GenericTypeArguments).Where(arg => arg.BaseType?.Name == nameof(Enum));
 
-        var arg = faces.First().GenericTypeArguments.SingleOrDefault(x => x.BaseType?.Name == nameof(Enum));
+        var numUnitArgs = unitGenerics.Count();
+        if (0 == numUnitArgs)
+            Argument<IFuncStore>.Throw($"No generic argument refers units for \"{nameof(IFuncStore)}\"");
+        if (1 < numUnitArgs)
+            Argument<IFuncStore>.Throw($"More than one ({numUnitArgs}) generic \"{nameof(IFuncStore)}\" implemented in {_typeOfStore}");
 
-        return arg ?? Argument<IFuncStore>.Throw($"\"{nameof(IFuncStore)}\" has no generic argument of type {nameof(Enum)}");
+        return unitGenerics.First();
     }
 }
