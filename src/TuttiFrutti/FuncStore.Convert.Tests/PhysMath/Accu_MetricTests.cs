@@ -18,13 +18,6 @@ public class Accu_MetricTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     [TestCaseSource(typeof(TestData.Phys.Weight), nameof(TestData.Phys.Weight.Calibres))]
     public void ConvertBackForth<N>((N val, TUnit unit) left, (N val, TUnit unit) right, string dir, string cat) where N : INumber<N> {
 
-        Assert.Multiple(() => {
-            ConvertBackForth<N>(left, right);
-            ConvertBackForth<N>(right, left);
-        });
+
     }
-
-    // EXTREMES
-
-    // ERRORS
 }

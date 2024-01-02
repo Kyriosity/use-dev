@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace Meas.Data.Formats;
+namespace Meas.Data.Setup.Formats;
 
 public readonly struct ISubject<N, TUnit> where N : INumber<N>
 {

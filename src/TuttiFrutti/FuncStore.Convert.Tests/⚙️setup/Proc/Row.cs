@@ -1,8 +1,8 @@
 ﻿using Abc.Ext.DataOps;
-using Meas.Data.Formats;
+using Meas.Data.Setup.Formats;
 using System.Numerics;
 
-namespace FuncStore.Convert.Tests._️setup.Proc;
+namespace FuncStore.Convert.Tests.Setup.Proc;
 static class Row
 {
     internal static IEnumerable<object[]> ByPair<N, TUnit>(IEnumerable<ISubject<N, TUnit>> items, string className) where N : INumber<N> {

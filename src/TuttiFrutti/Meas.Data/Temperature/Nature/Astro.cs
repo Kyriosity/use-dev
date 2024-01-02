@@ -1,7 +1,7 @@
 ﻿using Meas.Data.Setup.Extensions;
 
 namespace Meas.Data.Temperature;
-public partial class Nature : Setup.Synonyms, IDataSource
+public partial class Nature : Setup.Synonyms, IsDataSource
 {
     public static readonly Dir Astro = new() {
         ["Space"] = [(2.725, Kelvin), (-270.425, Celsius), (-454.765, Fahrenheit)],

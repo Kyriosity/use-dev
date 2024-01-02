@@ -1,9 +1,10 @@
 ﻿using Math.Phys.Temperature.Convert;
 using Meas.Units.Phys.Temperature;
 using System.Numerics;
+using static FuncStore.Convert.Temperature.Basic;
 
 namespace FuncStore.Convert.Temperature;
-public class Basic : IFuncStore<In>
+public class Basic : ITempStore
 {
     public Func<N, N> For<N>(In from, In to) where N : INumber<N> {
         if (from == to)
@@ -18,6 +19,11 @@ public class Basic : IFuncStore<In>
         var onRight = available.Keys.Where(x => x.to == to);
 
         return null;
+    }
+
+
+    public interface ITempStore : IFuncStore<In>
+    {
     }
 
     private static IDictionary<(In from, In to), Func<N, N>> direct<N>() where N : INumber<N> {

@@ -1,13 +1,13 @@
-﻿using Meas.Data.Formats;
-using Meas.Data.Setup.Attributes;
+﻿using Meas.Data.Setup.Attributes;
+using Meas.Data.Setup.Formats;
 using System.Reflection;
 
 namespace Meas.Data.Setup.Extensions;
-public interface IDataSource { }
+public interface IsDataSource { }
 
 public static class DataExtensions
 {
-    public static IEnumerable<ISubject<double, string>> Itemize(this IDataSource catalog) {
+    public static IEnumerable<ISubject<double, string>> Itemize(this IsDataSource catalog) {
         var fields = catalog.GetType().GetFields();
         var chapters = fields.Select(f => (name: f.Name, dir: f.GetValue(null) as Dir, options: ApplyAttributes(f)));
 
