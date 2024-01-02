@@ -2,6 +2,16 @@
 
 # Unit test - exploded-view 3D vision
 
+The usual view of unit tests is plain:
+
+```csharp
+[Test]
+Method()
+{
+    Assert(something);
+}
+```
+
 Not only value but % is relative.
 
 3D exploded view
