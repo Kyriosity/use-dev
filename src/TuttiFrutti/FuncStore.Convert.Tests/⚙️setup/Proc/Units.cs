@@ -5,7 +5,7 @@ using System.Numerics;
 namespace FuncStore.Convert.Tests._️setup.Proc;
 static class Units<TUnit> where TUnit : Enum
 {
-    internal static IEnumerable<ISubject<N, TUnit>> SwapType<N>(IEnumerable<ISubject<N, string>> items) where N : INumber<N> {
+    internal static IEnumerable<ISubject<N, TUnit>> CastApplicable<N>(IEnumerable<ISubject<N, string>> items) where N : INumber<N> {
         var unitized = items.Select(item => new ISubject<N, TUnit> {
             Cat = item.Cat, Name = item.Name, Attributes = item.Attributes,
             Entries = ConvertApplicable(item.Entries)

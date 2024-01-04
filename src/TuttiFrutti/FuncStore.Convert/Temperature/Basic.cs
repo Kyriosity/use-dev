@@ -28,6 +28,7 @@ public class Basic : ITempStore
 
     private static IDictionary<(In from, In to), Func<N, N>> direct<N>() where N : INumber<N> {
         // ToDesign: as prop or type
+        // ToDesign: as extendable for other T units classified by num type!
         return new Dictionary<(In, In), Func<N, N>> {
             [(In.Celsius, In.Kelvin)] = UniNumeric.C2K<N>,
             [(In.Kelvin, In.Celsius)] = UniNumeric.K2C<N>,

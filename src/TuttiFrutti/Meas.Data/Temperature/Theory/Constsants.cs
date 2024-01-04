@@ -8,8 +8,9 @@ public partial class Theory : Meas.Data.Temperature.Setup.Synonyms
         [AbsZero] = [(0, Kelvin), (-273.15, Celsius), (-459.67, Fahrenheit)],
         ["0 Celcius"] = [(0, Celsius), (273.15, Kelvin), (32, F)],
         ["0 Fahrenheit"] = [(0, Fahrenheit), (-17.777_8, Celsius), (255.372_2, Kelvin)],
-        ["Max-Planc atomic gas"] = [(-0.000_000_001, Kelvin), (-459.670_000_001_8, F)], // www.mpg.de/research/negative-absolute-temperature
+        ["Celsius-Fahrenheit intersection"] = [(-40, C), (-40, F)],
 
+        ["Max-Planc atomic gas"] = [(-0.000_000_001, Kelvin), (-459.670_000_001_8, F)], // www.mpg.de/research/negative-absolute-temperature
         ["Quark-gluon plasma, CERN 2012"] = [(5_500_000_000_000, Kelvin), (989_9999_999_54, Fahrenheit)],
     };
 }

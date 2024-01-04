@@ -1,7 +1,6 @@
 ﻿using Meas.Data.Setup.Attributes;
 
 namespace Meas.Data.Temperature;
-
 public partial class PhaseChange
 {
     [NotForTest]

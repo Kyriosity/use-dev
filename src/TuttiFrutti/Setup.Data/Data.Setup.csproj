@@ -8,9 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Metric\Extremes\" />
-    <Folder Include="Metric\Phys\Length\" />
-    <Folder Include="Metric\Phys\Temperature\" />
-    <Folder Include="Samples\Phys\Length\" />
   </ItemGroup>
 
 </Project>
