@@ -7,13 +7,19 @@ public class PrecisionAttribute(double delta) : Attribute
 {
     public double Delta => delta;
 
-    public static double? Find(Type type) => Find(type.GetCustomAttributes(true));
+    public static bool Find(Type type, out double delta) => Find(type.GetCustomAttributes(true), out delta);
 
-    public static double? Find(FieldInfo field) => Find(field.GetCustomAttributes(true));
+    public static bool Find(FieldInfo field, out double delta) => Find(field.GetCustomAttributes(true), out delta);
 
-    private static double? Find(object[] attributes) {
-        var attribute = attributes.SingleOrDefault(attr => attr.GetType().Name == nameof(PrecisionAttribute));
+    private static bool Find(object[] attributes, out double delta) {
+        var targetName = MethodBase.GetCurrentMethod()?.DeclaringType?.Name ?? "<attr_name fail/>";
 
-        return attribute is PrecisionAttribute precision ? precision.Delta : null;
+        var attribute = attributes.SingleOrDefault(attr => attr.GetType().Name == targetName);
+
+        if (attribute is PrecisionAttribute found) {
+            delta = found.Delta;
+            return true;
+        }
+        delta = default; return false;
     }
 }
