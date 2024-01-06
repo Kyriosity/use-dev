@@ -1,7 +1,7 @@
-﻿namespace Data.Setup.Metric.Phys;
-
-public static class Weight
+﻿namespace Meas.Data.Calibration.Metric;
+public class Mass
 {
+    // ToDesign: re-design (add diff types ?and? move to masses)
     public readonly static object[][] Calibres = {
         [1.5, "gram", "=", 0.0015, "kilogram"],
         [-3.37, "gram", "=", -3_370.00, "milligram"],
