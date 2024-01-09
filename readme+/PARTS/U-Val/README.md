@@ -7,6 +7,7 @@
 <div dir="rtl">?What 300&nbsp;-</div>
 <div dir="rtl">?What gauges&nbsp;-</div>
 <p>&nbsp;</p>
+
  You may find the folklore right above dull but not pointless. Math relies on pure numbers, computers operate on pure digits but not developers and users.  
  
  The inputs and outputs of applications anchor to the material world, where even named values are meaningless without unit, category, or benchmark. 
