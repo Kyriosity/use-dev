@@ -1,10 +1,8 @@
-﻿using Meas.Data.Setup.Attributes;
-
-namespace Meas.Data.Length.Earth;
+﻿namespace Meas.Data.Length.Earth;
 
 public partial class Elevations
 {
-    public static readonly Dir Mounts = new() {
+    Dir Mounts = new() {
         ["Everest/Qomolangma"] =
            [(8_848.86, meter), (29_031.692_91, feet), (8.848_86, km), (5.498426688, mile)],
         ["K2/Chogori"] =
@@ -28,8 +26,7 @@ public partial class Elevations
         ["Chimborazo"] = [(6_263.47, m)], // furthest pt from Earth center
     };
 
-    [NotForTest]
-    public static readonly Dir Depressions = new() {
+    Dir Depressions = new() {
         ["Dead Sea"] = [(-413, m), (-1_354.99, foot)],
         ["Lac 'Assal"] = [(-155, m), (-508.53, foot)],
         ["San Julian's Great Depression"] = [(-105, m), (-344.488, foot)],

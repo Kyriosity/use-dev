@@ -4,7 +4,7 @@ namespace Meas.Data.Length.Astro;
 public partial class Distances
 {
     [Precision(1)]
-    public static readonly Dir Galaxy = new() {
+    Dir Galaxy = new() {
         ["Sun<>Proxima centauri"] = [
             (4.246_5, light_year),
             (pcProxC, parsec),

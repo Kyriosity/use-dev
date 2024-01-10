@@ -1,7 +1,7 @@
 ﻿namespace Meas.Data.Temperature;
 public partial class PhaseChange
 {
-    public static readonly Dir Vaporization = new() {
+    Dir Vaporization = new() {
         [water] = [(99.97, Celsius), (99.97 + KelvinOffset, Kelvin), (211.946, Fahrenheit)],
         [table_salt] = [(1_465, Celsius), (2_669, Fahrenheit)],
         [jet_fuel] = [(176, Celsius), (348.8, Fahrenheit)],

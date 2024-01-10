@@ -4,7 +4,7 @@ namespace Meas.Data.Mass;
 public partial class Astro
 {
     [NotForTest]
-    public static readonly Dir Galaxy = new() {
+    Dir Galaxy = new() {
         //["1I/2017 U1"] = [(, Earth_mass),] // aka ʻOumuamua, 1st interstellar object detected passing through the Solar System
 
         ["Sirius A"] = [(2.063, solar_mass),],

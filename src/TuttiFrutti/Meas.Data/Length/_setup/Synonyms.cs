@@ -1,5 +1,5 @@
 ﻿namespace Meas.Data.Length.Setup;
-public abstract class Synonyms // ToDo: rename 
+public abstract class Synonyms
 {
     protected const string millimeter = "millimeter";
     protected const string mm = "millimeter";

@@ -1,7 +1,7 @@
 ﻿namespace Meas.Data.Length.Earth;
 public partial class Elevations
 {
-    public static readonly Dir Buildings = new() {
+    Dir Buildings = new() {
         ["Tower of Babel"] = [(2_484, m), (8_149.606, ft), (5_433, "cubits"), (2, "palms")], // parable; according to The Book of Jubilees 
 
         ["Great Pyramid of Giza"] = [(146.6, metre), (480.97113, feet), (280, "cubit")], // original

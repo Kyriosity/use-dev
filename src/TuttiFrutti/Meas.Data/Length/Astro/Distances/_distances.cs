@@ -1,8 +1,6 @@
-﻿using Meas.Data.Setup.Extensions;
+﻿namespace Meas.Data.Length.Astro;
 
-namespace Meas.Data.Length.Astro;
-
-public partial class Distances : IsDataSource
+public partial class Distances
 {
     protected const string astronomical_unit = nameof(astronomical_unit);
     protected const string astro_unit = astronomical_unit;

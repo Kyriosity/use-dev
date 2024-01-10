@@ -4,7 +4,7 @@ namespace Meas.Data.Length.Earth;
 public partial class Distances
 {
     [NotForTest("precision too low")] // consider specifying delta of data as +/-.5
-    public static readonly Dir Railways = new() {
+    Dir Railways = new() {
         ["Sydney-Perth"] = [(4_352, km), (2_704, miles), (2_350, nmi)],
         ["Kanyakumari, Tamil Nadu-Dibrugarh, Assam"] = [(4_237, km), (2_633, miles), (2_336, nmi)],
         ["Toronto-Vancouver"] = [(4_466, km), (2_775, miles), (2_411.5, nmi)],

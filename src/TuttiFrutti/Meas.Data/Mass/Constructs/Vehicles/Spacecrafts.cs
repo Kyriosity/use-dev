@@ -1,7 +1,7 @@
 ﻿namespace Meas.Data.Mass;
 public partial class Constructs
 {
-    public static readonly Dir Spacecrafts = new() {
+    Dir Spacecrafts = new() {
         ["Saturn I, dry mass"] = [(1_124_000, lb), (509_838, kg)],
 
         ["Voyager I, dry mass"] = [(721.9, kg), (1591.517_1, lb)],

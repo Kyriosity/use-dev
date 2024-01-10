@@ -4,7 +4,7 @@ namespace Meas.Data.Temperature;
 public partial class PhaseChange
 {
     [NotForTest]
-    public static readonly Dir FlashPoint = new() {
+    Dir FlashPoint = new() {
         [jet_fuel] = [(38, Celsius), (100.4, Fahrenheit)],
 
         [acetone] = [(-20, Celsius), (-4, Fahrenheit)],

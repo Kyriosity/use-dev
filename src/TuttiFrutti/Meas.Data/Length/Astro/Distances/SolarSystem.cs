@@ -4,7 +4,7 @@ namespace Meas.Data.Length.Astro;
 public partial class Distances
 {
     [NotForTest("Draft")]
-    public static readonly Dir SolarSystem = new() {
+    Dir SolarSystem = new() {
         ["Moon orbit"] = [(0, "asda"), (0, "ddddd")]
 
         ,

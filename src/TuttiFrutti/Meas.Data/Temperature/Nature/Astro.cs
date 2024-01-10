@@ -1,13 +1,12 @@
 ﻿using Meas.Data.Setup.Attributes;
-using Meas.Data.Setup.Extensions;
 
 namespace Meas.Data.Temperature;
 
 [Precision(1)]
-public partial class Nature : Setup.Synonyms, IsDataSource
+public partial class Nature : Setup.Synonyms
 {
     [Precision(0.5)]
-    public static readonly Dir Astro = new() {
+    Dir Astro = new() {
         ["Space"] = [(2.725, Kelvin), (-270.425, Celsius), (-454.765, Fahrenheit)],
 
         ["Sun core"] = [(15_000_000, K), (27_000_000, F)],

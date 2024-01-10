@@ -1,11 +1,8 @@
-﻿using Meas.Data.Setup.Attributes;
-
-namespace Meas.Data.Length.Earth;
+﻿namespace Meas.Data.Length.Earth;
 
 public partial class Elevations
 {
-    [NotForTest]
-    public static readonly Dir TechTowers = new() {
+    Dir TechTowers = new() {
         ["Warsaw radio mast"] = [(646.38, m), (2_120.669, ft)], // collapsed in 1991
 
         ["Petronius Oil Platform"] = [(640, m), (2100, ft)],  // partially submerged

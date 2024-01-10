@@ -4,7 +4,7 @@ public partial class Theory : Meas.Data.Temperature.Setup.Synonyms
     public const string AbsZero = "Absolute zero";
     public const string AbsoluteZero = "Absolute zero";
 
-    public static readonly Dir Constants = new() {
+    Dir Constants = new() {
         [AbsZero] = [(0, Kelvin), (-273.15, Celsius), (-459.67, Fahrenheit)],
         ["0 Celcius"] = [(0, Celsius), (273.15, Kelvin), (32, F)],
         ["0 Fahrenheit"] = [(0, Fahrenheit), (-17.777_8, Celsius), (255.372_2, Kelvin)],

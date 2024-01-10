@@ -4,7 +4,7 @@ namespace Meas.Data.Temperature;
 public partial class PhaseChange
 {
     [NotForTest]
-    public static readonly Dir Autoignition = new() {
+    Dir Autoignition = new() {
         [jet_fuel] = [(210, Celsius), (410, Fahrenheit)],
 
         [Lead] = [(850, Celsius), (1_562, Fahrenheit)],

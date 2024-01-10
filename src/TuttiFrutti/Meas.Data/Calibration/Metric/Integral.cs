@@ -1,9 +1,8 @@
 ﻿using Meas.Data.Calibration.Setup;
-using Meas.Data.Setup.Extensions;
 
 namespace Meas.Data.Calibration.Metric;
 
-public class MathIntegral : Synonyms, IsDataSource
+public class MathIntegral : Synonyms
 {
     Rec Based = [
         ((double)1.00, BASE, "~", 1_000_000_000_000_000_000_000_000_000_000.00, "quecto"),

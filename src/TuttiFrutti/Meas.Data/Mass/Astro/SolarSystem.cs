@@ -5,7 +5,7 @@ namespace Meas.Data.Mass;
 public partial class Astro
 {
     [Precision(.000_000_1)]
-    public static readonly Dir SolarSystem = new() {
+    Dir SolarSystem = new() {
         ["Sun"] = [(1, astronomical_unit), (1_988_920 * yotta, kilograms), (332_946.0487, Earth_mass)], // 332946.0487±0.0007
         ["Earth"] = [(1, Earth_mass), (5.9722 * ronna, kg), (5.9722 * yotta, kg)],
         ["Moon"] = [(0.012_300_037_1, Earth_mass),],

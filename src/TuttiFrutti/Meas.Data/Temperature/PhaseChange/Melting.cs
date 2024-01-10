@@ -1,10 +1,7 @@
-﻿using Meas.Data.Setup.Attributes;
-
-namespace Meas.Data.Temperature;
+﻿namespace Meas.Data.Temperature;
 public partial class PhaseChange
 {
-    [NotForTest]
-    public static readonly Dir Melting = new() {
+    Dir Melting = new() {
         [water] = [(0.01, Celsius), (0.01 + KelvinOffset, Kelvin), (32.018, Fahrenheit)],
         [table_salt] = [(800.7, Celsius), (1_473.3, Fahrenheit)],
         [jet_fuel] = [(-47, Celsius), (-52.6, Fahrenheit)],

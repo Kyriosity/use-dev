@@ -1,7 +1,7 @@
 ﻿namespace Meas.Data.Length.Earth;
 public partial class Elevations
 {
-    public static readonly Dir Trenches = new() {
+    Dir Trenches = new() {
         // Pacific
         ["Mariana Challenger Deep"] = [
             (-10_920, meters),

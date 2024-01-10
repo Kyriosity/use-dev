@@ -1,7 +1,7 @@
 ﻿namespace Meas.Data.Mass;
 public partial class Constructs
 {
-    public static readonly Dir Aircrafts = new() {
+    Dir Aircrafts = new() {
         ["Airbus A380, max. takeoff"] = [(575_000, kg), (1_267_658, lb)],
         ["Boeing 747, max. takeoff"] = [(833_000, lb), (377_842.444, kg)],
 
