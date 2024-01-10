@@ -18,7 +18,4 @@ public static class Filter
 
         return casted.Select(x => x.val);
     }
-
-    public static void ByCast<T>(IEnumerable<object> source, Action selector, out int[] matchIndeces) where T : class {
-    }
 }
