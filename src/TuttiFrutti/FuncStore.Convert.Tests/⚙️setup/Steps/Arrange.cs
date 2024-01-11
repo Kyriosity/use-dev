@@ -27,19 +27,23 @@ public abstract class Arrange<TUnit> where TUnit : Enum, IConvertible
     }
 
     static IEnumerable<object[]> MergeTestSources(Type @class) {
+
+
         if (PrecisionAttribute.Find(@class, out var delta)) {
             // ToDo: propagate/store as default !
         }
 
         var allFields = @class.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static).ToList();
         var fields = allFields.Where(x => !NotForTestAttribute.Find(x, out var _));
-        var source = fields.Select(x => (name: x.Name, value: x.GetValue(Activator.CreateInstance(@class)),
-        precision: (set: PrecisionAttribute.Find(x, out var delta), delta: delta)));
+        var @object = Activator.CreateInstance(@class);
+        var source = fields.Select(x => (name: x.Name, value: x.GetValue(@object), precision:
+            (set: PrecisionAttribute.Find(x, out var delta), delta: delta)));
 
         var datasource = new object[][] { };
-        datasource = datasource.Concat(FromRecs(source)).ToArray();
-        datasource = datasource.Concat(FromDirs(source)).ToArray();
-        // ToDo: Add REVERSE PAIRS !
+
+        Parallel.ForEach(Retrievers, func => {
+            datasource = datasource.Concat(func(source)).ToArray();
+        });
 
         return datasource;
     }
@@ -54,4 +58,6 @@ public abstract class Arrange<TUnit> where TUnit : Enum, IConvertible
 
         return expanded;
     }
+
+    private static IEnumerable<Func<IEnumerable<RawData>, IEnumerable<object[]>>> Retrievers => [FromRecs, FromDirs];
 }
