@@ -8,7 +8,6 @@ using Cross = Meas.Units.Phys.Distance.Length.Cross;
 using Earth = Meas.Data.Length.Earth;
 using Metric = Meas.Units.Prefix.Metric;
 
-
 namespace FuncStore.Convert.Tests.PhysMath.Dims;
 
 [TestBy<Multiplication<Metric.In>>()]
@@ -17,10 +16,9 @@ namespace FuncStore.Convert.Tests.PhysMath.Dims;
 public class LengthsTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum
 {
-
     [TestOf<Earth.Distances, Earth.Elevations>()]
-    public void Approve<N>((N val, TUnit unit) left, (N val, TUnit unit) right, string name, string cat, string @class) where N : INumber<N> {
-
+    public override void Convert<N>(N subject, TUnit subjUnit, N expected, TUnit expUnit, string name, string cat, double? delta) {
+        base.Convert(subject, subjUnit, expected, expUnit, name, cat, delta);
     }
 
     // ToDo: SEPARATE TESTS !!!

@@ -5,22 +5,33 @@ using System.Numerics;
 namespace FuncStore.Convert.Tests._️setup.Proc;
 static class Units<TUnit> where TUnit : Enum
 {
-    internal static IEnumerable<ISubject<N, TUnit>> CastApplicable<N>(IEnumerable<ISubject<N, string>> items) where N : INumber<N> {
-        var unitized = items.Select(item => new ISubject<N, TUnit> {
-            Cat = item.Cat, Name = item.Name, Attributes = item.Attributes,
-            Entries = ConvertApplicable(item.Entries)
-        });
+    internal static IEnumerable<ISubject<N, TUnit>> SwapApplicable<N>(IEnumerable<ISubject<N, string>> items) where N : INumber<N> {
+        var unitized = items.Select(x => new ISubject<N, TUnit> {
+            Cat = x.Cat, Name = x.Name, Delta = x.Delta, Entries = SwapApplicable(x.Entries)
+        }).ToList();
 
         return unitized;
     }
 
-    private static IEnumerable<(N, TUnit)> ConvertApplicable<N>(IEnumerable<(N, string)> items) where N : INumber<N> {
+    internal static object[][] SwapApplicable(IEnumerable<object[]> source, int[] indeces) {
+        var unitCasted = source.Select(x => (success: TryCast(x, indeces, out var cast), result: cast.ToArray()))
+            .Where(x => x.success).Select(x => x.result);
+        return unitCasted.ToArray();
+    }
 
-        var unitized = items.Select(x => (value: x.Item1, success: Match.TryLoose(x.Item2, out TUnit? match), unit: match));
+    internal static bool TryCast(object[] raw, int[] indeces, out IEnumerable<object> casted) {
+        var units = indeces.Select(i => (success: Match.TryLoose(raw[i] as string, out TUnit? unit), result: unit, index: i))
+            .ToArray();
 
-        // ToDo: UNPARSED units ! (AS SEPARATE TEST ?)
+        casted = raw.Select((x, index) => indeces.Contains(index) ? units.Single(u => u.index == index).result : x);
 
-        var unparsed = new List<string>(); // unitized.Where(x => !x.success).Select(;
-        return unitized.Where(x => x.success).Select(x => (value: x.value, unit: x.unit));
+        return units.All(x => x.success);
+    }
+
+    private static IEnumerable<(N, TUnit)> SwapApplicable<N>(IEnumerable<(N value, string unit)> source) where N : INumber<N> {
+        var casted = source.Select(x => (value: x.value, success: Match.TryLoose(x.unit, out TUnit? match), unit: match));
+        var unitized = casted.Where(x => x.success).Select(x => (value: x.value, unit: x.unit));
+
+        return unitized;
     }
 }

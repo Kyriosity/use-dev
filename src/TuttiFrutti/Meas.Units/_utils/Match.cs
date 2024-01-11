@@ -36,11 +36,12 @@ public static class Match
         if (prefixed == raw)
             return Parse.Try<U>("base", out match);
 
-        var extra = raw.Substring(0, raw.Length - prefixed.Length);
-
+        var extra = raw[..^prefixed.Length]; // == raw.Substring(0, raw.Length - prefixed.Length)
         return Parse.Try<U>(extra, out match);
     }
 
-    private static readonly string[] _baseNames = [.. Si.Base.NameAbbr.Keys.ToArray(), .. Si.Derived.Base.NameAbbr.Keys.ToArray(), .. Si.Accepted.Base.NameAbbr.Keys.ToArray()];
-
+    private static readonly string[] _baseNames = [
+        .. Si.Base.NameAbbr.Keys.ToArray(),
+        .. Si.Derived.Base.NameAbbr.Keys.ToArray(),
+        .. Si.Accepted.Base.NameAbbr.Keys.ToArray()];
 }

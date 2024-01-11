@@ -2,34 +2,55 @@
 using FuncStore.Convert.Tests.Setup.Proc;
 using Meas.Data.Setup.Attributes;
 using Meas.Data.Setup.Extensions;
-using Meas.Data.Setup.Formats;
+using System.Reflection;
+using RawData = (string name, object value, (bool set, double? delta) precision);
 
 namespace FuncStore.Convert.Tests.Setup.Steps;
 
 [TestFixture]
 public abstract class Arrange<TUnit> where TUnit : Enum, IConvertible
 {
+    protected virtual double DefaultDelta { get; private set; } = 0;
 
     [OneTimeSetUp]
     public void Init() {
-        DefaultDelta = PrecisionAttribute.Find(this.GetType()) ?? DefaultDelta;
+        if (PrecisionAttribute.Find(this.GetType(), out var delta))
+            DefaultDelta = (double)delta;
     }
 
-    protected virtual double DefaultDelta { get; private set; } = 0;
+    static IEnumerable<object[]> CompileTestSource(Type[] catalogs, string[] args) {
+        if (args is not null && args.Any())
+            Console.WriteLine($"arguments supplied but not supported\n(\"{string.Join("\", \"", args)}\")");
 
-
-    static IEnumerable<object[]> MakeTestSource(Type[] catalogs, string[] args) {
-        return catalogs.SelectMany(Declassify);
+        return catalogs.Where(x => !NotForTestAttribute.Find(x, out var _))
+            .SelectMany(MergeTestSources);
     }
 
-    static IEnumerable<object[]> Declassify(Type @class) {
-        var precision = @class.GetCustomAttributes(true).SingleOrDefault(x => x.GetType().Name == nameof(PrecisionAttribute));
-        var delta = PrecisionAttribute.Find(@class);
-        var @object = Activator.CreateInstance(@class);
+    static IEnumerable<object[]> MergeTestSources(Type @class) {
+        if (PrecisionAttribute.Find(@class, out var delta)) {
+            // ToDo: propagate/store as default !
+        }
 
-        var itemized = (@object as IsDataSource)?.Itemize() ?? new List<ISubject<double, string>>();
-        var unitsAssigned = Units<TUnit>.CastApplicable(itemized);
-        var expanded = Row.ByPair(unitsAssigned.Where(x => 1 < x.Entries.Count()), @class.Name);
+        var allFields = @class.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static).ToList();
+        var fields = allFields.Where(x => !NotForTestAttribute.Find(x, out var _));
+        var source = fields.Select(x => (name: x.Name, value: x.GetValue(Activator.CreateInstance(@class)),
+        precision: (set: PrecisionAttribute.Find(x, out var delta), delta: delta)));
+
+        var datasource = new object[][] { };
+        datasource = datasource.Concat(FromRecs(source)).ToArray();
+        datasource = datasource.Concat(FromDirs(source)).ToArray();
+        // ToDo: Add REVERSE PAIRS !
+
+        return datasource;
+    }
+
+    private static IEnumerable<object[]> FromRecs(IEnumerable<RawData> source) =>
+        Units<TUnit>.SwapApplicable(TestSource.FromRecords(source), DataRow.UnitsIndeces);
+
+    private static IEnumerable<object[]> FromDirs(IEnumerable<RawData> source) {
+        var itemized = TestSource.FromMeasurements(source);
+        var unitsAssigned = Units<TUnit>.SwapApplicable(itemized);
+        var expanded = DataRow.ThroughPair(unitsAssigned.Where(x => 1 < x.Entries.Count()));
 
         return expanded;
     }

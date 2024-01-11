@@ -4,21 +4,21 @@ namespace FuncStore.Convert.Tests.Setup.Steps;
 public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit>
      where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible
 {
-    public virtual void Compare<N>((N val, TUnit unit) source, (N val, TUnit unit) expect, double? delta,
-        string name, string cat = "", string @class = "") where N : INumber<N> {
+    public virtual void Convert<N>(N subject, TUnit subjUnit, N expected, TUnit expUnit, string name, string cat, double? delta)
+        where N : INumber<N> {
 
-        var func = _funcs.For<N>(source.unit, expect.unit);
+        var func = _funcs.For<N>(subjUnit, expUnit);
         if (func is null)
-            Assert.Ignore($"N/A: {_funcs} ({source.unit}->{expect.unit})");
+            Assert.Ignore($"N/A: {_funcs} ({subjUnit}->{expUnit})");
 
         N result = default;
         try {
-            result = func(source.val);
+            result = func(subject);
         } catch (Exception exception) {
             Assert.Fail($"{nameof(Exception)}: \"{exception.Message}\"");
         }
 
-        Assert.That(result, Is.EqualTo(expect.val).Within(delta ?? DefaultDelta));
+        Assert.That(result, Is.EqualTo(expected).Within(delta ?? DefaultDelta));
 
         //    Assert.Pass($"{'\u25CF'} {'\u26AA'} {'\u26AB'} {'\u272A'}\n" +
         //$" {'\u274D'} {'\u2B24'} {'\u2B55'} {'\u25D7'} {'\u25E0'} > {'\u25EF'} {'\u2B55'}\n" +

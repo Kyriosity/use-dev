@@ -24,7 +24,6 @@
     <ProjectReference Include="..\Meas.Org\Meas.Org.csproj" />
     <ProjectReference Include="..\Meas.Units\Meas.Units.csproj" />
     <ProjectReference Include="..\NUnit.Ext\Abc.Ext.NUnit.csproj" />
-    <ProjectReference Include="..\Setup.Data\Data.Setup.csproj" />
   </ItemGroup>
 
 </Project>
