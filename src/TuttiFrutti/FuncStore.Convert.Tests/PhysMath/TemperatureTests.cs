@@ -12,9 +12,9 @@ namespace FuncStore.Convert.Tests.RatioScale;
 public class TemperatureTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible
 {
-    [TestOf<Theory, PhaseChange, Nature>]
-    public override void Convert<N>(N leftVal, TUnit leftUnit, N rightVal, TUnit rightUnit, string name, string cat, double? delta) {
-        base.Convert(leftVal, leftUnit, rightVal, rightUnit, name, cat, delta);
+    [TestOf<Constants, PhaseChange, Nature>]
+    public override void Match<N>(N leftVal, TUnit leftUnit, N rightVal, TUnit rightUnit, string name, string cat, double? delta) {
+        base.Match(leftVal, leftUnit, rightVal, rightUnit, name, cat, delta);
     }
 }
 

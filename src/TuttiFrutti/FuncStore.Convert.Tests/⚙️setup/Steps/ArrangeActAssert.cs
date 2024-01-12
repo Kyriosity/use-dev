@@ -4,7 +4,7 @@ namespace FuncStore.Convert.Tests.Setup.Steps;
 public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit>
      where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible
 {
-    public virtual void Convert<N>(N subject, TUnit subjUnit, N expected, TUnit expUnit, string name, string cat, double? delta)
+    public virtual void Match<N>(N subject, TUnit subjUnit, N expected, TUnit expUnit, string name, string cat, double? delta)
         where N : INumber<N> {
 
         var func = _funcs.For<N>(subjUnit, expUnit);
@@ -25,9 +25,19 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
         //$"⭐ ⭐ {'\u25D2'} {'\u25D0'} {'\u2730'} {'\u2B50'}");
     }
 
-    public virtual void ProveNotAvailable<N>(TUnit from, TUnit to) where N : INumber<N> {
+
+    // HOW TO OVERRIDE METHOD TWO TIMES ?
+    public virtual void Mismatch<N>() {
+        // ToDo: 
+    }
+
+    public virtual void MissFunc<N>(TUnit from, TUnit to) where N : INumber<N> {
         var func = _funcs.For<N>(from, to);
 
-        Assert.That(func, Is.Null, $"{from}->{to} must be not/avaiable");
+        Assert.That(func, Is.Null, $"{from}->{to} must be not avaiable but found");
+    }
+
+    public virtual void ResultException<T>() where T : Exception {
+        //Assert.Throws<T>() { }
     }
 }
