@@ -9,7 +9,7 @@ using Metric = Meas.Units.Prefix.Metric;
 namespace FuncStore.Convert.Tests.RatioScale;
 
 [TestBy<Multiplication<Metric.In>>()]
-[TestBy<DecimalExponenting<Metric.Exponent.In>>()]
+[TestBy<Exponentiation<Metric.Exponent.In>>()]
 
 [Precision(.000_000_1)]
 public class Accu_MetricTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>

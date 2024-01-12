@@ -10,7 +10,7 @@ using Metric = Meas.Units.Prefix.Metric;
 namespace FuncStore.Convert.Tests.PhysMath.Dims;
 
 [TestBy<Multiplication<Metric.In>>()]
-[TestBy<DecimalExponenting<Metric.Exponent.In>>()]
+[TestBy<Exponentiation<Metric.Exponent.In>>()]
 [TestBy<Multiplication<Cross.SI_Customary.In>>()]
 public class LengthsTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum

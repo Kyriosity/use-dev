@@ -1,5 +1,8 @@
-﻿namespace Meas.Units.Prefix.Binary.Power;
-public enum In // : IPow2
+﻿using Meas.Units.Metadata;
+
+namespace Meas.Units.Prefix.Binary.Power;
+[Exponent(2)]
+public enum In
 {
     Base = 0,
     kibi = 10,

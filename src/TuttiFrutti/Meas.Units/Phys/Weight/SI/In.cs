@@ -3,7 +3,7 @@
 namespace Meas.Units.Phys.Weight.SI;
 
 [Metric]
-public enum In //~ implements IFactored, IRatioScaled, IBase10 (i.e. IRatioScaled)
+public enum In
 {
     gram = 1,
     kilogram = 1_000,

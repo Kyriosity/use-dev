@@ -1,8 +1,16 @@
-﻿namespace FuncStore.Convert.RatioScale;
+﻿using Abc.Ext.Errors.Sys;
+using Meas.Units.Metadata;
 
-public abstract class Exponentiation<U>(double exponentBase) : IFuncStore<U> where U : Enum, IConvertible
+namespace FuncStore.Convert.RatioScale;
+
+public class Exponentiation<U> : IFuncStore<U> where U : Enum, IConvertible
 {
-    protected double ExponentBase { get; } = exponentBase;
+    public Exponentiation() {
+        if (!ExponentAttribute.Find<U>(out _exponentBase))
+            Argument<U>.Throw($"No {nameof(ExponentAttribute)}");
+    }
+    protected int ExponentBase => _exponentBase;
+    private readonly int _exponentBase;
 
     public Func<N, N> For<N>(U from, U to) where N : System.Numerics.INumber<N> {
         return x => {
@@ -12,9 +20,3 @@ public abstract class Exponentiation<U>(double exponentBase) : IFuncStore<U> whe
         };
     }
 }
-
-
-// ToDo: read POWER from ATTRIBUTE
-public class DecimalExponenting<U> : Exponentiation<U> where U : Enum, IConvertible { public DecimalExponenting() : base(10) { } }
-
-public class BinaryExponenting<U> : Exponentiation<U> where U : Enum, IConvertible { public BinaryExponenting() : base(2) { } }

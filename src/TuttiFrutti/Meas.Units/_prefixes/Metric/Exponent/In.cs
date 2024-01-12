@@ -2,7 +2,7 @@
 
 namespace Meas.Units.Prefix.Metric.Exponent;
 
-[Factored(10)]
+[Exponent(10)]
 public enum In
 {
     quecto = -30,
