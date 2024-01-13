@@ -3,7 +3,7 @@
 namespace Abc.Ext.DataOps;
 public static class Combi
 {
-    public static IEnumerable<T[]> Pair<T>(IEnumerable<T> data, Action<IEnumerable<T>>? guards = null) =>
+    public static IEnumerable<T[]> Pair<T>(IEnumerable<T> data) =>
          from left in data.Select((x, index) => new { x, index })
          from right in data.Select((x, index) => new { x, index })
          where left.index < right.index
@@ -11,5 +11,4 @@ public static class Combi
 
     public static IEnumerable<T[]> Triple<T>(IEnumerable<T> _) => NotImplemented.Throw("on demand");
     // ToDo: quadruple, quintuple, sextuple, septuple, octuple, ..., n‑tuple,
-
 }

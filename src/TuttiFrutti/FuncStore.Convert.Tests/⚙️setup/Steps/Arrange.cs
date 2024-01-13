@@ -54,7 +54,7 @@ public abstract class Arrange<TUnit> where TUnit : Enum, IConvertible
     private static IEnumerable<object[]> FromDirs(IEnumerable<RawData> source) {
         var itemized = TestSource.FromMeasurements(source);
         var unitsAssigned = Units<TUnit>.SwapApplicable(itemized);
-        var expanded = DataRow.ThroughPair(unitsAssigned.Where(x => 1 < x.Entries.Count()));
+        var expanded = DataRow.Normalize(unitsAssigned.Where(x => 1 < x.Entries.Count()));
 
         return expanded;
     }
