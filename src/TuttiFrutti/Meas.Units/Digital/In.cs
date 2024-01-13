@@ -1,4 +1,4 @@
-﻿namespace Meas.Units.Info;
+﻿namespace Meas.Units.Digital;
 public enum In : ulong
 {
     Undefined = 0,
@@ -14,9 +14,12 @@ public enum In : ulong
     kilobit = 1_024,
     kilobyte = 1_024 * 8,
 
+    megabit = kilobit * 1_024,
     megabyte = kilobyte * 1_024,
 
+    gigabit = megabit * 1_024,
     gigabyte = megabyte * 1_024,
+
     terabyte = gigabyte * 1_024,
     petabyte = terabyte * 1_024,
     exabyte = petabyte * 1_024,
