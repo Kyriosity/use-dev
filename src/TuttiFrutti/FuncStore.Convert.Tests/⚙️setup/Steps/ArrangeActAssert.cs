@@ -25,8 +25,6 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
         //$"⭐ ⭐ {'\u25D2'} {'\u25D0'} {'\u2730'} {'\u2B50'}");
     }
 
-
-    // HOW TO OVERRIDE METHOD TWO TIMES ?
     public virtual void Mismatch<N>() {
         // ToDo: 
     }
@@ -38,6 +36,6 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
     }
 
     public virtual void ResultException<T>() where T : Exception {
-        //Assert.Throws<T>() { }
+        // ToDo: Assert.Throws<T>() { }
     }
 }

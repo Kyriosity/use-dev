@@ -3,11 +3,11 @@ using FuncStore.Convert.RatioScale;
 using FuncStore.Convert.Tests.Setup.Metadata;
 using FuncStore.Convert.Tests.Setup.Steps;
 using Meas.Data.Digital;
-
+using Meas.Units.Digital;
 
 namespace FuncStore.Convert.Tests.Digital;
 
-[TestBy<Multiplication<Meas.Units.Digital.In>>]
+[TestBy<Multiplication<In>>]
 public class InfoSizeTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum
 {
