@@ -1,9 +1,9 @@
-﻿using Math.Phys.Temperature.Convert;
+﻿using Mathe.Phys.Temperature.Conversion;
 using Meas.Units.Phys.Temperature;
 using System.Numerics;
-using static FuncStore.Convert.Temperature.Basic;
+using static FuncStore.Conversion.Temperature.Basic;
 
-namespace FuncStore.Convert.Temperature;
+namespace FuncStore.Conversion.Temperature;
 public class Basic : ITempStore
 {
     public Func<N, N> For<N>(In from, In to) where N : INumber<N> {

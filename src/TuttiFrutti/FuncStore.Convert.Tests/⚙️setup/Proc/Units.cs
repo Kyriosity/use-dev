@@ -2,7 +2,7 @@
 using Meas.Units.Utils;
 using System.Numerics;
 
-namespace FuncStore.Convert.Tests._️setup.Proc;
+namespace FuncStore.Conversion.Tests._️setup.Proc;
 static class Units<TUnit> where TUnit : Enum
 {
     internal static IEnumerable<ISubject<N, TUnit>> SwapApplicable<N>(IEnumerable<ISubject<N, string>> items) where N : INumber<N> {

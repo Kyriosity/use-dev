@@ -1,7 +1,7 @@
 ﻿using Abc.Ext.Errors.Sys;
 using System.Numerics;
 
-namespace FuncStore.Convert;
+namespace FuncStore.Conversion;
 
 public interface IFuncStore { }
 

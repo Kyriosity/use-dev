@@ -94,9 +94,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "🧪Test&Fix🔨", "🧪Tes
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "📏Measurement", "📏Measurement", "{C7A85FF6-2B50-46BC-823D-D9A1DB3B48E0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abc🧮Math", "Abc🧮Math", "{8DF105C9-5A1D-4452-B8C0-BFB904B37AB5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abc🧮Mathe", "Abc🧮Mathe", "{8DF105C9-5A1D-4452-B8C0-BFB904B37AB5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Math.Phys", "Math.Phys\Math.Phys.csproj", "{0C5C1B2D-5ACC-4D72-AC04-D501F471643C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mathe.Phys", "Math.Phys\Mathe.Phys.csproj", "{0C5C1B2D-5ACC-4D72-AC04-D501F471643C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parts💠Multifacet", "Parts💠Multifacet", "{A3399016-D06C-4447-A3F0-937CB84EAEAD}"
 EndProject
@@ -108,7 +108,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Convert", "Convert", "{C28C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuncStore.Convert.Tests", "FuncStore.Convert.Tests\FuncStore.Convert.Tests.csproj", "{D12E44EF-7E4E-4887-A94A-86131E2A9972}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuncStore.Convert", "FuncStore.Convert\FuncStore.Convert.csproj", "{B27842D6-6018-4C39-BEF5-E221FBC3D98E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuncStore.Conversion", "FuncStore.Convert\FuncStore.Conversion.csproj", "{B27842D6-6018-4C39-BEF5-E221FBC3D98E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Meas.Units", "Meas.Units\Meas.Units.csproj", "{3AFA77FC-DAB4-4E3D-ADC3-7FC6AC6C7653}"
 EndProject

@@ -2,7 +2,7 @@
 using Meas.Data.Setup.Formats;
 using System.Numerics;
 
-namespace FuncStore.Convert.Tests.Setup.Proc;
+namespace FuncStore.Conversion.Tests.Setup.Proc;
 static class DataRow
 {
     internal static IEnumerable<object[]> Normalize<N, TUnit>(IEnumerable<ISubject<N, TUnit>> items) where N : INumber<N> =>

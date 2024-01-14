@@ -1,4 +1,4 @@
-﻿namespace FuncStore.Convert.Tests.Setup.Metadata;
+﻿namespace FuncStore.Conversion.Tests.Setup.Metadata;
 
 public class TestByAttribute<TStore>(params string[] _) : TestFixtureAttribute(_typeOfStore, _typeOfUnit)
     where TStore : IFuncStore, new()

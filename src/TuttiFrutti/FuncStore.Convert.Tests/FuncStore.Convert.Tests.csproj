@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Code.Setup\Abc.Ext.csproj" />
-    <ProjectReference Include="..\FuncStore.Convert\FuncStore.Convert.csproj" />
+    <ProjectReference Include="..\FuncStore.Convert\FuncStore.Conversion.csproj" />
     <ProjectReference Include="..\Meas.Data\Meas.Data.csproj" />
     <ProjectReference Include="..\Meas.Org\Meas.Org.csproj" />
     <ProjectReference Include="..\Meas.Units\Meas.Units.csproj" />

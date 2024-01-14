@@ -1,4 +1,4 @@
-﻿namespace FuncStore.Convert.Tests.Setup.Steps;
+﻿namespace FuncStore.Conversion.Tests.Setup.Steps;
 
 public abstract class ArrangeAct<TStore, TUnit> : Arrange<TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible

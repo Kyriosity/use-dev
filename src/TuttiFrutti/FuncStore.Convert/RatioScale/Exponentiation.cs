@@ -1,7 +1,7 @@
 ﻿using Abc.Ext.Errors.Sys;
 using Meas.Units.Metadata;
 
-namespace FuncStore.Convert.RatioScale;
+namespace FuncStore.Conversion.RatioScale;
 
 public class Exponentiation<U> : IFuncStore<U> where U : Enum, IConvertible
 {
@@ -15,7 +15,7 @@ public class Exponentiation<U> : IFuncStore<U> where U : Enum, IConvertible
     public Func<N, N> For<N>(U from, U to) where N : System.Numerics.INumber<N> {
         return x => {
             var exponentPower = from.ToInt64(null) - to.ToInt64(null);
-            var factor = System.Math.Pow(ExponentBase, exponentPower);
+            var factor = Math.Pow(ExponentBase, exponentPower);
             return N.CreateChecked(double.CreateChecked(x) * factor);
         };
     }

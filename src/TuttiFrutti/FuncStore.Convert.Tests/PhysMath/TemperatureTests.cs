@@ -1,11 +1,11 @@
 ﻿using Abc.Ext.NUnit.Metadata.Source;
-using FuncStore.Convert.Tests.Setup.Metadata;
-using FuncStore.Convert.Tests.Setup.Steps;
+using FuncStore.Conversion.Tests.Setup.Metadata;
+using FuncStore.Conversion.Tests.Setup.Steps;
 using Meas.Data.Setup.Attributes;
 using Meas.Data.Temperature;
-using FuncStores = FuncStore.Convert.Temperature;
+using FuncStores = FuncStore.Conversion.Temperature;
 
-namespace FuncStore.Convert.Tests.RatioScale;
+namespace FuncStore.Conversion.Tests.RatioScale;
 
 [TestBy<FuncStores.Basic>]
 [Precision(.000_001)]

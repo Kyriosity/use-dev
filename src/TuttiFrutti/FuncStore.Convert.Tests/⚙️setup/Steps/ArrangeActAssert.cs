@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace FuncStore.Convert.Tests.Setup.Steps;
+namespace FuncStore.Conversion.Tests.Setup.Steps;
 public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit>
      where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible
 {
@@ -11,7 +11,7 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
         if (func is null)
             Assert.Ignore($"N/A: {_funcs} ({subjUnit}->{expUnit})");
 
-        N result = default;
+        N result = N.Zero;
         try {
             result = func(subject);
         } catch (Exception exception) {
@@ -49,9 +49,9 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
         double precision = 1;
         if (diff != N.Zero) {
             diff = N.Zero > diff ? -diff : diff;
-            precision = 1 - System.Math.Round(double.CreateChecked(diff) / delta, 2);
+            precision = 1 - Math.Round(double.CreateChecked(diff) / delta, 2);
         }
-        var filledLen = System.Convert.ToInt32(precision * scaleLen);
+        var filledLen = Convert.ToInt32(precision * scaleLen);
         var extraInfo = 1 == precision ? string.Empty : $" ({diff} within {delta})";
         return $"Precision: {precision * 100}%{extraInfo}\n{new string(_filled, filledLen)}{new string(_voided, scaleLen - filledLen)}";
     }

@@ -1,11 +1,11 @@
-﻿using FuncStore.Convert.Tests._️setup.Proc;
-using FuncStore.Convert.Tests.Setup.Proc;
+﻿using FuncStore.Conversion.Tests._️setup.Proc;
+using FuncStore.Conversion.Tests.Setup.Proc;
 using Meas.Data.Setup.Attributes;
 using Meas.Data.Setup.Extensions;
 using System.Reflection;
 using RawData = (string name, object value, (bool set, double? delta) precision);
 
-namespace FuncStore.Convert.Tests.Setup.Steps;
+namespace FuncStore.Conversion.Tests.Setup.Steps;
 
 [TestFixture]
 public abstract class Arrange<TUnit> where TUnit : Enum, IConvertible

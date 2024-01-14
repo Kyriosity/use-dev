@@ -1,4 +1,4 @@
-﻿namespace Math.Phys.Temperature;
+﻿namespace Mathe.Phys.Temperature;
 public static class Diff
 {
     public const double KelvinCelsius = 273.15;

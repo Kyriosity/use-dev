@@ -1,11 +1,11 @@
 ﻿using Abc.Ext.NUnit.Metadata.Source;
-using FuncStore.Convert.RatioScale;
-using FuncStore.Convert.Tests.Setup.Metadata;
-using FuncStore.Convert.Tests.Setup.Steps;
+using FuncStore.Conversion.RatioScale;
+using FuncStore.Conversion.Tests.Setup.Metadata;
+using FuncStore.Conversion.Tests.Setup.Steps;
 using Meas.Data.Digital;
 using Meas.Units.Digital;
 
-namespace FuncStore.Convert.Tests.Digital;
+namespace FuncStore.Conversion.Tests.Digital;
 
 [TestBy<Multiplication<In>>]
 public class InfoSizeTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>

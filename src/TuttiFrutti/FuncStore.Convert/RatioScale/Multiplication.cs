@@ -1,5 +1,5 @@
 ﻿using System.Numerics;
-namespace FuncStore.Convert.RatioScale;
+namespace FuncStore.Conversion.RatioScale;
 public class Multiplication<U> : IFuncStore<U> where U : Enum, IConvertible
 {
     public Func<N, N> For<N>(U from, U to) where N : INumber<N> {

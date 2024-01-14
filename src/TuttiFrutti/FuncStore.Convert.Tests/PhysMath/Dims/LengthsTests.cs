@@ -1,13 +1,13 @@
 ﻿using Abc.Ext.NUnit.Metadata.Source;
-using FuncStore.Convert.RatioScale;
-using FuncStore.Convert.Tests.Setup.Metadata;
-using FuncStore.Convert.Tests.Setup.Steps;
+using FuncStore.Conversion.RatioScale;
+using FuncStore.Conversion.Tests.Setup.Metadata;
+using FuncStore.Conversion.Tests.Setup.Steps;
 using Astro = Meas.Data.Length.Astro;
 using Cross = Meas.Units.Phys.Distance.Length.Cross;
 using Earth = Meas.Data.Length.Earth;
 using Metric = Meas.Units.Prefix.Metric;
 
-namespace FuncStore.Convert.Tests.PhysMath.Dims;
+namespace FuncStore.Conversion.Tests.PhysMath.Dims;
 
 [TestBy<Multiplication<Metric.In>>()]
 [TestBy<Exponentiation<Metric.Exponent.In>>()]

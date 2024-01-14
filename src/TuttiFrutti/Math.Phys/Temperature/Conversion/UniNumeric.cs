@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace Math.Phys.Temperature.Convert;
+namespace Mathe.Phys.Temperature.Conversion;
 
 public static class UniNumeric
 {
