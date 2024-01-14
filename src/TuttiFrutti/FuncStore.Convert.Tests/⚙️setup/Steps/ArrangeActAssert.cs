@@ -15,12 +15,14 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
         try {
             result = func(subject);
         } catch (Exception exception) {
-            Assert.Fail($"{nameof(Exception)}: \"{exception.Message}\"");
+            Assert.Fail($"{nameof(Exception)}: \"{exception.Message}\"", "% '\u26AB'");
         }
 
-        Assert.That(result, Is.EqualTo(expected).Within(delta ?? DefaultDelta));
 
-        //    Assert.Pass($"{'\u25CF'} {'\u26AA'} {'\u26AB'} {'\u272A'}\n" +
+        Assert.That(result, Is.EqualTo(expected).Within(delta ?? DefaultDelta));
+        Assert.Pass(Assess(result - expected, delta ?? DefaultDelta));
+
+        //    Assert.Pass($"{'\u25CF'} white circ {'\u26AA'} bl circ{'\u26AB'} \n" +
         //$" {'\u274D'} {'\u2B24'} {'\u2B55'} {'\u25D7'} {'\u25E0'} > {'\u25EF'} {'\u2B55'}\n" +
         //$"⭐ ⭐ {'\u25D2'} {'\u25D0'} {'\u2730'} {'\u2B50'}");
     }
@@ -37,5 +39,20 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
 
     public virtual void ResultException<T>() where T : Exception {
         // ToDo: Assert.Throws<T>() { }
+    }
+
+    private static string Assess<N>(N diff, double delta) where N : INumber<N> {
+        const char _filled = '\u26AB';
+        const char _voided = '\u26AA';
+        const int scaleLen = 10;
+
+        double precision = 1;
+        if (diff != N.Zero) {
+            diff = N.Zero > diff ? -diff : diff;
+            precision = 1 - System.Math.Round(double.CreateChecked(diff) / delta, 2);
+        }
+        var filledLen = System.Convert.ToInt32(precision * scaleLen);
+        var extraInfo = 1 == precision ? string.Empty : $" ({diff} within {delta})";
+        return $"Precision: {precision * 100}%{extraInfo}\n{new string(_filled, filledLen)}{new string(_voided, scaleLen - filledLen)}";
     }
 }
