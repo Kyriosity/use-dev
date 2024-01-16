@@ -1,11 +1,12 @@
-﻿using System.Numerics;
+﻿using Abc.Ext.Glyphs;
+using System.Numerics;
 
 namespace FuncStore.Conversion.Tests.Setup.Steps;
 public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit>
      where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible
 {
-    public virtual void Match<N>(N subject, TUnit subjUnit, N expected, TUnit expUnit, string name, string cat, double? delta)
-        where N : INumber<N> {
+    public virtual void Match<N>(N subject, TUnit subjUnit, N expected, TUnit expUnit,
+        string name, string cat, double? delta) where N : INumber<N> {
 
         var func = _funcs.For<N>(subjUnit, expUnit);
         if (func is null)
@@ -15,16 +16,13 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
         try {
             result = func(subject);
         } catch (Exception exception) {
-            Assert.Fail($"{nameof(Exception)}: \"{exception.Message}\"", "% '\u26AB'");
+            // math throws System.Exception - no way to sort
+            Assert.Fail($"{Nature.HighVoltage} {exception.Message}");
         }
 
-
-        Assert.That(result, Is.EqualTo(expected).Within(delta ?? DefaultDelta));
-        Assert.Pass(Assess(result - expected, delta ?? DefaultDelta));
-
-        //    Assert.Pass($"{'\u25CF'} white circ {'\u26AA'} bl circ{'\u26AB'} \n" +
-        //$" {'\u274D'} {'\u2B24'} {'\u2B55'} {'\u25D7'} {'\u25E0'} > {'\u25EF'} {'\u2B55'}\n" +
-        //$"⭐ ⭐ {'\u25D2'} {'\u25D0'} {'\u2730'} {'\u2B50'}");
+        var tolerance = delta ?? DefaultDelta; var diff = result - expected;
+        Assert.That(result, Is.EqualTo(expected).Within(tolerance));
+        Assert.Pass(ScaleAssess(result - expected, tolerance));
     }
 
     public virtual void Mismatch<N>() {
@@ -41,18 +39,14 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
         // ToDo: Assert.Throws<T>() { }
     }
 
-    private static string Assess<N>(N diff, double delta) where N : INumber<N> {
-        const char _filled = '\u26AB';
-        const char _voided = '\u26AA';
-        const int scaleLen = 10;
+    private static string ScaleAssess<N1, N2>(N1 diff, N2 range) where N1 : INumber<N1> where N2 : INumber<N2> {
+        const int scaleLen = 12;
+        var absDiff = N1.Zero > diff ? -diff : diff;
 
-        double precision = 1;
-        if (diff != N.Zero) {
-            diff = N.Zero > diff ? -diff : diff;
-            precision = 1 - Math.Round(double.CreateChecked(diff) / delta, 2);
-        }
+        double precision = diff == N1.Zero ? 1 :
+            1 - Math.Round(double.CreateChecked(absDiff) / double.CreateChecked(range), 2);
         var filledLen = Convert.ToInt32(precision * scaleLen);
-        var extraInfo = 1 == precision ? string.Empty : $" ({diff} within {delta})";
-        return $"Precision: {precision * 100}%{extraInfo}\n{new string(_filled, filledLen)}{new string(_voided, scaleLen - filledLen)}";
+        var extraInfo = 1 == precision ? string.Empty : $" ({absDiff} within {range})";
+        return $"Precision: {precision * 100}%{extraInfo}\n{new string(Stars.WhiteCircled, filledLen)}{new string(Stars.WhiteShadowed, scaleLen - filledLen)}";
     }
 }
