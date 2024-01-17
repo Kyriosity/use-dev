@@ -18,7 +18,7 @@ public partial class Calibration : Synonyms
         ((short)1, BASE, "=", (short)1_024, kibi),
         ((short)-11, kibi, "=", (short)-11_264, BASE),
 
-        ((double).0123_45, mebi, "===", (double)129_446.7072, tebi), // DEBUG !
+        ((double).0123_45, mebi, "===", (double)12_944.670_72, tebi), // DEBUG !
         ((double)764.928, yobi, "~", (double)-.747, zebi),
 
         ((long)1_984, BASE, "=", (long)2_130_303_778_816, gibi),
