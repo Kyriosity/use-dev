@@ -18,14 +18,13 @@
 - `Jack` can be family, given (not only on birth), and branded name.
 - `$1'000` or `1'000€` has temporal purchase ability with dissimilar curves for essential goods, 1GB of RAM, and gold ounce
 
-Values in applications may
+Values in applications may rely on context or imply a single system of categorization (e.g. SI for physical values) and open wide the gate to errors, including ill-famed techno-disasters.
 
- - rely on context<sup>:warning:</sup>,
- - imply a single system of categorization, e.g. SI for physical values<sup>:warning:</sup> (rather limited scope),
- - style in old fashion like `const Temperature_AbsZero_Kelvin = 0.00` (unambiguous but ugly to the object-oriented sight),
- - implement a tailored solution - here we will try to make a shared one.
+ Univocal old fashion like `const Temperature_AbsZero_Kelvin = 0.00` is ugly to the object-oriented sight,
+ 
+ As a good developer, you will guess a better unambiguous solution but be kind - look first at the proposed next...
 
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>:warning:</sup>&nbsp;<sub>Both open wide the gate to errors, including ill-famed techno-disasters.</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>:warning:</sup>&nbsp;<sub>Both .</sub>
 
 |- **Features and omissions**\
 |--- Arithmetic ops\
