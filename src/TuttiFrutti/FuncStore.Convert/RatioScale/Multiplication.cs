@@ -3,8 +3,8 @@ namespace FuncStore.Conversion.RatioScale;
 public class Multiplication<U> : IFuncStore<U> where U : Enum, IConvertible
 {
     public Func<N, N> For<N>(U from, U to) where N : INumber<N> {
-        var multiplier = from.ToInt64(null);
-        var divider = to.ToInt64(null);
+        var multiplier = to.ToInt64(null);
+        var divider = from.ToInt64(null);
 
         return x => {
             var calcAccu = double.CreateChecked(x);
@@ -14,4 +14,3 @@ public class Multiplication<U> : IFuncStore<U> where U : Enum, IConvertible
         };
     }
 }
-
