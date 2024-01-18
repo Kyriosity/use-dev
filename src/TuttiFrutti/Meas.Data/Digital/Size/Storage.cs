@@ -23,7 +23,7 @@ public partial class Size
         ["5 1/4 inch minifloppy, 1976"] = [(113, KByte), (115_712, bytes)],
         ["5 1/4\", Tandon, 1980"] = [(0.36, MB), (368.84, KB), (377_692, bytes)],
         ["5 1/4\", IBM, 1984"] = [(1.2, MByte), (1_228_800, bytes)],
-        ["3 1/2 in. IBM, high-density, 1987"] = [(1.44, MB), (1_475, bytes)],
+        ["3 1/2 in. IBM, high-density, 1987"] = [(1.44, MB), (1_475, KB), (1_509_949, bytes)],
         ["3 1/2 in. Y-E Data, double-side ext-density, 1989"] = [(2.88, MByte), (2_949, bytes)],
     };
 
@@ -40,7 +40,7 @@ public partial class Size
         ["Intel MOSFET, 1972"] = [(1, kilobits), (128, bytes), (64, words), (16, quadwords)],
 
         ["Samsung KM48SL2000, 1992"] = [(16, megabits), (16_384, kilobits)], // 1st commercial SDRAM 
-        ["Toshiba TC51W3216XB, 2001"] = [(32, megabits), (32_768, gigabits), (33_554_432, kilobits), (.003_906_25, TB)],
+        ["Toshiba TC51W3216XB pseudo SRAM, 2001"] = [(32, megabits), (.031_25, gigabits), (32_768, kilobits)],
         ["Samsung DRAM 100nm, 2001"] = [(4, gigabits), (.5, GB), (512, MB)],
 
         ["Samsung HBM2, 2017"] = [(64, gigabits), (8_192, MB), (8_388_608, KBytes)],

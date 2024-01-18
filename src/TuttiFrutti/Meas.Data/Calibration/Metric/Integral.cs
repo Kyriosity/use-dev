@@ -19,17 +19,18 @@ public class MathIntegral : Synonyms
         (1, BASE, "=", 1_000_000_000, nano),
 
         ((uint)8, BASE, "=", (uint)8_000_000, micro),
-        (1, BASE, "=", 1_000_000, micro),
+        (-27, BASE, "=", -27_000_000, micro),
 
         (1, BASE, "=", 1_000, milli),
         ((float)-11, BASE, "=", (float)-11_000, milli),
 
-        (1, BASE, "=", 100, centi),
-        ((byte)1, BASE, "=", (byte)100, centi),
+        (-5_023_400, centi, "=", -50_234, BASE),
+        ((byte)200, BASE, "=", (byte)2, centi),
 
-        (1, BASE, "=", 10, deci),
+        (10, deci, "=", 1, BASE),
 
         (1, BASE, "=", 1, BASE),
+        (-7, BASE, "=", -7, BASE),
         ((byte)2, BASE, "=", (byte)2, BASE),
 
         (10, BASE, "=", 1, deca),
@@ -37,7 +38,7 @@ public class MathIntegral : Synonyms
 
         (900, BASE, "=", 9, "hecto"),
         ((sbyte)-100, BASE, "=", -1, "hecto"),
-        ((short)-200, BASE, "=", (short)-2, "hecto"),
+        ((short)-200, BASE, "=", (short)-20_000, "hecto"),
 
         (1_000, BASE, "=", 1, kilo),
         ((ushort)7_000, BASE, "=", 7, kilo),
@@ -84,12 +85,13 @@ public class MathIntegral : Synonyms
 
     Rec Cross = [
         ((sbyte)-11, centi, "=", (sbyte)-110, milli),
-        ((byte)25, centi, "=", (byte)250, milli),
+        ((byte)250, centi, "=", (byte)25, milli),
+        ((byte)200, deca, "=", (byte)2, kilo),
 
         // centric
-        (3_104, deca, "=", 310_400, deci),
+        (3_104, deca, "==", 310_400, deci),
         ((uint)4_321, "hecto", "=", (uint)43_210_000, centi),
-        (-3_104, kilo, "=", -310_400, milli),
+        (-9_713, kilo, "=", -9_713_000_000, milli),
         (-3_000_000_000_000, micro, "=", (long)-3, mega),
         ((ulong)1_000_000_000_000_000_000, nano, "=", (ulong)1, giga),
 

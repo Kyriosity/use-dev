@@ -10,7 +10,7 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
 
         var func = _funcs.For<N>(subjUnit, expUnit);
         if (func is null)
-            Assert.Ignore($"N/A: {_funcs} ({subjUnit}->{expUnit})");
+            Assert.Ignore($"{'\u207F'}{'\u002F'}{'\u2090'}! {subjUnit}->{expUnit} ({_funcs}) ");
 
         N result = N.Zero;
         try {
@@ -21,7 +21,7 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
         }
 
         var tolerance = delta ?? DefaultDelta; var diff = result - expected;
-        Assert.That(result, Is.EqualTo(expected).Within(tolerance));
+        Assert.That(result, Is.EqualTo(expected).Within(tolerance), "ico + %");
         Assert.Pass(ScaleAssess(result - expected, tolerance));
     }
 

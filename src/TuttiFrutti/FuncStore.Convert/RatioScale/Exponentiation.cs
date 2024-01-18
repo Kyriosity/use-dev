@@ -14,7 +14,13 @@ public class Exponentiation<U> : IFuncStore<U> where U : Enum, IConvertible
 
     public Func<N, N> For<N>(U from, U to) where N : System.Numerics.INumber<N> {
         return x => {
-            var exponentPower = to.ToInt64(null) - from.ToInt64(null);
+            var fromNumd = from.ToInt64(null);
+            var toNumd = to.ToInt64(null);
+
+            if (fromNumd == toNumd)
+                return x;
+
+            var exponentPower = fromNumd - toNumd;
             var factor = Math.Pow(ExponentBase, exponentPower);
             return N.CreateChecked(double.CreateChecked(x) * factor);
         };
