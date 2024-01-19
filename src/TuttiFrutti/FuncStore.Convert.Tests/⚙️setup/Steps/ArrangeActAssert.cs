@@ -20,7 +20,8 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
             Assert.Fail($"{Nature.HighVoltage} {exception.Message}");
         }
 
-        var tolerance = delta ?? DefaultDelta; var diff = result - expected;
+        var tolerance = delta ?? DefaultDelta;
+        var diff = result - expected;
         Assert.That(result, Is.EqualTo(expected).Within(tolerance), $"{MarkDiff(tolerance, diff)}");
         Assert.Pass(ScaleAssess(result - expected, tolerance));
     }
@@ -63,7 +64,6 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
 
         if (offset <= 2 * tolerance)
             return Algebra.PlusMinus;
-
 
         return 10 > offset / tolerance ? Marks.Alert : Marks.Radioactive;
     }
