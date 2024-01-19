@@ -26,7 +26,7 @@ public partial class Constants
     [Precision(.000_001)]
     Dir ControlPoints = new() {
         ["0 Celcius"] = [(0, Celsius), (273.15, Kelvin), (32, F)],
-        ["0 Fahrenheit"] = [(0, Fahrenheit), (-17.777_8, Celsius), (255.372_2, Kelvin)],
+        ["0 Fahrenheit"] = [(0, Fahrenheit), (-17.777_777_777_777_778, Celsius), (255.372_222_222_222_222, Kelvin)], // ToDebug: test fail!
         ["C-F intersect"] = [(-40, C), (-40, F)],
     };
 }

@@ -38,7 +38,7 @@ public class MathIntegral : Synonyms
 
         (900, BASE, "=", 9, "hecto"),
         ((sbyte)-100, BASE, "=", -1, "hecto"),
-        ((short)-200, BASE, "=", (short)-20_000, "hecto"),
+        ((short)-205, "hecto", "=", (short)-20_500, BASE),
 
         (1_000, BASE, "=", 1, kilo),
         ((ushort)7_000, BASE, "=", 7, kilo),

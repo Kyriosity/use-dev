@@ -24,7 +24,7 @@ public partial class Size
         ["5 1/4\", Tandon, 1980"] = [(0.36, MB), (368.84, KB), (377_692, bytes)],
         ["5 1/4\", IBM, 1984"] = [(1.2, MByte), (1_228_800, bytes)],
         ["3 1/2 in. IBM, high-density, 1987"] = [(1.44, MB), (1_475, KB), (1_509_949, bytes)],
-        ["3 1/2 in. Y-E Data, double-side ext-density, 1989"] = [(2.88, MByte), (2_949, bytes)],
+        ["3 1/2 in. Y-E Data, double-side ext-density, 1989"] = [(2.88, MByte), (2_949, KBytes)],
     };
 
     Dir OpticalDrive = new() {

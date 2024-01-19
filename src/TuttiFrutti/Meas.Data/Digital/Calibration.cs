@@ -25,7 +25,7 @@ public partial class Calibration : Synonyms
         (4_934_656, BASE, "=", 81, mebi),
 
         ((ushort)63, pebi, "=", (ushort)64_512, exbi),
-        ((uint)3_221_225_472, BASE, "==", 3, gibi),
+        ((uint)3_221_225_472, BASE, "==", (uint)3, gibi),
         ((ulong)1, BASE, "=", (ulong)1_099_511_627_776, tebi),
     ];
 }
