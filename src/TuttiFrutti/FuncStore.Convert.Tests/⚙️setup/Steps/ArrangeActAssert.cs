@@ -10,18 +10,18 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
 
         var func = _funcs.For<N>(subjUnit, expUnit);
         if (func is null)
-            Assert.Ignore($"{'\u207F'}{'\u002F'}{'\u2090'}! {subjUnit}->{expUnit} ({_funcs}) ");
+            Assert.Ignore($"{'\u207F'}{'\u002F'}{'\u2090'}! {subjUnit}->{expUnit} ({_funcs})");
 
         N result = N.Zero;
         try {
             result = func(subject);
         } catch (Exception exception) {
-            // math throws System.Exception - no way to sort
+            // ToKnow.: math throws System.Exception - no way to sort
             Assert.Fail($"{Nature.HighVoltage} {exception.Message}");
         }
 
         var tolerance = delta ?? DefaultDelta; var diff = result - expected;
-        Assert.That(result, Is.EqualTo(expected).Within(tolerance), "ico + %");
+        Assert.That(result, Is.EqualTo(expected).Within(tolerance), $"{MarkDiff(tolerance, diff)}");
         Assert.Pass(ScaleAssess(result - expected, tolerance));
     }
 
@@ -47,6 +47,24 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
             1 - Math.Round(double.CreateChecked(absDiff) / double.CreateChecked(range), 2);
         var filledLen = Convert.ToInt32(precision * scaleLen);
         var extraInfo = 1 == precision ? string.Empty : $" ({absDiff} within {range})";
-        return $"Precision: {precision * 100}%{extraInfo}\n{new string(Stars.WhiteCircled, filledLen)}{new string(Stars.WhiteShadowed, scaleLen - filledLen)}";
+        return $"Precision: {precision * 100}%{extraInfo}\n{new string(Stars.Filled, filledLen)}{new string(Stars.Hollow, scaleLen - filledLen)}";
+    }
+
+    private static char MarkDiff<N1, N2>(N1 delta, N2 diff) where N1 : INumber<N1> where N2 : INumber<N2> {
+
+        if (N1.Zero == delta)
+            return Greek.Capital.O_middleTilde;
+
+        var tolerance = double.CreateChecked(N1.Abs(delta));
+        var offset = double.CreateChecked(N2.Abs(diff)) - tolerance;
+
+        if (0 > offset)
+            return Marks.Question;
+
+        if (offset <= 2 * tolerance)
+            return Algebra.PlusMinus;
+
+
+        return 10 > offset / tolerance ? Marks.Alert : Marks.Radioactive;
     }
 }
