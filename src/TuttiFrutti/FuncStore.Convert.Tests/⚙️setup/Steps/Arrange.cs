@@ -27,25 +27,21 @@ public abstract class Arrange<TUnit> where TUnit : Enum, IConvertible
     }
 
     static IEnumerable<object[]> MergeTestSources(Type @class) {
-
-
         if (PrecisionAttribute.Find(@class, out var delta)) {
             // ToDo: propagate/store as default !
         }
-
+        // ToTest: whether Dir+Rec read !!!
         var allFields = @class.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static).ToList();
         var fields = allFields.Where(x => !NotForTestAttribute.Find(x, out var _));
         var @object = Activator.CreateInstance(@class);
-        var source = fields.Select(x => (name: x.Name, value: x.GetValue(@object), precision:
+        var attributedValues = fields.Select(x => (name: x.Name, value: x.GetValue(@object), precision:
             (set: PrecisionAttribute.Find(x, out var delta), delta: delta)));
 
-        var datasource = new object[][] { };
+        var datasources = new List<IEnumerable<object[]>> { };
 
-        Parallel.ForEach(Retrievers, func => {
-            datasource = datasource.Concat(func(source)).ToArray();
-        });
+        Parallel.ForEach(Retrievers, func => datasources.Add(func(attributedValues)));
 
-        return datasource;
+        return datasources.SelectMany(x => x).ToArray();
     }
 
     private static IEnumerable<object[]> FromRecs(IEnumerable<RawData> source) =>
