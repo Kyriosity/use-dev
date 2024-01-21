@@ -21,9 +21,9 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
         }
 
         var tolerance = delta ?? DefaultDelta;
-        var diff = result - expected;
+        var diff = result > expected ? result - expected : expected - result;
         Assert.That(result, Is.EqualTo(expected).Within(tolerance), $"{MarkDiff(tolerance, diff)}");
-        Assert.Pass(ScaleAssess(result - expected, tolerance));
+        Assert.Pass(ScaleAssess(diff, tolerance));
     }
 
     public virtual void Mismatch<N>() {
