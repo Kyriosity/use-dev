@@ -25,7 +25,7 @@ public class MathIntegral : Synonyms
         ((float)-11, BASE, "=", (float)-11_000, milli),
 
         (-5_023_400, centi, "=", -50_234, BASE),
-        ((byte)200, BASE, "=", (byte)2, centi),
+        ((byte)2, BASE, "=", (byte)200, centi),
 
         (10, deci, "=", 1, BASE),
 
@@ -85,7 +85,7 @@ public class MathIntegral : Synonyms
 
     Rec Cross = [
         ((sbyte)-11, centi, "=", (sbyte)-110, milli),
-        ((byte)250, centi, "=", (byte)25, milli),
+        ((byte)250, milli, "=", (byte)25, centi),
         ((byte)200, deca, "=", (byte)2, kilo),
 
         // centric
