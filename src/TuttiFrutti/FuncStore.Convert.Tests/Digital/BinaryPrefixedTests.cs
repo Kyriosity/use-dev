@@ -12,7 +12,6 @@ internal class BinaryPrefixedTests<TStore, TUnit> : ArrangeActAssert<TStore, TUn
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum
 {
     [TestOf<Meas.Data.Digital.Calibration>]
-    public override void Match<N>(N subject, TUnit subjUnit, N expected, TUnit expUnit, string name, string cat, double? delta) {
-        base.Match(subject, subjUnit, expected, expUnit, name, cat, delta);
-    }
+    public override void Match<N>(N valA, TUnit unitA, N valB, TUnit unitB, string title, string cat, double? delta) =>
+        base.Match(valA, unitA, valB, unitB, title, cat, delta);
 }

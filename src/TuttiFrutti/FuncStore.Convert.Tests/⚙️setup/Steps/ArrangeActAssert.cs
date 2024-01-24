@@ -1,25 +1,27 @@
 ﻿using Abc.Ext.Glyphs;
+using Meas.Data.Setup.Attributes;
 using System.Numerics;
 
 namespace FuncStore.Conversion.Tests.Setup.Steps;
 public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit>
      where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible
 {
-    public virtual void Match<N>(N subject, TUnit subjUnit, N expected, TUnit expUnit,
-        string name, string cat, double? delta) where N : INumber<N> {
+    public virtual void Match<N>(N value, TUnit unit, N expected, TUnit expectedUnit,
+        string title, string cat, double? delta) where N : INumber<N> {
 
-        var func = _funcs.For<N>(subjUnit, expUnit);
+        var func = _funcs.For<N>(unit, expectedUnit);
         if (func is null)
-            Assert.Ignore($"{'\u207F'}{'\u002F'}{'\u2090'}! {subjUnit}->{expUnit} ({_funcs})");
+            Assert.Ignore($"{'\u207F'}{'\u002F'}{'\u2090'}! {unit}->{expectedUnit} ({_funcs})");
 
         N result = N.Zero;
         try {
-            result = func(subject);
+            result = func(value);
         } catch (Exception exception) {
             // ToKnow.: math throws System.Exception - no way to sort
             Assert.Fail($"{Nature.HighVoltage} {exception.Message}");
         }
 
+        var ToDeleteMe = PrecisionAttribute.Lookup(out var defPrec);
         var tolerance = delta ?? DefaultDelta;
         var diff = result > expected ? result - expected : expected - result;
         Assert.That(result, Is.EqualTo(expected).Within(tolerance), $"{MarkDiff(tolerance, diff)}");

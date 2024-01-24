@@ -16,7 +16,6 @@ public class LengthsTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum
 {
     [TestOf<Earth.Distances, Earth.Elevations, Astro.Distances>()]
-    public override void Match<N>(N subject, TUnit subjUnit, N expected, TUnit expUnit, string name, string cat, double? delta) {
-        base.Match(subject, subjUnit, expected, expUnit, name, cat, delta);
-    }
+    public override void Match<N>(N valA, TUnit unitA, N valB, TUnit unitB, string title, string cat, double? delta) =>
+        base.Match(valA, unitA, valB, unitB, title, cat, delta);
 }

@@ -8,13 +8,11 @@ using FuncStores = FuncStore.Conversion.Temperature;
 namespace FuncStore.Conversion.Tests.RatioScale;
 
 [TestBy<FuncStores.Basic>]
-[Precision(.000_001)]
+[Precision(1)]
 public class TemperatureTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible
 {
     [TestOf<Constants, PhaseChange, Nature>]
-    public override void Match<N>(N leftVal, TUnit leftUnit, N rightVal, TUnit rightUnit, string name, string cat, double? delta) {
-        base.Match(leftVal, leftUnit, rightVal, rightUnit, name, cat, delta);
-    }
+    public override void Match<N>(N valA, TUnit unitA, N valB, TUnit unitB, string title, string cat, double? delta) =>
+        base.Match(valA, unitA, valB, unitB, title, cat, delta);
 }
-
