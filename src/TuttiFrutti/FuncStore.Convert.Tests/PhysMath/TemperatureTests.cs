@@ -1,14 +1,13 @@
 ﻿using Abc.Ext.NUnit.Metadata.Source;
 using FuncStore.Conversion.Tests.Setup.Metadata;
 using FuncStore.Conversion.Tests.Setup.Steps;
-using Meas.Data.Setup.Attributes;
 using Meas.Data.Temperature;
 using FuncStores = FuncStore.Conversion.Temperature;
 
 namespace FuncStore.Conversion.Tests.RatioScale;
 
 [TestBy<FuncStores.Basic>]
-[Precision(1)]
+
 public class TemperatureTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible
 {

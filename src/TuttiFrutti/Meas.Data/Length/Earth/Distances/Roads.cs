@@ -1,4 +1,4 @@
-﻿using Meas.Data.Setup.Attributes;
+﻿using Meas.Data.Setup.Metadata;
 
 namespace Meas.Data.Length.Earth;
 public partial class Distances

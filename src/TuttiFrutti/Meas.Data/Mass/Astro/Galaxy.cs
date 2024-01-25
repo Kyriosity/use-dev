@@ -1,4 +1,4 @@
-﻿using Meas.Data.Setup.Attributes;
+﻿using Meas.Data.Setup.Metadata;
 
 namespace Meas.Data.Mass;
 public partial class Astro
