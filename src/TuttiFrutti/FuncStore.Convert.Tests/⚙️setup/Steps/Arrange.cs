@@ -1,7 +1,7 @@
 ﻿using FuncStore.Conversion.Tests._️setup.Proc;
 using FuncStore.Conversion.Tests.Setup.Proc;
-using Meas.Data.Setup.Attributes;
 using Meas.Data.Setup.Extensions;
+using Meas.Data.Setup.Metadata;
 using System.Reflection;
 using RawData = (string name, object value, (bool set, double? delta) precision);
 
@@ -14,7 +14,7 @@ public abstract class Arrange<TUnit> where TUnit : Enum, IConvertible
 
     [OneTimeSetUp]
     public void Init() {
-        if (PrecisionAttribute.Find(this.GetType(), out var delta))
+        if (PrecisionAttribute.From<double>(this.GetType(), out var delta))
             DefaultDelta = (double)delta;
     }
 
@@ -22,20 +22,20 @@ public abstract class Arrange<TUnit> where TUnit : Enum, IConvertible
         if (args is not null && args.Any())
             Console.WriteLine($"arguments supplied but not supported\n(\"{string.Join("\", \"", args)}\")");
 
-        return catalogs.Where(x => !NotForTestAttribute.Find(x, out var _))
+        return catalogs.Where(x => !NotForTestAttribute.From(x).Any())
             .SelectMany(MergeTestSources);
     }
 
     static IEnumerable<object[]> MergeTestSources(Type @class) {
-        if (PrecisionAttribute.Find(@class, out var delta)) {
+        if (PrecisionAttribute.From<double>(@class, out var delta)) {
             // ToDo: propagate/store as default !
         }
         // ToTest: whether Dir+Rec read !!!
         var allFields = @class.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static).ToList();
-        var fields = allFields.Where(x => !NotForTestAttribute.Find(x, out var _));
+        var fields = allFields.Where(x => !NotForTestAttribute.From(x).Any());
         var @object = Activator.CreateInstance(@class);
-        var attributedValues = fields.Select(x => (name: x.Name, value: x.GetValue(@object), precision:
-            (set: PrecisionAttribute.Find(x, out var delta), delta: delta)));
+        var attributedValues = fields.Select(x => (name: x.Name, value: x.GetValue(@object),
+            precision: (set: PrecisionAttribute.From<double>(x, out var delta), delta: (double?)delta)));
 
         var datasources = new List<IEnumerable<object[]>> { };
 

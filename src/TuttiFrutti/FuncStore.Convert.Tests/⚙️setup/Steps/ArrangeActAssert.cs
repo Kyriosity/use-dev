@@ -1,5 +1,4 @@
 ﻿using Abc.Ext.Glyphs;
-using Meas.Data.Setup.Attributes;
 using System.Numerics;
 
 namespace FuncStore.Conversion.Tests.Setup.Steps;
@@ -21,7 +20,6 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
             Assert.Fail($"{Nature.HighVoltage} {exception.Message}");
         }
 
-        var ToDeleteMe = PrecisionAttribute.Lookup(out var defPrec);
         var tolerance = delta ?? DefaultDelta;
         var diff = result > expected ? result - expected : expected - result;
         Assert.That(result, Is.EqualTo(expected).Within(tolerance), $"{MarkDiff(tolerance, diff)}");
