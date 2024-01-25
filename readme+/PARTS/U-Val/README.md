@@ -14,13 +14,13 @@
 
 - A child's age of `7` can be months and years.
 - Temperature of `36.6` looks native in _Kelvin_ for liquid gases and in _Celsius_ - for medicine.
-- Close approach to Mars as `33'900'000` seems credible in miles and kilometers <sup>(miles according to [NASA](https://mars.nasa.gov/all-about-mars/night-sky/close-approach/))</sup>
+- Close approach to Mars as `33'900'000` seems credible in miles and kilometers.
 - `Jack` can be family, given (not only on birth), and branded name.
-- `$1'000` or `1'000€` has temporal purchase ability besides variations for essential goods, 1GB of DRAM, and gold ounce
+- `$1'000` or `1'000€` has temporal purchase ability, different for essential goods, 1GB of DRAM, and gold ounce
 
 Values in applications may rely on context or imply a single system of categorization (e.g. SI for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters. (So obvious that doesn't need explanation.)
 
- Old fashion like `const Temperature_AbsZero_Kelvin = 0.00` makes values univocal but ugly to the object-oriented eye, and as a good developer, you will guess a better view: `Temperature[Kelvin] = 277.13`
+ Old fashion like `const Temperature_AbsZero_Kelvin = 0.00` makes values univocal but ugly to the object-oriented eye, and as a good developer, you will guess a better view: `Heating.Max.[Celcius] = 82.15`
 
 |- **Features and omissions**\
 |--- Instantiation flexibility\
