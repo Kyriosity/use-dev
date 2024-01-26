@@ -27,10 +27,9 @@ public abstract class Arrange<TUnit> where TUnit : Enum, IConvertible
     }
 
     static IEnumerable<object[]> MergeTestSources(Type @class) {
-        if (PrecisionAttribute.From<double>(@class, out var delta)) {
-            // ToDo: propagate/store as default !
-        }
-        // ToTest: whether Dir+Rec read !!!
+        double? classDelta = PrecisionAttribute.From<double>(@class, out var delta) ? delta : null;
+        // ToDo: propagate/store as default !
+
         var allFields = @class.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static).ToList();
         var fields = allFields.Where(x => !NotForTestAttribute.From(x).Any());
         var @object = Activator.CreateInstance(@class);
@@ -45,11 +44,11 @@ public abstract class Arrange<TUnit> where TUnit : Enum, IConvertible
     }
 
     private static IEnumerable<object[]> FromRecs(IEnumerable<RawData> source) =>
-        Units<TUnit>.SwapApplicable(TestSource.FromRecords(source), DataRow.UnitsIndeces);
+        Units<TUnit>.SwapParseable(TestSource.FromRecords(source), DataRow.UnitsIndeces);
 
     private static IEnumerable<object[]> FromDirs(IEnumerable<RawData> source) {
         var itemized = TestSource.FromMeasurements(source);
-        var unitsAssigned = Units<TUnit>.SwapApplicable(itemized);
+        var unitsAssigned = Units<TUnit>.SwapParseable(itemized);
         var expanded = DataRow.Normalize(unitsAssigned.Where(x => 1 < x.Entries.Count()));
 
         return expanded;
