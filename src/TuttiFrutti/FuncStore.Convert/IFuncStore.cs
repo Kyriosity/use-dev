@@ -10,7 +10,7 @@ public interface IFuncStore<U> : IFuncStore where U : Enum, IConvertible // ToDo
     Func<N, N> For<N>(U from, U to) where N : INumber<N>;
 }
 
-public class FuncStoreStub<U> : IFuncStore<U> where U : Enum // ToDo: move to project
+public class FuncStore<U> : IFuncStore<U> where U : Enum // ToDo: move to project
 {
     public Func<N, N> For<N>(U? from, U? to) where N : INumber<N> => NotImplemented.Throw(from, to);
 }

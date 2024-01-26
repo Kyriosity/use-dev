@@ -9,9 +9,9 @@ using Metric = Meas.Units.Prefix.Metric;
 
 namespace FuncStore.Conversion.Tests.PhysMath.Dims;
 
-[TestBy<Multiplication<Metric.In>>()]
+[TestBy<Factoring<Metric.In>>()]
 [TestBy<Exponentiation<Metric.Exponent.In>>()]
-[TestBy<Multiplication<Cross.SI_Customary.In>>()]
+[TestBy<Factoring<Cross.SI_Customary.In>>()]
 public class LengthsTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum
 {

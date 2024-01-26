@@ -7,7 +7,7 @@ using Metric = Meas.Units.Prefix.Metric;
 
 namespace FuncStore.Conversion.Tests.RatioScale;
 
-[TestBy<Multiplication<Metric.In>>()]
+[TestBy<Factoring<Metric.In>>()]
 [TestBy<Exponentiation<Metric.Exponent.In>>()]
 public class Accu_MetricTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum

@@ -1,7 +1,7 @@
 ﻿using Abc.Ext.Errors.Sys;
 using System.Numerics;
 namespace FuncStore.Conversion.RatioScale;
-public class Multiplication<U> : IFuncStore<U> where U : Enum, IConvertible
+public class Factoring<U> : IFuncStore<U> where U : Enum, IConvertible
 {
     public Func<N, N> For<N>(U from, U to) where N : INumber<N> {
         var fromNumd = from.ToInt64(null);

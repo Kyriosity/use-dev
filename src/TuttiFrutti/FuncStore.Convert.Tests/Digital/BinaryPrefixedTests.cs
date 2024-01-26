@@ -6,7 +6,7 @@ using Bin = Meas.Units.Prefix.Binary;
 
 namespace FuncStore.Conversion.Tests.Digital;
 
-[TestBy<Multiplication<Bin.In>>]
+[TestBy<Factoring<Bin.In>>]
 [TestBy<Exponentiation<Bin.Exponent.In>>]
 internal class BinaryPrefixedTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum

@@ -7,7 +7,7 @@ using Meas.Units.Digital;
 
 namespace FuncStore.Conversion.Tests.Digital;
 
-[TestBy<Multiplication<In>>]
+[TestBy<Factoring<In>>]
 public class InfoSizeTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum
 {
