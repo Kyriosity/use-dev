@@ -1,5 +1,5 @@
 ﻿using Meas.Data.Setup.Formats;
-using RawData = (string name, object value, (bool set, double? delta) precision);
+using RawData = (string name, object value, double? delta);
 
 namespace Meas.Data.Setup.Extensions;
 public static class TestSource
@@ -13,7 +13,7 @@ public static class TestSource
         rows = null;
         if (source.value is Rec rec) {
             rows = rec.Select(x => new object[] {
-                x.leftVal, x.leftUnit, x.rightVal, x.rightUnit, x.note, source.name, source.precision.delta})
+                x.leftVal, x.leftUnit, x.rightVal, x.rightUnit, x.note, source.name, source.delta})
                 .ToArray();
             return true;
         }
@@ -31,7 +31,7 @@ public static class TestSource
         if (source.value is Dir dir) {
             items = dir.Select(x => new MeasSubject {
                 Cat = source.name, Name = x.Key, Entries = x.Value,
-                Delta = source.precision.delta
+                Delta = source.delta
             });
         }
 

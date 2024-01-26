@@ -3,7 +3,7 @@ using FuncStore.Conversion.Tests.Setup.Proc;
 using Meas.Data.Setup.Extensions;
 using Meas.Data.Setup.Metadata;
 using System.Reflection;
-using RawData = (string name, object value, (bool set, double? delta) precision);
+using RawData = (string name, object value, double? delta);
 
 namespace FuncStore.Conversion.Tests.Setup.Steps;
 
@@ -11,12 +11,6 @@ namespace FuncStore.Conversion.Tests.Setup.Steps;
 public abstract class Arrange<TUnit> where TUnit : Enum, IConvertible
 {
     protected virtual double DefaultDelta { get; private set; } = 0;
-
-    [OneTimeSetUp]
-    public void Init() {
-        if (PrecisionAttribute.From<double>(this.GetType(), out var delta))
-            DefaultDelta = (double)delta;
-    }
 
     static IEnumerable<object[]> CompileTestSource(Type[] catalogs, string[] args) {
         if (args is not null && args.Any())
@@ -27,14 +21,13 @@ public abstract class Arrange<TUnit> where TUnit : Enum, IConvertible
     }
 
     static IEnumerable<object[]> MergeTestSources(Type @class) {
-        double? classDelta = PrecisionAttribute.From<double>(@class, out var delta) ? delta : null;
+        double? commonDelta = PrecisionAttribute.From<double>(@class, out var delta) ? delta : null;
         // ToDo: propagate/store as default !
 
         var allFields = @class.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static).ToList();
         var fields = allFields.Where(x => !NotForTestAttribute.From(x).Any());
         var @object = Activator.CreateInstance(@class);
-        var attributedValues = fields.Select(x => (name: x.Name, value: x.GetValue(@object),
-            precision: (set: PrecisionAttribute.From<double>(x, out var delta), delta: (double?)delta)));
+        var attributedValues = fields.Select(x => (name: x.Name, value: x.GetValue(@object), delta: SelectPrecision(x, commonDelta)));
 
         var datasources = new List<IEnumerable<object[]>> { };
 
@@ -42,6 +35,9 @@ public abstract class Arrange<TUnit> where TUnit : Enum, IConvertible
 
         return datasources.SelectMany(x => x).ToArray();
     }
+
+    private static double? SelectPrecision(MemberInfo member, double? fallback = null) =>
+        PrecisionAttribute.From<double>(member, out var defined) ? defined : fallback;
 
     private static IEnumerable<object[]> FromRecs(IEnumerable<RawData> source) =>
         Units<TUnit>.SwapParseable(TestSource.FromRecords(source), DataRow.UnitsIndeces);
