@@ -6,8 +6,8 @@ namespace FuncStore.Conversion.RatioScale;
 public class Exponentiation<U> : IFuncStore<U> where U : Enum, IConvertible
 {
     public Exponentiation() {
-        if (!ExponentAttribute.Find<U>(out _exponentBase))
-            Argument<U>.Throw($"No {nameof(ExponentAttribute)}");
+        if (!ExponentAttribute.From(typeof(U), out _exponentBase))
+            Argument<U>.Throw($"Missing: {nameof(ExponentAttribute)}");
     }
     protected int ExponentBase => _exponentBase;
     private readonly int _exponentBase;

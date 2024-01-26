@@ -14,12 +14,8 @@ public static class Match
             return true;
 
         var success = Parse.Try<U>(raw, out match);
-        if (!success) {
-            var attributes = typeof(U).CustomAttributes;
-
-            if (attributes.Any(x => x.AttributeType.Name == nameof(MetricAttribute)))
-                success = TryMetricMatch<U>(raw, out match);
-        }
+        if (!success && MetricAttribute.From(typeof(U)).Any())
+            success = TryMetricMatch<U>(raw, out match);
 
         if (success)
             _cache.Put(raw, match);
