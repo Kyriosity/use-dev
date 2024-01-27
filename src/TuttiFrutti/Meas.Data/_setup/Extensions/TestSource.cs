@@ -10,15 +10,16 @@ public static class TestSource
     }
 
     private static bool ToDataRows(RawData source, out object[][] rows) {
-        rows = null;
-        if (source.value is Rec rec) {
-            rows = rec.Select(x => new object[] {
-                x.leftVal, x.leftUnit, x.rightVal, x.rightUnit, x.note, source.name, source.delta})
-                .ToArray();
-            return true;
+        if (source.value is not Rec rec) {
+            rows = null;
+            return false;
         }
 
-        return rows is not null;
+        rows = rec.Select(x => new object[] {
+            x.leftVal, x.leftUnit, x.rightVal, x.rightUnit, x.note, source.name, source.delta })
+            .ToArray();
+
+        return true;
     }
 
     public static IEnumerable<MeasSubject> FromMeasurements(IEnumerable<RawData> fields) {
@@ -27,15 +28,16 @@ public static class TestSource
     }
 
     private static bool ToDataItems(RawData source, out IEnumerable<MeasSubject> items) {
-        items = null;
-        if (source.value is Dir dir) {
-            items = dir.Select(x => new MeasSubject {
-                Cat = source.name, Name = x.Key, Entries = x.Value,
-                Delta = source.delta
-            });
+        if (source.value is not Dir dir) {
+            items = null;
+            return false;
         }
 
-        return items is not null;
+        items = dir.Select(x => new MeasSubject {
+            Cat = source.name, Name = x.Key, Entries = x.Value,
+            Delta = source.delta
+        });
+        return true;
     }
 }
 
