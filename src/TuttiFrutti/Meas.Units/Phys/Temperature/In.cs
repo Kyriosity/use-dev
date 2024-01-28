@@ -4,8 +4,8 @@ public enum In
     Undefined = 0,
 
     Kelvin,
-    Fahrenheit,
     Celsius,
+    Fahrenheit,
 
     Newton, // 
     Rankine,

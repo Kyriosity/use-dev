@@ -6,7 +6,7 @@ using FuncStores = FuncStore.Conversion.Temperature;
 
 namespace FuncStore.Conversion.Tests.RatioScale;
 
-[TestBy<FuncStores.Basic>]
+[TestBy<FuncStores.Basic<Meas.Units.Phys.Temperature.KCF.In>>]
 
 public class TemperatureTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible
