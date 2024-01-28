@@ -1,6 +1,7 @@
 ﻿using Abc.Ext.Boxes.Mixed;
 using Abc.Ext.Xlat.Consts;
 using Meas.Units.Metadata;
+using Meas.Units.Names;
 using Si = Meas.Units.Names.Si;
 
 namespace Meas.Units.Utils;
@@ -30,7 +31,7 @@ public static class Match
             return false;
 
         if (prefixed == raw)
-            return Parse.Try<U>("base", out match);
+            return Parse.Try<U>(Common.Base, out match);
 
         var extra = raw[..^prefixed.Length]; // == raw.Substring(0, raw.Length - prefixed.Length)
         return Parse.Try<U>(extra, out match);

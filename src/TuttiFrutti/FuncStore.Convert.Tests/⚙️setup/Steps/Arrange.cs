@@ -22,7 +22,6 @@ public abstract class Arrange<TUnit> where TUnit : Enum, IConvertible
 
     static IEnumerable<object[]> MergeTestSources(Type @class) {
         double? commonDelta = PrecisionAttribute.From<double>(@class, out var delta) ? delta : null;
-        // ToDo: propagate/store as default !
 
         var allFields = @class.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static).ToList();
         var fields = allFields.Where(x => !NotForTestAttribute.From(x).Any());
