@@ -2,7 +2,7 @@
 
 namespace Meas.Units.Phys.Weight.SI;
 
-[Metric]
+[Factored]
 public enum In
 {
     gram = 1,

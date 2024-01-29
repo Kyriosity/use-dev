@@ -2,7 +2,7 @@
 
 namespace Meas.Units.Phys.Distance.Length.SI;
 
-[Metric]
+[Factored]
 public enum In //~ implements IFactored, IRatioScaled, IBase10 (i.e. IRatioScaled)
 {
     Undefined = 0,

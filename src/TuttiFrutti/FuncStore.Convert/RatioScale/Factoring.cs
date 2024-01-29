@@ -1,8 +1,17 @@
 ﻿using Abc.Ext.Errors.Sys;
+using Meas.Units.Metadata;
 using System.Numerics;
+
 namespace FuncStore.Conversion.RatioScale;
 public class Factoring<U> : IFuncStore<U> where U : Enum, IConvertible
 {
+    public Factoring() {
+        var unitsType = typeof(U);
+
+        if (!FactoredAttribute.From(unitsType).Any())
+            Argument<U>.Throw($"Requires explicit {nameof(FactoredAttribute)}");
+    }
+
     public Func<N, N> For<N>(U from, U to) where N : INumber<N> {
         var fromNumd = from.ToInt64(null);
         var toNumd = to.ToInt64(null);
@@ -10,7 +19,7 @@ public class Factoring<U> : IFuncStore<U> where U : Enum, IConvertible
 
         return x => {
             if (fromNumd is 0 || toNumd is 0)
-                Argument<U>.Throw($"Neither factor can't be zero ({nameof(from)}={from},{nameof(to)}={to})");
+                Argument<U>.Throw($"Neither factor can be zero ({nameof(from)}={from},{nameof(to)}={to})");
 
             if (fromNumd == toNumd)
                 return x;

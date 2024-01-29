@@ -1,4 +1,6 @@
 ﻿namespace Meas.Units.Phys.Distance.Length._ancient.Egyptian;
+
+// ToDo: [Factored]
 public enum In
 {
     Undefined = 0,

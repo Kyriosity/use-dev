@@ -1,4 +1,8 @@
-﻿namespace Meas.Units.Prefix.Binary;
+﻿using Meas.Units.Metadata;
+
+namespace Meas.Units.Prefix.Binary;
+
+[Factored]
 public enum In : ulong
 {
     Undefined = 0,

@@ -1,4 +1,8 @@
-﻿namespace Meas.Units.Phys.Distance.Length.Cross.SI_Customary;
+﻿using Meas.Units.Metadata;
+
+namespace Meas.Units.Phys.Distance.Length.Cross.SI_Customary;
+
+[Factored]
 public enum In
 {
     Undefined = 0,

@@ -1,5 +1,9 @@
-﻿namespace Meas.Units.Phys.Distance.Length.Astro;
-public enum In : long // 
+﻿using Meas.Units.Metadata;
+
+namespace Meas.Units.Phys.Distance.Length.Astro;
+
+[Factored]
+public enum In : long
 {
     Undefined = 0,
 

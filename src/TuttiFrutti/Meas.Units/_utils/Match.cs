@@ -15,7 +15,7 @@ public static class Match
             return true;
 
         var success = Parse.Try<U>(raw, out match);
-        if (!success && MetricAttribute.From(typeof(U)).Any())
+        if (!success && FactoredAttribute.From(typeof(U)).Any())
             success = TryMetricMatch<U>(raw, out match);
 
         if (success)
