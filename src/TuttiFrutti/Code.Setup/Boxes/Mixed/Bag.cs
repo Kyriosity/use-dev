@@ -8,13 +8,13 @@ public class Bag : IHeap
 {
     private readonly IDictionary<string, IEnumerable> _coll = new Dictionary<string, IEnumerable>();
 
-    public void Put<TId, TVal>(TId id, TVal? value) {
+    public void Put<TKey, TVal>(TKey id, TVal? value) {
         var pointer = Qualify<TVal>();
 
         if (_coll.ContainsKey(pointer))
-            ((IDictionary<TId, TVal?>)_coll[pointer])[id] = value;
+            ((IDictionary<TKey, TVal?>)_coll[pointer])[id] = value;
         else
-            _coll[pointer] = new Dictionary<TId, TVal?>() { [id] = value };
+            _coll[pointer] = new Dictionary<TKey, TVal?>() { [id] = value };
     }
 
     public bool Pick<TId, TVal>(TId id, out TVal? value) {
