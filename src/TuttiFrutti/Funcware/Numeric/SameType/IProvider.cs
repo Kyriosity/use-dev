@@ -1,7 +1,7 @@
 ﻿using System.Numerics;
 
-namespace Funcware.Numeric;
-public interface IFuncStore<M> : IFuncStore
+namespace Funcware.Numeric.SameType;
+public interface IProvider<M> : IProvider
 {
     Func<N, N> For<N>(M from, M to) where N : INumber<N>;
 }
