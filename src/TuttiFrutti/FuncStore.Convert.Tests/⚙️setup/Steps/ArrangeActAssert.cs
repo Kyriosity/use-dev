@@ -5,12 +5,14 @@ namespace FuncStore.Conversion.Tests.Setup.Steps;
 public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit>
      where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible
 {
+    protected static readonly string NotAvailable = $"{'\u207F'}{'\u002F'}{'\u2090'}!";
+
     public virtual void Match<N>(N value, TUnit unit, N expected, TUnit expectedUnit,
         string title, string cat, double? delta) where N : INumber<N> {
 
         var func = _funcs.For<N>(unit, expectedUnit);
         if (func is null)
-            Assert.Ignore($"{'\u207F'}{'\u002F'}{'\u2090'}! {unit}->{expectedUnit} ({_funcs})");
+            Assert.Ignore($"{NotAvailable} {unit}->{expectedUnit} ({_funcs})");
 
         N result = N.Zero;
         try {
