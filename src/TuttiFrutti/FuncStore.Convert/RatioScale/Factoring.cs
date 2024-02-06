@@ -9,7 +9,7 @@ public class Factoring<U> : IFuncStore<U> where U : Enum, IConvertible
         var unitsType = typeof(U);
 
         if (!FactoredAttribute.From(unitsType).Any())
-            Argument<U>.Throw($"Requires explicit {nameof(FactoredAttribute)}");
+            Argument<U>.Throw($"\"{unitsType.FullName}\" requires here explicit [{nameof(FactoredAttribute)}]");
     }
 
     public Func<N, N> For<N>(U from, U to) where N : INumber<N> {
