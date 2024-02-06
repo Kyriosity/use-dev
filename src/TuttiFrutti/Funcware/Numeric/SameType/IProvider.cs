@@ -1,7 +1,5 @@
-﻿using System.Numerics;
-
-namespace Funcware.Numeric.SameType;
-public interface IProvider<M> : IProvider
+﻿namespace Funcware.Numeric.SameType;
+public interface IProvider<in M> : IProvider
 {
-    Func<N, N> For<N>(M from, M to) where N : INumber<N>;
+    Func<N, N>? For<N>(M from, M to) where N : INumber<N>;
 }
