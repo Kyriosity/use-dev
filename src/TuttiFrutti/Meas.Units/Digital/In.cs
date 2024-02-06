@@ -1,4 +1,8 @@
-﻿namespace Meas.Units.Digital;
+﻿using Meas.Units.Metadata;
+
+namespace Meas.Units.Digital;
+
+[Factored]
 public enum In : ulong
 {
     Undefined = 0,
