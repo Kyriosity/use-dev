@@ -56,4 +56,4 @@ The above draft is fairly acceptable, but let's hone once and for good a decent 
 ---
 
 | - **Source code** (C#):\
-|--- [BoolVsVizConverter.cs](../src/TuttiFrutti/Win.Clay/Converters/BoolVsVizConverter.cs) 
+|--- [BoolVsVizConverter.cs](../src/TuttiFrutti/WinClay/Converters/BoolVsVizConverter.cs) 
