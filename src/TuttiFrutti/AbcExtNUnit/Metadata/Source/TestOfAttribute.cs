@@ -1,4 +1,4 @@
-﻿namespace Abc.Ext.NUnit.Metadata.Source;
+﻿namespace AbcExtNUnit.Metadata.Source;
 public class TestOfAttribute<T>(params string[] args) : TestOfAttribute<T, Stub>(args) { }
 public class TestOfAttribute<T1, T2>(params string[] args) : TestOfAttribute<T1, T2, Stub>(args) { }
 public class TestOfAttribute<T1, T2, T3>(params string[] args) : TestOfAttribute<T1, T2, T3, Stub>(args) { }

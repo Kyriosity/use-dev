@@ -1,5 +1,4 @@
-﻿using Abc.Ext.NUnit.Metadata.Source;
-using FuncStore.Conversion.Tests.Setup.Metadata;
+﻿using FuncStore.Conversion.Tests.Setup.Metadata;
 using FuncStore.Conversion.Tests.Setup.Steps;
 using MeasUnits.Phys.Temperature.KCF;
 using Constants = MeasData.Temperature.Constants.Constants;

@@ -1,5 +1,4 @@
-﻿using Abc.Ext.NUnit.Metadata.Source;
-using FuncStore.Conversion.RatioScale;
+﻿using FuncStore.Conversion.RatioScale;
 using FuncStore.Conversion.Tests.Setup.Metadata;
 using FuncStore.Conversion.Tests.Setup.Steps;
 using MeasData.Digital;
