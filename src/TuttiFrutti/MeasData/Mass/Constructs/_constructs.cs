@@ -1,5 +1,2 @@
 ﻿namespace MeasData.Mass.Constructs;
-public partial class Constructs : Synonyms
-{
-
-}
+public partial class Constructs : Synonyms { }

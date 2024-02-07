@@ -3,15 +3,18 @@ public abstract class Synonyms
 {
     protected const string BASE = "base";
 
-    protected const string nano = "nano";
-    protected const string mc = "micro"; protected const string micro = "micro";
-    protected const string milli = "milli";
-    protected const string centi = "centi";
-    protected const string deci = "deci";
+    protected const string nano = nameof(nano);
 
-    protected const string deca = "deca";
-    protected const string kilo = "kilo";
-    protected const string mega = "mega";
-    protected const string giga = "giga";
+    protected const string micro = nameof(micro);
+    protected const string mc = micro;
+
+    protected const string milli = nameof(milli);
+    protected const string centi = nameof(centi);
+    protected const string deci = nameof(deci);
+
+    protected const string deca = nameof(deca);
+    protected const string kilo = nameof(kilo);
+    protected const string mega = nameof(mega);
+    protected const string giga = nameof(giga);
 
 }

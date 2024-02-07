@@ -1,7 +1,7 @@
 ﻿namespace MeasUnits.Phys.Distance.Length.Astro.Org.Tables.Chem.Compounds.Inorganic.Oxides;
 public enum CasRegistry
 {
-    Undefinded = 0,
+    Undefined = 0,
 
     H2O = 7732_18_5,
     N2O = 10024_97_2,
