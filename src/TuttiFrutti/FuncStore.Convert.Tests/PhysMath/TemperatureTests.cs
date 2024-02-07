@@ -1,12 +1,15 @@
 ﻿using Abc.Ext.NUnit.Metadata.Source;
 using FuncStore.Conversion.Tests.Setup.Metadata;
 using FuncStore.Conversion.Tests.Setup.Steps;
-using Meas.Data.Temperature;
+using MeasUnits.Phys.Temperature.KCF;
+using Constants = MeasData.Temperature.Constants.Constants;
 using FuncStores = FuncStore.Conversion.Temperature;
+using Nature = MeasData.Temperature.Nature.Nature;
+using PhaseChange = MeasData.Temperature.PhaseChange.PhaseChange;
 
 namespace FuncStore.Conversion.Tests.RatioScale;
 
-[TestBy<FuncStores.Basic<Meas.Units.Phys.Temperature.KCF.In>>]
+[TestBy<FuncStores.Basic<In>>]
 
 public class TemperatureTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible

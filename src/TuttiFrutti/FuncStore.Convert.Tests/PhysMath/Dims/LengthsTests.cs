@@ -2,20 +2,20 @@
 using FuncStore.Conversion.RatioScale;
 using FuncStore.Conversion.Tests.Setup.Metadata;
 using FuncStore.Conversion.Tests.Setup.Steps;
-using Astro = Meas.Data.Length.Astro;
-using Cross = Meas.Units.Phys.Distance.Length.Cross;
-using Earth = Meas.Data.Length.Earth;
-using Metric = Meas.Units.Prefix.Metric;
+using MeasData.Length.Earth.Distances;
+using MeasData.Length.Earth.Elevations;
+using In = MeasUnits.Phys.Distance.Length.Cross.SI_Customary.In;
+using Metric = MeasUnits.Prefixes.Metric;
 
 namespace FuncStore.Conversion.Tests.PhysMath.Dims;
 
 [TestBy<Factoring<Metric.In>>()]
 [TestBy<Exponentiation<Metric.Exponent.In>>()]
-[TestBy<Factoring<Cross.SI_Customary.In>>()]
+[TestBy<Factoring<In>>()]
 public class LengthsTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum
 {
-    [TestOf<Earth.Distances, Earth.Elevations, Astro.Distances>()]
+    [TestOf<Distances, Elevations, MeasData.Length.Astro.Distances.Distances>()]
     public override void Match<N>(N valA, TUnit unitA, N valB, TUnit unitB, string title, string cat, double? delta) =>
         base.Match(valA, unitA, valB, unitB, title, cat, delta);
 }

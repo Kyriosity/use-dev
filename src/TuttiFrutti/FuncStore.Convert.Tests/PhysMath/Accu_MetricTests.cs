@@ -2,8 +2,8 @@ using Abc.Ext.NUnit.Metadata.Source;
 using FuncStore.Conversion.RatioScale;
 using FuncStore.Conversion.Tests.Setup.Metadata;
 using FuncStore.Conversion.Tests.Setup.Steps;
-using Meas.Data.Calibration.Metric;
-using Metric = Meas.Units.Prefix.Metric;
+using MeasData.Calibration.Metric;
+using Metric = MeasUnits.Prefixes.Metric;
 
 namespace FuncStore.Conversion.Tests.RatioScale;
 

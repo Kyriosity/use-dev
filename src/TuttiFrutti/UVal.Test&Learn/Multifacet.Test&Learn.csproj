@@ -21,7 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Abc\Abc.csproj" />
     <ProjectReference Include="..\Code.Setup\Abc.Ext.csproj" />
-    <ProjectReference Include="..\Meas.Units\Meas.Units.csproj" />
+    <ProjectReference Include="..\MeasUnits\MeasUnits.csproj" />
     <ProjectReference Include="..\TD.N-Val\TestData.N-Val.csproj" />
   </ItemGroup>
 

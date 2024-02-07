@@ -1,11 +1,10 @@
 ﻿using Abc.Ext.DataOps;
-using Meas.Data.Setup.Formats;
-using System.Numerics;
+using MeasData.Setup.Formats;
 
 namespace FuncStore.Conversion.Tests.Setup.Proc;
 static class DataRow
 {
-    internal static IEnumerable<object[]> Normalize<N, TUnit>(IEnumerable<ISubject<N, TUnit>> items) where N : INumber<N> =>
+    internal static IEnumerable<object[]> Normalize<N, TUnit>(IEnumerable<Subject<N, TUnit>> items) where N : INumber<N> =>
         items.SelectMany(item => CrossPair(item.Entries).Select(
             x => new object[] { x[0].val, x[0].unit, x[1].val, x[1].unit, item.Name, item.Cat, item.Delta }));
 

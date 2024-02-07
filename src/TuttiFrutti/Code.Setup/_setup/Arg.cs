@@ -1,4 +1,4 @@
-﻿namespace Abc.Ext.Setup;
+﻿namespace Abc.Ext.Setup; // ToDo: rename SETUP!
 internal static class Arg
 {
     internal const string NotSubmitted = "<?n/submitted?>";

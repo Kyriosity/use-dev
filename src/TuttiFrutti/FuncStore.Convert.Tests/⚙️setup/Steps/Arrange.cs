@@ -1,7 +1,6 @@
-﻿using FuncStore.Conversion.Tests._️setup.Proc;
-using FuncStore.Conversion.Tests.Setup.Proc;
-using Meas.Data.Setup.Extensions;
-using Meas.Data.Setup.Metadata;
+﻿using FuncStore.Conversion.Tests.Setup.Proc;
+using MeasData.Setup.Extensions;
+using MeasData.Setup.Metadata;
 using System.Reflection;
 using RawData = (string name, object value, double? delta);
 
@@ -13,7 +12,7 @@ public abstract class Arrange<TUnit> where TUnit : Enum, IConvertible
     protected virtual double DefaultDelta { get; private set; } = 0;
 
     static IEnumerable<object[]> CompileTestSource(Type[] catalogs, string[] args) {
-        if (args is not null && args.Any())
+        if (args.Any())
             Console.WriteLine($"arguments supplied but not supported\n(\"{string.Join("\", \"", args)}\")");
 
         return catalogs.Where(x => !NotForTestAttribute.From(x).Any())

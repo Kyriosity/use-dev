@@ -1,12 +1,12 @@
-﻿using Meas.Data.Setup.Formats;
-using Meas.Units.Utils;
-using System.Numerics;
+﻿using MeasData.Setup.Formats;
+using MeasUnits.Utils;
 
-namespace FuncStore.Conversion.Tests._️setup.Proc;
+
+namespace FuncStore.Conversion.Tests.Setup.Proc;
 static class Units<TUnit> where TUnit : Enum
 {
-    internal static IEnumerable<ISubject<N, TUnit>> SwapParseable<N>(IEnumerable<ISubject<N, string>> items) where N : INumber<N> {
-        var unitized = items.Select(x => new ISubject<N, TUnit> {
+    internal static IEnumerable<Subject<N, TUnit>> SwapParseable<N>(IEnumerable<Subject<N, string>> items) where N : INumber<N> {
+        var unitized = items.Select(x => new Subject<N, TUnit> {
             Cat = x.Cat, Name = x.Name, Delta = x.Delta, Entries = SwapParseable(x.Entries)
         }).ToList();
 

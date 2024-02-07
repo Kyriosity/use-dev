@@ -21,6 +21,8 @@ public abstract class WiredValues<T, U> : IValueByUnit<T, U> where U : Enum
     protected abstract T Convert(U unit);
 }
 
+// ToDecide: do we need both ? What else as func may bind?
+
 public class FuncWiredValues<N, U, F> : WiredValues<N, U>
     where N : INumber<N> where U : Enum where F : IFuncStore<U>, new()
 {

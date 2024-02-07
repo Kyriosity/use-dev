@@ -1,5 +1,5 @@
 ﻿using Abc.Ext.Errors.Sys;
-using Meas.Units.Metadata;
+using MeasUnits.Metadata;
 
 namespace FuncStore.Conversion.RatioScale;
 

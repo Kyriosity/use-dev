@@ -1,5 +1,5 @@
 using Abc.Ext.Errors.Sys;
-using Meas.Units.Phys.Temperature;
+using MeasUnits.Phys.Temperature;
 using System.Numerics;
 
 namespace UVal.Test_Learn;
@@ -15,7 +15,7 @@ public class BuildWaysTest
         var tmprt = waterTemp[C];
         waterTemp[K] = 1;
 
-        var pc = UVal.Of(444, Meas.Units.Fin.Currency.In.EUR, new VisaExchange<Meas.Units.Fin.Currency.In>());
+        var pc = UVal.Of(444, MeasUnits.Fin.Currency.In.EUR, new VisaExchange<MeasUnits.Fin.Currency.In>());
         // ToDo: add hard currencies fixed at the end
 
         var newT = UVal.Const.Of(1, K);
@@ -30,7 +30,6 @@ public class BuildWaysTest
 
     [Test]
     public void CustomFabricLooseType() {
-
         var temperature = new UVal<In>();
         temperature.Of(1.11);
     }
