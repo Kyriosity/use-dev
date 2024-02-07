@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
 
-namespace Win.Clay.Converters;
+namespace WinClay.Converters;
 
 [ValueConversion(typeof(Visibility), typeof(bool))]
 public class BoolVsVizConverter : IValueConverter
