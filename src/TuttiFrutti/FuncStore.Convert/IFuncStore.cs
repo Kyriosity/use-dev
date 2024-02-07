@@ -1,5 +1,4 @@
-﻿using Abc.Ext.Errors.Sys;
-using System.Numerics;
+﻿using System.Numerics;
 
 namespace FuncStore.Conversion;
 
@@ -12,5 +11,5 @@ public interface IFuncStore<U> : IFuncStore where U : Enum, IConvertible // ToDo
 
 public class FuncStore<U> : IFuncStore<U> where U : Enum // ToDo: move to project
 {
-    public Func<N, N> For<N>(U? from, U? to) where N : INumber<N> => NotImplemented.Throw(from, to);
+    public Func<N, N> For<N>(U? from, U? to) where N : INumber<N> => AbcExt.Errors.Sys.NotImplemented.Throw(from, to);
 }

@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Code.Setup\Abc.Ext.csproj" />
+    <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
   </ItemGroup>
 
 </Project>

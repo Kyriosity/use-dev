@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Code.Setup\Abc.Ext.csproj" />
+    <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
     <ProjectReference Include="..\FuncStore.Convert\FuncStore.Conversion.csproj" />
     <ProjectReference Include="..\MeasData\MeasData.csproj" />
     <ProjectReference Include="..\MeasOrg\MeasOrg.csproj" />

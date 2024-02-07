@@ -1,4 +1,4 @@
-﻿using Abc.Ext.Errors.Sys;
+﻿using AbcExt.Errors.Sys;
 using Imp.Rvrs;
 
 namespace Rvrs.Mk;

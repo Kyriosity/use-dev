@@ -1,11 +1,11 @@
-﻿using Abc.Ext.Errors.Sys;
-using Abc.Item;
+﻿using Abc.Item;
+using AbcExt.Errors.Sys;
 
 namespace Abc.Mk.Item.Builders;
 
 public class Item : IOutput
 {
-    public IGet<T> Of<T>(T value) => Abc.Ext.Errors.Sys.NotImplemented.Throw();
+    public IGet<T> Of<T>(T value) => NotImplemented.Throw();
 
     public IGet<T> Of<T>(Func<T> init) => NotImplemented.Throw();
 }

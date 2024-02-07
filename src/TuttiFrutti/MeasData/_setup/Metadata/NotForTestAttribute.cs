@@ -1,4 +1,4 @@
-﻿using Abc.Ext.Metadata;
+﻿using AbcExt.Metadata;
 
 namespace MeasData.Setup.Metadata;
 

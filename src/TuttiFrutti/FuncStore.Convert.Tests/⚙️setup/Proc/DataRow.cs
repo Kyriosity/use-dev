@@ -1,4 +1,4 @@
-﻿using Abc.Ext.DataOps;
+﻿using AbcExt.DataOps;
 using MeasData.Setup.Formats;
 
 namespace FuncStore.Conversion.Tests.Setup.Proc;

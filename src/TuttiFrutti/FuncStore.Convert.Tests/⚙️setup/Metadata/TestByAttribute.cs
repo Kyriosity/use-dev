@@ -1,16 +1,18 @@
-﻿namespace FuncStore.Conversion.Tests.Setup.Metadata;
+﻿using AbcExt.Errors.Sys;
 
-public class TestByAttribute<TStore>(params string[] _) : TestFixtureAttribute(_typeOfStore, _typeOfUnit)
+namespace FuncStore.Conversion.Tests.Setup.Metadata;
+
+public class TestByAttribute<TStore>(params string[] _) : TestFixtureAttribute(TypeOfStore, TypeOfUnit)
     where TStore : IFuncStore, new()
 {
-    private static readonly Type _typeOfStore = typeof(TStore);
+    private static readonly Type TypeOfStore = typeof(TStore);
 
-    private static readonly Type? _typeOfUnit = DeriveUnitArgument(_typeOfStore);
+    private static readonly Type? TypeOfUnit = DeriveUnitArgument(TypeOfStore);
 
     private static Type? DeriveUnitArgument(Type type) {
-        var funcStoreInterfaces = _typeOfStore.GetInterfaces().Where(t => t.GetInterfaces().Any(b => b == typeof(IFuncStore)));
+        var funcStoreInterfaces = TypeOfStore.GetInterfaces().Where(t => t.GetInterfaces().Any(b => b == typeof(IFuncStore)));
         if (!funcStoreInterfaces.Any())
-            Argument<IFuncStore>.Throw($"`{_typeOfStore}` has no interface derived from {nameof(IFuncStore)}");
+            Argument<IFuncStore>.Throw($"`{TypeOfStore}` has no interface derived from {nameof(IFuncStore)}");
 
         var unitGenerics = funcStoreInterfaces.Where(iface => 0 < iface.GenericTypeArguments.Length)
             .SelectMany(x => x.GenericTypeArguments).Where(arg => arg.BaseType?.Name == nameof(Enum));
@@ -19,7 +21,7 @@ public class TestByAttribute<TStore>(params string[] _) : TestFixtureAttribute(_
         if (0 == numUnitArgs)
             Argument<IFuncStore>.Throw($"No generic argument refers units for \"{nameof(IFuncStore)}\"");
         if (1 < numUnitArgs)
-            Argument<IFuncStore>.Throw($"More than one ({numUnitArgs}) generic \"{nameof(IFuncStore)}\" implemented in {_typeOfStore}");
+            Argument<IFuncStore>.Throw($"More than one ({numUnitArgs}) generic \"{nameof(IFuncStore)}\" implemented in {TypeOfStore}");
 
         return unitGenerics.First();
     }

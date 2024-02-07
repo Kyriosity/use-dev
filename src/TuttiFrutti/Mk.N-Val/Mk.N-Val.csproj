@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -9,8 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
     <ProjectReference Include="..\Abc\Abc.csproj" />
-    <ProjectReference Include="..\Code.Setup\Abc.Ext.csproj" />
+    <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
     <ProjectReference Include="..\N-Val\N-Val.csproj" />
   </ItemGroup>
 

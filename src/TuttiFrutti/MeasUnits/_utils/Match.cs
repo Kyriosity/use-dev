@@ -1,5 +1,5 @@
-﻿using Abc.Ext.Boxes.Mixed;
-using Abc.Ext.Xlat.Consts;
+﻿using AbcExt.Boxes.Mixed;
+using AbcExt.Xlat.Consts;
 using MeasUnits.Metadata;
 using MeasUnits.Names;
 using MeasUnits.Names.Si;
