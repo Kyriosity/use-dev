@@ -1,6 +1,6 @@
 ﻿namespace MeasUnits.Digital;
 
-[Metadata.Factored]
+[Factored]
 public enum In : ulong
 {
     Undefined = 0,

@@ -1,6 +1,6 @@
 ﻿namespace MeasUnits.Phys.Weight.UsCustomary;
 
-[Metadata.Factored]
+[Factored]
 public enum In
 {
     ounce = 1,

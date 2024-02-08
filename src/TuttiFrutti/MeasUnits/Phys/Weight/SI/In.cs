@@ -1,6 +1,6 @@
 ﻿namespace MeasUnits.Phys.Weight.SI;
 
-[Metadata.Factored]
+[Factored]
 public enum In
 {
     gram = 1,

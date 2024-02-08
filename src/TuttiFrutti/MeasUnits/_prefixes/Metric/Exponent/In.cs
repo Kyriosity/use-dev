@@ -1,6 +1,6 @@
 ﻿namespace MeasUnits.Prefixes.Metric.Exponent;
 
-[Metadata.Exponent(10)]
+[Exponent(10)]
 public enum In
 {
     quecto = -30,

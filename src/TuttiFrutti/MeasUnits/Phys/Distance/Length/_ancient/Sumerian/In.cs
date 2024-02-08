@@ -1,6 +1,6 @@
 ﻿namespace MeasUnits.Phys.Distance.Length.Ancient.Sumerian;
 
-[Metadata.Factored]
+[Factored]
 public enum In
 {
     Undefined = 0,

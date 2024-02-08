@@ -1,6 +1,6 @@
 ﻿namespace MeasUnits.Prefixes.Metric;
 
-[Metadata.Factored]
+[Factored]
 public enum In : long
 {
     //zepto = -1_000_000_000_000_000_000_000, // too large for long

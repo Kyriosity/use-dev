@@ -1,7 +1,6 @@
 ﻿namespace MeasUnits.Prefixes.Binary.Exponent;
 
-
-[Metadata.Exponent(2)]
+[Exponent(2)]
 public enum In
 {
     // https://en.wikipedia.org/wiki/Binary_prefix

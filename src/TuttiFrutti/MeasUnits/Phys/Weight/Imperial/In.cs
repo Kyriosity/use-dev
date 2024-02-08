@@ -1,6 +1,6 @@
 ﻿namespace MeasUnits.Phys.Weight.Imperial;
 
-[Metadata.Factored]
+[Factored]
 public enum In
 {
     Undefined = 0,
