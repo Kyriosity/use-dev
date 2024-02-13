@@ -2,9 +2,9 @@
 
 namespace FuncStore.Conversion;
 
-public interface IFuncStore { }
+public interface IFuncStore;
 
-public interface IFuncStore<U> : IFuncStore where U : Enum, IConvertible // ToDo: more generic FuncStore<T>
+public interface IFuncStore<in U> : IFuncStore where U : Enum, IConvertible // ToDo: more generic FuncStore<T>
 {
     Func<N, N> For<N>(U from, U to) where N : INumber<N>;
 }

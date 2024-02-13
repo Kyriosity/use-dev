@@ -25,7 +25,7 @@ public class TestOfAttribute<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(param
 
     // should supply through context/properties but can't because of NUnit issues:
     // e.g. - github.com/nunit/nunit/issues/548
-    private const string HardCodedMethodName = "CompileTestSource";
+    protected const string HardCodedMethodName = "CompileTestSource";
 }
 
 

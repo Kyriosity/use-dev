@@ -123,6 +123,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbcExt", "AbcExt\AbcExt.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinClay", "WinClay\WinClay.csproj", "{03A6E76D-E38B-46C2-94C7-4C2C1BE76AF6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeasFuncware", "MeasFuncware\MeasFuncware.csproj", "{532938FD-7964-4164-8D44-CE9E8C919AF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -245,6 +247,10 @@ Global
 		{03A6E76D-E38B-46C2-94C7-4C2C1BE76AF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03A6E76D-E38B-46C2-94C7-4C2C1BE76AF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03A6E76D-E38B-46C2-94C7-4C2C1BE76AF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{532938FD-7964-4164-8D44-CE9E8C919AF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{532938FD-7964-4164-8D44-CE9E8C919AF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{532938FD-7964-4164-8D44-CE9E8C919AF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{532938FD-7964-4164-8D44-CE9E8C919AF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -293,6 +299,7 @@ Global
 		{3CDDC14E-896C-4615-8E17-AF33211B2A60} = {4BE97A0C-F948-49F0-A073-C59CFB559CA6}
 		{C7D1DDA6-8E47-4305-A403-07F696668DEB} = {4BE97A0C-F948-49F0-A073-C59CFB559CA6}
 		{03A6E76D-E38B-46C2-94C7-4C2C1BE76AF6} = {DD6075CE-0D9E-4314-B00D-3680AAB26E8D}
+		{532938FD-7964-4164-8D44-CE9E8C919AF7} = {C7A85FF6-2B50-46BC-823D-D9A1DB3B48E0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C57594B1-16AE-49CA-8B93-C41A39EB7666}

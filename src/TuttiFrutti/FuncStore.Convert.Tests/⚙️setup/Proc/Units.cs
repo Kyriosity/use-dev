@@ -13,7 +13,7 @@ static class Units<TUnit> where TUnit : Enum
         return unitized;
     }
 
-    internal static object[][] SwapParseable(IEnumerable<object[]> source, int[] indeces) {
+    internal static object[][] SwapParseable(ObjArrays source, int[] indeces) {
         var unitCasted = source.Select(x => (success: TryCast(x, indeces, out var cast), result: cast.ToArray()))
             .Where(x => x.success).Select(x => x.result);
         return unitCasted.ToArray();
