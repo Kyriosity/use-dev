@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 
 namespace AbcExt.Metadata;
-public class UtilizedAttribute<TSelf> : Attribute where TSelf : UtilizedAttribute<TSelf>
+public abstract class ExtendedAttribute<TSelf> : Attribute where TSelf : ExtendedAttribute<TSelf>
 {
     public static bool From<T>(MemberInfo member, out T found) {
         var attribute = From(member).SingleOrDefault();

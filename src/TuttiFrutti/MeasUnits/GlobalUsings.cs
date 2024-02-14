@@ -1,1 +1,2 @@
-﻿global using MeasUnits.Metadata;
+﻿global using AbcExt.Metadata;
+global using MeasUnits.Metadata;
