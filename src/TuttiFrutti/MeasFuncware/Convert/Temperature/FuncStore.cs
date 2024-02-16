@@ -1,7 +1,6 @@
 ﻿using AbcExt.Xlat.Consts;
 using Funcware.Numeric.SameType.InUnit.Custom;
 using MeasUnits.Phys.Temperature;
-using System.Numerics;
 
 namespace MeasFuncware.Convert.Temperature;
 
