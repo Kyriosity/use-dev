@@ -26,8 +26,9 @@ public static class Argument
         [CallerArgumentExpression(nameof(arg11))] string proto11 = Arg.NotSubmitted,
         [CallerMemberName] string caller = Caller.NotSpecified) {
 
-        var digest = new[] { proto1, proto2, proto3, proto4, proto5, proto6, proto7, proto8, proto9, proto10, proto11 };
+        var digest = new[] { proto1, proto2, proto3, proto4, proto5, proto6, proto7, proto8, proto9, proto10, proto11 }
+            .Where(x => x != Arg.NotSubmitted);
 
-        throw new ArgumentException($"`{string.Join("`, `", digest.Where(x => x != Arg.NotSubmitted))}`");
+        throw new ArgumentException($"{caller}:\n{message}:\n`{string.Join("`, `", digest)}`");
     }
 }
