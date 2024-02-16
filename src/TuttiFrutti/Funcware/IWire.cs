@@ -1,7 +1,8 @@
 ﻿namespace Funcware;
 
-public interface IProvider;
-public interface IProvider<in M> : IProvider
+public interface IWire;
+
+public interface IWire<in M> : IWire
 {
     Func<T, TResult> For<T, TResult>(M from, M to);
 }

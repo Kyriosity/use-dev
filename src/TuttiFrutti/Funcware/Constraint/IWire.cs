@@ -1,5 +1,5 @@
 ﻿namespace Funcware.Constraint;
-public interface IProvider<M, C> : IProvider
+public interface IWire<in M, in C> : IWire
 {
     Func<T, T> For<T>(M from, M to) where T : C;
 }

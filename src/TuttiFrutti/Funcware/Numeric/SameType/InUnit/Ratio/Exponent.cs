@@ -1,6 +1,6 @@
 ﻿namespace Funcware.Numeric.SameType.InUnit.Ratio;
 
-public class Exponent<U> : Funcware.Numeric.SameType.InUnit.IProvider<U>
+public class Exponent<U> : Funcware.Numeric.SameType.InUnit.IWire<U>
     where U : Enum, IConvertible
 {
     protected int ExponentBase => _exponentBase;

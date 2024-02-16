@@ -1,7 +1,7 @@
 ﻿//namespace Funcware.Numeric.SameType.InUnit.FuncStore;
 
 //// ToDesign: INHERIT FROM IRouter ???
-//public class LinkedBag<U> : IProvider<U> where U : Enum
+//public class LinkedBag<U> : IWire<U> where U : Enum
 //{
 //    // ToDesign: INJECT / DEPEND !
 //    // router TYPE SPECIFIC !

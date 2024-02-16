@@ -1,5 +1,5 @@
 ﻿namespace Funcware.Numeric.SameType.InUnit.Ratio;
-public class Factor<U> : Funcware.Numeric.SameType.InUnit.IProvider<U>
+public class Factor<U> : Funcware.Numeric.SameType.InUnit.IWire<U>
     where U : Enum, IConvertible
 {
     public Factor() {
