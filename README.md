@@ -2,23 +2,23 @@
 |- Guards\
 |- Exceptions extensions\
 |- **WPF**\
-|--- [Bool-Vis. converter](readme+/snippets/wpf/bool2viz_improved.md)
+|--- [Bool-Vis. converter](README+/snippets/wpf/bool2viz_improved.md)
 
 + **Parts**\
-|- 💠 [Multifaceted value (U-Val)](readme+/PARTS/U-Val)\
-|- 🔄 [Undo/Redo extension](readme+/PARTS/Rvrs) 🚧\
+|- 💠 [Multifaceted value (U-Val)](README+/PARTS/U-Val)\
+|- 🔄 [Undo/Redo extension](README+/PARTS/Rvrs) 🚧\
 |- Variant builders
 
-+ [**Design decisions**](readme+/decisions)\
++ [**Design decisions**](README+/decisions)\
 |- **Techniques/Patterns**\
-|--- 🎢 [Downcasting impedance](readme+/decisions/cs-downcast_impedance.md)\
-|--- 🎶 [Jagged interfaces on "fluid" props](readme+/decisions/cs-jagged_props.md)\
+|--- 🎢 [Downcasting impedance](README+/decisions/cs-downcast_impedance.md)\
+|--- 🎶 [Jagged interfaces on "fluid" props](README+/decisions/cs-jagged_props.md)\
 |- **WPF / MVVM**\
-|--- 📢 [Notificaton orchestration](readme+/decisions/mvvm/mvvm-notification_orchestration.md)\
-|--- [Model-ViewModel cohesion](readme+/decisions/mvvm/mvvm-vmodel_cohesion.md)\
+|--- 📢 [Notificaton orchestration](README+/decisions/mvvm/mvvm-notification_orchestration.md)\
+|--- [Model-ViewModel cohesion](README+/decisions/mvvm/mvvm-vmodel_cohesion.md)\
 |- **Templates**\
-|--- [Promise-oriented MVVM (Task as a model)](readme+/decisions/cs-think_tasks.md)
+|--- [Promise-oriented MVVM (Task as a model)](README+/decisions/cs-think_tasks.md)
 
 + **Testing**\
-|- [Unit tests - 3D remake](readme+/decisions/testing/test3D)\
-|--- [Gradual assert](readme+/decisions/testing/test3D/ut-gradual_assert.md)
+|- [Unit tests - 3D remake](README+/decisions/testing/test3D)\
+|--- [Gradual assert](README+/decisions/testing/test3D/ut-gradual_assert.md)
