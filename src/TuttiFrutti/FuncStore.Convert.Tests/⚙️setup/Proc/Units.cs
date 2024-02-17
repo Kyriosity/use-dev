@@ -1,7 +1,6 @@
 ﻿using MeasData.Setup.Formats;
 using MeasUnits.Utils;
 
-
 namespace FuncStore.Conversion.Tests.Setup.Proc;
 static class Units<TUnit> where TUnit : Enum
 {
