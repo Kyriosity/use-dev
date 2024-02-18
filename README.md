@@ -5,8 +5,8 @@
 |--- [Bool-Vis. converter](README+/snippets/wpf/bool2viz_improved.md)
 
 + **Parts**\
-|- 💠 [Multifaceted value (U-Val)](README+/PARTS/U-Val)\
-|- 🔄 [Undo/Redo extension](README+/PARTS/Rvrs) 🚧\
+|- 💠 [Multifaceted value (U-Val)](README+/projects/U-Val)\
+|- 🔄 [Undo/Redo extension](README+/projects/Rvrs) 🚧\
 |- Variant builders
 
 + [**Design decisions**](README+/decisions)\
