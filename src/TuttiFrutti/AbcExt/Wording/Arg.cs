@@ -1,4 +1,4 @@
-﻿namespace AbcExt.Stubs;
+﻿namespace AbcExt.Wording;
 
 internal static class Arg
 {

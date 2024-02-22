@@ -1,4 +1,4 @@
-﻿using AbcExt.Stubs;
+﻿using AbcExt.Wording;
 using System.Runtime.CompilerServices;
 
 namespace AbcExt.Errors.Sys;
