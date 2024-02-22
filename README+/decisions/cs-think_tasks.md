@@ -2,7 +2,7 @@
 
 # C# - Tasks as model
 
-## Critique: Laziness
+## Critique of Laziness
 
 In the olden days, developers used to defer initialization/calculation of less or more "heavy" entities. This allows to **a)**&nbsp;load the stuff on&nbsp;demand only, **b)**&nbsp;spread resources peaks, **c)**&nbsp;split suspense, which nevertheless remains.
 
@@ -25,7 +25,7 @@ It doesn't matter if you "pre-load" dozen things, of which only one will be sele
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>:video_game:</sup> <sub>We mean usual office, browsers, business applications, and dev environments (not high-performance servers, top games, video processing or mining).</sub>
 
-## Critique
+## Big Lack
 
 Well-known templates (e.g. MVVM), as an idea and shared implementations, give a static picture of models. Developers bind to properties, which are a constant value, calculated, or brought by a service, read from a database.
 

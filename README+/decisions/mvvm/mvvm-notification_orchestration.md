@@ -1,9 +1,9 @@
 # MVVM - Orchestration of notifications
 
-A little reminder. WPF built-in [DataContext](https://learn.microsoft.com/dotnet/desktop/wpf/data/how-to-specify-the-binding-source) has only to raise `PropertyChanged`<sup>:raising_hand:</sup> with the name of the item, which value bound elements must re-evaluate.\
+A little reminder. WPF built-in [DataContext](https://learn.microsoft.com/dotnet/desktop/wpf/data/how-to-specify-the-binding-source)<sup>🔗</sup> has only to raise `PropertyChanged`<sup>:raising_hand:</sup> with the name of the item, which value bound elements must re-evaluate.\
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>:raising_hand:</sup>&nbsp;<sub>'Changed' deceives, since it's the most suitable cause but not the essence of the event.</sub>
 
-WPF developers must know the easy [Microsoft recipe](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/data/how-to-implement-property-change-notification): `set {field = value; OnPropertyChanged();}`. It's enough for flat unsophisticated forms but mundane tasks meet ...
+WPF developers must know the easy [Microsoft recipe](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/data/how-to-implement-property-change-notification)<sup>🔗</sup>: `set {field = value; OnPropertyChanged();}`. It's enough for flat unsophisticated forms but mundane tasks meet ...
 
 * tied and calculated values,
 * groups and hierarchies of cross-dependent ViewModels, 
@@ -50,13 +50,13 @@ Besides the order, such an approach will add up the next possibilities:
 
 ## Commands and messages
 
-* Organization of [WPF commands](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/advanced/commanding-overview) may follow the same idea, but they are easier and it's enough to pack commands in corresponding sub-ViewModels, while `CanExecute` properties may be orchestrated.
+* Organization of [WPF commands](https://learn.microsoft.com/en-us/dotnet/desktop/wpf/advanced/commanding-overview)<sup>🔗</sup> may follow the same idea, but they are easier and it's enough to pack commands in corresponding sub-ViewModels, while `CanExecute` properties may be orchestrated.
 * Usual MVVM messaging, either custom or out-of-the-box, is based on properties.
 
 ## More for notification but irrelevant to the idea
 
 There are other ways to improve notification and its realization but they aren't orchestration:
 
-+ Everithing that [ReactiveX](https://reactivex.io/) can do.
++ Everithing that [ReactiveX](https://reactivex.io/)<sup>🔗</sup> can do.
 + Any wiring on the View.
-+ [Model & ViewModel cohesion](mvvm_vmodel-cohesion.md)
++ [Model & ViewModel cohesion](mvvm-vmodel_cohesion.md)
