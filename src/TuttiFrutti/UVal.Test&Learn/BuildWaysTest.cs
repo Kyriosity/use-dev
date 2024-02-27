@@ -49,5 +49,5 @@ public class BuildWaysTest
         public Func<N, N> For<N>(U from, U to) where N : INumber<N> => NotImplemented.Throw();
     }
 
-    interface ICurrencyExchange<U> : IFuncStore<U>, IMathOpsEnabled where U : Enum, IConvertible { }
+    interface ICurrencyExchange<U> : IFuncStore<U>, IMathOpsEnabled where U : Enum, IConvertible;
 }

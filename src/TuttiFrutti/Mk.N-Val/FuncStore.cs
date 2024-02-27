@@ -1,9 +1,9 @@
 ﻿using System.Numerics;
 namespace Mk.N_Val;
 
-public interface IFuncStore<U> : ISameConverter<U> where U : Enum { }
+public interface IFuncStore<in U> : ISameConverter<U> where U : Enum;
 
-public interface ISameConverter<T>
+public interface ISameConverter<in T>
 {
     Func<N, N> Between<N>(T from, T to) where N : INumber<N>;
 }

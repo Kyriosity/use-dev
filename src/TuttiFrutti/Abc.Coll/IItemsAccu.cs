@@ -6,6 +6,6 @@ public interface IItemsAccu<T> : ICollOps<T>
     IReadOnlyCollection<T> Items { get; }
 }
 
-public interface IItemsCollSized<T> : IItemsAccu<T> { }
+public interface IItemsCollSized<T> : IItemsAccu<T>;
 
-public interface IIndexedColl<T> : IItemsAccu<T>, ISelectable { }
+public interface IIndexedColl<T> : IItemsAccu<T>, ISelectable;

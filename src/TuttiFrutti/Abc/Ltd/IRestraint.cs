@@ -1,3 +1,4 @@
 ﻿namespace Abc.Ltd;
-public interface IRestraint { }
+
+public interface IRestraint;
 

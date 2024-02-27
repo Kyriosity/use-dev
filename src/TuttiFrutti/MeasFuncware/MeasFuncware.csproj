@@ -10,8 +10,4 @@
     <ProjectReference Include="..\Funcware\Funcware.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="!🧪Test🔨Fix🦉Learn\" />
-  </ItemGroup>
-
 </Project>

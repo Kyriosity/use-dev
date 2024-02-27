@@ -14,6 +14,6 @@ public interface IOpenMultifacet<T, U> : IMultifacet<T, U>
     new T this[U unit] { get; set; }
 }
 
-public interface IUValue<T, U> : IOpenMultifacet<T, U> where U : Enum { }
+public interface IUValue<T, U> : IOpenMultifacet<T, U> where U : Enum;
 
-public interface IUNum<N, U> : IUValue<N, U> where N : INumber<N> where U : Enum { }
+public interface IUNum<N, U> : IUValue<N, U> where N : INumber<N> where U : Enum;
