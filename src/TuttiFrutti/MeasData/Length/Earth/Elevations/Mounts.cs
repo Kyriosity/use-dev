@@ -3,22 +3,18 @@
 public partial class Elevations
 {
     Dir Mounts = new() {
-        ["Everest/Qomolangma"] =
-           [(8_848.86, meter), (29_031.692_91, feet), (8.848_86, km), (5.498426688, mile)],
-        ["K2/Chogori"] =
-           [(8_609.02, meter), (28_244.81627, feet)],
+        [Everest] = [(8_848.86, meter), (29_031.692_91, feet), (8.848_86, km), (5.498426688, mile)],
+        [K2] = [(8_609.02, meter), (28_244.81627, feet)],
+        [Aconcagua] = [(6_960.8, m), (22_837.270_3, ft)],
         ["Kangchenjunga"] =
             [(8586, m), (28_169, ft)],
-        ["Mont Blanc"] =
-            [(4_805.59, metre)],
+        ["Mont Blanc"] = [(4_805.59, metre)],
         ["Zugspitze"] =
             [(2_962.06, m), (9_718.044_6, ft)],
-        ["Aconcagua"] =
-            [(6_960.8, m), (22_837.270_3, ft)],
-        ["Denali/McKinley"] =
+        [Denali] =
            [(6_190.5, m), (20310.04, ft)],
         ["Yu Shan"] = [(3_952.43, m), (12_967.290, ft)],
-        ["Fuji/Fudschijama"] = [(3_776.24, m)],
+        [Fuji] = [(3_776.24, m)],
         ["Mount Kosciuszko"] = [(2_228, m)],
         ["Teide"] = [(3_715, m)],
         ["Vinson"] = [(4_892, m)],

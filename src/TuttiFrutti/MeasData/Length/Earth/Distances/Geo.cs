@@ -2,7 +2,7 @@
 public partial class Distances
 {
     Dir Geo = new() {
-        ["Equator"] = [(40_075, km), (24_901.45, miles), (21_638.77, nautical_miles)],
+        [Equator] = [(40_075, km), (24_901.45, miles), (21_638.77, nautical_miles)],
 
 
         ["Equatorial diameter"] = [(12_756, km), (7_926.21, mi), (6_887.69, nmi)],
