@@ -1,18 +1,13 @@
 ﻿using AbcExt.Wording;
 using System.Runtime.CompilerServices;
 
-namespace AbcExt.Errors.Sys;
-public static class Argument<T>
+namespace AbcExt.Errors.Shortcuts;
+public abstract class Multiargument<TExc> : Direct<TExc> where TExc : Exception
 {
-    public static dynamic Throw() => throw new ArgumentException();
-    public static dynamic Throw(string? message) => throw new ArgumentException(message);
-    public static dynamic Throw(string? message, Exception? inner) => throw new ArgumentException(message, inner);
-}
+    public static dynamic ThrowAll(string? message,
+        object? arg1, object? arg2, object? arg3 = null, object? arg4 = null, object? arg5 = null, object? arg6 = null,
+        object? arg7 = null, object? arg8 = null, object? arg9 = null, object? arg10 = null, object? arg11 = null,
 
-public static class Argument
-{
-    public static dynamic ThrowAll(string? message, object? arg1, object? arg2, object? arg3 = null, object? arg4 = null, object? arg5 = null,
-        object? arg6 = null, object? arg7 = null, object? arg8 = null, object? arg9 = null, object? arg10 = null, object? arg11 = null,
         [CallerArgumentExpression(nameof(arg1))] string proto1 = $"{Arg.Required}1",
         [CallerArgumentExpression(nameof(arg2))] string proto2 = $"{Arg.Required}2",
         [CallerArgumentExpression(nameof(arg3))] string proto3 = Arg.NotSubmitted,
@@ -26,9 +21,10 @@ public static class Argument
         [CallerArgumentExpression(nameof(arg11))] string proto11 = Arg.NotSubmitted,
         [CallerMemberName] string caller = Caller.NotSpecified) {
 
-        var digest = new[] { proto1, proto2, proto3, proto4, proto5, proto6, proto7, proto8, proto9, proto10, proto11 }
+        var submitted = new[] { proto1, proto2, proto3, proto4, proto5, proto6, proto7,
+                proto8, proto9, proto10, proto11 }
             .Where(x => x != Arg.NotSubmitted);
 
-        throw new ArgumentException($"{caller}:\n{message}:\n`{string.Join("`, `", digest)}`");
+        return Throw($"{caller}:\n{message}:\n`{string.Join("`, `", submitted)}`");
     }
 }

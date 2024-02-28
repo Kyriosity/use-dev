@@ -1,12 +1,12 @@
 ﻿namespace AbcExt.Wording;
 
-internal static class Arg
+public static class Arg
 {
-    internal const string NotSubmitted = "<?n/submitted?>";
-    internal const string Required = "<!req/arg!>";
+    public const string NotSubmitted = "<?n/submitted?>";
+    public const string Required = "<!req/arg!>";
 }
 
-internal static class Caller
+public static class Caller
 {
-    internal const string NotSpecified = "<?n/specified?>";
+    public const string NotSpecified = "<?n/specified?>";
 }

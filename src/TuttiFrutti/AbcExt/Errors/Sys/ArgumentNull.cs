@@ -5,7 +5,7 @@ namespace AbcExt.Errors.Sys;
 
 /// <summary>
 /// Enhances ArgumentNullException helpers for multiple arguments. 
-/// Be kind, mark [Obsolete] if similar methods come with a new .NET release.
+/// PLEASE, mark [Obsolete] if similar methods come with new .NET release.
 /// </summary>
 public static class ArgumentNull
 {
