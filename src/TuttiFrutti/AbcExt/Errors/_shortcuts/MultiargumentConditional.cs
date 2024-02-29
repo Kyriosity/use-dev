@@ -2,9 +2,9 @@
 using System.Runtime.CompilerServices;
 
 namespace AbcExt.Errors.Shortcuts;
-public abstract class Multiargument<TExc> : Regular<TExc> where TExc : Exception
+public abstract class MultiargumentConditional<TExc> : Multiargument<TExc> where TExc : Exception
 {
-    public static dynamic ThrowAll(string? message,
+    protected virtual dynamic? OnConditionMet(Predicate<object> predicate, uint greaterThanCount, string message,
         object? arg1, object? arg2, object? arg3 = null, object? arg4 = null, object? arg5 = null, object? arg6 = null,
         object? arg7 = null, object? arg8 = null, object? arg9 = null, object? arg10 = null, object? arg11 = null,
 
@@ -18,13 +18,25 @@ public abstract class Multiargument<TExc> : Regular<TExc> where TExc : Exception
         [CallerArgumentExpression(nameof(arg8))] string proto8 = Arg.NotSubmitted,
         [CallerArgumentExpression(nameof(arg9))] string proto9 = Arg.NotSubmitted,
         [CallerArgumentExpression(nameof(arg10))] string proto10 = Arg.NotSubmitted,
-        [CallerArgumentExpression(nameof(arg11))] string proto11 = Arg.NotSubmitted,
-        [CallerMemberName] string caller = Caller.NotSpecified) {
+        [CallerArgumentExpression(nameof(arg11))] string proto11 = Arg.NotSubmitted) {
 
-        var submitted = new[] { proto1, proto2, proto3, proto4, proto5, proto6, proto7,
-                proto8, proto9, proto10, proto11 }
-            .Where(x => x != Arg.NotSubmitted);
+        var submitted = new (object? arg, string proto)[] { (arg1, proto1), (arg2, proto2), (arg3, proto3), (arg4, proto4),
+            (arg5, proto5), (arg6, proto6), (arg7, proto7), (arg8, proto8), (arg9, proto9), (arg10, proto10), (arg11, proto11) }
+            .Where(x => x.proto != Arg.NotSubmitted).ToList();
 
-        return Throw($"{caller}:\n{message}:\n`{string.Join("`, `", submitted)}`");
+        var castOut = submitted.Where(x => predicate(x)).ToList();
+
+        if (castOut.Count is 0)
+            return false;
+
+        var digest = string.Join("', ", castOut.Select(x => x.proto).Distinct());
+
+
+
+
+        //if (threshold is < 0 || threshold <= castOut.Count)
+        //    Throw($"{message}: {digest}");
+
+        return false;
     }
 }

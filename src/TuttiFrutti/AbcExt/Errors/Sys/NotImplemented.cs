@@ -1,6 +1,6 @@
 ﻿namespace AbcExt.Errors.Sys;
-public class NotImplemented : Shortcuts.Direct<NotImplementedException>
+public class NotImplemented : Shortcuts.Regular<NotImplementedException>
 {
-    public static dynamic Throw(params object?[] dummiesToRemoveWarningsInCaller) => throw new NotImplementedException();
+    private NotImplemented() { /* to prevent direct instantiation */ }
 }
 

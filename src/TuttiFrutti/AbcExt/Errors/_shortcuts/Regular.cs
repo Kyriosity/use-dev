@@ -1,7 +1,9 @@
 ﻿namespace AbcExt.Errors.Shortcuts;
-public abstract class Direct<TExc>(string? message = "", Exception? inner = null)
-    : Exception(message, inner) where TExc : Exception
+public abstract class Regular<TExc>
+    : Exception where TExc : Exception
 {
+    protected Regular(string? message = "", Exception? inner = null) : base(message, inner) { }
+
     private static readonly Type _selfType = typeof(TExc);
 
     public static dynamic Throw(string? message = "", Exception? inner = null) => throw
@@ -10,3 +12,4 @@ public abstract class Direct<TExc>(string? message = "", Exception? inner = null
 
     public static dynamic Throw<T>(T subject, Exception? inner = null) => Throw($"{subject}", inner);
 }
+

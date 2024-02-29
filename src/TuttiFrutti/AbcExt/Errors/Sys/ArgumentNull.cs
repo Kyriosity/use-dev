@@ -7,8 +7,9 @@ namespace AbcExt.Errors.Sys;
 /// Enhances ArgumentNullException helpers for multiple arguments. 
 /// PLEASE, mark [Obsolete] if similar methods come with new .NET release.
 /// </summary>
-public static class ArgumentNull
+public class ArgumentNull
 {
+    private ArgumentNull() { /* to prevent direct instantiation */ }
     public static void ThrowIfAny(object? arg1, object? arg2, object? arg3 = null, object? arg4 = null, object? arg5 = null,
         object? arg6 = null, object? arg7 = null, object? arg8 = null, object? arg9 = null, object? arg10 = null, object? arg11 = null,
         [CallerArgumentExpression(nameof(arg1))] string proto1 = $"{Arg.Required}1",
