@@ -1,7 +1,7 @@
-﻿namespace AbcExt.Errors.Sys;
+﻿using AbcExt.Errors.Shortcuts;
 
-public class Argument<T> : Shortcuts.Multiargument<ArgumentException>
+namespace AbcExt.Errors.Sys;
+public class Argument : Multiparameter<ArgumentException> // ToDo: CHANGE !
 {
     private Argument() { /* to prevent direct instantiation */ }
 }
-
