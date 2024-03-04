@@ -6,7 +6,7 @@ public class Factor<U> : Funcware.Numeric.SameType.InUnit.IWire<U>
         var unitsType = typeof(U);
 
         if (!FactoredAttribute.From(unitsType).Any())
-            Argument<U>.Throw($"Requires explicit {nameof(FactoredAttribute)}");
+            Argument.Throw($"Requires explicit {nameof(FactoredAttribute)}");
     }
 
     public Func<N, N> For<N>(U from, U to) where N : System.Numerics.INumber<N> {
@@ -18,12 +18,12 @@ public class Factor<U> : Funcware.Numeric.SameType.InUnit.IWire<U>
 
         return x => {
             if (fromFactor is 0 || toFactor is 0)
-                Argument<U>.Throw($"Neither factor can be zero ({nameof(from)}={from},{nameof(to)}={to})");
+                Argument.Throw($"Neither factor can be zero ({nameof(from)}={from},{nameof(to)}={to})");
 
             var calcAccu = double.CreateChecked(x);
 
             // ToDesign: avoid cAmEl calculations!
-            // to know: how CLR deals with nums in chain
+            // to know: how CLR deals with number in calc chains
             // ToDesign: prevent overflow by dividing first when applicable!
             if (1 != toFactor)
                 calcAccu = 0 > toFactor ? calcAccu * -toFactor : calcAccu / toFactor;

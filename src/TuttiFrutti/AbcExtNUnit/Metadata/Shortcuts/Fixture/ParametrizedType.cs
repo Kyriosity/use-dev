@@ -12,14 +12,14 @@ public abstract class ParametrizedType<T, TargetInterface>(params string[] args)
             .Any(b => b == targetType)).ToList();
 
         if (targetInterfaces.Count is 0)
-            Argument<TargetInterface>.Throw($"`{TypeOfT}` has no interface derived from \"{targetType.Name}\"");
+            Argument.Throw($"`{TypeOfT}` has no interface derived from \"{targetType.Name}\"");
 
         var interfaceParameters = targetInterfaces.Where(x => 0 < x.GenericTypeArguments.Length)
             .SelectMany(x => x.GenericTypeArguments).Where(arg => arg.BaseType?.Name == nameof(Enum))
             .ToList();
 
         if (interfaceParameters.Count is 0)
-            Argument<TargetInterface>.Throw($"No generic parameter for \"{targetType.Name}\"");
+            Argument.Throw($"No generic parameter for \"{targetType.Name}\"");
 
         return [.. interfaceParameters];
     }

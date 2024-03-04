@@ -8,7 +8,7 @@ public class Exponent<U> : Funcware.Numeric.SameType.InUnit.IWire<U>
 
     public Exponent() {
         if (!ExponentAttribute.From(typeof(U), out _exponentBase))
-            Argument<U>.Throw($"Missing: {nameof(ExponentAttribute)}");
+            Argument.Throw($"Missing: {nameof(ExponentAttribute)}");
     }
 
     public Func<N, N> For<N>(U from, U to) where N : System.Numerics.INumber<N> {

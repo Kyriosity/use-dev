@@ -22,6 +22,6 @@ class Stub<N> : IMultifacetValue<N>, ITemperature<N> where N : INumber<N>
         if (In.Fahrenheit == unit)
             return Fahrenheit;
 
-        return Argument<In>.Throw(unit.ToString($"\"{unit}\" not supported"));
+        return Argument.Throw(unit.ToString($"\"{unit}\" not supported"));
     }
 }
