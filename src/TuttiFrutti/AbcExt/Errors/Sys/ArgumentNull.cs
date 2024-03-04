@@ -1,15 +1,13 @@
-﻿using AbcExt.Wording;
+﻿using AbcExt.Errors.Shortcuts;
+using AbcExt.Wording;
 using System.Runtime.CompilerServices;
 
 namespace AbcExt.Errors.Sys;
 
-/// <summary>
-/// Enhances ArgumentNullException helpers for multiple arguments. 
-/// PLEASE, mark [Obsolete] if similar methods come with new .NET release.
-/// </summary>
-public class ArgumentNull
+public class ArgumentNull : MultiparameterConditional<ArgumentNullException>
 {
     private ArgumentNull() { /* to prevent direct instantiation */ }
+
     public static void ThrowIfAny(object? arg1, object? arg2, object? arg3 = null, object? arg4 = null, object? arg5 = null,
         object? arg6 = null, object? arg7 = null, object? arg8 = null, object? arg9 = null, object? arg10 = null, object? arg11 = null,
         [CallerArgumentExpression(nameof(arg1))] string proto1 = $"{Arg.Required}1",
@@ -56,7 +54,4 @@ public class ArgumentNull
         if (submitted.All(x => x.arg is null))
             ArgumentNull.Throw($"{caller}() supplied all nulled ('{string.Join("', ", submitted.Select(x => x.proto)).Distinct()}')");
     }
-    public static dynamic Throw() => throw new ArgumentNullException();
-    public static dynamic Throw(string? message) => throw new ArgumentNullException(message);
-    public static dynamic Throw(string? message, Exception? inner) => throw new ArgumentException(message, inner);
 }
