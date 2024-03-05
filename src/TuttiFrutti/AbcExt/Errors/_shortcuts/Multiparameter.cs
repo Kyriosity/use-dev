@@ -19,13 +19,13 @@ public abstract class Multiparameter<TExc>(string? message = "", Exception? inne
         [CallerArgumentExpression(nameof(arg8))] string proto8 = Arg.NotSubmitted,
         [CallerArgumentExpression(nameof(arg9))] string proto9 = Arg.NotSubmitted,
         [CallerArgumentExpression(nameof(arg10))] string proto10 = Arg.NotSubmitted,
-        [CallerArgumentExpression(nameof(arg11))] string proto11 = Arg.NotSubmitted,
-        [CallerMemberName] string caller = Caller.NotSpecified) {
+        [CallerArgumentExpression(nameof(arg11))] string proto11 = Arg.NotSubmitted
+        ) {
 
         var submitted = new[]
                 { proto1, proto2, proto3, proto4, proto5, proto6, proto7, proto8, proto9, proto10, proto11 }
             .Where(x => x != Arg.NotSubmitted);
 
-        return Throw($"{caller}:\n{message}:\n`{string.Join("`, `", submitted)}`");
+        return Throw($"{message}: \"{string.Join("`, `", submitted)}\"");
     }
 }

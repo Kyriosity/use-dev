@@ -24,20 +24,16 @@ public class StartDemoTests
         var exc = Assert.Throws<NotImplementedException>(() => NotImplemented.Throw());
         Assert.That(exc?.Message, Is.Empty);
 
-        var inOp = Assert.Throws<InvalidOperationException>(
-            () => InvalidOperation.Throw(""));
+        var inOp = Assert.Throws<InvalidOperationException>(() => InvalidOperation.Throw(""));
         Assert.That(inOp?.Message, Is.Empty);
 
-        var noSup = Assert.Throws<NotSupportedException>(
-            () => NotSupported.Throw(nameof(StartDemoTests)));
+        var noSup = Assert.Throws<NotSupportedException>(() => NotSupported.Throw(nameof(StartDemoTests)));
         Assert.That(noSup?.Message, Is.EqualTo(nameof(StartDemoTests)));
 
-        var argExc = Assert.Throws<ArgumentException>(
-            () => Argument.Throw(747));
+        var argExc = Assert.Throws<ArgumentException>(() => Argument.Throw(747));
         Assert.That(argExc?.Message, Is.EqualTo("747"));
 
-        var argNull = Assert.Throws<ArgumentNullException>(() =>
-            ArgumentNull.Throw("<NAME OF ARG_PROTO>"));
+        var argNull = Assert.Throws<ArgumentNullException>(() => ArgumentNull.Throw("<NAME OF ARG_PROTO>"));
     }
 
     [Test]

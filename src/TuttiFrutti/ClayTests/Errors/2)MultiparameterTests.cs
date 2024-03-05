@@ -5,7 +5,7 @@ namespace ClayTests.Errors;
 public class MultiparameterTests
 {
     [Test]
-    public void RetrieveArgumentsCallers() {
+    public void ReportArgumentsCallers() {
         const string dummy = "NOT_IN_OUTPUT";
         var dummyStruct = new Point(7, -12);
 
