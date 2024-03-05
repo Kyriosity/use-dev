@@ -1,8 +1,8 @@
 ﻿namespace ClayTests.Errors;
-public class MultiparameterConditionalTests
+public class MultiargNullConditionalTests
 {
     [Test]
-    public void MultiargumentAnyNull() {
+    public void ProveAnyNull() {
         const ulong limit = ulong.MaxValue;
         var dummyMessage = "end of args";
 
@@ -23,11 +23,11 @@ public class MultiparameterConditionalTests
     }
 
     [Test]
-    public void MultiargumentAllNull() {
+    public void ProveAllNull() {
         int? nonsenseNum = null;
-        ArgumentNull.ThrowIfAll("", nonsenseNum, null, 2, null, "Adidas", new object());
+        ArgumentNull.ThrowIfAll("", nonsenseNum, null, 2, null, "info", new object());
 
-        ArgumentNull.ThrowIfAll(null, null, null, "not null", null, null);
+        ArgumentNull.ThrowIfAll(null, null, null, "not null", null, null, null);
         ArgumentNull.ThrowIfAll(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11);
 
         var dummyObjRef = new object();
@@ -40,10 +40,9 @@ public class MultiparameterConditionalTests
         ArgumentNull.ThrowIfAll(dummyObjRef, dummyMessage, counter);
 
         counter = null;
-        Assert.Throws<ArgumentNullException>(() =>
-            ArgumentNull.ThrowIfAny(dummyObjRef, dummyMessage, counter));
+        var exc = Assert.Throws<ArgumentNullException>(() =>
+            ArgumentNull.ThrowIfAny(dummyObjRef, dummyMessage, counter, nonsenseNum, null));
+        Assert.That(exc?.Message, Contains.Substring(nameof(dummyObjRef)));
     }
 }
 
-
-/// MULTIPARAM COND TESTS CUSTOM
