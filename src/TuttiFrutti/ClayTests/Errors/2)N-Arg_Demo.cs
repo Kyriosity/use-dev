@@ -2,7 +2,7 @@
 using System.Drawing;
 
 namespace ClayTests.Errors;
-public class MultiparameterTests
+public class NArg_Demo
 {
     [Test]
     public void ReportArgumentsCallers() {

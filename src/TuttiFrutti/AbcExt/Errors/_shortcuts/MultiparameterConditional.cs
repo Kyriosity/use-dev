@@ -5,27 +5,40 @@ namespace AbcExt.Errors.Shortcuts;
 public abstract class MultiparameterConditional<TExc>(string? message = "", Exception? inner = null)
     : Multiparameter<TExc>(message, inner) where TExc : Exception
 {
-    protected static bool OnCondition<T>(Predicate<T> predicate, Func<int, int, bool> countTrigger, (T val, string tag)[] args) {
+    protected static bool OnCondition<T>(Predicate<T> predicate, Func<int, int, bool> countTrigger,
+        (T val, string tag)[] args, string predicateInfo = ""
+    ) {
         var submitted = args.Where(x => x.tag != Arg.NotSubmitted).ToList();
         var match = submitted.Select((x, i) => (idx: i, x.val, x.tag))
             .Where(x => predicate(x.val)).ToList();
 
         if (countTrigger(match.Count, submitted.Count))
-            Throw(Digest(match));
+            Throw($"{MessagePrefix(predicateInfo)}{Digest(match)}");
+
+        return false;
+    }
+
+    protected static bool OnCondition<T>(Predicate<IEnumerable<T>> predicate, (T val, string tag)[] args, string predicateInfo = "") {
+        var submitted = args.Where(x => x.tag != Arg.NotSubmitted).ToList();
+
+        if (predicate(submitted.Select(x => x.val)))
+            Throw(MessagePrefix(predicateInfo));
 
         return false;
     }
 
     private static string Digest<T>(IEnumerable<(int idx, T val, string tag)> args) =>
-        string.Join(", ", args.Select(x =>
-            $"{x.idx}) {x.tag}->{ToReadable(x.val)}"));
+        string.Join(", ", args.Select(x => $"i{x.idx}) {x.tag}->{ToReadable(x.val)}"));
+
+
+    private static string MessagePrefix(string info) =>
+        string.IsNullOrWhiteSpace(info) ? string.Empty : info + "\n";
 
     private static string ToReadable<T>(T val) {
         if (val is null)
             return "null";
 
         var text = val.ToString();
-
         if (string.IsNullOrEmpty(text))
             return "<empty>";
 

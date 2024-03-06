@@ -1,5 +1,5 @@
-﻿namespace ClayTests.Errors;
-public class MultiargNullConditionalTests
+﻿namespace ClayTests.Errors.Conditional;
+public class NArg_NullTests
 {
     [Test]
     public void ProveAnyNull() {
@@ -25,19 +25,19 @@ public class MultiargNullConditionalTests
     [Test]
     public void ProveAllNull() {
         int? nonsenseNum = null;
-        ArgumentNull.ThrowIfAll("", nonsenseNum, null, 2, null, "info", new object());
+        ArgumentNull.ThrowIfEach("", nonsenseNum, null, 2, null, "info", new object());
 
-        ArgumentNull.ThrowIfAll(null, null, null, "not null", null, null, null);
-        ArgumentNull.ThrowIfAll(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11);
+        ArgumentNull.ThrowIfEach(null, null, null, "not null", null, null, null);
+        ArgumentNull.ThrowIfEach(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11);
 
         var dummyObjRef = new object();
         var dummyMessage = "verbatim";
         int? counter = 3;
-        ArgumentNull.ThrowIfAll(dummyObjRef, dummyMessage, counter);
+        ArgumentNull.ThrowIfEach(dummyObjRef, dummyMessage, counter);
 
         dummyObjRef = null;
         dummyMessage = null;
-        ArgumentNull.ThrowIfAll(dummyObjRef, dummyMessage, counter);
+        ArgumentNull.ThrowIfEach(dummyObjRef, dummyMessage, counter);
 
         counter = null;
         var exc = Assert.Throws<ArgumentNullException>(() =>

@@ -1,5 +1,5 @@
 ﻿namespace ClayTests.Errors;
-public class StartDemoTests
+public class IntroDemo
 {
     public static void WILL_NOT_COMPILE() {
         //throw new InvalidOperation();
@@ -27,8 +27,8 @@ public class StartDemoTests
         var inOp = Assert.Throws<InvalidOperationException>(() => InvalidOperation.Throw(""));
         Assert.That(inOp?.Message, Is.Empty);
 
-        var noSup = Assert.Throws<NotSupportedException>(() => NotSupported.Throw(nameof(StartDemoTests)));
-        Assert.That(noSup?.Message, Is.EqualTo(nameof(StartDemoTests)));
+        var noSup = Assert.Throws<NotSupportedException>(() => NotSupported.Throw(nameof(IntroDemo)));
+        Assert.That(noSup?.Message, Is.EqualTo(nameof(IntroDemo)));
 
         var argExc = Assert.Throws<ArgumentException>(() => Argument.Throw(747));
         Assert.That(argExc?.Message, Is.EqualTo("747"));

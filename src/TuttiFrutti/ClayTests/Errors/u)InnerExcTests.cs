@@ -1,5 +1,5 @@
 ﻿namespace ClayTests.Errors;
-public class MiscInnerTests
+public class InnerExcTests
 {
     [Test]
     public void NoInnerException() {
