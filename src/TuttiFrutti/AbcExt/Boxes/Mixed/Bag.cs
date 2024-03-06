@@ -1,5 +1,4 @@
 ﻿using AbcExt.Errors.Sys;
-using AbcExt.Wording;
 using System.Collections;
 using System.Runtime.CompilerServices;
 
@@ -38,7 +37,7 @@ public class Bag : IHeap
         }
     }
 
-    private static string Qualify<TVal>([CallerMemberName] string caller = Arg.NotSubmitted) {
+    private static string Qualify<TVal>([CallerMemberName] string caller = "</NotSubmitted/>") {
         var pointer = typeof(TVal).FullName ?? Argument.Throw($"{caller}(): {nameof(TVal)} has no name");
         return pointer;
     }

@@ -1,14 +1,11 @@
-﻿using AbcExt.Wording;
-
-
-namespace AbcExt.Errors.Shortcuts;
+﻿namespace AbcExt.Errors.Shortcuts;
 public abstract class MultiparameterConditional<TExc>(string? message = "", Exception? inner = null)
     : Multiparameter<TExc>(message, inner) where TExc : Exception
 {
     protected static bool OnCondition<T>(Predicate<T> predicate, Func<int, int, bool> countTrigger,
         (T val, string tag)[] args, string predicateInfo = ""
     ) {
-        var submitted = args.Where(x => x.tag != Arg.NotSubmitted).ToList();
+        var submitted = args.Where(x => !string.IsNullOrEmpty(x.tag)).ToList();
         var match = submitted.Select((x, i) => (idx: i, x.val, x.tag))
             .Where(x => predicate(x.val)).ToList();
 
@@ -19,7 +16,7 @@ public abstract class MultiparameterConditional<TExc>(string? message = "", Exce
     }
 
     protected static bool OnCondition<T>(Predicate<IEnumerable<T>> predicate, (T val, string tag)[] args, string predicateInfo = "") {
-        var submitted = args.Where(x => x.tag != Arg.NotSubmitted).ToList();
+        var submitted = args.Where(x => !string.IsNullOrEmpty(x.tag)).ToList();
 
         if (predicate(submitted.Select(x => x.val)))
             Throw(MessagePrefix(predicateInfo));

@@ -16,7 +16,7 @@ public class NArg_MiscTests
         Assert.That(exc?.Message, Contains.Substring(nameof(tres)));
 
         var intro = "hello"; var info = "whitespace makes no sense"; var statement = "ditto";
-        Argument.ThrowIfAny(string.IsNullOrWhiteSpace, intro, info, statement, "");
+        Argument.ThrowIfAny(string.IsNullOrWhiteSpace, intro, info, statement);
 
         info = "  "; exc = Assert.Throws<ArgumentException>(() =>
             Argument.ThrowIfAny(string.IsNullOrWhiteSpace, intro, info, statement));
@@ -25,12 +25,12 @@ public class NArg_MiscTests
 
     [Test]
     public void ProveIfTogether() {
-        var pA = 0.02; var pB = -12.751; var mC = 70.091; var mDd = 15.772; var measE = -12.02; var measF = 55.0289; var pG = 124.86;
-        ReportMeasurements(pA, pB, mC, mDd, measE, measF, pG);
+        var pA = 0.02; var pB = -12.751; var mC = 70.091; var mDd = 15.772; var measE = -12.02; var measF = 55.0289; var lastM = 124.86;
+        ReportMeasurements(pA, pB, mC, mDd, measE, measF, lastM);
 
         mDd += 1000;
         Assert.Throws<ArgumentException>(() =>
-            ReportMeasurements(pA, pB, mC, mDd, measE, measF, pG));
+            ReportMeasurements(pA, pB, mC, mDd, measE, measF, lastM));
     }
 
     // ToDo: INDISTINCT EXC
