@@ -1,5 +1,5 @@
 ﻿namespace ClayTests.Errors.Conditional;
-public class NArg_NullTests
+public class NArg_NullDemo
 {
     [Test]
     public void ProveAnyNull() {

@@ -1,4 +1,6 @@
-﻿namespace ClayTests.Errors;
+﻿using AbcExt.Errors.Argument;
+
+namespace ClayTests.Errors;
 public class IntroDemo
 {
     public static void WILL_NOT_COMPILE() {
@@ -31,5 +33,8 @@ public class IntroDemo
     public void Custom() {
         Assert.Throws<UniqueConstraint>(() => UniqueConstraint.Throw("The same key <...> exists"));
         Assert.Throws<EntityNotFound>(() => EntityNotFound.Throw($"unid: ..., name:  ..."));
+
+        Assert.Throws<DuplicatedArguments>(() =>
+            DuplicatedArguments.Throw("Repeated IDs found: <..., ...>"));
     }
 }

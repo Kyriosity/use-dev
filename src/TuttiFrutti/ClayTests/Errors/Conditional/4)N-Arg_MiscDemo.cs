@@ -1,7 +1,7 @@
 ﻿using System.Numerics;
 
 namespace ClayTests.Errors.Conditional;
-public class NArg_MiscTests
+public class NArg_MiscDemo
 {
     [Test]
     public void ProveIfAny() {
