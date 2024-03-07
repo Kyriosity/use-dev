@@ -11,8 +11,7 @@ public abstract class Multiparameter<TExc>(string? message = "", Exception? inne
         [ArgExpr(nameof(arg7))] string exp7 = "", [ArgExpr(nameof(arg8))] string exp8 = "", [ArgExpr(nameof(arg9))] string exp9 = "",
         [ArgExpr(nameof(arg10))] string exp10 = "", [ArgExpr(nameof(arg11))] string exp11 = "") {
 
-        var submitted = new[]
-                { exp1, exp2, exp3, exp4, exp5, exp6, exp7, exp8, exp9, exp10, exp11 }
+        var submitted = new[] { exp1, exp2, exp3, exp4, exp5, exp6, exp7, exp8, exp9, exp10, exp11 }
             .Where(x => !string.IsNullOrEmpty(x));
 
         return Throw($"{message}: \"{string.Join("`, `", submitted)}\"");

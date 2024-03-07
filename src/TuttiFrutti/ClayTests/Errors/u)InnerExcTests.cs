@@ -14,7 +14,7 @@ public class InnerExcTests
             var intentionalFail = int.Parse(long.MaxValue.ToString());
         } catch (OverflowException exc) {
 
-            var wrap = Assert.Throws<EntityNotFound>(() => EntityNotFound.Throw($"test {exc.GetType().FullName}", exc));
+            var wrap = Assert.Throws<InvalidOperationException>(() => InvalidOperation.Throw($"test {exc.GetType().FullName}", exc));
             Assert.That(wrap, Is.Not.Null);
             Assert.That(wrap?.InnerException?.GetType(), Is.EqualTo(typeof(OverflowException)));
         }

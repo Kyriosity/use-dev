@@ -11,15 +11,6 @@ public class IntroDemo
     }
 
     [Test]
-    public void ShortcutInstantiate() {
-        var exc = EntityNotFound.New();
-        Assert.That(exc.GetType(), Is.EqualTo(typeof(EntityNotFound)));
-
-        var argExc = Argument.New("sample arg exception", UniqueConstraint.New("Name <...> already reserved in the domain [...]"));
-        Assert.Throws<ArgumentException>(() => throw argExc);
-    }
-
-    [Test]
     public void System() {
         var exc = Assert.Throws<NotImplementedException>(() => NotImplemented.Throw());
         Assert.That(exc?.Message, Is.Empty);

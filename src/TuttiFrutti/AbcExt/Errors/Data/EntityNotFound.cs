@@ -1,5 +1,5 @@
 ﻿namespace AbcExt.Errors.Data;
 
-public class EntityNotFound(string? message = "", Exception? inner = null)
-    : Shortcuts.Regular<EntityNotFound>(message, inner);
+public class EntityNotFound(string message)
+    : Argument.Shortcut<EntityNotFound>(message);
 

@@ -29,8 +29,8 @@ public class NArg_MiscTests
         ReportMeasurements(pA, pB, mC, mDd, measE, measF, lastM);
 
         mDd += 1000;
-        Assert.Throws<ArgumentException>(() =>
-            ReportMeasurements(pA, pB, mC, mDd, measE, measF, lastM));
+        Assert.Throws<ArgumentException>(() => ReportMeasurements(pA, pB, mC, mDd, measE, measF, lastM));
+
     }
 
     // ToDo: INDISTINCT EXC

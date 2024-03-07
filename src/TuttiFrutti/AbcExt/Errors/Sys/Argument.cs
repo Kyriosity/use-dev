@@ -21,7 +21,6 @@ public class Argument : MultiparameterConditional<ArgumentException>
         return OnCondition<T>(predicate, (i, _) => 0 < i, args, condition);
     }
 
-
     public static bool ThrowIfTogether<T>(Predicate<IEnumerable<T>> predicate, T arg1, T arg2, T arg3 = default, T arg4 = default, T arg5 = default,
         T arg6 = default, T arg7 = default, T arg8 = default, T arg9 = default, T arg10 = default, T arg11 = default,
 

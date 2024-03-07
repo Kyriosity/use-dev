@@ -1,5 +1,4 @@
-﻿
-namespace AbcExt.Errors.Sys;
+﻿namespace AbcExt.Errors.Sys;
 
 public class NotSupported : Shortcuts.Regular<NotSupportedException>
 {

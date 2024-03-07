@@ -3,8 +3,7 @@ public abstract class MultiparameterConditional<TExc>(string? message = "", Exce
     : Multiparameter<TExc>(message, inner) where TExc : Exception
 {
     protected static bool OnCondition<T>(Predicate<T> predicate, Func<int, int, bool> countTrigger,
-        (T val, string tag)[] args, string predicateInfo = ""
-    ) {
+        (T val, string tag)[] args, string predicateInfo = "") {
         var submitted = args.Where(x => !string.IsNullOrEmpty(x.tag)).ToList();
         var match = submitted.Select((x, i) => (idx: i, x.val, x.tag))
             .Where(x => predicate(x.val)).ToList();
