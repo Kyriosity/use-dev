@@ -1,13 +1,10 @@
-﻿using AbcExt.Errors.Shortcuts;
-using System.Drawing;
-
-namespace ClayTests.Errors;
+﻿namespace ClayTests.Errors;
 public class NArg_Demo
 {
     [Test]
     public void ReportArgumentsCallers() {
         const string dummy = "NOT_IN_OUTPUT";
-        var dummyStruct = new Point(7, -12);
+        var dummyStruct = new System.Drawing.Point(7, -12);
 
         var exc = Assert.Throws<ArgumentException>(() =>
             Argument.Throw("Motley args to be recorded by caller",

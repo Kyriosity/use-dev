@@ -1,6 +1,4 @@
-﻿using AbcExt.Errors.Argument;
-
-namespace ClayTests.Errors;
+﻿namespace ClayTests.Errors;
 public class IntroDemo
 {
     public static void WILL_NOT_COMPILE() {

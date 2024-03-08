@@ -1,6 +1,4 @@
-﻿using AbcExt.Errors.Argument;
-
-namespace ClayTests.Errors.Conditional.CustomExceptions;
+﻿namespace ClayTests.Errors.Conditional.CustomExceptions;
 public class NArg_DuplicatedDemo
 {
     [Test]
