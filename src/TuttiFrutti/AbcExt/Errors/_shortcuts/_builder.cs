@@ -2,7 +2,7 @@
 using AbcExt.Errors.Data;
 using System.ComponentModel;
 
-namespace AbcExt.Errors._shortcuts;
+namespace AbcExt.Errors.Shortcuts;
 internal static class Builder
 {
     internal static TExc Make<TExc>(string? message = "", Exception? inner = null) where TExc : Exception =>

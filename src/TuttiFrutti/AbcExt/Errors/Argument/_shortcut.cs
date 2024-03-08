@@ -1,9 +1,6 @@
-﻿using AbcExt.Errors._shortcuts;
+﻿using AbcExt.Errors.Shortcuts;
 
 namespace AbcExt.Errors.Argument;
-internal class _shortcut
-{
-}
 
 public abstract class Shortcut<TExc>(string message) : ArgumentException(message)
     where TExc : ArgumentException

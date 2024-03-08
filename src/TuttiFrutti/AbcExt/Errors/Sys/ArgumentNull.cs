@@ -1,4 +1,5 @@
 ﻿using AbcExt.Errors.Shortcuts;
+using AbcExt.Stubs.Args;
 
 namespace AbcExt.Errors.Sys;
 
@@ -8,6 +9,8 @@ public class ArgumentNull : MultiparameterConditional<ArgumentNullException>
 
     public static bool ThrowIfAny(object? arg1, object? arg2, object? arg3 = null, object? arg4 = null, object? arg5 = null,
         object? arg6 = null, object? arg7 = null, object? arg8 = null, object? arg9 = null, object? arg10 = null, object? arg11 = null,
+
+        YOU_REACHED_ARGs_LIMIT___METAs_NEXT _ = default,
 
         [ArgExpr(nameof(arg1))] string exp1 = "", [ArgExpr(nameof(arg2))] string exp2 = "", [ArgExpr(nameof(arg3))] string exp3 = "",
         [ArgExpr(nameof(arg4))] string exp4 = "", [ArgExpr(nameof(arg5))] string exp5 = "", [ArgExpr(nameof(arg6))] string exp6 = "",

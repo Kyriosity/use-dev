@@ -1,10 +1,14 @@
-﻿namespace AbcExt.Errors.Shortcuts;
+﻿using AbcExt.Stubs.Args;
+
+namespace AbcExt.Errors.Shortcuts;
 public abstract class Multiparameter<TExc>(string? message = "", Exception? inner = null)
     : Regular<TExc>(message, inner) where TExc : Exception
 {
     public static dynamic Throw(string? message,
         object? arg1, object? arg2, object? arg3 = null, object? arg4 = null, object? arg5 = null, object? arg6 = null,
         object? arg7 = null, object? arg8 = null, object? arg9 = null, object? arg10 = null, object? arg11 = null,
+
+        YOU_REACHED_ARGs_LIMIT___METAs_NEXT _ = default,
 
         [ArgExpr(nameof(arg1))] string exp1 = "", [ArgExpr(nameof(arg2))] string exp2 = "", [ArgExpr(nameof(arg3))] string exp3 = "",
         [ArgExpr(nameof(arg4))] string exp4 = "", [ArgExpr(nameof(arg5))] string exp5 = "", [ArgExpr(nameof(arg6))] string exp6 = "",
@@ -13,6 +17,7 @@ public abstract class Multiparameter<TExc>(string? message = "", Exception? inne
 
         var submitted = new[] { exp1, exp2, exp3, exp4, exp5, exp6, exp7, exp8, exp9, exp10, exp11 }
             .Where(x => !string.IsNullOrEmpty(x));
+
 
         return Throw($"{message}: \"{string.Join("`, `", submitted)}\"");
     }

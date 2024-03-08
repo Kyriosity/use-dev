@@ -1,4 +1,5 @@
 ﻿using AbcExt.Errors.Sys;
+using AbcExt.Stubs.Args;
 using System.Text.RegularExpressions;
 
 namespace AbcExt.Errors.Argument;
@@ -9,6 +10,8 @@ public partial class DuplicatedArguments(string message) : Shortcut<DuplicatedAr
 
     public static bool ThrowIfAny<T>(T arg1, T arg2, T arg3 = default, T arg4 = default, T arg5 = default,
         T arg6 = default, T arg7 = default, T arg8 = default, T arg9 = default, T arg10 = default, T arg11 = default,
+
+        YOU_REACHED_ARGs_LIMIT___METAs_NEXT _ = default,
 
         [ArgExpr(nameof(arg1))] string exp1 = "", [ArgExpr(nameof(arg2))] string exp2 = "", [ArgExpr(nameof(arg3))] string exp3 = "",
         [ArgExpr(nameof(arg4))] string exp4 = "", [ArgExpr(nameof(arg5))] string exp5 = "", [ArgExpr(nameof(arg6))] string exp6 = "",
@@ -25,12 +28,13 @@ public partial class DuplicatedArguments(string message) : Shortcut<DuplicatedAr
     public static bool ThrowIfAny<T>(Func<T, T, bool> match, T arg1, T arg2, T arg3 = default, T arg4 = default, T arg5 = default,
         T arg6 = default, T arg7 = default, T arg8 = default, T arg9 = default, T arg10 = default, T arg11 = default,
 
-        [ArgExpr(nameof(match))] string matchInfo = "",
+        YOU_REACHED_ARGs_LIMIT___METAs_NEXT _ = default,
 
         [ArgExpr(nameof(arg1))] string exp1 = "", [ArgExpr(nameof(arg2))] string exp2 = "", [ArgExpr(nameof(arg3))] string exp3 = "",
         [ArgExpr(nameof(arg4))] string exp4 = "", [ArgExpr(nameof(arg5))] string exp5 = "", [ArgExpr(nameof(arg6))] string exp6 = "",
         [ArgExpr(nameof(arg7))] string exp7 = "", [ArgExpr(nameof(arg8))] string exp8 = "", [ArgExpr(nameof(arg9))] string exp9 = "",
-        [ArgExpr(nameof(arg10))] string exp10 = "", [ArgExpr(nameof(arg11))] string exp11 = "") {
+        [ArgExpr(nameof(arg10))] string exp10 = "", [ArgExpr(nameof(arg11))] string exp11 = "", [ArgExpr(nameof(match))] string matchInfo = ""
+) {
 
         var args = new (T val, string tag)[] { (arg1, exp1), (arg2, exp2), (arg3, exp3), (arg4, exp4), (arg5, exp5),
             (arg6, exp6), (arg7, exp7), (arg8, exp8), (arg9, exp9), (arg10, exp10), (arg11, exp11) };
