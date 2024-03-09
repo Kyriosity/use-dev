@@ -5,16 +5,16 @@ namespace UVal.Test_Learn;
 public static class UVal
 {
     public static IOpenMultifacet<T, U> Of<T, U>(T value, U unit) where U : Enum =>
-        NotImplemented.Throw(value, unit);
+        NotImplemented.Throw("value, unit");
     public static IOpenMultifacet<T, U> Of<T, U>(T value, U unit, IFuncStore<U> func) where U : Enum =>
-        NotImplemented.Throw(value, unit, func);
+        NotImplemented.Throw("value, unit, func");
 
     public static class Const
     {
         public static IMultifacet<T, U> Of<T, U>(T value, U unit) where U : Enum =>
-            NotImplemented.Throw(value, unit);
+            NotImplemented.Throw("value, unit");
         public static IMultifacet<T, U> Of<T, U>(T value, U unit, IFuncStore<U> func) where U : Enum =>
-            NotImplemented.Throw(value, unit, func);
+            NotImplemented.Throw("value, unit, func");
     }
 }
 
