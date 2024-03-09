@@ -1,6 +1,4 @@
 ﻿using FuncStore.Conversion.RatioScale;
-using FuncStore.Conversion.Tests.Setup.Metadata;
-using FuncStore.Conversion.Tests.Setup.Steps;
 using MeasUnits.Digital;
 using Size = MeasData.Digital.Size.Size;
 

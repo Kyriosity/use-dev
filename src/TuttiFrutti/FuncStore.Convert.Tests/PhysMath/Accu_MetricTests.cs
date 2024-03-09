@@ -1,6 +1,4 @@
 using FuncStore.Conversion.RatioScale;
-using FuncStore.Conversion.Tests.Setup.Metadata;
-using FuncStore.Conversion.Tests.Setup.Steps;
 using MeasData.Calibration.Metric;
 using Metric = MeasUnits.Prefixes.Metric;
 

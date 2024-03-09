@@ -1,6 +1,4 @@
 ﻿using FuncStore.Conversion.RatioScale;
-using FuncStore.Conversion.Tests.Setup.Metadata;
-using FuncStore.Conversion.Tests.Setup.Steps;
 using MeasData.Length.Earth.Distances;
 using MeasData.Length.Earth.Elevations;
 using In = MeasUnits.Phys.Distance.Length.Cross.SI_Customary.In;
