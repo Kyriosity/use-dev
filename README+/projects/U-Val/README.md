@@ -27,9 +27,10 @@ _Concrecte values_ in applications may rely on context or imply a single system 
 |--- Instantiation flexibility\
 |--- Modularity behind interface\
 |--- Generic-ism !\
+|--- Constants: predetermined, instantiated vs. generated (as for Ce(Pa)\
 |--- Arithmetic ops\
-|--- Comparisson\
-|--- Cache\
+|--- Comparison\
+|--- Cache
 
 |- Handbook\
 |- Description\
@@ -41,7 +42,7 @@ _Concrecte values_ in applications may rely on context or imply a single system 
 
 |- BIG PIC REQUIRED
 
-|- **Source code**\
+|- **Structure** and **Source code**\
 |--- MeasData\
 |--- Funcs\
 |----- Intro\
