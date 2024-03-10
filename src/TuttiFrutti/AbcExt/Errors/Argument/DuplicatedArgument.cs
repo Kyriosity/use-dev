@@ -3,7 +3,7 @@ using AbcExt.Stubs.Args;
 using System.Text.RegularExpressions;
 
 namespace AbcExt.Errors.Argument;
-public partial class DuplicatedArguments(string message) : Shortcut<DuplicatedArguments>(message)
+public partial class DuplicatedArgument(string message) : Shortcut<DuplicatedArgument>(message)
 {
     public static Func<string?, string?, bool> LooseEqual =>
         (a, b) => 0 == string.Compare(Normalize(a), Normalize(b), StringComparison.InvariantCultureIgnoreCase);
@@ -44,6 +44,7 @@ public partial class DuplicatedArguments(string message) : Shortcut<DuplicatedAr
 
     protected static bool ThrowIfAny<T>(Func<T, T, bool> condition, (T val, string tag)[] args,
         [ArgExpr(nameof(condition))] string conditionInfo = "") {
+
         ArgumentNull.ThrowIfAny(condition, args);
 
         var submmitted = args.Where(x => !string.IsNullOrEmpty(x.tag));
@@ -53,7 +54,7 @@ public partial class DuplicatedArguments(string message) : Shortcut<DuplicatedAr
             var split = SplitByMatch((a, b) => condition(a.val, b.val), submmitted, out submmitted).ToList();
             if (1 < split.Count)
                 overlap.Add(split);
-        } while (0 < submmitted.Count());
+        } while (1 < submmitted.Count());
 
 
         if (overlap.Any())
@@ -63,6 +64,7 @@ public partial class DuplicatedArguments(string message) : Shortcut<DuplicatedAr
     }
 
     private static IEnumerable<T> SplitByMatch<T>(Func<T, T, bool> condition, IEnumerable<T> source, out IEnumerable<T> remainder) {
+
         ArgumentNull.ThrowIfAny(condition, source);
 
         var list = source.ToList(); var total = list.Count;

@@ -32,7 +32,7 @@ public class IntroDemo
         Assert.Throws<UniqueConstraint>(() => UniqueConstraint.Throw("The same key <...> exists"));
         Assert.Throws<EntityNotFound>(() => EntityNotFound.Throw($"unid: ..., name:  ..."));
 
-        Assert.Throws<DuplicatedArguments>(() =>
-            DuplicatedArguments.Throw("Repeated IDs found: <..., ...>"));
+        Assert.Throws<DuplicatedArgument>(() =>
+            DuplicatedArgument.Throw("Repeated IDs found: <..., ...>"));
     }
 }

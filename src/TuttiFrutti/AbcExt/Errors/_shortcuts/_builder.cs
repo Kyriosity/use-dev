@@ -18,6 +18,6 @@ internal static class Builder
 
     private static readonly Type[] AmbiguousSignatureTypes =
         [typeof(ArgumentException), typeof(ArgumentNullException), typeof(InvalidEnumArgumentException),
-        typeof(EntityNotFound), typeof(UniqueConstraint), typeof(DuplicatedArguments)];
+        typeof(EntityNotFound), typeof(UniqueConstraint), typeof(DuplicatedArgument)];
 }
 

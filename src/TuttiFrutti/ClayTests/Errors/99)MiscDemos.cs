@@ -12,13 +12,13 @@ public class MiscDemos
 
     [Test]
     public void HitLimitSwitch() {
-        DuplicatedArguments.ThrowIfAny("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K");
+        DuplicatedArgument.ThrowIfAny("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K");
 
         Assert.Throws<InvalidOperationException>(() =>
-        DuplicatedArguments.ThrowIfAny("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K",
+        DuplicatedArgument.ThrowIfAny("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K",
           new YOU_REACHED_ARGs_LIMIT___METAs_NEXT()));
 
-        DuplicatedArguments.ThrowIfAny("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K",
+        DuplicatedArgument.ThrowIfAny("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K",
             default, "BAD TRICK: with default can overwrite");
     }
 
