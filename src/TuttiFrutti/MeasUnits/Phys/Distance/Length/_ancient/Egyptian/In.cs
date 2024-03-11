@@ -5,22 +5,42 @@ public enum In
 {
     Undefined = 0,
 
-    finger, // aka digit
+    [Alias("Digit", "fingerbreadth", "Tebā")]
+    finger,
+
+    [Alias("Shesep")]
     palm,
+
+    [Alias("Handsbreadth")]
     hand,
     fist,
 
-    doubleHandbreadt,
+    doubleHandbreadth,
 
-    PedjSheser, // small span
+    [Alias("Pedj-Sheser", "Shat Nedjes", "little Shat")]
+    smallSpan,
 
-    halfCibut, // great span
+    [Alias("Half-Cubit", "Pedj-Aa", "Shat Aa", "great Shat")]
+    greatSpan,
 
-    bentArm, // Foot
-    shoulder,
+    [Alias("Djeser", "Ser", "Bent arm")]
+    Foot,
+
+    [Alias("Remen", "upper Arm")]
+    Shoulder,
+
+    [Alias("short Cubit", "Meh Nedjes")]
     smallCubit,
-    cubit = 1, // Meh Nesut, Mahi
-    pole, // Nebiu
-    rod, // Stick of Rope, Schoinion
-    riverMeasure, // 10.5km League | Schoenus | Ater | Iter (Iteru)
+
+    [Alias("Royal Cubit", "Sacred Cubit", "Meh Nesut", "Meh Nisut", "Mahi", "Eli")]
+    cubit = 1,
+
+    [Alias("Nebiu")]
+    pole,
+
+    [Alias("Rod of Cord", "Schoinion", "Khet", "Stick of Rope")]
+    rod,
+
+    [Alias("River Measure", "League", "Ater", "Iter", "Iteru")]
+    Schoenus, // ~10.5km
 }

@@ -3,7 +3,7 @@ public enum In
 {
     Undefined = 0,
 
-    //[Alias(Pa)]
+    [Alias("Pa")]
     Pascal = 1,
 
     bar,
@@ -11,13 +11,15 @@ public enum In
     standardAtmosphere,
     technicalAtmosphere,
 
-    //[Alias(Torr)]
-    torr, // Evangelista Torricelli, barometer principle, 1644. // 1 Torr = 0.999999857533699 mmHg
+    torr, // Evangelista Torricelli, barometer principle, 1644. 1 Torr = 0.999999857533699 mmHg
+
+    [Alias("mmHg")]
     millimetersMercury,
 
-    inchesMercury, // (inHg),
+    [Alias("inHg")]
+    inchesMercury,
 
-    //[Alias(PSI)]
+    [Alias("PSI")]
     poundPerSquareInch
 }
 
