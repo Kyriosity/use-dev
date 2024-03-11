@@ -1,4 +1,4 @@
-﻿using AbcExt.Errors.Shortcuts;
+﻿using AbcExt.Errors.Utils;
 
 namespace AbcExt.Errors.Shortcuts;
 public abstract class Regular<TExc>(string? message = "", Exception? inner = null) : Exception(message, inner)

@@ -15,8 +15,6 @@ public class BuildWaysTest
         var tmprt = waterTemp[C];
         waterTemp[K] = 1;
 
-
-
         var pc = UVal.Of(444, MeasUnits.Fin.Currency.In.EUR, new VisaExchange<MeasUnits.Fin.Currency.In>());
         // ToDo: add hard currencies fixed at the end
 

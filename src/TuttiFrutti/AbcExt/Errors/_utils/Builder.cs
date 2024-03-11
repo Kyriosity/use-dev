@@ -1,12 +1,11 @@
-﻿using AbcExt.Errors.Argument;
-using AbcExt.Errors.Data;
+﻿using AbcExt.Errors.Data;
 using System.ComponentModel;
 
-namespace AbcExt.Errors.Shortcuts;
+namespace AbcExt.Errors.Utils;
 internal static class Builder
 {
     internal static TExc Make<TExc>(string? message = "", Exception? inner = null) where TExc : Exception =>
-        (Activator.CreateInstance(typeof(TExc), CompileArgs<TExc>(message, inner)) as TExc) ??
+        Activator.CreateInstance(typeof(TExc), CompileArgs<TExc>(message, inner)) as TExc ??
         throw new InvalidCastException($"Couldn't cast Activator instance to \"{typeof(TExc).FullName}\"");
 
     private static object[] CompileArgs<TExc>(string? message = "", Exception? inner = null) where TExc : Exception {

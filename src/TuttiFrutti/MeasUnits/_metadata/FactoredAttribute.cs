@@ -1,4 +1,4 @@
 ﻿namespace MeasUnits.Metadata;
 
-[AttributeUsage(System.AttributeTargets.Enum | System.AttributeTargets.Class, AllowMultiple = false)]
+[AttributeUsage(AttributeTargets.Enum | AttributeTargets.Class, AllowMultiple = false)]
 public class FactoredAttribute : AbcExt.Metadata.ExtendedAttribute<FactoredAttribute>;

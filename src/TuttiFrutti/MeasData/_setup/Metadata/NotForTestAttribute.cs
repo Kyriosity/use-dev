@@ -1,6 +1,6 @@
 ﻿namespace MeasData.Setup.Metadata;
 
-[AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Class | AttributeTargets.Property,
+[AttributeUsage(AttributeTargets.Field | AttributeTargets.Class | AttributeTargets.Property,
     AllowMultiple = false)]
 public class NotForTestAttribute(string reason = "") : ExtendedAttribute<NotForTestAttribute>
 {
