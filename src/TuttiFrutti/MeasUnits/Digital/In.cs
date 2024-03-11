@@ -14,9 +14,13 @@ public enum In : ulong
     quadword = 64,
 
     kilobit = 1_024,
+
+    [Alias("kByte")]
     kilobyte = 1_024 * 8,
 
     megabit = kilobit * 1_024,
+
+    [Alias("MByte")]
     megabyte = kilobyte * 1_024,
 
     gigabit = megabit * 1_024,

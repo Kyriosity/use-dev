@@ -10,7 +10,10 @@ public enum In
     millimeter = -1_000,
     centimeter = -100,
     decimeter = -10,
-    metre = 1,
+
+    [Alias("metre")]
+    meter = 1,
+
     dekameter = 10,
     hectometer = 100,
     kilometre = 1_000,
