@@ -1,4 +1,6 @@
-﻿namespace ClayTests.Errors.Conditional.CustomExceptions;
+﻿using AbcExt.DataOps.Compare;
+
+namespace ClayTests.Errors.Conditional.CustomExceptions;
 public class NArg_DuplicatedDemo
 {
     [Test]
@@ -30,10 +32,19 @@ public class NArg_DuplicatedDemo
     [Test]
     public void ProveLooseDuplicate() {
         Assert.Throws<DuplicatedArgument>(() =>
-            DuplicatedArgument.ThrowIfAny(DuplicatedArgument.LooseEqual, "check", "name A", "Name A", "   name   A   "));
+            DuplicatedArgument.ThrowIfAny(Equal.Loose(), "check", "name A", "Name A", "   name   A   "));
         Assert.Throws<DuplicatedArgument>(() =>
-            DuplicatedArgument.ThrowIfAny(DuplicatedArgument.LooseEqual, "check", " Name A", "   name   A   "));
+            DuplicatedArgument.ThrowIfAny(Equal.Loose(), "check", " Name A", "   name   A   "));
 
-        DuplicatedArgument.ThrowIfAny(DuplicatedArgument.LooseEqual, "check", "name A", "name B");
+        DuplicatedArgument.ThrowIfAny(Equal.Loose(), "check", "name A", "name B");
+    }
+
+    [Test]
+    public void SubmitEnumerable() {
+        string[] items = ["Fe", "Cu", "Ar", "O2", "C2O", "Fe"];
+        Assert.Throws<DuplicatedArgument>(() => DuplicatedArgument.ThrowIfAny(items));
+
+        items = [" Water ", "iron", "  IRON  ", "calcium", "Calcium"];
+        Assert.Throws<DuplicatedArgument>(() => DuplicatedArgument.ThrowIfAny(Equal.Loose(), items));
     }
 }

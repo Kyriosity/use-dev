@@ -1,28 +1,26 @@
-﻿using AbcExt.Errors.Sys;
+﻿using AbcExt.DataOps.Compare;
+using AbcExt.Errors.Sys;
+using AbcExt.Errors.Utils;
 using AbcExt.Stubs.Args;
-using System.Text.RegularExpressions;
 
 namespace AbcExt.Errors.Argument;
-public partial class DuplicatedArgument(string message) : Shortcut<DuplicatedArgument>(message)
+public class DuplicatedArgument(string message) : Shortcut<DuplicatedArgument>(message)
 {
-    public static Func<string?, string?, bool> LooseEqual =>
-        (a, b) => 0 == string.Compare(Normalize(a), Normalize(b), StringComparison.InvariantCultureIgnoreCase);
 
     public static bool ThrowIfAny<T>(T arg1, T arg2, T arg3 = default, T arg4 = default, T arg5 = default,
-        T arg6 = default, T arg7 = default, T arg8 = default, T arg9 = default, T arg10 = default, T arg11 = default,
+            T arg6 = default, T arg7 = default, T arg8 = default, T arg9 = default, T arg10 = default, T arg11 = default,
 
-        YOU_REACHED_ARGs_LIMIT___METAs_NEXT _ = default,
+            YOU_REACHED_ARGs_LIMIT___METAs_NEXT _ = default,
 
-        [ArgExpr(nameof(arg1))] string exp1 = "", [ArgExpr(nameof(arg2))] string exp2 = "", [ArgExpr(nameof(arg3))] string exp3 = "",
-        [ArgExpr(nameof(arg4))] string exp4 = "", [ArgExpr(nameof(arg5))] string exp5 = "", [ArgExpr(nameof(arg6))] string exp6 = "",
-        [ArgExpr(nameof(arg7))] string exp7 = "", [ArgExpr(nameof(arg8))] string exp8 = "", [ArgExpr(nameof(arg9))] string exp9 = "",
-        [ArgExpr(nameof(arg10))] string exp10 = "", [ArgExpr(nameof(arg11))] string exp11 = "") {
+            [ArgExpr(nameof(arg1))] string exp1 = "", [ArgExpr(nameof(arg2))] string exp2 = "", [ArgExpr(nameof(arg3))] string exp3 = "",
+            [ArgExpr(nameof(arg4))] string exp4 = "", [ArgExpr(nameof(arg5))] string exp5 = "", [ArgExpr(nameof(arg6))] string exp6 = "",
+            [ArgExpr(nameof(arg7))] string exp7 = "", [ArgExpr(nameof(arg8))] string exp8 = "", [ArgExpr(nameof(arg9))] string exp9 = "",
+            [ArgExpr(nameof(arg10))] string exp10 = "", [ArgExpr(nameof(arg11))] string exp11 = "") {
 
         var args = new (T val, string tag)[] { (arg1, exp1), (arg2, exp2), (arg3, exp3), (arg4, exp4), (arg5, exp5),
             (arg6, exp6), (arg7, exp7), (arg8, exp8), (arg9, exp9), (arg10, exp10), (arg11, exp11) };
 
-        Func<T, T, bool> exactEqual = (a, b) => (a is null && b is null) || (a is not null && b is not null && a.Equals(b));
-        return ThrowIfAny(exactEqual, args);
+        return ThrowIfAny(Equal.Exact<T>(), args);
     }
 
     public static bool ThrowIfAny<T>(Func<T, T, bool> match, T arg1, T arg2, T arg3 = default, T arg4 = default, T arg5 = default,
@@ -36,10 +34,10 @@ public partial class DuplicatedArgument(string message) : Shortcut<DuplicatedArg
         [ArgExpr(nameof(arg10))] string exp10 = "", [ArgExpr(nameof(arg11))] string exp11 = "", [ArgExpr(nameof(match))] string matchInfo = ""
 ) {
 
-        var args = new (T val, string tag)[] { (arg1, exp1), (arg2, exp2), (arg3, exp3), (arg4, exp4), (arg5, exp5),
+        var tagged = new (T val, string tag)[] { (arg1, exp1), (arg2, exp2), (arg3, exp3), (arg4, exp4), (arg5, exp5),
             (arg6, exp6), (arg7, exp7), (arg8, exp8), (arg9, exp9), (arg10, exp10), (arg11, exp11) };
 
-        return ThrowIfAny(match, args, matchInfo);
+        return ThrowIfAny(match, tagged, matchInfo);
     }
 
     protected static bool ThrowIfAny<T>(Func<T, T, bool> condition, (T val, string tag)[] args,
@@ -56,12 +54,21 @@ public partial class DuplicatedArgument(string message) : Shortcut<DuplicatedArg
                 overlap.Add(split);
         } while (1 < submmitted.Count());
 
-
         if (overlap.Any())
             Throw($"{conditionInfo}:  \n{ReportDuplicatesOverlap(overlap)}");
 
         return false;
     }
+
+    public static bool ThrowIfAny<T>(IEnumerable<T> args, YOU_REACHED_ARGs_LIMIT___METAs_NEXT _ = default,
+     [ArgExpr(nameof(args))] string argsCaller = "")
+    =>
+    ThrowIfAny(Equal.Exact<T>(), Items.Tag(args, argsCaller));
+
+    public static bool ThrowIfAny<T>(Func<T, T, bool> match, IEnumerable<T> args, YOU_REACHED_ARGs_LIMIT___METAs_NEXT _ = default,
+        [ArgExpr(nameof(match))] string matchInfo = "", [ArgExpr(nameof(args))] string argsCaller = "")
+        =>
+        ThrowIfAny(match, Items.Tag(args, argsCaller), matchInfo);
 
     private static IEnumerable<T> SplitByMatch<T>(Func<T, T, bool> condition, IEnumerable<T> source, out IEnumerable<T> remainder) {
 
@@ -88,10 +95,4 @@ public partial class DuplicatedArgument(string message) : Shortcut<DuplicatedArg
 
         return string.Join("\n", xlated);
     }
-
-    private static string Normalize(string? raw) => string.IsNullOrWhiteSpace(raw) ? string.Empty :
-        LooseSeparation().Replace(raw.Trim(), " ");
-
-    [GeneratedRegex(@"\s+")]
-    private static partial Regex LooseSeparation();
 }

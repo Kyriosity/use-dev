@@ -1,4 +1,4 @@
-﻿using AbcExt.Errors.Shortcuts;
+﻿using AbcExt.Errors.Utils;
 
 namespace AbcExt.Errors.Argument;
 
