@@ -19,5 +19,5 @@ public interface ITryOps<in TId> : IHeap<TId> where TId : notnull
 
 public interface IWithTryOps<in TId> : IDirectOps<TId> where TId : notnull
 {
-    ITryOps<TId> Can { get; }
+    ITryOps<TId> Could { get; }
 }

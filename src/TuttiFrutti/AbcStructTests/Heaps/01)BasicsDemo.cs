@@ -60,9 +60,9 @@ public class BasicsDemo
         tasks.Put(DayOfWeek.Saturday, 'X');
 
         tasks.Put(DayOfWeek.Sunday, false);
-        Assert.IsFalse(tasks.Can.Put(DayOfWeek.Sunday, true));
+        Assert.IsFalse(tasks.Could.Put(DayOfWeek.Sunday, true));
 
-        Assert.IsTrue(tasks.Can.Take(DayOfWeek.Sunday, out bool isWorkingDay));
+        Assert.IsTrue(tasks.Could.Take(DayOfWeek.Sunday, out bool isWorkingDay));
         Assert.IsFalse(isWorkingDay);
     }
 
@@ -74,7 +74,7 @@ public class BasicsDemo
             _ = bag.Read<string>(123);
 
         var val = bag.Take<string>(123);
-        Assert.IsFalse(bag.Can.Read(123, out val));
+        Assert.IsFalse(bag.Could.Read(123, out val));
     }
 
     class Camera(string name) { };
