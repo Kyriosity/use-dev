@@ -1,11 +1,13 @@
-+ **Foundation** (Clay)\
-|- [Exceptions wrappers and extensions](src/TuttiFrutti/ClayTests/Errors) 🧪\
-|- [Multitype heap] 🧪\
++ **CLAY**\
+|- Exceptions wrappers and extensions: 🧪[tests](src/TuttiFrutti/ClayTests/Errors)\
+|- Motley heap: [🧪tests](src/TuttiFrutti/AbcStructTests/Heaps)\
 |- **WPF**\
-|--- [Bool-Vis. converter](README+/snippets/wpf/bool2viz_improved.md) 📃
+|--- Bool-Vis. converter: 📃[intro](README+/snippets/wpf/bool2viz_improved.md), ⌨️ [code](src/TuttiFrutti/WinClay/Converters/BoolVsVizConverter.cs)
 
-+ **Parts**\
++ **PARTS**\
 |- 💠 [**Multifacet value** (U-Val)](README+/projects/U-Val) 🔥 \
+|--- Funcware\
+|--- Graph\
 |- 🔄 [**Undo/Redo** extension](README+/projects/Rvrs) 🚧\
 |- Variant builders
 
