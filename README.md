@@ -5,7 +5,7 @@
 |--- Bool-Vis. converter: 📃[intro](README+/snippets/wpf/bool2viz_improved.md), ⌨️ [code](src/TuttiFrutti/WinClay/Converters/BoolVsVizConverter.cs)
 
 + **PARTS**\
-|- 💠 [**Multifacet value** (U-Val)](README+/projects/U-Val) 🔥 \
+|- 💠 **Multifacet value** (U-Val) 📃[intro](README+/projects/U-Val), 🧪tests \
 |--- Funcware\
 |--- Graph\
 |- 🔄 [**Undo/Redo** extension](README+/projects/Rvrs) 🚧\
