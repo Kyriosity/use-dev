@@ -7,12 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Phys\Distance\Angle\" />
+    <Folder Include="Coll\" />
+    <Folder Include="Graph\" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
-    <ProjectReference Include="..\AbcStruct\AbcStruct.csproj" />
   </ItemGroup>
 
 </Project>

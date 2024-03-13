@@ -1,16 +1,14 @@
-﻿using AbcExt.Boxes.Mixed;
-using AbcExt.Xlat.Consts;
-using MeasUnits.Names;
+﻿using MeasUnits.Names;
 using MeasUnits.Names.Si;
 
 namespace MeasUnits.Utils;
 
 public static class Match
 {
-    private static readonly IHeap _cache = new Bag();
+    private static readonly Heap.ITryOps<string> _cache = AbcStruct.Heap.Multitype.Bag.TryOnly.New();
 
     public static bool TryLoose<U>(string raw, out U? match) where U : Enum {
-        if (_cache.Pick(raw, out match))
+        if (_cache.Read(raw, out match))
             return true;
 
         var success = Parse.Try<U>(raw, out match);
