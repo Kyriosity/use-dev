@@ -52,9 +52,6 @@ internal class bagTry<TId> : ITryOps<TId> where TId : notnull
 
     private readonly IDictionary<string, IEnumerable> _dispatcher = new Dictionary<string, IEnumerable>();
 
-    private static string Qualify<T>() {
-        var isGen = typeof(T).IsGenericType;
-        var nom = typeof(T).FullName;
-        return nom ?? Argument.Throw($"{nameof(T)} has no full name");
-    }
+    private static string Qualify<T>() =>
+        typeof(T).FullName ?? Argument.Throw($"{nameof(T)} has no full name");
 }
