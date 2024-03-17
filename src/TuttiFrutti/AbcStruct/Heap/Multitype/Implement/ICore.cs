@@ -1,6 +1,7 @@
 ﻿namespace AbcStruct.Heap.Multitype.Implement;
 public interface ICore
 {
+
     virtual bool Find<TId, T>(TId id, out T? val) where TId : notnull {
         var pointer = Qualify<T>();
 
@@ -29,14 +30,18 @@ public interface ICore
     }
 
     virtual bool Remove<TId, T>(TId id) where TId : notnull {
-        if (Dir.TryGetValue(Qualify<T>(), out var available)) {
+        var pointer = Qualify<T>();
+        if (Dir.TryGetValue(pointer, out var available)) {
             var dict = (IDictionary<TId, T?>)available;
             if (dict.ContainsKey(id)) {
-                dict.Remove(id);
+                if (1 == dict.Count)
+                    Dir.Remove(pointer);
+                else
+                    dict.Remove(id);
+
                 return true;
             }
         }
-
         return false;
     }
 

@@ -12,7 +12,7 @@ internal class bagTry<TId, TStuff> : ITryOps<TId> where TId : notnull where TStu
 
     public bool Take<T>(TId id, out T? val) {
         if (_core.Find(id, out val))
-            return _core.Remove<TId, T>(id); // ToDo: remove the dict if empty ?
+            return _core.Remove<TId, T>(id);
 
         return false;
     }
