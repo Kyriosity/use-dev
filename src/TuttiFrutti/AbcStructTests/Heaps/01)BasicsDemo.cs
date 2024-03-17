@@ -43,10 +43,10 @@ public class BasicsDemo
                                 if (sack.Put(++idx, true)) {
                                     Assert.IsTrue(sack.Take(idx, out bool end));
                                     Assert.IsTrue(end);
-                                    Assert.IsFalse(sack.Take(idx, out bool _));
+                                    Assert.IsFalse(sack.Take(idx, out bool _), $"did Take on {nameof(idx)}={idx}");
                                     success = true;
                                 }
-        Assert.IsTrue(success);
+        Assert.IsTrue(success, $"failed on {nameof(idx)}={idx}");
     }
 
     [Test]

@@ -1,5 +1,5 @@
 ﻿namespace AbcStructTests.Heaps;
-public class ComplexIds
+public class ComplexIdsTests
 {
     [Test]
     public void ObjectAsId() {

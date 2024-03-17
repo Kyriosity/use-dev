@@ -1,9 +1,9 @@
 ﻿using AbcStruct.Ops.Keyed.Multitype;
 
 namespace AbcStruct.Heap.Multitype.Implement;
-internal class bag<TId> : IDirectOps<TId> where TId : notnull
+internal class bag<TId, TStuff> : IDirectOps<TId> where TId : notnull where TStuff : ICore, IInput, new()
 {
-    protected ITryOps<TId> _could = new bagTry<TId> { };
+    protected ITryOps<TId> _could = new bagTry<TId, TStuff> { };
 
     public void Put<T>(TId id, T? val) => _ = _could.Put(id, val) ? true : UniqueConstraint.Throw(id);
 
