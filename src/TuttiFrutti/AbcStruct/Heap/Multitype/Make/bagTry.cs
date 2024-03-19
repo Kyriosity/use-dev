@@ -1,13 +1,14 @@
-﻿using AbcStruct.Ops.Keyed.Multitype;
+﻿using AbcStruct.Heap.Core;
+using AbcStruct.Ops.Keyed.Multitype;
 
-namespace AbcStruct.Heap.Multitype.Implement;
+namespace AbcStruct.Heap.Multitype.Make;
 
-internal class bagTry<TId, TStuff> : ITryOps<TId> where TId : notnull where TStuff : ICore, IInput, new()
+internal class bagTry<TId, TCore> : ITryOps<TId> where TId : notnull where TCore : Default, new()
 {
-    protected TStuff _core = new TStuff();
+    protected TCore _core = new TCore();
 
     public bool Put<T>(TId id, T? val) {
-        return _core.Add(id, _core.XLat(val));
+        return _core.Add(id, val);
     }
 
     public bool Take<T>(TId id, out T? val) {

@@ -1,7 +1,8 @@
-﻿using AbcStruct.Ops.Keyed.Multitype;
+﻿using AbcStruct.Heap.Core;
+using AbcStruct.Ops.Keyed.Multitype;
 
-namespace AbcStruct.Heap.Multitype.Implement;
-internal class bag<TId, TStuff> : IDirectOps<TId> where TId : notnull where TStuff : ICore, IInput, new()
+namespace AbcStruct.Heap.Multitype.Make;
+internal class bag<TId, TStuff> : IDirectOps<TId> where TId : notnull where TStuff : Default, new()
 {
     protected ITryOps<TId> _could = new bagTry<TId, TStuff> { };
 

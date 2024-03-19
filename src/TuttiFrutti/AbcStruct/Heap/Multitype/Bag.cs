@@ -1,15 +1,16 @@
-﻿using AbcStruct.Heap.Multitype.Implement;
+﻿using AbcStruct.Heap.Core;
+using AbcStruct.Heap.Multitype.Make;
 using AbcStruct.Ops.Keyed.Multitype;
 
 namespace AbcStruct.Heap.Multitype;
 
-public class Bag : Bag<Defaults> { }
+public class Bag : Bag<Default> { }
 
-public class Bag<TStuff> where TStuff : ICore, IInput, new()
+public class Bag<TCore> where TCore : Default, new()
 {
     public static IDirectOps<string> New() => New<string>();
 
-    public static IDirectOps<TId> New<TId>() where TId : notnull => new bag<TId, TStuff> { };
+    public static IDirectOps<TId> New<TId>() where TId : notnull => new bag<TId, TCore> { };
 
     public static IDirectOps<TId> New<TId, T>(TId id, T val) where TId : notnull {
         var bag = New<TId>();
@@ -20,7 +21,7 @@ public class Bag<TStuff> where TStuff : ICore, IInput, new()
     public static class WithTry
     {
         public static IWithTryOps<string> New() => New<string>();
-        public static IWithTryOps<TId> New<TId>() where TId : notnull => new bagWithTry<TId, TStuff> { };
+        public static IWithTryOps<TId> New<TId>() where TId : notnull => new bagWithTry<TId, TCore> { };
 
         public static IWithTryOps<TId> New<TId, T>(TId id, T val) where TId : notnull {
             var bag = New<TId>();
@@ -32,7 +33,7 @@ public class Bag<TStuff> where TStuff : ICore, IInput, new()
     public static class TryOnly
     {
         public static ITryOps<string> New() => New<string>();
-        public static ITryOps<TId> New<TId>() where TId : notnull => new bagTry<TId, TStuff> { };
+        public static ITryOps<TId> New<TId>() where TId : notnull => new bagTry<TId, TCore> { };
 
         public static ITryOps<TId> New<TId, T>(TId id, T val) where TId : notnull {
             var bag = New<TId>();
