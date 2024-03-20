@@ -5,7 +5,7 @@
 As [Microsoft guidelines](https://docs.microsoft.com/en-us/archive/msdn-magazine/2009/february/patterns-wpf-apps-with-the-model-view-viewmodel-design-pattern)<sup>🔗</sup> suggest ViewModels will usually straightforwardly aggregate Models:
 
 <details>
-<summary><ins>&nbsp;Book with Editor VM - sketch&nbsp;</ins></summary>
+<summary><ins>&nbsp;Example: Book with Editor VM - sketch&nbsp;</ins></summary>
 &nbsp;
 
 ```csharp
