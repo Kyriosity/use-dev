@@ -6,7 +6,7 @@ public enum In : ulong
     Undefined = 0,
 
     bit = 1,
-    crumb = 2,
+    crumb = 2, // avoid alias: two-bit (ambigous)
     nibble = 4,
     @byte = 8,
     word = 16,
