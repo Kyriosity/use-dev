@@ -3,7 +3,7 @@ using System.Drawing;
 using Colors = System.Collections.Generic.IDictionary<string, System.Drawing.Color>;
 
 namespace AbcStructTests.Heaps;
-public class ComplexTypesDemo
+public class ComplexTypesValues
 {
     [Test]
     public void Collections() {

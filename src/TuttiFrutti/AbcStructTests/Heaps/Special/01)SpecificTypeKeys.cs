@@ -1,8 +1,8 @@
 ﻿namespace AbcStructTests.Heaps.Special;
-public class SpecialValues_Tests
+public class SpecificValuesId
 {
     [Test]
-    public void NullableValues_Demo() {
+    public void NullableValues() {
         const string Id = "NullId";
         var bag = Bag.New();
 
@@ -27,7 +27,7 @@ public class SpecialValues_Tests
     }
 
     [Test]
-    public void TestCasting() {
+    public void ObjectCasting() {
         Assert.Ignore("implement on demand");
     }
 }

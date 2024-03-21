@@ -1,7 +1,6 @@
-﻿
+﻿namespace AbcStructTests.Heaps;
 
-namespace AbcStructTests.Heaps;
-public class ErrorsTests
+public class ErrorsDemo
 {
     [Test]
     public void OnDuplicatedItem() {

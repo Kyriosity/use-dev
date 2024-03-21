@@ -15,6 +15,9 @@ public class BasicsDemo
 
         var codeTable = Bag.WithTry.New<char>();
         codeTable.Put('A', new object());
+
+        var timestamped = Bag.New(new DateTime(2002, 1, 1), "C# 1.0 released");
+        timestamped.Put(DateTime.Now, "smoke proof");
     }
 
     [Test]
