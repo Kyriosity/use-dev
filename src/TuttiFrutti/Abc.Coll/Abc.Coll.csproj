@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Abc\Abc.csproj" />
+    <ProjectReference Include="..\Abc\Abc2Port.csproj" />
   </ItemGroup>
 
 </Project>
