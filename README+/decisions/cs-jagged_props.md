@@ -1,6 +1,6 @@
 > 🚧... DRAFT ... 🚧
 
-# C# - "Fluid" interfaces on jagged properties
+# C# - "Fluid" interfaces, jagged generic properties
 
 ## Idea
 

@@ -14,7 +14,7 @@
 + [**Design decisions**](README+/decisions)\
 |- **Techniques/Patterns**\
 |--- 🎢 [Downcasting impedance](README+/decisions/cs-downcast_impedance.md)\
-|--- 🎶 [Jagged interfaces on "fluid" props](README+/decisions/cs-jagged_props.md)\
+|--- 🎶 [Jagged generic props](README+/decisions/cs-jagged_props.md)\
 |- **WPF / MVVM**\
 |--- 📢 [Notificaton orchestration](README+/decisions/mvvm/mvvm-notification_orchestration.md)\
 |--- [Model-ViewModel cohesion](README+/decisions/mvvm/mvvm-vmodel_cohesion.md)\
