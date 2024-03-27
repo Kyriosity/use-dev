@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Abc.Prop\Abc.Item.csproj" />
-    <ProjectReference Include="..\Abc\Abc.csproj" />
+    <ProjectReference Include="..\Abc\Abc2Port.csproj" />
     <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
     <ProjectReference Include="..\Imp.Rvrs\Imp.Rvrs.csproj" />
     <ProjectReference Include="..\Rvrs\Rvrs.csproj" />

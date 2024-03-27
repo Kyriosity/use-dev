@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Abc\Abc.csproj" />
+    <ProjectReference Include="..\Abc\Abc2Port.csproj" />
     <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
     <ProjectReference Include="..\MeasUnits\MeasUnits.csproj" />
     <ProjectReference Include="..\TD.N-Val\TestData.N-Val.csproj" />

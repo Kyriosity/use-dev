@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Abc.Test.Setup\Abc.Test.Setup.csproj" />
-    <ProjectReference Include="..\Abc\Abc.csproj" />
+    <ProjectReference Include="..\Abc\Abc2Port.csproj" />
     <ProjectReference Include="..\Mk.N-Val\Mk.N-Val.csproj" />
     <ProjectReference Include="..\N-Val\N-Val.csproj" />
     <ProjectReference Include="..\TD.N-Val\TestData.N-Val.csproj" />
