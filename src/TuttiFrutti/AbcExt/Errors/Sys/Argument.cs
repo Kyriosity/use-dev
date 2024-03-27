@@ -39,7 +39,7 @@ public class Argument : MultiparameterConditional<ArgumentException>
         return OnCondition<T>(predicate, args, condition);
     }
 
-    [Obsolete("This selection may lack sense for guarding")]
+    [Obsolete("This criteria (each) may lack sense for guarding")]
     public static bool ThrowIfEach<T>(Predicate<T> predicate, T arg1, T arg2, T arg3 = default, T arg4 = default, T arg5 = default,
         T arg6 = default, T arg7 = default, T arg8 = default, T arg9 = default, T arg10 = default, T arg11 = default,
 
