@@ -40,7 +40,7 @@ Nothing foul in this practice but an itchy call of "Don't repeat yourself". Furt
 
 |   |  |
 | ------------- | ------------- |
-| Let's regard model as a parent class, <br/>from which ViewModels can be derived:<br/><br/><br/><br/>| ![VModel cohesion diagram](../../_rsc/images/MVP_vm-model-cohesion.jpg)  |
+| Let's regard model as a parent class, <br/>from which ViewModels can be derived:<br/><br/><br/><br/>| ![VModel cohesion diagram](../../../_rsc/images/MVP_vm-model-cohesion.jpg)  |
 
 ### Downcasting workaround
 
@@ -65,3 +65,5 @@ Inheriting miscellaneous ViewModels from the root Model for different needs may 
 
 + 3d party frameworks and libraries provide their own _prêt-à-porter_ MVVM suites. 
 + You may select an alternative or your own design pattern: more suitable and advanced.
+
+🔚
