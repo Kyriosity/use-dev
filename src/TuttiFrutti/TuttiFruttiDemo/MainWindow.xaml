@@ -1,0 +1,45 @@
+﻿<Window x:Class="TuttiFruttiDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TuttiFruttiDemo"
+        xmlns:VM="clr-namespace:TuttiFruttiDemo.VM"
+        xmlns:Views="clr-namespace:TuttiFruttiDemo.View"
+        mc:Ignorable="d"
+        Title="{Binding Name, FallbackValue=-TITLE NOT/SET-, TargetNullValue=-null-}" Height="450" Width="800">
+    <Window.DataContext>
+        <VM:Central />
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" Name="Content"/>
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TabControl Grid.Row="0">
+            <TabItem Header="Books">
+                <Views:Books>
+                    <Views:Books.DataContext>
+                        <VM:Bookstore/>
+                    </Views:Books.DataContext>
+                    
+                </Views:Books>
+            </TabItem>
+        
+            <TabItem>
+                <TabItem.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Ellipse Width="11" Height="7" Fill="SkyBlue"/>
+                        <TextBlock>U-Val</TextBlock>
+                    </StackPanel>
+                </TabItem.Header>
+                <StackPanel>
+                    <TextBlock>Enter some text</TextBlock>
+                    <TextBox Width="50" Text="{Binding Name, FallbackValue=-n/a-, TargetNullValue=-null-, Mode=OneWay}"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

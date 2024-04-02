@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="TuttiFruttiDemo.View.Items.Book"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TuttiFruttiDemo.View.Items"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Label>Title</Label>
+        <TextBox Grid.Column="2"
+            AcceptsReturn="False" IsReadOnly="{Binding Ttl, FallbackValue=False, TargetNullValue=True}" 
+            Text="{Binding Name, FallbackValue=-n/-a, TargetNullValue=-null-}"/>
+        <Label Grid.Row="1">Author(s):</Label>
+        <Label Grid.Row="2">Timeline:</Label>
+        <Label Grid.Row="3">Notes:</Label>
+        <TextBox Grid.Column="2" Grid.Row="3" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Visible"
+                 Text="{Binding Note, FallbackValue=-n/a-}">
+            
+        </TextBox>
+
+    </Grid>
+</UserControl>
