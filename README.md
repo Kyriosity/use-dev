@@ -14,14 +14,14 @@
 
 + [**Design decisions**](README+/decisions)\
 |- **Techniques/Patterns**\
-|--- 🎢 [Downcasting impedance](README+/decisions/cs-downcast_impedance.md)\
-|--- 🎶 [Jagged generic props](README+/decisions/cs-jagged_props.md)\
+|--- 🎢 [Downcasting impedance](README+/decisions/README+/cs-downcast_impedance.md)\
+|--- 🎶 [Jagged generic props](README+/decisions/README+/cs-jagged_props.md)\
 |- **WPF / MVVM**\
-|--- 📢 [Notificaton orchestration](README+/decisions/mvvm/mvvm-notification_orchestration.md)\
-|--- [Model-ViewModel cohesion](README+/decisions/mvvm/mvvm-vmodel_cohesion.md)\
+|--- 📢 [Notificaton orchestration](README+/decisions/README+/mvvm/mvvm-notification_orchestration.md)\
+|--- [Model-ViewModel cohesion](README+/decisions/mvvm/README+/mvvm-vmodel_cohesion.md)\
 |- **Templates**\
-|--- [Promise-oriented MVVM (Task as a model)](README+/decisions/cs-think_tasks.md) 🚧
+|--- [Promise-oriented MVVM (Task as a model)](README+/decisions/README+/cs-think_tasks.md) 🚧
 
 + **Testing**\
-|- [Unit tests - 3D remake](README+/decisions/testing/test3D) 🚧\
-|--- [Gradual assert](README+/decisions/testing/test3D/ut-gradual_assert.md)
+|- [Unit tests - 3D remake](README+/decisions/README+/testing/test3D) 🚧\
+|--- [Gradual assert](README+/decisions/README+/testing/test3D/README+/ut-gradual_assert.md)
