@@ -33,13 +33,13 @@ public class Argument : MultiparameterConditional<ArgumentException>
         [ArgExpr(nameof(arg7))] string exp7 = "", [ArgExpr(nameof(arg8))] string exp8 = "", [ArgExpr(nameof(arg9))] string exp9 = "",
         [ArgExpr(nameof(arg10))] string exp10 = "", [ArgExpr(nameof(arg11))] string exp11 = "") {
 
-        var args = new[] { (arg1, exp1: exp1), (arg2, exp2: exp2), (arg3, exp3: exp3), (arg4, exp4), (arg5, exp5),
+        var args = new[] { (arg1, exp1), (arg2, exp2), (arg3, exp3), (arg4, exp4), (arg5, exp5),
             (arg6, exp6), (arg7, exp7), (arg8, exp8), (arg9, exp9), (arg10, exp10), (arg11, exp11) };
 
         return OnCondition<T>(predicate, args, condition);
     }
 
-    [Obsolete("This criteria (each) may lack sense for guarding")]
+    [Obsolete("This criteria (each) seeks to lack the sense for guarding")]
     public static bool ThrowIfEach<T>(Predicate<T> predicate, T arg1, T arg2, T arg3 = default, T arg4 = default, T arg5 = default,
         T arg6 = default, T arg7 = default, T arg8 = default, T arg9 = default, T arg10 = default, T arg11 = default,
 
