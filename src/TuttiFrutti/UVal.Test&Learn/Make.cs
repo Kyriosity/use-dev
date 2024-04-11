@@ -31,7 +31,7 @@ public interface IFuncStore<U>
 
 public class DummyFuncStore<U> : IFuncStore<U>
 {
-    public Func<N, N> For<N>(U from, U to) where N : INumber<N> => NotImplemented.Throw();
+    public Func<N, N> For<N>(U from, U to) where N : INumber<N> => NotImplemented.Throw("MUST IMPLEMENT BEFORE COMMIT!");
 }
 
 public interface IProporionalFuncs<U> : IFuncStore<U>, IMathOpsEnabled // ToDo: SPLIT FOR CAR[?] FUNCS ?

@@ -12,8 +12,8 @@ public class IntroDemo
 
     [Test]
     public void System() {
-        var exc = Assert.Throws<NotImplementedException>(() => NotImplemented.Throw());
-        Assert.That(exc?.Message, Is.Empty);
+        var exc = Assert.Throws<NotImplementedException>(() => NotImplemented.Throw("Test of exception itself"));
+        Assert.That(exc?.Message, Is.Not.Empty);
 
         var inOp = Assert.Throws<InvalidOperationException>(() => InvalidOperation.Throw(""));
         Assert.That(inOp?.Message, Is.Empty);

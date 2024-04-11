@@ -7,9 +7,9 @@ namespace Mk.N_Val.Phys.Temperature;
 public abstract class ClosedTemp<N, F> : FuncWiredValues<N, In, F>, ITemperature<N> where N : INumber<N> where F : IFuncStore<In>, new()
 {
     public N this[In unit] => Get(unit);
-    public N Kelvin => NotImplemented.Throw();
-    public N Celsius => NotImplemented.Throw();
-    public N Fahrenheit => NotImplemented.Throw();
+    public N Kelvin => NotImplemented.Throw("prototype only");
+    public N Celsius => NotImplemented.Throw("prototype only");
+    public N Fahrenheit => NotImplemented.Throw("prototype only");
 }
 
 public class Temp<N, F> : ClosedTemp<N, F>, ITempEdit<N> where N : INumber<N> where F : IFuncStore<In>, new()

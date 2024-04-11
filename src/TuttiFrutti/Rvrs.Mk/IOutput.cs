@@ -31,5 +31,5 @@ public class UndoOnly : IOutput
 public class UndoRedo : UndoOnly
 {
     public override IUndoRedoItem<T> Of<T>(T done) => new UndoRedoItem<T> { Value = done };
-    public override IUndoRedoItem<T> Of<T>(params T[] done) => NotImplemented.Throw();
+    public override IUndoRedoItem<T> Of<T>(params T[] done) => NotImplemented.Throw("prototype only");
 }

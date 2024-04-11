@@ -5,9 +5,9 @@ namespace Abc.Mk.Item.Builders;
 
 public class Item : IOutput
 {
-    public IGet<T> Of<T>(T value) => NotImplemented.Throw();
+    public IGet<T> Of<T>(T value) => NotImplemented.Throw("prototyping only");
 
-    public IGet<T> Of<T>(Func<T> init) => NotImplemented.Throw();
+    public IGet<T> Of<T>(Func<T> init) => NotImplemented.Throw("prototyping only");
 }
 
 public class MaxItem<P, U> where P : IGet<U>
@@ -15,7 +15,7 @@ public class MaxItem<P, U> where P : IGet<U>
     public MaxItem(U max) { }
 
     public P Of<T>(T value) where T : U
-        => NotImplemented.Throw();
+        => NotImplemented.Throw("prototyping only");
 }
 
 public interface IOutput
@@ -45,7 +45,7 @@ public interface IDoOutput : IOutput
 
 public class GetItem
 {
-    public static IGet<T> Of<T>(T value) => NotImplemented.Throw();
+    public static IGet<T> Of<T>(T value) => NotImplemented.Throw("prototyping only");
 }
 
 public class Init
