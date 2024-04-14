@@ -1,5 +1,6 @@
 + **CLAY**\
 |- Exceptions wrappers and extensions: [tests 🧪](src/TuttiFrutti/ClayTests/Errors)\
+|- Timeline (events)\
 |- Motley heap: [tests 🧪](src/TuttiFrutti/AbcStructTests/Heaps)\
 |- MODELS !\
 |- **WPF**\
