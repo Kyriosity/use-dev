@@ -1,6 +1,6 @@
             🚧🚧🚧 ... **DRAFT** ... 🚧🚧🚧
             ... REMOVE the LABEL when RELEASED ...
-# Multifaceted Value :diamond_shape_with_a_dot_inside: (includes **U-Val**)
+# Multifaceted Value :diamond_shape_with_a_dot_inside: (**U-Val**)
 
 <div dir="rtl">?Gauges&nbsp;-</div>
 <div dir="rtl">!300&nbsp;-</div>
@@ -10,18 +10,26 @@
 
  You may find the folklore right above dull but not pointless. Math relies on pure numbers, computers operate on pure digits but not developers and users.  
  
- The inputs and outputs of applications anchor to the material world, where even named values may be ambiguous. 
+ The inputs and outputs of applications anchor to the material world, where even named values may be ambiguous: 
 
-- An altitude on an EU domestic flight is measured in feet while variometers may show metres.
-- A child's age of `7` can be months and years.
+<details>
+<summary>&nbsp;<ins>A child's age of `7` can be months or years</ins>&nbsp;<b>. . .</b></summary>
+            
+- An altitude on EU domestic flights is measured in feet while variometers may show metres.
 - Temperature of `36.6` looks native in _Kelvin_ for liquid gases and in _Celsius_ - for medicine.
-- Close approach to Mars as `33'900'000` seems credible in miles and kilometers.
+- A close approach to Mars equals `33'900'000` miles but seems credible in kilometers and nmi.
 - `Jack` can be family, given (not only on birth), and branded name.
 - `$1'000` or `1'000€` has temporal purchase ability, different for essential goods, 1GB of DRAM, and gold ounce
 
+</details>
+
 _Concrecte values_ in applications may rely on context or imply a single system of categorization (e.g. SI for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters. (So obvious that doesn't need explanation.)
 
- Old fashion like `const Temperature_AbsZero_Kelvin = 0.00` makes values univocal but ugly to the object-oriented eye, and as a good developer, you will guess a better view: `Heating.Max.[Celcius] = 82.15`
+ Old fashion like `const Temperature_AbsZero_Kelvin = 0.00` makes values univocal but ugly to the object-oriented eye.
+ 
+ As a good developer, you will come to a better view, like `Heating.Max[Celcius] = 82.15` or `Landing.Speed.Knots` vs `.KmPerHour`. Then you will think about ways of initialization, conversion functions, constants, and other headache. 
+
+ And here you are, where such a framework is available for use, alteration, or just as a concept.
 
 |- **Features and omissions**\
 |--- Instantiation flexibility\
