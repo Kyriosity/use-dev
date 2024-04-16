@@ -27,7 +27,7 @@ _Concrecte values_ in applications may rely on context or imply a single system 
 
  Old fashion like `const Temperature_AbsZero_Kelvin = 0.00` makes values univocal but ugly to the object-oriented eye.
  
- As a good developer, you will come to a better view, like `Heating.Max[Celcius] = 82.15` or `Landing.Speed.Knots` vs `.KmPerHour`. Then you will think about ways of initialization, conversion functions, constants, and other headache. 
+ As a good developer, you will come to a better view, like `Heating.Max[Celcius] = 82.15` or `Landing.Speed.Knots` vs `.KmPerHour`. Then you will think about ways of initialization, conversion functions, math ops, constants, and other headaches. 
 
  And here you are, where such a framework is available for use, alteration, or just as a concept.
 
