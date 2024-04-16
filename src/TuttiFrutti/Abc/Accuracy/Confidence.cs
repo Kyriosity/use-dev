@@ -1,7 +1,7 @@
 ﻿namespace Abc.Accuracy;
 public class Confidence<N> : IConfidence_Init<N> where N : INumber<N>
 {
-    public N Interval { get; init; } = N.Zero;
+    public required N Interval { get; init; }
 }
 
 public class Confidence_Edit<N> : IConfidence_Edit<N> where N : INumber<N>
