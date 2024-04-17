@@ -1,4 +1,4 @@
-﻿namespace MeasUnits.Metadata;
+﻿namespace AbcExt.Metadata.Ratio;
 
 [AttributeUsage(AttributeTargets.Enum, AllowMultiple = false)]
 public class ExponentAttribute(int @base) : ExtendedAttribute<ExponentAttribute>

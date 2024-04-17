@@ -1,6 +1,6 @@
 ﻿namespace MeasUnits.Phys.Distance.Length.SI;
 
-[Metadata.Factored]
+[Factored]
 public enum In
 {
     Undefined = 0,
