@@ -3,7 +3,7 @@ public enum In
 {
     Undefined = 0,
 
-    [Alias("Pa")]
+    [Abbr("Pa")]
     Pascal = 1,
 
     bar,
@@ -13,13 +13,13 @@ public enum In
 
     torr, // Evangelista Torricelli, barometer principle, 1644. 1 Torr = 0.999999857533699 mmHg
 
-    [Alias("mmHg")]
+    [Abbr("mmHg")]
     millimetersMercury,
 
-    [Alias("inHg")]
+    [Abbr("inHg")]
     inchesMercury,
 
-    [Alias("PSI")]
+    [Abbr("PSI")]
     poundPerSquareInch
 }
 

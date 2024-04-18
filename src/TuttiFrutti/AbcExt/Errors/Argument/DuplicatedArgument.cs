@@ -1,5 +1,4 @@
-﻿using AbcExt.DataOps.Compare;
-using AbcExt.Errors.Sys;
+﻿using AbcExt.Errors.Sys;
 using AbcExt.Errors.Utils;
 using AbcExt.Stubs.Args;
 
@@ -60,12 +59,14 @@ public class DuplicatedArgument(string message) : Shortcut<DuplicatedArgument>(m
         return false;
     }
 
-    public static bool ThrowIfAny<T>(IEnumerable<T> args, YOU_REACHED_ARGs_LIMIT___METAs_NEXT _ = default,
+    public static bool ThrowIfAny<T>(IEnumerable<T> args,
+        YOU_REACHED_ARGs_LIMIT___METAs_NEXT _ = default,
      [ArgExpr(nameof(args))] string argsCaller = "")
     =>
     ThrowIfAny(Equal.Exact<T>(), Items.Tag(args, argsCaller));
 
-    public static bool ThrowIfAny<T>(Func<T, T, bool> match, IEnumerable<T> args, YOU_REACHED_ARGs_LIMIT___METAs_NEXT _ = default,
+    public static bool ThrowIfAny<T>(Func<T, T, bool> match, IEnumerable<T> args,
+        YOU_REACHED_ARGs_LIMIT___METAs_NEXT _ = default,
         [ArgExpr(nameof(match))] string matchInfo = "", [ArgExpr(nameof(args))] string argsCaller = "")
         =>
         ThrowIfAny(match, Items.Tag(args, argsCaller), matchInfo);

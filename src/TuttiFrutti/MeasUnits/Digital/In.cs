@@ -6,7 +6,7 @@ public enum In : ulong
     Undefined = 0,
 
     bit = 1,
-    crumb = 2, // avoid alias: two-bit (ambigous)
+    crumb = 2, // avoid alias: two-bit (ambigous!)
     nibble = 4,
     @byte = 8,
     word = 16,
@@ -24,8 +24,10 @@ public enum In : ulong
     megabyte = kilobyte * 1_024,
 
     gigabit = megabit * 1_024,
+    [Alias("GByte")]
     gigabyte = megabyte * 1_024,
 
+    [Alias("TByte")]
     terabyte = gigabyte * 1_024,
     petabyte = terabyte * 1_024,
     exabyte = petabyte * 1_024,

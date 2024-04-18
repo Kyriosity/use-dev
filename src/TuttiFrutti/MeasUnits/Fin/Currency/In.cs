@@ -3,19 +3,34 @@ public enum In
 {
     Undefined = 0, // default
 
+    [Alias("US dollar", "buck")]
     USD,
+    [Alias("Canadian dollar")]
     CAD,
-    NZD, // New Zealand dollar
+    [Alias("New Zealand dollar")]
+    NZD,
     EUR,
+    [Alias("sterling", "Great Britain pound")]
     GBP,
-    AUD, // Australlian dollar
-    JPY, // Japan Yen
-    CHF, // Swiss Franc
-    ALL, // Albanian Lek
-    NOK, // Norwegian krone
-    KRW, // South Korean won
-    KES, // Kenyan shilling
-    PLN, // Polski Zloty
-    MNT, // Mongolian Tugrik
-    CVE // Kap-Verde Escudo
+    [Alias("Australlian dollar")]
+    AUD,
+    [Alias("Japan Yen")]
+    JPY,
+    [Alias("Swiss Franc")]
+    CHF,
+    [Alias("Albanian Lek")]
+    ALL,
+    [Alias("Norwegian krone")]
+    NOK,
+    [Alias("South Korean won")]
+    KRW,
+    [Alias("Kenyan shilling")]
+    KES,
+
+    [Alias("Polski Zloty")]
+    PLN,
+    [Alias("Mongolian Tugrik")]
+    MNT,
+    [Alias("Kap-Verde Escudo")]
+    CVE
 }

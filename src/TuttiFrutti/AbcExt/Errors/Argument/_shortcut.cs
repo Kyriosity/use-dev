@@ -7,6 +7,6 @@ public abstract class Shortcut<TExc>(string message) : ArgumentException(message
 {
     public static dynamic Throw(string message) => throw Builder.Make<TExc>(message);
 
-    public static dynamic Throw<T>(T subject, [ArgExpr(nameof(subject))] string argCall = "[<*unknown*>]") =>
-        Throw($"*{argCall}*={subject}");
+    public static dynamic Throw<T>(T subject, [ArgExpr(nameof(subject))] string argCall = "[<*unknown*>]")
+        => Throw($"*{argCall}*={subject}");
 }

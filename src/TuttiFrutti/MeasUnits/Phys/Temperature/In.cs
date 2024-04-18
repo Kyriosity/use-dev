@@ -11,6 +11,8 @@ public enum In
     Rankine,
     Delisle, // Joseph-Nicolas Delisle
 
-    Romer, //Rømer
-    Reaumur // Réaumur
+    [Alias("Rømer")]
+    Romer,
+    [Alias("Réaumur")]
+    Reaumur
 }
