@@ -1,4 +1,4 @@
 ﻿global using AbcExt.Errors.Sys;
-global using MeasUnits.Metadata;
+global using AbcExt.Metadata.Ratio;
 global using System.Numerics;
 
