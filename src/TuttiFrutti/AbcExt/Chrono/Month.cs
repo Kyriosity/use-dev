@@ -1,6 +1,8 @@
 ﻿namespace AbcExt.Chrono;
 public enum Month
 {
+    Undefined = 0,
+
     January = 1,
     February = 2,
     March = 3,
