@@ -1,12 +1,12 @@
 ﻿namespace Abc.Accuracy;
 public class Confidence<N> : IConfidence_Init<N> where N : INumber<N>
 {
-    public required N Interval { get; init; }
+    public virtual N Interval { get; init; } = N.Zero;
 }
 
 public class Confidence_Edit<N> : IConfidence_Edit<N> where N : INumber<N>
 {
-    public N Interval { get; set; } = N.Zero;
+    public virtual N Interval { get; set; } = N.Zero;
 }
 
 public class Confidence : Confidence<byte>;
