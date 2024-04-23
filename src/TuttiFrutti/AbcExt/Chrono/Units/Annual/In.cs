@@ -1,6 +1,6 @@
 ﻿using AbcExt.Metadata.Wording;
 
-namespace AbcExt.Chrono;
+namespace AbcExt.Chrono.Units.Annual;
 
 [Metadata.Ratio.Factored]
 public enum In
