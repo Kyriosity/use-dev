@@ -1,6 +1,4 @@
-﻿using AbcModels.Bits.Marked;
-
-namespace TuttiFruttiDemo.VM;
+﻿namespace TuttiFruttiDemo.VM;
 
 public interface IBase : ITitled, INotifyPropertyChanged
 {
