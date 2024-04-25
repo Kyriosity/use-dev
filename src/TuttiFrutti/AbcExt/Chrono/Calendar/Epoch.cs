@@ -3,19 +3,22 @@ public enum Epoch
 {
     Undefined = 0,
 
-    AssyrianCalendar,
-    ByzantineCalendar,
-
+    // popular
     CommonEra, // aka A.D.
     BeforeCommonEra, // aka B.C.
-
-    MayaCalendar, // Holocene Era
-
     HoloceneEra, // aka Human Era, HE
 
+    // historic
+
+    AssyrianCalendar,
+    ByzantineCalendar,
+    MayaCalendar, // Holocene Era
     SeleucidEra,
 
     ZoroastrianCalendar,
 
-    BigBang
+    // cosmological/Universe
+    BigBang,
+
+    // futuristic calendats
 }
