@@ -10,7 +10,7 @@ public class ArgumentNull : MultiparameterConditional<ArgumentNullException>
     public static T DenyOrThrow<T>(T? arg, [ArgExpr(nameof(arg))] string exp = "") => arg is not null ? arg :
         throw new ArgumentNullException($"{typeof(T).Name} \"{exp}\" is null");
 
-    public static bool ThrowIfAny(object? arg1, object? arg2, object? arg3 = null, object? arg4 = null, object? arg5 = null,
+    public static bool ThrowIfAny(object? arg1, object? arg2 = null, object? arg3 = null, object? arg4 = null, object? arg5 = null,
         object? arg6 = null, object? arg7 = null, object? arg8 = null, object? arg9 = null, object? arg10 = null, object? arg11 = null,
 
         YOU_REACHED_ARGs_LIMIT___METAs_NEXT _ = default,
