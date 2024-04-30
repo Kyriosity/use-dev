@@ -19,7 +19,7 @@ public class MiscDemos
           new YOU_REACHED_ARGs_LIMIT___METAs_NEXT()));
 
         DuplicatedArgument.ThrowIfAny("A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K",
-            default, "BAD TRICK: with default can overwrite");
+            default, "BAD TRICK: `default` can overwrite");
     }
 
     private static string Login(string name, string password, [CallerMemberName] string user = "<will be set by caller>") => user;
