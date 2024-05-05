@@ -2,7 +2,8 @@
 
 # Unit test - "3D" re-view
 
-Developers, testers and management comprehend unit tests as essential and integral as idea, and uncomplicated and routine as implementation. Just take an entity (unit) of an application and cover it with proof.
+Developers, testers and management comprehend unit tests as essential and integral as the idea, and uncomplicated and routine as implementation. 
+Just take an entity (unit) of an application and cover it with proof.
 
 ```csharp
 [Test, SOURCE(A, B2, C30, D04, ...)]
