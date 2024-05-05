@@ -11,10 +11,10 @@ WPF developers must know the easy [Microsoft recipe](https://learn.microsoft.com
 * diverse notifications mechanism (not only _PropertyChanged_)
 
 <details>
-<summary><ins>&nbsp;And then if a ViewModel were printed on a board it would look:&nbsp;</ins></summary></summary>
+<summary><ins>&nbsp;<b>And then if a ViewModel were printed on a board it would look:</b>&nbsp;</ins></summary></summary>
 &nbsp;
 
-[![Spaghetti wires snapshot from bigmessowires.com](../../_rsc/images/bigmessowires.com_wired-circuit.jpg)](https://github.com/Kyriosity/read-write/tree/main/readme%2B/pencraft/readme%2B/_rsc)\
+[![Spaghetti wires snapshot from bigmessowires.com](../../../_rsc/images/bigmessowires.com_wired-circuit.jpg)](https://github.com/Kyriosity/read-write/tree/main/README+/pencraft/README+/_rsc)\
 (*Found on bigmessowires.com*)\
 \________________________________________________________________________________________
 </details>
@@ -23,10 +23,10 @@ WPF developers must know the easy [Microsoft recipe](https://learn.microsoft.com
 ## Idea 
 
 <details>
-<summary><ins>&nbsp;Another snapshot from the same site may give the cue:&nbsp;</ins></summary></summary>
+<summary><ins>&nbsp;<b>Another snapshot from the same site may give the cue:</b>&nbsp;</ins></summary></summary>
 &nbsp;
 
-[![Spaghetti wires snapshot from bigmessowires.com](../../_rsc/images/bigmessowires.com_inegrated-circuit.jpg)](https://github.com/Kyriosity/read-write/tree/main/readme%2B/pencraft/readme%2B/_rsc)\
+[![Spaghetti wires snapshot from bigmessowires.com](../../../_rsc/images/bigmessowires.com_inegrated-circuit.jpg)](https://github.com/Kyriosity/read-write/tree/main/README+/pencraft/README+/_rsc)\
 (*Found on bigmessowires.com*)\
 \________________________________________________________________________________________
 </details>
