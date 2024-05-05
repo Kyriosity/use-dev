@@ -38,7 +38,7 @@ The above draft is fairly acceptable, but let's hone once and for good a decent 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>:raising_hand:</sup><sub>Original naming is longish and ambiguous. [Viz](https://en.wikipedia.org/wiki/Viz.)<sup>🔗</sup> will be at least shorter than [Visibility](https://www.merriam-webster.com/dictionary/visibility)<sup>🔗</sup> (which must have been *Display*); *Vs* (versus) implies two-way, while *To* - one-way conversion.</sub>
 
 <details>
-<summary><ins>&nbsp;How these benefits will look in XAML&nbsp;</ins></summary>
+<summary><ins>&nbsp;<b>How these benefits will look in XAML</b>&nbsp;</ins></summary>
 &nbsp;
 
  ```xaml
