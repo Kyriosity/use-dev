@@ -10,3 +10,5 @@ However, criteria can be vague and changeable.
 - Execution time and other resource consumption.
 
 The same applies to negative results.
+
+## Snap and tendencies
