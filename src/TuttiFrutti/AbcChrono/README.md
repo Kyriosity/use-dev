@@ -43,7 +43,9 @@ Disclaimer! Version&nbsp;**1** this is a functional sketch. A foundation to try 
 
 ### Alternatives
 
-One-page (single-class) wizard
+One-page (single-class) wizard.
+
+Wizard VM over model with masking.
 
 ### Implementation blog
 
