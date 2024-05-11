@@ -34,13 +34,21 @@ As [Microsoft guidelines](https://docs.microsoft.com/en-us/archive/msdn-magazine
   ```
 </details>
 
-Nothing foul in this practice but an itchy call of "Don't repeat yourself". Furthermore, there can be more ViewModels: *BookViewer* for display, *BookAbstract* for listing, and *NewBook* for creation, - all multiplying the mere propagation of the same properties.
+This practice isn't foul but leaves an itchy call of "Don't repeat yourself". 
+Furthermore, there can be more ViewModels: *BookViewer* for display, *BookAbstract* for listing, and *NewBook* for creation, - all multiplying the mere propagation of the same properties.
 
-## Inheritance 
+## Inheritance variant
 
-|   |  |
-| ------------- | ------------- |
-| Let's regard model as a parent class, <br/>from which ViewModels can be derived:<br/><br/><br/><br/>| <picture><img alt="VModel cohesion diagram" src="https://github.com/Kyriosity/use-dev/blob/main/README+/_rsc/images/MVP_vm-model-cohesion.jpg"></picture> |
+<table>
+ <tr valign="top">
+    <td>
+      Let's regard the model as a parent class, <br/>from which ViewModels can be derived:
+    </td>
+   <td>
+     <picture><img alt="VModel cohesion diagram" src="https://github.com/Kyriosity/use-dev/blob/main/README+/_rsc/images/MVP_vm-model-cohesion.jpg"></picture>
+   </td>
+</tr>
+</table>
 
 ### Downcasting workaround
 
