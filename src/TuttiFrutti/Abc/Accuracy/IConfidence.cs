@@ -1,19 +1,19 @@
 ﻿namespace Abc.Accuracy;
 public interface IConfidence<N> where N : INumber<N>
 {
-    N Interval { get; }
+    N Delta { get; }
 }
 
 
 public interface IConfidence_Init<N> : IConfidence<N>
     where N : INumber<N>
 {
-    new N Interval { get; init; }
+    new N Delta { get; init; }
 }
 
 public interface IConfidence_Edit<N> : IConfidence<N>
     where N : INumber<N>
 {
-    new N Interval { get; set; }
+    new N Delta { get; set; }
 }
 
