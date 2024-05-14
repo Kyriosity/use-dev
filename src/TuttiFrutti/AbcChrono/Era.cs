@@ -1,12 +1,12 @@
-﻿using AbcChrono.Sol3.Calendar;
+﻿using AbcChrono.Sol3.Era;
 
 namespace AbcChrono;
 public class Era
 {
-    public static ITimes Common =>
+    public static ILarge Common =>
         new YearCentiEra();
-    public static IEra BeforeCommon =>
+    public static ISmall BeforeCommon =>
         new YearCentiMilleEra();
-    public static ITimes Holocene =>
+    public static ILarge Holocene =>
         new YearCentiEra();
 }

@@ -1,5 +1,5 @@
-﻿namespace AbcChrono.Sol3.Monthly;
-public interface ICalendar
+﻿namespace AbcChrono.Sol3.Calendar;
+public interface IMonths
 {
     public IAnnual January(byte dayNr); public IAnnual January();
     public IAnnual February(byte dayNr); public IAnnual February();

@@ -1,4 +1,4 @@
-﻿namespace AbcChrono.Sol3.Monthly;
+﻿namespace AbcChrono.Sol3.Calendar;
 public interface INowAround
 {
     string Today { get; }
@@ -6,3 +6,4 @@ public interface INowAround
     string Tomorrow { get; }
     string Yesterday { get; }
 }
+

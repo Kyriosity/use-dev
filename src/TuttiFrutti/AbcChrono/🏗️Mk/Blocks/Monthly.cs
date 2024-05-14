@@ -1,5 +1,5 @@
 ﻿namespace AbcChrono.Sol3.Mk.Blocks;
-class Monthly() : Basal("Monthly"), ICalendar
+class Monthly() : Basal("Monthly"), IMonths
 {
     protected static IAnnual toYear(Month monthName, byte dayNr = 0) => new Annual($" {monthName} {dayNr}");
 
@@ -17,7 +17,7 @@ class Monthly() : Basal("Monthly"), ICalendar
     public IAnnual December(byte dayNr) => toYear(Month.December, dayNr); public IAnnual December() => toYear(Month.December);
 }
 
-class Monthly_wShortcuts : Monthly, ICalendar_wShortcuts
+class Monthly_wShortcuts : Monthly, IMonths_wShortcuts
 {
     public string Today => TodayAdd(0);
     public string Yesterday => TodayAdd(-1);
@@ -34,10 +34,10 @@ class Monthly_wShortcuts : Monthly, ICalendar_wShortcuts
 
 class Calendar_wCa : Monthly
 {
-    public ICalendar circa(byte delta = 1) { Model = $" - ca+/-{delta} -"; return this; }
+    public IMonths circa(byte delta = 1) { Model = $" - ca+/-{delta} -"; return this; }
 }
 
-class Calendar_wShortcuts_wCa : Monthly_wShortcuts, ICalendar_wShortcuts_wCa
+class Calendar_wShortcuts_wCa : Monthly_wShortcuts, IMonths_wShortcuts_wCa
 {
-    public ICalendar_wShortcuts circa(short delta = 1) { Model = $" - ca+/-{delta} -"; return this; }
+    public IMonths_wShortcuts circa(short delta = 1) { Model = $" - ca+/-{delta} -"; return this; }
 }

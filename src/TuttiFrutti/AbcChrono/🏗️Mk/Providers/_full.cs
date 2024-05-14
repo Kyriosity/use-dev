@@ -20,5 +20,5 @@ class Full : YearsX1_000_000_000, IApproximate<YearsX1_000_000_000, ushort>
         }
     }
 
-    public ICalendar_wShortcuts_wCa At { get; } = new Calendar_wShortcuts_wCa();
+    public IMonths_wShortcuts_wCa At { get; } = new Calendar_wShortcuts_wCa();
 }
