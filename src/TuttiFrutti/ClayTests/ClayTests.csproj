@@ -18,11 +18,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AbcChrono\AbcChrono.csproj" />
     <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Using Include="NUnit.Framework" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Chrono\Events\🎇Demo\" />
   </ItemGroup>
 
 </Project>

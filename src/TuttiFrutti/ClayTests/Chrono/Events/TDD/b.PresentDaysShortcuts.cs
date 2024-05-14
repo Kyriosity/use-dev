@@ -5,14 +5,9 @@ public class PresentDaysShortcuts
     public void Exact() {
         var calendar = Era.Common.At;
 
-        var aaa = calendar.Prev;
-        var aaad = calendar.Next;
+        //var aaa = calendar.Prev;
+        //var aaad = calendar.Next;
 
-
-        //calendar.this.Day;
-        //calendar.This.Month;
-        //calendar.circa().This.Month;
-        //calendar.circa().This.Month;
 
         //calendar.circa().April().This.Year;
 
