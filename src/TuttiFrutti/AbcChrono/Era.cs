@@ -3,10 +3,10 @@
 namespace AbcChrono;
 public class Era
 {
-    public static ILarge Common =>
+    public static IModern Common =>
         new YearCentiEra();
-    public static ISmall BeforeCommon =>
+    public static ILong BeforeCommon =>
         new YearCentiMilleEra();
-    public static ILarge Holocene =>
-        new YearCentiEra();
+    public static IShort Holocene =>
+        new ShortEra();
 }

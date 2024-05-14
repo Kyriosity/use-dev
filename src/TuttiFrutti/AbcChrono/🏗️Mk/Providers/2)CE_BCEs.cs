@@ -1,7 +1,7 @@
 ﻿using AbcChrono.Sol3.Era;
 
 namespace AbcChrono.Mk.Providers;
-class YearCentiEra : Full, ILarge
+class YearCentiEra : Full, IModern
 {
     new public IMonths_wShortcuts_wCa At => At;
 
@@ -9,7 +9,7 @@ class YearCentiEra : Full, ILarge
     new public IYearCenti circa(ushort delta = 1) => (IYearCenti)base.circa(delta);
 }
 
-class YearCentiMilleEra : Full, ISmall
+class YearCentiMilleEra : Full, ILong
 {
     new public IMonths_wCa<IMonths> At => At;
 
