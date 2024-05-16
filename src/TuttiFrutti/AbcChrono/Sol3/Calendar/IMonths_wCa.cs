@@ -1,6 +1,5 @@
 ﻿namespace AbcChrono.Sol3.Calendar;
-public interface IMonths_wCa<T> : IMonths
-    where T : IMonths
+public interface IMonths_wCa : IMonths
 {
-    public T circa(short delta = 1);
+    public IMonths circa(short delta = 1);
 }

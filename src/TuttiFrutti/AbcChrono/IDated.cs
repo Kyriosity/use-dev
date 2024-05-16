@@ -1,5 +1,5 @@
 ﻿namespace AbcChrono;
-public interface IDated<T>
+public interface IDated
 {
-    T At { get; }
+    IMonths_wCa At { get; }
 }

@@ -1,8 +1,12 @@
-﻿using AbcChrono.Sol3.Mk.Blocks;
+﻿using AbcChrono.Mk.Blocks;
+using AbcChrono.Sol3.Mk.Blocks;
 
 namespace AbcChrono.Mk.Providers;
 
-class Full : YearsX1_000_000_000, IApproximate<YearsX1_000_000_000, ushort>
+class Full : YearsX1_000_000_000,
+    IApproximate<YearsX1_000_000_000, ushort>,
+    IDated,
+    IPresentShortcuts
 {
     public Full() : base("ERA") { }
 
@@ -20,5 +24,11 @@ class Full : YearsX1_000_000_000, IApproximate<YearsX1_000_000_000, ushort>
         }
     }
 
-    public IMonths_wShortcuts_wCa At { get; } = new Calendar_wShortcuts_wCa();
+    public IMonths_wCa At { get; } = new Calendar_wCa("calendar");
+
+    public ICalendarProps Prev => new CalendarProps();
+
+    public ICalendarProps This => new CalendarProps();
+
+    public ICalendarProps Next => new CalendarProps();
 }

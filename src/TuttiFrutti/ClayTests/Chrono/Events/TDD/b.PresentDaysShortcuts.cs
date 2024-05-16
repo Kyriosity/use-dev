@@ -3,35 +3,32 @@ public class PresentDaysShortcuts
 {
     [Test]
     public void Exact() {
-        var calendar = Era.Common.At;
+        var era = Era.Common;
 
-        //var aaa = calendar.Prev;
-        //var aaad = calendar.Next;
+        var today = era.This.Day;
+        var caToday = era.circa().Prev.Day;
+        var tomorrow = era.Next.Day;
+        var yesterday = era.Prev.Day;
 
-
-        //calendar.circa().April().This.Year;
-
-        var today = calendar.Today;
-        var yesterday = calendar.Yesterday;
-        var tomorrow = calendar.Tomorrow;
-
-        var dayAfterTomorrow = calendar.TodayAdd(2);
-        var weekAgo = calendar.TodayAdd(-7);
+        //var dayAfterTomorrow = era.At.TodayAdd(2);
+        //var weekAgo = era.At.TodayAdd(-7);
     }
 
     [Test]
     public void Approximate() {
-        var calendar = Era.Common.At;
+        var era = Era.Common;
 
-        var currentDecade = calendar.circa(5).Today;
-        var approximatelyFromTomorrow = calendar.circa(1).TodayAdd(2);
+        var ca = era.circa().Next.Day;
+        var currentDecade = era.circa(5).This.Day;
+        //var approximatelyFromTomorrow = era.circa(1).TodayAdd(2);
 
-        var aboutMonthAgo = calendar.circa(2).TodayAdd(-30);
-        var aboutYearLater = calendar.circa(10).TodayAdd(365);
+        //var aboutMonthAgo = era.circa(2).This.TodayAdd(-30);
+        //var aboutYearLater = era.circa(10).TodayAdd(365);
     }
 
     [Test]
     public void Nova() {
+        // ToDo:
         var footballEM = Era.Common.Year(2024);
         var CE = Era.Common;
 

@@ -7,6 +7,6 @@ public class Era
         new YearCentiEra();
     public static ILong BeforeCommon =>
         new YearCentiMilleEra();
-    public static IShort Holocene =>
+    public static IEpochRuler Holocene =>
         new ShortEra();
 }

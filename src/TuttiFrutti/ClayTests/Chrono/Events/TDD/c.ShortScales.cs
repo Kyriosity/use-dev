@@ -1,5 +1,5 @@
 ﻿namespace ClayTests.Chrono.Events.TDD;
-public class ShortCalendars
+public class ShortScales
 {
     [Test]
     public void HoloceneScale() {
