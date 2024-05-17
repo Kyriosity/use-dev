@@ -1,15 +1,13 @@
 # Chronology - Timelines - Events
 
-Time is the _driver_ for all and the "solvent" of everything.
-
-The former is for software and the latter for its hardware.
+Time is the _driver_ for all and the "solvent" of everything. The former is for software and the latter for its hardware.
 
 Exact time measurement<sup>🔬</sup> and timestamping aren't an issue for regular solutions but chronology.
 
 Software of the previous millennium gave literally bits for dates, thus nurturing the giant Y2K bug. Contemporary languages can support a vast range of past and future dates<sup>📆</sup>, but badly organize them.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>🔬</sup> <sub>Unless you need accuracy close to [physics on steroids](https://www.nobelprize.org/prizes/physics/2023/summary/).<sup>🔗</sup></sub>\
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>📆</sup> <sub> Surrending to Java (astonishly)  C# `DateTime`supports only Common Era.</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>📆</sup> <sub>Astonishly surrending to Java  C# `DateTime`supports only Common Era. Though there're Calendar classes.</sub>
 
 ## Framework - Theses
 
