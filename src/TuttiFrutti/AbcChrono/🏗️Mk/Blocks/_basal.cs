@@ -1,10 +1,5 @@
 ﻿namespace AbcChrono.Sol3.Mk.Blocks;
-abstract class Basal
+abstract class Basal(IEvent model)
 {
-    public Basal(string model) {
-        Model = model;
-    }
-
-    protected string Model { get => _model; set { _model += " > " + value; } }
-    private string _model = "Event";
+    protected IEvent Model { get; set; } = model;
 }

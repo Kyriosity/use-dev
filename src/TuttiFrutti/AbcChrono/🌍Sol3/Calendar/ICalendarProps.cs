@@ -1,9 +1,9 @@
 ﻿namespace AbcChrono.Sol3.Calendar;
 public interface ICalendarProps
 {
-    string Day { get; }
-    string Month { get; }
-    string Year { get; }
+    IEvent Day { get; }
+    IEvent Month { get; }
+    IEvent Year { get; }
 }
 
 

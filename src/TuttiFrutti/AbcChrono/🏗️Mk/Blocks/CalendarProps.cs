@@ -1,15 +1,15 @@
 ﻿using AbcChrono.Sol3.Mk.Blocks;
 
 namespace AbcChrono.Mk.Blocks;
-class CalendarProps(string model) : Basal(model), ICalendarProps_wShift
+class CalendarProps(IEvent model) : Basal(model), ICalendarProps_wShift
 {
-    public string Day => "day";
+    public IEvent Day => model; // ToProp: 
 
-    public string Month => "month";
+    public IEvent Month => model; // ToProp: 
 
-    public string Year => "year";
+    public IEvent Year => model; // ToProp: 
 
-    public ICalendarProps minus(ushort shift) => this; // ToDo: adjust model
-    public ICalendarProps plus(ushort shift) => this;
+    public ICalendarProps minus(ushort shift) => this; // ToProp: 
+    public ICalendarProps plus(ushort shift) => this; // ToProp: 
 }
 
