@@ -1,5 +1,5 @@
-﻿namespace AbcExt.Chrono.Calendar;
-public enum Epoch
+﻿namespace AbcExt.Chrono;
+public enum Scale
 {
     Undefined = 0,
 
@@ -8,17 +8,21 @@ public enum Epoch
     BeforeCommonEra, // aka B.C.
     HoloceneEra, // aka Human Era, HE
 
-    // historic
-
+    // historic calendars
     AssyrianCalendar,
     ByzantineCalendar,
-    MayaCalendar, // Holocene Era
+    MayaCalendar,
     SeleucidEra,
-
     ZoroastrianCalendar,
 
+    // Earth
+    EarthHistory, // ca.  4.54 billion years
+    ModernHumans, // ca. 300`000
+
+
     // cosmological/Universe
-    BigBang,
+    Universe,
+
 
     // futuristic calendats
 }
