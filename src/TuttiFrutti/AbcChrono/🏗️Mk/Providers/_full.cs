@@ -26,9 +26,9 @@ class Full : YearsX1_000_000_000,
 
     public IMonths_wCa At { get; } = new Calendar_wCa("calendar");
 
-    public ICalendarProps Prev => new CalendarProps();
+    public ICalendarProps_wShift Prev => new CalendarProps("prev");
 
-    public ICalendarProps This => new CalendarProps();
+    public ICalendarProps_wShift This => new CalendarProps("this");
 
-    public ICalendarProps Next => new CalendarProps();
+    public ICalendarProps_wShift Next => new CalendarProps("next");
 }

@@ -1,8 +1,8 @@
 ﻿namespace AbcChrono.Sol3.Calendar;
 public interface IPresentShortcuts
 {
-    ICalendarProps Prev { get; }
-    ICalendarProps This { get; }
-    ICalendarProps Next { get; }
+    ICalendarProps_wShift Prev { get; }
+    ICalendarProps_wShift This { get; }
+    ICalendarProps_wShift Next { get; }
 }
 

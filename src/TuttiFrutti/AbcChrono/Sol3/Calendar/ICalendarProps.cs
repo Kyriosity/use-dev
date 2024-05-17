@@ -5,3 +5,11 @@ public interface ICalendarProps
     string Month { get; }
     string Year { get; }
 }
+
+
+public interface ICalendarProps_wShift : ICalendarProps
+{
+    ICalendarProps plus(ushort shift);
+    ICalendarProps minus(ushort shift);
+}
+

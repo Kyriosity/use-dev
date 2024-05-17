@@ -1,5 +1,5 @@
 ﻿namespace ClayTests.Chrono.Events.TDD;
-public class Syntax_Eras
+public class Eras_Syntax
 {
     [Test]
     public void AnnualBenchmarks() {
