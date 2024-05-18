@@ -32,6 +32,8 @@ Software of the previous millennium gave literally bits for dates, thus nurturin
 + Casting
 + More chronologies
 
+### The crown - Integration with U-Val
+
 ## C# solution 
 
 Disclaimer! Version&nbsp;**1** this is a functional sketch. A foundation to try and release all-around solution. 
