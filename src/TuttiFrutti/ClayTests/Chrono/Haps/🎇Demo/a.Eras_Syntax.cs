@@ -1,4 +1,4 @@
-﻿namespace ClayTests.Chrono.Events.TDD;
+﻿namespace ClayTests.Chrono.Haps.Demo;
 public class Eras_Syntax
 {
     [Test]
@@ -10,6 +10,8 @@ public class Eras_Syntax
         var fall_AppleOnNewton = CE.Year(1653);
         var spanDutchPaintingGoldenAge = CE.Century(17);
         var periodVictorian = CE.Century(19);
+
+        var yearWithoutSummer = CE.Year(1816);
     }
 
     [Test]
@@ -26,12 +28,15 @@ public class Eras_Syntax
     public void MonthAndDays() {
         var at = Era.Common.At;
 
+        var born_LoisPasteur = at.December(27).Year(1822);
+
         var eruption_Vesuvium = at.October().Year(79);
 
         var fall_Constantinopole = at.May(29).Year(1453);
 
         var printGutenbergBible = at.February(23).Year(1455);
         var startMagellanVoyage = at.September(20).Year(1519);
+
 
         var born_Beavis = at.October(29).Year(1979);
 

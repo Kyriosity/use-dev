@@ -1,4 +1,5 @@
-﻿namespace ClayTests.Chrono.Events.TDD;
+﻿
+namespace ClayTests.Chrono.Haps.Demo;
 public class ShortScales
 {
     [Test]
@@ -11,7 +12,7 @@ public class ShortScales
         var zeroJulianDay = era.Year(5287);
         var beginHebrewCalendar = era.Year(6240); // 3751 BC
         var beginKaliYuga = era.Year(6899);
-        var beginMeghalayan = era.Year(7751); // last geo age
+        var beginMeghalayan = era.Year(7751); // last ice age
         var introJulianCalendar = era.Year(9956);
         var firstYearBC = era.Year(10_000); // Year zero at ISO 8601
         var beginCommonEra = era.Year(10_001); // 1 AD

@@ -26,8 +26,4 @@
     <Using Include="NUnit.Framework" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Chrono\Events\🎇Demo\" />
-  </ItemGroup>
-
 </Project>

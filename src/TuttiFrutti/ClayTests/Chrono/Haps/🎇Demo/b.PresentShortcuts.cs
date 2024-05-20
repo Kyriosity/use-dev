@@ -1,4 +1,4 @@
-﻿namespace ClayTests.Chrono.Events.TDD;
+﻿namespace ClayTests.Chrono.Haps.Demo;
 public class PresentShortcuts
 {
     [Test]
