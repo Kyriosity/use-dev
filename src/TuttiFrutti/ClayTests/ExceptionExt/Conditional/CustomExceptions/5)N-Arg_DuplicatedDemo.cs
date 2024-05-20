@@ -1,6 +1,6 @@
 ﻿using AbcExt.DataOps.Compare;
 
-namespace ClayTests.Errors.Conditional.CustomExceptions;
+namespace ClayTests.ExceptionExt.Conditional.CustomExceptions;
 public class NArg_DuplicatedDemo
 {
     [Test]

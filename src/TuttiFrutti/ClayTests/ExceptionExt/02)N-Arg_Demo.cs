@@ -1,4 +1,4 @@
-﻿namespace ClayTests.Errors;
+﻿namespace ClayTests.ExceptionExt;
 public class NArg_Demo
 {
     [Test]

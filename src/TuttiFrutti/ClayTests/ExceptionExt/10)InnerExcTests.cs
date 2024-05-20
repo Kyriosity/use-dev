@@ -1,4 +1,4 @@
-﻿namespace ClayTests.Errors;
+﻿namespace ClayTests.ExceptionExt;
 public class InnerExcTests
 {
     [Test]
