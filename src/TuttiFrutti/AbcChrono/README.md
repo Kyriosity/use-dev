@@ -1,4 +1,4 @@
-**#** Chronology - Timelines - Events
+# Chronology - Timelines - Events
 
 Time is the _driver_ for all and the "solvent" of everything. The former is for software and the latter for its hardware.
 
@@ -31,6 +31,8 @@ Software of the previous millennium gave literally bits for dates, thus nurturin
 + Glossary 
 + Casting
 + More chronologies
+
+### The crown - Integration with U-Val
 
 ## C# solution 
 

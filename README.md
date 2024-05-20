@@ -1,6 +1,6 @@
 + **CLAY**\
 |- Exceptions wrappers and extensions: [tests 🧪](src/TuttiFrutti/ClayTests/Errors)\
-|- [Dates/Chrono](src/TuttiFrutti/AbcChrono)  demos 🚧 tests 🧪 \
+|- 🗓️ [Chrono ABC](src/TuttiFrutti/AbcChrono) 📜 🎆 🧪 ⌨\
 |- Motley heap: [tests 🧪](src/TuttiFrutti/AbcStructTests/Heaps)\
 |- MODELS !\
 |- **WPF**\
