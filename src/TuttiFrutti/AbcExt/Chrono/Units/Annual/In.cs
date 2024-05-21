@@ -30,5 +30,5 @@ public enum In
 
     [Alias("Epoch")]
     Megaannum = 1_000_000,
-    Aeon = 1_000_000_000,
+    Billion = 1_000_000_000,
 }
