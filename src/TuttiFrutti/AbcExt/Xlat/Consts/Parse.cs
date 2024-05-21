@@ -14,6 +14,6 @@ public static class Parse
 
     public static bool Try<TFrom, TOut>(TFrom raw, [NotNullWhen(true)] out TOut? match)
         where TFrom : Enum where TOut : Enum
-        =>
-            Try<TOut>(raw.ToString(), out match);
+
+        => Try(raw.ToString(), out match);
 }
