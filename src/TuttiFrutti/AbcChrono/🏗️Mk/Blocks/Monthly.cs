@@ -1,8 +1,8 @@
-﻿namespace AbcChrono.Sol3.Mk.Blocks;
-class Monthly(IEvent model) : Basal(model), IMonths
+﻿
+namespace AbcChrono.Sol3.Mk.Blocks;
+class Monthly(IHap model) : Basal(model), IMonths
 {
-    protected IAnnual toYear(Month monthName, byte dayNr = 0) => new Annual(Model); // // ToProp: $" {monthName} {dayNr}");
-
+    protected IAnnual toYear(Month month, byte dayNr = 0) => new Annual(Model.Day(dayNr).Month(month));
     public IAnnual January(byte dayNr) => toYear(Month.January, dayNr); public IAnnual January() => toYear(Month.January);
     public IAnnual February(byte dayNr) => toYear(Month.February, dayNr); public IAnnual February() => toYear(Month.February);
     public IAnnual March(byte dayNr) => toYear(Month.March, dayNr); public IAnnual March() => toYear(Month.March);
@@ -18,10 +18,12 @@ class Monthly(IEvent model) : Basal(model), IMonths
 }
 
 
-class Monthly_wCa(IEvent model) : Monthly(model), IMonths_wCa
+class Monthly_wCa(IHap model) : Monthly(model), IMonths_wCa
 {
-    public IMonths circa(short delta = 1) {
-        // ToProp: Model = $" - ca+/-{delta} -";
+    public IMonths circa(short delta) {
+        Model.circa(delta);
         return this;
     }
+
+    public IMonths circa() => circa(1);
 }

@@ -1,5 +1,5 @@
 ﻿namespace AbcChrono.Sol3.Mk.Blocks;
-abstract class Basal(IEvent model)
+abstract class Basal(IHap model)
 {
-    protected IEvent Model { get; set; } = model;
+    protected IHap Model { get; set; } = model;
 }

@@ -1,58 +1,37 @@
 ﻿namespace AbcChrono.Sol3.Mk.Blocks;
-abstract class YearsX1(IEvent model) : Basal(model), IAnnual
+abstract class YearsX1(IHap model) : Basal(model), IAnnual
 {
-    public IEvent Year(ulong val) {
-        // ToProp:  = $" > Year {val}";
-        return Model;
-    }
+    public IHap Year(ulong val) => Model.Set(val, In.Year);
 }
 
-abstract class YearsX100(IEvent model) : YearsX1(model), IYearX100
+abstract class YearsX100(IHap model) : YearsX1(model), IYearX100
 {
-    public IEvent Century(ushort val) {
-        // ToProp: Model = $"Century {val}";
-        return Model;
-    }
+    public IHap Century(ushort val) => Model.Set(val, In.Century);
 }
 
-abstract class YearsX1_000(IEvent model) : YearsX100(model), IYearX1_000
+abstract class YearsX1_000(IHap model) : YearsX100(model), IYearX1_000
 {
-    public IEvent Millennium(uint val) {
-        // ToProp: Model = $"Millenium {val}";
-        return Model;
-    }
+    public IHap Millennium(uint val) => Model.Set(val, In.Millennium);
 }
 
-abstract class YearsX10_000(IEvent model) : YearsX1_000(model), IYearX10_000
+abstract class YearsX10_000(IHap model) : YearsX1_000(model), IYearX10_000
 {
-    public IEvent Decamillenniuum(ushort val) {
-        // ToProp: Model = $"Decem-Millenium {val}";
-        return Model;
-    }
+    public IHap Decamillenniuum(ushort val) => Model.Set(val, In.Decamillennium);
 }
 
-abstract class YearsX100_000(IEvent model) : YearsX10_000(model), IYearX100_000
+abstract class YearsX100_000(IHap model) : YearsX10_000(model), IYearX100_000
 {
-    public IEvent Centamillenniuum(ushort val) {
-        // ToProp: Model = $"Millenium {val}";
-        return Model;
-    }
+    public IHap Centamillenniuum(ushort val) => Model.Set(val, In.Centamillennial);
 }
 
-abstract class YearsX1_000_000(IEvent model) : YearsX100_000(model), IYearX1_000_000
+abstract class YearsX1_000_000(IHap model) : YearsX100_000(model), IYearX1_000_000
 {
-    public IEvent Megaannum(ushort val) {
-        // ToProp: Model = $"Megaannum {val}";
-        return Model;
-    }
+    public IHap Megaannum(ushort val) => Model.Set(val, In.Megaannum);
 }
 
-abstract class YearsX1_000_000_000(IEvent model) : YearsX1_000_000(model), IYearX1_000_000_000
+abstract class YearsX1_000_000_000(IHap model) : YearsX1_000_000(model), IYearX1_000_000_000
 {
-    public IEvent Billion(uint val) {
-        // ToProp: Model = $"Billion {val}";
-        return Model;
-    }
+    public IHap Billion(uint val) => Model.Set(val, In.Billion);
 }
 
 
