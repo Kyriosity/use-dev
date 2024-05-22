@@ -2,7 +2,8 @@
 
 namespace AbcExt.Errors.Argument;
 
-public abstract class Shortcut<TExc>(string message) : ArgumentException(message)
+public abstract class Shortcut<TExc>(string message)
+    : ArgumentException(message)
     where TExc : ArgumentException
 {
     public static dynamic Throw(string message) => throw Builder.Make<TExc>(message);

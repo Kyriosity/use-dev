@@ -1,4 +1,5 @@
-﻿using AbcExt.Errors.Data;
+﻿using AbcExt.Errors.Argument;
+using AbcExt.Errors.Data;
 using System.ComponentModel;
 
 namespace AbcExt.Errors.Utils;
@@ -17,6 +18,6 @@ internal static class Builder
 
     private static readonly Type[] AmbiguousSignatureTypes =
         [typeof(ArgumentException), typeof(ArgumentNullException), typeof(InvalidEnumArgumentException),
-        typeof(EntityNotFound), typeof(UniqueConstraint), typeof(DuplicatedArgument)];
+        typeof(EntityNotFound), typeof(UniqueConstraint), typeof(DuplicatedArgument), typeof(NotSet)];
 }
 
