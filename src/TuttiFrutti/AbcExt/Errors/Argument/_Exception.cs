@@ -9,5 +9,5 @@ public abstract class Exception<TExc>(string message)
     public static dynamic Throw(string message) => throw Builder.Make<TExc>(message);
 
     public static dynamic Throw<T>(T subject, [ArgExpr(nameof(subject))] string argCall = "[<*unknown*>]")
-        => Throw($"*{argCall}*={subject}");
+        => Throw($"*{argCall}*={(subject is null ? "<null>" : subject)}");
 }
