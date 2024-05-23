@@ -1,4 +1,4 @@
-﻿namespace AbcExt.Errors.Shortcuts;
+﻿namespace AbcExt.Errors.Basal;
 public abstract class MultiparameterConditional<TExc>(string? message = "", Exception? inner = null)
     : Multiparameter<TExc>(message, inner) where TExc : Exception
 {

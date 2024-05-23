@@ -2,7 +2,7 @@
 
 namespace AbcExt.Errors.Argument;
 
-public abstract class Shortcut<TExc>(string message)
+public abstract class Exception<TExc>(string message)
     : ArgumentException(message)
     where TExc : ArgumentException
 {

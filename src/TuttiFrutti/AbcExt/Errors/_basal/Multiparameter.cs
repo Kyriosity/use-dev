@@ -1,8 +1,8 @@
 ﻿using AbcExt.Stubs.Args;
 
-namespace AbcExt.Errors.Shortcuts;
+namespace AbcExt.Errors.Basal;
 public abstract class Multiparameter<TExc>(string? message = "", Exception? inner = null)
-    : Regular<TExc>(message, inner) where TExc : Exception
+    : AbcException<TExc>(message, inner) where TExc : Exception
 {
     public static dynamic Throw(string? message,
         object? arg1, object? arg2, object? arg3 = null, object? arg4 = null, object? arg5 = null, object? arg6 = null,

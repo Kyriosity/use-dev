@@ -3,7 +3,7 @@ using AbcExt.Errors.Utils;
 using AbcExt.Stubs.Args;
 
 namespace AbcExt.Errors.Argument;
-public class DuplicatedArgument(string message) : Shortcut<DuplicatedArgument>(message)
+public class DuplicatedArgument(string message) : Exception<DuplicatedArgument>(message)
 {
     public static bool ThrowIfAny<T>(T arg1, T arg2, T arg3 = default, T arg4 = default, T arg5 = default,
             T arg6 = default, T arg7 = default, T arg8 = default, T arg9 = default, T arg10 = default, T arg11 = default,

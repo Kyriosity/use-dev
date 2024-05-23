@@ -1,6 +1,6 @@
 ﻿namespace AbcExt.Errors.Sys;
 
-public class NotSupported : Shortcuts.Regular<NotSupportedException>
+public class NotSupported : AbcException<NotSupportedException>
 {
     private NotSupported() { /* to prevent direct instantiation */ }
 }

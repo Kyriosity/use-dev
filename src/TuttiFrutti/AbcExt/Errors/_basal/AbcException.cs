@@ -1,6 +1,6 @@
 ﻿using AbcExt.Errors.Utils;
-namespace AbcExt.Errors.Shortcuts;
-public abstract class Regular<TExc>(string? message = "", Exception? inner = null)
+namespace AbcExt.Errors.Basal;
+public abstract class AbcException<TExc>(string? message = "", Exception? inner = null)
     : Exception(message, inner)
     where TExc : Exception
 {
@@ -16,5 +16,5 @@ public abstract class Regular<TExc>(string? message = "", Exception? inner = nul
     public static TExc New<T>(T subject, Exception? inner = null, [ArgExpr(nameof(subject))] string argCall = argEx)
         => New($"*{argCall}*={subject}", inner);
 
-    private const string argEx = "[<*unknown*>]";
+    protected const string argEx = "[<*unknown*>]";
 }

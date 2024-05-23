@@ -1,5 +1,4 @@
-﻿using AbcExt.Errors.Shortcuts;
-using AbcExt.Stubs.Args;
+﻿using AbcExt.Stubs.Args;
 
 namespace AbcExt.Errors.Sys;
 public class Argument : MultiparameterConditional<ArgumentException>
