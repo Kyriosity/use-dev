@@ -5,5 +5,6 @@ class Hap : Universal, IHap
     public Month MonthName { get; set; } = Month.Undefined;
 
     public uint Delta { get; set; } = 0;
-    public long UnixYear { get; set; }
+    public long UnixYear => _unixYear ?? NotSet.Throw(UnixYear);
+    internal long? _unixYear;
 }
