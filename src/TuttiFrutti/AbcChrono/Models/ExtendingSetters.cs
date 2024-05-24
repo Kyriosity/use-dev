@@ -1,9 +1,8 @@
-﻿using AbcExt.Errors.Sys;
-
-namespace AbcChrono.Models;
+﻿namespace AbcChrono.Models;
 static class ExtendingSetters
 {
     public static IHap Day(this IHap hap, byte val) {
+        var ccc = new object();
         hap.DayNr = val;
         return hap;
     }
@@ -20,7 +19,7 @@ static class ExtendingSetters
 
     public static IHap Set<N>(this IHap hap, N val, In unit) where N : INumber<N> {
         hap.Unit = unit;
-        hap.UnixYear = NotImplemented.Throw("in next commit: CONVERT TO UNIX DATE");
+        //hap.AbsYear = Abs.From(hap.Epoch, val, unit);
         return hap;
     }
 

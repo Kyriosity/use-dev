@@ -1,5 +1,5 @@
 ﻿namespace AbcChrono.Mk.Providers;
-class Aeon(Scale scale) : Full(scale), IAeon_wAgo
+class Aeon(At scale) : Full(scale), IAeon_wAgo
 {
     public new IAeon Ago => (IAeon)base.Ago;
 

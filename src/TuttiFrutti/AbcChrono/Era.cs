@@ -4,9 +4,9 @@ namespace AbcChrono;
 public class Era
 {
     public static IModern Common =>
-        new YearCentiEra(Scale.CommonEra);
+        new YearCentiEra(At.CommonEra);
     public static ILong BeforeCommon =>
-        new YearCentiMilleEra(Scale.BeforeCommonEra);
+        new YearCentiMilleEra(At.BeforeCommonEra);
     public static IEpochRuler Holocene =>
-        new ShortEra(Scale.HoloceneEra);
+        new ShortEra(At.HoloceneEra);
 }

@@ -3,7 +3,7 @@
 namespace AbcExt.Chrono.Units.Annual;
 
 [Metadata.Ratio.Factored]
-public enum In
+public enum In : uint
 {
     Undefined = 0,
 

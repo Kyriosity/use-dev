@@ -3,7 +3,7 @@ using AbcChrono.Sol3.Mk.Blocks;
 
 namespace AbcChrono.Mk.Providers;
 
-class Full(Scale scale) : YearsX1_000_000_000(new Hap { Epoch = scale }),
+class Full(At scale) : YearsX1_000_000_000(new Hap { Epoch = scale }),
     IApproximate<YearsX1_000_000_000, ushort>,
     IDated, IPresentShortcuts
 {
