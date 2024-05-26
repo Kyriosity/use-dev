@@ -1,7 +1,7 @@
 ﻿namespace AbcChrono.Models;
 class Universal : IBasal
 {
-    public required At Epoch { get; init; }
+    public required On Epoch { get; init; }
 
     public bool IsCounterClock { get; set; } = false;
     public In Unit { get; set; }

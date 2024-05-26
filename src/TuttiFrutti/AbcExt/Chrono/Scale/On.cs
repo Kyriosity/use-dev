@@ -1,5 +1,5 @@
 ﻿namespace AbcExt.Chrono.Scale;
-public enum At
+public enum On
 {
     Undefined = 0,
 
