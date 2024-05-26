@@ -1,7 +1,16 @@
 ﻿namespace AbcChrono.Sol3.Mk.Blocks;
 abstract class YearsX1(IHap model) : Basal(model), IAnnual
 {
-    public IHap Year(ulong val) => Model.Set(val, In.Year);
+    public IHap Year(ulong val) {
+        if (Month.February == Model.MonthName && Model.DayNr is not null
+            && On.CommonEra == Model.Epoch && val % 4 is 0) // INFO: this is a simplified proc of leap year w/ partial coverage
+            ArgumentOutOfRangeException.ThrowIfGreaterThan((int)Model.DayNr, 28, $"leap year {val}");
+
+        if (Model.Epoch is On.CommonEra or On.BeforeCommonEra)
+            ArgumentOutOfRangeException.ThrowIfZero(val, $"Invalid zero year for {Model.Epoch}");
+
+        return Model.Set(val, In.Year);
+    }
 }
 
 abstract class YearsX100(IHap model) : YearsX1(model), IYearX100
