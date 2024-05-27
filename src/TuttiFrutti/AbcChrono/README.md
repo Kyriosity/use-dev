@@ -37,7 +37,7 @@ Software of the previous millennium gave bits for dates (and bits means literall
 
 ## C# solution 
 
-Disclaimer! Version&nbsp;**1** this is a functional sketch. A foundation to try and release all-around solution. 
+Disclaimer! Version&nbsp;**1** This is a functional, test-covered implementation but sketched as a foundation for the next solutions. 
 
 ### Remarks 
 
@@ -46,7 +46,7 @@ Disclaimer! Version&nbsp;**1** this is a functional sketch. A foundation to try 
 
 One-page (single-class) wizard.
 
-Wizard VM over model with masking.
+Wizard VM over the model with masking.
 
 ### Implementation blog
 
@@ -56,9 +56,4 @@ basic simplified logic and syntax over it. TDD tests to prove and demo.
 
 #### Shortcuts for eras with masks
 
-interfaces to mask methods
 
-3) Parametrize with INumber 
-4) Timeline Model
-5) Guards
-6) 
