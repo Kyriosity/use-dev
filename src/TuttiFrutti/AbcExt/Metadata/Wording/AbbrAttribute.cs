@@ -1,6 +1,4 @@
-﻿using AbcExt.Errors.Sys;
-
-namespace AbcExt.Metadata.Wording;
+﻿namespace AbcExt.Metadata.Wording;
 
 [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
 public class AbbrAttribute : UniqueNamesAttribute
