@@ -1,13 +1,13 @@
 ﻿using AbcChrono.Sol3.Era;
 
 namespace AbcChrono.Mk.Providers;
-class YearCentiEra(At scale) : Full(scale), IModern
+class YearCentiEra(On scale) : Full(scale), IModern
 {
     new public IYearCenti_wShortcuts circa() => (IYearCenti_wShortcuts)base.circa();
     new public IYearCenti_wShortcuts circa(ushort delta = 1) => (IYearCenti_wShortcuts)base.circa(delta);
 }
 
-class YearCentiMilleEra(At scale) : Full(scale), ILong
+class YearCentiMilleEra(On scale) : Full(scale), ILong
 {
     new public IYearCentiMille circa() => (IYearCentiMille)base.circa();
     new public IYearCentiMille circa(ushort delta = 1) => (IYearCentiMille)base.circa(delta);

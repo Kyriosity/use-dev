@@ -1,6 +1,6 @@
 ﻿namespace AbcChrono.Mk.Providers;
 
-class GeoAges(At scale) : Full(scale), IGeoAges_wAgo
+class GeoAges(On scale) : Full(scale), IGeoAges_wAgo
 {
     public new IGeoAges Ago => (IGeoAges)base.Ago;
 
