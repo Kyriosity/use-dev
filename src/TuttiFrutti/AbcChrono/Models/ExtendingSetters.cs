@@ -1,4 +1,6 @@
-﻿namespace AbcChrono.Models;
+﻿using AbcExt.Chrono.Convert;
+
+namespace AbcChrono.Models;
 static class ExtendingSetters
 {
     public static IHap Day(this IHap hap, byte val) {
@@ -19,12 +21,12 @@ static class ExtendingSetters
 
     public static IHap Set<N>(this IHap hap, N val, In unit) where N : INumber<N> {
         hap.Unit = unit;
-        //hap.AbsYear = Abs.From(hap.Epoch, val, unit);
+        hap.AbsYear = To.Abs.From(hap.Epoch, val, unit);
         return hap;
     }
 
     public static IHap circa<N>(this IHap hap, N delta) where N : INumber<N> {
-        hap.Delta = uint.CreateChecked(delta);
+        hap.Delta = ushort.CreateChecked(delta);
         return hap;
     }
 

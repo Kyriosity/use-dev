@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AbcModels\AbcModels.csproj" />
     <ProjectReference Include="..\AbcStruct\AbcStruct.csproj" />
   </ItemGroup>
 
