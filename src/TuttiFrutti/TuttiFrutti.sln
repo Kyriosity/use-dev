@@ -101,7 +101,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuncStore.Conversion", "Fun
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "⌨️Clay", "⌨️Clay", "{4BE97A0C-F948-49F0-A073-C59CFB559CA6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!🛒Models", "!🛒Models", "{C65E79C3-E196-4D33-A924-EF08074439DF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!🌵Models", "!🌵Models", "{C65E79C3-E196-4D33-A924-EF08074439DF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Funcware", "Funcware\Funcware.csproj", "{C459B080-D80D-4F13-853C-1711DA872D01}"
 EndProject
