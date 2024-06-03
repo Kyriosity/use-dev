@@ -2,6 +2,12 @@
 public class InvalidSyntax
 {
     [Test]
+    public void ShortcutsOnContext() {
+        var canCompile = Era.Common.At.April().ThisYear();
+        //var noneCompile = Era.BeforeCommon.At.April().ThisYear();
+    }
+
+    [Test]
     public void Calls() {
         /// next statements must NOT compile
         /* Era.Common.Millennium(1);
