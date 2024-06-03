@@ -1,8 +1,8 @@
 + **CLAY**\
-|- Exceptions wrappers and extensions: [tests 🧪](src/TuttiFrutti/ClayTests/Errors)\
+|- Exceptions wrappers: [tests 🧪](src/TuttiFrutti/ClayTests/Errors)\
 |- 🗓️ [Chrono ABC](src/TuttiFrutti/AbcChrono) 📜 🎆 🧪 ⌨\
+|= 🌵 [Models](src/TuttiFrutti/AbcModels)\
 |- Motley heap: [tests 🧪](src/TuttiFrutti/AbcStructTests/Heaps)\
-|- MODELS !\
 |- **WPF**\
 |-- 📃[Bool-Vis. converter](README+/snippets/wpf/bool2viz_improved.md)
 
