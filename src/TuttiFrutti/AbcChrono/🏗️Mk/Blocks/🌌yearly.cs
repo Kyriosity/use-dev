@@ -1,5 +1,5 @@
 ﻿namespace AbcChrono.Sol3.Mk.Blocks;
-abstract class YearsX1(IHap model) : Basal(model), IAnnual
+abstract class YearsX1(IHap model) : Basal(model), IYearX1
 {
     public IHap Year(ulong val) {
         if (Month.February == Model.MonthName && Model.DayNr is not null

@@ -1,2 +1,2 @@
 ﻿namespace AbcChrono.Sol3.Era;
-public interface IEpochRuler : IAnnual, IApproximate<IAnnual, byte>;
+public interface IEpochRuler : IYearX1, IApproximate<IYearX1, byte>;

@@ -4,4 +4,5 @@ public interface ILong<Anni> :
     IYearCentiMille,
     IApproximate<IYearCentiMille, ushort>,
     IDated<Anni>
+
     where Anni : IAnnual;

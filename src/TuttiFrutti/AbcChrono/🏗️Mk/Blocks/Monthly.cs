@@ -16,9 +16,9 @@ class Monthly<Anni>(IHap model) : Basal(model), IMonths<Anni>
     public Anni November(byte dayNr) => (Anni)toYear(Month.November, dayNr); public Anni November() => (Anni)toYear(Month.November);
     public Anni December(byte dayNr) => (Anni)toYear(Month.December, dayNr); public Anni December() => (Anni)toYear(Month.December);
 
-    protected IAnnualCurrent toYear(Month month) => new Annual(Model.Month(month));
+    protected IYearX1WithCurrent toYear(Month month) => new Annual(Model.Month(month));
 
-    protected IAnnualCurrent toYear(Month month, byte dayNr) {
+    protected IYearX1WithCurrent toYear(Month month, byte dayNr) {
         ArgumentOutOfRangeException.ThrowIfZero(dayNr);
         var maxDaysInMonth = month == Month.February ? 29 :
            month is Month.April or Month.June or Month.September or Month.November ? 30 : 31;

@@ -1,9 +1,9 @@
 ﻿using AbcChrono.Sol3.Era;
 
 namespace AbcChrono.Mk.Providers;
-class ShortEra(On scale) : Full<IAnnual>(scale), IEpochRuler
+class ShortEra(On scale) : Full<IYearX1>(scale), IEpochRuler
 {
-    public IAnnual circa() => base.circa();
-    public IAnnual circa(byte delta) => base.circa(delta);
+    public IYearX1 circa() => base.circa();
+    public IYearX1 circa(byte delta) => base.circa(delta);
 
 }

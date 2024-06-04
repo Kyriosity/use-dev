@@ -1,6 +1,6 @@
 ﻿namespace AbcChrono.Mk.Providers;
 
-class GeoAges(On scale) : Full<IAnnual>(scale), IGeoAges_wAgo // ToDo: other ANNUAL VAR (AS Empty!!)
+class GeoAges(On scale) : Full<IAnnual>(scale), IGeoAges_wAgo
 {
     public new IGeoAges Ago => (IGeoAges)base.Ago;
 

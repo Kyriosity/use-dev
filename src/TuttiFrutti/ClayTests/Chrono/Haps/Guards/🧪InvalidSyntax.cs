@@ -4,7 +4,8 @@ public class InvalidSyntax
     [Test]
     public void ShortcutsOnContext() {
         var canCompile = Era.Common.At.April().ThisYear();
-        //var noneCompile = Era.BeforeCommon.At.April().ThisYear();
+        //var noneCompileThis = Era.BeforeCommon.At.April().ThisYear();
+        // var noneCompileAt = Era.Holocene.At.April().ThisYear();
     }
 
     [Test]

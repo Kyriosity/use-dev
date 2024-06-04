@@ -3,10 +3,10 @@
 namespace AbcChrono;
 public class Era
 {
-    public static IModern<IAnnualCurrent> Common =>
-        new YearCentiEra<IAnnualCurrent>(On.CommonEra);
-    public static ILong<IAnnual> BeforeCommon =>
-        new YearCentiMilleEra<IAnnual>(On.BeforeCommonEra);
+    public static IModern<IYearX1WithCurrent> Common =>
+        new YearCentiEra<IYearX1WithCurrent>(On.CommonEra);
+    public static ILong<IYearX1> BeforeCommon =>
+        new YearCentiMilleEra<IYearX1>(On.BeforeCommonEra);
     public static IEpochRuler Holocene =>
         new ShortEra(On.HoloceneEra);
 }

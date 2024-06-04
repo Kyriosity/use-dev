@@ -1,5 +1,5 @@
 ﻿namespace AbcChrono.Mk.Providers;
-class HumanHistory(On scale) : Full<IAnnual>(scale), IHumanEra_wAgo
+class HumanHistory(On scale) : Full<IYearX1>(scale), IHumanEra_wAgo
 {
     public new IHumanEra Ago => (IHumanEra)base.Ago;
 
