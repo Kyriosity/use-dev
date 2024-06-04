@@ -1,5 +1,5 @@
 ﻿namespace Funcware.Numeric.SameType.InUnit.Custom;
-public abstract class FuncStore<U> : IWire<U> where U : Enum // ToDo: ABSTRACT ?
+public abstract class FuncStore<U> : IWire<U> where U : Enum
 {
     public Func<N, N>? For<N>(U from, U to) where N : System.Numerics.INumber<N> {
         if (from.Equals(to))
