@@ -5,6 +5,7 @@ global using AbcChrono.Sol3.Calendar;
 global using AbcChrono.Sol3.Scale;
 global using AbcChrono.Sol3.Yearly;
 global using AbcExt.Chrono;
+global using AbcExt.Chrono.Convert;
 global using AbcExt.Chrono.Scale;
 global using AbcExt.Chrono.Units.Annual;
 global using AbcExt.Errors.Data;

@@ -1,17 +1,17 @@
 ﻿namespace AbcChrono.Sol3.Calendar;
-public interface IMonths
+public interface IMonths<out Res> where Res : IAnnual
 {
-    public IAnnual January(byte dayNr); public IAnnual January();
-    public IAnnual February(byte dayNr); public IAnnual February();
-    public IAnnual March(byte dayNr); public IAnnual March();
-    public IAnnual April(byte dayNr); public IAnnual April();
-    public IAnnual May(byte dayNr); public IAnnual May();
-    public IAnnual June(byte dayNr); public IAnnual June();
-    public IAnnual July(byte dayNr); public IAnnual July();
-    public IAnnual August(byte dayNr); public IAnnual August();
-    public IAnnual September(byte dayNr); public IAnnual September();
-    public IAnnual October(byte dayNr); public IAnnual October();
-    public IAnnual November(byte dayNr); public IAnnual November();
-    public IAnnual December(byte dayNr); public IAnnual December();
+    public Res January(byte dayNr); public Res January();
+    public Res February(byte dayNr); public Res February();
+    public Res March(byte dayNr); public Res March();
+    public Res April(byte dayNr); public Res April();
+    public Res May(byte dayNr); public Res May();
+    public Res June(byte dayNr); public Res June();
+    public Res July(byte dayNr); public Res July();
+    public Res August(byte dayNr); public Res August();
+    public Res September(byte dayNr); public Res September();
+    public Res October(byte dayNr); public Res October();
+    public Res November(byte dayNr); public Res November();
+    public Res December(byte dayNr); public Res December();
 
 }

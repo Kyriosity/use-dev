@@ -1,5 +1,5 @@
 ﻿namespace AbcChrono.Mk.Providers;
-class Aeon(On scale) : Full(scale), IAeon_wAgo
+class Aeon(On scale) : Full<IAnnual>(scale), IAeon_wAgo // ToDo: OTHER ANNUAL SETTINGS
 {
     public new IAeon Ago => (IAeon)base.Ago;
 

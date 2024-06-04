@@ -1,4 +1,6 @@
 ﻿namespace AbcChrono.Sol3.Yearly;
+
+public interface IEMPTY; // ToDo: apply !
 public interface IAnnual { IHap Year(ulong val); }
 
 public interface IYearX100 { IHap Century(ushort val); }

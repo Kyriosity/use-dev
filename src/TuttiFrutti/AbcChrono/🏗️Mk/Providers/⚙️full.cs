@@ -3,9 +3,11 @@ using AbcChrono.Sol3.Mk.Blocks;
 
 namespace AbcChrono.Mk.Providers;
 
-class Full(On scale) : YearsX1_000_000_000(new Hap { Epoch = scale }),
+class Full<Anni>(On scale) : YearsX1_000_000_000(new Hap { Epoch = scale }),
     IApproximate<YearsX1_000_000_000, ushort>,
-    IDated, IPresentShortcuts
+    IDated<Anni>, IPresentShortcuts
+
+    where Anni : IAnnual
 {
     public YearsX1_000_000_000 circa() => circa(1);
 
@@ -14,14 +16,14 @@ class Full(On scale) : YearsX1_000_000_000(new Hap { Epoch = scale }),
         return this;
     }
 
-    public Full Ago {
+    public Full<Anni> Ago {
         get {
             Model.Ago();
             return this;
         }
     }
 
-    public IMonths_wCa At => new Monthly_wCa(Model);
+    public IMonths_wCa<Anni> At => new Monthly_wCa<Anni>(Model);
 
     public ICalendarProps_wShift Prev => new CalendarProps(Model, -1);
 

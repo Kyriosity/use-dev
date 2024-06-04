@@ -1,24 +1,24 @@
 ﻿
 namespace AbcChrono.Sol3.Mk.Blocks;
-class Monthly(IHap model) : Basal(model), IMonths
+class Monthly<Anni>(IHap model) : Basal(model), IMonths<Anni>
+    where Anni : IAnnual
 {
-    public IAnnual January(byte dayNr) => toYear(Month.January, dayNr); public IAnnual January() => toYear(Month.January);
-    public IAnnual February(byte dayNr) => toYear(Month.February, dayNr); public IAnnual February() => toYear(Month.February);
-    public IAnnual March(byte dayNr) => toYear(Month.March, dayNr); public IAnnual March() => toYear(Month.March);
-    public IAnnual April(byte dayNr) => toYear(Month.April, dayNr); public IAnnual April() => toYear(Month.April);
-    public IAnnual May(byte dayNr) => toYear(Month.May, dayNr); public IAnnual May() => toYear(Month.May);
-    public IAnnual June(byte dayNr) => toYear(Month.June, dayNr); public IAnnual June() => toYear(Month.June);
-    public IAnnual July(byte dayNr) => toYear(Month.July, dayNr); public IAnnual July() => toYear(Month.July);
-    public IAnnual August(byte dayNr) => toYear(Month.August, dayNr); public IAnnual August() => toYear(Month.August);
-    public IAnnual September(byte dayNr) => toYear(Month.September, dayNr); public IAnnual September() => toYear(Month.September);
-    public IAnnual October(byte dayNr) => toYear(Month.October, dayNr); public IAnnual October() => toYear(Month.October);
-    public IAnnual November(byte dayNr) => toYear(Month.November, dayNr); public IAnnual November() => toYear(Month.November);
-    public IAnnual December(byte dayNr) => toYear(Month.December, dayNr); public IAnnual December() => toYear(Month.December);
+    public Anni January(byte dayNr) => (Anni)toYear(Month.January, dayNr); public Anni January() => (Anni)toYear(Month.January);
+    public Anni February(byte dayNr) => (Anni)toYear(Month.February, dayNr); public Anni February() => (Anni)toYear(Month.February);
+    public Anni March(byte dayNr) => (Anni)toYear(Month.March, dayNr); public Anni March() => (Anni)toYear(Month.March);
+    public Anni April(byte dayNr) => (Anni)toYear(Month.April, dayNr); public Anni April() => (Anni)toYear(Month.April);
+    public Anni May(byte dayNr) => (Anni)toYear(Month.May, dayNr); public Anni May() => (Anni)toYear(Month.May);
+    public Anni June(byte dayNr) => (Anni)toYear(Month.June, dayNr); public Anni June() => (Anni)toYear(Month.June);
+    public Anni July(byte dayNr) => (Anni)toYear(Month.July, dayNr); public Anni July() => (Anni)toYear(Month.July);
+    public Anni August(byte dayNr) => (Anni)toYear(Month.August, dayNr); public Anni August() => (Anni)toYear(Month.August);
+    public Anni September(byte dayNr) => (Anni)toYear(Month.September, dayNr); public Anni September() => (Anni)toYear(Month.September);
+    public Anni October(byte dayNr) => (Anni)toYear(Month.October, dayNr); public Anni October() => (Anni)toYear(Month.October);
+    public Anni November(byte dayNr) => (Anni)toYear(Month.November, dayNr); public Anni November() => (Anni)toYear(Month.November);
+    public Anni December(byte dayNr) => (Anni)toYear(Month.December, dayNr); public Anni December() => (Anni)toYear(Month.December);
 
+    protected IAnnualCurrent toYear(Month month) => new Annual(Model.Month(month));
 
-    protected IAnnual toYear(Month month) => new Annual(Model.Month(month));
-
-    protected IAnnual toYear(Month month, byte dayNr) {
+    protected IAnnualCurrent toYear(Month month, byte dayNr) {
         ArgumentOutOfRangeException.ThrowIfZero(dayNr);
         var maxDaysInMonth = month == Month.February ? 29 :
            month is Month.April or Month.June or Month.September or Month.November ? 30 : 31;
@@ -29,12 +29,13 @@ class Monthly(IHap model) : Basal(model), IMonths
 }
 
 
-class Monthly_wCa(IHap model) : Monthly(model), IMonths_wCa
+class Monthly_wCa<Anni>(IHap model) : Monthly<Anni>(model), IMonths_wCa<Anni>
+    where Anni : IAnnual
 {
-    public IMonths circa(short delta) {
+    public IMonths<Anni> circa(short delta) {
         Model.circa(delta);
         return this;
     }
 
-    public IMonths circa() => circa(1);
+    public IMonths<Anni> circa() => circa(1);
 }

@@ -1,6 +1,4 @@
-﻿using AbcExt.Chrono.Convert;
-
-namespace AbcChrono.Models;
+﻿namespace AbcChrono.Models;
 static class ExtendingSetters
 {
     public static IHap Day(this IHap hap, byte val) {

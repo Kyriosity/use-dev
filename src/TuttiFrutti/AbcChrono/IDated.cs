@@ -1,5 +1,6 @@
 ﻿namespace AbcChrono;
-public interface IDated
+public interface IDated<Anni>
+    where Anni : IAnnual
 {
-    IMonths_wCa At { get; }
+    IMonths_wCa<Anni> At { get; } // ToDiff:
 }

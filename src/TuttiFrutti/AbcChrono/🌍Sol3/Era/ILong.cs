@@ -1,6 +1,7 @@
 ﻿namespace AbcChrono.Sol3.Era;
 
-public interface ILong
-    : IYearCentiMille,
+public interface ILong<Anni> :
+    IYearCentiMille,
     IApproximate<IYearCentiMille, ushort>,
-    IDated;
+    IDated<Anni>
+    where Anni : IAnnual;
