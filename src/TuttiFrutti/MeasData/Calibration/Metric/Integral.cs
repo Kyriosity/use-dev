@@ -1,4 +1,5 @@
-﻿using MeasData.Calibration.Setup;
+﻿using AbcExt.Errors.Sys;
+using MeasData.Calibration.Setup;
 
 namespace MeasData.Calibration.Metric;
 
@@ -100,5 +101,7 @@ public class MathIntegral : Synonyms
         ((double)12.000, kilo, "=", (double)12_000_000_000_000.000, nano),
     ];
 
-    // ToDo: EXTREMES !
+    Rec Extremes = [
+        NotImplemented.ToDo("ultimate values"),
+    ];
 }

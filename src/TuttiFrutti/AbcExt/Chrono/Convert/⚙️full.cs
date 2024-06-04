@@ -12,8 +12,9 @@ class Full<NRes> : IYears<NRes> where NRes : INumber<NRes>
     private readonly On _target;
 
     public NRes From<N>(On source, N val, In unit)
-        // ToDo: AGO HOW ?
         where N : INumber<N> {
+
+        NotImplemented.ToDo("Ago support");
 
         if (On.Undefined == source)
             Argument.Throw(source);

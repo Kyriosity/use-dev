@@ -14,4 +14,4 @@ public interface ISelectable : ISelect
     new int Index { get; set; }
 }
 
-//ToDo: SELECTED -> FOLDER.Single/ Multiple - files
+// ToDo: SELECTED -> FOLDER.Single/ Multiple - files

@@ -6,7 +6,7 @@ public interface IMultifacet<T> { }
 public interface IMultifacet<T, U> : IMultifacet<T>
 {
     T this[U unit] { get; }
-    T Opornyi { get; } // ToDo: DELETE
+    T Core { get; } // = NotImplemented.ToDo("Delete");
 }
 
 public interface IOpenMultifacet<T, U> : IMultifacet<T, U>
