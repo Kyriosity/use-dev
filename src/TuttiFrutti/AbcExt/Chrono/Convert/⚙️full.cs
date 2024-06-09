@@ -24,6 +24,6 @@ class Full<NRes> : IYears<NRes> where NRes : INumber<NRes>
         if (source == Target)
             return sourceYear; // REVERSE !
 
-        return NotImplemented.Throw("not supported");
+        return NotImplemented.ToDo(NRes.One, "not supported");
     }
 }
