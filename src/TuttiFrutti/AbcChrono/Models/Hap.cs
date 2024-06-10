@@ -9,4 +9,3 @@ class Hap : Universal, IHap
     public ulong AbsYear { get => _absYear ?? NotSet.Throw(); set => _absYear = value; }
     private ulong? _absYear;
 }
-

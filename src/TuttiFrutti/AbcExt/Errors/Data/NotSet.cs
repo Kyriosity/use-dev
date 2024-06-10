@@ -1,4 +1,4 @@
 ﻿namespace AbcExt.Errors.Data;
 
-public class NotSet(string message) // Info: to ensure "dynamic" `required`
+public class NotSet(string message)
     : Exception<NotSet>(message);

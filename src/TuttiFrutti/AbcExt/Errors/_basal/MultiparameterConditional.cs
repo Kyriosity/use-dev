@@ -1,6 +1,6 @@
 ﻿namespace AbcExt.Errors.Basal;
-public abstract class MultiparameterConditional<TExc>(string? message = "", Exception? inner = null)
-    : Multiparameter<TExc>(message, inner) where TExc : Exception
+public abstract class MultiparameterConditional<Exc>(string? message = "", Exception? inner = null)
+    : Multiparameter<Exc>(message, inner) where Exc : Exception
 {
     protected static bool OnCondition<T>(Predicate<T> predicate, Func<int, int, bool> countTrigger,
         (T val, string tag)[] args, string predicateInfo = "") {

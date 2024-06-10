@@ -1,7 +1,7 @@
 ﻿using System.Data.SqlTypes;
 
 namespace AbcExt.Errors.Sys;
-public class NotImplemented : AbcException<NotImplementedException>
+public class NotImplemented : Basal.Exception<NotImplementedException>
 {
     private NotImplemented() { /* to prevent direct instantiation */ }
 

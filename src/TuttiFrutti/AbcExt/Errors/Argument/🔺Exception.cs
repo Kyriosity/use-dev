@@ -2,11 +2,11 @@
 
 namespace AbcExt.Errors.Argument;
 
-public abstract class Exception<TExc>(string message)
+public abstract class Exception<Exc>(string message)
     : ArgumentException(message)
-    where TExc : ArgumentException
+    where Exc : ArgumentException
 {
-    public static dynamic Throw(string message) => throw Builder.Make<TExc>(message);
+    public static dynamic Throw(string message) => throw Builder.Make<Exc>(message);
 
     public static dynamic Throw<T>(T subject, [ArgExpr(nameof(subject))] string argCall = "[<*unknown*>]")
         => Throw($"*{argCall}*={(subject is null ? "<null>" : subject)}");

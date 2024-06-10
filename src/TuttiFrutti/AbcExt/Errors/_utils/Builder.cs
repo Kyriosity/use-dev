@@ -1,17 +1,16 @@
-﻿using AbcExt.Errors.Argument;
-using AbcExt.Errors.Data;
+﻿using AbcExt.Errors.Data;
 using System.ComponentModel;
 
 namespace AbcExt.Errors.Utils;
 internal static class Builder
 {
-    internal static TExc Make<TExc>(string? message = "", Exception? inner = null) where TExc : Exception =>
-        Activator.CreateInstance(typeof(TExc), CompileArgs<TExc>(message, inner)) as TExc ??
-        throw new InvalidCastException($"Couldn't cast Activator instance to \"{typeof(TExc).FullName}\"");
+    internal static Exc Make<Exc>(string? message = "", Exception? inner = null) where Exc : Exception =>
+        Activator.CreateInstance(typeof(Exc), CompileArgs<Exc>(message, inner)) as Exc ??
+        throw new InvalidCastException($"Couldn't cast Activator instance to \"{typeof(Exc).FullName}\"");
 
-    private static object[] CompileArgs<TExc>(string? message = "", Exception? inner = null) where TExc : Exception {
+    private static object[] CompileArgs<Exc>(string? message = "", Exception? inner = null) where Exc : Exception {
         if (inner is null &&
-            AmbiguousSignatureTypes.Any(x => x == typeof(TExc)))
+            AmbiguousSignatureTypes.Any(x => x == typeof(Exc)))
             return [message];
         return [message, inner];
     }
