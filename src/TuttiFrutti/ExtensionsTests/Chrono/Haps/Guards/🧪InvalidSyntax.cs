@@ -1,4 +1,4 @@
-﻿namespace ClayTests.Chrono.Haps.Guards;
+﻿namespace ExtensionsTests.Chrono.Haps.Guards;
 public class InvalidSyntax
 {
     [Test]

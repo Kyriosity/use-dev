@@ -1,7 +1,7 @@
 ﻿using AbcExt.Stubs.Args;
 using System.Runtime.CompilerServices;
 
-namespace ClayTests.ExceptionExt;
+namespace ExtensionsTests.Exceptions;
 public class MiscDemos
 {
     [Test]

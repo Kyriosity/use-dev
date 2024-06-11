@@ -1,4 +1,4 @@
-﻿namespace ClayTests.ExceptionExt;
+﻿namespace ExtensionsTests.Exceptions;
 public class IntroDemo
 {
     public static void WILL_NOT_COMPILE() {

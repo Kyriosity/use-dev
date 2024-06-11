@@ -1,4 +1,4 @@
-﻿namespace ClayTests.Chrono.Convert;
+﻿namespace ExtensionsTests.Chrono.Convert;
 public class Haps_Instantiation
 {
     [Test]

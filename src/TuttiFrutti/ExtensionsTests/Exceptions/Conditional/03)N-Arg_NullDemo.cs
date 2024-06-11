@@ -1,4 +1,4 @@
-﻿namespace ClayTests.ExceptionExt.Conditional;
+﻿namespace ExtensionsTests.Exceptions.Conditional;
 public class NArg_NullDemo
 {
     [Test]

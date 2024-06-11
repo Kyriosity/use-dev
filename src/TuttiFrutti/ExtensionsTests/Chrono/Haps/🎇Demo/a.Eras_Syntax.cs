@@ -1,4 +1,4 @@
-﻿namespace ClayTests.Chrono.Haps.Demo;
+﻿namespace ExtensionsTests.Chrono.Haps.Demo;
 public class Eras_Syntax
 {
     [Test]

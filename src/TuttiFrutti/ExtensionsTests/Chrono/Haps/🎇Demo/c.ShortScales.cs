@@ -1,5 +1,5 @@
 ﻿
-namespace ClayTests.Chrono.Haps.Demo;
+namespace ExtensionsTests.Chrono.Haps.Demo;
 public class ShortScales
 {
     [Test]

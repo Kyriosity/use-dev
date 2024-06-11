@@ -1,4 +1,4 @@
-﻿namespace ClayTests.ExceptionExt.DataCustom;
+﻿namespace ExtensionsTests.Exceptions.DataCustom;
 public class DataAndEntitities_Demo
 {
     [Test]
