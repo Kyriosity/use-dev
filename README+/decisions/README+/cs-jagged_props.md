@@ -1,8 +1,18 @@
 > 🚧... DRAFT ... 🚧
 
-# C# - "Fluid" interfaces, jagged generic properties
+# C# - DEPECHE models
 
-## Idea
+What does the title mean? Let me begin with an example
+
+
+Example - a counterpart of abstraction, is a grand teacher of everything, within normal rationality.
+
+
+Example 
+
+Let's learn by example, implemented in Models.
+
+
 
 Most applications need to present the same entity (model) with a different exposure: of items and read/write access. Consider developing a book register:
 
@@ -10,6 +20,8 @@ The set of items is quite usual and fixed: Title, ISBN, genre, years written, fi
 
 * new (you can edit anything - ISBN)
 
+
+> :exclamation: This is not REPLACEMENT of FIRM interfaces
 
 ## Realization
 
