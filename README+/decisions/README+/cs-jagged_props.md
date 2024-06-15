@@ -1,8 +1,8 @@
 > 🚧... DRAFT ... 🚧
 
-# C# - DEPECHE models
+# C# - T-R/W-Clay models
 
-What does the title mean? Let me begin with an example
+What does the title mean EXCEPT CALAMBOURE (Clay folder and Models LINK!)? Let me begin with an example
 
 
 Example - a counterpart of abstraction, is a grand teacher of everything, within normal rationality.
@@ -11,7 +11,6 @@ Example - a counterpart of abstraction, is a grand teacher of everything, within
 Example 
 
 Let's learn by example, implemented in Models.
-
 
 
 Most applications need to present the same entity (model) with a different exposure: of items and read/write access. Consider developing a book register:
