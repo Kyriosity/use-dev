@@ -1,8 +1,8 @@
 > 🚧... DRAFT ... 🚧
 
-# C# - T-R/W-Clay models
+# C# - Clay T-models
 
-What does the title mean EXCEPT CALAMBOURE (Clay folder and Models LINK!)? Let me begin with an example
+What does the title mean except calembour (Clay folder and Models LINK!)? Let me begin with an example
 
 
 Example - a counterpart of abstraction, is a grand teacher of everything, within normal rationality.
