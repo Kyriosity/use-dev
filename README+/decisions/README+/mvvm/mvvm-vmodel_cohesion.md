@@ -45,7 +45,7 @@ Furthermore, there can be more ViewModels: *BookViewer* for display, *BookAbstra
       Let's regard the model as a parent class, <br/>from which ViewModels can be derived:
     </td>
    <td>
-     <picture><img alt="VModel cohesion diagram" src="https://github.com/Kyriosity/use-dev/blob/main/README+/_rsc/images/MVP_vm-model-cohesion.jpg"></picture>
+     <picture><img alt="VModel cohesion diagram" src="../../../_rsc/images/MVP_vm-model-cohesion.jpg"></picture>
    </td>
 </tr>
 </table>
