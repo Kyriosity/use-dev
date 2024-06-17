@@ -2,7 +2,7 @@
 |- Exceptions wrappers: [tests 🧪](src/TuttiFrutti/ClayTests/Errors)\
 |- 🗓️ [Chrono ABC](src/TuttiFrutti/AbcChrono) 📜 🎆 🧪 ⌨\
 |= 🌵 [Models](src/TuttiFrutti/AbcModels)\
-|- Motley heap: [tests 🧪](src/TuttiFrutti/AbcStructTests/Heaps)\
+|- [Motley heap](README+/decisions/README+/structs/motley_heap.md): [tests 🧪](src/TuttiFrutti/AbcStructTests/Heaps)\
 |- **WPF**\
 |-- 📃[Bool-Vis. converter](README+/snippets/wpf/bool2viz_improved.md)
 
