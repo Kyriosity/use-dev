@@ -1,16 +1,13 @@
 🚧🚧🚧 DRAFT...
 
-# Motley heap
+# C# - Motley heap
 
-It started just as a patch in one particular method: to cache successfull !!! ADD UNSUCCESS TO THE METHOD ! parsed values of different type in one hole . 
+It started just as a patch in a particular method: to cache parsed, or not, values of logically similar but different types in one container. 
 
 Then it took time and THINKING to DECIDE !
 
-SO FAR NOT SURE !BUT BIASED TO TREAT IT AS WORTHY DECISION
 
-tests source code applied: aaa, bbb, ccc
-
-## Uses 
+## Use cases
 
 ### Cache
 
