@@ -1,5 +1,5 @@
 ﻿using AbcExt.Errors.Sys;
-using MeasUnits.Metadata;
+using AbcExt.Metadata.Ratio;
 
 namespace FuncStore.Conversion.RatioScale;
 
@@ -7,7 +7,7 @@ public class Exponentiation<U> : IFuncStore<U> where U : Enum, IConvertible
 {
     public Exponentiation() {
         if (!ExponentAttribute.From(typeof(U), out _exponentBase))
-            Argument<U>.Throw($"Missing: {nameof(ExponentAttribute)}");
+            Argument.Throw($"Missing: {nameof(ExponentAttribute)}");
     }
     protected int ExponentBase => _exponentBase;
     private readonly int _exponentBase;

@@ -1,5 +1,4 @@
-﻿using Mathe.Phys.Temperature.Conversion;
-using MeasUnits.Phys.Temperature;
+﻿using MeasUnits.Phys.Temperature;
 using System.Numerics;
 
 namespace FuncStore.Conversion.Temperature;
@@ -31,11 +30,14 @@ public class Basic<U> : IFuncStore<U> where U : Enum
         // ToDesign: as prop or type
         // ToDesign: as extendable for other T units classified by num type!
         return new Dictionary<(In, In), Func<N, N>> {
-            [(In.Celsius, In.Kelvin)] = UniNumeric.C2K<N>,
-            [(In.Kelvin, In.Celsius)] = UniNumeric.K2C<N>,
 
-            [(In.Celsius, In.Fahrenheit)] = UniNumeric.C2F<N>,
-            [(In.Fahrenheit, In.Celsius)] = UniNumeric.F2C<N>
+            // ToDo: restore functions or switch other project instead !!!
+
+            //[(In.Celsius, In.Kelvin)] = UniNumeric.C2K<N>,
+            //[(In.Kelvin, In.Celsius)] = UniNumeric.K2C<N>,
+
+            //[(In.Celsius, In.Fahrenheit)] = UniNumeric.C2F<N>,
+            //[(In.Fahrenheit, In.Celsius)] = UniNumeric.F2C<N>
         };
     }
 }

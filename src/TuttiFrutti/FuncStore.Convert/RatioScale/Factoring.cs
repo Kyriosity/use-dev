@@ -1,5 +1,5 @@
 ﻿using AbcExt.Errors.Sys;
-using MeasUnits.Metadata;
+using AbcExt.Metadata.Ratio;
 using System.Numerics;
 
 namespace FuncStore.Conversion.RatioScale;
@@ -9,7 +9,7 @@ public class Factoring<U> : IFuncStore<U> where U : Enum, IConvertible
         var unitsType = typeof(U);
 
         if (!FactoredAttribute.From(unitsType).Any())
-            Argument<U>.Throw($"\"{unitsType.FullName}\" requires here explicit [{nameof(FactoredAttribute)}]");
+            Argument.Throw($"\"{unitsType.FullName}\" requires here explicit [{nameof(FactoredAttribute)}]");
     }
 
     public Func<N, N> For<N>(U from, U to) where N : INumber<N> {
@@ -19,7 +19,7 @@ public class Factoring<U> : IFuncStore<U> where U : Enum, IConvertible
 
         return x => {
             if (fromNumd is 0 || toNumd is 0)
-                Argument<U>.Throw($"Neither factor can be zero ({nameof(from)}={from},{nameof(to)}={to})");
+                Argument.Throw($"Neither factor can be zero ({nameof(from)}={from},{nameof(to)}={to})");
 
             if (fromNumd == toNumd)
                 return x;

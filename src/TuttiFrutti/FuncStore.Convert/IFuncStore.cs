@@ -11,5 +11,5 @@ public interface IFuncStore<in U> : IFuncStore where U : Enum, IConvertible // T
 
 public class FuncStore<U> : IFuncStore<U> where U : Enum // ToDo: move to project
 {
-    public Func<N, N> For<N>(U? from, U? to) where N : INumber<N> => AbcExt.Errors.Sys.NotImplemented.Throw(from, to);
+    public Func<N, N> For<N>(U? from, U? to) where N : INumber<N> => AbcExt.Errors.Sys.NotImplemented.Throw($"{from} -> {to}");
 }

@@ -9,4 +9,3 @@ public class Haps_Instantiation
         Assert.Ignore("Stuff expected");
     }
 }
-
