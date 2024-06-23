@@ -28,7 +28,6 @@ class Monthly<Anni>(IHap model) : Basal(model), IMonths<Anni>
     }
 }
 
-
 class Monthly_wCa<Anni>(IHap model) : Monthly<Anni>(model), IMonths_wCa<Anni>
     where Anni : IAnnual
 {

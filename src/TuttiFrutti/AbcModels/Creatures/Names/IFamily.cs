@@ -2,7 +2,7 @@
 
 public interface IFamily : IDenom;
 
-// PERSONAGE
+// PERSONAGE // MUST BE TAGS !
 
 // Enum: historical, fictious, real
 
@@ -20,10 +20,10 @@ public enum EduDegree
 //  Degree Enum, YEAR  with Bag ! OR TIMELINE ??
 // EVENT AS BAG ???
 
-public interface IFamily<T> : IDenom<(T First, T Last)>
+public interface IFamily<T> : IDenom<(T First, T Last)>, IFamily
 {
-    //string First { get; } // Works throug param
-    //string Last { get; }
+    string First { get; }
+    string Last { get; }
 }
 
 public interface IFamily_Init : IFamily
@@ -31,7 +31,7 @@ public interface IFamily_Init : IFamily
 
 }
 
-public interface IFamily_Edit : IFamily
+public interface IFamily_Edit : IFamily<string>
 {
     new string First { get; set; }
     new string Last { get; set; }

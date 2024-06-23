@@ -1,15 +1,17 @@
 ﻿using AbcModels.Creatures.Names;
-using AbcModels.History;
 
 namespace AbcModels.Creatures;
 
 public interface IPerson<TNames> where TNames : IFamily
 {
-    TNames Names { get; init; }
+    TNames Names { get; }
+
+    IHap Born { get; }
 }
 
-public class Person<TNames, TTime> : IPerson<TNames>
-    where TNames : IFamily where TTime : ITimeline
+
+public class Person : IPerson<IFamily_Edit>
 {
-    public required TNames Names { get; init; }
+    public IFamily_Edit Names { get; set; }
+    public IHap Born { get; set; }
 }

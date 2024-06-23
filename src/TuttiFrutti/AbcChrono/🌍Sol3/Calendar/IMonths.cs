@@ -1,5 +1,5 @@
 ﻿namespace AbcChrono.Sol3.Calendar;
-public interface IMonths<out Res> where Res : IAnnual
+public interface IMonths<Res> where Res : IAnnual
 {
     public Res January(byte dayNr); public Res January();
     public Res February(byte dayNr); public Res February();

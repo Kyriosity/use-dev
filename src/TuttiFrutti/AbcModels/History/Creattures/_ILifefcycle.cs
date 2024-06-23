@@ -1,7 +1,7 @@
 ﻿namespace AbcModels.History.Creattures;
 public interface ILifefcycle<T> : ITimelineAttributed<T, string>
 
-/// ToDo: where T Bag with EVENT ?
+// ToDo: where T Bag with EVENT ?
 {
     T? Birth { get; }
 }

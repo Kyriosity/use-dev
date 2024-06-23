@@ -22,11 +22,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Decisions\ClayModelling\RwFaces\" />
+    <Folder Include="Tags\" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AbcModels\AbcModels.csproj" />
+    <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
   </ItemGroup>
 
 </Project>

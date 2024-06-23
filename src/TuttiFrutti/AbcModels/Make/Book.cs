@@ -5,7 +5,7 @@ public static class Book
     // PARAMETRIZABLE
 
     //public static IBook<TId> Editable(string title, authors, string abstract, TId isbn) 
-    //    { }
+    // { }
 
     // ReadOnly
 
