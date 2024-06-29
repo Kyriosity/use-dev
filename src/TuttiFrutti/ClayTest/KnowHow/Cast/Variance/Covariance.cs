@@ -10,7 +10,7 @@ public class Covariance
 
 class Originator<Res> : IOriginator<Res> where Res : IDenom<string>
 {
-    public Res Name() => NotImplemented.Throw("Not required");  // ToDO: NotImplented.DoNothing
+    public Res Name() => NotImplemented.Unneccessary("");
 }
 
 
