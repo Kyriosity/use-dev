@@ -11,7 +11,7 @@ Contemporary languages can support a vast range of past and future dates<sup>�
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>📆</sup> <sub>Astonishly surrending to Java  C# `DateTime`supports only Common Era. Though there are [Calendar](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendar)<sup>🔗</sup> classes to limited rescue.</sub>
 
 ## Framework - Theses
-
+       
 ### Initial requirements
 
 + Definition of timescales: eras, epochs, or calendars
@@ -20,11 +20,16 @@ Contemporary languages can support a vast range of past and future dates<sup>�
 + Compile/run-time guards and constraints: range limit (e.g. 1-28/29/30/31 for months) compile- and run-time ()
 
 <details>
-  <summary><ins>&nbsp;<b>Overall Wizard-Model look</b>&nbsp;</ins></summary>
-&nbsp;
-  
-  [![Wizard (date, year, ca., ago) - Mode (output) diagram](../../../README+/_rsc/images/bigmessowires.com_wired-circuit.jpg)](https://github.com/Kyriosity/read-write/tree/main/README+/pencraft/README+/_rsc)
-  
+  <summary><ins>&nbsp;<b>Overall Wizard diagram</b>&nbsp;</ins></summary>
+
+  <br/> <picture><img alt="Model of Chrono Wizard" src="../../../README+/_rsc/images/Chrono/AbcChrono_GenPic.jpg"></picture>
+
+📆 Calendar selection: when applicable and optional\
+📱 Absolute year calculated from selection (epoch year, century etc.)\
+🔄 circa: optional mark to specify delta in the input unit
+
+---
+
 </details>
 
 ### Next - Features and demands 
