@@ -43,9 +43,8 @@ Contemporary languages can support a vast range of past and future dates<sup>ðŸ“
 
 ## Solutions
 
-INTRO PENDING!
+### C#.NET
 
-|- [C# AbcChrono](../../../src/TuttiFrutti/AbcChrono)\
-|--- Source\
-|--- Tests
-
+|- [**AbcChrono**](../../../src/TuttiFrutti/AbcChrono/README.md)\
+|--- [Source](../../../src/TuttiFrutti/AbcChrono/)\
+|--- [Tests](../../../src/TuttiFrutti/ExtensionsTests/Chrono/)
