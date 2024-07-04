@@ -40,3 +40,11 @@ Contemporary languages can support a vast range of past and future dates<sup>ðŸ“
 + More chronologies
 
 ### The crown - Integration with U-Val
+
+## Solutions
+
+### C#.NET
+
+|- [**AbcChrono**](../../../src/TuttiFrutti/AbcChrono/README.md)\
+|--- [Source](../../../src/TuttiFrutti/AbcChrono/)\
+|--- [Tests](../../../src/TuttiFrutti/ExtensionsTests/Chrono/)
