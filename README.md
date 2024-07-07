@@ -4,7 +4,7 @@
 |= 🌵 [Models](src/TuttiFrutti/AbcModels)\
 |- [Motley heap](README+/decisions/README+/structs/motley_heap.md): [tests 🧪](src/TuttiFrutti/AbcStructTests/Heaps)\
 |- **WPF**\
-|-- 📃[Bool-Vis. converter](README+/snippets/wpf/bool2viz_improved.md)
+|-- [Bool-Vis. converter](README+/snippets/wpf/bool2viz_improved.md)
 
 + **PARTS**\
 |- 💠 [**Multifacet value** (U-Val)📃](README+/projects/U-Val), 🧪⌨ 🔢 \
@@ -21,7 +21,7 @@
 |--- 📢 [Notificaton orchestration](README+/decisions/README+/mvvm/mvvm-notification_orchestration.md)\
 |--- [Model-ViewModel cohesion](README+/decisions/README+/mvvm/mvvm-vmodel_cohesion.md)\
 |- **Templates**\
-|--- [Promise-oriented MVVM (Task as a model)](README+/decisions/README+/cs-think_tasks.md) 🚧
+|--- [Promise-oriented MVVM](README+/decisions/README+/cs-think_tasks.md) 🚧
 
 + [**Testing**](README+/decisions/README+/testing/)\
 |- [Unit tests - 3D remake](README+/decisions/README+/testing/README+/ut-3D_like_review.md) 🚧\
