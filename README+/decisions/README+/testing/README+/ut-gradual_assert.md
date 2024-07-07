@@ -2,13 +2,22 @@
 
 # Testing - Gradual assert
 
-We are used to peremptory feedback from tests: ✅**success** or :x:**fail**. 
+Despite languages and frameworks, we are used to peremptory feedback from tests: ✅&nbsp;XOR&nbsp;❌ (either **success** or **fail**). 
 
-However, criteria can be vague and changeable.
+The same for their change. Code works and not.
+
+This is absolutely JUST-D for many if not most cases, but there are other stories with vague and changeable criters:
 
 - Precision of functions.
 - Execution time and other resource consumption.
+- Strength of encryption
 
-The same applies to negative results.
+The same applies to negative results. "Not great and not terrible"
 
-## Snap and tendencies
+Why to worry about?
+
+Wooddoo to commit
+
+## Snapshots and tendencies
+
+🚧 ... TO BE CONTINURED ... 🖋️
