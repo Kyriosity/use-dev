@@ -1,0 +1,3 @@
+# Intercom
+
+## Errors and exceptions
