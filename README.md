@@ -14,6 +14,8 @@
 |- Variant builders
 
 + [**Design decisions**](README+/decisions)\
+|- [Intercom](README+/decisions/intercom)\
+|--- [Errors and exceptions](README+/decisions/intercom/README+/errors)\
 |- **Techniques/Patterns**\
 |--- 🎢 [Downcasting impedance](README+/decisions/README+/cs-downcast_impedance.md)\
 |--- 🎶 [Jagged generic props](README+/decisions/README+/cs-jagged_props.md)\
