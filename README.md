@@ -1,3 +1,14 @@
+<details><summary><ins><b>&nbsp;<mark>README...</mark>&nbsp;</b></ins></summary>
+&nbsp;
+  
+🚧🚧🚧  Explanation why in one dir 🚧 🚧 🚧 
+
+INSTALLATION: 
+
+\___________________________________________
+
+</details>
+
 + **CLAY**\
 |- Exceptions wrappers: [tests 🧪](src/TuttiFrutti/ClayTests/Errors)\
 |- 🗓️ [Chrono ABC](src/TuttiFrutti/AbcChrono) 📜 🎆 🧪 ⌨\
