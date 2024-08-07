@@ -6,7 +6,7 @@ public class ComplexTypesKeys
         var id1 = (num: 1, nom: "uno");
 
         var bag = Bag.New(id1, true);
-        Assert.IsTrue(bag.Read<bool>(id1));
+        Assert.That(bag.Read<bool>(id1), Is.True);
 
         bag.Put(id1, "variant 2");
 

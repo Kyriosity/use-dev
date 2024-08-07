@@ -35,7 +35,8 @@ public class TypeVsCrossUniqueKeys
             if (bag.Put(COPY1, 747))
                 if (bag.Put(COPY2, 'c'))
                     allIn = true;
-        Assert.IsTrue(allIn); allIn = false;
+        Assert.That(allIn, Is.True);
+        allIn = false;
 
         bag = Bag<CrossId>.TryOnly.New(init, "start");
         if (bag.Put(unique, nameof(unique)))
@@ -43,7 +44,7 @@ public class TypeVsCrossUniqueKeys
                 if (bag.Read(COPY1, out int _))
                     if (!bag.Put(COPY2, 'c'))
                         allIn = true;
-        Assert.IsTrue(allIn);
+        Assert.That(allIn, Is.True);
 
         bag.Take(COPY1, out int _);
         bag.Put(COPY2, 'c');

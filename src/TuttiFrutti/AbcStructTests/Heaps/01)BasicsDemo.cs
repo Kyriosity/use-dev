@@ -29,7 +29,7 @@ public class BasicsDemo
         bag.Put("point B", new Point(11, 199));
         bag.Put("SEAL", true);
 
-        Assert.True(bag.Read<bool>("SEAL"));
+        Assert.That(bag.Read<bool>("SEAL"), Is.True);
     }
 
     [Test]
@@ -44,12 +44,12 @@ public class BasicsDemo
                         if (sack.Put(++idx, new Camera("Leica")))
                             if (sack.Put(++idx, new Piece("bread", 3)))
                                 if (sack.Put(++idx, true)) {
-                                    Assert.IsTrue(sack.Take(idx, out bool end));
-                                    Assert.IsTrue(end);
-                                    Assert.IsFalse(sack.Take(idx, out bool _), $"did Take on {nameof(idx)}={idx}");
+                                    Assert.That(sack.Take(idx, out bool end), Is.True);
+                                    Assert.That(end, Is.True);
+                                    Assert.That(sack.Take(idx, out bool _), Is.False, $"did Take on {nameof(idx)}={idx}");
                                     success = true;
                                 }
-        Assert.IsTrue(success, $"failed on {nameof(idx)}={idx}");
+        Assert.That(success, Is.True, $"failed on {nameof(idx)}={idx}");
     }
 
     [Test]
@@ -63,10 +63,10 @@ public class BasicsDemo
         tasks.Put(DayOfWeek.Saturday, 'X');
 
         tasks.Put(DayOfWeek.Sunday, false);
-        Assert.IsFalse(tasks.Could.Put(DayOfWeek.Sunday, true));
+        Assert.That(tasks.Could.Put(DayOfWeek.Sunday, true), Is.False);
 
-        Assert.IsTrue(tasks.Could.Take(DayOfWeek.Sunday, out bool isWorkingDay));
-        Assert.IsFalse(isWorkingDay);
+        Assert.That(tasks.Could.Take(DayOfWeek.Sunday, out bool isWorkingDay), Is.True);
+        Assert.That(isWorkingDay, Is.False);
     }
 
     [Test]
@@ -77,7 +77,7 @@ public class BasicsDemo
             _ = bag.Read<string>(123);
 
         var val = bag.Take<string>(123);
-        Assert.IsFalse(bag.Could.Read(123, out val));
+        Assert.That(bag.Could.Read(123, out val), Is.False);
     }
 
     class Camera(string name) { };

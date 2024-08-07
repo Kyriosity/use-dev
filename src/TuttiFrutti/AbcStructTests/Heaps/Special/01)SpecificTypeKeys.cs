@@ -8,19 +8,19 @@ public class SpecificValuesId
 
         bag.Put<bool>(Id, true);
         bag.Put<bool?>(Id, null);
-        Assert.IsTrue(bag.Read<bool>(Id));
-        Assert.IsNull(bag.Read<bool?>(Id));
+        Assert.That(bag.Read<bool>(Id), Is.True);
+        Assert.That(bag.Read<bool?>(Id), Is.Null);
 
         bag.Put<int?>(Id, null);
         // bag.Put<int>(Id, null); // won't compile
         Assert.Throws<EntityNotFound>(() => bag.Take<int>(Id));
-        Assert.IsNull(bag.Take<int?>(Id));
+        Assert.That(bag.Take<int?>(Id), Is.Null);
 
         bag.Put<object>(Id, null);
-        Assert.IsNull(bag.Take<object>(Id));
+        Assert.That(bag.Take<object>(Id), Is.Null);
 
         bag.Put<string?>(Id, "can but isn't null");
-        Assert.IsNotNull(bag.Take<string?>(Id));
+        Assert.That(bag.Take<string?>(Id), Is.Not.Null);
 
         bag.Put<string>(Id, null);
         Assert.That(bag.Take<string>(Id), Is.Null);

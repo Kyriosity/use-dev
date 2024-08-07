@@ -12,8 +12,8 @@ public class ComplexTypesValues
 
         bag.Put("ints", primes);
         primes = [];
-        Assert.IsTrue(bag.Could.Read<int[]>("ints", out _));
-        Assert.IsTrue(bag.Could.Read("ints", out primes));
+        Assert.That(bag.Could.Read<int[]>("ints", out _), Is.True);
+        Assert.That(bag.Could.Read("ints", out primes), Is.True);
         Assert.That(primes.Length, Is.EqualTo(origCount));
 
 
@@ -24,27 +24,27 @@ public class ComplexTypesValues
         };
 
         bag.Put(nameof(colors), colors);
-        Assert.IsTrue(bag.Could.Take<Colors>(nameof(colors), out _));
+        Assert.That(bag.Could.Take<Colors>(nameof(colors), out _), Is.True);
     }
 
     [Test]
     public void Structures() {
         var bag = Bag.TryOnly.New<sbyte>();
 
-        Assert.IsTrue(bag.Put(sbyte.MinValue, Bag.TryOnly.New('A', 1)));
-        Assert.IsTrue(bag.Put(0, Bag.New()));
-        Assert.IsTrue(bag.Put(sbyte.MaxValue, Bag.WithTry.New(1, "one")));
+        Assert.That(bag.Put(sbyte.MinValue, Bag.TryOnly.New('A', 1)), Is.True);
+        Assert.That(bag.Put(0, Bag.New()), Is.True);
+        Assert.That(bag.Put(sbyte.MaxValue, Bag.WithTry.New(1, "one")), Is.True);
 
         var couldRead = bag.Read<ITryOps<char>>(sbyte.MinValue, out _);
-        Assert.IsTrue(couldRead);
+        Assert.That(couldRead, Is.True);
 
         couldRead = bag.Read<ITryOps<string>>(0, out _);
-        Assert.IsFalse(couldRead);
+        Assert.That(couldRead, Is.False);
         couldRead = bag.Take(0, out IDirectOps<string> val);
-        Assert.IsTrue(couldRead);
+        Assert.That(couldRead, Is.True);
 
         couldRead = bag.Take(sbyte.MaxValue, out IWithTryOps<int> primus);
-        Assert.IsTrue(couldRead);
+        Assert.That(couldRead, Is.True);
         Assert.That(primus.Read<string>(1), Is.EqualTo("one"));
     }
 
