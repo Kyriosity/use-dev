@@ -1,5 +1,4 @@
-﻿using AbcExt.Errors.Sys;
-using AbcExt.Metadata.Ratio;
+﻿using AbcExt.Metadata.Ratio;
 
 namespace FuncStore.Conversion.RatioScale;
 

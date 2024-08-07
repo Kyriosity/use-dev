@@ -1,5 +1,4 @@
-﻿using System.Numerics;
-
+﻿
 namespace FuncStore.Conversion;
 
 public interface IFuncStore;

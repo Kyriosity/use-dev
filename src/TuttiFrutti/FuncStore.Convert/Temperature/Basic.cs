@@ -1,5 +1,4 @@
 ﻿using MeasUnits.Phys.Temperature;
-using System.Numerics;
 
 namespace FuncStore.Conversion.Temperature;
 public class Basic<U> : IFuncStore<U> where U : Enum

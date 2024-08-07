@@ -1,6 +1,4 @@
-﻿using AbcExt.Errors.Sys;
-using AbcExt.Metadata.Ratio;
-using System.Numerics;
+﻿using AbcExt.Metadata.Ratio;
 
 namespace FuncStore.Conversion.RatioScale;
 public class Factoring<U> : IFuncStore<U> where U : Enum, IConvertible
