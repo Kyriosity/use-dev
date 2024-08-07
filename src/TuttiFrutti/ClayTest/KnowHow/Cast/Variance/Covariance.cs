@@ -10,7 +10,7 @@ public class Covariance
 
 class Originator<Res> : IOriginator<Res> where Res : IDenom<string>
 {
-    public Res Name() => NotImplemented.Unneccessary("");
+    public Res Name() => NotImplemented.Unneccessary("Stubbing");
 }
 
 
