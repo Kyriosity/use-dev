@@ -1,12 +1,17 @@
 # C# - Tasks as model
 
-Most tailored and Well-known templates/paradigms (MVC, MVP/MVVM, POCO) rest on models. Developers bind actions and presentations to properties, which are ready static or changing values, calculated, or brought by a service, and read from a database.
+Most well-known templates/paradigms (MVC, MVP/MVVM, POCO) and tailored solutions rest on models. Developers bind actions and presentations to properties, which are ready static or changing values, calculated, or brought by a service, and read from a database.
 
 That's nothing wrong with this approach to understanding.
 
+
+## New thinking
+
+
+
 ## AUX Techniques. LAZY vs. PRELOAD
 
-Behind either model or its tasks there could be some tricks to make them even better.
+Behind either model or its tasks, there could be some tricks to make them even better.
 
 ### Laziness
 
@@ -33,7 +38,7 @@ Nowadays it's ALSO an anti-pattern.
 
 The power and storage even of home laptops are multicore, excessive, and mostly idle<sup>:video_game:</sup>, while platforms like .NET ensure the background running of multiple processes. The story got inverted - it's not crucial to delay tasks but to complete them as much as possible earlier and in the background, and then seamlessly produce results when required.
 
-It doesn't matter if you "pre-load" dozen things, of which only one will be selected by the user (e.g. next wizard page dependent on differing selections). Compare to warehouses, where it costs to keep a supply of goods, for a single purpose to be delivered within a day when the customer orders.
+It doesn't matter if you "pre-load" a dozen things, of which only one will be selected by the user (e.g. next wizard page dependent on differing selections). Compare to warehouses, where it costs to keep a supply of goods, for a single purpose to be delivered within a day when the customer orders.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>:video_game:</sup> <sub>We mean usual office, browsers, business applications, and dev environments (not high-performance servers, top games, video processing or mining).</sub>
 
