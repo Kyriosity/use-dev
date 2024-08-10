@@ -1,14 +1,14 @@
 # Chronology - Timelines - Events
 
-Time is the _driver_ for all and the "solvent" of everything. The former is for software and the latter for its hardware.
+**Time** is the _driver_ for all and the "solvent" of everything. The former is for software and the latter for its hardware.
 
 Exact time measurement<sup>🔬</sup> and timestamping aren't an issue for regular solutions but chronology.
 
 Software of the previous millennium gave bits for dates (when bits means literally bits), thus nurturing the giant Y2K bug. 
-Contemporary languages can support a vast range of past and future dates<sup>📆</sup>, but badly organize them (not intuitive, error-prone).
+Contemporary languages can support a vast range of past and future dates<sup>📆</sup>, but badly organize them (ININTUINITIVE and error-prone).
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>🔬</sup> <sub>Unless you need accuracy close to [physics on steroids](https://www.nobelprize.org/prizes/physics/2023/summary/).<sup>🔗</sup></sub>\
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>📆</sup> <sub>Astonishly surrending to Java  C# `DateTime`supports only Common Era. Though there are [Calendar](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendar)<sup>🔗</sup> classes to limited rescue.</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>📆</sup> <sub>Astonishly surrending to Java  C# `DateTime`supports only Common Era. Though there are [`Calendar`](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendar) classes to limited rescue.</sub>
 
 ## Framework - Theses
        
@@ -26,7 +26,7 @@ Contemporary languages can support a vast range of past and future dates<sup>�
 
 📆 Calendar selection: when applicable and optional\
 📱 Absolute year calculated from selection (epoch year, century etc.)\
-🔄 circa: optional mark to specify delta in the input unit
+🔄 circa, optional mark to specify delta in the input unit
 
 ---
 
@@ -39,7 +39,9 @@ Contemporary languages can support a vast range of past and future dates<sup>�
 + Casting
 + More chronologies
 
-### The crown - Integration with U-Val
++ **The coronation step** - re-making it as a solution of [Multifacet value](../U-Val)<sup>👑</sup>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>👑</sup> <sub>Where units of time present values as years are more than natural.</sub>
 
 ## Solutions
 
