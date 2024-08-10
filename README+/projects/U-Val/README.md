@@ -1,4 +1,4 @@
-            🚧🚧🚧 ... **DRAFT** ... 🚧🚧🚧
+            🚧✏️🚧 ... **DRAFT** ... WORK in PROGRESS ... 🚧⌨️🚧
             ... REMOVE the LABEL when RELEASED ...
 # Multifaceted Value :diamond_shape_with_a_dot_inside: (**U-Val**)
 
@@ -23,7 +23,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;**. . .** <ins><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></ins> 
 </details>
 
-Not _denominated values_<sup>➰</sup> in applications may rely on context or imply a single system of categorization (e.g. SI for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters. (So obvious that don't need references.)
+Not _denominated values_<sup>➰</sup> in applications may rely on context or imply a single system of categorization (e.g. SI for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters (so memorable that don't need references.)
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>➰</sup> <sub>These are formal definitions, we will rely on. Aka _numerus numerans_, _numerus numeratus_, and _numerus denominatus_. correspondingly</sub>
 
@@ -43,7 +43,7 @@ Not _denominated values_<sup>➰</sup> in applications may rely on context or im
 |--- Cache
 
 |- Handbook\
-|- Description\
+|- Description
 
 |- **Used decisions**\
 |-- General\
@@ -66,7 +66,7 @@ Not _denominated values_<sup>➰</sup> in applications may rely on context or im
 
 ## Overload of math ops
 
-Looks first absolutely natural and a must.
+It looks first absolutely natural and a must.
 
 ``` var sum = Length.Meter(1) + Length.Centimeter(2)```
 
