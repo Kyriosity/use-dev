@@ -20,15 +20,15 @@ Contemporary languages can support a vast range of past and future dates<sup>�
 + Compile/run-time guards and constraints: range limit (e.g. 1-28/29/30/31 for months) compile- and run-time ()
 
 <details>
-  <summary><ins>&nbsp;<b>Overall Wizard diagram</b>&nbsp;</ins></summary>
+  <summary><ins>🖼️&nbsp;<b>Overall Wizard diagram</b>&nbsp;</ins></summary>
 
-  <br/> <picture><img alt="Model of Chrono Wizard" src="../../../README+/_rsc/images/Chrono/AbcChrono_GenPic.jpg"></picture>
+  <br/><picture><img alt="Model of Chrono Wizard" src="../../../README+/_rsc/images/Chrono/AbcChrono_GenPic.jpg"></picture>
 
 📆 Calendar selection: when applicable and optional\
 📱 Absolute year calculated from selection (epoch year, century, _etc_.)\
 🔄 circa, optional mark to specify delta in the input unit
 
----
+\________________________________
 
 </details>
 
