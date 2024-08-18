@@ -1,8 +1,8 @@
 # WPF - Boolean-to-Visibility converter - Making it better
 
-Imagine :high_brightness:Lights:high_brightness: elements on the *View* that are switched by `bool Voltage` in its *ViewModel*. That's appealing to couple them with the .NET native [BooleanToVisibilityConverter](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.booleantovisibilityconverter)<sup>🔗</sup>.
+Imagine :high_brightness:Lights:high_brightness: elements on the *View* that are switched by `bool Voltage` in its *ViewModel*. That's appealing to couple them with the .NET native [`BooleanToVisibilityConverter`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.booleantovisibilityconverter).
 
-Now suppose, :flashlight:Emergency lights:flashlight: will be switched on when the _Voltage_ is off. To spare either a `VoltageOff` property with logic, or a counterpart `InvertedBooleanToVisibilityConverter`, or elaborated [triggers](https://docs.microsoft.com/en-us/dotnet/api/system.windows.style.triggers)<sup>🔗</sup> let's sketch:
+Now suppose, :flashlight:Emergency lights:flashlight: will be switched on when the _Voltage_ is off. To spare either a `VoltageOff` property with logic, or a counterpart `InvertedBooleanToVisibilityConverter`, or elaborated [`Style.Triggers`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.style.triggers) let's sketch:
 
 <details>
 <summary><ins>&nbsp;Invertible BooleanToVisibility converter&nbsp;</ins></summary>
@@ -31,7 +31,7 @@ XAML:
 
 The above draft is fairly acceptable, but let's hone once and for good a decent solution:
 
-+ supporting any constant of [Visibility](https://docs.microsoft.com/en-us/dotnet/api/system.windows.visibility)<sup>🔗</sup>
++ supporting any constant of [`Visibility`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.visibility)
 + handling *null* for bool
 + smarter named&nbsp;<sup>:raising_hand:</sup>
 
