@@ -37,7 +37,7 @@
 
 //        // ToDO: CHANGE A PROP THEN COMPARE
 //        var asdasDELETE_MEd = (T)item.Clone();
-//        holder = new() { OnSet = x => (T)x.Clone() };
+//        holder = new { OnSet = x => (T)x.Clone() };
 //        holder.Item = item;
 //        Assert.That(ReferenceEquals(item, holder.Item), Is.False);
 //    }

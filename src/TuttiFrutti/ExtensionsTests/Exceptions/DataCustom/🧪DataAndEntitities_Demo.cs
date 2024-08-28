@@ -17,14 +17,14 @@ public class DataAndEntitities_Demo
 
     [Test]
     public void StubbedProperty_Bizzare() { /// ToDo: NotSet ? UnSET ?
-        var dummy = new Dummy() { Info = "NotSet" };
+        var dummy = new Dummy { Info = "NotSet" };
 
         Assert.Throws<NotSet>(() => _ = dummy.NotReleased);
     }
 
     [Test]
     public void Method_NotRecommended() {
-        var dummy = new Dummy() { Info = "NotSet" };
+        var dummy = new Dummy { Info = "NotSet" };
         Assert.Throws<NotSet>(() => dummy.EncryptToken(subj => -Math.PI * subj / 2));
 
         dummy.Token = 7;

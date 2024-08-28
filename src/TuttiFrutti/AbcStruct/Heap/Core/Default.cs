@@ -12,7 +12,7 @@ public class Default
             dict[id] = val;
         }
         else
-            Dir[pointer] = new Dictionary<TId, T?>() { [id] = val };
+            Dir[pointer] = new Dictionary<TId, T?> { [id] = val };
         return true;
     }
 

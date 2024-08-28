@@ -29,5 +29,5 @@ public class AdjustedItemsBuilder<R> : ICollBuilder<R>
 
     public IItemsAccu<T> Of<T>(T item) where T : R => Of(new[] { item });
 
-    protected virtual IItemsAccu<T> AccuRealization<T>() where T : R => new ListAccu<T>() { OnSet = x => (T)_onSet(x) };
+    protected virtual IItemsAccu<T> AccuRealization<T>() where T : R => new ListAccu<T> { OnSet = x => (T)_onSet(x) };
 }

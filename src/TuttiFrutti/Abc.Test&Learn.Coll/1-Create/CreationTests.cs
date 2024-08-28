@@ -32,6 +32,3 @@ public class CreationTests
         var words = builder.Of(Dummies.Text.LoremIpsum.Split());
     }
 }
-
-
-

@@ -1,7 +1,7 @@
 ﻿namespace Funcware.Numeric.SameType.InUnit.Custom;
 public abstract class FuncStore<U> : IWire<U> where U : Enum
 {
-    public Func<N, N>? For<N>(U from, U to) where N : System.Numerics.INumber<N> {
+    public Func<N, N>? For<N>(U from, U to) where N : INumber<N> {
         if (from.Equals(to))
             return x => x;
 
@@ -10,8 +10,8 @@ public abstract class FuncStore<U> : IWire<U> where U : Enum
         return available.TryGetValue((from, to), out var func) ? func : null;
     }
 
-    protected virtual IDictionary<(U from, U to), Func<N, N>> FuncsBag<N>()
-        where N : INumber<N> => new Dictionary<(U from, U to), Func<N, N>>();
+    protected virtual IDictionary<(U from, U to), Func<N, N>> FuncsBag<N>() where N : INumber<N>
+        => new Dictionary<(U from, U to), Func<N, N>> { };
 }
 
 // WHERE CustomeProvider : IFuncStore<T>

@@ -25,8 +25,8 @@
 //    }
 
 //    [Test]
-//    public void CastExplicit() {
-//        //IItem<int> holder = new SealedHolder<int>() { Item = 7 };
+//    public void CastExplicit {
+//        //IItem<int> holder = new SealedHolder<int> { Item = 7 };
 
 //        //IMutableItem<int> mutable = Mock.Create<IMutableItem<int>>();
 //        //mutable.Item = -11;
@@ -49,7 +49,7 @@
 //public class Mistakes
 //{
 //    [Test]
-//    public void Upcast() {
+//    public void Upcast {
 
 //        // Assert.That NULL
 //    }

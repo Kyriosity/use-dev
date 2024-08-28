@@ -23,7 +23,7 @@ public class AllAroundFuncStore<U> : Temperatures, IWire<U> where U : Enum
         var parsedA = Parse.Try(from, out In normFrom);
         var parsedB = Parse.Try(from, out In normTo);
 
-        return base.For<N>(normFrom, normTo);
+        return For<N>(normFrom, normTo);
     }
 }
 
