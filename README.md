@@ -19,7 +19,8 @@ INSTALLATION:
 
 + **PARTS**\
 |- <a name="UVal"></a>💠 [**Multifacet value** (U-Val)📃](README+/projects/U-Val), 🧪⌨ 🔢\
-|--- Funcware\
+|--- <a>Funcware</a>\
+|----- <a href="src/TuttiFrutti/FuncStore.Convert">Conversion</a>\
 |--- Graph\
 |- 🔄 [**Undo/Redo** extension](README+/projects/Rvrs) 🚧\
 |- Variant builders
