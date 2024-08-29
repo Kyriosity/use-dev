@@ -18,7 +18,7 @@ INSTALLATION:
 |-- [Bool-Vis. converter](README+/snippets/wpf/bool2viz_improved.md)
 
 + **PARTS**\
-|- 💠 [**Multifacet value** (U-Val)📃](README+/projects/U-Val), 🧪⌨ 🔢 \
+|- <a name="UVal"></a>💠 [**Multifacet value** (U-Val)📃](README+/projects/U-Val), 🧪⌨ 🔢\
 |--- Funcware\
 |--- Graph\
 |- 🔄 [**Undo/Redo** extension](README+/projects/Rvrs) 🚧\
