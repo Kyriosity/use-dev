@@ -11,7 +11,7 @@ public class Exponentiation<U> : IFuncStore<U> where U : Enum, IConvertible
     protected int ExponentBase => _exponentBase;
     private readonly int _exponentBase;
 
-    public Func<N, N> For<N>(U from, U to) where N : System.Numerics.INumber<N> {
+    public Func<N, N> For<N>(U from, U to) where N : INumber<N> {
         return x => {
             var fromNumd = from.ToInt64(null);
             var toNumd = to.ToInt64(null);

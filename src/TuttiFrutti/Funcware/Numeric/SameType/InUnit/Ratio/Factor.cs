@@ -9,7 +9,7 @@ public class Factor<U> : Funcware.Numeric.SameType.InUnit.IWire<U>
             Argument.Throw($"Requires explicit {nameof(FactoredAttribute)}");
     }
 
-    public Func<N, N> For<N>(U from, U to) where N : System.Numerics.INumber<N> {
+    public Func<N, N> For<N>(U from, U to) where N : INumber<N> {
         if (from.Equals(to))
             return x => x;
 

@@ -8,7 +8,7 @@ public class FuncStoreMAPPERD<U> : IWire<U> where U : Enum
 {
     // ToDo: IROUTER !
 
-    public Func<N, N>? For<N>(U from, U to) where N : System.Numerics.INumber<N> {
+    public Func<N, N>? For<N>(U from, U to) where N : INumber<N> {
         if (from.Equals(to))
             return x => x;
 
