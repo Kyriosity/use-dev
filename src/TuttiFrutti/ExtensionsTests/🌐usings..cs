@@ -5,4 +5,5 @@ global using AbcExt.Errors.Data;
 global using AbcExt.Errors.Sys;
 global using AbcExt.Glyphs;
 global using AbcModels.Dir;
+global using NUnit.Framework;
 global using System.Numerics;

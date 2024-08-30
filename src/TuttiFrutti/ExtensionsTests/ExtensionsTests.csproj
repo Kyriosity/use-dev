@@ -29,8 +29,4 @@
     <ProjectReference Include="..\AbcModels\AbcModels.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Using Include="NUnit.Framework" />
-  </ItemGroup>
-
 </Project>
