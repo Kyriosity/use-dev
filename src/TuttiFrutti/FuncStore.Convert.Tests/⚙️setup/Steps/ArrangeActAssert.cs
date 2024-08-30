@@ -23,18 +23,20 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
 
         var tolerance = delta ?? DefaultDelta;
         var diff = result > expected ? result - expected : expected - result;
+
+        // ToDefine: whether Within works for INumber (if not - make workaround)
         Assert.That(result, Is.EqualTo(expected).Within(tolerance), $"{MarkDiff(tolerance, diff)}");
         Assert.Pass(ScaleAssess(diff, tolerance));
     }
 
     public virtual void Mismatch<N>() {
-        // ToDo: 
+        // ToDesign: on demand when mismatch logic required 
     }
 
     public virtual void MissFunc<N>(TUnit from, TUnit to) where N : INumber<N> {
         var func = _funcware.For<N>(from, to);
 
-        Assert.That(func, Is.Null, $"{from}->{to} must be not available but found");
+        Assert.That(func, Is.Null, $"{from}->{to} must be NOT available BUT found");
     }
 
     public virtual void ResultException<T>() where T : Exception {

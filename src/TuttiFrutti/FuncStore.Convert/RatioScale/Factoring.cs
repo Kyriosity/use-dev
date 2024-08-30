@@ -24,9 +24,9 @@ public class Factoring<U> : IFuncStore<U> where U : Enum, IConvertible
 
             var calcAccu = double.CreateChecked(x);
 
-            // ToDesign: avoid cAmEl calculations!
-            // to know: how CLR deals with nums in chain
-            // ToDesign: prevent overflow by dividing first when applicable!
+            // 1) *** ToDesign: avoid cAmEl calculations!
+            // *** to know: how CLR deals with nums in chain
+            // 2) ToDesign: prevent overflow by dividing first when applicable!
             if (1 != toNumd)
                 calcAccu = 0 > toNumd ? calcAccu * -toNumd : calcAccu / toNumd;
 
