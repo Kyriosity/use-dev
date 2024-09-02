@@ -19,8 +19,8 @@ public partial class PhaseChange
         [ammonia] = [(-33.34, C), (-28.01, F)],
 
         [acetone] = [(56.08, Celsius), (132.94, Fahrenheit)],
-        [methanol] = [(64.7, Celsius), (148.5, Fahrenheit)],
-        [ethanol] = [(78.23, Celsius), (172.81, Fahrenheit)],
+        [methanol] = [(64.7, Celsius), (148.5, F)],
+        [ethanol] = [(78.23, Celsius), (172.81, F)],
     };
 
     private const double H_C = -252.879;
