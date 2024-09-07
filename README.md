@@ -10,7 +10,7 @@ INSTALLATION:
 </details>
 
 + **CLAY**\
-|- Exceptions wrappers: [tests 🧪](src/TuttiFrutti/ClayTests/Errors)\
+|- Exceptions wrappers: [tests 🧪](src/TuttiFrutti/ExtensionsTests/Exceptions)\
 |- 🗓️ [Chrono ABC](README+/projects/AbcChrono)\
 |= 🌵 [Models](src/TuttiFrutti/AbcModels)\
 |- [Motley heap](README+/decisions/README+/structs/motley_heap.md): [tests 🧪](src/TuttiFrutti/AbcStructTests/Heaps)\
