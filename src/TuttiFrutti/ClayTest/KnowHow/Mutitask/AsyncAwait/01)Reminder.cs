@@ -1,6 +1,9 @@
 ﻿namespace ClayTest.KnowHow.Mutitask.AsyncAwait;
+
 public class Reminder
 {
+    // ToDelAndReMk: as new 9.0 project
+
     [Test]
     public async Task Simple() {
 
@@ -14,7 +17,6 @@ public class Reminder
 
     public async Task SimpleValueTask() {
     }
-
 
     async Task<bool> MemeAsync(ushort msDelay) {
         await Task.Delay(msDelay);
