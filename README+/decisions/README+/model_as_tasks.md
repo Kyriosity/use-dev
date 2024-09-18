@@ -10,12 +10,12 @@ Direct implementation in reactive applications (which are not in this day and ag
 
 Many scenarios may mock delays to catch user attention or show proof of work.<sup>⏳</sup> In some others the possible (non)availability of value or a promise is a value by itself (e.g. `CanExecute` for commands).
 
-Now spice the reactive interface with `async`: you must now break the queue of values into orchestration. EXAMPLE !
+Now, please, spice your reactive interface with `async`: you must now break the queue of values into orchestration. EXAMPLE !
 
 To make the thing worse recall that besides multitasking there's multi-dispatching (e.g. auto-save, spellcheck).
 
 \_______\
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>⏳</sup>For example, users don't expect that saving the giga-document, rebuilding a solution, or reading from a distant server can be instant.
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>⏳</sup> <sub>For example, users don't expect that saving the giga-document, rebuilding a solution, or reading from a distant server can be instant.</sub>
 
 ## New thinking
 
@@ -64,8 +64,9 @@ ECO-FRIENDLY ANTONYM? Let's conisder if after the last mining farm is CLOSED.
 
 #### Caching
 
-### Streaming (not on YouTube 🍨🌹)
+### Streaming (not on TitTok only 🍨🌹🥥)
 
 Processing sync/async streams is a relatively fresh technique, which only requires a reference to its [foundation](https://github.com/ReactiveX)<sup>🔗</sup>.
 
-🔚 🌔 2024 Kyriosity ... 🚧 work in (slow) progress 🐝
+\___________\
+🔚 🌔 <sub>2024 Kyriosity ... 🚧 work in (slow) progress 🐝</sub>
