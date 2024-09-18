@@ -1,9 +1,10 @@
-# C# - Tasks as model
+# Tasks as model
 
-Most well-known templates/paradigms (MVC, MVP/MVVM, POCO) and tailored solutions rest on models. Developers bind actions and presentations to properties, which are ready static or changing values, calculated, or brought by a service, and read from a database.
+Most well-known templates/paradigms (MVC, MVP/MVVM, POCO) and tailored solutions rest on models. Developers bind actions and presentations to properties, which are ready static or changing values, calculated, or rendered by a service, or read from a storage.
 
-That's nothing wrong with this approach to understanding.
+That's nothing wrong with this approach (especially for logical division) but it's primitivity.
 
+Direct implementation in responsive applications incurs perpetual patching of lags. 
 
 ## New thinking
 
