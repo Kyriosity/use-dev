@@ -1,14 +1,16 @@
 # Tasks as model
 
-Most well-known templates/paradigms (MVC, MVP/MVVM, POCO) and tailored solutions rest on models. Developers bind actions and presentations to properties, which are ready static or changing values, calculated, or rendered by a service, or read from a storage.
+Most or many well-known templates/paradigms (MVC, MVP/MVVM, MV-Whatever, POCO) and tailored solutions rest on models. 
 
-That's nothing wrong with this approach (especially for logical division) but it's primitivity.
+Developers bind actions/requests, presentations or whatever to values, which can be static, ready  or  changing. calculated, response from actions and requsts, or rendered by a service, or read from a storage.
 
-Direct implementation in responsive applications incurs perpetual patching of lags. 
+That's nothing wrong with this approach (especially for abstraction and logical division) but its primitivity.
+
+Direct implementation in responsive applications (which are not in this day and age?) incurs perpetual patching of lags. 
 
 ## New thinking
 
-
+PLACEHOlDER for PhD
 
 ## AUX Techniques. LAZY vs. PRELOAD
 
