@@ -1,31 +1,32 @@
 # Tasks as model
 
-Most or many well-known templates/paradigms (MVC, MVP/MVVM, MV-Whatever, POCO) and custom solutions rest on models. 
+Most or many well-known templates/paradigms, as MVC, MVP/MVVM, MVW(hatever), POCO, and custom solutions rest on models. 
 
 Developers bind presentations, actions, and messages to values/properties. There's nothing wrong with this approach (especially for abstraction and logical division) but oversimplicity and static character.
 
-Values can be not only unnoticeably loaded/changed but also calculated, rendered by a service, read from storage, and awaited from response/request (the latter can be suspended, canceled, or failed at all).
+Values can be not only primitively loaded/changed but also heavy calculated, rendered by a rudimentary service, read from slow storage, and awaited from unpredictable input (chess moves or vacation approval for example).
 
-Direct implementation in reactive applications (which are not in this day and age?) incurs perpetual patching of lags to improve user experience. 
+Any operation can fail or be be suspended or cancelled on both sides.
 
-Many scenarios may mock delays to catch user attention or show proof of work.<sup>⏳</sup> In some others the possible (non)availability of value or a promise is a value by itself (e.g. `CanExecute` for commands).
+DIRECT/SYNC classical implementation  incurs perpetual patching of lags for reactive  experience (which is not in this day and age?). 
 
-Now, please, spice your reactive interface with `async`: you must now break the queue of values into orchestration. EXAMPLE !
+Enough scenarios may mock delays to catch user attention or show proof of work<sup>⏳</sup>. In some others the possible (non)availability of value or its promise is itself the value (e.g. `CanExecute` for commands).
 
-To make the thing worse recall that besides multitasking there's multi-dispatching (e.g. auto-save, spellcheck).
+Now, ooh, spice these reactive interfaces with `async`: you must now break the queue of values into orchestration. EXAMPLE !
+
+To make the thing worse recall that besides multitasking there's multi-dispatching (that's how auto-save, or spellcheck run).
 
 \_______\
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>⏳</sup> <sub>For example, users don't expect that saving the giga-document, rebuilding a solution, or reading from a distant server can be instant.</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>⏳</sup> <sub>For example, saving a giga-document, rebuilding a solution, or making a bank transaction can occur unexpectedly instant for users.</sub>
 
 ## New thinking
 
-Modern languages and frameworks GRANT
+Modern languages and frameworks GRANT brilliant multitasking and synchro tools out-of-the-box.
 
-PLACEHOlDER for PhD
+lets FIT them to templates!
 
-LAYERING CODE TO MAKE ERRs UNFATAL
 
-## Appemndices. Techniques
+## Appendices. Techniques
 
 Behind presentations, there could be some tricks to make them even better or worse (since any pattern is antipattern too).
 
