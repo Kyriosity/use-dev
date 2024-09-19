@@ -1,30 +1,31 @@
 # Tasks as model
 
-Most or many well-known templates/paradigms, as MVC, MVP/MVVM, MVW(hatever), POCO, and custom solutions rest on models. 
+Most or many well-known templates/paradigms, such as MVC, MVP/MVVM, MV-Whatever, POCO, and custom solutions rest on [models](https://github.com/Kyriosity/read-write/blob/main/README%2B/software/design/parts/README+/app-model.md)<sup>⬅️</sup>. 
 
 Developers bind presentations, actions, and messages to values/properties. There's nothing wrong with this approach (especially for abstraction and logical division) but oversimplicity and static character.
 
-Values can be not only primitively loaded/changed but also heavy calculated, rendered by a rudimentary service, read from slow storage, and awaited from unpredictable input (chess moves or vacation approval for example).
+Values can be not only coded/(re)set but also heavily calculated, rendered by a rudimentary service, read from slow storage, and awaited from unpredictable input (chess moves or vacation approval for example).
 
-Any operation can fail or be be suspended or cancelled on both sides.
+Any operation can fail or be suspended or canceled on both sides.
 
 DIRECT/SYNC classical implementation  incurs perpetual patching of lags for reactive  experience (which is not in this day and age?). 
 
-Enough scenarios may mock delays to catch user attention or show proof of work<sup>⏳</sup>. In some others the possible (non)availability of value or its promise is itself the value (e.g. `CanExecute` for commands).
+Enough scenarios may mock delays to catch user attention or show proof of work<sup>⏳</sup>. In some others, the possible (non)availability of value or its promise is itself the value (e.g. `CanExecute` for commands).
 
 Now, ooh, spice these reactive interfaces with `async`: you must now break the queue of values into orchestration. EXAMPLE !
 
-To make the thing worse recall that besides multitasking there's multi-dispatching (that's how auto-save, or spellcheck run).
+To make the thing worse recall that besides multitasking there's multi-dispatching (that's how auto-save, or spellcheck runs).
 
 \_______\
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>⏳</sup> <sub>For example, saving a giga-document, rebuilding a solution, or making a bank transaction can occur unexpectedly instant for users.</sub>
 
-## New thinking
+## Re-thinking model and presentation
 
 Modern languages and frameworks GRANT brilliant multitasking and synchro tools out-of-the-box.
 
 lets FIT them to templates!
 
+EVENTS
 
 ## Appendices. Techniques
 
@@ -32,7 +33,7 @@ Behind presentations, there could be some tricks to make them even better or wor
 
 ### Laziness (not of a developer)
 
-Since the olden days, programers used to defer initialization/calculation of less or more "heavy" entities. This allows to **a)**&nbsp;load the stuff on&nbsp;demand only (eco-friendly), **b)**&nbsp;spread resources peaks, **c)**&nbsp;split suspense (which nevertheless remains).
+Since the olden days, programmers used to defer initialization/calculation of less or more "heavy" entities. This allows to **a)**&nbsp;load the stuff on&nbsp;demand only (eco-friendly), **b)**&nbsp;spread resources peaks, **c)**&nbsp;split suspense (which nevertheless remains).
 
 THOUGH LAZY LOAD is still practical
 
