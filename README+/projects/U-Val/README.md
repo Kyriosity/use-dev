@@ -8,27 +8,45 @@
 <div dir="rtl">?What gauges&nbsp;-</div>
 <p>&nbsp;</p>
 
- You may find the folklore right above dull but not pointless. Math deals with _abstract numbers_<sup>➰</sup>, computers operate on pure digits but not developers and users.  
+ You may find the folklore right above dull but not pointless. Math deals with _abstract numbers_<sup>🔣</sup>, computers operate on pure digits but not developers and users.  
  
- The inputs and outputs of applications anchor to the material world, where even _concrete values_<sup>➰</sup> may be ambiguous: 
+ The inputs and outputs of applications anchor to the material world, where even _concrete values_<sup>🔣</sup> may be ambiguous: 
 
 <details>
 <summary>&nbsp;<ins><b>▪️ A child's age of `7` can be months or years&nbsp;</ins> .&nbsp;.&nbsp;.</b></summary>
             
-- An altitude on EU domestic flights is measured in feet while variometers may show metres.
+- An altitude on EU domestic flights is measured in _feet_ while variometers may show _meters_.
 - Temperature of `36.6` looks native in _Kelvin_ for liquid gases and in _Celsius_ - for medicine.
-- A close approach to Mars equals `33'900'000` miles but seems credible in kilometers and nmi.
+- A close approach of Earth to Mars is ca. `33'900'000` _miles_ but seems credible in _kilometers_ and _nmi_.
 - `Jack` can be family, given (not only on birth), and branded name.
-- `$1'000` or `1'000€` has temporal purchase ability, different for essential goods, 1GB of DRAM, and gold ounce
-&nbsp;&nbsp;&nbsp;&nbsp;**. . .** <ins><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></ins> 
+- `$1'000` or `1'000€` have not only varying exchange divisions over the years, but differing purchase abilities for essential goods, 1GB of DRAM, or gold ounce&nbsp;**. . .**\
+\___________
+
 </details>
 
-Not _denominated values_<sup>➰</sup> in applications may rely on context or imply a single system of categorization (e.g. SI for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters (so memorable that don't need references.)
+Not _denominated values_<sup>🔣</sup> in applications may rely on context or imply a single system of categorization (e.g. SI for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters.
 
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>➰</sup> <sub>These are formal definitions, we will rely on. Aka _numerus numerans_, _numerus numeratus_, and _numerus denominatus_. correspondingly</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>🔣</sup> <sub>These are formal definitions, we will rely on. Aka _numerus numerans_, _numerus numeratus_, and _numerus denominatus_. correspondingly</sub>
 
- Old fashion like `const Temperature_AbsZero_Kelvin = 0.00` makes values univocal but ugly to the object-oriented eye.
- 
+ Univocal coding like `const Temperature_AbsZero_Kelvin = 0.00` is old fashion and ugly to the object-oriented eye. As a CRITICAL pro you'd PREFER IT TO THE SYNTAX that our U-VAL-EMBLEM renders.
+
+## Case DEMO
+
+Let's present our FEAT take an epic story of the poor [Mars Climate Orbiter] 
+...
+
+...
+
+and show how we could make its software not only NEATER but save about half a billion $$.
+
+
+ total impulse produced by thruster firings produced results in pound-force seconds. The trajectory calculation software then used these results – expected to be in newton-seconds (incorrect by a factor of 4.45)
+
+ https://llis.nasa.gov/llis_lib/pdf/1009464main1_0641-mr.pdf
+
+ ## Working TTL
+
+
  As a good developer, you will come to a better view, like `Heating.Max[Celcius] = 82.15` or `Landing.Speed.Knots` vs `.KmPerHour`. Then you will think about ways of initialization, conversion functions, math ops, constants, and other headaches. 
 
  And here you are, where such a framework is available for use, alteration, or just as a concept.
