@@ -14,7 +14,7 @@ WPF developers must know the easy [Microsoft recipe](https://learn.microsoft.com
 <summary><ins>&nbsp;<b>And then if a ViewModel were printed on a board it would look:</b>&nbsp;</ins></summary></summary>
 &nbsp;
 
-[![Spaghetti wires snapshot from bigmessowires.com](../../../_rsc/images/bigmessowires.com_wired-circuit.jpg)](https://github.com/Kyriosity/read-write/tree/main/README+/_rsc)\
+[![Spaghetti wires snapshot from bigmessowires.com](../../../_rsc/img/bigmessowires.com_wired-circuit.jpg)](https://github.com/Kyriosity/read-write/tree/main/README+/_rsc)\
 (*Found on bigmessowires.com*)\
 \________________________________________________________________________________________
 </details>
@@ -26,7 +26,7 @@ WPF developers must know the easy [Microsoft recipe](https://learn.microsoft.com
 <summary><ins>&nbsp;<b>Another snapshot from the same site may give the cue:</b>&nbsp;</ins></summary></summary>
 &nbsp;
 
-[![Spaghetti wires snapshot from bigmessowires.com](../../../_rsc/images/bigmessowires.com_inegrated-circuit.jpg)](https://github.com/Kyriosity/read-write/tree/main/README+/_rsc)\
+[![Spaghetti wires snapshot from bigmessowires.com](../../../_rsc/img/bigmessowires.com_inegrated-circuit.jpg)](https://github.com/Kyriosity/read-write/tree/main/README+/_rsc)\
 (*Found on bigmessowires.com*)\
 \________________________________________________________________________________________
 </details>
