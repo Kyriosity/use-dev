@@ -13,7 +13,7 @@
  The inputs and outputs of applications anchor to the material world, where even _concrete values_<sup>🔣</sup> may be ambiguous: 
 
 <details>
-<summary>&nbsp;<ins><b>▪️ A child's age of `7` can be months or years&nbsp;</ins> .&nbsp;.&nbsp;.</b></summary>
+<summary>&nbsp;<ins>A child's age of <code>7</code> can be months or years&nbsp;</ins><b> .&nbsp;.&nbsp;.</b></summary>
             
 - An altitude on EU domestic flights is measured in _feet_ while variometers may show _meters_.
 - Temperature of `36.6` looks native in _Kelvin_ for liquid gases and in _Celsius_ - for medicine.
@@ -28,7 +28,7 @@ Not _denominated values_<sup>🔣</sup> in applications may rely on context or i
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>🔣</sup> <sub>These are formal definitions, we will rely on. Aka _numerus numerans_, _numerus numeratus_, and _numerus denominatus_. correspondingly</sub>
 
- Univocal coding like `const Temperature_AbsZero_Kelvin = 0.00` is old fashion and ugly to the object-oriented eye. As a CRITICAL pro you'd PREFER IT TO THE SYNTAX that our U-VAL-EMBLEM renders.
+ Univocal coding like `const Temperature_AbsZero_Kelvin = 0.00` is old-fashioned and ugly to the object-oriented eye. As a picky pro you'd PREFER IT TO THE SYNTAX that our U-VAL-EMBLEM renders.
 
 ## Case DEMO
 

@@ -4,7 +4,7 @@
 
 Exact time measurement<sup>🔬</sup> and timestamping aren't an issue for regular solutions but chronology.
 
-Software of the previous millennium gave bits for dates (when bits means literally bits), thus nurturing the giant Y2K bug. 
+Software of the previous millennium gave bits for dates (when bits means bits literally), thus nurturing the giant Y2K bug (and maybe [Y2038](https://en.wikipedia.org/wiki/Year_2038_problem))<sup>🔗</sup>.
 Contemporary languages can support a vast range of past and future dates<sup>📆</sup>, but badly organize them (ININTUINITIVE and error-prone).
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>🔬</sup> <sub>Unless you need accuracy close to [physics on steroids](https://www.nobelprize.org/prizes/physics/2023/summary/).<sup>🔗</sup></sub>\
@@ -51,3 +51,4 @@ Contemporary languages can support a vast range of past and future dates<sup>�
 |--- [Source](../../../src/TuttiFrutti/AbcChrono/)\
 |--- [Tests](../../../src/TuttiFrutti/ExtensionsTests/Chrono/)
 
+🔚
