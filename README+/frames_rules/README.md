@@ -1,16 +1,12 @@
-# Frames and Rules
+# Frames, Guidelines, and Rules
 
-The gap between design and development gives freedom of implementation, which is generally favorable, and stimulates the search for ...
+The space between architectural/design decisions and implementation unties programming hands to code a feature in multiple variations (the same as a tongue can describe the same thing in different forms and ways). 
 
-RULES REQUIRED EXCEPTION POSSIBLE
+Let alone syntax preferences, which selection begins from the very first letter: capitalize, underscore or not.
 
-Language can describe a subject in a number of ways.
+This stimulates creativity, competitiveness, and the search for better syntax, but on a large scale the bigger the assortment, the greater the disorder. 
+Thus any big team or project establishes certain frames and rules of coding, which shall not be dogmatic and, sure, can't be 100% applied (noticeable if over 50%).
 
-Coding even a single task (class) can be done in the mass of formats
-
-OR - Do NOT override public methods
-Non-virtual public with main logic only matching the interface, private or virtual protected implementation calls. 
-
-🚧🚧🚧🚧 DRAFT 🚧🚧🚧🚧🚧    
+So, welcome to consider my modest contribution of [frames, guidelines, and rules](README+).
 
 🔚
