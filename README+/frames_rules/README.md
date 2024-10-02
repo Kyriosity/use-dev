@@ -2,7 +2,7 @@
 
 <table><tr valign="top">
   <td>
-    <picture><img src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/photo/misc/pour_concrete.jpg" width="400px"
+    <picture><img src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/photo/misc/pour_concrete-meme.jpg" width="400px"
                alt="&nbsp;pouring concrete into rebar formwork" title="&nbsp;Image credit: jkcement.com&#013;&#010;(for illustration purposes only)" /></picture>
   </td><td>
     <p>The metaphor of code as <mark>cement</mark> was applied to undeline <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/QA/README+/code-quality.md">code quality</a>.</p>
