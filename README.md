@@ -1,15 +1,4 @@
-<details><summary><ins><b>&nbsp;<mark>README...</mark>&nbsp;</b></ins></summary>
-&nbsp;
-  
-🚧🚧🚧  Explanation why in one dir 🚧 🚧 🚧 
-
-INSTALLATION: 
-
-\___________________________________________
-
-</details>
-
-// ToAdd: TILES menu
+<samp>INSTALLATION</samp>: Clone, copy, download `src`, and open the solution in Microsoft Visual Studio
 
 + **CLAY**\
 |- Exceptions wrappers: [tests 🧪](src/TuttiFrutti/ExtensionsTests/Exceptions)\
