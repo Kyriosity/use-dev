@@ -1,18 +1,23 @@
-# Tasks as model
+# Tasks as a model, promise as a value
 
-Most or many well-known templates/paradigms, such as MVC, MVP/MVVM, MV-Whatever, POCO, and custom solutions rest on [models](https://github.com/Kyriosity/read-write/blob/main/README%2B/software/design/parts/README+/app-model.md)<sup>⬅️</sup>. 
+Most or many well-known templates/paradigms, such as MVC, MVP/<samp>MVVM</samp>, MVW[hatever], POCO, and custom solutions rest on [models](https://github.com/Kyriosity/read-write/blob/main/README%2B/software/design/parts/README+/app-model.md)<sup>⬅️</sup>. 
 
-Developers bind presentations, actions, and messages to values/properties. There's nothing wrong with this approach (especially for abstraction and logical division) but oversimplicity and static character.
+Developers bind presentations, actions, and messages to values/properties/callbacks. There's nothing wrong with this approach (especially for rough abstraction and logical division) but oversimplicity and static character.
 
-Values can be not only coded/(re)set but also heavily calculated, rendered by a rudimentary service, read from slow storage, and awaited from unpredictable input (chess moves or vacation approval for example).
+Values can be assuredly set/reset, or coded in a slot of time, imperceptible for users or insignificant for hardware/software clients. However, materiality can imply
 
-Any operation can fail or be suspended or canceled on both sides.
+* heavy calculation,
+* lagging services, and slow rudimentary storages,
+* pending input (e.g. chess moves or vacation approval),
+* statuses linked to running actions (either naturally or intentionally pending).
 
-DIRECT/SYNC classical implementation  incurs perpetual patching of lags for reactive  experience (which is not in this day and age?). 
+And any operation can break, fail, or be suspended or canceled on both sides. 
 
-Enough scenarios may mock delays to catch user attention or show proof of work<sup>⏳</sup>. In some others, the possible (non)availability of value or its promise is itself the value (e.g. `CanExecute` for commands).
+Enough scenarios shall mock delays to catch user attention or show proof of work<sup>⏳</sup>. In some others, the possible (non)availability of value or its promise is itself the value (e.g. `CanExecute` for commands).
 
-Now, ooh, spice these reactive interfaces with `async`: you must now break the queue of values into orchestration. EXAMPLE !
+Classical, direct/async, and prevalent implementation incurs perpetual patching of unpredictable values for reactive  experience. 
+
+Now, oh boy, spice these reactive interfaces with `async`: you must break the queue of values into orchestration. ToDo: EXAMPLE !
 
 To make the thing worse recall that besides multitasking there's multi-dispatching (that's how auto-save, or spellcheck runs).
 
