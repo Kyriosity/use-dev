@@ -5,10 +5,10 @@
 Exact time measurement<sup>🔬</sup> and timestamping aren't an issue for regular solutions but chronology.
 
 Software of the previous millennium gave bits for dates (when bits means bits literally), thus nurturing the giant Y2K bug (and maybe [Y2038](https://en.wikipedia.org/wiki/Year_2038_problem))<sup>🔗</sup>.
-Contemporary languages can support a vast range of past and future dates<sup>📆</sup>, but badly organize them (ININTUINITIVE and error-prone).
+Contemporary languages can support a vast range of past and future dates<sup>📆</sup>, but badly organize them (not intuitive and error-prone).
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>🔬</sup> <sub>Unless you need accuracy close to [physics on steroids](https://www.nobelprize.org/prizes/physics/2023/summary/).<sup>🔗</sup></sub>\
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>📆</sup> <sub>Astonishly surrending to Java  C# `DateTime`supports only Common Era. Though there are [`Calendar`](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendar) classes to limited rescue.</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>📆</sup> <sub>C# `DateTime`, astonishingly giving way to Java, supports only Common Era. Though there are [`Calendar`](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendar) classes to restraint rescue.</sub>
 
 ## Framework - Theses
        
