@@ -7,8 +7,8 @@
     <p>The metaphor of code as <mark>cement</mark> was applied to underline <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/QA/README+/code-quality.md">code quality</a>.
      Then design activities can be <mark>formworks</mark> of the concrete.
      And coding rules, guidelines, and frames can be seen as <mark>reinforcment</mark>.</p>
-    ___________________<br />
-    &nbsp;&nbsp;&nbsp;&nbsp;<sub>Some parallelism more in <a href="https://github.com/Kyriosity/read-write/blob/main/README%2B/pencraft/README%2B/essays/README%2B/SW_architect-aTake.md">Arhictecture and Architects</a></sub>
+    &nbsp;&nbsp;&nbsp;___________________<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sub>More parallels and metaphors in <a href="https://github.com/Kyriosity/read-write/blob/main/README%2B/pencraft/README%2B/essays/README%2B/SW_architect-aTake.md">Arhictecture and Architects</a></sub>
 <br /><br />
 <p>The space between architectural/design decisions and implementation unties programming hands to code a feature in multiple variations (the same as a tongue can describe the same thing in different forms and ways). </p>
 <p>Let alone syntax preferences, which selection begins from the very first letter: capitalize, underscore, or not.</p>
