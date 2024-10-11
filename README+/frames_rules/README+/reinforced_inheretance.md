@@ -1,21 +1,54 @@
-# Reinforced inheritance or Rods of contour
+# Vertical rebars - Reinforced inheritance or logic flow
+
+<table><tr></tr><tr><td>☝️</td><td>
+  This frame isn't a rule of thumb but a proposal for our consideration in particular circumstances
+</td></tr></table>
 
 <table><tr valign="top">
 <td width="40%"><picture><img src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/photo/misc/rebar_closeup.jpg" alt="&nbsp;rebar closeup" title="&nbsp;Image credit: Wiki Commons&#013;&#010;(for illustration purposes only)" /></picture></td><td>
-  THE WAYS TO REINFORCE
+ <p><ins>&nbsp;Look at the following approach:&nbsp;</ins></p>
+  <ol>
+  <li><code>Public</code> methods are non-<code>abstract</code> and limited to the <b>logic flow</b> not delving into implementation details.<br />(Call operations, branch, get and pass values, handle and raise exceptions)</li>
+  <li><b>Implementation</b> is delegated to non-public (<code>private</code>, <code>protected</code>, <code>internal</code>) methods, which these public "dispatchers" call.</li>
+  <li><code>Public</code> methods are "<b>sealed</b>" (non-virtual, not to override).</li>
+  <li>Non-public implementation methods can be <b>virtual</b> (get overridden).</li>
+  <li><ins>Optional:</ins> implementation methods do not interact with each other.</li>
+</ol>
+  <p>Derived classes will have to follow the "armature".</p>
+  <p dir="rtl"><b>voilà</b></p>
 </td>
 </tr></table>
 
-OR - Do NOT override public methods.
+```csharp
+public class Sample {
+    public Main() {
+      Guard();
+      if (PredicateA())
+          var a = DoA();
+          DoNext(a);
+      try {
+      }
+      catch() {
+          /// 
+      }
+    }
+}
+```
 
-Non-virtual public with main logic only matching the interface, private or virtual protected implementation calls. 
+Besides discipline, order, and readability this frame makes classes friendly to functional parametrization (that's irrelevant to inheritance):
 
-🚧🚧🚧🚧 DRAFT 🚧🚧🚧🚧🚧    
++ parametrizing object with subfunctions;
++ dynamic programming of sub-calls;
++ casting between objects;
 
+**What about properties?** Treat their getters and setters as `public` methods.
 
-PART 2. INJECTION of FUNCS
+## Contraindications
 
+It will be a surplus for simple `classes` or short methods.
 
-PART 3. DYNO Code
+The logic of implementation may be too ornate for straight frames.
+
+It's not friendly to the functional approach to implementation.
 
 🔚
