@@ -18,6 +18,9 @@
 
 + [**Frames**, **rules**, guidelines](README+/frames_rules)
 
++ [**Patterns** realization](README+/patterns)\
+|- ⬅️&thinsp;[read-write](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/design/patterns)
+
 + [**Design decisions**](README+/decisions)\
 |- [Intercom](README+/decisions/README+/intercom)\
 |--- [Errors and exceptions](README+/decisions/README+/intercom/README+/errors)\
