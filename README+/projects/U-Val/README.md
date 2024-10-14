@@ -8,16 +8,17 @@
 <div dir="rtl">?What gauges&nbsp;-</div>
 <p>&nbsp;</p>
 
- You may find the folklore right above dull but not pointless. Math deals with _abstract numbers_<sup>🔣</sup>, computers operate on pure digits but not developers and users.  
+ You may find the folklore right above dull but not pointless. Math deals with _abstract numbers_<sup>🔣</sup>, computers operate on pure digits but not developers and users. 
+ The "inputs" and "outputs" of software anchor to the material world, where numbers can be <span title="&nbsp;">_concrete_</span> or _denominated_.<sup>🔣</sup> 
  
- The inputs and outputs of applications anchor to the material world, where even _concrete values_<sup>🔣</sup> may be ambiguous: 
+ may be ambiguous: 
 
 <details>
-<summary>&nbsp;<ins>A child's age of <code>7</code> can be months or years&nbsp;</ins><b> .&nbsp;.&nbsp;.</b></summary>
+<summary>&nbsp;<ins>&nbsp;Temperature of <code>36.6</code> looks familiar in <i>Kelvin</i> for liquid gases and in <i>Celsius</i> - for medicine</ins><b> .&nbsp;.&nbsp;.</b></summary>
             
 - An altitude on EU domestic flights is measured in _feet_ while variometers may show _meters_.
-- Temperature of `36.6` looks native in _Kelvin_ for liquid gases and in _Celsius_ - for medicine.
 - A close approach of Earth to Mars is ca. `33'900'000` _miles_ but seems credible in _kilometers_ and _nmi_.
+- A child's age of `7` can mean months and years.
 - `Jack` can be family, given (not only on birth), and branded name.
 - `$1'000` or `1'000€` have not only varying exchange divisions over the years, but differing purchase abilities for essential goods, 1GB of DRAM, or gold ounce&nbsp;**. . .**\
 \___________
