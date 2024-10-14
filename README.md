@@ -16,7 +16,7 @@
 |- 🔄 [**Undo/Redo** extension](README+/projects/Rvrs) 🚧\
 |- Variant builders
 
-+ [**Frames**, **rules**, guidelines](README+/frames_rules)
++ [**Frames**, **rules**, guidelines](README+/frames)
 
 + [**Patterns** realization](README+/patterns)\
 |- ⬅️&thinsp;[read-write](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/design/patterns)
