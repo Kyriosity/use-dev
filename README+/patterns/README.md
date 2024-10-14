@@ -1,1 +1,3 @@
-# Code patterns
+# Code patterns & Techniques
+
+🔚
