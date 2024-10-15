@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net9.0-windows8.0</TargetFramework>
-	  <LangVersion>preview</LangVersion>
+	  <LangVersion>13</LangVersion>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <LangVersion>preview</LangVersion>
