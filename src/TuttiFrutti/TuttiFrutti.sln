@@ -151,7 +151,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbcModelsTests", "AbcModels
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionsTests", "ExtensionsTests\ExtensionsTests.csproj", "{18642C5B-4415-4DC9-B5F7-3A46EC249E8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClayTest", "ClayTest\ClayTest.csproj", "{3B532601-80B9-47C2-952A-BFB8842D29AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClayTest", "ClayTest\ClayTest.csproj", "{3B532601-80B9-47C2-952A-BFB8842D29AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
