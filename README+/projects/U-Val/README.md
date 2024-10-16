@@ -8,8 +8,12 @@
 <div dir="rtl">?What gauges&nbsp;-</div>
 <p>&nbsp;</p>
 
- You may find the folklore right above dull but not pointless. Math deals with _abstract numbers_<sup>🔣</sup>, computers operate on pure digits but not developers and users. 
- The "inputs" and "outputs" of software anchor to the material world, where numbers can be <span title="&nbsp;">_concrete_</span> or _denominated_.<sup>🔣</sup> 
+ You may find the folklore right above dull but not pointless. Math deals with <span title="&nbsp;numerus numerans"><ins><code>abstract numbers</code></ins></span>, computers operate on pure digits but not developers and users. 
+ The "inputs" and "outputs" of software anchor to the material world, where numbers can be <span title="&nbsp;">_concrete_</span> or _measured_.<sup>🔣</sup> 
+
+The latter is often used with SUBJECT of MEAS (when the unit is CLEAR FROM CONTEXT) but this may lead confusion.
+
+_denominated_
  
  may be ambiguous: 
 
@@ -25,11 +29,15 @@
 
 </details>
 
+In life, the unit will be clear from context or UTOCHNENIE, in software you can't clarify.
+
+What is CLARIFICATION in casual COMMU, can be a disaster in TECH.
+
 Not _denominated values_<sup>🔣</sup> in applications may rely on context or imply a single system of categorization (e.g. SI for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>🔣</sup> <sub>These are formal definitions, we will rely on. Aka _numerus numerans_, _numerus numeratus_, and _numerus denominatus_. correspondingly</sub>
 
- Univocal coding like `const Temperature_AbsZero_Kelvin = 0.00` is old-fashioned and ugly to the object-oriented eye. As a picky pro you'd PREFER IT TO THE SYNTAX that our U-VAL-EMBLEM renders.
+ Univocal coding like `const Temperature_AbsZero_Kelvin = 0.00` is old-fashioned and ugly to the object-oriented eye. As a picky pro, you'd PREFER IT TO THE SYNTAX that our U-VAL-EMBLEM renders.
 
 ## Case DEMO
 
@@ -93,4 +101,4 @@ This [shabby meme](https://github.com/Kyriosity/read-write/blob/main/readme%2B/p
  
 You must already know the right conclusion: only for common-zero factored units.
 
-
+🔚 ... but 📁&thinsp;README+
