@@ -2,42 +2,49 @@
             ... REMOVE the LABEL when RELEASED ...
 # Multifaceted Value :diamond_shape_with_a_dot_inside: (**U-Val**)
 
-<div dir="rtl">?Gauges&nbsp;-</div>
-<div dir="rtl">!300&nbsp;-</div>
-<div dir="rtl">?What 300&nbsp;-</div>
-<div dir="rtl">?What gauges&nbsp;-</div>
-<p>&nbsp;</p>
+<p dir="rtl">?Gauges&nbsp;-<br />!<b>300</b>&nbsp;-<br />
+?What 300&nbsp;-<br />?What gauges&nbsp;-</p>
 
- You may find the folklore right above dull but not pointless. Math deals with <span title="&nbsp;numerus numerans"><ins><code>abstract numbers</code></ins></span>, computers operate on pure digits but not developers and users. 
- The "inputs" and "outputs" of software anchor to the material world, where numbers can be <span title="&nbsp;">_concrete_</span> or _measured_.<sup>🔣</sup> 
-
-The latter is often used with SUBJECT of MEAS (when the unit is CLEAR FROM CONTEXT) but this may lead confusion.
-
-_denominated_
+ You may find the folklore right above dull but not pointless. Math deals with <ins>abstract numbers</ins><sup>_numerus numerans</sup>, computers operate on pure digits but not software developers and users.
+ The "inputs" and "outputs" of software anchor to the material world, where numbers can be <ins>concrete</ins> (_numerus numeratus_) or <ins>denominated</ins> (_numerus denominatus_).
  
- may be ambiguous: 
+Communication (verbal, documents, and programs) more than often omits ENUMs, denominators, or units, which the title and context, or adopted system of measurements (say, SI) imply:
+
++ one apple,
++ temperature `36.6` OR FAHRENHEIT //
++ child age `7`
++ Your weekly payment will be `1'000` dollars [WHICH] use OF $$$
+
+
+DECO may apply beyond numbers, for example: NAME
+
+ Hallo, *Jack*
+
+In the worst case default unit/measure may be ambiguous: 
 
 <details>
-<summary>&nbsp;<ins>&nbsp;Temperature of <code>36.6</code> looks familiar in <i>Kelvin</i> for liquid gases and in <i>Celsius</i> - for medicine</ins><b> .&nbsp;.&nbsp;.</b></summary>
+2.7 baseline temperature of outer space,
             
+<summary>&nbsp;<ins>&nbsp;Temperature of <code>36.6</code> looks familiar in <i>Kelvin</i> for liquid gases and in <i>Celsius</i> - for medicine</ins><b> .&nbsp;.&nbsp;.</b></summary>
+
+WHAT MAKES THE MATTER WORSE - interchangeable at the same moment            
 - An altitude on EU domestic flights is measured in _feet_ while variometers may show _meters_.
+
 - A close approach of Earth to Mars is ca. `33'900'000` _miles_ but seems credible in _kilometers_ and _nmi_.
 - A child's age of `7` can mean months and years.
 - `Jack` can be family, given (not only on birth), and branded name.
+
+RUNNING AHEAD:
+Temp dep on pressure
+
 - `$1'000` or `1'000€` have not only varying exchange divisions over the years, but differing purchase abilities for essential goods, 1GB of DRAM, or gold ounce&nbsp;**. . .**\
 \___________
 
 </details>
 
-In life, the unit will be clear from context or UTOCHNENIE, in software you can't clarify.
-
-What is CLARIFICATION in casual COMMU, can be a disaster in TECH.
-
 Not _denominated values_<sup>🔣</sup> in applications may rely on context or imply a single system of categorization (e.g. SI for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters.
 
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>🔣</sup> <sub>These are formal definitions, we will rely on. Aka _numerus numerans_, _numerus numeratus_, and _numerus denominatus_. correspondingly</sub>
-
- Univocal coding like `const Temperature_AbsZero_Kelvin = 0.00` is old-fashioned and ugly to the object-oriented eye. As a picky pro, you'd PREFER IT TO THE SYNTAX that our U-VAL-EMBLEM renders.
+ Univocal coding like `const Temperature_AbsZero_Kelvin = 0.00` is old-fashioned and ugly to the object-oriented eye. As a picky pro you'd PREFER IT TO THE SYNTAX that our U-VAL-EMBLEM renders.
 
 ## Case DEMO
 
@@ -101,4 +108,4 @@ This [shabby meme](https://github.com/Kyriosity/read-write/blob/main/readme%2B/p
  
 You must already know the right conclusion: only for common-zero factored units.
 
-🔚 ... but 📁&thinsp;README+
+
