@@ -5,10 +5,12 @@
 <p dir="rtl">?Gauges&nbsp;-<br />!<b>300</b>&nbsp;-<br />
 ?What 300&nbsp;-<br />?What gauges&nbsp;-</p>
 
- You may find the folklore right above dull but not pointless. Math deals with <ins>abstract numbers</ins><sup>_numerus numerans</sup>, computers operate on pure digits but not software developers and users.
+ You may find the folklore right above dull but not pointless.&nbsp;&mdash; Math deals with <ins>abstract numbers</ins> (_numerus numerans_), computers operate on pure digits but not software developers and users.
  The "inputs" and "outputs" of software anchor to the material world, where numbers can be <ins>concrete</ins> (_numerus numeratus_) or <ins>denominated</ins> (_numerus denominatus_).
  
-Communication (verbal, documents, and programs) more than often omits ENUMs, denominators, or units, which the title and context, or adopted system of measurements (say, SI) imply:
+Verbal, documented, and, **programmatic** communication more than often relies on title and context (as SI system) and omits denominations/units:
+
+And it's deceptive. NEDORAZUMENIA
 
 + one apple,
 + temperature `36.6` OR FAHRENHEIT //
@@ -16,7 +18,7 @@ Communication (verbal, documents, and programs) more than often omits ENUMs, den
 + Your weekly payment will be `1'000` dollars [WHICH] use OF $$$
 
 
-DECO may apply beyond numbers, for example: NAME
+DECO may apply beyond numbers, for example NAME
 
  Hallo, *Jack*
 
