@@ -3,10 +3,10 @@
 + **CLAY**\
 |- Exceptions wrappers: [tests 🧪](src/TuttiFrutti/ExtensionsTests/Exceptions)\
 |- 🗓️ [Chrono ABC](README+/projects/AbcChrono)\
-|= 🌵 [Models](src/TuttiFrutti/AbcModels)\
+|- 🌵 [Models](src/TuttiFrutti/AbcModels)\
 |- [Motley heap](README+/decisions/README+/structs/motley_heap.md): [tests 🧪](src/TuttiFrutti/AbcStructTests/Heaps)\
 |- **WPF**\
-|-- [Bool-Vis. converter](README+/snippets/wpf/bool2viz_improved.md)
+|-- Improved [Bool-Vis. converter](README+/snippets/wpf/bool2viz_improved.md) 📦
 
 + **PARTS**\
 |- <a name="UVal"></a>💠 [**Multifacet value** (U-Val)📃](README+/projects/U-Val), 🧪⌨ 🔢\
