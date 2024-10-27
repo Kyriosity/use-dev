@@ -1,4 +1,4 @@
-# Reversible on .NET - Development book
+# Reversible on .NET &mdash; Development book
 
 ## Some groundstones
 
@@ -26,7 +26,7 @@ interface ICounted<T> { T Value {get; set; }; int Count { get; } }
 
 ```
 
-Next step, is to add Redo
+The next step, is to add Redo
 
 ```csharp
 var subj = UndoRedo.Of({ "rotate 30°", "flop", "fill blue", "UNDO", "fill white", "blur", "contrast +20" });
@@ -50,3 +50,5 @@ interface IIndexed<T> : ICounted<T> { int Index { get; } }
 ## Factories and builders
 
 ## Dynamic composition
+
+🚧 ... TO BE CONTINUED ...
