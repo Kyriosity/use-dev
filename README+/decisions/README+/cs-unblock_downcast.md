@@ -1,4 +1,4 @@
-# C# - Downcasting impedance
+# C# &mdash; Downcasting unblocking
 
 > NOTE: Always draw a base (parent) class in UML **up** to one derived from it, for an explicit view of up- and downcasting.
 
@@ -28,3 +28,5 @@ Model.Fill(book);
 ## Best: yours
 
 Circumstances and your experiences may suggest even a better workaround.
+
+🔚
