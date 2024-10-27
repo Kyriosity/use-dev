@@ -39,39 +39,30 @@ public class SpecificValuesId
         Assert.Ignore("implement on demand");
     }
 
+    [Test]
     public void TUPLE2MOVE() {
         // SEE BELOW -> PLUS OTHER OPs apply like ==
 
-    }
+        int tester = ((int?)1).Value;
+        var res = 1 == ((int?)1).Value;
 
+        var book = new Book { Title = "Birds of America", Id = 1 };
+        var book2 = book with { Id = 2 };
+
+        var obj = book as object;
+
+        var man = new { name = new { first = "John", last = "Smith" } };
+        var spouse = man with { name = new { first = "Helene", last = "Smithg" } };
+    }
 }
 
-public struct Point
+struct Book : IBook
 {
-    public Point(double x, double y) =>
-        (_x, _y, _distance) = (x, y, default);
+    public string Title { get; set; }
 
-    public double X {
-        readonly get => _x;
-        private set => _x = value;
-    }
-    private double _x;
+    public int Id { get; set; }
 
-    public double Y {
-        get => _y;
-        private set => _y = value;
-    }
-    private double _y;
-
-
-    private double? _distance;
-    public double Distance {
-        get {
-            if (!_distance.HasValue)
-                _distance = Math.Sqrt((X * X) + (Y * Y));
-            return _distance.Value;
-        }
-    }
-
-    public void Swap() => (X, Y) = (Y, X);
+    public uint Year { get; set; }
 }
+
+interface IBook { uint Year { get; } }

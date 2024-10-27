@@ -3,7 +3,7 @@ using System.Numerics;
 
 namespace Mk.N_Val.Phys.Temperature.Build;
 
-[Obsolete]
+[Obsolete] // ToDelete: !
 public static class Temperature<F> where F : IFuncStore<In>, new()
 {
     public static ITempEdit<N> Kelvin<N>(N value) where N : INumber<N> => new Temp<N, F> { Kelvin = value };

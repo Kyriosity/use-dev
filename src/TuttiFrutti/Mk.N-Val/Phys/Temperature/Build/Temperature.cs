@@ -6,7 +6,7 @@ using System.Numerics;
 namespace Mk.N_Val.Phys.Temperature.Build;
 
 [Obsolete]
-public static class Temperature
+public static class Temperature // ToDelete: MOVE !
 {
     public static ITempEdit<N> Kelvin<N>(N value) where N : INumber<N> => Temperature<UniDirect>.Kelvin(value);
     public static ITempEdit<N> Celsius<N>(N value) where N : INumber<N> => Temperature<UniDirect>.Celsius(value);
