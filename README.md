@@ -2,7 +2,6 @@
 
 + **CLAY**\
 |- Exceptions wrappers: [tests 🧪](src/TuttiFrutti/ExtensionsTests/Exceptions)\
-|- 🗓️ [Chrono ABC](README+/projects/AbcChrono)\
 |- 🌵 [Models](src/TuttiFrutti/AbcModels)\
 |- [Motley heap](README+/decisions/README+/structs/motley_heap.md): [tests 🧪](src/TuttiFrutti/AbcStructTests/Heaps)\
 |- **WPF**\
@@ -17,7 +16,7 @@
 |- [Intercom](README+/decisions/README+/intercom)\
 |--- [Errors and exceptions](README+/decisions/README+/intercom/README+/errors)\
 |- **Techniques/Patterns**\
-|--- 🎢 [Downcasting impedance](README+/decisions/README+/cs-downcast_impedance.md)\
+|--- 🎢 [Downcasting unblock](README+/decisions/README+/cs-unblock_downcast.md.md)\
 |--- 🎶 [Jagged generic props](README+/decisions/README+/cs-jagged_props.md)\
 |- **WPF / MVVM**\
 |--- 📢 [Notificaton orchestration](README+/decisions/README+/mvvm/mvvm-notification_orchestration.md)\
@@ -27,6 +26,7 @@
 |- Variant builders
 
 + **PARTS**\
+|- 🗓️ [Chrono ABC](README+/projects/AbcChrono)\
 |- <a name="UVal"></a>💠 [**Multifacet value** (U-Val)📃](README+/projects/U-Val), 🧪⌨ 🔢\
 |--- <a>Funcware</a>\
 |----- <a href="src/TuttiFrutti/FuncStore.Convert">Conversion</a>\
