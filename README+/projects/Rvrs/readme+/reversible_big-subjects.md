@@ -1,4 +1,4 @@
-# Keeping undo for big data objects
+# Reversible &mdash; Keeping undo for big data objects
 
 ## Background
 
@@ -25,3 +25,5 @@ TO BE DEVELOPED
 + On-the-fly compression/archiving could be a fast and easy solution.
 + Bits-level hashing.
 + There're must be 3d-parties ready solutions.
+
+🔚
