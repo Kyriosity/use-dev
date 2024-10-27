@@ -8,14 +8,6 @@
 |- **WPF**\
 |-- Improved [Bool-Vis. converter](README+/snippets/wpf/bool2viz_improved.md) 📦
 
-+ **PARTS**\
-|- <a name="UVal"></a>💠 [**Multifacet value** (U-Val)📃](README+/projects/U-Val), 🧪⌨ 🔢\
-|--- <a>Funcware</a>\
-|----- <a href="src/TuttiFrutti/FuncStore.Convert">Conversion</a>\
-|--- Graph\
-|- 🔄 [**Undo/Redo** extension](README+/projects/Rvrs) 🚧\
-|- Variant builders
-
 + [**Frames**, **rules**, guidelines](README+/frames)
 
 + [**Patterns** realization](README+/patterns)\
@@ -31,7 +23,8 @@
 |--- 📢 [Notificaton orchestration](README+/decisions/README+/mvvm/mvvm-notification_orchestration.md)\
 |--- [Model-ViewModel cohesion](README+/decisions/README+/mvvm/mvvm-vmodel_cohesion.md)\
 |- **Templates**\
-|--- [Promise-oriented MVVM](README+/decisions/README+/model_as_tasks.md) 🚧
+|--- [Promise-oriented MVVM](README+/decisions/README+/model_as_tasks.md) 🚧\
+|- Variant builders
 
 + **PARTS**\
 |- <a name="UVal"></a>💠 [**Multifacet value** (U-Val)📃](README+/projects/U-Val), 🧪⌨ 🔢\
@@ -39,7 +32,6 @@
 |----- <a href="src/TuttiFrutti/FuncStore.Convert">Conversion</a>\
 |--- Graph\
 |- 🔄 [**Undo/Redo** extension](README+/projects/Rvrs) 🚧\
-|- Variant builders
 
 + [**Testing**](README+/decisions/README+/testing/)\
 |- [Unit tests - 3D remake](README+/decisions/README+/testing/README+/ut-3D_like_review.md) 🚧\
