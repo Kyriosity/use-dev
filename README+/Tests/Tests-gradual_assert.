@@ -8,8 +8,8 @@ The same for their change. Code works and not.
 
 This is absolutely JUST-D for many if not most cases, but there are other stories with vague and changeable criters:
 
-- Precision of functions.
-- Execution time and other resource consumption.
+- Precision of calculations.
+- Performance (execution time and other resource consumption).
 - Strength of encryption
 
 The same applies to negative results. "Not great and not terrible"
