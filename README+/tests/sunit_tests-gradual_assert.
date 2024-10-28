@@ -1,6 +1,6 @@
 > 🚧... DRAFT ... 🚧
 
-# Testing - Gradual assert
+# Unit tests - Gradual assert
 
 Despite languages and frameworks, we are used to peremptory feedback from tests: ✅&nbsp;XOR&nbsp;❌ (either **success** or **fail**). 
 
