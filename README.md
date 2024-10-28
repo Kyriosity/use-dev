@@ -9,15 +9,15 @@
 
 + [**Frames**, **rules**, guidelines](README+/frames)
 
-+ [**Patterns** realization](README+/patterns)\
-|- ⬅️&thinsp;[read-write](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/design/patterns)
++ [**Techniques/Patterns** realization](README+/techniques)\
+|- ⬅️&thinsp;About [patterns](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/design/patterns)\
+|- Injected converters\
+|- 🎢 [Downcasting unblock](README+/techniques/README+/cs-unblock_downcast.md)\
+|- 🎶 [Jagged generic props](README+/techniques/README+/cs-jagged_props.md)
 
 + [**Design decisions**](README+/decisions)\
 |- [Intercom](README+/decisions/README+/intercom)\
 |--- [Errors and exceptions](README+/decisions/README+/intercom/README+/errors)\
-|- **Techniques/Patterns**\
-|--- 🎢 [Downcasting unblock](README+/decisions/README+/cs-unblock_downcast.md.md)\
-|--- 🎶 [Jagged generic props](README+/decisions/README+/cs-jagged_props.md)\
 |- **WPF / MVVM**\
 |--- 📢 [Notificaton orchestration](README+/decisions/README+/mvvm/mvvm-notification_orchestration.md)\
 |--- [Model-ViewModel cohesion](README+/decisions/README+/mvvm/mvvm-vmodel_cohesion.md)\
@@ -31,8 +31,8 @@
 |--- <a>Funcware</a>\
 |----- <a href="src/TuttiFrutti/FuncStore.Convert">Conversion</a>\
 |--- Graph\
-|- 🔄 [**Undo/Redo** extension](README+/projects/Rvrs) 🚧\
+|- 🔄 [**Undo/Redo** extension](README+/projects/Rvrs) 🚧
 
-+ [**Testing**](README+/decisions/README+/testing/)\
-|- [Unit tests - 3D remake](README+/decisions/README+/testing/README+/ut-3D_like_review.md) 🚧\
-|- [Gradual assert](README+/decisions/README+/testing/README+/ut-gradual_assert.md)
++ [**Testing**](README+/tests/)\
+|- [Unit tests - 3D remake](README+/tests/README+/unit_test-3D_remake.md) 🚧\
+|- [Gradual assert](README+/tests/README+/unit_test-gradual_assert.md)
