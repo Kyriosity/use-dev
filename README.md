@@ -9,9 +9,8 @@
 
 + [**Frames**, **rules**, guidelines](README+/frames)
 
-+ [**Techniques/Patterns** realization](README+/techniques)\
-|- ⬅️&thinsp;About [patterns](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/design/patterns)\
-|- Injected converters\
++ [**Patterns thru Techniques**](README+/techniques)\
+|- [Transformation](README+/techniques/xform)\
 |- 🎢 [Downcasting unblock](README+/techniques/README+/cs-unblock_downcast.md)\
 |- 🎶 [Jagged generic props](README+/techniques/README+/cs-jagged_props.md)
 
