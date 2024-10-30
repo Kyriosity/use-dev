@@ -53,7 +53,7 @@ Furthermore, there can be more ViewModels: *BookViewer* for display, *BookAbstra
 ### Downcasting workaround
 
 An issue of the inheritance is that C# prevents pure downcasting, but there are workarounds possible:\
-|- [Downcast impedance](../cs-downcast_impedance.md)
+|- [Downcast unblock](../../../techniques/README+/cs-unblock_downcast.md)
 
 ### What about base ViewModel
 
@@ -72,6 +72,6 @@ Inheriting miscellaneous ViewModels from the root Model for different needs may 
 ## Alternatives
 
 + 3d party frameworks and libraries provide their own _prêt-à-porter_ MVVM suites. 
-+ You may select an alternative or your own design pattern: more suitable and advanced.
++ You may select another, more suitable and advanced option or your own design pattern.
 
 🔚
