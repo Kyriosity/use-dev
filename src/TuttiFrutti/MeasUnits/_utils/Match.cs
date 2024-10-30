@@ -2,7 +2,6 @@
 using MeasUnits.Names.Si;
 
 namespace MeasUnits.Utils;
-
 public static class Match
 {
     private static readonly Heap.ITryOps<string> _cache = Bag.TryOnly.New();

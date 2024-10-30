@@ -1,7 +1,4 @@
-﻿using AbcExt.Errors.Sys;
-using System.Numerics;
-
-namespace UVal.Test_Learn;
+﻿namespace UVal.Test_Learn;
 public static class UVal
 {
     public static IOpenMultifacet<T, U> Of<T, U>(T value, U unit) where U : Enum =>

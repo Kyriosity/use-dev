@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-	  <LangVersion>preview</LangVersion>
     <RootNamespace>UVal.Test_Learn</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -28,7 +27,6 @@
   <ItemGroup>
     <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
     <ProjectReference Include="..\MeasUnits\MeasUnits.csproj" />
-    <ProjectReference Include="..\TD.N-Val\TestData.N-Val.csproj" />
   </ItemGroup>
 
 </Project>

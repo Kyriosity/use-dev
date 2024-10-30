@@ -1,8 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
-	  <LangVersion>preview</LangVersion>
     <RootNamespace>Abc.Test_Learn</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -10,7 +9,6 @@
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
     <AppDesignerFolder>1-Prop</AppDesignerFolder>
-    <LangVersion>preview</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>

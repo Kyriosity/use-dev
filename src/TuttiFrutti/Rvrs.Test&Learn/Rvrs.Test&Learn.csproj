@@ -5,10 +5,8 @@
     <RootNamespace>Rvrs.Test_Learn</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
-    <LangVersion>preview</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>

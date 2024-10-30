@@ -93,11 +93,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "💠_Test🦉Learn", "💠_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Multifacet.Test&Learn", "UVal.Test&Learn\Multifacet.Test&Learn.csproj", "{34FEE0EC-8D0E-4ECA-B494-250A5B26B71D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Convert", "Convert", "{C28C0DE7-D766-455D-BFA5-C2708D6B181D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Convers", "Convers", "{C28C0DE7-D766-455D-BFA5-C2708D6B181D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuncStore.Convert.Tests", "FuncStore.Convert.Tests\FuncStore.Convert.Tests.csproj", "{D12E44EF-7E4E-4887-A94A-86131E2A9972}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuncStore.Convers.Tests", "FuncStore.Convert.Tests\FuncStore.Convers.Tests.csproj", "{D12E44EF-7E4E-4887-A94A-86131E2A9972}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuncStore.Conversion", "FuncStore.Convert\FuncStore.Conversion.csproj", "{B27842D6-6018-4C39-BEF5-E221FBC3D98E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuncStore.Convers", "FuncStore.Convert\FuncStore.Convers.csproj", "{B27842D6-6018-4C39-BEF5-E221FBC3D98E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "⌨️Clay", "⌨️Clay", "{4BE97A0C-F948-49F0-A073-C59CFB559CA6}"
 EndProject

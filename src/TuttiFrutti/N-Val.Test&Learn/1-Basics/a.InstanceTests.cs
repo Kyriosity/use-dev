@@ -1,5 +1,4 @@
 ﻿using Mk.N_Val.Phys.Temperature.Build;
-using System.Numerics;
 using TestData.N_Val.Temperatures;
 
 namespace N_Val.Test_Learn.Declaration;

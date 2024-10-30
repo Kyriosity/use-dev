@@ -2,7 +2,6 @@
 using Mk.N_Val.Phys.Temperature.Const;
 using N_Val.Phys.Temperature;
 using N_Val.Test_Learn.Setup;
-using System.Numerics;
 
 namespace N_Val.Test_Learn.Basics;
 
