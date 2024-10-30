@@ -1,7 +1,7 @@
 ﻿using AbcExt.DataOps;
 using MeasData.Setup.Formats;
 
-namespace FuncStore.Conversion.Tests.Setup.Proc;
+namespace FuncStore.Convers.Tests.Setup.Proc;
 static class DataRow
 {
     internal static ObjArrays Normalize<N, TUnit>(IEnumerable<Subject<N, TUnit>> items) where N : INumber<N> =>

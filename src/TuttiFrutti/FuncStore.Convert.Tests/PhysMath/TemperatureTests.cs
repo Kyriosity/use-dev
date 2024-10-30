@@ -1,10 +1,10 @@
 ﻿using MeasUnits.Phys.Temperature.KCF;
 using Constants = MeasData.Temperature.Constants.Constants;
-using FuncStores = FuncStore.Conversion.Temperature;
+using FuncStores = FuncStore.Convers.Temperature;
 using Nature = MeasData.Temperature.Nature.Nature;
 using PhaseChange = MeasData.Temperature.PhaseChange.PhaseChange;
 
-namespace FuncStore.Conversion.Tests.RatioScale;
+namespace FuncStore.Convers.Tests.PhysMath;
 
 [TestBy<FuncStores.Basic<In>>]
 

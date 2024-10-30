@@ -1,6 +1,6 @@
 ﻿using MeasUnits.Phys.Temperature;
 
-namespace FuncStore.Conversion.Temperature;
+namespace FuncStore.Convers.Temperature;
 public class Basic<U> : IFuncStore<U> where U : Enum
 {
     public Func<N, N> For<N>(U from, U to) where N : INumber<N> {

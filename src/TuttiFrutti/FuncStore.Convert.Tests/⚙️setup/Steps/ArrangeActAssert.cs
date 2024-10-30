@@ -1,6 +1,6 @@
 ﻿using AbcExt.Glyphs;
 
-namespace FuncStore.Conversion.Tests.Setup.Steps;
+namespace FuncStore.Convers.Tests.Setup.Steps;
 public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit>
      where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible
 {

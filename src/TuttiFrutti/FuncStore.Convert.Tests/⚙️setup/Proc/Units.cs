@@ -2,7 +2,7 @@
 using MeasData.Setup.Formats;
 using MeasUnits.Utils;
 
-namespace FuncStore.Conversion.Tests.Setup.Proc;
+namespace FuncStore.Convers.Tests.Setup.Proc;
 static class Units<TUnit> where TUnit : Enum
 {
     internal static IEnumerable<Subject<N, TUnit>> SwapParseable<N>(IEnumerable<Subject<N, string>> items) where N : INumber<N> {

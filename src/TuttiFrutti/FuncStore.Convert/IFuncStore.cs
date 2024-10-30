@@ -1,5 +1,4 @@
-﻿
-namespace FuncStore.Conversion;
+﻿namespace FuncStore.Convers;
 
 public interface IFuncStore;
 

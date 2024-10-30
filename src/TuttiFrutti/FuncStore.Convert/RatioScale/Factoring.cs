@@ -1,6 +1,6 @@
 ﻿using AbcExt.Metadata.Ratio;
 
-namespace FuncStore.Conversion.RatioScale;
+namespace FuncStore.Convers.RatioScale;
 public class Factoring<U> : IFuncStore<U> where U : Enum, IConvertible
 {
     public Factoring() {

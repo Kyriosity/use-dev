@@ -1,8 +1,8 @@
-using FuncStore.Conversion.RatioScale;
+using FuncStore.Convers.RatioScale;
 using MeasData.Calibration.Metric;
 using Metric = MeasUnits.Prefixes.Metric;
 
-namespace FuncStore.Conversion.Tests.RatioScale;
+namespace FuncStore.Convers.Tests.PhysMath;
 
 [TestBy<Factoring<Metric.In>>()]
 [TestBy<Exponentiation<Metric.Exponent.In>>()]

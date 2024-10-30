@@ -1,10 +1,10 @@
-﻿using FuncStore.Conversion.RatioScale;
+﻿using FuncStore.Convers.RatioScale;
 using MeasData.Length.Earth.Distances;
 using MeasData.Length.Earth.Elevations;
 using In = MeasUnits.Phys.Distance.Length.Cross.SI_Customary.In;
 using Metric = MeasUnits.Prefixes.Metric;
 
-namespace FuncStore.Conversion.Tests.PhysMath.Dims;
+namespace FuncStore.Convers.Tests.PhysMath.Dims;
 
 [TestBy<Factoring<Metric.In>>()]
 [TestBy<Exponentiation<Metric.Exponent.In>>()]

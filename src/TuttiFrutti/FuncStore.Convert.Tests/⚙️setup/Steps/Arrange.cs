@@ -1,10 +1,10 @@
-﻿using FuncStore.Conversion.Tests.Setup.Proc;
+﻿using FuncStore.Convers.Tests.Setup.Proc;
 using MeasData.Setup.Extensions;
 using MeasData.Setup.Metadata;
 using System.Reflection;
 using RawData = (string name, object value, double? delta);
 
-namespace FuncStore.Conversion.Tests.Setup.Steps;
+namespace FuncStore.Convers.Tests.Setup.Steps;
 
 [TestFixture]
 public abstract class Arrange<TUnit> where TUnit : Enum

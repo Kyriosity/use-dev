@@ -1,8 +1,8 @@
-﻿using FuncStore.Conversion.RatioScale;
+﻿using FuncStore.Convers.RatioScale;
 using MeasData.Digital;
 using Bin = MeasUnits.Prefixes.Binary;
 
-namespace FuncStore.Conversion.Tests.Digital;
+namespace FuncStore.Convers.Tests.Digital;
 
 [TestBy<Factoring<Bin.In>>]
 [TestBy<Exponentiation<Bin.Exponent.In>>]
