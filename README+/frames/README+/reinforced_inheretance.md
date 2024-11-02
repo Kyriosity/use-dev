@@ -1,7 +1,7 @@
 # Vertical rebars - Reinforced inheritance or logic flow
 
 <table><tr></tr><tr><td>☝️</td><td>
-  This frame isn't a rule of thumb but a proposal for our consideration in particular circumstances
+  This frame isn't a rule of thumb but a proposal for our consideration in matching circumstances.
 </td></tr></table>
 
 <table><tr valign="top">
@@ -14,8 +14,8 @@
   <li>Non-public implementation methods can be <b>virtual</b> (get overridden).</li>
   <li><ins>Optional:</ins> implementation methods do not interact with each other.</li>
 </ol>
-  <p>Derived classes will have to follow the "armature".</p>
-  <p dir="rtl"><b>voilà</b></p>
+  <p><b>Derived classes will have to follow the "armature".</b></p>
+  <p dir="rtl"><mark>.You may notice a touch of functional programming in this approach</mark></p>
 </td>
 </tr></table>
 
