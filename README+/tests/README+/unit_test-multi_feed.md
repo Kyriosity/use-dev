@@ -4,7 +4,6 @@
 
 Developers, testers and management comprehend unit tests as essential and integral as the idea, and uncomplicated and routine as implementation.
 
-
 Just take an entity (unit) of an application as `class` and cover it with proofs.
 
 This approach is OVER and clutches testing projects with space with UNPACKED.
@@ -18,9 +17,10 @@ MeaninglessMethodName()
 }
 ```
 
-Stubdd
 
-Not only value but % is relative.
+An [example test](../../../src/TuttiFrutti/FuncStore.Convert.Tests/PhysMath/Dims/LengthsTests.cs) with two feeds
+
+Stubdd
 
 Let's put 3D glasses on 
 3D exploded view
