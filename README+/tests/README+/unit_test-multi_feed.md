@@ -2,9 +2,16 @@
 
 # Test automation &mdash; Unit tests with multi-feed
 
-Developers, testers and management comprehend unit tests as essential and integral as the idea, and uncomplicated and routine as implementation.
+The usual approach to unit tests is to take a piece of functionality and write a proof routine over it.
 
-Just take an entity (unit) of an application as `class` and cover it with proofs.
+Just take an entity (unit) of an application as a `class` or `function` and cover it with proofs.
+
+```mermaid
+graph TD
+    Arguments -->|One| UT[Arange/Act/Assert]
+    Functions -->|Two| UT
+    Services -->|Two| UT
+```
 
 This approach is OVER and clutches testing projects with space with UNPACKED.
 
@@ -16,7 +23,6 @@ MeaninglessMethodName()
     ASSERT(result); // fail or success
 }
 ```
-
 
 An [example test](../../../src/TuttiFrutti/FuncStore.Convert.Tests/PhysMath/Dims/LengthsTests.cs) with two feeds
 
