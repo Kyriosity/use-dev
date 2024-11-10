@@ -20,7 +20,7 @@ public class Tuples
 public class UsingDelegate<F> where F : Delegate
 {
     public void TestDelGen() {
-        var a = new F();
+        //var a = new F();
 
     }
 }
