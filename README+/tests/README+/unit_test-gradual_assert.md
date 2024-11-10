@@ -1,8 +1,10 @@
 # Unit tests &mdash; Gradual assert
 
-Despite our preferences for programming languages and frameworks, we are used to categorical feedback from tests:\
-either 🟢**success** or 🔴**fail**. 
-
+<table><tr valign="top"><td width="40%"><picture><img alt="&nbsp;Passed🟩: 388, failed🟥: 165. Not great, not terrible." 
+ src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/memes/Tests-NotGreatNotTerrible.jpg" /></picture>
+ </td><td>
+<p>Despite our preferences for programming languages and frameworks, we are used to categorical feedback from tests:<br/>
+either 🟢<b>success</b> or 🔴<b>fail</b>.</p>
 The majority of proofs don't ask for more and many developers may never need anything else but there are other stories with fuzzy and changeable criteria:
 
 * precision of calculations/deviations,
@@ -18,7 +20,8 @@ Another aspect is a negative result. The failure on a specific return value can 
 * timeout,
 * irrelevant error (e.g. connection, drive, etc.).
  
-Here empty methods and tests for expected exceptions look to be the only unequivocal.
+<p>Here empty methods and tests for expected exceptions look to be the only unequivocal.</p>
+</td></tr></table>
 
 ## Issue
 
@@ -32,4 +35,4 @@ There are no magic solutions to adjust the frameworks. The following options can
 + printing relative results with available symbols\
 for example [Funcware tests](../../../src/TuttiFrutti/FuncStore.Convert.Tests/)
 
-🔚
+🔚 ... <sub>Image credit: screenshot of Visual Studio; screenshot of HBO mini-series, 2019</sub>
