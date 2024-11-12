@@ -1,8 +1,8 @@
-> 🚧... DRAFT ... 🚧
-
 # Test automation &mdash; Unit tests with multi-feed
 
-The usual approach to unit tests is to take a piece of functionality and write a proof routine over it.
+Either it's [TDD](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests/asDrive)<sup>⬅️</sup> or proof of the existing code, the conventional approach to tests is to take a piece of functionality and write a proof routine for a particular run.
+
+`Asserts: Root.Square(4) == 2`
 
 Just take an entity (unit) of an application as a `class` or `function` and cover it with proofs.
 
@@ -24,7 +24,7 @@ MeaninglessMethodName()
 }
 ```
 
-An [example test](../../../src/TuttiFrutti/FuncStore.Convert.Tests/PhysMath/Dims/LengthsTests.cs) with two feeds
+An [example test](../../../src/TuttiFrutti/FuncStore.Convers.Tests/PhysMath/Dims/LengthsTests.cs) with two feeds
 
 Stubdd
 
