@@ -1,7 +1,4 @@
 ﻿namespace AbcExt.Metadata.Wording;
 
 [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
-public class AliasAttribute : UniqueNamesAttribute
-{
-    public AliasAttribute(string name, params string[] other) : base(name, other) { }
-}
+public class AliasAttribute(string name, params string[] other) : UniqueNamesAttribute(name, other);

@@ -1,6 +1,4 @@
-﻿using AbcExt.Errors.Sys;
-
-namespace AbcExt.DataOps;
+﻿namespace AbcExt.DataOps;
 public static class Combi
 {
     public static IEnumerable<T[]> Pair<T>(IEnumerable<T> source) {

@@ -4,7 +4,6 @@ public interface IConfidence<N> where N : INumber<N>
     N Delta { get; }
 }
 
-
 public interface IConfidence_Init<N> : IConfidence<N>
     where N : INumber<N>
 {
