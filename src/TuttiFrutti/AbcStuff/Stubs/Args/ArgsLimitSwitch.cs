@@ -1,5 +1,4 @@
-﻿namespace AbcExt.Stubs.Args;
-
+﻿namespace AbcStuff.Stubs.Args;
 public readonly struct YOU_REACHED_ARGs_LIMIT___METAs_NEXT
 {
     public YOU_REACHED_ARGs_LIMIT___METAs_NEXT() {

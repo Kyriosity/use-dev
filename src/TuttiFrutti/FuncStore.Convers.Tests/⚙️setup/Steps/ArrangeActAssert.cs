@@ -1,4 +1,4 @@
-﻿using AbcExt.Glyphs;
+﻿using AbcStuff.Glyphs;
 
 namespace FuncStore.Convers.Tests.Setup.Steps;
 public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit>

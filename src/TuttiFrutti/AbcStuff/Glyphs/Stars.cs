@@ -1,4 +1,4 @@
-﻿namespace AbcExt.Glyphs;
+﻿namespace AbcStuff.Glyphs;
 public static class Stars
 {
     // wikipedia.org/wiki/Star_(glyph)

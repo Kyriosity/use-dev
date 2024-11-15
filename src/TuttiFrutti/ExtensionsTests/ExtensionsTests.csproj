@@ -25,6 +25,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AbcChrono\AbcChrono.csproj" />
     <ProjectReference Include="..\AbcModels\AbcModels.csproj" />
+    <ProjectReference Include="..\AbcStuff\AbcStuff.csproj" />
   </ItemGroup>
 
 </Project>

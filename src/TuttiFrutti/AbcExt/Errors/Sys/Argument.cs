@@ -1,6 +1,4 @@
-﻿using AbcExt.Stubs.Args;
-
-namespace AbcExt.Errors.Sys;
+﻿namespace AbcExt.Errors.Sys;
 public class Argument : MultiparameterConditional<ArgumentException>
 {
     private Argument() { /* to prevent direct instantiation */ }

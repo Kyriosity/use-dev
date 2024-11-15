@@ -1,4 +1,4 @@
-﻿namespace AbcExt.Glyphs;
+﻿namespace AbcStuff.Glyphs;
 
 // wikipedia.org/wiki/Dingbat
 public static class Arrows

@@ -1,4 +1,4 @@
-﻿namespace AbcExt.Glyphs;
+﻿namespace AbcStuff.Glyphs;
 public static class Marks
 {
     public const char Question = '\u2753';

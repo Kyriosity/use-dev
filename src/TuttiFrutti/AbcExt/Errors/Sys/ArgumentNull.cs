@@ -1,6 +1,4 @@
-﻿using AbcExt.Stubs.Args;
-
-namespace AbcExt.Errors.Sys;
+﻿namespace AbcExt.Errors.Sys;
 
 public class ArgumentNull : MultiparameterConditional<ArgumentNullException>
 {

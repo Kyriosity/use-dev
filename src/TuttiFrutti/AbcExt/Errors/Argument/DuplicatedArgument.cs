@@ -1,6 +1,4 @@
-﻿using AbcExt.Errors.Sys;
-using AbcExt.Errors.Utils;
-using AbcExt.Stubs.Args;
+﻿using AbcExt.Errors.Utils;
 
 namespace AbcExt.Errors.Argument;
 public class DuplicatedArgument(string message) : Exception<DuplicatedArgument>(message)

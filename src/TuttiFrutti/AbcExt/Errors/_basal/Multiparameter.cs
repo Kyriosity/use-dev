@@ -1,6 +1,4 @@
-﻿using AbcExt.Stubs.Args;
-
-namespace AbcExt.Errors.Basal;
+﻿namespace AbcExt.Errors.Basal;
 public abstract class Multiparameter<Exc>(string? message = "", Exception? inner = null)
     : Exception<Exc>(message, inner) where Exc : Exception
 {

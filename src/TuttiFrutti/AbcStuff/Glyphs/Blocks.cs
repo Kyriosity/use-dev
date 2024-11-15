@@ -1,4 +1,4 @@
-﻿namespace AbcExt.Glyphs;
+﻿namespace AbcStuff.Glyphs;
 public static class Blocks // : wikipedia.org/wiki/Block_Elements
 {
     public const char Full = '\u2588';

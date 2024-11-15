@@ -1,4 +1,4 @@
-﻿namespace AbcExt.Glyphs;
+﻿namespace AbcStuff.Glyphs;
 public static class Circles
 {
     // wikipedia.org/wiki/Circle_symbol#Unicode

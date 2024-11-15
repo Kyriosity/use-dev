@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
+    <ProjectReference Include="..\AbcStuff\AbcStuff.csproj" />
     <ProjectReference Include="..\FuncStore.Convers\FuncStore.Convers.csproj" />
     <ProjectReference Include="..\MeasData\MeasData.csproj" />
     <ProjectReference Include="..\MeasOrg\MeasOrg.csproj" />

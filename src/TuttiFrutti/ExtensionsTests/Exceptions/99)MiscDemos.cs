@@ -1,4 +1,4 @@
-﻿using AbcExt.Stubs.Args;
+﻿using AbcStuff.Stubs.Args;
 using System.Runtime.CompilerServices;
 
 namespace ExtensionsTests.Exceptions;
