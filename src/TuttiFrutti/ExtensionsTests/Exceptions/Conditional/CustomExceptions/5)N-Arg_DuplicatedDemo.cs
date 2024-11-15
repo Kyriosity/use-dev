@@ -32,11 +32,11 @@ public class NArg_DuplicatedDemo
     [Test]
     public void ProveLooseDuplicate() {
         Assert.Throws<DuplicatedArgument>(() =>
-            DuplicatedArgument.ThrowIfAny(Equal.Loose(), "check", "name A", "Name A", "   name   A   "));
+            DuplicatedArgument.ThrowIfAny(Equal.Loose, "check", "name A", "Name A", "   name   A   "));
         Assert.Throws<DuplicatedArgument>(() =>
-            DuplicatedArgument.ThrowIfAny(Equal.Loose(), "check", " Name A", "   name   A   "));
+            DuplicatedArgument.ThrowIfAny(Equal.Loose, "check", " Name A", "   name   A   "));
 
-        DuplicatedArgument.ThrowIfAny(Equal.Loose(), "check", "name A", "name B");
+        DuplicatedArgument.ThrowIfAny(Equal.Loose, "check", "name A", "name B");
     }
 
     [Test]
@@ -45,6 +45,6 @@ public class NArg_DuplicatedDemo
         Assert.Throws<DuplicatedArgument>(() => DuplicatedArgument.ThrowIfAny(items));
 
         items = [" Water ", "iron", "  IRON  ", "calcium", "Calcium"];
-        Assert.Throws<DuplicatedArgument>(() => DuplicatedArgument.ThrowIfAny(Equal.Loose(), items));
+        Assert.Throws<DuplicatedArgument>(() => DuplicatedArgument.ThrowIfAny(Equal.Loose, items));
     }
 }

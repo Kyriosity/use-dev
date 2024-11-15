@@ -4,14 +4,13 @@ namespace AbcDataOps.Compare;
 public static partial class Equal
 {
     public static Func<T, T, bool> Exact<T>() =>
-        (a, b) => (a is null && b is null) || (a is not null && b is not null && a.Equals(b));
+        (left, right) => (left is null && right is null) || (left is not null && right is not null && left.Equals(right));
 
-    public static Func<string?, string?, bool> Loose() =>
-        (a, b) => 0 == string.Compare(Normalize(a), Normalize(b), StringComparison.InvariantCultureIgnoreCase);
-
+    public static Func<string?, string?, bool> Loose =>
+        (left, right) => 0 == string.Compare(Normalize(left), Normalize(right), StringComparison.InvariantCultureIgnoreCase);
 
     private static string Normalize(string? raw) => string.IsNullOrWhiteSpace(raw) ? string.Empty :
-    LooseSeparation().Replace(raw.Trim(), " ");
+        LooseSeparation().Replace(raw.Trim(), " ");
 
     [GeneratedRegex(@"\s+")]
     private static partial Regex LooseSeparation();

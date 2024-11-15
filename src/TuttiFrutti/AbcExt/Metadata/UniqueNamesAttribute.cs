@@ -7,7 +7,7 @@ public abstract class UniqueNamesAttribute : Attribute
         // ToDesign: wording utilites and multi-Argument with reporting
         // Argument.ThrowIfAny(Wording.NoLeadTrail, Wording.Normal, aliases);
 
-        DuplicatedArgument.ThrowIfAny(Equal.Loose(), names);
+        DuplicatedArgument.ThrowIfAny(Equal.Loose, names);
 
         Names = names;
     }
