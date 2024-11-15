@@ -1,4 +1,4 @@
-﻿using AbcExt.DataOps.Compare.Diff;
+﻿using AbcDataOps.Compare.Diff;
 using AbcModels.Ext.Diff;
 
 namespace AbcStructTests.Heaps.Settings;

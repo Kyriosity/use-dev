@@ -1,5 +1,4 @@
-﻿using AbcExt.DataOps;
-using MeasData.Setup.Formats;
+﻿using MeasData.Setup.Formats;
 
 namespace FuncStore.Convers.Tests.Setup.Proc;
 static class DataRow

@@ -7,9 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\AbcDataOps\AbcDataOps.csproj" />
-    <ProjectReference Include="..\AbcStuff\AbcStuff.csproj" />
-  </ItemGroup>
-
 </Project>

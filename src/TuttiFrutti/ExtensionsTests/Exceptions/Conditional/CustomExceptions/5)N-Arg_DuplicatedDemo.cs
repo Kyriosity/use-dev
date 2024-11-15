@@ -1,4 +1,4 @@
-﻿using AbcExt.DataOps.Compare;
+﻿using AbcDataOps.Compare;
 
 namespace ExtensionsTests.Exceptions.Conditional.CustomExceptions;
 public class NArg_DuplicatedDemo

@@ -1,4 +1,4 @@
-﻿using AbcExt.DataOps.Compare.Diff;
+﻿using AbcDataOps.Compare.Diff;
 
 namespace AbcModels.Ext.Diff;
 public static class Extensions

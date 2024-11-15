@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace AbcExt.DataOps.Compare;
+namespace AbcDataOps.Compare;
 public static partial class Equal
 {
     public static Func<T, T, bool> Exact<T>() =>

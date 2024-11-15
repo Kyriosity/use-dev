@@ -1,4 +1,4 @@
-﻿namespace AbcExt.DataOps;
+﻿namespace AbcDataOps;
 public static class Combi
 {
     public static IEnumerable<T[]> Pair<T>(IEnumerable<T> source) {
@@ -9,6 +9,6 @@ public static class Combi
                select new T[] { left.x, right.x };
     }
 
-    public static IEnumerable<T[]> Triple<T>(IEnumerable<T> _) => NotImplemented.Throw("on demand");
+    public static IEnumerable<T[]> Triple<T>(IEnumerable<T> _) => throw new NotImplementedException("on demand");
     // ToAdd: quadruple, quintuple, sextuple, septuple, octuple, ..., n‑tuple,
 }

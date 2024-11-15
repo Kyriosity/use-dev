@@ -1,4 +1,4 @@
-﻿namespace AbcExt.DataOps;
+﻿namespace AbcDataOps;
 public static class Filter
 {
     public static IEnumerable<T> ByCast<T>(IEnumerable<object> source, out IEnumerable<object> unmatched) where T : class {
