@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 
-namespace AbcExt.Xlat.Consts;
+namespace AbcAlt.Pass;
 public static class Parse
 {
     private const bool DoIgnoreCase = true;
