@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AbcDataOps\AbcDataOps.csproj" />
+    <ProjectReference Include="..\AbcRefl\AbcRefl.csproj" />
     <ProjectReference Include="..\AbcStuff\AbcStuff.csproj" />
   </ItemGroup>
 

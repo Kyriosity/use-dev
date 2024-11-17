@@ -1,3 +1,4 @@
+global using AbcCommu.Errors.Sys;
 global using AbcDataOps;
 global using AbcExtNUnit.Metadata.Shortcuts.Source;
 global using FuncStore.Convers.Tests.Setup.Metadata;
