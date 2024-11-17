@@ -1,6 +1,7 @@
 ﻿namespace AbcDataOps;
 public static class Filter
 {
+    // ToDelete: replace with LINQ OfType()
     public static IEnumerable<T> ByCast<T>(IEnumerable<object> source, out IEnumerable<object> unmatched) where T : class {
 
         var casted = ByCast<T>(source, out int[] indeces);
