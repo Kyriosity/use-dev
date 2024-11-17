@@ -1,8 +1,6 @@
-﻿using AbcExt.Metadata.Wording;
+﻿namespace AbcExt.Chrono.Units.Annual;
 
-namespace AbcExt.Chrono.Units.Annual;
-
-[Metadata.Ratio.Factored]
+[Factored]
 public enum In : uint
 {
     Undefined = 0,

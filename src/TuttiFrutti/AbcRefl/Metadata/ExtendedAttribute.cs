@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace AbcExt.Metadata;
+namespace AbcRefl.Metadata;
 public abstract class ExtendedAttribute<TSelf> : Attribute where TSelf : ExtendedAttribute<TSelf>
 {
     public static bool From<T>(MemberInfo member, out T found) {

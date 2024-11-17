@@ -1,6 +1,6 @@
-﻿global using AbcExt.Metadata.Ratio;
-global using AbcExt.Metadata.Wording;
-global using AbcExt.Xlat.Consts;
+﻿global using AbcExt.Xlat.Consts;
+global using AbcRefl.Metadata.Ratio;
+global using AbcRefl.Metadata.Wording;
 global using AbcStruct.Heap.Multitype;
 global using System;
 global using System.Collections.Generic;

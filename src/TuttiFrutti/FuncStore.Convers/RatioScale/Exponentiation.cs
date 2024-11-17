@@ -1,6 +1,4 @@
-﻿using AbcExt.Metadata.Ratio;
-
-namespace FuncStore.Convers.RatioScale;
+﻿namespace FuncStore.Convers.RatioScale;
 
 public class Exponentiation<U> : IFuncStore<U> where U : Enum, IConvertible
 {

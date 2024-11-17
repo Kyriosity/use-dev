@@ -4,8 +4,15 @@ using System.Reflection;
 namespace AbcExt.Refl;
 public class Caller
 {
-    public static ((string? name, MemberTypes? member) caller, (string? name, string? fullName) type, (string? name, string? fullName) container)
+    public static
+        ((string? name, MemberTypes? member) caller,
+        (string? name, string? fullName) type,
+        (string? name, string? fullName) container)
+
+
         Report(byte skipFrames = 1) {
+
+
         var caller = new StackFrame(1 + skipFrames)?.GetMethod();
         var callerName = caller?.Name;
         var container = caller?.DeclaringType;

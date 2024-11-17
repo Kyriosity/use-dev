@@ -1,4 +1,4 @@
-﻿namespace AbcExt.Metadata.Wording;
+﻿namespace AbcRefl.Metadata.Wording;
 
 [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
 public class AbbrAttribute : UniqueNamesAttribute
@@ -9,6 +9,6 @@ public class AbbrAttribute : UniqueNamesAttribute
         var tooLongAcronyms = Names.Where(x => 15 < x.Length).ToList();
 
         if (tooLongAcronyms.Any())
-            Argument.Throw($"Too long for acronym:\n{string.Join(", ", tooLongAcronyms)}");
+            throw new ArgumentException($"Too long for acronym:\n{string.Join(", ", tooLongAcronyms)}");
     }
 }
