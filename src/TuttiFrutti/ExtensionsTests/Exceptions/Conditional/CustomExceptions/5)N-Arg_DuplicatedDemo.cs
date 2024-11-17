@@ -25,8 +25,8 @@ public class NArg_DuplicatedDemo
 
         var exc = Assert.Throws<DuplicatedArgument>(() => DuplicatedArgument.ThrowIfAny(
             theJupiter, moonIII, moonIV, moonII, moonII, moonV, moonVI, moonXIV, moonVII, moonVIII, moonXI));
-        Assert.That(exc.Message, Contains.Substring(moonII));
-        Assert.That(exc.Message, Contains.Substring(nameof(moonII)));
+        Assert.That(exc?.Message, Contains.Substring(moonII));
+        Assert.That(exc?.Message, Contains.Substring(nameof(moonII)));
     }
 
     [Test]
@@ -36,15 +36,18 @@ public class NArg_DuplicatedDemo
         Assert.Throws<DuplicatedArgument>(() =>
             DuplicatedArgument.ThrowIfAny(Equal.Loose, "check", " Name A", "   name   A   "));
 
-        DuplicatedArgument.ThrowIfAny(Equal.Loose, "check", "name A", "name B");
+        var didThrow = DuplicatedArgument.ThrowIfAny(Equal.Loose, "check", "name A", "name B");
+        Assert.That(didThrow, Is.False);
     }
 
     [Test]
-    public void SubmitEnumerable() {
+    public void SubmitEnumerables() {
         string[] items = ["Fe", "Cu", "Ar", "O2", "C2O", "Fe"];
         Assert.Throws<DuplicatedArgument>(() => DuplicatedArgument.ThrowIfAny(items));
 
         items = [" Water ", "iron", "  IRON  ", "calcium", "Calcium"];
+
+        DuplicatedArgument.ThrowIfAny(items);
         Assert.Throws<DuplicatedArgument>(() => DuplicatedArgument.ThrowIfAny(Equal.Loose, items));
     }
 }
