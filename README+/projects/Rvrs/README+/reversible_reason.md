@@ -1,7 +1,7 @@
 # Reversible &mdash; Rationale
 
 Hypothetical Undo/Redo _reversible_ is a tree of LIFO queues, while practical sight is the traverse through its recent branch.\
-The solution for the latter is an unsophisticated choice of ordered [collection](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections) (or array). That said, let's justify our construction over that... 
+The solution for the latter is an unsophisticated choice of ordered [collection](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections) (or array). That said, let's vindicate our construction over that... 
 
 __Functionality__, stretching beyond `Undo`/`Redo`
 

@@ -1,5 +1,26 @@
 <samp>INSTALLATION</samp>: Clone, copy, download `src`, and open the solution in Microsoft Visual Studio
 
+<b>CLAY</b><br />
+|- <a href="src/TuttiFrutti/ExtensionsTests/Exceptions" title="&nbsp;pop up">Exception wrappers</a>🧪<br />
+
+|-  <a href="" title="&nbsp;">Models</a><br />
+|-  <a href="" title="&nbsp;">Motley heap</a><br />
+|-  <a href="" title="&nbsp;"></a><br />
+|-  <a href="" title="&nbsp;"></a><br />
+|- <samp><b>W&thinsp;P&thinsp;F</b></samp><br />
+|--- <a href="README+/snippets/wpf/bool2viz_improved.md">Improved Bool-Vis. converter</a><br />
+
+<b>FRAMES, rules guidelines</b><br />
+
+<b>TECHNIQUES / PATTERNS</b><br />
+
+<b>DESIGN DECISIONS</b><br />
+
+<b>PARTS</b><br />
+|- 🗓️ <a href="" title="&nbsp;">Chrono ABC</a><br />
+
+<samp>INSTALLATION</samp>: Clone, copy, download `src`, and open the solution in Microsoft Visual Studio
+
 + **CLAY**\
 |- Exceptions wrappers: [tests 🧪](src/TuttiFrutti/ExtensionsTests/Exceptions)\
 |- 🌵 [Models](src/TuttiFrutti/AbcModels)\
