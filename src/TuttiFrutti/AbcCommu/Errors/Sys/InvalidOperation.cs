@@ -1,4 +1,4 @@
-﻿namespace AbcExt.Errors.Sys;
+﻿namespace AbcCommu.Errors.Sys;
 
 public class InvalidOperation : Basal.Exception<InvalidOperationException>
 {

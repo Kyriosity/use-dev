@@ -1,4 +1,4 @@
-﻿namespace AbcExt.Errors.Sys;
+﻿namespace AbcCommu.Errors.Sys;
 public class Argument : MultiparameterConditional<ArgumentException>
 {
     private Argument() { /* to prevent direct instantiation */ }

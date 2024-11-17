@@ -1,4 +1,4 @@
-﻿namespace AbcExt.Errors.Data;
+﻿namespace AbcCommu.Errors.Data;
 
 public class NotSet(string message)
     : Exception<NotSet>(message);

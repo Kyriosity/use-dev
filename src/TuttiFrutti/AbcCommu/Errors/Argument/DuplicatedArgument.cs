@@ -1,6 +1,6 @@
-﻿using AbcExt.Errors.Utils;
+﻿using AbcCommu.Errors.Sys;
 
-namespace AbcExt.Errors.Argument;
+namespace AbcCommu.Errors.Argument;
 public class DuplicatedArgument(string message) : Exception<DuplicatedArgument>(message)
 {
     public static bool ThrowIfAny<T>(T arg1, T arg2, T arg3 = default, T arg4 = default, T arg5 = default,

@@ -1,5 +1,4 @@
-﻿using AbcExt.Errors.Utils;
-namespace AbcExt.Errors.Basal;
+﻿namespace AbcCommu.Errors.Basal;
 public abstract class Exception<Exc>(string? message = "", Exception? inner = null)
     : Exception(message, inner)
 

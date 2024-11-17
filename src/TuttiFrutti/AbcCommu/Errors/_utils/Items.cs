@@ -1,4 +1,4 @@
-﻿namespace AbcExt.Errors.Utils;
+﻿namespace AbcCommu.Errors.Utils;
 internal static class Items
 {
     public static (T val, string tag)[] Tag<T>(IEnumerable<T> args, string itemsSetter) =>

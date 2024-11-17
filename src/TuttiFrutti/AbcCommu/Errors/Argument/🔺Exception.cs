@@ -1,6 +1,4 @@
-﻿using AbcExt.Errors.Utils;
-
-namespace AbcExt.Errors.Argument;
+﻿namespace AbcCommu.Errors.Argument;
 
 public abstract class Exception<Exc>(string message)
     : ArgumentException(message)

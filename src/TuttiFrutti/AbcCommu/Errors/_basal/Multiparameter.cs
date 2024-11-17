@@ -1,4 +1,4 @@
-﻿namespace AbcExt.Errors.Basal;
+﻿namespace AbcCommu.Errors.Basal;
 public abstract class Multiparameter<Exc>(string? message = "", Exception? inner = null)
     : Exception<Exc>(message, inner) where Exc : Exception
 {
