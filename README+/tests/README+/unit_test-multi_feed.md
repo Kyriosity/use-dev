@@ -1,28 +1,40 @@
 # Test automation &mdash; Tests with multi-feed
 
-Either it's [TDD](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests/asDrive)<sup>⬅️</sup> or proof of the existing code, 
-the conventional fashion is to pick a software piece (class, function, or something else) and write a particular test case over it, then consider and write another case, and so on.
+Either [TDD](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests/asDrive)<sup>⬅️</sup> or proof of the provided code, 
+a conventional fashion is to pick a software entity (class, function, or something else) and write a particular test case over it, then consider and write another case, and so on.
 
-Developing tests this way must wrap software features in nice <b>D</b><i>escriptive</i> <b>A</b><i>nd</i> <b>M</b><i>eaninigful</i> <b>P</b><i>hrases</i> (aka <b>DAMP</b>). 
+Developing tests this way must wrap software features in nice <b>D</b><i>escriptive</i> <b>A</b><i>nd</i> <b>M</b><i>eaninigful</i> <b>P</b><i>hrases</i> (aka <mark><b>DAMP</b></mark>). 
 However, this approach will combinatorially explode:
 
 ```mermaid
 graph TD
-    id1[Test data] -->|&nbsp;&nbsp;&nbsp;miscellaneous&nbsp;<br />&nbsp;combinations&nbsp;<br />&nbsp;of arguments&nbsp;<br />&nbsp;and settings&nbsp;&nbsp;&nbsp;| UT[PROOF<br />Arange/Act/Assert]
-    id2[Invalid data] -->|null, nega, tress| UT
-    Functionality -->|one, two, tress| UT
-    Providers -->|<br />&nbsp;&nbsp;References&nbsp;<br />&nbsp;vs. Doubles<br />...| UT
-```
+    idCx[Context] -->|&nbsp;&nbsp;Arguments,&nbsp;&nbsp;<br />&nbsp;&nbsp;Input Data,&nbsp;&nbsp;<br />&nbsp;&nbsp;Settings&nbsp;&nbsp;| UT[TEST<br />Arange/Act/Assert]
+    idFnc[Functionality] -->|&nbsp;Implementation A, B, C, ...&nbsp;<br >&nbsp;Implementation B, ...&nbsp;</br>&nbsp;Stubs, Dummies&nbsp;| UT
+    idSrv[Providers,<br />Services] -->|<br />&nbsp;&nbsp;References&nbsp;&nbsp;<br />&nbsp;vs. Doubles<br />...| UT
+    idAbs[Params abuse] -->|&nbsp;Nulls,&nbsp;<br />&nbsp;&nbsp;Out-of-range,;&nbsp;<br />&nbsp;Invalid and illegal funcs C&nbsp;| UT
 
-Bloating tests mass will deteriorate: negligence, scrappy coverage, impeded navigation and OVER maintenance. Unless we ...
+```
+<details><summary><ins>&nbsp;Legend;&nbsp;</ins></summary>
+    &nbsp;
+
+\___________
+</details>
 
 ## DRY it
 
-This approach is OVER and clutches testing projects with space with UNPACKED.
+Bloating tests mass will deteriorate: negligence, scrappy coverage, impeded navigation, and badly exorbitant maintenance. Unless we apply **D**_on't_ **R**_epeat_ **Y**_ourself_ (aka <mark><b>DRY</b></mark>) to our tests ...
 
-## What we have
+Most frameworks will support one-dimensional scaling.
 
-## Going beyond
+
+AUTO-COMBINATION
+
+## Workarounding
+
+The best thing ould be if 
+
+
+LINK TO ASSERT-ACT breakup
 
 ### Parametrization
 
@@ -73,6 +85,8 @@ Let's put 3D glasses on
 * ?? accumulated warnings/errors/info (e.g. unparsed)
 
 ## Wrap up
+
+Was it all about unit tests? Yes, but can work for others in the pyramid.
 
 Related topics\
 |- Elusive unit of test
