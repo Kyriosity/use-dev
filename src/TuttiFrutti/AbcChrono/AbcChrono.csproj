@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NUnit3TestAdapter" Version="4.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
     <ProjectReference Include="..\Abc\Abc.csproj" />
   </ItemGroup>

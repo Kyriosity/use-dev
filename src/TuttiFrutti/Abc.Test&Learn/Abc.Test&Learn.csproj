@@ -13,6 +13,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NUnit3TestAdapter" Version="4.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Abc.Test.Setup\Abc.Test.Setup.csproj" />
     <ProjectReference Include="..\Abc\Abc.csproj" />
   </ItemGroup>

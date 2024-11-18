@@ -19,7 +19,7 @@ class Full<NRes> : IYears<NRes> where NRes : INumber<NRes>
         if (On.Undefined == source)
             Argument.Throw(source);
         var sourceYear = In.Undefined == unit ? Argument.Throw(unit) :
-            val * N.CreateChecked((uint)unit); // NOTE: this is a simplification, which coule be replaced with U-Val
+            val * N.CreateChecked((uint)unit); // NOTE: this is a simplification to be replaced with U-Val
 
         if (source == Target)
             return sourceYear; // REVERSE !
