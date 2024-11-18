@@ -1,6 +1,6 @@
 # Chronology - Timelines - Events
 
-**Time** is the _driver_ for all and the "solvent" of everything. The former is for software and the latter for its hardware.
+> **Time** is the _driver_ for all and the "solvent" of everything. The former is for software and the latter for its hardware.
 
 Exact time measurement<sup>🔬</sup> and timestamping aren't an issue for regular solutions but chronology.
 
