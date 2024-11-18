@@ -1,7 +1,11 @@
 # Test automation &mdash; Tests with multi-feed
 
 Either it's [TDD](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests/asDrive)<sup>⬅️</sup> or proof of the existing code, 
-the conventional approach to tests is to take a piece of functionality and write a proof routine for a particular run. Let's illustrate with a primitive:\
+the conventional approach is to HIGHLIGHT a SOFTWARE piece (`class` or function) and write a test case, then next and so on.
+
+Being a good DAMP for .
+
+routine for a particular run. Let's illustrate with a primitive:\
 `Asserts: Root.Square(4) == 2`
 
 The next step is to supply various data and expectations - something that a ripe framework will provide out of the box:\
