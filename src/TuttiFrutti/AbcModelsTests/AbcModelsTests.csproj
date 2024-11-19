@@ -32,8 +32,4 @@
     <Folder Include="Tags\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
-  </ItemGroup>
-
 </Project>

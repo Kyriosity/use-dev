@@ -12,7 +12,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AbcAlt\AbcAlt.csproj" />
-    <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
     <ProjectReference Include="..\AbcStruct\AbcStruct.csproj" />
   </ItemGroup>
 </Project>

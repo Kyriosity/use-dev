@@ -1,5 +1,5 @@
-﻿namespace ClayTest.KnowHow.Cast.Variance;
-using Abc.Marks;
+﻿using Abc.Marks;
+namespace ClayTest.KnowHow.Cast.Variance;
 
 public class Covariance
 {

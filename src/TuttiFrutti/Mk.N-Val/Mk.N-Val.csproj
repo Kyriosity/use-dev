@@ -13,8 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
-    <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
+    <ProjectReference Include="..\AbcCommu\AbcCommu.csproj" />
     <ProjectReference Include="..\N-Val\N-Val.csproj" />
   </ItemGroup>
 

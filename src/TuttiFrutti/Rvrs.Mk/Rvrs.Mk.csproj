@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Abc.Prop\Abc.Item.csproj" />
-    <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
+    <ProjectReference Include="..\AbcCommu\AbcCommu.csproj" />
     <ProjectReference Include="..\Imp.Rvrs\Imp.Rvrs.csproj" />
     <ProjectReference Include="..\Rvrs\Rvrs.csproj" />
   </ItemGroup>

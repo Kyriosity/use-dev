@@ -1,4 +1,6 @@
-﻿namespace AbcChrono.Timescales.Models;
+﻿using AbcChrono.Units;
+
+namespace AbcChrono.Timescales.Models;
 static class ExtendingSetters
 {
     public static IHap Day(this IHap hap, byte val) {
@@ -19,7 +21,7 @@ static class ExtendingSetters
 
     public static IHap Set<N>(this IHap hap, N val, In unit) where N : INumber<N> {
         hap.Unit = unit;
-        hap.AbsYear = To.Abs.From(hap.Epoch, val, unit);
+        hap.AbsYear = Convert.To.Abs.From(hap.Epoch, val, unit);
         return hap;
     }
 
@@ -45,7 +47,7 @@ readonly struct MonthYear(int year, byte month)
     public static MonthYear From(DateTime dt) => new MonthYear(dt.Year, (byte)dt.Month);
 
     public MonthYear AddMonths(int shift) {
-        return new MonthYear(Year + shift / 12, (byte)(Month + shift % 12));
+        return new MonthYear(Year + (shift / 12), (byte)(Month + (shift % 12)));
     }
 
     public readonly int Year = year;

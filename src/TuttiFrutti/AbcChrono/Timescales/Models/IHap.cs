@@ -1,4 +1,6 @@
-﻿namespace AbcChrono.Timescales.Models;
+﻿using AbcChrono.Units;
+
+namespace AbcChrono.Timescales.Models;
 public interface IHap : IBasal, IConfidence<ushort>
 {
     byte? DayNr { get; internal set; }

@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Abc\Abc.csproj" />
-    <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
     <ProjectReference Include="..\MeasUnits\MeasUnits.csproj" />
   </ItemGroup>
 

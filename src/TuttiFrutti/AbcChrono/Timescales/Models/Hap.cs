@@ -1,4 +1,6 @@
-﻿namespace AbcChrono.Timescales.Models;
+﻿using AbcChrono.Units;
+
+namespace AbcChrono.Timescales.Models;
 class Hap : Universal, IHap
 {
     public byte? DayNr { get; set; }

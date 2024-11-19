@@ -1,4 +1,5 @@
 ﻿using AbcChrono.Timescales.Sol3.Yearly;
+using AbcChrono.Units;
 
 namespace AbcChrono.Timescales.Sol3.Mk.Blocks;
 abstract class YearsX1(IHap model) : Basal(model), IYearX1

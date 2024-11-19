@@ -12,7 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AbcExt\AbcExt.csproj" />
+    <ProjectReference Include="..\AbcCommu\AbcCommu.csproj" />
+    <ProjectReference Include="..\AbcRefl\AbcRefl.csproj" />
     <ProjectReference Include="..\MeasOrg\MeasOrg.csproj" />
   </ItemGroup>
 
