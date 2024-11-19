@@ -1,9 +1,7 @@
 ﻿global using Abc.Accuracy;
-global using AbcChrono.Mk.Providers;
-global using AbcChrono.Models;
-global using AbcChrono.Sol3.Calendar;
-global using AbcChrono.Sol3.Scale;
-global using AbcChrono.Sol3.Yearly;
+global using AbcChrono.Timescales.Mk.Providers;
+global using AbcChrono.Timescales.Models;
+global using AbcChrono.Timescales.Sol3;
 global using AbcCommu.Errors.Data;
 global using AbcExt.Chrono;
 global using AbcExt.Chrono.Convert;

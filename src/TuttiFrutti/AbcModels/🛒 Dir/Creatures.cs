@@ -1,4 +1,4 @@
-﻿using AbcChrono;
+﻿using AbcChrono.Timescales;
 using AbcModels.Creatures;
 using AbcModels.Creatures.Names;
 

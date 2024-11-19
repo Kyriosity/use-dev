@@ -1,4 +1,6 @@
-﻿namespace ExtensionsTests.Chrono.Haps.Demo;
+﻿using AbcChrono.Timescales;
+
+namespace ExtensionsTests.Chrono.Haps.Demo;
 public class Eras_Syntax
 {
     [Test]

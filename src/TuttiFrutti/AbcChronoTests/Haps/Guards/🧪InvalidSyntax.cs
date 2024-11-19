@@ -1,4 +1,6 @@
-﻿namespace ExtensionsTests.Chrono.Haps.Guards;
+﻿using AbcChrono.Timescales;
+
+namespace ExtensionsTests.Chrono.Haps.Guards;
 public class InvalidSyntax
 {
     [Test]
