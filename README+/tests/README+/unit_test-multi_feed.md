@@ -1,17 +1,19 @@
 # Test automation &mdash; Tests with multi-feed
 
-Either [TDD](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests/asDrive)<sup>⬅️</sup> or proof of the provided code, 
-a conventional fashion is to pick a software entity (class, function, or something else) and write a particular test case over it, then consider and write other cases.
+<p dir="rtl">DAMP vs DRY</p>
+
+**Either [TDD](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests/asDrive)<sup>⬅️</sup> or proof of the provided code, 
+a conventional fashion is to pick a software entity (class, function, or something else) and write a particular test case over it, then consider and write other cases.**
 
 Developing tests this way must wrap software features in nice <b>D</b><i>escriptive</i> <b>A</b><i>nd</i> <b>M</b><i>eaninigful</i> <b>P</b><i>hrases</i> (aka <mark><b>DAMP</b></mark>). 
 However, this approach will combinatorially explode:
 
 ```mermaid
 graph TD
-    idCx[Context] -->|&nbsp;&nbsp;Arguments,&nbsp;&nbsp;<br />&nbsp;&nbsp;Test Data,&nbsp;&nbsp;<br />&nbsp;&nbsp;Settings&nbsp;&nbsp;| UT[TEST<br />Arange/Act/Assert]
-    idFnc[Act subjects] -->|&nbsp;Implementation A, B, C, ...&nbsp;<br >&nbsp;Sample func, ...&nbsp;</br>&nbsp;Stubs, Dummies&nbsp;| UT
-    idSrv[Providers,<br />Services] -->|<br />&nbsp;&nbsp;References, imports&nbsp;&nbsp;<br />&nbsp;vs. Mocks, Doubles<br />...| UT
-    idAbs[Input abuse] -->|&nbsp;&nbsp;<i>null</i>s, out-of-range&nbsp;<br />&nbsp;&nbsp;exception throwers,&nbsp;<br />&nbsp;Invalid and illegal calls/funcs C&nbsp;| UT
+    idCx[Context<br />&lpar;Arrange&rpar;] -->|<br />&nbsp;&nbsp;Arguments,&nbsp;&nbsp;<br />&nbsp;&nbsp;Test Data,&nbsp;&nbsp;<br />&nbsp;&nbsp;Settings&nbsp;&nbsp;<br />...| UT[TEST<br />Arange/Act/Assert]
+    idFnc[Functionality<br />&lpar;Act&rpar;] -->|<br />&nbsp;&nbsp;Implementation A, B, C, ...&nbsp;<br >&nbsp;Sample func, ...&nbsp;</br>&nbsp;Stubs, Dummies&nbsp;&nbsp;<br />...| UT
+    idSrv[Providers<br />&lpar;Arrange&rpar;] -->|<br />&nbsp;&nbsp;Imports, Services&nbsp;&nbsp;<br />&nbsp;&nbsp;vs. Mocks, Doubles&nbsp;&nbsp;<br />...| UT
+    idAbs[Input abuse<br />&lpar;Arrange, Act&rpar;] -->|&nbsp;&nbsp;<i>null</i>s, out-of-range&nbsp;<br />&nbsp;&nbsp;<i>exception</i> makers,&nbsp;<br />&nbsp;invalid/illegal calls/funcs&nbsp;<br />...| UT
 
 ```
 <details><summary><ins>&nbsp;Legend;&nbsp;</ins></summary>
@@ -30,8 +32,11 @@ Bloating tests mass will deteriorate: negligence, scrappy coverage, impeded navi
 
 Most frameworks will support one-dimensional scaling.
 
+CUCUMBER
 
 AUTO-COMBINATION
+
+MULTITYPE
 
 ## Workarounding
 
