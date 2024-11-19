@@ -1,21 +1,25 @@
 # Test automation &mdash; Tests with multi-feed
 
 Either [TDD](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests/asDrive)<sup>⬅️</sup> or proof of the provided code, 
-a conventional fashion is to pick a software entity (class, function, or something else) and write a particular test case over it, then consider and write another case, and so on.
+a conventional fashion is to pick a software entity (class, function, or something else) and write a particular test case over it, then consider and write other cases.
 
 Developing tests this way must wrap software features in nice <b>D</b><i>escriptive</i> <b>A</b><i>nd</i> <b>M</b><i>eaninigful</i> <b>P</b><i>hrases</i> (aka <mark><b>DAMP</b></mark>). 
 However, this approach will combinatorially explode:
 
 ```mermaid
 graph TD
-    idCx[Context] -->|&nbsp;&nbsp;Arguments,&nbsp;&nbsp;<br />&nbsp;&nbsp;Input Data,&nbsp;&nbsp;<br />&nbsp;&nbsp;Settings&nbsp;&nbsp;| UT[TEST<br />Arange/Act/Assert]
-    idFnc[Functionality] -->|&nbsp;Implementation A, B, C, ...&nbsp;<br >&nbsp;Implementation B, ...&nbsp;</br>&nbsp;Stubs, Dummies&nbsp;| UT
-    idSrv[Providers,<br />Services] -->|<br />&nbsp;&nbsp;References&nbsp;&nbsp;<br />&nbsp;vs. Doubles<br />...| UT
-    idAbs[Params abuse] -->|&nbsp;Nulls,&nbsp;<br />&nbsp;&nbsp;Out-of-range,;&nbsp;<br />&nbsp;Invalid and illegal funcs C&nbsp;| UT
+    idCx[Context] -->|&nbsp;&nbsp;Arguments,&nbsp;&nbsp;<br />&nbsp;&nbsp;Test Data,&nbsp;&nbsp;<br />&nbsp;&nbsp;Settings&nbsp;&nbsp;| UT[TEST<br />Arange/Act/Assert]
+    idFnc[Act subjects] -->|&nbsp;Implementation A, B, C, ...&nbsp;<br >&nbsp;Sample func, ...&nbsp;</br>&nbsp;Stubs, Dummies&nbsp;| UT
+    idSrv[Providers,<br />Services] -->|<br />&nbsp;&nbsp;References, imports&nbsp;&nbsp;<br />&nbsp;vs. Mocks, Doubles<br />...| UT
+    idAbs[Input abuse] -->|&nbsp;&nbsp;<i>null</i>s, out-of-range&nbsp;<br />&nbsp;&nbsp;exception throwers,&nbsp;<br />&nbsp;Invalid and illegal calls/funcs C&nbsp;| UT
 
 ```
 <details><summary><ins>&nbsp;Legend;&nbsp;</ins></summary>
     &nbsp;
+
+#### Context
+
+#### Abuse
 
 \___________
 </details>
