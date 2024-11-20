@@ -19,7 +19,7 @@ graph TD
 <details><summary><ins>&nbsp;Legend;&nbsp;</ins></summary>
     &nbsp;
 
-Add here that arguments combinations can matter and their multitype (e.g. integer and floating point for the same calculation and even values).
+Add here that arguments combinations can matter and their MULTITYPE POLY (e.g. integer and floating point for the same calculation and even values).
 
 #### Context
 
@@ -30,7 +30,12 @@ Add here that arguments combinations can matter and their multitype (e.g. intege
 
 ## DRY it
 
-Bloating tests mass will deteriorate: negligence, scrappy coverage, impeded navigation, and badly exorbitant maintenance. Unless we apply **D**_on't_ **R**_epeat_ **Y**_ourself_ (aka <mark><b>DRY</b></mark>) to our tests ...
+"Multidimensional" combinations will
+make a mess of tests mass and  deteriorate its quality: negligence, scrappy coverage, impeded navigation, and badly exorbitant maintenance.
+
+we may live with this, since tests are not the product, .
+
+or apply **D**_on't_ **R**_epeat_ **Y**_ourself_ (aka <mark><b>DRY</b></mark>) to our tests ...
 
 Most frameworks will support one-dimensional scaling.
 
