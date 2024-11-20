@@ -5,7 +5,7 @@
 **Either [TDD](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests/asDrive)<sup>⬅️</sup> or proof of the provided code, 
 a conventional fashion is to pick a software entity (class, function, or something else) and write a particular test case over it, then consider and write other cases.**
 
-Developing tests this way must wrap software features in nice <b>D</b><i>escriptive</i> <b>A</b><i>nd</i> <b>M</b><i>eaninigful</i> <b>P</b><i>hrases</i> (aka <mark><b>DAMP</b></mark>). 
+Developing tests this way shall (not must) wrap features in nice <b>D</b><i>escriptive</i> <b>A</b><i>nd</i> <b>M</b><i>eaninigful</i> <b>P</b><i>hrases</i> (aka <mark><b>DAMP</b></mark>). 
 However, this approach will combinatorially explode:
 
 ```mermaid
@@ -18,6 +18,8 @@ graph TD
 ```
 <details><summary><ins>&nbsp;Legend;&nbsp;</ins></summary>
     &nbsp;
+
+Add here that arguments combinations can matter and their multitype (e.g. integer and floating point for the same calculation and even values).
 
 #### Context
 
@@ -98,6 +100,8 @@ Let's put 3D glasses on
 Was it all about unit tests? Yes, but can work for others in the pyramid.
 
 Related topics\
+GRADUAL ASSERT
+HOW MANY ASSERTS
 |- Elusive unit of test
 
 🔚
