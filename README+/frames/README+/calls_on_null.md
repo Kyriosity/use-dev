@@ -1,10 +1,11 @@
-# Calls on `null`
+# Calls legally running on `null`
 
 ## Short intro
 
 You expect this snippet to throw `NullReference`&nbsp;**.**&thinsp;**.**&thinsp;**.**
 
 ```csharp
+var bar = new Bar();
 bar.DoSometing();
 bar = null; // IT'S NOW NULL!
 bar.DoSomething();
@@ -15,14 +16,18 @@ Console.WriteLine("now you see me");
 
 ## Use or abuse?
 
-Continuation on `null` looks worse than [its billion-dollar mistake](https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare)<sup>🔗</sup>. 
+Continuation on `null` may look worse than [its billion-dollar mistake](https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare)<sup>🔗</sup>. 
 
-**Yes** ... unless the semantics and job of the dot attachment assume this `null`. 
+Correct ... **unless** the semantics and job of the dot attachment assume this `null`. 
 
 ```csharp
-void JustDemo(string? title, N? id, Book? bpok) where N : INumber<N> {
-    title.NotNullOrWhitespace();
-    id.IsNaturalNumber();
+void JustDemo(string? title, N? id, Book? book) where N : INumber<N> {
+    title.NullOrWhitespace();
+
+    id.IsNaturalNumber(); // will throw if null
+    id.Is.NullOrZero();
+    id.Not.NullOrGreaterThan(100);
+
     book.IsNullOrDefault();
 
   //Everything else up to your phantasy
