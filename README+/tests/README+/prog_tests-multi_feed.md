@@ -1,23 +1,11 @@
-# Test automation &mdash; Tests with multi-feed
+# QA Automation &mdash; Tests with multi-feed
 
-<p dir="rtl">DAMP vs DRY</p>
+<table><tr><td><p align="center">
+    ⬅️<i>read-write</i><br><b><a href="https://github.com/Kyriosity/read-write/tree/main/README%2B/software/QA">&thinsp;QA&thinsp;</a></b> and <b><a href="https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests">&thinsp;TESTS&thinsp;</a></b>
+</p></td><td>
+    This article projects concerns of tests <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/README+/tests-damp_vs_dry.md#Combinatorial-explosion">combinatorial explosion</a> onto practical decisions.
+</td></tr></table>
 
-**Either [TDD](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests/asDrive)<sup>⬅️</sup> or proof of the provided code, 
-a conventional fashion is to pick a software entity (class, function, or something else) and write a particular test case over it, then consider and write other cases.**
-
-Developing tests this way shall (not must) wrap features in nice <b>D</b><i>escriptive</i> <b>A</b><i>nd</i> <b>M</b><i>eaninigful</i> <b>P</b><i>hrases</i> (aka <mark><b>DAMP</b></mark>). 
-However, this approach will combinatorially explode:
-
-```mermaid
-graph TD
-    idCx[Context<br />&lpar;Arrange&rpar;] -->|<br />&nbsp;&nbsp;Arguments,&nbsp;&nbsp;<br />&nbsp;&nbsp;Test Data,&nbsp;&nbsp;<br />&nbsp;&nbsp;Settings&nbsp;&nbsp;<br />...| UT[TEST<br />Arange/Act/Assert]
-    idFnc[Functionality<br />&lpar;Act&rpar;] -->|<br />&nbsp;&nbsp;Implementation A, B, C, ...&nbsp;<br >&nbsp;Sample func, ...&nbsp;</br>&nbsp;Stubs, Dummies&nbsp;&nbsp;<br />...| UT
-    idSrv[Providers<br />&lpar;Arrange&rpar;] -->|<br />&nbsp;&nbsp;Imports, Services&nbsp;&nbsp;<br />&nbsp;&nbsp;vs. Mocks, Doubles&nbsp;&nbsp;<br />...| UT
-    idAbs[Input abuse<br />&lpar;Arrange, Act&rpar;] -->|&nbsp;&nbsp;<i>null</i>s, out-of-range&nbsp;<br />&nbsp;&nbsp;<i>exception</i> makers,&nbsp;<br />&nbsp;invalid/illegal calls/funcs&nbsp;<br />...| UT
-
-```
-<details><summary><ins>&nbsp;Legend;&nbsp;</ins></summary>
-    &nbsp;
 
 Add here that arguments combinations can matter and their MULTITYPE POLY (e.g. integer and floating point for the same calculation and even values).
 
@@ -38,8 +26,6 @@ we may live with this, since tests are not the product, .
 or apply **D**_on't_ **R**_epeat_ **Y**_ourself_ (aka <mark><b>DRY</b></mark>) to our tests ...
 
 Most frameworks will support one-dimensional scaling.
-
-CUCUMBER
 
 AUTO-COMBINATION
 
