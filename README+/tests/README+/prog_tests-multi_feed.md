@@ -3,11 +3,11 @@
 <table><tr><td><p align="center">
     ⬅️<i>read-write</i><br><b><a href="https://github.com/Kyriosity/read-write/tree/main/README%2B/software/QA">&thinsp;QA&thinsp;</a></b> and <b><a href="https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests">&thinsp;TESTS&thinsp;</a></b>
 </p></td><td>
-    This article projects concerns of tests <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/README+/tests-damp_vs_dry.md#Combinatorial-explosion">combinatorial explosion</a> onto practical decisions.
+    ☝️ This article projects concerns of tests <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/README+/tests-damp_vs_dry.md#Combinatorial-explosion"><b>Combinatorial Explosion</b></a> onto practical decisions.
 </td></tr></table>
 
 
-Add here that arguments combinations can matter and their MULTITYPE POLY (e.g. integer and floating point for the same calculation and even values).
+A decision to DRY test combinations ....
 
 #### Context
 
