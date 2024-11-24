@@ -1,20 +1,10 @@
-# QA Automation &mdash; Tests with multi-feed
+# Tests &mdash; Cuttung the Feed expansion
 
 <table><tr><td><p align="center">
-    ⬅️<i>read-write</i><br><b><a href="https://github.com/Kyriosity/read-write/tree/main/README%2B/software/QA">&thinsp;QA&thinsp;</a></b> and <b><a href="https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests">&thinsp;TESTS&thinsp;</a></b>
+    ⬅️<i>read-write</i>☝️ <br /><b><a href="https://github.com/Kyriosity/read-write/tree/main/README%2B/software/QA">&thinsp;QA&thinsp;</a></b> and <b><a href="https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests">&thinsp;TESTS&thinsp;</a></b>
 </p></td><td>
-    ☝️ This article projects concerns of tests <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/README+/tests-damp_vs_dry.md#Combinatorial-explosion"><b>Combinatorial Explosion</b></a> onto practical decisions.
+    Let's show how we could meet <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/README+/tests-damp_vs_dry.md#Feed-expansion"><b>Feed expansion</b></a> with practical decisions.
 </td></tr></table>
-
-
-A decision to DRY test combinations ....
-
-#### Context
-
-#### Abuse
-
-\___________
-</details>
 
 ## DRY it
 
