@@ -1,9 +1,7 @@
 # Tests &mdash; Cuttung the Feed expansion
 
-<table><tr><td><p align="center">
-    ⬅️<i>read-write</i>☝️ <br /><b><a href="https://github.com/Kyriosity/read-write/tree/main/README%2B/software/QA">&thinsp;QA&thinsp;</a></b> and <b><a href="https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests">&thinsp;TESTS&thinsp;</a></b>
-</p></td><td>
-    Let's show how we could meet <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/README+/tests-damp_vs_dry.md#Feed-expansion"><b>Feed expansion</b></a> with practical decisions.
+<table><tr><td><img alt="&nbsp;READ-WRITE meets USE-DEV" width="100px" src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/_nav/read-write_use-dev.jpg" /></td><td>
+   <p>Let's show how we could meet <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/README+/tests-damp_vs_dry.md#Feed-expansion"><b>Feed expansion</b></a> with practical decisions.</p>
 </td></tr></table>
 
 ## DRY it
