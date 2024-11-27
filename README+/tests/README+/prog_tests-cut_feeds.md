@@ -1,10 +1,21 @@
-# Tests &mdash; Cuttung the Feed expansion
+# Tests &mdash; Cutting the Feed Expansion
 
 <table><tr><td><img alt="&nbsp;READ-WRITE meets USE-DEV" width="100px" src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/_nav/read-write_use-dev.jpg" /></td><td>
    <p>Let's show how we could meet <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/README+/tests-damp_vs_dry.md#Feed-expansion"><b>Feed expansion</b></a> with practical decisions.</p>
 </td></tr></table>
 
-## DRY it
+## DRY it - Multifeed
+
+### Dimensional growth
+
+Mostly accepted test frameworks support test methods with a multi-feed of arguments. They are known as data rows, data sources, or meta-attributes. _Acts_ can be multi-fed the same way as data sources.
+
+Attributes can be applied to arguments to specify all their possible combinations.
+
+It's not a big deal to write a custom wrapper for missing or improved parameter "funnels".
+
+### Combinatorial explosion
+
 
 "Multidimensional" combinations will
 make a mess of tests mass and  deteriorate its quality: negligence, scrappy coverage, impeded navigation, and badly exorbitant maintenance.
@@ -19,10 +30,10 @@ AUTO-COMBINATION
 
 MULTITYPE
 
+
 ## Workarounding
 
-The best thing ould be if 
-
+The best thing would be if 
 
 LINK TO ASSERT-ACT breakup
 
