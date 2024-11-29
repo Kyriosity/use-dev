@@ -33,5 +33,5 @@
 |- 🔄 [**Undo/Redo** extension](README+/projects/Rvrs) 🚧
 
 + [**Testing**](README+/tests/)\
-|- [Tests - "Multi-feed"](README+/tests/README+/prog_tests-multi_feed.md)\
+|- [Cutting the feed expansion](README+/tests/README+/prog_tests-cut_feeds.md)\
 |- [Gradual assert](README+/tests/README+/unit_test-gradual_assert.md)
