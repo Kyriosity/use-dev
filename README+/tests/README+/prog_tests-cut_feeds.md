@@ -21,16 +21,19 @@ With some tuning, parametrization can supply "defect" data (say, `-4` for intege
 
 ## Combinatorial explosion
 
-To my knowledge, no popular framework supports two or more parallel feeds. For example, test data rows along with alternative functions to act on them.
+To my knowledge, no popular framework explicitly supports two or more "parallel" feeds. For example, test data rows along with alternative functions to act on them.
 
 ```csharp
 /// EXAMPLE PENDING
 ```
 ### Workarounding
 
-The easiest way is to organize cycles. However, this breaks the declarative (markup) fashion of the tests. 
++ The easiest way is to write cycles. However, this breaks the declarative (markup) style of test specifications. 
 
-An [example test](../../../src/TuttiFrutti/FuncStore.Convers.Tests/PhysMath/Dims/LengthsTests.cs) with two feeds
++ Frameworks may have _Fixtures_ and _Setups_ which can be hooks to supply extra feed.\
+Look as _use-dev_ [funcware tests](../../../src/TuttiFrutti/FuncStore.Convers.Tests/PhysMath) utilize [`TestFixture`](https://docs.nunit.org/articles/nunit/writing-tests/attributes/testfixture.html)<sup><b>NUnit</b></sup> on classes to supply variants of converting functions.
+
++ And the best solution is to write a framework (or plugin to one) with descriptive multifeed specifications. Who would initiate one? (I will be glad to participate.)
 
 \___________
 
