@@ -10,39 +10,15 @@
  
 Verbal, documented, and, **programmatic** communication more than often relies on title and context (as SI system) and omits denominations/units:
 
-And it's deceptive. NEDORAZUMENIA
-
-+ one apple,
-+ temperature `36.6` OR FAHRENHEIT //
-+ child age `7`
-+ Your weekly payment will be `1'000` dollars [WHICH] use OF $$$
-
-
-DECO may apply beyond numbers, for example NAME
-
- Hallo, *Jack*
-
-In the worst case default unit/measure may be ambiguous: 
-
-<details>
-2.7 baseline temperature of outer space,
-            
-<summary>&nbsp;<ins>&nbsp;Temperature of <code>36.6</code> looks familiar in <i>Kelvin</i> for liquid gases and in <i>Celsius</i> - for medicine</ins><b> .&nbsp;.&nbsp;.</b></summary>
-
-WHAT MAKES THE MATTER WORSE - interchangeable at the same moment            
+<details><summary>&nbsp;<ins>&nbsp;Temperature of <code>36.6</code> looks familiar in <i>Kelvin</i> for liquid gases and in <i>Celsius</i> - for medicine</ins><b> .&nbsp;.&nbsp;.</b></summary>
+       
 - An altitude on EU domestic flights is measured in _feet_ while variometers may show _meters_.
-
 - A close approach of Earth to Mars is ca. `33'900'000` _miles_ but seems credible in _kilometers_ and _nmi_.
 - A child's age of `7` can mean months and years.
 - `Jack` can be family, given (not only on birth), and branded name.
+- `$1'000` or `1'000€` have not only varying exchange divisions over the years, but differing purchase abilities for essential goods, 1GB of DRAM, or gold ounce&nbsp;**. . .**
 
-RUNNING AHEAD:
-Temp dep on pressure
-
-- `$1'000` or `1'000€` have not only varying exchange divisions over the years, but differing purchase abilities for essential goods, 1GB of DRAM, or gold ounce&nbsp;**. . .**\
-\___________
-
-</details>
+\___________</details>
 
 Not _denominated values_<sup>🔣</sup> in applications may rely on context or imply a single system of categorization (e.g. SI for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters.
 
@@ -50,20 +26,22 @@ Not _denominated values_<sup>🔣</sup> in applications may rely on context or i
 
 ## Case DEMO
 
-Let's present our FEAT take an epic story of the poor [Mars Climate Orbiter] 
+Let's present the epic story of the poor [Mars Climate Orbiter] 
 ...
 
 ...
 
-and show how we could make its software not only NEATER but save about half a billion $$.
-
-
- total impulse produced by thruster firings produced results in pound-force seconds. The trajectory calculation software then used these results – expected to be in newton-seconds (incorrect by a factor of 4.45)
+and show how we could make its software not only NEATER but also save about half a billion $$.
 
  https://llis.nasa.gov/llis_lib/pdf/1009464main1_0641-mr.pdf
 
- ## Working TTL
+## Beyond
 
+### Beyond units
+
+### Beyond numbers
+
+ ## Roadmap
 
  As a good developer, you will come to a better view, like `Heating.Max[Celcius] = 82.15` or `Landing.Speed.Knots` vs `.KmPerHour`. Then you will think about ways of initialization, conversion functions, math ops, constants, and other headaches. 
 
