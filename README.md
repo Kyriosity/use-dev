@@ -1,3 +1,6 @@
+
+FLAT VIEW
+
 <samp>INSTALLATION</samp>: Clone, copy, download `src`, and open the solution in Microsoft Visual Studio
 
 + **CLAY**\
