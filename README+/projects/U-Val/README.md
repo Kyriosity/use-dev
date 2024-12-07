@@ -8,7 +8,7 @@
  
 Verbal, documented, and, **programmatic** communication more than often relies on title and context and omits denominations/units. However should this context blur - values may roam between denominations:
 <details><summary>&nbsp;<ins>&nbsp; Temperature <code>2.7</code> is&thinsp;</ins><b> .&nbsp;.&nbsp;.</b></summary>
-... the baseline of outer space in <i>Kelvin</i> but in earthly <i>Celsius</i> or <i>Fahrenheit</i> a normal winter forecast (placewhere on 40° or higher latitude) .
+... <ins>the baseline of outer space in <i>Kelvin</i></ins> but in earthly <i>Celsius</i> or <i>Fahrenheit</i> a normal winter forecast (placewhere on 40° or higher latitude) .
 <br /><br />
             
 - A close approach of Earth to Mars is ca. `33'900'000` _miles_ but seems credible in _kilometers_ and _nmi_.
@@ -19,23 +19,19 @@ Verbal, documented, and, **programmatic** communication more than often relies o
 
 \___________ </details>
 
-> Concurrent measurement systems can make matters even worse, e.g. height on EU domestic flights can be communicated in <i>feet</i> while cockpit variometers may show <i>meters</i>.
+Not _denominated_ numbers in applications may imply a single system of categorization (e.g. SI for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters.<sup>🔄️</sup>\
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>🔄️</sup> <sub>Concurrent measurement systems can make matters even worse, e.g. height on EU domestic flights can be communicated in <i>feet</i> while cockpit variometers may show <i>meters</i>.</sub>
 
-Not _denominated_ numbers in applications may imply a single system of categorization (e.g. SI for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters.
-
- Coding like `const OuterSpace_Baseline_Kelvin = 2.7` is univocal but inflexible and old-fashioned (ugly to the object-oriented eye). As a picky pro, we want state-of-the-art syntax and features.
+Coding like `const OuterSpace_Baseline_Kelvin = 2.7` is univocal but inflexible and old-fashioned (ugly to the object-oriented eye). As a picky pro, we'd propose trailblazing syntax and features.
 
 <div align="center"><b>Let's not beat around the bush but present what our project can deliver.</b> ⬇️</div>
 
 ## Mars Orbiter, or "The Empire [unit] Strikes Back"
 
-<details><summary><ins>&nbsp;The loss of the <b>Mars Climate Observer</b> in 1999 was an epic collision of measurement systems:s&nbsp;</ins></summary>
+<details><summary><ins>&nbsp;<i>Pound-force</i> [lbf] assumed as <i>Newton</i> [N] destroyed the NASA Mars Climate Observer in 1999:&nbsp;</ins></summary>
+* <sub>Imperial Britain unit of impulse</sub>
 
-Imperial Britain unit of impulse
-
-[Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter)<sup><b>w</b></sup> was put below the "survival altitude" orbit because of thruster impulses POUNDS vs
-            
-\___________ </details>
+[Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter)<sup><b>w</b></sup> was put below the "survival altitude" orbit because of thruster impulses POUNDS vs 
 
 ```mermaid
 sequenceDiagram
@@ -50,7 +46,7 @@ participant M as Mars<br />(Planet)
       SF->>SF: calculate the position (attitude and orientation)
 Note over SF,SF: done right since operates in pounds
       SF->>NAV: thrust data
-rect rgb(255, 155, 155)
+rect rgb(255, 175, 175)
       NAV->>NAV: recalculate trajectory
 Note over NAV,NAV: pound-second taken as newton-second 
 end
@@ -61,7 +57,9 @@ Note over MCO,M: below the estimated trajectory
 Note over M,MCO: atmospheric stress
 destroy participant MCO
 ```
-<sup>🙋</sup> <sub>Source: [NASA: Lost in Translation, 2009](https://sma.nasa.gov/docs/default-source/safety-messages/safetymessage-2009-08-01-themarsclimateorbitermishap.pdf?sfvrsn=eaa1ef8_4)</sub>
+<div dir="rtl"><sub>Source: <a href="https://sma.nasa.gov/docs/default-source/safety-messages/safetymessage-2009-08-01-themarsclimateorbitermishap.pdf?sfvrsn=eaa1ef8_4">NASA: Lost in Translation, 2009</a></sub></div>
+
+\___________ </details>
 
 Our framework could save astronomical bucks.
 
@@ -93,9 +91,9 @@ and show how we could make its software not only NEATER but also save about half
 
 ## Beyond
 
-### Beyond units
+### Units are not only measurement systems
 
-### Beyond numbers
+### Values are not only numbers
 
 ### Beyond a single crystal
 
