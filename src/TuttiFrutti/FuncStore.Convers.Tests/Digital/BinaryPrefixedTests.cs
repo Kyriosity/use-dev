@@ -6,7 +6,7 @@ namespace FuncStore.Convers.Tests.Digital;
 
 [TestBy<Factoring<Bin.In>>]
 [TestBy<Exponentiation<Bin.Exponent.In>>]
-internal class BinaryPrefixedTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
+public class BinaryPrefixedTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum
 {
     [TestOf<Calibration>]
