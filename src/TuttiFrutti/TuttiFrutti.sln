@@ -169,6 +169,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcString_ext", "AbcString_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcChronoTests", "AbcChronoTests\AbcChronoTests.csproj", "{F69BD5F3-D9E3-4F72-B317-731F6FCA37EC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcShortcutsTests", "AbcShortcutsTests\AbcShortcutsTests.csproj", "{A4BBE3FD-0FE0-4A27-B1C3-D4110AB1EA24}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -355,6 +357,10 @@ Global
 		{F69BD5F3-D9E3-4F72-B317-731F6FCA37EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F69BD5F3-D9E3-4F72-B317-731F6FCA37EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F69BD5F3-D9E3-4F72-B317-731F6FCA37EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4BBE3FD-0FE0-4A27-B1C3-D4110AB1EA24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4BBE3FD-0FE0-4A27-B1C3-D4110AB1EA24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4BBE3FD-0FE0-4A27-B1C3-D4110AB1EA24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4BBE3FD-0FE0-4A27-B1C3-D4110AB1EA24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -427,6 +433,7 @@ Global
 		{FE9A54C8-E64A-4589-B9E1-ECA203024B83} = {2E70E4F6-BC6C-4E9F-8F87-7943FEA17071}
 		{4AC47C83-A035-4758-8A24-0FE27AADF226} = {5327228D-3E48-46F4-999A-19B81C833803}
 		{F69BD5F3-D9E3-4F72-B317-731F6FCA37EC} = {E26A5ADC-D63C-44C4-AC01-0596B815545D}
+		{A4BBE3FD-0FE0-4A27-B1C3-D4110AB1EA24} = {E26A5ADC-D63C-44C4-AC01-0596B815545D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C57594B1-16AE-49CA-8B93-C41A39EB7666}
