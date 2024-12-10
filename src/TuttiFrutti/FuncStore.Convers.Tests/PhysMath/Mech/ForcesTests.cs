@@ -1,9 +1,12 @@
 ﻿using FuncStore.Convers.RatioScale;
 using MeasData.Mech.Force;
+using Units = MeasUnits.Phys.Mech.Force;
 
 namespace FuncStore.Convers.Tests.PhysMath.Mech;
 
-[TestBy<Factoring<MeasUnits.Phys.Mech.Force.In>>]
+[TestBy<Factoring<Units.In>>]
+[TestBy<Factoring<Units.SI.In>>]
+[TestBy<Factoring<Units.UsCustomary.In>>]
 public class ForcesTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
       where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible
 {

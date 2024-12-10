@@ -7,7 +7,6 @@ using PhaseChange = MeasData.Temperature.PhaseChange.PhaseChange;
 namespace FuncStore.Convers.Tests.PhysMath;
 
 [TestBy<FuncStores.Basic<In>>]
-
 public class TemperatureTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible
 {
