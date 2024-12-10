@@ -2,7 +2,7 @@
 
 namespace MeasData.Calibration.Metric;
 
-public class MathIntegral : Synonyms
+public class WholeNumbers : Synonyms
 {
     Rec Based = [
         ((double)1.00, BASE, "~", 1_000_000_000_000_000_000_000_000_000_000.00, "quecto"),
