@@ -34,12 +34,12 @@ public abstract class Arrange<TUnit> where TUnit : Enum
         PrecisionAttribute.From<double>(member, out var defined) ? defined : fallback;
 
     private static ObjArrays FromRecs(IEnumerable<RawData> source) =>
-        Units<TUnit>.SwapParseable(TestSource.FromRecords(source), DataRow.UnitsIndexes);
+        Units<TUnit>.SwapParseable(TestSource.FromRecords(source), MeasDataRow.UnitsIndexes);
 
     private static ObjArrays FromDirs(IEnumerable<RawData> source) {
         var itemized = TestSource.FromMeasurements(source);
         var unitsAssigned = Units<TUnit>.SwapParseable(itemized);
-        var expanded = DataRow.Normalize(unitsAssigned
+        var expanded = MeasDataRow.Normalize(unitsAssigned
             .Where(x => 1 < x.Entries.Count()));
 
         return expanded;

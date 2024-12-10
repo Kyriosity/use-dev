@@ -1,11 +1,11 @@
 ﻿using FuncStore.Convers.RatioScale;
 using MeasData.Digital;
-using Bin = MeasUnits.Prefixes.Binary;
+using Binary = MeasUnits.Prefixes.Binary;
 
 namespace FuncStore.Convers.Tests.Digital;
 
-[TestBy<Factoring<Bin.In>>]
-[TestBy<Exponentiation<Bin.Exponent.In>>]
+[TestBy<Factoring<Binary.In>>]
+[TestBy<Exponentiation<Binary.Exponent.In>>]
 public class BinaryPrefixedTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum
 {

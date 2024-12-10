@@ -1,7 +1,7 @@
 ﻿using MeasData.Setup.Formats;
 
 namespace FuncStore.Convers.Tests.Setup.Proc;
-static class DataRow
+static class MeasDataRow
 {
     internal static ObjArrays Normalize<N, TUnit>(IEnumerable<Subject<N, TUnit>> items) where N : INumber<N> =>
         items.SelectMany(item => CrossPair(item.Entries).Select(
