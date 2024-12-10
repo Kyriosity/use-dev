@@ -101,6 +101,6 @@ public class WholeNumbers : Synonyms
     ];
 
     Rec Extremes = [
-        NotImplemented.ToDo("ultimate values"),
+        // NotImplemented.ToDo("ultimate values"),
     ];
 }
