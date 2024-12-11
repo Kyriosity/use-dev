@@ -32,11 +32,14 @@ To my knowledge, neither widespread test framework supports shades of 🟢green 
 
 There are no magic solutions to adjust the frameworks. The following options can make it fast but not elegant:
 
-+ programmatically setting auxiliary test statuses: e.g. [`Inonclusive`](https://learn.microsoft.com/en-us/dotnet/api/nunit.framework.assert.inconclusive?view=xamarin-ios-sdk-12) to indicated not exact but passing result, 
++ programmatically setting auxiliary test statuses: e.g. [`Inconclusive`](https://learn.microsoft.com/en-us/dotnet/api/nunit.framework.assert.inconclusive?view=xamarin-ios-sdk-12) to indicated not exact but passing result, 
 + printing relative results with available symbols
 
 ### <samp>C#.NET</samp>
 
-Look [Funcware tests](../../../src/TuttiFrutti/FuncStore.Convers.Tests/) for an humble example.
+<a href="../../projects/funcware/"><img alt="&nbsp;F&thinsp;u&thinsp;n&thinsp;c&thinsp;W&thinsp;a&thinsp;r&thinsp;e" src="../../_rsc/img/symbols/funcware/funcware-bar_14px.jpg" /></a> [conversion tests ](../../../src/TuttiFrutti/FuncStore.Convers.Tests/) use % and symbolic output to evaluate accuracy:
 
+<picture><img alt="&nbsp;Conversion precision 95% ★★★★★★★★★☆" src="../../_rsc/img/snap/tests/funcware-convert-forces-95_precision.jpg" /></picture>
+
+\___________\
 🔚 ... <sub>Image credit: screenshot of Visual Studio; screenshot of HBO mini-series, 2019</sub>

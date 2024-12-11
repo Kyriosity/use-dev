@@ -30,8 +30,8 @@ FLAT VIEW
 + **PARTS**\
 |- 🗓️ [Chrono ABC](README+/projects/AbcChrono)\
 |- <a name="UVal"></a>💠 [**Multifacet value** (U-Val)📃](README+/projects/U-Val), 🧪⌨ 🔢\
-|--- <a>Funcware</a>\
-|----- <a href="src/TuttiFrutti/FuncStore.Convert">Conversion</a>\
+|--- <a href="README+/projects/funcware">Funcware</a>\
+|----- ⌨️ <a href="src/TuttiFrutti/FuncStore.Convers">Conversion</a>\
 |--- Graph\
 |- 🔄 [**Undo/Redo** extension](README+/projects/Rvrs) 🚧
 

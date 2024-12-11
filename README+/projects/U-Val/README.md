@@ -6,7 +6,7 @@
  You may find the folklore right above dull but not pointless.&nbsp;&mdash; Math deals with <mark>abstract numbers</mark> (_numerus numerans_), computers operate on pure digits but not software developers and users.
  The "inputs" and "outputs" of software anchor to the material world, where numbers can be <mark>concrete</mark> (_numerus numeratus_) or <mark>denominated</mark> (_numerus denominatus_).
  
-Verbal, documented, and, **programmatic** communication more than often relies on title and context and omits denominations/units. However should this context blur - values may roam between denominations:
+Verbal, documented, and, **programmatic** communication more than often relies on title and context and omits denominations/units. Shall this context wane - values may "roam" between denominations:
 <details><summary>&nbsp;<ins>&nbsp; Temperature <code>2.7</code> is&thinsp;</ins><b> .&nbsp;.&nbsp;.</b></summary>
 ... <ins>the baseline of outer space in <i>Kelvin</i></ins> but in earthly <i>Celsius</i> or <i>Fahrenheit</i> a normal winter forecast (placewhere on 40° or higher latitude) .
 <br /><br />
@@ -17,21 +17,23 @@ Verbal, documented, and, **programmatic** communication more than often relies o
 - one apple may mean an electronic device too,
 - The weekly payment of `1'000` dollars has a national hue: Australian, Canadian, Jamaican, and twenty more. 
 
+Concurrent measurement systems can make matters even worse, e.g. height on EU domestic flights can be communicated in <i>feet</i> while cockpit variometers may show <i>meters</i>.
+
 \___________ </details>
 
-Not _denominated_ numbers in applications may imply a single system of categorization (e.g. SI for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters.<sup>🔄️</sup>\
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>🔄️</sup> <sub>Concurrent measurement systems can make matters even worse, e.g. height on EU domestic flights can be communicated in <i>feet</i> while cockpit variometers may show <i>meters</i>.</sub>
+Not _denominated_ numbers in applications may imply a single system of categorization (e.g. SI for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters.<sup>🔄️</sup>
 
 Coding like `const OuterSpace_Baseline_Kelvin = 2.7` is univocal but inflexible and old-fashioned (ugly to the object-oriented eye). As a picky pro, we'd propose trailblazing syntax and features.
 
 <div align="center"><b>Let's not beat around the bush but present what our project can deliver.</b> ⬇️</div>
 
-## Mars Orbiter, or "The Empire [unit] Strikes Back"
+### Mars Orbiter, or "The Empire [unit] Strikes Back"
 
-<details><summary><ins>&nbsp;<i>Pound-force</i> [lbf] assumed as <i>Newton</i> [N] destroyed the NASA Mars Climate Observer in 1999:&nbsp;</ins></summary>
-* <sub>Imperial Britain unit of impulse</sub>
-
-[Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter)<sup><b>w</b></sup> was put below the "survival altitude" orbit because of thruster impulses POUNDS vs 
+<details><summary><ins>&nbsp;<i>Pound-force</i> [lbf] taken for <i>Newton</i> [N] destroyed the NASA Mars Climate Observer in 1999:&nbsp;</ins></summary>
+&nbsp;
+ 
+NASA expected metric data from the contractor but the latter reported thrust in the _US Customary units_, based on the good old British **Imperial Pound**. As a consequence
+[Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter)<sup><b>w</b></sup> was put below the "survival altitude" orbit. 
 
 ```mermaid
 sequenceDiagram
@@ -79,7 +81,11 @@ class ClimateOrbiter
 }
 ```
 
+Looks good? WARNING: IT"S NOT A SOLUTION (The contractor team that worked on SmallForces knew that the must export data in NEWTOWN !)
+
 You may notice that thrust isn't the only UNIT here (Marsian SECONDS!)
+
+ToDo: SHOW THE CASES !
 
 and show how we could make its software not only NEATER but also save about half a billion $$.
 
@@ -88,6 +94,11 @@ and show how we could make its software not only NEATER but also save about half
 
             🚧✏️🚧 ... **DRAFT** ... WORK in PROGRESS ... 🚧⌨️🚧
             ... REMOVE the LABEL when RELEASED ...
+
+
+
+
+## Other cases
 
 ## Beyond
 
