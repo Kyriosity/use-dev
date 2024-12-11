@@ -1,4 +1,9 @@
-﻿namespace MeasData.Mech.Force;
+﻿using MeasData.Setup.Metadata;
+
+namespace MeasData.Mech.Force;
+
+[Precision(0.000_000_1)]
+
 public partial class Dirs
 {
     Dir TurbofanTakeoff = new() {
