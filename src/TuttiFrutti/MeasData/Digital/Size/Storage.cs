@@ -1,7 +1,7 @@
 ﻿using MeasData.Setup.Metadata;
 
 namespace MeasData.Digital.Size;
-public partial class Size
+public partial class Dirs
 {
     Dir Ancient = new() {
 

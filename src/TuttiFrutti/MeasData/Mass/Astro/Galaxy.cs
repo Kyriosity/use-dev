@@ -1,7 +1,7 @@
 ﻿using MeasData.Setup.Metadata;
 
 namespace MeasData.Mass.Astro;
-public partial class Astro
+public partial class Dirs
 {
     [NotForTest("incomplete")]
     Dir Galaxy = new() {

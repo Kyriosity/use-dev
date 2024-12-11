@@ -1,7 +1,7 @@
 ﻿using MeasData.Setup.Metadata;
 
 namespace MeasData.Length.Earth.Distances;
-public partial class Distances
+public partial class Dirs
 {
     [NotForTest("placeholder")]
     Dir Roads = new() {

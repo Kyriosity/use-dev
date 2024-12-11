@@ -1,7 +1,7 @@
-﻿using Constants = MeasData.Temperature.Constants.Constants;
+﻿using Constants = MeasData.Temperature.Constants.Dirs;
 using Funcs = FuncStore.Convers.Temperature;
-using Nature = MeasData.Temperature.Nature.Nature; // ToDo: remove double!
-using PhaseChange = MeasData.Temperature.PhaseChange.PhaseChange;
+using Nature = MeasData.Temperature.Nature.Dirs;
+using PhaseChanges = MeasData.Temperature.PhaseChange.Dirs;
 using Trio = MeasUnits.Phys.Temperature.KCF;
 
 namespace FuncStore.Convers.Tests.PhysMath;
@@ -10,7 +10,7 @@ namespace FuncStore.Convers.Tests.PhysMath;
 public class TemperatureTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible
 {
-    [TestOf<Constants, PhaseChange, Nature>]
+    [TestOf<Constants, PhaseChanges, Nature>]
     public override void Match<N>(N valA, TUnit unitA, N valB, TUnit unitB, string title, string cat, double? delta) =>
         base.Match(valA, unitA, valB, unitB, title, cat, delta);
 }

@@ -1,6 +1,6 @@
 ﻿namespace MeasData.Digital.Size;
 
-public partial class Size : Synonyms
+public partial class Dirs : Synonyms
 {
     protected const string bit = nameof(bit);
     protected const string bits = bit;

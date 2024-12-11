@@ -1,4 +1,4 @@
-﻿namespace MeasData.Temperature.Setup;
+﻿namespace MeasData.Temperature;
 public abstract class Synonyms : MeasOrg.Tables.Chem.Synonyms
 {
     protected const string Celsius = "celsius";

@@ -1,7 +1,7 @@
 ﻿using MeasData.Setup.Metadata;
 
 namespace MeasData.Length.Earth.Distances;
-public partial class Distances
+public partial class Dirs
 {
     [NotForTest("precision too low")] // consider specifying delta of data as +/-.5
     Dir Railways = new() {

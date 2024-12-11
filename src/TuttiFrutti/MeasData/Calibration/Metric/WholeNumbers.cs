@@ -1,6 +1,4 @@
-﻿using MeasData.Calibration.Setup;
-
-namespace MeasData.Calibration.Metric;
+﻿namespace MeasData.Calibration.Metric;
 
 public class WholeNumbers : Synonyms
 {

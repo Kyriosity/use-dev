@@ -1,7 +1,7 @@
 ﻿using MeasData.Setup.Metadata;
 
 namespace MeasData.Length.Astro.Distances;
-public partial class Distances
+public partial class Dirs
 {
     [NotForTest("Draft")]
     Dir SolarSystem = new() {

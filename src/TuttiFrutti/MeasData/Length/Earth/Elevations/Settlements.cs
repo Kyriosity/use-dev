@@ -1,5 +1,5 @@
 ﻿namespace MeasData.Length.Earth.Elevations;
-public partial class Elevations
+public partial class Dirs
 {
     Dir Settlements = new() {
         ["La Rinconada"] = [(5_100, meter), (16_732.28, foot), (5_577.43, yard)], // Peru

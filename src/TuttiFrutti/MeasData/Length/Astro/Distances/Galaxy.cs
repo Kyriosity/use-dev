@@ -1,7 +1,7 @@
 ﻿using MeasData.Setup.Metadata;
 
 namespace MeasData.Length.Astro.Distances;
-public partial class Distances
+public partial class Dirs
 {
     [Precision(1)]
     Dir Galaxy = new() {
@@ -30,5 +30,5 @@ public partial class Distances
     private const double pcProxC = 1.30197;
 }
 
-// ToDo: Light Times as DateTime !
+// ToDo: add Light Times as DateTime !
 

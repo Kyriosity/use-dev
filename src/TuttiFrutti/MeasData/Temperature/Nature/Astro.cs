@@ -1,10 +1,9 @@
 ﻿using MeasData.Setup.Metadata;
-using MeasData.Temperature.Setup;
 
 namespace MeasData.Temperature.Nature;
 
 [Precision(1)]
-public partial class Nature : Synonyms
+public partial class Dirs : Synonyms
 {
     [Precision(0.5)]
     Dir Astro = new() {

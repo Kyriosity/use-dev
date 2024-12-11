@@ -1,5 +1,5 @@
-﻿namespace MeasData.Length.Setup;
-public abstract class Synonyms
+﻿namespace MeasData.Length;
+public abstract class Dirs
 {
     protected const string millimeter = nameof(millimeter);
     protected const string mm = millimeter;

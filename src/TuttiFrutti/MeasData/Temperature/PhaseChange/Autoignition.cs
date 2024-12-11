@@ -1,7 +1,7 @@
 ﻿using MeasData.Setup.Metadata;
 
 namespace MeasData.Temperature.PhaseChange;
-public partial class PhaseChange
+public partial class Dirs
 {
     [NotForTest]
     Dir Autoignition = new() {

@@ -1,5 +1,5 @@
 ﻿namespace MeasData.Length.Earth.Elevations;
-public partial class Elevations
+public partial class Dirs
 {
     Dir Buildings = new() {
         ["Tower of Babel"] = [(2_484, m), (8_149.606, ft), (5_433, "cubits"), (2, "palms")], // parable; according to The Book of Jubilees 

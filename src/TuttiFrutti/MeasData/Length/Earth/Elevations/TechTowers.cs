@@ -1,6 +1,6 @@
 ﻿namespace MeasData.Length.Earth.Elevations;
 
-public partial class Elevations
+public partial class Dirs
 {
     Dir TechTowers = new() {
         ["Warsaw radio mast"] = [(646.38, m), (2_120.669, ft)], // collapsed in 1991

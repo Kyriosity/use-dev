@@ -1,6 +1,6 @@
 ﻿using FuncStore.Convers.RatioScale;
 using MeasUnits.Digital;
-using Sizes = MeasData.Digital.Size.Size; // ToDo: REMOVE DOUBLE ! (Rearrange: Size.Size)
+using Sizes = MeasData.Digital.Size.Dirs;
 
 namespace FuncStore.Convers.Tests.Digital;
 

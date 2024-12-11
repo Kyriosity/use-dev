@@ -1,7 +1,7 @@
 ﻿using MeasData.Setup.Metadata;
 
-namespace MeasData.Mass.Constructs;
-public partial class Constructs
+namespace MeasData.Mass.Constructs.Vehicles;
+public partial class Dirs
 {
     [NotForTest("not enough data for test")]
     Dir Watercrafts = new() {

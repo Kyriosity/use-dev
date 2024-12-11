@@ -1,6 +1,6 @@
 ﻿namespace MeasData.Length.Earth.Elevations;
 
-public partial class Elevations
+public partial class Dirs
 {
     Dir Mounts = new() {
         [Everest] = [(8_848.86, meter), (29_031.692_91, feet), (8.848_86, km), (5.498426688, mile)],

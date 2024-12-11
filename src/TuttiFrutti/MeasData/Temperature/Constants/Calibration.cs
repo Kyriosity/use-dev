@@ -1,7 +1,7 @@
 ﻿using MeasData.Setup.Metadata;
 
 namespace MeasData.Temperature.Constants;
-public partial class Constants
+public partial class Dirs
 {
     public const string AbsZero = "Absolute zero";
     public const string AbsoluteZero = "Absolute zero";

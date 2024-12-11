@@ -1,5 +1,5 @@
 ﻿namespace MeasData.Length.Earth.Elevations;
-public partial class Elevations
+public partial class Dirs
 {
     Dir Trenches = new() {
         // Pacific

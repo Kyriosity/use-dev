@@ -1,5 +1,5 @@
 ﻿using FuncStore.Convers.RatioScale;
-using MeasData.Mech.Force;
+using Forces = MeasData.Mech.Force.Dirs;
 using Units = MeasUnits.Phys.Mech.Force;
 
 namespace FuncStore.Convers.Tests.PhysMath.Mech;

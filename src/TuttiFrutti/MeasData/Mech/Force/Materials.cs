@@ -1,5 +1,5 @@
 ﻿namespace MeasData.Mech.Force;
-public partial class Forces
+public partial class Dirs
 {
-
+    // RESISTANCE
 }

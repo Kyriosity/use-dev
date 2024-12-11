@@ -1,5 +1,6 @@
-﻿namespace MeasData.Mass.Constructs;
-public partial class Constructs
+﻿namespace MeasData.Mass.Constructs.Vehicles;
+
+public partial class Dirs : Constructs.Dirs
 {
     Dir Aircrafts = new() {
         ["Airbus A380, max. takeoff"] = [(575_000, kg), (1_267_658, lb)],

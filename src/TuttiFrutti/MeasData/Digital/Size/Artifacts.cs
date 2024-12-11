@@ -1,6 +1,6 @@
 ﻿
 namespace MeasData.Digital.Size;
-public partial class Size
+public partial class Dirs
 {
     Dir Books = new() {
         ["Project Gutenberg King James Bible (Old&New Testaments)"] = [(4.13, MByte), (4_332_914, bytes)],

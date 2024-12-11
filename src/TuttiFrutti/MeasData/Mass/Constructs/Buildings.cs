@@ -1,5 +1,5 @@
 ﻿namespace MeasData.Mass.Constructs;
-public partial class Constructs
+public partial class Dirs
 {
     Dir Buildings = new() {
         ["The Great Pyramid of Giza"] = [(5.75 * million, tonnes), (2_204.62 * million, pound)],

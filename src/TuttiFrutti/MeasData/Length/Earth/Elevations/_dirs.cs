@@ -1,7 +1,6 @@
-﻿using MeasData.Length.Setup;
-namespace MeasData.Length.Earth.Elevations;
+﻿namespace MeasData.Length.Earth.Elevations;
 
-public partial class Elevations : Synonyms
+public partial class Dirs : Length.Dirs
 {
     protected const string Everest = "Everest";
     protected const string Qomolangma = Everest;

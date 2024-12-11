@@ -1,6 +1,6 @@
 ﻿namespace MeasData.Length.Astro.Distances;
 
-public partial class Distances : Setup.Synonyms
+public partial class Dirs : Length.Dirs
 {
     protected const string astronomical_unit = nameof(astronomical_unit);
     protected const string astro_unit = astronomical_unit;

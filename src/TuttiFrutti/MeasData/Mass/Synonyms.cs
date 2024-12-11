@@ -1,6 +1,14 @@
 ﻿namespace MeasData.Mass;
 public partial class Synonyms
 {
+    protected const string gram = nameof(gram);
+    protected const string gramme = gram;
+    protected const string g = gram;
+
+    protected const string microgram = nameof(microgram);
+
+    protected const string milligram = nameof(milligram);
+
     protected const string kilogram = nameof(kilogram);
     protected const string kilograms = kilogram;
     protected static readonly string kg = kilogram;
@@ -16,7 +24,6 @@ public partial class Synonyms
     protected static readonly string tonnes = tonne;
 
     protected static readonly string US_ton = "US ton";
-
 
     protected const double thousand = 1_000;
     protected const double million = 1_000_000;

@@ -1,5 +1,5 @@
 ﻿namespace MeasData.Temperature.PhaseChange;
-public partial class PhaseChange
+public partial class Dirs
 {
     Dir Vaporization = new() {
         [water] = [(99.97, Celsius), (99.97 + KelvinOffset, Kelvin), (211.946, Fahrenheit)],

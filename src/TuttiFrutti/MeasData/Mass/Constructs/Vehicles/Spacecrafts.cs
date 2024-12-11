@@ -1,5 +1,5 @@
-﻿namespace MeasData.Mass.Constructs;
-public partial class Constructs
+﻿namespace MeasData.Mass.Constructs.Vehicles;
+public partial class Dirs
 {
     Dir Spacecrafts = new() {
         ["Saturn I, dry mass"] = [(1_124_000, lb), (509_838, kg)],

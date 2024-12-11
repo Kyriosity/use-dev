@@ -1,5 +1,5 @@
 ﻿namespace MeasData.Mech.Force;
-public partial class Forces
+public partial class Dirs
 {
     Dir TurbofanTakeoff = new() {
         ["GE Aviation GE9X"] = [(110_000, pound_force), (489.3, kilonewton), (110, kilopound)],

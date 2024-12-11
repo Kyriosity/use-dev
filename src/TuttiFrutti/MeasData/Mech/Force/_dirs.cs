@@ -1,5 +1,5 @@
 ﻿namespace MeasData.Mech.Force;
-public partial class Forces
+public partial class Dirs
 {
     protected static readonly string dyne = nameof(dyne);
     protected static readonly string dyn = nameof(dyne);

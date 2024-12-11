@@ -1,5 +1,5 @@
 ﻿namespace MeasData.Length.Earth.Distances;
-public partial class Distances
+public partial class Dirs
 {
     Dir Geo = new() {
         [Equator] = [(40_075, km), (24_901.45, miles), (21_638.77, nautical_miles)],

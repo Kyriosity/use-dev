@@ -2,7 +2,7 @@
 
 namespace MeasData.Mass.Astro;
 
-public partial class Astro
+public partial class Dirs
 {
     [Precision(.000_000_1)]
     Dir SolarSystem = new() {

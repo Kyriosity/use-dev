@@ -1,5 +1,5 @@
 ﻿namespace MeasData.Temperature.Nature;
-public partial class Nature
+public partial class Dirs
 {
     Dir Earth = new() {
         ["Min, recorded"] = [(183.95, K), (-89.2, C), (-128.56, F)],

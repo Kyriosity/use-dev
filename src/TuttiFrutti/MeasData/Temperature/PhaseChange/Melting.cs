@@ -1,5 +1,5 @@
 ﻿namespace MeasData.Temperature.PhaseChange;
-public partial class PhaseChange
+public partial class Dirs
 {
     Dir Melting = new() {
         [water] = [(0.01, Celsius), (0.01 + KelvinOffset, Kelvin), (32.018, Fahrenheit)],

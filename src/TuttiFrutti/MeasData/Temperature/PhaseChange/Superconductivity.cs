@@ -1,5 +1,5 @@
 ﻿namespace MeasData.Temperature.PhaseChange;
-public partial class PhaseChange
+public partial class Dirs
 {
     Dir Superconductivity = new() {
         [Gallium] = [(1.09, Kelvin), (-272.06, Celsius), (-457.708, Fahrenheit)],

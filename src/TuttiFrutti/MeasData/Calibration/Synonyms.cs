@@ -1,4 +1,4 @@
-﻿namespace MeasData.Calibration.Setup;
+﻿namespace MeasData.Calibration;
 public abstract class Synonyms
 {
     protected const string BASE = "base";
@@ -16,5 +16,4 @@ public abstract class Synonyms
     protected const string kilo = nameof(kilo);
     protected const string mega = nameof(mega);
     protected const string giga = nameof(giga);
-
 }
