@@ -41,5 +41,8 @@ There are no magic solutions to adjust the frameworks. The following options can
 
 <picture><img alt="&nbsp;Conversion precision 95% ★★★★★★★★★☆" src="../../_rsc/img/snap/tests/funcware-convert-forces-95_precision.jpg" /></picture>
 
+and symbolic ranking of failure:\
+<picture><img alt="&nbsp;Conversion precision severe and moderate fails" src="../../_rsc/img/snap/tests/funcware-convert-forces-fails_succeess.jpg" /></picture>
+
 \___________\
 🔚 ... <sub>Image credit: screenshot of Visual Studio; screenshot of HBO mini-series, 2019</sub>
