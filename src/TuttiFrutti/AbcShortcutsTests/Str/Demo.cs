@@ -1,48 +1,69 @@
-﻿using AbcCommu.Errors.Sys;
+﻿using AbcString_ext.Item;
 
 namespace AbcShortcutsTests.Str;
-
 public class Demo
 {
+    string multilineWhitespaces = @"   
+    
+   ";
+
     [Test]
     public void SyntaxOnly() {
-        var smth = "NOT NULLL TEST STRING";
 
-        // SHORTCATS
-        _ = smth.Is().NullOrWhitespace;
-        _ = smth.Not().NullOrWhitespace;
 
-        // NEW
-        _ = smth.Is().Ascii;
-        _ = smth.Is().Latin;
+        var isIt = string.IsNullOrWhiteSpace("     ");
+
+        var strWithTabs = "   \t  ";
+        Console.WriteLine($"Sstring of thetest: {strWithTabs}");
+        isIt = string.IsNullOrWhiteSpace(multilineWhitespaces);
+        isIt = string.IsNullOrWhiteSpace(strWithTabs);
+
+        var len = multilineWhitespaces.Length;
+        len = multilineWhitespaces.Trim().Length;
+
+        const string smth = "NOT NU LL TEST STRING";
+        _ = smth.Not().NullOrGrayspace;
+        // SHORTCUTs
+        ////////_ = smth.Is().NullOrWhitespace;
+        ////////_ = smth.Is().NullOrWhitespace;
+
+        // EXTRAs
+        //_ = smth.Is().Ascii;
+        //_ = smth.Is().Latin;
+
     }
-
-
 
     [Test]
     public void Extensions() {
         var sample = "               ";
-        Assert.That(sample.Not().NullOrEmpty && sample.Is().NullOrWhitespace, Is.True);
-
-
+        Assert.That(sample.Is().NullOrEmpty && sample.Is().NullOrWhitespace, Is.True);
+        var obj = new object();
     }
 }
 
-public static class StrExtensions_Traits
+
+public class Wrapper<T>(T? core)
 {
-    public static ITraits Is(this string subj) => NotImplemented.ToDo("Is stub");
-    public static ITraits Not(this string subj) => NotImplemented.ToDo("Is stub");
+    private readonly T? _core = core;
+}
+
+public interface WORK_TITLE<Fs> where Fs : IPredicates
+{
+    Fs With();
 }
 
 
-public interface ITraits
+public interface ITraits<Fs> : IAffirmTraits<Fs>, INegateTraits<Fs> where Fs : IPredicates;
+
+public interface IAffirmTraits<Fs> where Fs : IPredicates
 {
-    bool NullOrEmpty { get; }
-    bool NullOrWhitespace { get; }
-    bool NullOrGrayspace { get; }
-
-    bool Ascii { get; }
-
-    bool Latin { get; }
-    bool LatinOrNumeric { get; }
+    Fs Is();
 }
+
+public interface INegateTraits<Fs> where Fs : IPredicates
+{
+    Fs Not();
+}
+
+
+public interface IPredicates;
