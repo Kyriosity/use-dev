@@ -38,4 +38,4 @@ FLAT VIEW
 + [**Testing**](README+/tests/)\
 |- [Cutting the feed expansion](README+/tests/README+/prog_tests-cut_feeds.md)\
 |- [Gradual assert](README+/tests/README+/unit_test-gradual_assert.md)\
-|- Making [`.Within`](https://docs.nunit.org/articles/nunit/writing-tests/constraints/EqualConstraint.html) even better
+|- [Finer tolerance](README+/tests/README+/val_tests-tolerance.md)
