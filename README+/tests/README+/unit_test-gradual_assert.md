@@ -44,5 +44,9 @@ There are no magic solutions to adjust the frameworks. The following options can
 and symbolic ranking of failure:\
 <picture><img alt="&nbsp;Conversion precision severe and moderate fails" src="../../_rsc/img/snap/tests/funcware-convert-forces-fails_succeess.jpg" /></picture>
 
+## Further
+
+Gradual assert interlaces with [evaluation tolerance](val_tests-tolerance.md).
+
 \___________\
 🔚 ... <sub>Image credit: screenshot of Visual Studio; screenshot of HBO mini-series, 2019</sub>
