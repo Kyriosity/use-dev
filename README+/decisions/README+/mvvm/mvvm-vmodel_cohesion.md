@@ -2,14 +2,15 @@
 
 ## Classic aggregation
 
-As [Microsoft guidelines](https://docs.microsoft.com/en-us/archive/msdn-magazine/2009/february/patterns-wpf-apps-with-the-model-view-viewmodel-design-pattern)<sup>🔗</sup> suggest ViewModels will usually straightforwardly aggregate Models:
+As [Microsoft guidelines](https://docs.microsoft.com/en-us/archive/msdn-magazine/2009/february/patterns-wpf-apps-with-the-model-view-viewmodel-design-pattern)<sup>🪟</sup> suggest ViewModels will usually straightforwardly aggregate Models:
 
 <details>
 <summary><ins>&nbsp;Example: Book with Editor VM - sketch&nbsp;</ins></summary>
 &nbsp;
 
 ```csharp
-  namespace Models;
+  namespace nnn.Models;
+
   class Book
   {
       uint required Isbn { get; init; }
@@ -18,7 +19,8 @@ As [Microsoft guidelines](https://docs.microsoft.com/en-us/archive/msdn-magazine
   }
 ```
 ```csharp
-  namespace ViewModels;
+  namespace nnn.ViewModels;
+
   class BookEditor : ViewModelBase
   {
      private Models.Book _model = // ... anyhow supplied or injected
