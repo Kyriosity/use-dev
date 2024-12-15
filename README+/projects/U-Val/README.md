@@ -23,13 +23,13 @@ Concurrent measurement systems can make matters even worse, e.g. height on EU do
 
 Not _denominated_ numbers in applications may imply a single system of categorization (e.g. SI for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters.<sup>🔄️</sup>
 
-Coding like `const OuterSpace_Baseline_Kelvin = 2.7` is univocal but inflexible and old-fashioned (ugly to the object-oriented eye). As a picky pro, we'd propose trailblazing syntax and features.
+Coding like `const OuterSpace_Baseline_Kelvin = 2.7` is univocal but inflexible and ugly to the object-oriented eye. As picky pros, we'd propose trailblazing syntax and features.
 
 <div align="center"><b>Let's not beat around the bush but present what our project can deliver.</b> ⬇️</div>
 
 ### Mars Orbiter, or "The Empire [unit] Strikes Back"
 
-<details><summary><ins>&nbsp;<i>Pound-force</i> [lbf] taken for <i>Newton</i> [N] destroyed the NASA Mars Climate Observer in 1999:&nbsp;</ins></summary>
+<details><summary><ins>&nbsp;<i>Pound-force</i> [lbf] taken for <i>Newton</i> [N] destroyed the NASA Mars Climate Observer in 1999.&nbsp;</ins></summary>
 &nbsp;
  
 NASA expected metric data from the contractor but the latter reported thrust in the _US Customary units_, based on the good old British **Imperial Pound**. As a consequence
@@ -63,23 +63,38 @@ destroy participant MCO
 
 \___________ </details>
 
-Our framework could save astronomical bucks.
+Our framework could save astronomical bucks:
 
 ```diff
-namespace NASA.Missions.Mars
+event EventHandler<ThrustArgs> AngularMomentumDesaturation;
 
-class ClimateOrbiter
+class Thrust : EventArgs
 {
-    void Correct(int orbit) {
-        var thrust = JetPropulsionLab.Calc.Get(); // RESULT -> POUNDS
-      var orbiterThrust // RECALL SWAP OP with tuple
-       MartinLockheed.Orbiter.Thrust = thrust;
-       Thread.Sleep(1000);
-    //  the ground Small Forces software calculated the trajectory in pounds force, increasing figures by a factor of 4.45
-// Ground navigation Software used METRIC
+-   double Magnitude;
++   UVal.Phys.Mech.Force Magnitude;
+    vector Direction;
+    milliseconds Duration;
 }
+
+/// fire event
+- new Thrust { Magnitude = reported_val, ... };
++ new Thrust { Magnitude = Force.pound(reported_val), ... };
+
+// read event
+
+OnForce(Thrust thrust) {
+-   Trajectory.Apply(thrust.Magnitude, thrust.Vector, thrust.Duration);
++   Trajectory.Apply(thrust.Magnitude.newton, thrust.Vector, thrust.Duration);
+...
 }
+
 ```
+
+### Looks good ...
+
+... for the primitive course.
+
+THE LINK TO FULL FILE!
 
 Looks good? WARNING: IT"S NOT A SOLUTION (The contractor team that worked on SmallForces knew that the must export data in NEWTOWN !)
 
