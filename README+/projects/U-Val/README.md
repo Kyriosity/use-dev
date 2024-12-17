@@ -66,7 +66,6 @@ destroy participant MCO
 Our framework could save astronomical bucks:
 
 ```diff
-event EventHandler<ThrustArgs> AngularMomentumDesaturation;
 
 class Thrust : EventArgs
 {
@@ -76,11 +75,17 @@ class Thrust : EventArgs
     milliseconds Duration;
 }
 
-/// fire event
-- new Thrust { Magnitude = reported_val, ... };
-+ new Thrust { Magnitude = Force.pound(reported_val), ... };
+namespace CONTRACTOR.SmallForecesTeam;
 
-// read event
+event EventHandler<ThrustArgs> AngularMomentumDesaturation;
+
+AngularMomentumDesaturation.Invoke(new Thrust {
+-  Magnitude = reported_val,
++  Magnitude = Force.pound(reported_val),
+   Direction = reported_dir, Duraion = duration
+});
+
+namespace NASA.Orbiter.NavigationTeam;
 
 OnForce(Thrust thrust) {
 -   Trajectory.Apply(thrust.Magnitude, thrust.Vector, thrust.Duration);
@@ -92,11 +97,12 @@ OnForce(Thrust thrust) {
 
 ### Looks good ...
 
-... for the primitive course.
+... to stake out a repository for CV.
+
+It will be a better syntax but still not a solution: the contractor team of SmallForces knew that thrust must be reported in newton. They took the hardware reported value and honestly submitted it as _N_. 
 
 THE LINK TO FULL FILE!
 
-Looks good? WARNING: IT"S NOT A SOLUTION (The contractor team that worked on SmallForces knew that the must export data in NEWTOWN !)
 
 You may notice that thrust isn't the only UNIT here (Marsian SECONDS!)
 
@@ -109,8 +115,6 @@ and show how we could make its software not only NEATER but also save about half
 
             🚧✏️🚧 ... **DRAFT** ... WORK in PROGRESS ... 🚧⌨️🚧
             ... REMOVE the LABEL when RELEASED ...
-
-
 
 
 ## Other cases
