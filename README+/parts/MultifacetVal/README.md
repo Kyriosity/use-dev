@@ -1,4 +1,4 @@
-# Multifaceted Value :diamond_shape_with_a_dot_inside: (**U-Val**)
+# Multifaceted Value 💠 (**Π-Val**) 
 
 <p dir="rtl">?Gauges&nbsp;-<br />!<b>300</b>&nbsp;-<br />
 ?What 300&nbsp;-<br />?What gauges&nbsp;-</p>
