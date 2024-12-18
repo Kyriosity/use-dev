@@ -5,6 +5,7 @@ FLAT VIEW
 
 + **CLAY**\
 |- Exceptions wrappers: [tests 🧪](src/TuttiFrutti/ExtensionsTests/Exceptions)\
+|- [Extensions and shortcuts](README+/parts/_ext)\
 |- 🌵 [Models](src/TuttiFrutti/AbcModels)\
 |- [Motley heap](README+/decisions/README+/structs/motley_heap.md): [tests 🧪](src/TuttiFrutti/AbcStructTests/Heaps)\
 |- **WPF**\
@@ -28,12 +29,12 @@ FLAT VIEW
 |- Variant builders
 
 + **PARTS**\
-|- 🗓️ [Chrono ABC](README+/projects/AbcChrono)\
-|- <a name="UVal"></a>💠 [**Multifacet value** (Π-Val)📃](README+/parts/Π-Val), 🧪⌨ 🔢\
-|--- <a href="README+/projects/funcware">Funcware</a>\
+|- 🗓️ [Chrono ABC](README+/parts/AbcChrono)\
+|- <a name="UVal"></a>💠 [**Multifacet value** (Π-Val)📃](README+/parts/MultifacetVal), 🧪⌨ 🔢\
+|--- <a href="README+/parts/funcware">Funcware</a>\
 |----- ⌨️ <a href="src/TuttiFrutti/FuncStore.Convers">Conversion</a>\
 |--- Graph\
-|- 🔄 [**Undo/Redo** extension](README+/projects/Rvrs) 🚧
+|- 🔄 [**Undo/Redo** extension](README+/parts/Rvrs) 🚧
 
 + [**Testing**](README+/tests/)\
 |- [Cutting the feed expansion](README+/tests/README+/prog_tests-cut_feeds.md)\
