@@ -1,24 +1,24 @@
 ﻿namespace UVal.Test_Learn;
 public static class UVal
 {
-    public static IOpenMultifacet<T, U> Of<T, U>(T value, U unit) where U : Enum =>
-        NotImplemented.Throw("value, unit");
-    public static IOpenMultifacet<T, U> Of<T, U>(T value, U unit, IFuncStore<U> func) where U : Enum =>
-        NotImplemented.Throw("value, unit, func");
+    public static IOpenMultifacet<T, U> Of<T, U>(T val, U unit) where U : Enum =>
+        NotImplemented.Throw("val, unit");
+    public static IOpenMultifacet<T, U> Of<T, U>(T val, U unit, IFuncStore<U> func) where U : Enum =>
+        NotImplemented.Throw("val, unit, func");
 
     public static class Const
     {
-        public static IMultifacet<T, U> Of<T, U>(T value, U unit) where U : Enum =>
-            NotImplemented.Throw("value, unit");
-        public static IMultifacet<T, U> Of<T, U>(T value, U unit, IFuncStore<U> func) where U : Enum =>
-            NotImplemented.Throw("value, unit, func");
+        public static IMultifacet<T, U> Of<T, U>(T val, U unit) where U : Enum =>
+            NotImplemented.Throw("val, unit");
+        public static IMultifacet<T, U> Of<T, U>(T val, U unit, IFuncStore<U> func) where U : Enum =>
+            NotImplemented.Throw("val, unit, func");
     }
 }
 
 public class UVal<U> : UVal<U, DumbProporional<U>> where U : Enum { }
 public class UVal<U, F> where U : Enum where F : IFuncStore<U>, new()
 {
-    public IOpenMultifacet<T, U> Of<T>(T value) => NotImplemented.Throw(value);
+    public IOpenMultifacet<T, U> Of<T>(T val) => NotImplemented.Throw(val);
 }
 
 public interface IFuncStore<U>
