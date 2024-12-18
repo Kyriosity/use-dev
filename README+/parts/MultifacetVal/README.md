@@ -1,4 +1,4 @@
-# Multifaceted Value :diamond_shape_with_a_dot_inside: (**U-Val**)
+# Multifaceted Value 💠 (**Π-Val**) 
 
 <p dir="rtl">?Gauges&nbsp;-<br />!<b>300</b>&nbsp;-<br />
 ?What 300&nbsp;-<br />?What gauges&nbsp;-</p>
@@ -23,13 +23,13 @@ Concurrent measurement systems can make matters even worse, e.g. height on EU do
 
 Not _denominated_ numbers in applications may imply a single system of categorization (e.g. SI for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters.<sup>🔄️</sup>
 
-Coding like `const OuterSpace_Baseline_Kelvin = 2.7` is univocal but inflexible and old-fashioned (ugly to the object-oriented eye). As a picky pro, we'd propose trailblazing syntax and features.
+Coding like `const OuterSpace_Baseline_Kelvin = 2.7` is univocal but inflexible and ugly to the object-oriented eye. As picky pros, we'd propose trailblazing syntax and features.
 
 <div align="center"><b>Let's not beat around the bush but present what our project can deliver.</b> ⬇️</div>
 
 ### Mars Orbiter, or "The Empire [unit] Strikes Back"
 
-<details><summary><ins>&nbsp;<i>Pound-force</i> [lbf] taken for <i>Newton</i> [N] destroyed the NASA Mars Climate Observer in 1999:&nbsp;</ins></summary>
+<details><summary><ins>&nbsp;<i>Pound-force</i> [lbf] taken for <i>Newton</i> [N] destroyed the NASA Mars Climate Observer in 1999.&nbsp;</ins></summary>
 &nbsp;
  
 NASA expected metric data from the contractor but the latter reported thrust in the _US Customary units_, based on the good old British **Imperial Pound**. As a consequence
@@ -63,25 +63,46 @@ destroy participant MCO
 
 \___________ </details>
 
-Our framework could save astronomical bucks.
+Our framework could save astronomical bucks:
 
 ```diff
-namespace NASA.Missions.Mars
 
-class ClimateOrbiter
+class Thrust : EventArgs
 {
-    void Correct(int orbit) {
-        var thrust = JetPropulsionLab.Calc.Get(); // RESULT -> POUNDS
-      var orbiterThrust // RECALL SWAP OP with tuple
-       MartinLockheed.Orbiter.Thrust = thrust;
-       Thread.Sleep(1000);
-    //  the ground Small Forces software calculated the trajectory in pounds force, increasing figures by a factor of 4.45
-// Ground navigation Software used METRIC
+-   double Magnitude;
++   UVal.Phys.Mech.Force Magnitude;
+    vector Direction;
+    milliseconds Duration;
 }
+
+namespace CONTRACTOR.SmallForecesTeam;
+
+event EventHandler<ThrustArgs> AngularMomentumDesaturation;
+
+AngularMomentumDesaturation.Invoke(new Thrust {
+-  Magnitude = reported_val,
++  Magnitude = Force.pound(reported_val),
+   Direction = reported_dir, Duraion = duration
+});
+
+namespace NASA.Orbiter.NavigationTeam;
+
+OnForce(Thrust thrust) {
+-   Trajectory.Apply(thrust.Magnitude, thrust.Vector, thrust.Duration);
++   Trajectory.Apply(thrust.Magnitude.newton, thrust.Vector, thrust.Duration);
+...
 }
+
 ```
 
-Looks good? WARNING: IT"S NOT A SOLUTION (The contractor team that worked on SmallForces knew that the must export data in NEWTOWN !)
+### Looks good ...
+
+... to stake out a repository for CV.
+
+It will be a better syntax but still not a solution: the contractor team of SmallForces knew that thrust must be reported in newton. They took the hardware reported value and honestly submitted it as _N_. 
+
+THE LINK TO FULL FILE!
+
 
 You may notice that thrust isn't the only UNIT here (Marsian SECONDS!)
 
@@ -94,8 +115,6 @@ and show how we could make its software not only NEATER but also save about half
 
             🚧✏️🚧 ... **DRAFT** ... WORK in PROGRESS ... 🚧⌨️🚧
             ... REMOVE the LABEL when RELEASED ...
-
-
 
 
 ## Other cases

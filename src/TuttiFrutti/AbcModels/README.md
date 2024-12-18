@@ -1,5 +1,8 @@
-# Models - Static 
+# Models &mdash; Static but fluid
 
-[Note in read-write](https://github.com/Kyriosity/read-write/blob/main/README+/software/README+/design/design_samples.md)
+⬅️ [Theoretical tribute](https://github.com/Kyriosity/read-write/tree/main/README+/software/design/samples#Still-plain-models)
 
-LINK to R/W
+🚧 PLACEHOLDER 🚧
+// TO BE WRITTEN
+
+🔚

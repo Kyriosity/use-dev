@@ -39,7 +39,7 @@ Contemporary languages can support a vast range of past and future dates<sup>�
 + Casting
 + More chronologies
 
-+ **The coronation step** - re-making it as a solution of [Multifacet value](../U-Val)<sup>👑</sup>
++ **The coronation step** - re-making it as a solution of [Multifacet value](../MultifacetVal)<sup>👑</sup>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>👑</sup> <sub>Where units of time present values as years are more than natural.</sub>
 
