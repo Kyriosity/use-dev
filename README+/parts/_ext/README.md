@@ -1,10 +1,9 @@
-# Parts &mdash Extensions and Shortcuts
+# Parts &mdash; Extensions and Shortcuts
 
-These are parts that extend and shortcut known/existing functionality.
+Extension and shortcuts must be based on existing functionality (though they may grow with new ideas).
 
-* make readable
+They shall:
+
+* make more readable
 * shorten
 
-They may involve new functionality but 
-
-🚧🐝🚧🐝 PLACEHOLDER 🚧🐝🚧🐝
