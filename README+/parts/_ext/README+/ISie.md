@@ -1,5 +1,7 @@
 # Extensions &mdash; &thinsp;I&thinsp;S&thinsp;i&thinsp;e
 
+[![C#](https://custom-icon-badges.demolab.com/badge/C%23-but_for_all-orangered.svg?logo=cshrp&logoColor=white&color=turquose)](#)
+
 <p dir="rtl"><samp>...May be or not maybe</samp></p>
 
 The crossover of two discoveries 
