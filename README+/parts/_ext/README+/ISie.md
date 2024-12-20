@@ -17,4 +17,12 @@ ToString()
 more goodies
 INymber 
 
+## Sideffects
+
+circuitry
+
+## link to Demos
+
+let's not beat around the bush
+
 🔚
