@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AbcCommu\AbcCommu.csproj" />
-    <ProjectReference Include="..\AbcString_ext\AbcString_ext.csproj" />
   </ItemGroup>
 
   <ItemGroup>
