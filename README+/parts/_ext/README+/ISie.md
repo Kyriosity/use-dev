@@ -1,17 +1,17 @@
 # Extensions &mdash; &thinsp;I&thinsp;S&thinsp;i&thinsp;e
 
-C# but FOR ALL BADGE
+[![C#](https://custom-icon-badges.demolab.com/badge/C%23-but_for_all-orangered.svg?logo=cshrp&logoColor=white&color=turquose)](#)
 
-Two 🐝🐝 or not too 🐝 
+<p dir="rtl"><samp>...May be or not maybe</samp></p>
 
-Two dicoveries 
+The crossover of two discoveries 
 
-lit up the idea that 
++ call on nullable is possible,
++ .NET will introduce extended properties
 
+suggested to shortcut numerous <code>string.IsNullOrWhiteSpace("<i>abracadabra</i>")</code>can into <code>"abracadabra".Is.NullOrWhitespace<>
 
-<code>string.IsNullOrWhiteSpace(<i>abrahcadabra</i>)</code>can be shortened to
-
-link to git answer
+C# `extension` "is still in active design" but this not gonna stop us. We will rely on extension method 
 
 ToString()
 more goodies
@@ -25,4 +25,4 @@ circuitry
 
 let's not beat around the bush
 
-🔚
+🔚 ... <sub>two 🐝🐝 or not too 🐝 ...</sub>

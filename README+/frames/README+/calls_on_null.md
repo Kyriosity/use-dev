@@ -1,32 +1,29 @@
 # Calls legally running on `null`
 
-## Short intro
-
-You expect this snippet to throw `NullReference`&nbsp;**.**&thinsp;**.**&thinsp;**.**
+Expected: this snippet to throw `NullReference`&nbsp;**.**&thinsp;**.**&thinsp;**.**
 
 ```csharp
-var bar = new Bar();
+Bar bar = new Bar();
 bar.DoSometing();
 bar = null; // IT'S NOW NULL!
 bar.DoSomething();
 Console.WriteLine("now you see me");
 ```
 
-**.**&thinsp;**.**&thinsp;**.**&nbsp;but miscellaneous languages can do the trick. For example, extension methods (and one fine day [properties](https://github.com/dotnet/roslyn/issues/11159)<sup>:octocat:</sup>) in **`C#`**.
+**.**&thinsp;**.**&thinsp;**.**&nbsp;but miscellaneous languages can do the trick. For **`C#`** example, [extension methods](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods)<sup>🪟</sup> (and one fine day [properties](https://github.com/dotnet/roslyn/issues/11159)<sup>:octocat:</sup>).
 
 ## Use or abuse?
 
-Continuation on `null` may look worse than [its billion-dollar mistake](https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare)<sup>🔗</sup>. 
-
-Correct ... **unless** the semantics and job of the dot attachment assume this `null`. 
+Continuation on `null` may look worse than [its billion-dollar mistake](https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare)<sup>🔗</sup>.  
+Correct ... **unless** the semantics and job _after dot_ assume this `null`:
 
 ```csharp
 void JustDemo(string? title, N? id, Book? book) where N : INumber<N> {
     title.NullOrWhitespace();
 
-    id.IsNaturalNumber(); // will throw if null
     id.Is.NullOrZero();
     id.Not.NullOrGreaterThan(100);
+    id.IsNaturalNumber(); // will throw if null
 
     book.IsNullOrDefault();
 
@@ -34,9 +31,9 @@ void JustDemo(string? title, N? id, Book? book) where N : INumber<N> {
 }
 ```
 
-### Working samples 
+### References
 
-// ToDo: LINK TO STR EXT when available
+[<samp>I&thinsp;S&thinsp;i&thinsp;e</samp>&nbsp; extensions](../../parts/_ext/README+/ISie.md) checks run on null.
 
 \___________\
 🔚 .. please share similar solutions in other languages you may know ...
