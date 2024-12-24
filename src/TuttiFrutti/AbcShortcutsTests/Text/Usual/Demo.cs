@@ -23,19 +23,41 @@ public class Demo
             Is.False);
     }
 
+    [Test]
+    public void CallsOnNull() {
+        string? nullableText = null;
+        string text = null;
+
+        Assert.That(
+            nullableText.IsNullOrEmpty() && nullableText.IsNullOrWhiteSpace() &&
+            text.IsNullOrEmpty() && ((string)null).IsNullOrWhiteSpace(),
+            Is.True);
+    }
 
     [Test]
     public void BlankTraits_Changed() {
-        var textToModify = string.Empty;
+        var text = string.Empty;
+        Assert.That(text.IsNullOrEmpty(), Is.True);
 
-        textToModify += "  ";
+        text += "  ";
         Assert.That(
-            textToModify.IsNullOrWhiteSpace() && !textToModify.IsNullOrEmpty(),
+            text.IsNullOrWhiteSpace() && !text.IsNullOrEmpty(),
             Is.True);
 
-        textToModify += ".";
+        text += ".";
         Assert.That(
-            textToModify.IsNullOrWhiteSpace(),
+            text.IsNullOrWhiteSpace(),
             Is.False);
+
+        text = string.Empty;
+        Assert.That(text.IsNullOrEmpty() && text.IsNullOrWhiteSpace(), Is.True);
+
+        string nulledText = null;
+        Assert.That(nulledText.IsNullOrEmpty(), Is.True);
+
+        nulledText = "   ";
+        Assert.That(nulledText.IsNullOrEmpty(), Is.False);
+
     }
+
 }
