@@ -6,20 +6,20 @@
  You may find the folklore right above dull but not pointless.&nbsp;&mdash; Math deals with <mark>abstract numbers</mark> (_numerus numerans_), computers operate on pure digits but not software developers and users.
  The "inputs" and "outputs" of software anchor to the material world, where numbers can be <mark>concrete</mark> (_numerus numeratus_) or <mark>denominated</mark> (_numerus denominatus_).
  
-Verbal, documented, and, **programmatic** communication more than often relies on title and context and omits denominations/units. Shall this context wane - values may "roam" between denominations:
+Verbal, documented, and, **programmatic** communications frequently rely on titles and contexts and omit denominations/units. Shall a context wane - values may "roam" between denominations:
 <details><summary>&nbsp;<ins>&nbsp; Temperature <code>2.7</code> is&thinsp;</ins><b> .&nbsp;.&nbsp;.</b></summary>
 ... <ins>the baseline of outer space in <i>Kelvin</i></ins> but in earthly <i>Celsius</i> or <i>Fahrenheit</i> a normal winter forecast (placewhere on 40° or higher latitude) .
 <br /><br />
             
 - A close approach of Earth to Mars is ca. `33'900'000` _miles_ but seems credible in _kilometers_ and _nmi_.
-- A child's age of `7` can mean months and years.
+- An unknown child's age of 7` can mean months and years.
 - `Jack` can be family, given (not only on birth), and branded name.
 - one apple may mean an electronic device too,
-- The weekly payment of `1'000` dollars has a national hue: Australian, Canadian, Jamaican, and twenty more. 
+- The weekly payment of `1'000` dollars will get a national hue: Australian, Canadian, Jamaican, and twenty more. 
 
-Concurrent measurement systems can make matters even worse, e.g. height on EU domestic flights can be communicated in <i>feet</i> while cockpit variometers may show <i>meters</i>.
+Concurrent measurement systems can make matters even worse, e.g. flight height can be communicated in <i>feet</i> while cockpit variometers may show <i>meters</i>.
 
-\___________ </details>
+\____________________________________________________________________________________________________ </details>
 
 Not _denominated_ numbers in applications may imply a single system of categorization (e.g. SI for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters.<sup>🔄️</sup>
 
@@ -32,7 +32,7 @@ Coding like `const OuterSpace_Baseline_Kelvin = 2.7` is univocal but inflexible 
 <details><summary><ins>&nbsp;<i>Pound-force</i> [lbf] taken for <i>Newton</i> [N] destroyed the NASA Mars Climate Observer in 1999.&nbsp;</ins></summary>
 &nbsp;
  
-NASA expected metric data from the contractor but the latter reported thrust in the _US Customary units_, based on the good old British **Imperial Pound**. As a consequence
+NASA expected metric data from the contractor but the latter reported thrust in the _US Customary units_, based on the good old British **Imperial Pound**. Thus the poor
 [Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter)<sup><b>w</b></sup> was put below the "survival altitude" orbit. 
 
 ```mermaid
@@ -61,7 +61,7 @@ destroy participant MCO
 ```
 <div dir="rtl"><sub>Source: <a href="https://sma.nasa.gov/docs/default-source/safety-messages/safetymessage-2009-08-01-themarsclimateorbitermishap.pdf?sfvrsn=eaa1ef8_4">NASA: Lost in Translation, 2009</a></sub></div>
 
-\___________ </details>
+\____________________________________________________________________________________________________ </details>
 
 Our framework could save astronomical bucks:
 
@@ -95,11 +95,44 @@ OnForce(Thrust thrust) {
 
 ```
 
+Conversion here is trivia, and <sub><picture><img alt="&nbsp;f&thinsp;u&thinsp;n&thinsp;c&thinsp;w&thinsp;a&thinsp;r&thinsp;e&thinsp;" src="../../_rsc/img/symb/funcware/funcware-bar_16px.jpg" /></picture></sub> offers an implementation [you can test🧪](../../../src/TuttiFrutti/FuncStore.Convers.Tests/PhysMath/Mech/ForcesTests.cs).
+
+HOW TO LINK TESTs TO DOCU
+
 ### Looks good ...
 
-... to stake out a repository for CV.
+<b>... to stake out a repository for CV.</b>
 
-It will be a better syntax but still not a solution: the contractor team of SmallForces knew that thrust must be reported in newton. They took the hardware reported value and honestly submitted it as _N_. 
+❗The better syntax still won't be a solution: the contractor team of SmallForces knew that the thrust must be communicated in _newtons_. 
+(They took the hardware reported value (the engineers there traditionally operated in the "house" system) and honestly submitted it as _N_. )
+
+SECOND: Marsian seconds
+
+Thus the first issue would be to allow limitation of the unit selection. 
+
+```csharp
+
+public enum In
+{
+    [Abbr("dyn")]
+    dyne,
+
+    [Abbr("N")]
+    newton = 1_000_000_000_000,
+
+    [Abbr("lbf")]
+    pound_force = 4_448_222_000_000,
+
+    [Abbr("kip")]
+    kilopound = 1_000 * pound_force,
+
+    [Abbr("pdl")]
+    poundal = 138_254_954_376, // since 1877, Absolute English system
+}
+```
+{}
+
+And it's only one on the list of 
 
 THE LINK TO FULL FILE!
 
