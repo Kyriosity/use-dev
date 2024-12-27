@@ -9,8 +9,7 @@ The ability to __undo__ and then, likely, __redo__ actions is constituent and mu
 Let's knock ourselves out to implement _reversible_ in a project, deserving just two words of others:&nbsp;`using Reversible;`.
 
 Next snippets of C#, degraded for emphasis, feature some basics:
-<details>
-<summary>:chess_pawn:&nbsp;<ins>&nbsp;Model a popular subject&nbsp;</ins></summary>
+<details><summary>:chess_pawn:&nbsp;<ins>&thinsp;<samp>Model a popular subject</samp>&thinsp;</ins>&nbsp;(<a href="https://github.com/Kyriosity/read-write/tree/main/README+/software/design/samples#chess">chess</a>)</summary>
 
 ```csharp
 class Chess<T>
@@ -31,11 +30,9 @@ class Chess<T>
     virtual void Notify() => Console.WriteLine($"{(_blackOn ? "black" : "white")}: {Move}");
 }
 ```
-
 </details>
 
-<details>
-    <summary>:previous_track_button:&nbsp;<ins>&nbsp;Upgrade it with Undo()&nbsp;</ins></summary>
+<details><summary>:previous_track_button:&nbsp;<ins>&thinsp;<samp>Upgrade it with</samp>&thinsp;</ins>&nbsp;<code>Undo()</code></summary>
 
 ```csharp
 using Reversible;
@@ -48,11 +45,9 @@ public class IndulgentChess<T> : Chess<T>, IUndoable
     void Undo(int steps = 1) => _backup.Undo(steps);
 }
 ```
-
 </details>
 
-<details>
-<summary>:popcorn:&nbsp;<ins>&nbsp;Show the usage&nbsp;</ins></summary>
+<details><summary>:popcorn:&nbsp;<ins>&thinsp;<samp>Present the usage&thinsp;</samp></ins></summary>
 
 ```csharp
 var game = new IndulgentChess<string> { Move = "d4" }; // white begin ...
@@ -64,15 +59,15 @@ game.Move("e6");
 // ...
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>:information_source:</sup>&nbsp;<sub>Game sample inspired by [Champions Chess Tour 2022](https://en.wikipedia.org/wiki/Carlsen%E2%80%93Niemann_controversy)</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>:information_source:</sup>&nbsp;<sub>Game sample inspired by [Champions Chess Tour 2022](https://en.wikipedia.org/wiki/Carlsen%E2%80%93Niemann_controversy)<sup><b>w</b></sup></sub>
 </details>  
 
 &nbsp;\
-If these "antipasti" have aroused your appetite to *redo*, the __[Handbook](readme+/handbook)__ will share recipes of further features and use cases backed by [Q&A](readme+/reversible_q-a.md).
+If these "antipasti" have aroused your appetite to *redo*, the __[Handbook](README+/handbook)__ will share recipes of further features and use cases backed by [Q&A](README+/reversible_q-a.md).
 
-However ... __isn't that all an over-engineering of the indexed element?__ <sup>:hammer:</sup>&nbsp; You decide, while [Rationale](readme+/reversible_reason.md) along with [Posers & Decisions](readme+/reversible_posers.md) tries to advocate our efforts.\
+However ... __isn't that all an over-engineering of the indexed element?__ <sup>:hammer:</sup>&nbsp; You decide, while [Rationale](README+/reversible_reason.md) along with [Posers & Decisions](README+/reversible_posers.md) tries to advocate our efforts.\
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>:hammer:</sup><sub>For instance, `Moves[i]` for current value, `i--` for undo and `i++` for redo.</sub>
 
-`UndoOnly` for the snippet above is too trivial to deserve your look into the repository but not the whole project, which you may follow in [Developer book](readme+/devbook), contribute to it, or rework for your own purposes.
+`UndoOnly` for the snippet above is too trivial to deserve your look into the repository but not the whole project, which you may follow in [Developer book](README+/devbook), contribute to it, or rework for your own purposes.
 
 🚧 /// TO BE CONTINUED
