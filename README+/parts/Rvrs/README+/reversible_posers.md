@@ -1,6 +1,6 @@
 # Reversible &mdash; Posers
 
-> Discussion in this and other documents will rest on selected [design samples](https://github.com/Kyriosity/read-write/blob/main/readme%2B/dev/design/readme%2B/design_samples.md).
+> Discussion in this and other documents will rest on selected [design samples](https://github.com/Kyriosity/read-write/tree/main/README+/software/design/samples).
 
 Reflexion on Undo/Redo sooner or later will baffle one with the following dilemmas and challenges. You shall not consider them as dev tasks or a knowledge quiz but as clarification of the "big picture".
 
