@@ -1,6 +1,6 @@
-# Reversible on .NET - Intro
+# Reversible on .NET &mdash; Intro
 
-<p dir="rtl";><span style="font-variant:small-caps;"><b>r&nbsp;e v e r s i b l e&nbsp;&nbsp;&nbsp;</b></span><br><b>a:</b>&nbsp;capable of going through a series of actions<br/>such as changes) either backward or forward)</p>
+<p dir="rtl";><span style="font-variant:small-caps;"><b><samp>R&thinsp;E&thinsp;V&thinsp;E&thinsp;R&thinsp;S&thinsp;I&thinsp;B&thinsp;L&thinsp;E</samp></b>&nbsp;&nbsp;&nbsp;</span><br><b>a:</b>&nbsp;capable of going through a series of actions<br/>such as changes) either backward or forward)</p>
 <p dir="rtl";><i>Merriam-Webster dictionary</i></p>
 
 &nbsp;\
@@ -70,4 +70,5 @@ However ... __isn't that all an over-engineering of the indexed element?__ <sup>
 
 `UndoOnly` for the snippet above is too trivial to deserve your look into the repository but not the whole project, which you may follow in [Developer book](README+/devbook), contribute to it, or rework for your own purposes.
 
-🚧 /// TO BE CONTINUED
+\___________\
+🔚 ... but [README+](README+)
