@@ -6,15 +6,15 @@
  You may find the folklore right above dull but not pointless.&nbsp;&mdash; Math deals with <mark>abstract numbers</mark> (_numerus numerans_), computers operate on pure digits but not software developers and users.
  The "inputs" and "outputs" of software anchor to the material world, where numbers can be <mark>concrete</mark> (_numerus numeratus_) or <mark>denominated</mark> (_numerus denominatus_).
  
-Verbal, documented, and, **programmatic** communications frequently rely on titles and contexts and omit denominations/units. Shall a context wane - values may "roam" between denominations:
+Verbal, documented, and, **programmatic** communications frequently rely on titles and contexts and omit denominations/units. Shall a context wane - values may "roam" between measurement systems:
 <details><summary>&nbsp;<ins>&nbsp; Temperature <code>2.7</code> is&thinsp;</ins><b> .&nbsp;.&nbsp;.</b></summary>
 ... <ins>the baseline of outer space in <i>Kelvin</i></ins> but in earthly <i>Celsius</i> or <i>Fahrenheit</i> a normal winter forecast (placewhere on 40° or higher latitude) .
 <br /><br />
             
 - A close approach of Earth to Mars is ca. `33'900'000` _miles_ but seems credible in _kilometers_ and _nmi_.
 - An unknown child's age of 7` can mean months and years.
-- `Jack` can be family, given (not only on birth), and branded name.
-- one apple may mean an electronic device too,
+- `_Jack_` can be family, given (not only on birth), and branded name.
+- One apple may mean an electronic device too,
 - The weekly payment of `1'000` dollars will get a national hue: Australian, Canadian, Jamaican, and twenty more. 
 
 Concurrent measurement systems can make matters even worse, e.g. flight height can be communicated in <i>feet</i> while cockpit variometers may show <i>meters</i>.
@@ -97,16 +97,12 @@ OnForce(Thrust thrust) {
 
 Conversion here is trivia, and <sub><picture><img alt="&nbsp;f&thinsp;u&thinsp;n&thinsp;c&thinsp;w&thinsp;a&thinsp;r&thinsp;e&thinsp;" src="../../_rsc/img/symb/funcware/funcware-bar_16px.jpg" /></picture></sub> offers an implementation [you can test🧪](../../../src/TuttiFrutti/FuncStore.Convers.Tests/PhysMath/Mech/ForcesTests.cs).
 
-HOW TO LINK TESTs TO DOCU
-
 ### Looks good ...
 
 <b>... to stake out a repository for CV.</b>
 
 ❗The better syntax still won't be a solution: the contractor team of SmallForces knew that the thrust must be communicated in _newtons_. 
 (They took the hardware reported value (the engineers there traditionally operated in the "house" system) and honestly submitted it as _N_. )
-
-SECOND: Marsian seconds
 
 Thus the first issue would be to allow limitation of the unit selection. 
 
@@ -134,22 +130,6 @@ public enum In
 
 And it's only one on the list of 
 
-THE LINK TO FULL FILE!
-
-
-You may notice that thrust isn't the only UNIT here (Marsian SECONDS!)
-
-ToDo: SHOW THE CASES !
-
-and show how we could make its software not only NEATER but also save about half a billion $$.
-
-
- total impulse produced by thruster firings produced results in pound-force seconds. The trajectory calculation software then used these results – expected to be in newton-seconds (incorrect by a factor of 4.45)
-
-            🚧✏️🚧 ... **DRAFT** ... WORK in PROGRESS ... 🚧⌨️🚧
-            ... REMOVE the LABEL when RELEASED ...
-
-
 ## Other cases
 
 ## Beyond
@@ -162,14 +142,6 @@ and show how we could make its software not only NEATER but also save about half
 
 Temp dep on pressure
 
-- `$1'000` or `1'000€` have not only varying exchange divisions over the years, but differing purchase abilities for essential goods, 1GB of DRAM, or gold ounce&nbsp;**. . .**\
-
-
- ## Working TTL
-
- As a good developer, you will come to a better view, like `Heating.Max[Celcius] = 82.15` or `Landing.Speed.Knots` vs `.KmPerHour`. Then you will think about ways of initialization, conversion functions, math ops, constants, and other headaches. 
-
- And here you are, where such a framework is available for use, alteration, or just as a concept.
 
 |- **Features and omissions**\
 |--- Instantiation flexibility\
