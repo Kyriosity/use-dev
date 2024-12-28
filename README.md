@@ -1,7 +1,9 @@
 
-FLAT VIEW
+<details><summary><ins>&nbsp;Alternative Essays view</ins></summary>
+  
+</details>
 
-<samp>INSTALLATION</samp>: Clone, copy, download `src`, and open the solution in Microsoft Visual Studio
+
 
 + **CLAY**\
 |- Exceptions wrappers: [tests 🧪](src/TuttiFrutti/ExtensionsTests/Exceptions)\
@@ -40,3 +42,6 @@ FLAT VIEW
 |- [Cutting the feed expansion](README+/tests/README+/prog_tests-cut_feeds.md)\
 |- [Gradual assert](README+/tests/README+/unit_test-gradual_assert.md)\
 |- [Finer tolerance](README+/tests/README+/val_tests-tolerance.md)
+
+\___________\
+<samp>INSTALLATION</samp>: Clone, copy, download `src`, and open the solution in Microsoft Visual Studio
