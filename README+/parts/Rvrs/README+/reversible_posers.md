@@ -10,9 +10,13 @@ Chess is a perfect example where the sequence of changes can be stored either as
 
 ## Point of no undo
 
-Here chess serves us again as a good example. Let's take a game of `n` moves of white and black pieces and imagine what is the initial point to which we can undo the setup of pieces and their moves.
+Here chess serves us again as a good example. Let's take a game of `n` moves of white and black pieces and imagine the initial point to which we can undo the setup of pieces and their moves.
 
 Depth and buffer.
+
+## Breaking long actions into steps
+
+To illustrate the idea. Imagine you make a long artistic stroke in _Paint_ with an occasional ugliness at the end. Undo will delete the whole stroke.
 
 ## Action error, its margin and tolerance
 
