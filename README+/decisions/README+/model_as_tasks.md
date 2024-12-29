@@ -1,4 +1,4 @@
-# Tasks as a model, promise as a value
+# Tasks as a model, Promise as a value
 
 Most or many well-known templates/paradigms, such as <samp><b>MVC</b></samp>, <samp><b>MVP</b></samp>, <samp><b>MVVM</b></samp>, <samp><b>MV<i>W</i></b></samp>[hatever], <samp><b>POCO</b></samp>, and custom solutions rest on [models](https://github.com/Kyriosity/read-write/blob/main/README%2B/software/design/parts/README+/app-model.md)<sup>⬅️</sup>. 
 
@@ -73,7 +73,7 @@ It doesn't matter if you "pre-load" a dozen things, of which only one will be se
 
 ### Streaming
 
-Processing sync/async streams is a still fresh technique, which only requires a reference to its [foundation](https://github.com/ReactiveX)<sup>🔗</sup>.
+Processing sync/async streams is a still fresh technique, which only requires a reference here to its [foundation](https://github.com/ReactiveX)<sup>:octocat:</sup>.
 
 \___________\
 🔚 🌔 <sub>2024 .. kyriosity ... 🚧 pending 🚧</sub>
