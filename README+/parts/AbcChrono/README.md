@@ -1,4 +1,4 @@
-# Chronology - Timelines - Events
+# Chronology &mdash; Timelines &mdash; Events
 
 > **Time** is the _driver_ for all and the "solvent" of everything. The former is for software and the latter for its hardware.
 
