@@ -1,8 +1,8 @@
-<details><summary>________________&nbsp;<samp><b>P&thinsp;A&thinsp;P&thinsp;E&thinsp;R&thinsp; highlights</b></samp>&nbsp;_________________________________</summary>
+<details><summary>_____&nbsp;<samp><b>H&thinsp;I&thinsp;G&thinsp;H&thinsp;L&thinsp;I&thinsp;G&thinsp;H&thinsp;T&thinsp;S</b></samp>&nbsp;____</summary>
   &nbsp;
   <table><tr>
     <td>
-      <a href="README+/parts/_ext/README+/ISie.md"><img src="README+/_rsc/img/_nav/tiles/ISie_200px.jpg" alt="&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extenstions"/></a>
+      <a href="README+/parts/_ext/README+/ISie.md"><img src="README+/_rsc/img/_nav/tiles/ISieCircuitry_bw-200px.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extenstions"/></a>
       <br /><div align="center"><h4><a href="README+/parts/_ext/README+/ISie.md">EXTENSIONS</a></h4></div>
      </td><td>
       <a href="README+/parts/AbcChrono/README.md"><img src="README+/_rsc/img/_nav/tiles/Chrono_bw-200px.jpg" alt="&nbsp;Chronology lib"/></a>
@@ -19,16 +19,11 @@
       <a href="README+/decisions/README+/model_as_tasks.md"><img src="README+/_rsc/img/_nav/tiles/_WorkInProgress_200px.jpg" alt="&nbsp;WORK in PROGRESS"/></a>
         <br /><div align="center"><h4><a href="/README+/decisions/README+/think_in_tasks/README.md">THINKING in TASKS</a></h4></div>
     </td>
-                                                   </tr><tr></tr><tr>
     <td>
-      <a href="https://github.com/Kyriosity/read-write/blob/main/README+/pencraft/README+/essays/README.md"><img src="README+/_rsc/img/_nav/tiles/read-write_200px.jpg" alt="&nbsp;READ-WRITE repo" title="&nbsp;Links to the read-write repository"/></a>
+      <a href="https://github.com/Kyriosity/read-write/blob/main/README+/pencraft/README+/essays/README.md"><img src="README+/_rsc/img/_nav/tiles/read-write_200px.jpg" alt="&nbsp;READ-WRITE repo" title="&nbsp;Collection in the read-write repository"/></a>
         <br /><div align="center"><h4>⬅️&thinsp;<a href="https://github.com/Kyriosity/read-write/blob/main/README+/pencraft/README+/essays/README.md">E&thinsp;S&thinsp;S&thinsp;A&thinsp;Y&thinsp;S</a></h4></div>
     </td>
   </tr></table>
-
-  CHRONO
-
-  I S i e
   
 _________________________________________________________________________________________________________________________</details>
 
