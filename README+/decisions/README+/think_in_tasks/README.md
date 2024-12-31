@@ -26,7 +26,21 @@ To make the thing worse recall that besides multitasking there's multi-dispatchi
 
 ## Re-thinking model and presentation
 
+TWIST
+
+<picture><img src="../../../_rsc/img/illus/TaskAsModel.jpg" alt="&nbsp;Sketch of layers delayed communication" /></picture>
+
 Modern languages and frameworks confer brilliant multitasking and synchro tools out-of-the-box. **Let's cast them to templates!**
+
+<table><tr valign="top"><td><picture><img src="../../../_rsc/img/_nav/tiles/_WorkInProgress_200px.jpg" alt="&nbsp;WORK in PROGRESS"/></picture></td><td>
+<p>We are on the home stretch now, with a couple of items to close:</p>
+  <lu>
+    <li></li>
+    <li>Implement</li>
+<li></li>
+  </lu>
+<p align="center"><b><samp>voilà</samp></b></p>
+</td></tr></table>
 
 > 🚧🚧🚧 <mark><b>... to be WRITTEN when PARTICULAR IMPLEMENTATION comes into play ...</b></mark> 🚧🚧🚧
 
@@ -40,7 +54,7 @@ The most obvious and simplest to add technique. Only growing cache may concern b
 
 ### Laziness (not of developers)
 
-Since the olden days, programmers used to defer initialization/calculation of less or more "heavy" entities. This allows to **a)**&nbsp;load the stuff on&nbsp;demand only (eco-friendly), **b)**&nbsp;spread resources peaks, **c)**&nbsp;split suspense (which nevertheless remains).
+Since the olden days, programmers have deferred the initialization/calculation of fewer or more "heavy" entities. This allows to **a)**&nbsp;load the stuff on&nbsp;demand only (eco-friendly), **b)**&nbsp;spread resources peaks, **c)**&nbsp;split suspense (which nevertheless remains).
 
 <details><summary><ins>&nbsp;In <b>C#</b> you can do it either with <code>Lazy<...></code> or custom snippet like this:&nbsp;</ins></summary>
 &nbsp;
