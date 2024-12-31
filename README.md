@@ -1,4 +1,4 @@
-<details><summary>_____&nbsp;<samp><b>H&thinsp;I&thinsp;G&thinsp;H&thinsp;L&thinsp;I&thinsp;G&thinsp;H&thinsp;T&thinsp;S</b></samp>&nbsp;____</summary>
+<details><summary><a id="highlights" />_____&nbsp;<samp><b>H&thinsp;I&thinsp;G&thinsp;H&thinsp;L&thinsp;I&thinsp;G&thinsp;H&thinsp;T&thinsp;S</b></samp>&nbsp;____</summary>
   &nbsp;
   <table><tr>
     <td>
