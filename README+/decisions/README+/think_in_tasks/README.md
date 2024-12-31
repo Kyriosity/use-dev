@@ -28,11 +28,11 @@ To make the thing worse recall that besides multitasking there's multi-dispatchi
 
 TWIST
 
-<picture><img src="../../_rsc/img/illus/TaskAsModel.jpg" alt="&nbsp;Sketch of layers delayed communication" /></picture>
+<picture><img src="../../../_rsc/img/illus/TaskAsModel.jpg" alt="&nbsp;Sketch of layers delayed communication" /></picture>
 
 Modern languages and frameworks confer brilliant multitasking and synchro tools out-of-the-box. **Let's cast them to templates!**
 
-<table><tr valign="top"><td><picture><img src="../../_rsc/img/_nav/tiles/_WorkInProgress_200px.jpg" alt="&nbsp;WORK in PROGRESS"/></picture></td><td>
+<table><tr valign="top"><td><picture><img src="../../../_rsc/img/_nav/tiles/_WorkInProgress_200px.jpg" alt="&nbsp;WORK in PROGRESS"/></picture></td><td>
 <p>We are on the home stretch now, with a couple of items to close:</p>
   <lu>
     <li></li>
