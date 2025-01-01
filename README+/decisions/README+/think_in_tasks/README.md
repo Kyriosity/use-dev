@@ -1,48 +1,58 @@
 # Tasks as a model, Promise as a value
 
 Most or many well-known templates/paradigms, such as <samp><b>MVC</b></samp>, <samp><b>MVP</b></samp>, <samp><b>MVVM</b></samp>, <samp><b>MV<i>W</i></b></samp>[hatever], <samp><b>POCO</b></samp>, and custom solutions rest on [models](https://github.com/Kyriosity/read-write/blob/main/README%2B/software/design/parts/README+/app-model.md)<sup>⬅️</sup>. 
+Developers bind presentations, actions, and messages to values/properties/callbacks. 
 
-Developers bind presentations, actions, and messages to values/properties/callbacks. There's nothing wrong with this approach (especially for rough abstraction and logical division) but oversimplicity and static character (like snapped in a moment when every value is known).
+There's nothing wrong with this approach (especially for rough abstraction and logical division) but oversimplicity and static character. 
 
-Values can be predictably set/reset, or coded in a slot of time, imperceptible for users or insignificant for hardware/software clients. However, IT reality can imply
+It treats applications as snapped in a moment when every property is known or status is final: as values can be predictably set/reset, or coded in a time slot, imperceptible for users or insignificant for hardware/software clients. 
 
-* heavy calculation,
-* lagging services, and slow rudimentary storages,
-* pending input (e.g. _Mittelspiel_ move in classic chess or vacation approval in non-classic startup),
-* statuses linked to running actions (either naturally or intentionally pending).
+<h3 align="center">However</h3>
+<p>Domain <b>and</b> IT realities are not always under the best of circumstances with:</p>
+<table><tr valign="top"><td width="40%"><picture><img src="../../../_rsc/img/illus/TaskAsModel.jpg" alt="&nbsp;Layers delayed communication" /></picture></td><td>
+<ul>
+<li>heavy or long calculations,</li>
+<li>lagging network and services,</li>
+<li>slow rudimentary storages,</li>
+<li>pending answers and asynchronous events,</li>
+</ul>
+<p>and any operation can break, fail, run out of time, or be suspended/canceled on both sides.</p>
+<p>Enough scenarios shall mock delays to catch user attention or show proof of work. For example:
+  <br>⏱️ Saving a giga-document, rebuilding a solution, or making a bank transaction can occur unnaturally instant, leaving users with a feeling it hasn't run.
+  <br>⏱️ There's a minimum for a user to understand the pop-up message.
+</p>
+</td></tr></table>
 
-And any operation can break, fail, or be suspended or canceled on both sides. 
+> Modern languages and frameworks grant superb multitasking and synchro tools out-of-the-box. **, Even so,**  "classical" prevalent implementation incurs perpetual "async" patching of unpredictable values for reactive experience. 
 
-Enough scenarios shall mock delays to catch user attention or show proof of work<sup>⏳</sup>. In some others, the possible (non)availability of value or its promise is itself the value (e.g. `CanExecute` for commands).
+Now, spice these reactive interfaces with `async`: you must break the queue of values and calls into orchestration. To make things worse recall that besides multitasking there's multi-dispatching (that's how auto-save, or spellcheck runs). Not to forget that the statuses of properties and operations are asynchronous values too.
 
-Classical, direct/async, and prevalent implementation incurs perpetual patching of unpredictable values for reactive  experience. 
+<details><summary>___<ins><b>and now the&nbsp;&nbsp;<samp>T&thinsp;W&thinsp;I&thinsp;S&thinsp;T</samp></b>&nbsp;</ins> <b>.&thinsp;.&thinsp;.</b> ___</summary>
+&nbsp;
 
-Now, spice these reactive interfaces with `async`: you must break the queue of values into orchestration.
+Imagine that a user (view) input/action can be a _promise_. A bright example is a chess engine waiting most of its time for a player "move". And the chess model (instance of a `game` class) is then ... the **view**.
 
-To make the thing worse recall that besides multitasking there's multi-dispatching (that's how auto-save, or spellcheck runs).
+We have our picture rotated 180° (or vertically flipped if you prefer). And it's not for fun but for viewing beyond the standard patterns.
 
-\_______\
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>⏳</sup> <sub>For example, saving a giga-document, rebuilding a solution, or making a bank transaction can occur unexpectedly instant for users.</sub>
+\___________</details>
 
 ## Re-thinking model and presentation
 
-TWIST
-
-<picture><img src="../../../_rsc/img/illus/TaskAsModel.jpg" alt="&nbsp;Sketch of layers delayed communication" /></picture>
-
-Modern languages and frameworks confer brilliant multitasking and synchro tools out-of-the-box. **Let's cast them to templates!**
+**Let's cast async means to templates!**
 
 <table><tr valign="top"><td><picture><img src="../../../_rsc/img/_nav/tiles/_WorkInProgress_200px.jpg" alt="&nbsp;WORK in PROGRESS"/></picture></td><td>
 <p>We are on the home stretch now, with a couple of items to close:</p>
   <lu>
-    <li></li>
-    <li>Implement</li>
-<li></li>
+    <li>Formliaze.</li>
+    <li>Find application.</li>
+    <li>Implement.</li>
+    <li>Document.</li>
+    <li><i>Repeat.</i></li>
   </lu>
 <p align="center"><b><samp>voilà</samp></b></p>
 </td></tr></table>
 
-> 🚧🚧🚧 <mark><b>... to be WRITTEN when PARTICULAR IMPLEMENTATION comes into play ...</b></mark> 🚧🚧🚧
+> 🚧🐝🚧 <mark><b>... to be WRITTEN when PARTICULAR IMPLEMENTATION comes into play ...</b></mark> 🚧🐝🚧
 
 ## Appendices. Techniques
 
@@ -90,4 +100,4 @@ It doesn't matter if you "pre-load" a dozen things, of which only one will be se
 Processing sync/async streams is a still fresh technique, which only requires a reference here to its [foundation](https://github.com/ReactiveX)<sup>:octocat:</sup>.
 
 \___________\
-🔚 🌔 <sub>2024 .. kyriosity ... 🚧 pending 🚧</sub>
+🔚 🌔 <sub>2024-2025 .. kyriosity ... 🚧 pending 🚧</sub>
