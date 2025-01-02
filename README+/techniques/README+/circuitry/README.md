@@ -32,7 +32,7 @@ class Not : Is {
 }
 ```
 
-This and other alternatives, discussed in the [Appendix](#appendices.-alternatives), are too programmatic.
+This and other alternatives, discussed in the [Appendix](#appendix), are too programmatic.
 
 
 \__________________________________________________________________________________________________________________
@@ -66,6 +66,7 @@ constructors, init props, or derived classes?
 </table>
 
 ## Appendix. Alternatives
+<a id="appendix" />
 
 ### Wrapper class
 
