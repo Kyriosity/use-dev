@@ -4,13 +4,14 @@ That's the description where _inductive reasoning_ is to rescue (namely by an ex
 
 \__________________________________________________________________________________________________________________
 
-Consider a bundle of interlaced "either"-functions (PSEUDO-CODE WARNING)
+Consider a bundle of interlaced "either"-functions:
+<div align="right"><sub><i>C#-like pseudo-code for brevety</i></sub></div>
 
 ```csharp
 class Is {
-  string _inner;
+  string _text;
 
-  bool NullOrEmpty => _inner is null || ' == _inner;
+  bool NullOrEmpty => _text is null || ' == _text;
   bool NullOrWhitespace { ... };
   bool Ascii { ... };
   bool Latin { ... };
@@ -19,9 +20,7 @@ class Is {
 
 ```
 
-and there's a client that needs these functions exactly as `neither`.
-
-Since there's no magic and out-of-the-box _Boolean Inverter_ wand🪄 the fastest way will be to put the wrapper over
+and there's a client that needs these functions exactly as **`neither`**. Since there's no magic and out-of-the-hat 🪄 _Boolean Inverter_ the fastest way will be to put the wrapper over:
 
 ```csharp
 class Not : Is {
@@ -33,10 +32,13 @@ class Not : Is {
 }
 ```
 
-HAVE YOU NOTICE A TYPO i INTENTIONALLY LEAVED ? I personally don't like such wrappers.
+This and other alternatives, discussed in the [Appendix](#appendices.-alternatives), are too programmatic.
+
 
 \__________________________________________________________________________________________________________________
 
+
+DYNAMIC FILL OUT
 
 CONSTRUCTOR (VIOLATES)
    PROPS => EXPOSED
@@ -57,10 +59,20 @@ constructors, init props, or derived classes?
 
 ## <a id="why-circuitry" /> Wrap up. Why "circuitry"?
 
-<table><tr valign="top"><td width="40%"><img alt="&nbsp;electrical circuit collage" src="../../../_rsc/img/illus/ISieCircuitry.jpg" /></td><td>
+<table><tr valign="top"><td width="40%"><img alt="&nbsp;electrical circuit collage" src="../../../_rsc/img/illus/Circuitry.jpg" /></td><td>
   <p>You may have already guessed the name.</p>
   <p>Didifal is only for `boolean`.</p>
 </td></tr>
 </table>
+
+## Appendix. Alternatives
+
+### Wrapper class
+
+#### Pros 
+
+#### Const
+
+HAVE YOU NOTICE A TYPO i INTENTIONALLY LEAVED ? I personally don't like such wrappers.
 
 🔚
