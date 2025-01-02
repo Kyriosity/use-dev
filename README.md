@@ -27,17 +27,43 @@
   
 _________________________________________________________________________________________________________________________</details>
 
-+ **CLAY**\
-|- Exceptions wrappers: [tests 🧪](src/TuttiFrutti/ExtensionsTests/Exceptions)\
-|- [Extensions and shortcuts](README+/parts/_ext)\
-|- 🌵 [Models](src/TuttiFrutti/AbcModels)\
-|- [Motley heap](README+/decisions/README+/structs/motley_heap.md): [tests 🧪](src/TuttiFrutti/AbcStructTests/Heaps)\
-|- **WPF**\
-|-- Improved [Bool-Vis. converter](README+/snippets/wpf/bool2viz_improved.md) 📦
+<table><tr><td>ORG</td><td>PARTS</td></td></tr><tr><td><!--      C L A Y    --!>
+◾ <b>C&thinsp;L&thinsp;A&thinsp;Y</b><br />
+|- Exception wrappers<br />
+|--- <a href="src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪<br />
+|- Extensions/shortcuts<br />
+|--- <a href="README+/parts/_ext/README+/ISie.md">I&thinsp;Sie</a><br />
+|- Models<br />
+|- Motley heap<br />
+|--- <a href="src/TuttiFrutti/AbcStructTests/Heaps"><i>tests</i></a>🧪<br />
+|- <b>WPF</b><br />
+|--- <a href="README+/snippets/wpf/bool2viz_improved.md">Bool-Vis. converter</a>📦improved<br />
+<br /><!--        F R A M E S   and   G U I L D E L I E N E S --!>
+◾ <b>F&thinsp;R&thinsp;A&thinsp;M&thinsp;E&thinsp;S / G&thinsp;U&thinsp;I&thinsp;D&thinsp;E&thinsp;L&thinsp;I&thinsp;N&thinsp;E&thinsp;S</b><br />
+|- <a href="README+/frames">intro</a>📄<br />
+<br /><!--         P A T T E R N S   via   T E C H N I Q U E S       --!>
+◾ <b>P&thinsp;A&thinsp;T&thinsp;T&thinsp;E&thinsp;R&thinsp;N&thinsp;S&nbsp;&nbsp;via&nbsp;&nbsp;T&thinsp;E&thinsp;C&thinsp;H&thinsp;N&thinsp;I&thinsp;Q&thinsp;U&thinsp;E&thinsp;S</b><br />
+|- <a href="README+/techniques">intro</a>📄<br />
+|- MVVM<br/>
+|--- <a href="README+/decisions/README+/mvvm/mvvm-notification_orchestration.md">Notificaton orchestration]</a>)<br />
+|--- <a href="README+/decisions/README+/mvvm/mvvm-vmodel_cohesion.md">Model-ViewModel cohesion]</a><br />
+|---  <br />
+<br><!--           D E S I G N   D E C I S I O N S -->
+◾ <b>D&thinsp;E&thinsp;S&thinsp;I&thinsp;G&thinsp;N&nbsp;&nbsp;D&thinsp;E&thinsp;C&thinsp;I&thinsp;S&thinsp;I&thinsp;O&thinsp;N&thinsp;S</b><br />
+|- <a href="README+/decisions">intro</a>📄<br />
+<br><!--               T E S T I I N G -->
+◾ <b>T&thinsp;E&thinsp;S&thinsp;T&thinsp;I&thinsp;N&thinsp;G</b><br />
+|- <a href="README+/tests"><i>intro</i></a> 📄<br />
+|--- <a href="README+/tests/README+/prog_tests-cut_feeds.md">Cutting the feed expansion</a><br />
+|--- <a href="README+/tests/README+/unit_test-gradual_assert.md">Gradual assert</a><br />
+|--- <a href="README+/tests/README+/val_tests-tolerance.md">Finer tolerance</a><br />
+<br/><!--           PARTS -->
+◾ <b>P&thinsp;A&thinsp;R&thinsp;T&thinsp;S</b><br />
+|- 🗓️ <a href="README+/parts/AbcChrono">Chrono ABC</a><br />
+|- 🔄 <a href="README+/parts/Rvrs"><b>Undo/Redo</b> (Reversible)</a> 🚧<br />
+</td></tr></table>
 
-+ [**Frames**, **rules**, guidelines](README+/frames)
-
-+ [**Patterns thru Techniques**](README+/techniques)\
++ [**Patterns via Techniques**](README+/techniques)\
 |- [Transformation](README+/techniques/xform)\
 |- 🎢 [Downcasting unblock](README+/techniques/README+/cs-unblock_downcast.md)\
 |- 🎶 [Jagged generic props](README+/techniques/README+/cs-jagged_props.md)
@@ -45,24 +71,13 @@ ________________________________________________________________________________
 + [**Design decisions**](README+/decisions)\
 |- [Intercom](README+/decisions/README+/intercom)\
 |--- [Errors and exceptions](README+/decisions/README+/intercom/README+/errors)\
-|- **WPF / MVVM**\
-|--- 📢 [Notificaton orchestration](README+/decisions/README+/mvvm/mvvm-notification_orchestration.md)\
-|--- [Model-ViewModel cohesion](README+/decisions/README+/mvvm/mvvm-vmodel_cohesion.md)\
 |- **Templates**\
 |--- [Promise-oriented MVVM](README+/decisions/README+/model_as_tasks.md) 🚧
 
 + **PARTS**\
-|- 🗓️ [Chrono ABC](README+/parts/AbcChrono)\
 |- <a name="UVal"></a>💠 [**Multifacet value** (Π-Val)📃](README+/parts/MultifacetVal), 🧪⌨ 🔢\
 |--- <a href="README+/parts/funcware">Funcware</a>\
 |----- ⌨️ <a href="src/TuttiFrutti/FuncStore.Convers">Conversion</a>\
-|--- Graph\
-|- 🔄 [**Undo/Redo** extension](README+/parts/Rvrs) 🚧
-
-+ [**Testing**](README+/tests/)\
-|- [Cutting the feed expansion](README+/tests/README+/prog_tests-cut_feeds.md)\
-|- [Gradual assert](README+/tests/README+/unit_test-gradual_assert.md)\
-|- [Finer tolerance](README+/tests/README+/val_tests-tolerance.md)
 
 \___________\
 <samp>INSTALLATION</samp>: Clone, copy, download `src`, and open the solution in Microsoft Visual Studio
