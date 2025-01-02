@@ -1,4 +1,4 @@
-# MVVM - Model & ViewModel cohesion
+# MVVM &mdash; Model & ViewModel cohesion
 
 ## Classic aggregation
 
@@ -47,7 +47,7 @@ Furthermore, there can be more ViewModels: *BookViewer* for display, *BookAbstra
       Let's regard the model as a parent class, <br/>from which ViewModels can be derived:
     </td>
    <td>
-     <picture><img alt="VModel cohesion diagram" src="../../../_rsc/img/MVP_vm-model-cohesion.jpg"></picture>
+     <picture><img alt="&nbsp;VModel cohesion diagram" src="../../../_rsc/img/MVP_vm-model-cohesion.jpg"></picture>
    </td>
 </tr>
 </table>
