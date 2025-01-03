@@ -29,9 +29,8 @@ ________________________________________________________________________________
 
 <table><tr><td>
 <!--      O R G    --!>
-◾ <b>O&thinsp;R&thinsp;G</b>&thinsp;📖<br />
-|- <b>Frames, guidelines</b><br />
-|-- <a href="README+/frames"><i>Intro</i></a><br />
+◾ <b>O&thinsp;R&thinsp;G</b><br />
+|- <b>Frames, guidelines</b>&nbsp;📖&thinsp;<a href="README+/frames"><i>Intro</i></a><br />
 |-- <a href="README+/frames/README+/reinforced_inheretance.md">Reinforced inheritance</a><br />
 |-- <a href="README+/frames/README+/calls_on_null.md">Calls on null</a><br />
 |- <b>Patterns</b><br />
@@ -42,28 +41,27 @@ ________________________________________________________________________________
 |--- <a href="README+/decisions/README+/mvvm/mvvm-vmodel_cohesion.md">Model-ViewModel cohesion</a><br />
 |- <b>Templates</b><br />
 |-- <a href="README+/decisions/README+/thins_in_tasks/README.md">Tasks as models</a><br />
-<!--               T E S T I N G -->
-|- <b>T<samp>ESTING</samp></b><br />
-|-- <a href="README+/tests"><i>Intro</i></a><br />
-|--- <a href="README+/tests/README+/prog_tests-cut_feeds.md">Cutting the feed expansion</a><br />
-|--- <a href="README+/tests/README+/unit_test-gradual_assert.md">Gradual assert</a><br />
-|--- <a href="README+/tests/README+/val_tests-tolerance.md">Finer tolerance</a><br />
 <br /><!--      C L A Y    --!>
 ◾ <b>C&thinsp;L&thinsp;A&thinsp;Y</b><br />
 |- Exception wrappers &nbsp;<a href="src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪<br />
 |- Extensions/shortcuts<br />
-|- Models<br />
+|- 🚧Models<br />
 |- Motley heap <a href="src/TuttiFrutti/AbcStructTests/Heaps"><i>tests</i></a>🧪<br />
 |- <b>WPF</b><br />
-|--- <a href="README+/snippets/wpf/bool2viz_improved.md">Bool-Vis. converter</a><sup>improved</sup><br />
+|-- <a href="README+/snippets/wpf/bool2viz_improved.md">Bool-Vis. converter</a><sup>improved</sup><br />
+<br /><!--               T E S T I N G -->
+◾ <b>T<samp>ESTING</samp></b>&nbsp;📖&thinsp;<a href="README+/tests"><i>Intro</i></a><br />
+|--- <a href="README+/tests/README+/prog_tests-cut_feeds.md">Cutting the feed expansion</a><br />
+|--- <a href="README+/tests/README+/unit_test-gradual_assert.md">Gradual assert</a><br />
+|--- <a href="README+/tests/README+/val_tests-tolerance.md">Finer tolerance</a><br />
 <br/><!--           PARTS -->
 ◾ <b>P&thinsp;A&thinsp;R&thinsp;T&thinsp;S</b>&thinsp;📦<br />
-|- 👟 <a href="arts/_ext/README+/ISie.md"><b>I&thinsp;S&thinsp;i&thinsp;e</b></a> extensions<br />
-|- 🗓️ <a href="README+/parts/AbcChrono">Chrono ABC</a><br />
+|- <a href="arts/_ext/README+/ISie.md"><b>I&thinsp;S&thinsp;i&thinsp;e</b></a> extensions<br />
+|- <a href="README+/parts/AbcChrono">Chrono ABC</a><br />
 |- <b>Funcware</b><br />
 |-- Conversion&nbsp;<a href="src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪</br />
-|- <a name="UVal" href="README+/parts/MultifacetVal">💠 <b>Multifacet value</b></a> (Π-Val) 🐝<br />
-|- 🔄 <a href="README+/parts/Rvrs"><b>Undo/Redo</b></a> (Reversible) 🚧<br />
+|- 🐝<a name="UVal" href="README+/parts/MultifacetVal"><b>Multifacet value</b></a> (Π-Val)<br />
+|- 🚧<a href="README+/parts/Rvrs">Undo/Redo</a> (Reversible)<br />
 </td></tr></table>
 
 \___________\
