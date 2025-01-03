@@ -1,4 +1,4 @@
-# Programmatic Tests &mdash; Techniques, Design decisions, and more
+# <samp>Programmatic Tests</samp> &mdash; Techniques and more
 
 Developers, testers and management comprehend unit tests as essential and integral as the idea, and uncomplicated and routine as implementation.
 
@@ -6,6 +6,6 @@ This section branches from conceptual discussions of [Tests](https://github.com/
 
 ## A word on definitions
 
-_Unit Tests_ are only a slice of the test pyramid, but technically they may serve all other types (I can't remember any <kbd>New -> Integration test</kbd>).
+_Unit Tests_ are only a slice of the test pyramid, but technically they may serve all other types (I can't remember <kbd>New -> Integration test</kbd> in IDEs).
 
 🔚 ... ⏭️ 📂[README+](README+)
