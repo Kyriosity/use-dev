@@ -27,7 +27,7 @@
   
 _________________________________________________________________________________________________________________________</details>
 
-<table><tr><td>
+<table><tr><td width="28%">
 <!--      O R G    --!>
 ◾ <b>O&thinsp;R&thinsp;G</b><br />
 |- <b>Frames, guidelines</b>&nbsp;📖&thinsp;<a href="README+/frames"><i>Intro</i></a><br />
@@ -62,6 +62,18 @@ ________________________________________________________________________________
 |-- Conversion&nbsp;<a href="src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪</br />
 |- 🐝<a name="UVal" href="README+/parts/MultifacetVal"><b>Multifacet value</b></a> (Π-Val)<br />
 |- 🚧<a href="README+/parts/Rvrs">Undo/Redo</a> (Reversible)<br />
+</td><td width="5000px"> 
+  
+```mermaid
+graph TB
+    subgraph "<samp>Highlights 2025</samp>"
+    a1(<b>Code</b>)-->a2(<a href="https://github.com/Kyriosity/read-write/blob/main/README%2B/software/QA/README+/code-quality.md">Quality</a>)
+  a1-->a3("Review")
+    T1("<b>Testing</b>")-->QA1("Manual")
+    T1("<b>Testing</b>")-->QA2(Automated)
+    end
+```
+
 </td></tr></table>
 
 \___________\
