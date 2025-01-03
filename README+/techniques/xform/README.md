@@ -1,4 +1,4 @@
-# Transformation - Techniques and patterns
+# Transformation &mdash; Techniques and patterns
 
 The known patterns that LOOSELY FIT are Adapter, Converter, Invertor, Decorator.
 
