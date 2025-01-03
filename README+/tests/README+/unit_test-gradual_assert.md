@@ -37,7 +37,7 @@ There are no magic solutions to adjust the frameworks. The following options can
 
 ### <samp>C#.NET</samp>
 
-<picture><img alt="&nbsp;F&thinsp;u&thinsp;n&thinsp;c&thinsp;W&thinsp;a&thinsp;r&thinsp;e" src="../../_rsc/img/symb/funcware/funcware-bar_16px.jpg" /></picture> [conversion tests ](../../../src/TuttiFrutti/FuncStore.Convers.Tests/) use % and symbolic output to evaluate accuracy:
+<sub><picture><img alt="&nbsp;F&thinsp;u&thinsp;n&thinsp;c&thinsp;W&thinsp;a&thinsp;r&thinsp;e" src="../../_rsc/img/symb/funcware/funcware-bar_16px.jpg" /></picture></sub> [conversion tests ](../../../src/TuttiFrutti/FuncStore.Convers.Tests/) use % and symbolic output to evaluate accuracy:
 
 <picture><img alt="&nbsp;Conversion precision 95% ★★★★★★★★★☆" src="../../_rsc/img/snap/tests/funcware-convert-forces-95_precision.jpg" /></picture>
 
