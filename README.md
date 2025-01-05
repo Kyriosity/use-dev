@@ -4,6 +4,7 @@
 |- <b>Frames, guidelines</b>&nbsp;📖&thinsp;<a href="README+/frames"><i>Intro</i></a><br />
 |-- <a href="README+/frames/README+/reinforced_inheretance.md">Reinforced inheritance</a><br />
 |-- <a href="README+/frames/README+/calls_on_null.md">Calls on null</a><br />
+|-- <a href="https://github.com/Kyriosity/read-write/blob/main/README+/.net/README+/cs-hints.md">C# hints</a><br />
 |- <b>Patterns</b><br />
 |-- <a href="/README+/techniques/README+/circuitry/README.md">Circuitry</a><br />
 |-- <a href="/README+/techniques/README+/builders/README.md">Builders</a><br />
