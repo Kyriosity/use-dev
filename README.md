@@ -76,5 +76,4 @@ graph TB
 
 </td></tr></table>
 
-\___________\
 <samp>INSTALLATION</samp>: Clone, copy, or download `src`, and open the solution in Microsoft Visual Studio
