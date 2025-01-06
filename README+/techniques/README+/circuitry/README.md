@@ -1,10 +1,7 @@
 # P<samp>atterns via techniques</samp> &mdash; Circuitry
 
-That's the description where _inductive reasoning_ is to rescue (namely by an example).
+It's the case when _inductive reasoning_ is better (namely by an example). Let's begin, considering a bundle of interlaced "either"-functions:
 
-\__________________________________________________________________________________________________________________
-
-Consider a bundle of interlaced "either"-functions:
 <div align="right"><sub><i>C#-like pseudo-code for brevety</i></sub></div>
 
 ```csharp
@@ -34,6 +31,7 @@ class Not : Is {
 
 This and other alternatives, discussed in the [Appendix](#appendix), are too programmatic.
 
+GOES BEYOND SIMPLE LINEAR
 
 \__________________________________________________________________________________________________________________
 
@@ -60,19 +58,20 @@ constructors, init props, or derived classes?
 ## <a id="why-circuitry" /> Wrap up. Why "circuitry"?
 
 <table><tr valign="top"><td width="40%"><img alt="&nbsp;electrical circuit collage" src="../../../_rsc/img/illus/Circuitry.jpg" /></td><td>
-  <p>You may have already guessed the name.</p>
+  <p>You may have already noticed the similarities of the proposed solution to electronic circuit the name.</p>
   <p>Didifal is only for `boolean`.</p>
 </td></tr>
 </table>
 
 ## Appendix. Alternatives
+
 <a id="appendix" />
 
 ### Wrapper class
 
-#### Pros 
+### Pros 
 
-#### Const
+### Const
 
 HAVE YOU NOTICE A TYPO i INTENTIONALLY LEAVED ? I personally don't like such wrappers.
 
