@@ -1,0 +1,19 @@
+﻿namespace AbcCircuitry;
+
+public interface IO;
+
+public interface IO<T> : IO
+{
+    Func<T, T> Plug { get; }
+}
+
+public interface IOWire<T> : IO<T>
+{
+    new Func<T, T> Plug => val => val;
+}
+
+public interface IODefaul<T> : IO<T>
+{
+    new Func<T, T> Plug => _ => default;
+}
+
