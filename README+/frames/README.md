@@ -11,7 +11,7 @@
 
 The metaphor of code as <mark>cement</mark> was applied to underline <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/QA/README+/code-quality.md">code quality</a>.
      Then design activities can be <mark>formworks</mark> of the concrete, and coding rules, guidelines, and frames can be seen as <mark>reinforcement</mark>.\
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sub>More parallels and metaphors in <a href="https://github.com/Kyriosity/read-write/blob/main/README%2B/pencraft/README%2B/essays/README%2B/SW_architect-aTake.md">Arhictecture and Architects</a></sub>.
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sub>More comparison in <a href="https://github.com/Kyriosity/read-write/blob/main/README%2B/pencraft/README%2B/essays/README%2B/SW_architect-aTake.md">Arhictecture and Architects</a></sub>.
 
 Welcome to these modest contributions - 📁[<span title="&nbsp;The README+ subfolder oranises topic docs"><samp>README+</samp></span>](README+).
 
