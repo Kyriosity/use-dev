@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AbcCommu\AbcCommu.csproj" />
+    <ProjectReference Include="..\AbcExtNUnit\AbcExtNUnit.csproj" />
   </ItemGroup>
 
   <ItemGroup>

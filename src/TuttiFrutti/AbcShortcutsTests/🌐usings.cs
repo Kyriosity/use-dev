@@ -1,0 +1,1 @@
+﻿global using AbcExtNUnit.Metadata.Shortcuts.Test;
