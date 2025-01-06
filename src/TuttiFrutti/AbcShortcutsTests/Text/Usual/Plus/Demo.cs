@@ -1,6 +1,4 @@
-﻿using AbcDataOps.Text.Ext.Usual;
-
-namespace AbcShortcutsTests.Text.Usual.Plus;
+﻿namespace AbcShortcutsTests.Text.Usual.Plus;
 public class Demo
 {
     [Test]
@@ -17,4 +15,11 @@ public class Demo
             " ".IsNullEmptyOrSingleSpace() && !"    ".IsNullEmptyOrSingleSpace() && !"test".IsNullEmptyOrSingleSpace(),
         Is.True);
     }
+}
+
+[Obsolete]
+static class Plus
+{
+    public static bool IsNullEmptyOrSingleSpace(this string? value) => string.IsNullOrEmpty(value) || " " == value;
+    public static bool IsNullEmptyOrSpaces(this string? value) => string.IsNullOrEmpty(value?.Trim());
 }

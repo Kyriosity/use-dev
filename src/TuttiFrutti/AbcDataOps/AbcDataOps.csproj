@@ -11,4 +11,8 @@
     <PackageReference Include="NUnit3TestAdapter" Version="5.0.0-beta.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Text\" />
+  </ItemGroup>
+
 </Project>

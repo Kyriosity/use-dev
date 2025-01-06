@@ -1,6 +1,4 @@
-﻿using AbcDataOps.Text.Ext.Usual;
-
-namespace AbcShortcutsTests.Text.Usual;
+﻿namespace AbcShortcutsTests.Text.Usual;
 
 public class Demo
 {
@@ -59,5 +57,14 @@ public class Demo
         Assert.That(nulledText.IsNullOrEmpty(), Is.False);
 
     }
+
+}
+
+[Obsolete]
+static class Methods
+{
+    public static bool IsNullOrEmpty(this string? value) => string.IsNullOrEmpty(value);
+    public static bool IsNullOrWhiteSpace(this string? value) => string.IsNullOrWhiteSpace(value);
+    public static string? IsInterned(this string value) => string.IsInterned(value);
 
 }
