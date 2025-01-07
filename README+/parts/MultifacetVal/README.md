@@ -13,26 +13,24 @@ Verbal, documented, and, **programmatic** communications frequently rely on titl
             
 - A close approach of Earth to Mars is ca. `33'900'000` _miles_ but seems credible in _kilometers_ and _nmi_.
 - An unknown child's age of 7` can mean months and years.
-- `_Jack_` can be family, given (not only on birth), and branded name.
+- _`Jack`_ can be family, given (not only on birth), and branded name.
 - One apple may mean an electronic device too,
-- The weekly payment of `1'000` dollars will get a national hue: Australian, Canadian, Jamaican, and twenty more. 
+- The weekly payment of `1'000` dollars may surprise with a national hue: Australian, Canadian, Jamaican, and twenty more. 
 
 Concurrent measurement systems can make matters even worse, e.g. flight height can be communicated in <i>feet</i> while cockpit variometers may show <i>meters</i>.
 
 \____________________________________________________________________________________________________ </details>
 
-Not _denominated_ numbers in applications may imply a single system of categorization (e.g. SI for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters.<sup>🔄️</sup>
+Not _denominated_ numbers in applications may imply a single system of categorization (e.g. **SI** for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters.<sup>🔄️</sup>
 
 Coding like `const OuterSpace_Baseline_Kelvin = 2.7` is univocal but inflexible and ugly to the object-oriented eye. As picky pros, we'd propose trailblazing syntax and features.
 
-<div align="center"><b>Let's not beat around the bush but present what our project can deliver.</b> ⬇️</div>
-
-### Mars Orbiter, or "The Empire [unit] Strikes Back"
+### <🪝BAIT> Mars Orbiter, or "The Empire [unit] Strikes Back"
 
 <details><summary><ins>&nbsp;<i>Pound-force</i> [lbf] taken for <i>Newton</i> [N] destroyed the NASA Mars Climate Observer in 1999.&nbsp;</ins></summary>
 &nbsp;
  
-NASA expected metric data from the contractor but the latter reported thrust in the _US Customary units_, based on the good old British **Imperial Pound**. Thus the poor
+NASA part of the software relied on metric data from the "contractor" (the report doesn't name the known company and neither do I). Still, the latter sent thrust in the _US Customary units_, based on the good old British **Imperial Pound**. Thus the poor
 [Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter)<sup><b>w</b></sup> was put below the "survival altitude" orbit. 
 
 ```mermaid
@@ -97,12 +95,13 @@ OnForce(Thrust thrust) {
 
 Conversion here is trivia, and <sub><picture><img alt="&nbsp;f&thinsp;u&thinsp;n&thinsp;c&thinsp;w&thinsp;a&thinsp;r&thinsp;e&thinsp;" src="../../_rsc/img/symb/funcware/funcware-bar_16px.jpg" /></picture></sub> offers an implementation [you can test🧪](../../../src/TuttiFrutti/FuncStore.Convers.Tests/PhysMath/Mech/ForcesTests.cs).
 
-### Looks good ...
 
-<b>... to stake out a repository for CV.</b>
+### Looks good ... </🪝> 
 
-❗The better syntax still won't be a solution: the contractor team of SmallForces knew that the thrust must be communicated in _newtons_. 
-(They took the hardware reported value (the engineers there traditionally operated in the "house" system) and honestly submitted it as _N_. )
+<b>... to stake out a repository for CV.</b> But it's not a solution
+
+❗The contractor team of SmallForces knew that the thrust must be communicated in _newtons_. 
+They took the hardware reported value (the engineers there traditionally operated in the "house" system) and honestly submitted it as _N_. 
 
 Thus the first issue would be to allow limitation of the unit selection. 
 
