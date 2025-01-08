@@ -19,7 +19,7 @@ class Is {
 
 ```
 
-and there's a need of them (functions) as **`neither`**. Since there's no magic out-of-the-hat 🪄 _Boolean Inverter_ the fastest way will be to put the wrapper over:
+and there's a need of them (functions) as **`neither`**. Since there's no magic out-of-the-hat 🪄 _Boolean Inverter_ the most PREDSAZURMYI way will a wrapper over:
 
 ```csharp
 class Not : Is {
@@ -31,7 +31,11 @@ class Not : Is {
 }
 ```
 
-This and other alternatives, discussed in the [Appendix](#appendix), are too programmatic.
+This and other alternatives are discussed in the [Appendix](#appendix).
+
+But what if instead of programnatic approach we implement a declarative markup
+
+CODE SNIPPET!
 
 GOES BEYOND SIMPLE LINEAR
 
@@ -73,6 +77,12 @@ Everything can be presented as digital elements
 ## Appendix. Alternatives
 
 <a id="appendix" />
+
+### Majic Wand.DYnamic
+
+#### Cons
+
+
 
 ### Wrapper class
 
