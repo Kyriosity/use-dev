@@ -1,6 +1,6 @@
-# P<samp>atterns via techniques</samp> &rarr; Circuitry
+# P<samp>atterns via Techniques</samp> &rarr; Circuitry
 
-«Circuitry» like many other ideas is better presented by _inductive reasoning_ &mdash; namely by an example as below.
+«C<samp><i>IRCUITRY</i></samp>» like many other ideas is better presented by _inductive reasoning_ &mdash; namely by an example as below.
 
 Consider a bundle of interlaced "_either_"-functions:
 
@@ -10,7 +10,7 @@ Consider a bundle of interlaced "_either_"-functions:
 class Is {
   string _text;
 
-  bool NullOrEmpty => _text is null || ' == _text;
+  bool NullOrEmpty => _text is null || '' == _text;
   bool NullOrWhitespace { ... };
   bool Ascii { ... };
   bool Latin { ... };
@@ -30,16 +30,25 @@ class Not : Is {
   override AlphaNumeric => !AlphaNumeric;
 }
 
-// or Adapter class if methods aren't virtual
+// or an Adapter aggregating class when methods aren't virtual
 ```
 
-Other alternatives are discussed in the [Appendix](#alternatives).
+Other variants are reviewed in the [Appendix](#alternatives) but <b><samp>what if</samp></b> instead of a "programmatic" approach, we implement a kind of declarative markup.
 
-But what if instead of a programmatic approach, we implement a declarative markup
+```csharp
 
-CODE SNIPPET!
+class Is<Fn> where Fn : Function<bool, bool> {
+   bool NullOrEmpty => _text is null || '' == _text;
+}
 
-GOES BEYOND SIMPLE LINEAR
+class Is : Is<Wire>;
+class Not : Is<Inverse>;
+
+class Stub : Is<True>
+
+```
+
+How's that?
 
 \__________________________________________________________________________________________________________________
 
@@ -66,7 +75,7 @@ constructors, init props, or derived classes?
 ## <a id="why-circuitry" /> Why "circuitry"?
 
 <table><tr valign="top"><td width="40%"><img alt="&nbsp;electrical circuit collage" src="../../../_rsc/img/illus/Circuitry.jpg" /></td><td>
-  <p>You may have already noticed the similarities of the proposed solution to electronic circuit the name.</p>
+  <p>You may have already noticed the similarities of the proposed solution to electric and electronic circuit and boards</p>
   <p>Didifal is only for `boolean`.</p>
 </td></tr>
 </table>
@@ -82,8 +91,21 @@ Everything can be presented as digital elements
 
 ## Appendix. Alternatives<a id="alternatives" />
 
+### Dynamic Majic Wand
 
-### Majic Wand.DYnamic
+You can build your magic wand with dynamic programming (e.g. Roslyn for C#).
+
+```csharp
+
+var notOptions = Invert<Is>();
+
+{
+  T Invert<T><S boolie) where S : T;
+}
+
+
+
+```
 
 #### Cons
 
