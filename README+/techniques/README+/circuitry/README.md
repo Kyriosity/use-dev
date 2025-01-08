@@ -1,8 +1,8 @@
-# P<samp>atterns via techniques</samp> &mdash; Circuitry
+# P<samp>atterns via techniques</samp> &rarr; Circuitry
 
-«Circuitry» as many other ideas is better presented by _inductive reasoning_ - namely by an example as below.
+«Circuitry» like many other ideas is better presented by _inductive reasoning_ &mdash; namely by an example as below.
 
-Consider a bundle of interlaced "either"-functions:
+Consider a bundle of interlaced "_either_"-functions:
 
 <div align="right"><sub><i>C#-like pseudo-code for brevety</i></sub></div>
 
@@ -19,21 +19,23 @@ class Is {
 
 ```
 
-and there's a need of them (functions) as **`neither`**. Since there's no magic out-of-the-hat 🪄 _Boolean Inverter_ the most PREDSAZURMYI way will a wrapper over:
+and there's a need for them (functions) as **`neither`**. Since there's no magic out-of-the-hat 🪄 _Boolean Inverter_ the most predictable way will be a wrapper over:
 
 ```csharp
 class Not : Is {
   override NullOrEmpty => !NullOrEmpty;
-  override NullOrWhitespace => NullOrWhitespace;
+  override NullOrWhitespace => !NullOrWhitespace;
   override Ascii => !Ascii;
   override Latin => !Latin;
   override AlphaNumeric => !AlphaNumeric;
 }
+
+// or Adapter class if methods aren't virtual
 ```
 
-This and other alternatives are discussed in the [Appendix](#appendix).
+Other alternatives are discussed in the [Appendix](#alternatives).
 
-But what if instead of programnatic approach we implement a declarative markup
+But what if instead of a programmatic approach, we implement a declarative markup
 
 CODE SNIPPET!
 
@@ -69,14 +71,17 @@ constructors, init props, or derived classes?
 </td></tr>
 </table>
 
+## Implementations
+
+
+
 ## Wrap up. Do not abuse
 
 Remember the quote of von Neuman ?
 Everything can be presented as digital elements 
 
-## Appendix. Alternatives
+## Appendix. Alternatives<a id="alternatives" />
 
-<a id="appendix" />
 
 ### Majic Wand.DYnamic
 
