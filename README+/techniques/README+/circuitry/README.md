@@ -1,6 +1,8 @@
 # P<samp>atterns via techniques</samp> &mdash; Circuitry
 
-It's the case when _inductive reasoning_ is better (namely by an example). Let's begin, considering a bundle of interlaced "either"-functions:
+«Circuitry» as many other ideas is better presented by _inductive reasoning_ - namely by an example as below.
+
+Consider a bundle of interlaced "either"-functions:
 
 <div align="right"><sub><i>C#-like pseudo-code for brevety</i></sub></div>
 
@@ -17,7 +19,7 @@ class Is {
 
 ```
 
-and there's a client that needs these functions exactly as **`neither`**. Since there's no magic and out-of-the-hat 🪄 _Boolean Inverter_ the fastest way will be to put the wrapper over:
+and there's a need of them (functions) as **`neither`**. Since there's no magic out-of-the-hat 🪄 _Boolean Inverter_ the fastest way will be to put the wrapper over:
 
 ```csharp
 class Not : Is {
