@@ -16,7 +16,7 @@ Extenstion properties appeared to be "<samp>still in active design</samp>"<sup>�
 + other types
 + extenable
 
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>🙋</sup> <sub>Even in 2025, that's official (warm greeting to bloggers who presented it as C#13 feature). We'll use methods and once remove `()` &mdash; eh, breaking change.</sub> 
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>🙋</sup> <sub>Even in 2025 - warm greeting to bloggers who advertised it as C#13 "what's new"). We'll use methods and once remove `()` &mdash; uh, breaking change.</sub> 
 
 <div align="center"><b>Let's not beat around the bush and show what's delivered:</b> ⬇️</div>
 
