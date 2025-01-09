@@ -37,14 +37,15 @@ Other variants are reviewed in the [Appendix](#alternatives) but <b><samp>what i
 
 ```csharp
 
-class Is<Fn> where Fn : Function<bool, bool> {
-   bool NullOrEmpty => _text is null || '' == _text;
+class Is<Fn> : Is where Fn : Function<bool, bool> {
+   override NullOrEmpty => Fn(NullOrEmpty); // CAN DO by REFLECTION TOO!
 }
 
-class Is : Is<Wire>;
-class Not : Is<Inverse>;
+class Not : Is<Invert>;
+class Denier : Is<False>;
+class Stub : Is<True>;
+class Identity : Is<Wire>; 
 
-class Stub : Is<True>
 
 ```
 
