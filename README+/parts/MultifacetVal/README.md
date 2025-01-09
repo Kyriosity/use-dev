@@ -15,7 +15,7 @@ Verbal, documented, and, **programmatic** communications frequently rely on titl
 - An unknown child's age of 7` can mean months and years.
 - _`Jack`_ can be family, given (not only on birth), and branded name.
 - One apple may mean an electronic device too,
-- The weekly payment of `1'000` dollars may surprise with a national hue: Australian, Canadian, Jamaican, and twenty more. 
+- The weekly payment of `1'000` dollars has a national hue: Australian, Canadian, Jamaican, and twenty more. 
 
 Concurrent measurement systems can make matters even worse, e.g. flight height can be communicated in <i>feet</i> while cockpit variometers may show <i>meters</i>.
 
@@ -25,7 +25,7 @@ Not _denominated_ numbers in applications may imply a single system of categoriz
 
 Coding like `const OuterSpace_Baseline_Kelvin = 2.7` is univocal but inflexible and ugly to the object-oriented eye. As picky pros, we'd propose trailblazing syntax and features.
 
-### <🪝BAIT> Mars Orbiter, or "The Empire [unit] Strikes Back"
+### <code><<samp>BAIT</samp><sub>🪝</sub>></code> Mars Orbiter, or "The Empire [unit] Strikes Back"
 
 <details><summary><ins>&nbsp;<i>Pound-force</i> [lbf] taken for <i>Newton</i> [N] destroyed the NASA Mars Climate Observer in 1999.&nbsp;</ins></summary>
 &nbsp;
@@ -93,10 +93,10 @@ OnForce(Thrust thrust) {
 
 ```
 
-Conversion here is trivia, and <sub><picture><img alt="&nbsp;f&thinsp;u&thinsp;n&thinsp;c&thinsp;w&thinsp;a&thinsp;r&thinsp;e&thinsp;" src="../../_rsc/img/symb/funcware/funcware-bar_16px.jpg" /></picture></sub> offers an implementation [you can test🧪](../../../src/TuttiFrutti/FuncStore.Convers.Tests/PhysMath/Mech/ForcesTests.cs).
+Conversion here is trivial, and <sub><picture><img alt="&nbsp;f&thinsp;u&thinsp;n&thinsp;c&thinsp;w&thinsp;a&thinsp;r&thinsp;e&thinsp;" src="../../_rsc/img/symb/funcware/funcware-bar_16px.jpg" /></picture></sub> offers an implementation [you can test🧪](../../../src/TuttiFrutti/FuncStore.Convers.Tests/PhysMath/Mech/ForcesTests.cs).
 
 
-### Looks good ... </🪝> 
+### Looks good ... `</🪝>`
 
 <b>... to stake out a repository for CV.</b> But it's not a solution
 
