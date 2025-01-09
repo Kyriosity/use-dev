@@ -4,7 +4,7 @@
 
 Consider a bundle of interlaced "_either_"-functions:
 
-<div align="right"><sub><i>C#-like pseudo-code for brevety</i></sub></div>
+<div align="right"><sub><i>C#-like pseudo-code for brevity</i></sub></div>
 
 ```csharp
 class Is {
@@ -76,7 +76,7 @@ constructors, init props, or derived classes?
 ## <a id="why-circuitry" /> Why "circuitry"?
 
 <table><tr valign="top"><td width="40%"><img alt="&nbsp;electrical circuit collage" src="../../../_rsc/img/illus/Circuitry.jpg" /></td><td>
-  <p>You may have already noticed the similarities of the proposed solution to electric and electronic circuit and boards</p>
+  <p>You may have already noticed the similarities of the proposed solution to electric and electronic circuits and boards</p>
   <p>Didifal is only for `boolean`.</p>
 </td></tr>
 </table>
