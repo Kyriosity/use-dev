@@ -5,7 +5,7 @@
 The crossover of two discoveries 
 
 + legit [calls on null](../../../frames/README+/calls_on_null.md),
-+ promised .NET extended properties
++ C# extended properties, coming soon
 
 suggested me to shortcut numerous <code>string.IsNullOrWhiteSpace(<i>abracadabra</i>)</code> into <code><i><b>abracadabra</b></i>.IsNullOrWhitespace</code>.
 
