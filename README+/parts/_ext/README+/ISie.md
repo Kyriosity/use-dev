@@ -11,10 +11,11 @@ suggested me to shortcut numerous <code>string.IsNullOrWhiteSpace(<i>abracadabra
 
 Extenstion properties appeared to be "<samp>still in active design</samp>"<sup>🙋</sup> but this didn't stop me thinking about developing this shortcut into something weightier:
 
-+ more methods
-+ break
-+ other types
-+ extenable
++ more checks, much more but rational,
++ breaking long list and long names,
++ intuitive buildibg,
++ other types than string
++ extensibility 
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>🙋</sup> <sub>Even in 2025 - warm greeting to bloggers who advertised it as C#13 "what's new"). We'll use methods and once remove `()` &mdash; uh, breaking change.</sub> 
 
