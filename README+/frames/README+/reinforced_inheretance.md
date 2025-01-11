@@ -1,4 +1,4 @@
-# Vertical rebars - Reinforced inheritance or logic flow
+# Vertical rebars `=` Reinforced inheritance or logic flow
 
 <table><tr></tr><tr><td>☝️</td><td>
   This frame isn't a rule of thumb but a proposal for our consideration in matching circumstances.
@@ -49,6 +49,7 @@ It will be a surplus for simple `classes` or short methods.
 
 The logic of implementation may be too ornate for straight frames.
 
-It's not friendly to the functional approach to implementation.
+It's not friendly to the straightly functional approach to implementation.
 
-🔚
+\___________\
+🔚 🌘 2024, 2025
