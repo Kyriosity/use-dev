@@ -28,7 +28,7 @@
 |--- <a href="README+/tests/README+/val_tests-tolerance.md">Finer tolerance</a><br />
 <br/><!--           PARTS -->
 ◾ <b>P&thinsp;A&thinsp;R&thinsp;T&thinsp;S</b>&thinsp;📦<br />
-|- <a href="arts/_ext/README+/ISie.md"><b>I&thinsp;S&thinsp;i&thinsp;e</b></a> extensions<br />
+|- <a href="README+/parts/_ext/README+/ISie.md"><b>I&thinsp;S&thinsp;i&thinsp;e</b></a> extensions<br />
 |- <a href="README+/parts/AbcChrono">Chrono ABC</a><br />
 |- <b>Funcware</b><br />
 |-- Conversion&nbsp;<a href="src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪</br />
