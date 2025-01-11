@@ -1,28 +1,35 @@
-# Extensions &mdash; &thinsp;I&thinsp;S&thinsp;i&thinsp;e
+# «&thinsp;I&thinsp;S&thinsp;i&thinsp;e&thinsp;» &mdash; `.Is` and `.Not` <samp>extensions</samp> 
 
-[![C#](https://custom-icon-badges.demolab.com/badge/C%23-but_for_all-orangered.svg?logo=cshrp&logoColor=white&color=turquose)](#)
-
-<p dir="rtl"><samp>...May be or not maybe</samp></p>
+<p align="right"><samp>🐝🐝 <code>OR</code> ❗too 🐝</samp></p>
 
 The crossover of two discoveries 
 
-+ call on nullable is possible,
-+ .NET will introduce extended properties
++ legit [calls on null](../../../frames/README+/calls_on_null.md),
++ C# extended properties, coming soon
 
-suggested to shortcut numerous <code>string.IsNullOrWhiteSpace("<i>abracadabra</i>")</code>can into <code>"abracadabra".Is.NullOrWhitespace<>
+suggested me to shortcut numerous <code>string.IsNullOrWhiteSpace(<i>abracadabra</i>)</code> into <code><i><b>abracadabra</b></i>.IsNullOrWhitespace</code>.
 
-C# `extension` "is still in active design" but this not gonna stop us. We will rely on extension method 
+Extenstion properties appeared to be "<samp>still in active design</samp>"<sup>🙋</sup> but this didn't stop me thinking about developing this shortcut into something weightier:
 
-ToString()
-more goodies
-INymber 
++ more checks, much more but rational,
++ breaking long list and long names,
++ intuitive buildibg,
++ other types than string
++ extensibility 
 
-## Sideffects
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>🙋</sup> <sub>Even in 2025 - warm greeting to bloggers who advertised it as C#13 "what's new"). We'll use methods and once remove `()` &mdash; uh, breaking change.</sub> 
 
-circuitry
+<div align="center"><b>Let's not beat around the bush and show what's delivered:</b> ⬇️</div>
 
-## link to Demos
+### Extrapolation string methods to other types
 
-let's not beat around the bush
+Special Interface for Is() for toString().
 
-🔚 ... <sub>two 🐝🐝 or not too 🐝 ...</sub>
+## Side-effects
+
+This project initiated [circuitry](../../../techniques/README+/circuitry).
+
+This feature also contributes to [builders](../../../techniques/README+/builders).
+
+
+🔚 ... [![C#](https://custom-icon-badges.demolab.com/badge/C%23-but_for_all-orangered.svg?logo=cshrp&logoColor=white&color=turquose)](#) not sponsored by <sub>![Adidas Badge](https://img.shields.io/badge/Adidas-000?logo=adidas&logoColor=fff&style=for-the-badge)</sub>

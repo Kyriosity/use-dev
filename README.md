@@ -23,12 +23,12 @@
 |-- <a href="README+/snippets/wpf/bool2viz_improved.md">Bool-Vis. converter</a><sup>improved</sup><br />
 <br /><!--               T E S T I N G -->
 ◾ <b>T<samp>ESTING</samp></b>&nbsp;📖&thinsp;<a href="README+/tests"><i>Intro</i></a><br />
-|--- <a href="README+/tests/README+/prog_tests-cut_feeds.md">Cutting the feed expansion</a><br />
+|--- <a href="README+/tests/README+/prog_tests-cut_feeds.md">Feed expansion cut</a><br />
 |--- <a href="README+/tests/README+/unit_test-gradual_assert.md">Gradual assert</a><br />
 |--- <a href="README+/tests/README+/val_tests-tolerance.md">Finer tolerance</a><br />
 <br/><!--           PARTS -->
 ◾ <b>P&thinsp;A&thinsp;R&thinsp;T&thinsp;S</b>&thinsp;📦<br />
-|- <a href="arts/_ext/README+/ISie.md"><b>I&thinsp;S&thinsp;i&thinsp;e</b></a> extensions<br />
+|- <a href="README+/parts/_ext/README+/ISie.md"><b>I&thinsp;S&thinsp;i&thinsp;e</b></a> extensions<br />
 |- <a href="README+/parts/AbcChrono">Chrono ABC</a><br />
 |- <b>Funcware</b><br />
 |-- Conversion&nbsp;<a href="src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪</br />
@@ -65,8 +65,7 @@ graph TB
     sq[Funcware] --> MFC{<b>Multi<br />Facet<br />Value</b>}
 
     e --> od3>Undo-Redo<br>Reversible]
-
-    e((Clay / Patterns)) --> f(<mg src="README+/_rsc/img/_nav/tiles/Chrono_bw-200px.jpg"></img>)
+     f(Models) --> e((Clay / Patterns))
 
      classDef subst fill:#9f6,stroke:#fff,stroke-width:2px;
      classDef parts fill:#f96,stroke:#333,stroke-width:4px;
