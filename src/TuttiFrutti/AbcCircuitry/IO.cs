@@ -12,7 +12,7 @@ public interface IOWire<T> : IO<T>
     new Func<T, T> Plug => val => val;
 }
 
-public interface IODefaul<T> : IO<T>
+public interface IODefault<T> : IO<T>
 {
     new Func<T, T> Plug => _ => default;
 }
