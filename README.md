@@ -43,15 +43,18 @@
      </td><td>
       <a href="README+/parts/AbcChrono/README.md"><img src="README+/_rsc/img/_nav/tiles/Chrono_bw-200px.jpg" alt="&nbsp;Chronology lib"/></a>
       <br /><div align="center"><h4><a href="README+/parts/AbcChrono/README.md">CHRONO ABC</a></h4></div>
-    </td><td>
+    </td>
+                                      </tr><tr></tr><tr>
+    <td>
       <a href="README+/parts/MultifacetVal/README.md"><img src="README+/_rsc/img/_nav/tiles/U-Val_200px.jpg" alt="&nbsp;Multifacet value"/></a>
       <br /><div align="center"><h4>✒️&thinsp;<a href="README+/parts/MultifacetVal/README.md">MULTIFACET VALUE</a>&thinsp;🐝</h4></div>
     </td>
-                                                      </tr><tr></tr><tr>
     <td>
       <a href="README+/parts/Rvrs/README.md"><img src="README+/_rsc/img/_nav/tiles/UndoRedo_bw_200px.jpg" alt="&nbsp;Undo-Redo"/></a>
       <br /><div align="center"><h4>🚧&thinsp;<a href="README+/parts/Rvrs/README.md">REVERSIBLE</a>&thinsp;🚧</h4></div>
-    </td><td>
+    </td>
+                                        </tr><tr></tr><tr>
+    <td>
       <a href="README+/decisions/README+/think_in_tasks/README.md"><img src="README+/_rsc/img/_nav/tiles/TaskAsModel_bw-200px.jpg" alt="&nbsp;Value as promise"/></a>
         <br /><div align="center"><h4>🐝&thinsp;<a href="/README+/decisions/README+/think_in_tasks/README.md">THINKING in TASKS</a>&thinsp;⏰</h4></div>
     </td>
