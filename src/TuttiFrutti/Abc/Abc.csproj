@@ -11,4 +11,9 @@
     <PackageReference Include="NUnit3TestAdapter" Version="5.0.0-beta.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Lingua\indo-euro\euro\balto-slavic\slavic\east\" />
+    <Folder Include="Lingua\indo-euro\euro\balto-slavic\slavic\west\" />
+  </ItemGroup>
+
 </Project>
