@@ -26,6 +26,7 @@
 |--- <a href="README+/tests/README+/prog_tests-cut_feeds.md">Feed expansion cut</a><br />
 |--- <a href="README+/tests/README+/unit_test-gradual_assert.md">Gradual assert</a><br />
 |--- <a href="README+/tests/README+/val_tests-tolerance.md">Finer tolerance</a><br />
+|--- <a href="README+/tests/README+/prog_tests-semantics.md">Semantic poser</a><br />
 <br/><!--           PARTS -->
 ◾ <b>P&thinsp;A&thinsp;R&thinsp;T&thinsp;S</b>&thinsp;📦<br />
 |- <a href="README+/parts/_ext/README+/ISie.md"><b>I&thinsp;S&thinsp;i&thinsp;e</b></a> extensions<br />
@@ -42,15 +43,18 @@
      </td><td>
       <a href="README+/parts/AbcChrono/README.md"><img src="README+/_rsc/img/_nav/tiles/Chrono_bw-200px.jpg" alt="&nbsp;Chronology lib"/></a>
       <br /><div align="center"><h4><a href="README+/parts/AbcChrono/README.md">CHRONO ABC</a></h4></div>
-    </td><td>
+    </td>
+                                      </tr><tr></tr><tr>
+    <td>
       <a href="README+/parts/MultifacetVal/README.md"><img src="README+/_rsc/img/_nav/tiles/U-Val_200px.jpg" alt="&nbsp;Multifacet value"/></a>
       <br /><div align="center"><h4>✒️&thinsp;<a href="README+/parts/MultifacetVal/README.md">MULTIFACET VALUE</a>&thinsp;🐝</h4></div>
     </td>
-                                                      </tr><tr></tr><tr>
     <td>
       <a href="README+/parts/Rvrs/README.md"><img src="README+/_rsc/img/_nav/tiles/UndoRedo_bw_200px.jpg" alt="&nbsp;Undo-Redo"/></a>
       <br /><div align="center"><h4>🚧&thinsp;<a href="README+/parts/Rvrs/README.md">REVERSIBLE</a>&thinsp;🚧</h4></div>
-    </td><td>
+    </td>
+                                        </tr><tr></tr><tr>
+    <td>
       <a href="README+/decisions/README+/think_in_tasks/README.md"><img src="README+/_rsc/img/_nav/tiles/TaskAsModel_bw-200px.jpg" alt="&nbsp;Value as promise"/></a>
         <br /><div align="center"><h4>🐝&thinsp;<a href="/README+/decisions/README+/think_in_tasks/README.md">THINKING in TASKS</a>&thinsp;⏰</h4></div>
     </td>
@@ -59,21 +63,6 @@
         <br /><div align="center"><h4>⬅️&thinsp;<a href="https://github.com/Kyriosity/read-write/blob/main/README+/pencraft/README+/essays/README.md">E&thinsp;S&thinsp;S&thinsp;A&thinsp;Y&thinsp;S</a></h4></div>
     </td>
   </tr></table>
-  
-```mermaid
-graph TB
-    sq[Funcware] --> MFC{<b>Multi<br />Facet<br />Value</b>}
-
-    e --> od3>Undo-Redo<br>Reversible]
-     f(Models) --> e((Clay / Patterns))
-
-     classDef subst fill:#9f6,stroke:#fff,stroke-width:2px;
-     classDef parts fill:#f96,stroke:#333,stroke-width:4px;
-     class sq,e subst
-     class MFC,Rvrs parts
-
-```
-
 </td></tr></table>
 
 <samp>INSTALLATION</samp>: Clone, copy, or download `src`, and open the solution in Microsoft Visual Studio
