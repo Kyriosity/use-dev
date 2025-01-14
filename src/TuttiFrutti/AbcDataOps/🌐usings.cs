@@ -1,3 +1,3 @@
-﻿global using Abc.Marks;
-global using AbcDataOps.ISie.Lingua;
+﻿global using Abc.Lingua;
+global using Abc.Marks;
 global using System.Text.RegularExpressions;
