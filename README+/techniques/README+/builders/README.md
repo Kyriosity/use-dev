@@ -1,6 +1,7 @@
 # T<samp>echniques</samp> &mdash; Builders (hard trail)
 
-Generics are at the pinnacle of C# technical embarrassment, but <ins>&thinsp;<samp><b>builders</b></samp>&thinsp;</ins> is a notional <b>dead-end</b> in this "sharp" and less strongly-typed object-oriented languages.
+Generics are at the pinnacle of C# technical embarrassment, but ...
+<blockquote align="center"><ins>&thinsp;«&thinsp;<b>BUILDERS</b>&thinsp;»&thinsp;</ins> <samp>IS A NOTIONAL <b>DEAD-END</samp></b>&thinsp; in this "sharp" and less strongly-typed object-oriented languages.</blockquote>
 
 <table><tr valign="top"><td width="40%"><picture><img alt="&nbsp;Construction crane collapse" src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/illus/crane_collapse-CA-2024(globalnews.ca).jpg" /></picture></td><td>
 <div>We talk about multi-variant branching menus with intuitive context-sensitive options.</div>
@@ -8,7 +9,7 @@ Generics are at the pinnacle of C# technical embarrassment, but <ins>&thinsp;<sa
 <div>What's sold as builders overall is just a counter-intuitive syntax tape of setters and calls,</div>
   <p align="center"><code>.Add(...).Set(...).Add(...).Set(...)</code></p>
   <p>which allows repetitions and wrong calls.</p>
-<p align="center"><b>The barrier is the <samp>exponential growth.</samp></b></p>
+<p align="center"><b>The exponential challenge is the <samp>combimatorial explosion.</samp></b></p>
 </td></tr></table>
 
 Here we are not to yammer but to collect techniques and ideas that mitigate the complexities and still render intuitive builders (to some extent).
@@ -26,16 +27,20 @@ However, are there products for which it won't be an over-mega-engineering? Let'
 <p>DYNAMIC FILL OUT</p>
 </td></tr></table>
 
-Neighbor techniques to complement:\
-|- [Circuitry](../circuitry)
-
 ## Realization
 
-🐝..PENDING..🚧
+🐝..GREAT IDEAS PENDING..🚧
+
+Meanwhile, some construction techniques are there:\
+|- [AbcChrono](../../../parts/AbcChrono)\
+|- [ISie extensions](../../../parts/_ext/README+/ISie.md)
+
+The following topics contemplate object building:\
+|- [Circuitry](../circuitry)
 
 ## Conclusion
 
-Nevertheless (if you hit the wall) the best technique is to cut contructors and fill out with other initializations.
+Nevertheless, the best technique when hit against the wall is to cut constructors and make other initializations.
 
 \___________\
 🔚 ... image credit: https://globalnews.ca/ (2024)
