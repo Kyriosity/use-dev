@@ -1,4 +1,4 @@
-# ⭐&thinsp;I&thinsp;S&thinsp;i&thinsp;e&thinsp;⭐ &mdash; `.Is` and `.Not` <samp>extensions</samp> 
+# ⭐&thinsp;I&thinsp;S&thinsp;i&thinsp;e&thinsp;⭐ &mdash; `.Is` (+ `.Not`) <samp>extensions</samp> 
 
 <p align="right"><samp>🐝🐝 <code>OR</code> ❗too 🐝</samp></p>
 
@@ -27,6 +27,8 @@ Extension properties appeared to be "<samp>still in active design</samp>"<sup>�
 Special Interface for Is() for toString().
 
 ## Implementation
+
+Is remarkable at least compared to other features.
 
 Source code:
 
