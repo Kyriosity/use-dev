@@ -4,14 +4,13 @@ namespace AbcChrono.Convert;
 class Full<NRes> : IYears<NRes> where NRes : INumber<NRes>
 {
     public required On Target {
-        get => _target; init {
-            _target = On.Undefined == value ? Argument.Throw($"{nameof(On)} can't be set {value}") : value;
+        get => field;
+        init {
+            field = On.Undefined == value ? Argument.Throw($"{nameof(On)} can't be set {value}") : value;
         }
     }
-    private readonly On _target;
 
-    public NRes From<N>(On source, N val, In unit)
-        where N : INumber<N> {
+    public NRes From<N>(On source, N val, In unit) where N : INumber<N> {
 
         NotImplemented.ToDo("Ago support");
 
