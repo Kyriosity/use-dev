@@ -1,12 +1,10 @@
-# ⭐&thinsp;I&thinsp;S&thinsp;i&thinsp;e&thinsp;⭐ &mdash; `.Is` (+ `.Not`) <samp>extensions</samp> 
+# ⭐&thinsp;I&thinsp;S&thinsp;i&thinsp;e&thinsp;⭐ &mdash; `.Is` (+ <code><samp>.Not</samp></code>) <samp>extensions</samp> 
 
 <p align="right"><samp>🐝🐝 <code>OR</code> ❗too 🐝</samp></p>
 
-The crossover of two discoveries 
-
-+ legit [calls on null](../../../frames/README+/calls_on_null.md),
-+ C# extended properties `// coming soon`
-
+**The crossover of two discoveries** \
+&nbsp;&nbsp;&nbsp;&nbsp;✔️&thinsp;legit [calls on null](../../../frames/README+/calls_on_null.md),\
+&nbsp;&nbsp;&nbsp;&nbsp;✔️&thinsp;extension properties [promised](https://github.com/dotnet/roslyn/issues/11159)<sup>:octocat:</sup> in **`C#`**\
 suggested me to shortcut numerous <code>string.IsNullOrWhiteSpace(<i>abracadabra</i>)</code> into <code><i><b>abracadabra</b></i>.IsNullOrWhitespace</code>.
 
 Extension properties appeared to be "<samp>still in active design</samp>"<sup>🙋</sup> but this didn't stop me from thinking about developing this shortcut into something weightier:
@@ -26,9 +24,27 @@ Extension properties appeared to be "<samp>still in active design</samp>"<sup>�
 
 Special Interface for Is() for toString().
 
+### CHAR !
+
+### Number
+
 ## Implementation
 
 Is remarkable at least compared to other features.
+
+
+### Why `Not()`? Why not to...
+
+If `subj.Not().` is '!subj.Is().'
+
+
+#### Not only syntax variant
+
+Also STUB for diversity - All(), Can()
+
+Not().Ascii.But  
+
+As [example](https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asDrive/README+/TDD-Watershed/README.md#TDD-ISie) in TDD Watershed
 
 Source code:
 
@@ -36,6 +52,17 @@ AbcLingua
 
 This project initiated [circuitry](../../../techniques/README+/circuitry).
 
-This feature also contributes to [builders](../../../techniques/README+/builders).
+This feature contributes to [builders](../../../techniques/README+/builders).
 
-🔚 ... [![C#](https://custom-icon-badges.demolab.com/badge/C%23-but_for_all-orangered.svg?logo=cshrp&logoColor=white&color=turquose)](#)
+## Wrap up. What's next
+
+This first release is stable but much experimental.
+
+Equal - is burdensome with options
+
+UNICODE - BIG TOPIC
+https://www.unicode.org/glossary/#ASCII
+
+Decypher of languages
+
+🔚 .. 2025 .. [![C#](https://custom-icon-badges.demolab.com/badge/C%23-but_for_all-orangered.svg?logo=cshrp&logoColor=white&color=turquose)](#)
