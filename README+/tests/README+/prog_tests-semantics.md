@@ -2,7 +2,7 @@
 
 ## Valid syntax but wrong logic
 
-Debunking "silent" logical errors that don't affect success paths is **much more important** than the discovery of explicit errors (<s>users</s> testers will do &mdash; forgive me for a dense gag).
+Debunking "silent" logical errors that don't affect success paths is **much more important** than the discovery of explicit errors (<s>users</s> testers will do &mdash; sorry for a dense gag).
 
 ### Excluding wrong calls
 
@@ -13,7 +13,7 @@ But custom chain calls, and builders are error-prone in exposing repeating or il
 
 Consider a contribution to NUnit to prevent such statements.<sup>🙋</sup> Which tests will we attach in the commit?
 
-The only option is to write and comment out statements made non-compatible and comment to uncomment them before a release to ensure they are still invalid (and then comment out again).
+The only option is to write and comment out statements made non-compatible and comment to uncomment them before a release to ensure they are still invalid (and then comment out again). Preprocessor `#if` directives may help a bit.
 
 Cumbersome?
 
