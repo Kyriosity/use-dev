@@ -29,7 +29,7 @@
 |--- <a href="README+/tests/README+/prog_tests-semantics.md">Semantic poser</a><br />
 <br/><!--           PARTS -->
 ◾ <b>P&thinsp;A&thinsp;R&thinsp;T&thinsp;S</b>&thinsp;📦<br />
-|- <a href="README+/parts/_ext/README+/ISie.md"><b>I&thinsp;S&thinsp;i&thinsp;e</b></a> extensions<br />
+|- <a href="README+/parts/_ext/ISie/README.md"><b>I&thinsp;S&thinsp;i&thinsp;e</b></a> extensions<br />
 |- <a href="README+/parts/AbcChrono">Chrono ABC</a><br />
 |- <b>Funcware</b><br />
 |-- Conversion&nbsp;<a href="src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪</br />
@@ -38,8 +38,8 @@
 </td><td> 
   <table><tr>
     <td>
-      <a href="README+/parts/_ext/README+/ISie.md"><img src="README+/_rsc/img/_nav/tiles/ISieCircuitry_bw-200px.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extenstions"/></a>
-      <br /><div align="center"><h4><a href="README+/parts/_ext/README+/ISie.md">EXTENSIONS</a></h4></div>
+      <a href="README+/parts/_ext/ISie/README.md"><img src="README+/_rsc/img/_nav/tiles/ISieCircuitry_bw-200px.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extenstions"/></a>
+      <br /><div align="center"><h4><a href="README+/parts/_ext/ISie/README.md">EXTENSIONS</a></h4></div>
      </td><td>
       <a href="README+/parts/AbcChrono/README.md"><img src="README+/_rsc/img/_nav/tiles/Chrono_bw-200px.jpg" alt="&nbsp;Chronology lib"/></a>
       <br /><div align="center"><h4><a href="README+/parts/AbcChrono/README.md">CHRONO ABC</a></h4></div>
