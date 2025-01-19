@@ -33,7 +33,7 @@ However, are there products for which it won't be an over-mega-engineering? Let'
 
 Meanwhile, some construction techniques are there:\
 |- [AbcChrono](../../../parts/AbcChrono)\
-|- [ISie extensions](../../../parts/_ext/README+/ISie.md)
+|- [ISie extensions](../../../parts/_ext/ISie/README.md)
 
 The following topics contemplate object building:\
 |- [Circuitry](../circuitry)
@@ -43,4 +43,4 @@ The following topics contemplate object building:\
 Nevertheless, the best technique when hit against the wall is to cut constructors and make other initializations.
 
 \___________\
-🔚 ... image credit: https://globalnews.ca/ (2024)
+🔚 ... 2024-2025 .. image credit: https://globalnews.ca/ (2024)
