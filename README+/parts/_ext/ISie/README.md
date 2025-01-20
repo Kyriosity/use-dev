@@ -1,6 +1,4 @@
-# ⭐&thinsp;I&thinsp;S&thinsp;i&thinsp;e&thinsp;⭐ &rarr; `.Is` (+ <code><samp>.Not</samp></code>) <samp>extensions</samp> 
-
-<p align="right"><samp>🐝🐝 <code>OR</code> ❗too 🐝</samp></p>
+<h1 align="center">⭐&thinsp;I&thinsp;S&thinsp;i&thinsp;e&thinsp;⭐ &rarr; <code>.Is</code> / <code><samp>.Not</samp></code> <samp>extensions</samp></h1>
 
 <table><tr valign="top"><td><picture><img width="250px" src="../../../_rsc/img/ISie.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extensions"/></picture></td><td>
 <p><b>The crossover of these two <code>C#</code> discoveries</b></p>
@@ -9,23 +7,31 @@
 <div>suggested me to shortcut ubiquitous <code>string.IsNullOrWhiteSpace(<i>abracadabra</i>)</code> into <code><i><b>abracadabra</b></i>.IsNullOrWhitespace</code>.</div>
 </td><td><picture><img width="250px" src="../../../_rsc/img/_nav/tiles/ISieCircuitry_200px.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extensions"/></picture></td></tr></table>
 
-This isn't a great new idea and won't be worth announcing, but we gonna ship it together with:
+This isn't a great new idea and won't be announced unless we ship it together with:
 
-+ much more functions (under the theory to port them to other languages),
++ much more functionality and features (under the theory to port them to other languages),
 + better syntax (to build intuitively and group),
-+ extend on other candidate types as _numbers_ and _chars_,
-+ platform for other extensions **<samp>BUT</samp> ...**
++ extend on other candidate types (such as obvious _numbers_ and _chars_),
++ make platform for other extensions&nbsp;&nbsp;**<samp>B&thinsp;U&thinsp;T</samp> ...**
 
-<h3 align="center">let's not beat around the bush and show what's delivered:</h3>
+<h3 align="center">... let's not beat around the bush and show what's delivered:</h3>
 
-[`using AbcDataOps.ISie`](../../../../src/TuttiFrutti/AbcDataOps/ISie) if you are eager to start (and let IntelliSense help you) but 
-better be guided by [🧪examples](../../../../src/TuttiFrutti/AbcShortcutsTests/ISie)
-
-Special Interface for Is() for toString().
+<table align="center"><tr></tr><tr><td>⚡<b>Fast</b> (not recommended)</td><td>🧪<b>By test guidance</b> (recommended)</td></tr>
+  <tr valign="top"><td>
+  <div>If you're eager to start without guidance,</div>
+  <p>refer <a href="../../../../src/TuttiFrutti/AbcDataOps/ISie"><code>using AbcDataOps.ISie</code></a>,</p>
+  <p>and let IntelliSense help you!</p>
+</td><td>
+  <div>Here is the entry point:</div>
+  <p><a href="../../../../src/TuttiFrutti/AbcShortcutsTests/ISie">Demos and tests</a>.</p>
+  <p>It's optimized for navigation.</p>
+</td></tr></table>
 
 ## Implementation notes
 
-### Props lost in development (or Blessing in disguise)
+### Props lost «in active development»<sup>📨</sup>. Or Blessing in disguise
+
+<p align="right"><sup>📨</sup> <sub>"The official status" still in 2025</sub></p>
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>🙋</sup> <sub>Even in 2025 - warm greeting to bloggers who advertised it as C#13 "what's new"). We'll use methods and once remove `()` &mdash; uh, breaking change.</sub> 
 Extension properties appeared to be "<samp>still in active design</samp>"<sup>🙋</sup> but this didn't stop me from thinking about developing this shortcut into something weightier:
@@ -36,7 +42,7 @@ Is remarkable at least compared to other features.
 
 ### Why `Not()`?
 
-If `subj.Not().` is '!subj.Is().'
+If it's just <code>❗subj.Is()...</code> It's better readable, and. And it's up to you which syntax to select.
 
 
 #### Not only syntax variant
@@ -67,4 +73,5 @@ UNICODE - BIG TOPIC https://www.unicode.org/glossary/#ASCII
 
 Decypher of languages
 
-🔚 .. 2025 .. [![C#](https://custom-icon-badges.demolab.com/badge/C%23-but_for_all-orangered.svg?logo=cshrp&logoColor=white&color=turquose)](#)
+\___________\
+🔚 .. <samp>🐝🐝 <code>OR</code> ❗too 🐝</samp> ... 🌘 **2025** ... <sub>[![C#](https://custom-icon-badges.demolab.com/badge/C%23-but_for_all-orangered.svg?logo=cshrp&logoColor=white&color=turquose)](#)</sub>
