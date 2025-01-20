@@ -7,7 +7,7 @@
 <div>suggested me to shortcut ubiquitous <code>string.IsNullOrWhiteSpace(<i>abracadabra</i>)</code> into <code><i><b>abracadabra</b></i>.IsNullOrWhitespace</code>.</div>
 </td><td><picture><img width="250px" src="../../../_rsc/img/_nav/tiles/ISieCircuitry_200px.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extensions"/></picture></td></tr></table>
 
-This isn't a great new idea and won't be announced unless we ship it together with:
+This isn't a great new idea to announce unless to pack it together with:
 
 + much more functionality and features (under the theory to port them to other languages),
 + better syntax (to build intuitively and group),
@@ -31,18 +31,19 @@ This isn't a great new idea and won't be announced unless we ship it together wi
 
 ISie is remarkable as a short feature condensing many ideas and techniques (at least compared to others of mine).
 
-### Props lost «in active development»<sup>📨</sup>. Or Blessing in disguise
+### Props lost «in active development»<sup>📨</sup>\
+(or Blessing in Disguise)
 
 <p align="right"><sup>📨</sup> <sub>"The official status" still in 2025</sub></p>
 
-I delayed ISie up to C#13, and when it didn't come decided to BREAKINGLY replace extension methods. However .... 
+I delayed ISie up to C#13, and when extension cookies didn't come decided to BREAKINGLY replace extension methods. However .... 
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>🙋</sup> <sub>Even in 2025 - warm greeting to bloggers who advertised it as C#13 "what's new"). We'll use methods and once remove `()` &mdash; uh, breaking change.</sub> 
 Extension properties appeared to be "<samp>still in active design</samp>"<sup>🙋</sup> but this didn't stop me from thinking about developing this shortcut into something weightier:
 
 ### Why `Not()`?
 
-If it's just <code>❗subj.Is()...</code>. Visibility - surrounding symbols may "hide" `!`. **C#** alone offers the `not` alternative and it's up to you what lexics to select.
+If it's just <code>❗subj.Is()...</code>. **Visibility** - surrounding symbols may shade SUBTLE `!`. **C#** alone offers `not` and it's up to you what lexics to select.
 
 #### Beyond syntax alternative
 
@@ -54,7 +55,7 @@ As [example](https://github.com/Kyriosity/read-write/blob/main/README+/software/
 
 Source code:
 
-### Cross-projects
+### SPINOFFS
 
 AbcLingua
 
