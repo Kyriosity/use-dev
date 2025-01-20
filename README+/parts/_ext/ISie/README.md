@@ -16,7 +16,7 @@ This isn't a great new idea and won't be announced unless we ship it together wi
 
 <h3 align="center">... let's not beat around the bush and show what's delivered:</h3>
 
-<table align="center"><tr></tr><tr><td>⚡<b>Fast</b> (not recommended)</td><td>🧪<b>By test guidance</b> (recommended)</td></tr>
+<table align="center"><tr></tr><tr><td>⚡<b>Fast</b> (not recommended)</td><td>🧪<b>By guidance</b> (recommended)</td></tr>
   <tr valign="top"><td>
   <div>If you're eager to start without guidance,</div>
   <p>refer <a href="../../../../src/TuttiFrutti/AbcDataOps/ISie"><code>using AbcDataOps.ISie</code></a>,</p>
@@ -29,31 +29,32 @@ This isn't a great new idea and won't be announced unless we ship it together wi
 
 ## Implementation notes
 
+ISie is remarkable as a short feature condensing many ideas and techniques (at least compared to others of mine).
+
 ### Props lost «in active development»<sup>📨</sup>. Or Blessing in disguise
 
 <p align="right"><sup>📨</sup> <sub>"The official status" still in 2025</sub></p>
 
+I delayed ISie up to C#13, and when it didn't come decided to BREAKINGLY replace extension methods. However .... 
+
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>🙋</sup> <sub>Even in 2025 - warm greeting to bloggers who advertised it as C#13 "what's new"). We'll use methods and once remove `()` &mdash; uh, breaking change.</sub> 
 Extension properties appeared to be "<samp>still in active design</samp>"<sup>🙋</sup> but this didn't stop me from thinking about developing this shortcut into something weightier:
 
-
-Is remarkable at least compared to other features.
-
-
 ### Why `Not()`?
 
-If it's just <code>❗subj.Is()...</code> It's better readable, and. And it's up to you which syntax to select.
+If it's just <code>❗subj.Is()...</code>. Visibility - surrounding symbols may "hide" `!`. **C#** alone offers the `not` alternative and it's up to you what lexics to select.
 
+#### Beyond syntax alternative
 
-#### Not only syntax variant
+This qualifier reserves the place for other possible, say, `All()...`, `Can()...`, `None.Ascii...`, `No.Symbols...`  
 
-Also STUB for diversity - All(), Can()
-
-=> `None.Ascii.`, `No.Symbols.`  
+### TDD ISie
 
 As [example](https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asDrive/README+/TDD-Watershed/README.md#TDD-ISie) in TDD Watershed
 
 Source code:
+
+### Cross-projects
 
 AbcLingua
 
@@ -63,7 +64,7 @@ This feature contributes to [builders](../../../techniques/README+/builders).
 
 ## Wrap up. What's next
 
-This first release is stable but much experimental.
+This first release is stable but very experimental.
 
 Equal - is burdensome with options
 
