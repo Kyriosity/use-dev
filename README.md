@@ -38,8 +38,8 @@
 </td><td> 
   <table><tr>
     <td>
-      <a href="README+/parts/_ext/ISie/README.md"><img src="README+/_rsc/img/_nav/tiles/ISieCircuitry_bw-200px.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extenstions"/></a>
-      <br /><div align="center"><h4><a href="README+/parts/_ext/ISie/README.md">EXTENSIONS</a></h4></div>
+      <a href="README+/parts/_ext/ISie/README.md"><img src="README+/_rsc/img/_nav/tiles/ISie_bw-200px.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extenstions"/></a>
+      <br /><div align="center"><h4><a href="README+/parts/_ext/ISie/README.md">IS<samp>IE</samp> extensions</a></h4></div>
      </td><td>
       <a href="README+/parts/AbcChrono/README.md"><img src="README+/_rsc/img/_nav/tiles/Chrono_bw-200px.jpg" alt="&nbsp;Chronology lib"/></a>
       <br /><div align="center"><h4><a href="README+/parts/AbcChrono/README.md">CHRONO ABC</a></h4></div>
