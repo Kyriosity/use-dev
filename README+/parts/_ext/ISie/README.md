@@ -1,4 +1,4 @@
-<h1 align="center">⭐&thinsp;I&thinsp;S&thinsp;i&thinsp;e&thinsp;⭐ &rarr; <code>.Is</code> / <code><samp>.Not</samp></code> <samp>extensions</samp></h1>
+<h1 align="center">⭐&thinsp;I&thinsp;S&thinsp;i&thinsp;e&thinsp;⭐ &rarr; ✅<code>.Is</code>❗<code><samp>.Not</samp></code> <samp>extensions</samp></h1>
 
 <table><tr valign="top"><td><picture><img width="250px" src="../../../_rsc/img/ISie.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extensions"/></picture></td><td>
 <p><b>The crossover of these two <code>C#</code> discoveries</b></p>
@@ -12,7 +12,7 @@ This isn't a great new idea to announce unless to pack it together with:
 + much more functionality and features (under the theory to port them to other languages),
 + better syntax (to build intuitively and group),
 + extend on other candidate types (such as obvious _numbers_ and _chars_),
-+ make platform for other extensions&nbsp;&nbsp;**<samp>B&thinsp;U&thinsp;T</samp> ...**
++ render platform for other extensions&nbsp;&nbsp;**<samp>B&thinsp;U&thinsp;T</samp> ...**
 
 <h3 align="center">... let's not beat around the bush and show what's delivered:</h3>
 
@@ -25,16 +25,15 @@ This isn't a great new idea to announce unless to pack it together with:
   <div>Here is the entry point:</div>
   <p><a href="../../../../src/TuttiFrutti/AbcShortcutsTests/ISie">Demos and tests</a>.</p>
   <p>It's optimized for navigation.</p>
-</td></tr></table>
+</td></tr><tr><td colspan="2" align="center">Sure, it's better to explore in Visual Studio or another IDE.</td></tr></table>
 
 ## Implementation notes
 
 ISie is remarkable as a short feature condensing many ideas and techniques (at least compared to others of mine).
 
-### Props lost «in active development»<sup>📨</sup>\
-(or Blessing in Disguise)
+### Props lost «in active development»<sup>📨</sup> ... or Blessing in Disguise
 
-<p align="right"><sup>📨</sup> <sub>"The official status" still in 2025</sub></p>
+<p align="right"><sup>📨</sup> <sub>the "official" status still in 2025</sub></p>
 
 I delayed ISie up to C#13, and when extension cookies didn't come decided to BREAKINGLY replace extension methods. However .... 
 
@@ -43,7 +42,17 @@ Extension properties appeared to be "<samp>still in active design</samp>"<sup>�
 
 ### Why `Not()`?
 
-If it's just <code>❗subj.Is()...</code>. **Visibility** - surrounding symbols may shade SUBTLE `!`. **C#** alone offers `not` and it's up to you what lexics to select.
+If it's just <code>❗subj.Is()...</code>. &rArr; **Visibility** - surrounding symbols may shade subtle `!`, and **C#** alone offers `is not`. 
+
+It's up to you which lexis to pick in **each** case.
+
+<table><tr><td align="center"><b>algebraic language</b></td><td align="center"><b>perceptible tongue</b></td></tr><tr><td>
+<p><code>if(<mark><b>!</b></mark>longStringVarName.Is().NullOr.Empty())</code></p>
+<p><code>x => <mark><b>!</b></mark>x.Is().EmptyOr.Whitespace()</code></td></p>
+<td>
+<p><code>if(longStringVarName.<b>Not()</b>.NullOr.Empty())</code></p>
+<p><code>x => x.<b>Not()</b>.EmptyOr.Whitespace()</code></p>
+</td></tr></table>
 
 #### Beyond syntax alternative
 
@@ -69,7 +78,7 @@ This first release is stable but very experimental.
 
 Equal - is burdensome with options
 
-+ extensibility: you may both arrange your syntax over ISie and add new staff (like tongues) and FEATURES (like Is() on your custom types).
++ Extensibility: you may both arrange your syntax over ISie and add new staff (like tongues) and FEATURES (like Is() on your custom types).
 
 UNICODE - BIG TOPIC https://www.unicode.org/glossary/#ASCII
 
