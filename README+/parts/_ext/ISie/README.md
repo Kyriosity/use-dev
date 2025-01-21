@@ -27,6 +27,9 @@ This isn't a great new idea to announce unless to pack it together with:
   <p>It's optimized for navigation.</p>
 </td></tr><tr><td colspan="2" align="center">Sure, it's better to explore in Visual Studio or another IDE.</td></tr></table>
 
+what's NEXT\
+|||
+
 ## Appendix. Implementation notes
 
 This ISie is remarkable as a compact feature which OCCASIONALLY condensed many events and techniques (modestly compared to other opuses of mine).
