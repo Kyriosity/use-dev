@@ -3,11 +3,11 @@
 <table><tr valign="top"><td><picture><img width="250px" src="../../../_rsc/img/ISie.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extensions"/></picture></td><td>
 <p><b>The crossover of these two <code>C#</code> discoveries</b></p>
 <div>&nbsp;&nbsp;&nbsp;&nbsp;✔️&thinsp;legit <a href="../../../frames/README+/calls_on_null.md">calls on null</a>,</div>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;✔️&thinsp;extension properties <a href="https://github.com/dotnet/roslyn/issues/11159">promised</a><sup>📨</sup></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;✔️&thinsp;extension properties <a href="https://github.com/dotnet/roslyn/issues/11159">promised</a> <code>// not delivered</code><sup>📨</sup></p>
 <div>suggested me to shortcut ubiquitous <code>string.IsNullOrWhiteSpace(<i>abracadabra</i>)</code> into <code><i><b>abracadabra</b></i>.IsNullOrWhitespace</code>.</div>
 </td><td><picture><img width="250px" src="../../../_rsc/img/_nav/tiles/ISieCircuitry_200px.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extensions"/></picture></td></tr></table>
 
-This isn't a great new idea to announce unless to pack it together with:
+This isn't a great new idea to announce unless together with:
 
 + much more functionality and features (under the theory to port them to other languages),
 + better syntax (to build intuitively and group),
@@ -27,28 +27,32 @@ This isn't a great new idea to announce unless to pack it together with:
   <p>It's optimized for navigation.</p>
 </td></tr><tr><td colspan="2" align="center">Sure, it's better to explore in Visual Studio or another IDE.</td></tr></table>
 
-what's NEXT\
-|||
+It will also take a few lines of code for your wrappers, say `.IsNullOrWhiteSpace` though not recommended.
+
+## What's next
+
+**IS<samp>IE</samp>** is a subject of expansion (Unicode alone is the encoding [big fish](https://www.unicode.org/glossary/)<sup>🔗</sup>) and a platform for kin features:
+
++ `.Equal` for strings needs better syntax than the onerous comparison options. 
++ detecting tongues used in text,
++ _many more_ but which will find its users.
 
 ## Appendix. Implementation notes
 
-This ISie is remarkable as a compact feature which OCCASIONALLY condensed many events and techniques (modestly compared to other opuses of mine).
+⭐<b>I&thinsp;S&thinsp;<samp>I&thinsp;E</samp></b>⭐ is remarkable (modestly compared to other opuses of mine) as a compact feature which fortuitous condensed many incidents and techniques.
 
 ### Props lost «in active development»<sup>📨</sup> ... or Blessing in Disguise
 
 <p align="right"><sup>📨</sup> <sub>the "official" status still in 2025</sub></p>
 
-Pending Language Feature was ANNOUNG<sup>🙋</sup> but later was dropped in favour of existing extension methods:
+This ever pending _Language Feature_ was demotivating<sup>🙋</sup> but later was dropped in favor of existing extension methods:
 
-+ `()` make a logical separator,
-+ allow generics to unload building methods
++ `()` isolates logical statements to follow,
++ method allows generics to alleviate building methods (e.g. as tongues selector).
 
-> So there won't be breaking change of methods to properties.
+> **So there won't be breaking change of methods to properties.**
 
-I delayed ISie up to C#13, and when extension candies didn't appear decided to BREAKINGLY replace extension methods. However .... 
-
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>🙋</sup> <sub>Warm greeting to bloggers who advertised it as C#13 "what's new". We'll use methods and once remove `()` &mdash; uh, breaking change.</sub> 
-Extension properties appeared to be "<samp>still in active design</samp>"<sup>🙋</sup> but this didn't stop me from thinking about developing this shortcut into something weightier:
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>🙋</sup> <sub>Warm greeting to bloggers who advertised it and others as C#13 "what's new".</sub> 
 
 ### Why `Not()`?
 
@@ -78,22 +82,10 @@ Source code:
 
 This feature launched 
 
-+ tonngues categorization: [Abc Lingua](../../../../src/TuttiFrutti/Abc/Lingua),
-+ [circuitry](../../../techniques/README+/circuitry),
++ tongues categorization in [Abc Lingua](../../../../src/TuttiFrutti/Abc/Lingua),
++ [Circuitry](../../../techniques/README+/circuitry) (as a pattern via techniques),
 
-And contributes to [builders](../../../techniques/README+/builders).
-
-## Wrap up. What's next
-
-This first release is stable but very experimental.
-
-Equal - is burdensome with options
-
-+ Extensibility: you may both arrange your syntax over ISie and add new staff (like tongues) and FEATURES (like Is() on your custom types).
-
-UNICODE - BIG TOPIC https://www.unicode.org/glossary/#ASCII
-
-Decypher of languages
+and contributes to discussion of [Builders](../../../techniques/README+/builders).
 
 \___________\
 🔚 .. <samp>🐝🐝 <code>OR</code> ❗too 🐝</samp> ... 🌘 **2025** ... <sub>[![C#](https://custom-icon-badges.demolab.com/badge/C%23-but_for_all-orangered.svg?logo=cshrp&logoColor=white&color=turquose)](#)</sub>
