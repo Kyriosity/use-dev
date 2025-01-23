@@ -4,11 +4,11 @@
 
 Debunking "silent" logical errors that don't affect success paths is **much more important** than the discovery of explicit errors (<s>users</s> testers will do &mdash; sorry for a dense gag).
 
-### Excluding wrong calls
+### <a id="non-comp-calls">Excluding wrong calls
 
 Most language paradigms (such as casting, access modifiers, and inheritance) and constructs won't allow sophisms (valid code that will throw run-time syntax errors). 
 
-But custom chain calls, and builders are error-prone in exposing repeating or illogical members. The next NUnit call will run but throw the exception:\
+But custom chain calls, and builders are error-prone in exposing repeating or illogical members. The next _NUnit_ call will run but throw the exception:\
 &nbsp;&nbsp;&nbsp;&nbsp;<code>Assert.That(1, Is.EqualTo(1).<mark>Within</mark>(1).<mark>Within</mark>(1).<mark>Percent</mark>.<mark>Ulps</mark>)</code>
 
 Consider a contribution to NUnit to prevent such statements.<sup>🙋</sup> Which tests will we attach in the commit?
