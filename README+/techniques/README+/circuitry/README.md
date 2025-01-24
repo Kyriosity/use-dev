@@ -1,6 +1,6 @@
 # P<samp>atterns via Techniques</samp> &rarr; Circuitry
 
-«C<samp><i>IRCUITRY</i></samp>» like many other ideas is better presented by _inductive reasoning_ &mdash; namely by an example as below.
+> «C<samp>IRCUITRY</samp>» like many other ideas is better presented by _inductive reasoning_ &mdash; namely by an example as below.
 
 Consider a bundle of interlaced "_either_"-functions:
 
@@ -67,11 +67,13 @@ constructors, init props, or derived classes?
 ## <a id="why-circuitry" /> Why "circuitry"?
 
 <table><tr valign="top"><td width="40%"><img alt="&nbsp;electrical circuit collage" src="../../../_rsc/img/illus/Circuitry.jpg" /></td><td>
-  <p>You may have already noticed the similarities of the proposed solution to electric and electronic circuits and boards</p>
-  <p>Logic gate is for `booleans`.</p>
-  <p>Digital is only for `numbers`.</p>
-   <p>Analog for strings and other objects.</p>
-  <p>And generic "markup" is like PUT ELEMENT ON THE PLATE</p>
+  <p>You may have already grasped the similarities of the proposed solution to electric and electronic circuits and boards.</p>
+  <ul>
+  <li>Logic gate is for `booleans`.</li>
+  <li>Digital is only for `numbers`.</li>
+   <li>Analog for strings and other objects.</li>
+  </ul>
+  <p>And generic "markup" is like plugging elements into circuits of a functional plate.</p>
 </td></tr>
 </table>
 
