@@ -1,16 +1,19 @@
 <table><tr valign="top"><td>
 <!--      O R G    --!>
 ◾ <b>O&thinsp;R&thinsp;G</b><br />
+|-- <a title="&nbsp;&lArr;read-write article" href="https://github.com/Kyriosity/read-write/blob/main/README+/.net/README+/cs-hints.md">C# hints</a><br />
 |- <b>Frames, guidelines</b>&nbsp;📖&thinsp;<a href="README+/frames"><i>Intro</i></a><br />
 |-- <a href="README+/frames/README+/reinforced_inheretance.md">Reinforced inheritance</a><br />
 |-- <a href="README+/frames/README+/calls_on_null.md">Calls on null</a><br />
-|-- <a href="https://github.com/Kyriosity/read-write/blob/main/README+/.net/README+/cs-hints.md">C# hints</a><br />
-|- <b>Patterns</b><br />
-|-- <a href="/README+/techniques/README+/circuitry/README.md">Circuitry</a><br />
+|- <b>Techniques&thinsp;/&thinsp;Patterns</b><br />
+|-- <a href="/README+/techniques/README+/no_param-init.md">Param-free init</a><br />
 |-- <a href="/README+/techniques/README+/builders/README.md">Builders</a><br />
-|-- M&thinsp;V&thinsp;V&thinsp;M<br />
+|-- <a href="/README+/techniques/README+/circuitry/README.md"><b>C<samp>IRCUITRY</samp></b></a><br />
+            <!-- M V V M  --!>
+<details><summary>-<ins>&thinsp;M&thinsp;V&thinsp;V&thinsp;M&thinsp;</ins></summary>
 |--- <a href="README+/decisions/README+/mvvm/mvvm-notification_orchestration.md">Notificaton orchestration</a><br />
 |--- <a href="README+/decisions/README+/mvvm/mvvm-vmodel_cohesion.md">Model-ViewModel cohesion</a><br />
+</details>
 |- <b>Templates</b><br />
 |-- <a href="README+/decisions/README+/thins_in_tasks/README.md">Tasks as models</a><br />
 <br /><!--      C L A Y    --!>
