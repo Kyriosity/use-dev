@@ -2,11 +2,15 @@
 <!--      O R G    --!>
 ◾ <b>O&thinsp;R&thinsp;G</b><br />
 |-- <a title="&nbsp;&lArr;read-write article" href="https://github.com/Kyriosity/read-write/blob/main/README+/.net/README+/cs-hints.md">C# hints</a><br />
-|- <b>Frames, guidelines</b>&nbsp;📖&thinsp;<a href="README+/frames"><i>Intro</i></a><br />
+            <!-- F R A M E S  /  R U L E S --!>
+<details><summary><ins>&thinsp;<b>F&thinsp;r&thinsp;a&thinsp;m&thinsp;e&thinsp;s</ins>&thinsp;,<ins>&nbsp;&nbsp;g&thinsp;u&thinsp;i&thinsp;d&thinsp;e&thinsp;l&thinsp;i&thinsp;n&thinsp;e&thinsp;s</b>&thinsp;</ins></summary>
+|--&nbsp;📖&thinsp;<a href="README+/frames"><i>Intro</i></a><br />
 |-- <a href="README+/frames/README+/reinforced_inheretance.md">Reinforced inheritance</a><br />
-|-- <a href="README+/frames/README+/calls_on_null.md">Calls on null</a><br />
-|- <b>Techniques&thinsp;/&thinsp;Patterns</b><br />
-|-- <a href="/README+/techniques/README+/no_param-init.md">Param-free init</a><br />
+|-- <a href="README+/frames/README+/calls_on_null.md">Calls on null</a><br />            
+</details>
+            <!-- TECHNIQUE / PATTERN --!>
+|- <b>T&thinsp;e&thinsp;c&thinsp;h&thinsp;n&thinsp;i&thinsp;q&thinsp;u&thinsp;e&thinsp;s&thinsp;/&thinsp;P&thinsp;a&thinsp;t&thinsp;t&thinsp;e&thinsp;r&thinsp;n&thinsp;s</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+|-- <a href="/README+/techniques/README+/lurk_init.md">"Lurking" initizalization</a><br />
 |-- <a href="/README+/techniques/README+/builders/README.md">Builders</a><br />
 |-- <a href="/README+/techniques/README+/circuitry/README.md"><b>C<samp>IRCUITRY</samp></b></a><br />
             <!-- M V V M  --!>
@@ -36,13 +40,13 @@
 |- <a href="README+/parts/AbcChrono">Chrono ABC</a><br />
 |- <b>Funcware</b><br />
 |-- Conversion&nbsp;<a href="src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪</br />
-|- 🐝<a name="UVal" href="README+/parts/MultifacetVal"><b>Multifacet value</b></a> (Π-Val)<br />
+|- 🐝<a name="UVal" href="README+/parts/MultifacetVal"><b>Multifacet value</b></a> (<b>Π</b>-Val)<br />
 |- 🚧<a href="README+/parts/Rvrs">Undo/Redo</a> (Reversible)<br />
 </td><td> 
   <table><tr>
     <td>
       <a href="README+/parts/_ext/ISie/README.md"><img src="README+/_rsc/img/_nav/tiles/ISie_bw-200px.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extenstions"/></a>
-      <br /><div align="center"><h4><a href="README+/parts/_ext/ISie/README.md">IS<samp>IE</samp> extensions</a></h4></div>
+      <br /><div align="center"><h4><a href="README+/parts/_ext/ISie/README.md">I&thinsp;S&thinsp;<samp>I&thinsp;E</samp>&nbsp;&thinsp;extensions</a></h4></div>
      </td><td>
       <a href="README+/parts/AbcChrono/README.md"><img src="README+/_rsc/img/_nav/tiles/Chrono_bw-200px.jpg" alt="&nbsp;Chronology lib"/></a>
       <br /><div align="center"><h4><a href="README+/parts/AbcChrono/README.md">CHRONO ABC</a></h4></div>
