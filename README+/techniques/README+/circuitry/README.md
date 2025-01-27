@@ -1,6 +1,6 @@
 # P<samp>atterns via Techniques</samp>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Object-oriented Circuitry
 
-> «C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &mdash; by an example next.
+> «C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &mdash; from a case below.
 
 Consider a bundle of interlaced "_either_"-functions:
 
@@ -19,7 +19,7 @@ class Is {
 
 ```
 
-and there's a need for them (functions) as **`neither`**. Since there's no magic out-of-the-hat 🪄 _Boolean Inverter_ the most predictable way will be a wrapper over:
+and there's a demand for them (functions) as **`neither`**. Since there's no magic out-of-the-hat 🪄 _Boolean Inverter_ the most predictable way will be a wrapper over:
 
 ```csharp
 class Not : Is {
@@ -50,14 +50,18 @@ class Identity : Is<Wire>;
 
 ```
 
-Even a simple unary boolean has four variants, while other types are more appealing:
+Even this simple unary boolean has four variants, while other types are more combinatory and appealing:
 
-+ Bring your own options:\
-`"some string".Equals<ComparisonOptions>();`
++ Bring your own algorithm:\
+`"some string".Equals<Loose>(CompareOptions.IgnoreCase);`
 
-GRAMMAR PROOF <Tongue>(Options);
++ Lingua\
+text.Is<French, Latin>.Alphanumeric;
 
-NUMBER
++ Numbers
+Random<ALGORITHM>.Within(1, 100)
+
++ Objects
 
 <details><summary><a id="why-circuitry" /><ins>&nbsp;&nbsp;&nbsp;<b>Lyric Digression: Why "Circuitry"&thinsp;?</b>&nbsp;&nbsp;&nbsp;</ins></summary>
 
@@ -77,9 +81,9 @@ NUMBER
 
 ## Pros and cons
 
-First of all split of design in GOOD SENSE
+✅ First of all, the split of design in a good way.
 
-Overengineering
+🛑 Overengineering
 
 ## Implementations
 
