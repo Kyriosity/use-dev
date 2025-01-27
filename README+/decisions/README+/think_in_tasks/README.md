@@ -1,11 +1,11 @@
-# Tasks as a model, Promise as a value
+# Task as a model, Promise as a value
 
-Most or many well-known templates/paradigms, such as <samp><b>MVC</b></samp>, <samp><b>MVP</b></samp>, <samp><b>MVVM</b></samp>, <samp><b>MV<i>W</i></b></samp>[hatever], <samp><b>POCO</b></samp>, and custom solutions rest on [models](https://github.com/Kyriosity/read-write/blob/main/README%2B/software/design/parts/README+/app-model.md)<sup>⬅️</sup>. 
+Many tailored and most well-known templates/paradigms, such as <samp><b>MVC</b></samp>, <samp><b>MVP</b></samp>, <samp><b>MVVM</b></samp>, <samp><b>MV<i>W</i></b></samp>[hatever], <samp><b>POCO</b></samp>, and custom solutions rest on [models](https://github.com/Kyriosity/read-write/blob/main/README%2B/software/design/parts/README+/app-model.md)<sup>⬅️</sup>. 
 Developers bind presentations, actions, and messages to values/properties/callbacks. 
 
 There's nothing wrong with this approach (especially for rough abstraction and logical division) but oversimplicity and static character. 
 
-It treats applications as snapped in a moment when every property is known or status is final: as values can be predictably set/reset, or coded in a time slot, imperceptible for users or insignificant for hardware/software clients. 
+It treats models as snapped in a moment when every property is known and their status are final: as values can be predictably (pre)set/reset, or coded in a time slot, imperceptible for users or insignificant for hardware/software clients. 
 
 <h3 align="center">However</h3>
 <p>Domain <b>and</b> IT realities are not always under the best of circumstances with:</p>
@@ -16,7 +16,7 @@ It treats applications as snapped in a moment when every property is known or st
 <li>slow rudimentary storages,</li>
 <li>pending answers and asynchronous events,</li>
 </ul>
-<p>and any operation can break, fail, run out of time, or be suspended/canceled on both sides.</p>
+<p>and any operation can break, fail, run out of time, or be suspended/canceled/retried on both sides.</p>
 <p>Enough scenarios shall mock delays to catch user attention or show proof of work. For example:
   <br>⏱️ Saving a giga-document, rebuilding a solution, or making a bank transaction can occur unnaturally instant, leaving users with a feeling it hasn't run.
   <br>⏱️ There's a minimum for a user to understand the pop-up message.
@@ -30,7 +30,7 @@ Now, spice these reactive interfaces with `async`: you must break the queue of v
 <details><summary>___<ins><b>and now the&nbsp;&nbsp;<samp>T&thinsp;W&thinsp;I&thinsp;S&thinsp;T</samp></b>&nbsp;</ins> <b>.&thinsp;.&thinsp;.</b> ___</summary>
 &nbsp;
 
-Imagine that a user (view) input/action can be a _promise_. A bright example is a chess engine waiting most of its time for a player "move". And the chess model (instance of a `game` class) is then ... the **view**.
+Imagine that a user (view) input/action can be a _promise_. A bright example is a chess engine waiting most of its time for a player action. And the chess model (instance of a `game` class) is then ... the **view**.
 
 We have our picture rotated 180° (or vertically flipped if you prefer). And it's not for fun but for viewing beyond the standard patterns.
 
