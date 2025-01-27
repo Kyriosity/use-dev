@@ -1,6 +1,6 @@
-# P<samp>atterns via Techniques</samp> &rarr; Circuitry
+# P<samp>atterns via Techniques</samp>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Object-oriented Circuitry
 
-> «C<samp>IRCUITRY</samp>» like many other ideas is better presented by _inductive reasoning_ &mdash; namely by an example as below.
+> «C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &mdash; by an example next.
 
 Consider a bundle of interlaced "_either_"-functions:
 
@@ -33,12 +33,14 @@ class Not : Is {
 // or an Adapter aggregating class when methods aren't virtual
 ```
 
-Other variants are reviewed in the [Appendix](#alternatives) but <b><samp>what if</samp></b> instead of a "programmatic" approach, we implement a kind of declarative markup.
+It's not a single option (see other variants in the [Appendix](#alternatives)) **but what if** instead of a "programmatic" approach, we propose a kind of 
+<samp><mark>declarative markup</mark></samp>.
 
 ```csharp
 
 class Is<Fn> : Is where Fn : Function<bool, bool> {
-   override NullOrEmpty => Fn(NullOrEmpty); // CAN DO by REFLECTION TOO!
+   override NullOrEmpty => Fn(NullOrEmpty);
+   ...
 }
 
 class Not : Is<Invert>;
@@ -46,23 +48,16 @@ class Denier : Is<False>;
 class Stub : Is<True>;
 class Identity : Is<Wire>; 
 
-
 ```
 
-DYNAMIC FILL OUT
+Even a simple unary boolean has four variants, while other types are more appealing:
 
-CONSTRUCTOR (VIOLATES)
-   PROPS => EXPOSED
++ Bring your own options:\
+`"some string".Equals<ComparisonOptions>();`
+
+## Pros and cons
 
 
-// Illustration pending
-
-It's the case going. Consider a class that 
-
-why not 
-constructors, init props, or derived classes?
-
-## Circuitry thru markup
 
 ## <a id="why-circuitry" /> Why "circuitry"?
 
@@ -74,6 +69,7 @@ constructors, init props, or derived classes?
    <li>Analog for strings and other objects.</li>
   </ul>
   <p>And generic "markup" is like plugging elements into circuits of a functional plate.</p>
+  Chaining, cascading, IO
 </td></tr>
 </table>
 
@@ -116,4 +112,4 @@ Run-time assembled code is worse to debug.
 
 HAVE YOU NOTICE A TYPO i INTENTIONALLY LEAVED ? I personally don't like such wrappers.
 
-🔚
+🔚 🌘 2024-2025
