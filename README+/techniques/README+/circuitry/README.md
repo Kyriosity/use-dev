@@ -55,11 +55,11 @@ Even a simple unary boolean has four variants, while other types are more appeal
 + Bring your own options:\
 `"some string".Equals<ComparisonOptions>();`
 
-## Pros and cons
+GRAMMAR PROOF <Tongue>(Options);
 
+NUMBER
 
-
-## <a id="why-circuitry" /> Why "circuitry"?
+<details><summary><a id="why-circuitry" /><ins>&nbsp;&nbsp;&nbsp;<b>Lyric Digression: Why "Circuitry"&thinsp;?</b>&nbsp;&nbsp;&nbsp;</ins></summary>
 
 <table><tr valign="top"><td width="40%"><img alt="&nbsp;electrical circuit collage" src="../../../_rsc/img/illus/Circuitry.jpg" /></td><td>
   <p>You may have already grasped the similarities of the proposed solution to electric and electronic circuits and boards.</p>
@@ -72,6 +72,14 @@ Even a simple unary boolean has four variants, while other types are more appeal
   Chaining, cascading, IO
 </td></tr>
 </table>
+
+\___________</details>
+
+## Pros and cons
+
+First of all split of design in GOOD SENSE
+
+Overengineering
 
 ## Implementations
 
