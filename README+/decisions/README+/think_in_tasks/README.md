@@ -5,34 +5,39 @@ Developers bind presentations, actions, and messages to values/properties/callba
 
 There's nothing wrong with this approach (especially for rough abstraction and logical division) but oversimplicity and static character. 
 
-It treats models as snapped in a moment when every property is known and their status are final: as values can be predictably (pre)set/reset, or coded in a time slot, imperceptible for users or insignificant for hardware/software clients. 
+It treats models as snapped in a moment when every property is known and their statuses are final: 
+as values can be predictably (pre)set/reset, or coded in a time slot, imperceptible for users or insignificant for hardware/software clients. 
 
 <h3 align="center">However</h3>
-<p>Domain <b>and</b> IT realities are not always under the best of circumstances with:</p>
 <table><tr valign="top"><td width="40%"><picture><img src="../../../_rsc/img/illus/TaskAsModel.jpg" alt="&nbsp;Layers delayed communication" /></picture></td><td>
+<div>Domain <b>and</b> IT realities are not always under the best of circumstances with:</div>
 <ul>
-<li>heavy or long calculations,</li>
+<li>heavy or long calculations, <samp>(heavy isn't always long and vice versa)</samp></li>
 <li>lagging network and services,</li>
 <li>slow rudimentary storages,</li>
 <li>pending answers and asynchronous events,</li>
 </ul>
 <p>and any operation can break, fail, run out of time, or be suspended/canceled/retried on both sides.</p>
 <p>Enough scenarios shall mock delays to catch user attention or show proof of work. For example:
-  <br>⏱️ Saving a giga-document, rebuilding a solution, or making a bank transaction can occur unnaturally instant, leaving users with a feeling it hasn't run.
+  <br>⏱️ Saving a giga-document, rebuilding a solution, or making a bank transaction can occur unnaturally instant, leaving users feeling it hasn't run.
   <br>⏱️ There's a minimum for a user to understand the pop-up message.
 </p>
 </td></tr></table>
 
 > Modern languages and frameworks grant superb multitasking and synchro tools out-of-the-box. **, Even so,**  "classical" prevalent implementation incurs perpetual "async" patching of unpredictable values for reactive experience. 
 
-Now, spice these reactive interfaces with `async`: you must break the queue of values and calls into orchestration. To make things worse recall that besides multitasking there's multi-dispatching (that's how auto-save, or spellcheck runs). Not to forget that the statuses of properties and operations are asynchronous values too.
+Now, spice these reactive courses with `async`: you must break queues of values and calls into orchestration. To make things worse recall that besides multitasking there's multi-dispatching (that's how auto-save, or spellcheck runs).
 
-<details><summary>___<ins><b>and now the&nbsp;&nbsp;<samp>T&thinsp;W&thinsp;I&thinsp;S&thinsp;T</samp></b>&nbsp;</ins> <b>.&thinsp;.&thinsp;.</b> ___</summary>
+Not to forget that the statuses of properties and operations are asynchronous values too.
+
+<details align="center"><summary>___<ins><b>and now the&nbsp;&nbsp;<samp>T&thinsp;W&thinsp;I&thinsp;S&thinsp;T</samp></b>&nbsp;</ins>❗<b>.&thinsp;.&thinsp;.</b> ___</summary>
 &nbsp;
 
-Imagine that a user (view) input/action can be a _promise_. A bright example is a chess engine waiting most of its time for a player action. And the chess model (instance of a `game` class) is then ... the **view**.
+<p><b>Imagine that a user (view) input/action can be a <i>promise</i>.</b></p>
 
-We have our picture rotated 180° (or vertically flipped if you prefer). And it's not for fun but for viewing beyond the standard patterns.
+<p align="left">A bright example is a chess engine waiting most of its time for a player action. And the chess model (instance of a `game` class) is then ... the <b>VIEW</b>.</p>
+
+<p align="left">We have our picture rotated 180° (or vertically flipped if you prefer). And it's not for fun but for viewing beyond the standard patterns.</p>
 
 \___________</details>
 
