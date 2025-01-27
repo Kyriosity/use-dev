@@ -1,4 +1,4 @@
-# P<samp>atterns via Techniques</samp>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Object-oriented Circuitry
+# P<samp>atterns via Techniques</samp>: Object-oriented Circuitry
 
 > «C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &mdash; from a case below.
 
