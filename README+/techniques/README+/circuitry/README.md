@@ -1,6 +1,6 @@
-# P<samp>atterns via Techniques</samp>: Object-oriented Circuitry
+# P<samp>atterns via Techniques:</samp> Object-oriented Circuitry
 
-> «C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &mdash; from a case below.
+> __«C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &mdash; from a case below.__
 
 Consider a bundle of interlaced "_either_"-functions:
 
@@ -29,12 +29,9 @@ class Not : Is {
   override Latin => !Latin;
   override AlphaNumeric => !AlphaNumeric;
 }
-
-// or an Adapter aggregating class when methods aren't virtual
 ```
 
-It's not a single realization option **but what if** instead of a "programmatic" approach, we offer a kind of 
-<samp><mark>declarative markup</mark></samp>.
+It's not a single realization option **but what if** instead of a "programmatic" approach, we offer a kind of <samp><mark>declarative markup</mark></samp>.
 
 ```csharp
 
@@ -50,30 +47,36 @@ class Identity : Is<Wire>;
 
 ```
 
-This simplest _unary boolean_ has four parametrization variants &mdash; other types are much more combinatory and appealing:
+This simplest _unary boolean_ has four parametrization variants &mdash; other types are much more combinatory and appealing.
 
-+ Bring your own algorithm:\
+## Some ideas 
+
+### Bring your own algorithm:
+
 `"some string".Equals<Loose>(CompareOptions.IgnoreCase);`
 
-+ Lingua\
+### Lingua
+
 text.Is<French, Latin>.Alphanumeric;
 
-+ Numbers
+### Math 
+
 Random<ALGORITHM>.Within(1, 100)
 
-+ Objects
+### Custom objects
+
+### Dynamic "Majic Wand"
 
 <details><summary><a id="why-circuitry" /><ins>&nbsp;&nbsp;&nbsp;<b>Lyric Digression: Why "Circuitry"&thinsp;?</b>&nbsp;&nbsp;&nbsp;</ins></summary>
 
 <table><tr valign="top"><td width="40%"><img alt="&nbsp;electrical circuit collage" src="../../../_rsc/img/illus/Circuitry.jpg" /></td><td>
   <p>You may have already grasped the similarities of the proposed solution to electric and electronic circuits and boards.</p>
   <ul>
-  <li>Logic gate is for `booleans`.</li>
-  <li>Digital is only for `numbers`.</li>
-   <li>Analog for strings and other objects.</li>
+  <li><code>Booleans</code> match logic gates .</li>
+  <li><code>Numbers</code> &mdash; digital circuits.</li>
+   <li><code>string</code> and classes are analogue electronics.</li>
   </ul>
-  <p>And generic "markup" is like plugging elements into circuits of a functional plate.</p>
-  Chaining, cascading, IO
+  <p>And generic "markup" is like plugging elements into circuits of a functional plate: I/O, chaining, cascading, ...</p>
 </td></tr>
 </table>
 
@@ -87,49 +90,16 @@ declarative is plus
 
 🛑 Overengineering
 
-🗝️🕰️ implement difficulties 
+🗝️🕰️ implementation obstacles 
 
-C# doesn't have `Func` generic constraint to be patched
+**`C#`** doesn't have `Func` generic constraint to be patched
  (DELETGATE doesn't help)
- 
-___________
 
-The biggest advantage - you decide the extent
+## Bottom line
 
+It's up to you to what extent you can use this technique: from **_none_** to BACK TO ROOTS -  machine language.
 
-## Wrap up. Do not abuse
+But recommended: "Circuitry" shall patch parts where the logic becomes overlayered and branching.
 
-"Circuitry" shall patch parts where  This approach may smoothly lead back to machine language.
-
-BACK TO ROOTS
-
-## Appendix. Alternatives<a id="alternatives" />
-
-### Dynamic Majic Wand
-
-You can build your magic wand with dynamic programming (e.g. Roslyn for C#).
-
-```csharp
-
-var notOptions = Invert<Is>();
-
-{
-  T Invert<T><S boolie) where S : T;
-}
-
-
-```
-
-#### Cons
-
-Run-time assembled code is worse to debug.
-
-### Wrapper class
-
-### Pros 
-
-### Const
-
-HAVE YOU NOTICE A TYPO i INTENTIONALLY LEAVED ? I personally don't like such wrappers.
-
+\___________\
 🔚 🌘 2024-2025
