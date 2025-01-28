@@ -33,7 +33,7 @@ class Not : Is {
 // or an Adapter aggregating class when methods aren't virtual
 ```
 
-It's not a single option (see other variants in the [Appendix](#alternatives)) **but what if** instead of a "programmatic" approach, we propose a kind of 
+It's not a single realization option **but what if** instead of a "programmatic" approach, we offer a kind of 
 <samp><mark>declarative markup</mark></samp>.
 
 ```csharp
@@ -50,7 +50,7 @@ class Identity : Is<Wire>;
 
 ```
 
-Even this simple unary boolean has four variants, while other types are more combinatory and appealing:
+This simplest _unary boolean_ has four parametrization variants &mdash; other types are much more combinatory and appealing:
 
 + Bring your own algorithm:\
 `"some string".Equals<Loose>(CompareOptions.IgnoreCase);`
@@ -83,11 +83,19 @@ Random<ALGORITHM>.Within(1, 100)
 
 ✅ First of all, the split of design in a good way.
 
+declarative is plus
+
 🛑 Overengineering
 
-## Implementations
+🗝️🕰️ implement difficulties 
 
-Alas. there's no Func constraint in C# (DELETGATE doesn't help)
+C# doesn't have `Func` generic constraint to be patched
+ (DELETGATE doesn't help)
+ 
+___________
+
+The biggest advantage - you decide the extent
+
 
 ## Wrap up. Do not abuse
 
