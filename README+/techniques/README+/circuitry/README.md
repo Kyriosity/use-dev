@@ -1,5 +1,7 @@
 # P<samp>atterns via Techniques:</samp> Object-oriented Circuitry
 
+	<p>aaa&#8719;bbb</p>&#8719;
+
 > __«C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &mdash; from a case below.__
 
 Consider a bundle of interlaced "_either_"-functions:
@@ -60,19 +62,15 @@ Unicode works too: 🤓`"]
       id3[Regular labels still works]
 ```
 
-
-
-### Bring your own algorithm:
+### Bring your own function:
 
 `"some string".Equals<Loose>(CompareOptions.IgnoreCase);`
+
+Random<ALGORITHM>.Within(1, 100)
 
 ### Lingua
 
 text.Is<French, Latin>.Alphanumeric;
-
-### Math 
-
-Random<ALGORITHM>.Within(1, 100)
 
 ### Custom objects
 
@@ -94,15 +92,20 @@ custom_object.Apply<Fn>.For<IMethods>();
    <li><code>string</code> and classes are analogue electronics.</li>
   </ul>
   <p>Generic "markup" is like plugging elements on IO or onto circuits of a functional plate: direct, chaining, cascading, ...</p>
-  <p>And the running code is the current. We are back to the roots.</p>
+  <p>And the running code is the current. We are back to the roots (of machine language).</p>
 </td></tr>
 </table>
 
 \___________</details>
 
+## Implementation examples
+
+
 ## Pros and cons
 
-✅ First of all, the split of design in a good way.
+✅ First of all, the split of design in a good way - as a side abstraction.
+
++ Markup is friendlier for comprehension.
 
 declarative is plus
 
@@ -112,6 +115,7 @@ declarative is plus
 
 **`C#`** doesn't have `Func` generic constraint to be patched
  (DELETGATE doesn't help)
+
 
 ## Bottom line
 
