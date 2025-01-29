@@ -51,6 +51,17 @@ This simplest _unary boolean_ has four parametrization variants &mdash; other ty
 
 ## Some ideas 
 
+```mermaid
+mindmap
+    id1["`**Root** with
+a second line
+Unicode works too: 🤓`"]
+      id2["`The dog in **the** hog... a *very long text* that wraps to a new line`"]
+      id3[Regular labels still works]
+```
+
+
+
 ### Bring your own algorithm:
 
 `"some string".Equals<Loose>(CompareOptions.IgnoreCase);`
@@ -67,6 +78,12 @@ Random<ALGORITHM>.Within(1, 100)
 
 ### Dynamic "Majic Wand"
 
+This must be the most controversial proposition.
+
+```csharp
+custom_object.Apply<Fn>.For<IMethods>();
+```
+
 <details><summary><a id="why-circuitry" /><ins>&nbsp;&nbsp;&nbsp;<b>Lyric Digression: Why "Circuitry"&thinsp;?</b>&nbsp;&nbsp;&nbsp;</ins></summary>
 
 <table><tr valign="top"><td width="40%"><img alt="&nbsp;electrical circuit collage" src="../../../_rsc/img/illus/Circuitry.jpg" /></td><td>
@@ -76,7 +93,8 @@ Random<ALGORITHM>.Within(1, 100)
   <li><code>Numbers</code> &mdash; digital circuits.</li>
    <li><code>string</code> and classes are analogue electronics.</li>
   </ul>
-  <p>And generic "markup" is like plugging elements into circuits of a functional plate: I/O, chaining, cascading, ...</p>
+  <p>Generic "markup" is like plugging elements on IO or onto circuits of a functional plate: direct, chaining, cascading, ...</p>
+  <p>And the running code is the current. We are back to the roots.</p>
 </td></tr>
 </table>
 
@@ -98,6 +116,8 @@ declarative is plus
 ## Bottom line
 
 It's up to you to what extent you can use this technique: from **_none_** to BACK TO ROOTS -  machine language.
+
+https://github.com/Kyriosity/use-dev/blob/main/README+/techniques/README+/lurk_init.md
 
 But recommended: "Circuitry" shall patch parts where the logic becomes overlayered and branching.
 
