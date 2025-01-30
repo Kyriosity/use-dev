@@ -1,7 +1,5 @@
 # P<samp>atterns via Techniques:</samp> Object-oriented Circuitry
 
-	<p>aaa&#8719;bbb</p>&#8719;
-
 > __«C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &mdash; from a case below.__
 
 Consider a bundle of interlaced "_either_"-functions:
@@ -51,18 +49,11 @@ class Identity : Is<Wire>;
 
 This simplest _unary boolean_ has four parametrization variants &mdash; other types are much more combinatory and appealing.
 
-## Some ideas 
-
-```mermaid
-mindmap
-    id1["`**Root** with
-a second line
-Unicode works too: 🤓`"]
-      id2["`The dog in **the** hog... a *very long text* that wraps to a new line`"]
-      id3[Regular labels still works]
-```
+## Some demos
 
 ### Bring your own function:
+
+<table>DESIGN DEV</table>
 
 `"some string".Equals<Loose>(CompareOptions.IgnoreCase);`
 
@@ -82,7 +73,7 @@ This must be the most controversial proposition.
 custom_object.Apply<Fn>.For<IMethods>();
 ```
 
-<details><summary><a id="why-circuitry" /><ins>&nbsp;&nbsp;&nbsp;<b>Lyric Digression: Why "Circuitry"&thinsp;?</b>&nbsp;&nbsp;&nbsp;</ins></summary>
+<details><summary><a id="why-circuitry" /><ins>&nbsp;&nbsp;&nbsp;<b>Now the electrical metaphor must have taken shapes&thinsp;:</b>&nbsp;&nbsp;&nbsp;</ins></summary>
 
 <table><tr valign="top"><td width="40%"><img alt="&nbsp;electrical circuit collage" src="../../../_rsc/img/illus/Circuitry.jpg" /></td><td>
   <p>You may have already grasped the similarities of the proposed solution to electric and electronic circuits and boards.</p>
@@ -115,15 +106,6 @@ declarative is plus
 
 **`C#`** doesn't have `Func` generic constraint to be patched
  (DELETGATE doesn't help)
-
-
-## Bottom line
-
-It's up to you to what extent you can use this technique: from **_none_** to BACK TO ROOTS -  machine language.
-
-https://github.com/Kyriosity/use-dev/blob/main/README+/techniques/README+/lurk_init.md
-
-But recommended: "Circuitry" shall patch parts where the logic becomes overlayered and branching.
 
 \___________\
 🔚 🌘 2024-2025
