@@ -34,7 +34,6 @@ class Not : Is {
 It's not a single realization option **but what if** instead of a "programmatic" approach, we offer a kind of <samp><mark>declarative markup</mark></samp>.
 
 ```csharp
-
 class Is<Fn> : Is where Fn : Function<bool, bool> {
    override NullOrEmpty => Fn(NullOrEmpty);
    ...
@@ -49,13 +48,17 @@ class Identity : Is<Wire>;
 
 This simplest _unary boolean_ has four parametrization variants &mdash; other types are much more combinatory and appealing.
 
-## Some demos
+## Ideas to incite
 
 ### Bring your own function:
 
 <table>DESIGN DEV</table>
 
-`"some string".Equals<Loose>(CompareOptions.IgnoreCase);`
+```csharp
+
+"some string".Equals<Loose>(CompareOptions.IgnoreCase);
+
+```
 
 Random<ALGORITHM>.Within(1, 100)
 
@@ -99,6 +102,8 @@ custom_object.Apply<Fn>.For<IMethods>();
 + Markup is friendlier for comprehension.
 
 declarative is plus
+
+Design-first will create a test structure friendly for exploration and introduction of applications and features (even for non-developers).
 
 🛑 Overengineering
 
