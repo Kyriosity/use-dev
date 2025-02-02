@@ -1,4 +1,4 @@
-# P<samp>atterns via Techniques:</samp> Object-oriented Circuitry
+# P<samp>atterns _via_ Techniques:</samp> Object-oriented Circuitry
 
 > __«C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &mdash; from a case below.__
 
@@ -46,13 +46,31 @@ class Identity : Is<Wire>;
 
 ```
 
-This simplest _unary boolean_ has four parametrization variants &mdash; other types are much more combinatory and appealing.
+Parametrization with this simplest _unary boolean_ has four variants &mdash; other types are largely more combinatory and appealing.
 
 ## Ideas to incite
 
 ### Bring your own function:
 
-<table>DESIGN DEV</table>
+<table><tr></tr><tr><td>Template</td><td>Use</td></tr><tr valign="top"><td>
+    <code><i>Bag</i> diff&lt;<b><mark>T</mark></b>&gt; = <br />&nbsp;&nbsp;&nbsp;&nbsp;
+      <mark>T</mark>.Equals&lt;T, <mark>F</mark>&gt;(<b><mark></mark>T</b> sample, CompareOptions options)</code><br />
+&nbsp;&nbsp;&nbsp;where,
+<ul>
+<li><code>Bag</code> collects differences (of possibly different types) as <a href="../../../../src/TuttiFrutti/AbcStructTests/Heaps">collection</a>,</li>
+<li><code><b>T</b></code> is the type which instances are extended,</li>
+<li><code><b>F</b></code> defines a function performing the extension.</li>
+  </ul>
+</td><td>
+
+```csharp
+
+"some string".Equals<Loose>(CompareOptions.IgnoreCase);
+
+```
+
+</td>
+</tr></table>
 
 ```csharp
 
