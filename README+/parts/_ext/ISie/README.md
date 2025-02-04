@@ -1,11 +1,12 @@
 <h1 align="center">⭐&thinsp;I&thinsp;S&thinsp;i&thinsp;e&thinsp;⭐ &rarr; ✅<code>.Is</code>❗<code><samp>.Not</samp></code> <samp>extensions</samp></h1>
 
-<table><tr valign="top"><td><picture><img width="250px" src="../../../_rsc/img/ISie.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extensions"/></picture></td><td>
+<table><tr valign="top"><td width="25%"><picture><img src="../../../_rsc/img/ISie.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extensions"/></picture></td><td>
 <p><b>The crossover of these two <code>C#</code> discoveries</b></p>
 <div>&nbsp;&nbsp;&nbsp;&nbsp;✔️&thinsp;legit <a href="../../../frames/README+/calls_on_null.md">calls on null</a>,</div>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;✔️&thinsp;extension properties <a href="https://github.com/dotnet/roslyn/issues/11159">promised</a> <code>// not delivered</code><sup>📨</sup></p>
 <div>suggested me to shortcut ubiquitous <code>string.IsNullOrWhiteSpace(<i>abracadabra</i>)</code> into <code><i><b>abracadabra</b></i>.IsNullOrWhitespace</code>.</div>
-</td><td><picture><img width="250px" src="../../../_rsc/img/_nav/tiles/ISieCircuitry_200px.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extensions"/></picture></td></tr></table>
+</td><td width="20%"><picture><img width="250px" src="../../../_rsc/img/_nav/tiles/ISieCircuitry_200px.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extensions"/></picture><br />
+  <div align="center"><samp>uses circuitry</samp></div></td></tr></table>
 
 This isn't a great new idea to announce unless together with:
 
