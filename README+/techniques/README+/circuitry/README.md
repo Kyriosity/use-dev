@@ -19,7 +19,7 @@ class Is {
 
 ```
 
-and there's a demand for them (functions) as **`neither`**. Since there's no magic out-of-the-hat 🪄 _Boolean Inverter_ the most predictable way will be a wrapper over:
+and there's a demand for them (functions) as **`neither`**. When there's no magic out-of-the-hat<sup>🪄</sup> _Boolean Inverter_ the most predictable way will be a wrapper over:
 
 ```csharp
 class Not : Is {
@@ -52,33 +52,46 @@ Parametrization with this simplest _unary boolean_ has four variants &mdash; oth
 
 ### Bring your own function:
 
-<table><tr></tr><tr><td>Template</td><td>Use</td></tr><tr valign="top"><td>
+<table><tr></tr><tr align="center"><td><b>Template</b></td><td><b>Use</b></td></tr><tr valign="top"><td>
     <code><i>Bag</i> diff&lt;<b><mark>T</mark></b>&gt; = <br />&nbsp;&nbsp;&nbsp;&nbsp;
-      <mark>T</mark>.Equals&lt;T, <mark>F</mark>&gt;(<b><mark></mark>T</b> sample, CompareOptions options)</code><br />
+      <mark>T</mark>Compare&lt;T, <mark>Fn</mark>&gt;(<b><mark></mark>T</b> sample, CompareOptions options)</code><br />
 &nbsp;&nbsp;&nbsp;where,
 <ul>
 <li><code>Bag</code> collects differences (of possibly different types) as <a href="../../../../src/TuttiFrutti/AbcStructTests/Heaps">collection</a>,</li>
 <li><code><b>T</b></code> is the type which instances are extended,</li>
-<li><code><b>F</b></code> defines a function performing the extension.</li>
+<li><code><b>Fn</b></code> defines a function performing the extension.</li>
   </ul>
 </td><td>
 
 ```csharp
 
-"some string".Equals<Loose>(CompareOptions.IgnoreCase);
+"yada".Compare<LooseContent>("yada yada", CompareOptions.IgnoreCase);
 
+```
+
+&nbsp;&nbsp;&nbsp;where,
+
+`LooseContent` means a compare function that ignores\
+whitespace and punctuation 
+
+</td><tr></tr><tr valign="top"><td>
+
+```csharp
+N num = MATH_FUNC<ALGORITHM>.Within<N>(from, to);
+```
+
+</td><td>
+
+```csharp
+int rnd = Random<DiceRole>.Within(1, 6);
+```
+
+```csharp
+N hash = Hash<FISH>.Within<N>(from, to);
 ```
 
 </td>
 </tr></table>
-
-```csharp
-
-"some string".Equals<Loose>(CompareOptions.IgnoreCase);
-
-```
-
-Random<ALGORITHM>.Within<N>(1, 100)
 
 ### Lingua
 
@@ -88,9 +101,11 @@ text.Is<French, Latin>.Alphanumeric;
 
 ### Custom objects
 
-### Dynamic "Majic Wand"
+### <sup>🪄</sup>Dynamic "Majic Wand"
 
-This must be the most controversial proposition.
+This must be the most powerful and controversial proposition.
+
+<table><tr></tr><tr align="center"><td><samp><b>Template</b></samp></td><td>Use</td></tr><tr valign="top"><td>
 
 ```csharp
 custom_object.Return<Fn>.For<IScope>();
@@ -102,6 +117,12 @@ Fn - defines type
 .Input<Fn>
 
 ```
+
+</td><td>
+  
+</td></tr></table>
+
+
 
 <details><summary><a id="why-circuitry" /><ins>&nbsp;&nbsp;&nbsp;<b>Now the electrical metaphor must have taken shapes&thinsp;:</b>&nbsp;&nbsp;&nbsp;</ins></summary>
 
@@ -130,11 +151,11 @@ the main logic remains intact.
 
 + Markup is friendlier for comprehension.
 
-+ sharing. impulse to of elements. invert, muktilingual trim are obvious
++ sharing. impulse to of elements. invert, multilingual trim are obvious
 
 declarative is plus
 
-Design-first will create a test structure friendly for exploration and introduction of applications and features (even for non-developers).
+Design-first will create a test structure that is friendly for exploration and introduction of applications and features (even for non-developers).
 
 🛑 Overengineering
 
