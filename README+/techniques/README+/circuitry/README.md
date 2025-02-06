@@ -19,7 +19,9 @@ class Is {
 
 ```
 
-and there's a demand for them (functions) as **`neither`**. When there's no magic out-of-the-hat<sup>🪄</sup> _Boolean Inverter_ the most predictable way will be a wrapper over:
+and there's a demand for them (functions) as **`neither`**.
+
+When there's no magic out-of-the-hat<sup>🪄</sup> _Boolean Inverter_ the most predictable way will be a wrapper over:
 
 ```csharp
 class Not : Is {
@@ -46,7 +48,7 @@ class Identity : Is<Wire>;
 
 ```
 
-Parametrization with this simplest _unary boolean_ has four variants &mdash; other types are largely more combinatory and appealing.
+This simplest _unary boolean_ has four variants &mdash; other types are largely more combinatory and appealing.
 
 ## Ideas to incite
 
