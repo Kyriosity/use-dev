@@ -21,5 +21,7 @@ Cumbersome?
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>🙋</sup> <sub>That will be another story how many test projects won't build and how many tests (after syntax fix) will fail - those `Expect.Throw<Exception>`.</sub>
 
+**P.S. Tip:** `// // real comment` will allow quick manual tests: _Select&nbsp;All_, _Uncomment_, and _Undo_ (<kbd>Ctrl+A</kbd>, <kbd>Ctrl+K+U</kbd>, and <kbd>Ctrl+Z</kbd> in Visual Studio).
+
 \__________\
 🔚 🌔 2025 ... 🚧🚧🚧 ... to be continued ... 🚧🚧🚧

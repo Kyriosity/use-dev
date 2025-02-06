@@ -78,9 +78,11 @@ Parametrization with this simplest _unary boolean_ has four variants &mdash; oth
 
 ```
 
-Random<ALGORITHM>.Within(1, 100)
+Random<ALGORITHM>.Within<N>(1, 100)
 
 ### Lingua
+
+Alphabet (rules)
 
 text.Is<French, Latin>.Alphanumeric;
 
@@ -91,7 +93,14 @@ text.Is<French, Latin>.Alphanumeric;
 This must be the most controversial proposition.
 
 ```csharp
-custom_object.Apply<Fn>.For<IMethods>();
+custom_object.Return<Fn>.For<IScope>();
+
+ALL_IN
+
+Fn - defines type
+
+.Input<Fn>
+
 ```
 
 <details><summary><a id="why-circuitry" /><ins>&nbsp;&nbsp;&nbsp;<b>Now the electrical metaphor must have taken shapes&thinsp;:</b>&nbsp;&nbsp;&nbsp;</ins></summary>
@@ -110,14 +119,18 @@ custom_object.Apply<Fn>.For<IMethods>();
 
 \___________</details>
 
-## Implementation examples
+## Implementation examples and details
 
 
 ## Pros and cons
 
 ✅ First of all, the split of design in a good way - as a side abstraction.
 
+the main logic remains intact.
+
 + Markup is friendlier for comprehension.
+
++ sharing. impulse to of elements. invert, muktilingual trim are obvious
 
 declarative is plus
 
