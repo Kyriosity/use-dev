@@ -8,9 +8,9 @@ Consider a bundle of interlaced "_either_"-functions:
 
 ```csharp
 class Is {
-  string _text;
+  string subject;
 
-  bool NullOrEmpty => _text is null || '' == _text;
+  bool NullOrEmpty => subject is null || '' == subject;
   bool NullOrWhitespace { ... };
   bool Ascii { ... };
   bool Latin { ... };
@@ -50,7 +50,7 @@ class Identity : Is<Wire>;
 
 This simplest _unary boolean_ has four variants &mdash; other types, combinatory application and scooe reveal enormous space of ...
 
-<h2 align="center">opportunitues:</h2>
+<h2 align="center">opportunities:</h2>
 
 ### Bring your own function:
 
