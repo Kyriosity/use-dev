@@ -1,4 +1,4 @@
-# P<samp>atterns _via_ Techniques:</samp> Object-PLATED Circuitry
+# P<samp>atterns _via_ Techniques:</samp> Object-oriented C<samp>IRCUITRY</samp>
 
 > __«C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &mdash; from a case below.__
 
@@ -33,7 +33,7 @@ class Not : Is {
 }
 ```
 
-**But what if** instead of this and other evident "programmatic" realizations, we offer a kind of <samp><mark>declarative PLUGS</mark></samp>?
+**But what if** instead of this and other evident "programmatic" realizations, we offer a kind of <samp><mark>&thinsp;declarative plugs&thinsp;</mark></samp>?
 
 ```csharp
 class Is<Fn> : Is where Fn : Function<bool, bool> {
@@ -67,7 +67,8 @@ This simplest _unary boolean_ has four variants &mdash; other types, combinatory
 
 ```csharp
 
-"yada".Compare<LooseContent>("yada yada", CompareOptions.IgnoreCase);
+"yada yada".Compare<LooseContent>("blah blah",
+   CompareOptions.IgnoreCase);
 
 ```
 
@@ -99,7 +100,9 @@ N hash = Hash<FISH>.Within<N>(from, to);
 
 Alphabet (rules)
 
-text.Is<French, Latin>.Alphanumeric;
+```csharp
+text.Is<Greek, Latin>.Alphanumeric;
+```
 
 ### Custom objects
 
