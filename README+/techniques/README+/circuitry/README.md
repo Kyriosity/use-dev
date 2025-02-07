@@ -33,7 +33,7 @@ class Not : Is {
 }
 ```
 
-**But what if** instead of this and other evident "programmatic" realizations, we offer a kind of <samp><mark>declarative markup</mark></samp>?
+**But what if** instead of this and other evident "programmatic" realizations, we offer a kind of <samp><mark>declarative PLUGS</mark></samp>?
 
 ```csharp
 class Is<Fn> : Is where Fn : Function<bool, bool> {
