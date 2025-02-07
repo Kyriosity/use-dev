@@ -1,4 +1,4 @@
-# P<samp>atterns _via_ Techniques:</samp> Object-oriented Circuitry
+# P<samp>atterns _via_ Techniques:</samp> Object-PLATED Circuitry
 
 > __«C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &mdash; from a case below.__
 
@@ -19,9 +19,9 @@ class Is {
 
 ```
 
-and there's a demand for them (functions) as **`neither`**.
+and there's a demand for these functions as **`neither`**.
 
-When there's no magic out-of-the-hat<sup>🪄</sup> _Boolean Inverter_ the most predictable way will be a wrapper over:
+When there's no magic out-of-the-hat<sup>🪄</sup> _Boolean Inverter_ a predictable realization will be a wrapper:
 
 ```csharp
 class Not : Is {
@@ -33,7 +33,7 @@ class Not : Is {
 }
 ```
 
-It's not a single realization option **but what if** instead of a "programmatic" approach, we offer a kind of <samp><mark>declarative markup</mark></samp>.
+**But what if** instead of this and other evident "programmatic" realizations, we offer a kind of <samp><mark>declarative markup</mark></samp>?
 
 ```csharp
 class Is<Fn> : Is where Fn : Function<bool, bool> {
@@ -48,9 +48,9 @@ class Identity : Is<Wire>;
 
 ```
 
-This simplest _unary boolean_ has four variants &mdash; other types are largely more combinatory and appealing.
+This simplest _unary boolean_ has four variants &mdash; other types, combinatory application and scooe reveal enormous space of ...
 
-## Ideas to incite
+<h2 align="center">opportunitues:</h2>
 
 ### Bring your own function:
 
@@ -123,8 +123,6 @@ Fn - defines type
 </td><td>
   
 </td></tr></table>
-
-
 
 <details><summary><a id="why-circuitry" /><ins>&nbsp;&nbsp;&nbsp;<b>Now the electrical metaphor must have taken shapes&thinsp;:</b>&nbsp;&nbsp;&nbsp;</ins></summary>
 
