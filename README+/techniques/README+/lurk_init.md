@@ -4,11 +4,9 @@
 
 ## Reminder and setup
 
-C# offers two "mainstream" ways of parametrization objects on creation:
+C# offers two "mainstream" ways of parametrization objects on creation (including required fields).
 
-WE MEAN here set only there and optionally required 
-
-* **C&thinsp;o&thinsp;n&thinsp;s&thinsp;t&thinsp;r&thinsp;u&thinsp;c&thinsp;t&thinsp;o&thinsp;r&thinsp;s**
+* **C&thinsp;o&thinsp;n&thinsp;s&thinsp;t&thinsp;r&thinsp;u&thinsp;c&thinsp;t&thinsp;o&thinsp;r&thinsp;s** - `new (..)`
 
 Many techniques and frameworks (let alone serialization) disregard "parameterful" constructors however they have one distinct and great advantage:
 
@@ -16,7 +14,7 @@ Many techniques and frameworks (let alone serialization) disregard "parameterful
 
 Other things as `params` are syntax excellence.
 
-* **I&thinsp;n&thinsp;i&thinsp;t&thinsp;i&thinsp;a&thinsp;l&thinsp;i&thinsp;z&thinsp;e&thinsp;r&thinsp;s**
+* **I&thinsp;n&thinsp;i&thinsp;t&thinsp;i&thinsp;a&thinsp;l&thinsp;i&thinsp;z&thinsp;e&thinsp;r&thinsp;s** - `new {..}`
 
 [Object initializers](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)<sup>🪟</sup> are error-proof and more flexible (can set even readonly fields through `init` props). 
 
