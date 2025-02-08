@@ -10,7 +10,7 @@
 </details>
             <!-- TECHNIQUE / PATTERN --!>
 |- <b>T&thinsp;e&thinsp;c&thinsp;h&thinsp;n&thinsp;i&thinsp;q&thinsp;u&thinsp;e&thinsp;s&thinsp;/&thinsp;P&thinsp;a&thinsp;t&thinsp;t&thinsp;e&thinsp;r&thinsp;n&thinsp;s</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-|-- <a href="/README+/techniques/README+/lurk_init.md">"Lurking" initizalization</a><br />
+|-- <a href="/README+/techniques/README+/lurk_init.md">"Lurking" init</a><br />
 |-- <a href="/README+/techniques/README+/builders/README.md">Builders</a><br />
 |-- <a href="/README+/techniques/README+/circuitry/README.md"><b>C<samp>IRCUITRY</samp></b></a><br />
             <!-- M V V M  --!>
@@ -64,6 +64,10 @@
     <td>
       <a href="README+/decisions/README+/think_in_tasks/README.md"><img src="README+/_rsc/img/_nav/tiles/TaskAsModel_bw-200px.jpg" alt="&nbsp;Value as promise"/></a>
         <br /><div align="center"><h4>🐝&thinsp;<a href="/README+/decisions/README+/think_in_tasks/README.md">THINKING in TASKS</a>&thinsp;⏰</h4></div>
+    </td>
+   <td>
+      <a href="README+/parts/Rvrs/README.md"><img src="README+/_rsc/img/_nav/tiles/UndoRedo_bw_200px.jpg" alt="&nbsp;Undo-Redo"/></a>
+      <br /><div align="center"><h4>🚧&thinsp;<a href="README+/parts/Rvrs/README.md">REVERSIBLE</a>&thinsp;🚧</h4></div>
     </td>
     <td>
       <a href="https://github.com/Kyriosity/read-write/blob/main/README+/pencraft/README+/essays/README.md"><img src="README+/_rsc/img/_nav/tiles/read-write_200px.jpg" alt="&nbsp;READ-WRITE repo" title="&nbsp;Collection in the read-write repository"/></a>
