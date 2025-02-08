@@ -45,30 +45,32 @@
 </td><td> 
   <table><tr>
     <td>
+      <a href="README+/techniques/README+/circuitry/README.md"><img src="README+/_rsc/img/_nav/tiles/Circuitry_bw-200px.jpg" alt="&nbsp;Object-oriented Circuitry"/></a>
+      <br /><div align="center"><h4><a href="README+/techniques/README+/circuitry/README.md">CIRCUITRY</a></h4></div>
+     </td>
+     <td>
       <a href="README+/parts/_ext/ISie/README.md"><img src="README+/_rsc/img/_nav/tiles/ISie_bw-200px.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extenstions"/></a>
       <br /><div align="center"><h4><a href="README+/parts/_ext/ISie/README.md">I&thinsp;S&thinsp;<samp>I&thinsp;E</samp>&nbsp;&thinsp;extensions</a></h4></div>
-     </td><td>
+     </td>
+                                      </tr><tr></tr><tr>
+    <td>
       <a href="README+/parts/AbcChrono/README.md"><img src="README+/_rsc/img/_nav/tiles/Chrono_bw-200px.jpg" alt="&nbsp;Chronology lib"/></a>
       <br /><div align="center"><h4><a href="README+/parts/AbcChrono/README.md">CHRONO ABC</a></h4></div>
     </td>
-                                      </tr><tr></tr><tr>
-    <td>
-      <a href="README+/parts/MultifacetVal/README.md"><img src="README+/_rsc/img/_nav/tiles/U-Val_200px.jpg" alt="&nbsp;Multifacet value"/></a>
-      <br /><div align="center"><h4>✒️&thinsp;<a href="README+/parts/MultifacetVal/README.md">MULTIFACET VALUE</a>&thinsp;🐝</h4></div>
-    </td>
-    <td>
-      <a href="README+/parts/Rvrs/README.md"><img src="README+/_rsc/img/_nav/tiles/UndoRedo_bw_200px.jpg" alt="&nbsp;Undo-Redo"/></a>
-      <br /><div align="center"><h4>🚧&thinsp;<a href="README+/parts/Rvrs/README.md">REVERSIBLE</a>&thinsp;🚧</h4></div>
-    </td>
-                                        </tr><tr></tr><tr>
     <td>
       <a href="README+/decisions/README+/think_in_tasks/README.md"><img src="README+/_rsc/img/_nav/tiles/TaskAsModel_bw-200px.jpg" alt="&nbsp;Value as promise"/></a>
         <br /><div align="center"><h4>🐝&thinsp;<a href="/README+/decisions/README+/think_in_tasks/README.md">THINKING in TASKS</a>&thinsp;⏰</h4></div>
+    </td>
+                                        </tr><tr></tr><tr>
+    <td>
+      <a href="README+/parts/MultifacetVal/README.md"><img src="README+/_rsc/img/_nav/tiles/U-Val_200px.jpg" alt="&nbsp;Multifacet value"/></a>
+      <br /><div align="center"><h4>✒️&thinsp;<a href="README+/parts/MultifacetVal/README.md">MULTIFACET VALUE</a>&thinsp;🐝</h4></div>
     </td>
    <td>
       <a href="README+/parts/Rvrs/README.md"><img src="README+/_rsc/img/_nav/tiles/UndoRedo_bw_200px.jpg" alt="&nbsp;Undo-Redo"/></a>
       <br /><div align="center"><h4>🚧&thinsp;<a href="README+/parts/Rvrs/README.md">REVERSIBLE</a>&thinsp;🚧</h4></div>
     </td>
+                                 </tr><tr></tr><tr>
     <td>
       <a href="https://github.com/Kyriosity/read-write/blob/main/README+/pencraft/README+/essays/README.md"><img src="README+/_rsc/img/_nav/tiles/read-write_200px.jpg" alt="&nbsp;READ-WRITE repo" title="&nbsp;Collection in the read-write repository"/></a>
         <br /><div align="center"><h4>⬅️&thinsp;<a href="https://github.com/Kyriosity/read-write/blob/main/README+/pencraft/README+/essays/README.md">E&thinsp;S&thinsp;S&thinsp;A&thinsp;Y&thinsp;S</a></h4></div>
