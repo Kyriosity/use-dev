@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Text\" />
+    <ProjectReference Include="..\Abc\Abc.csproj" />
   </ItemGroup>
 
 </Project>

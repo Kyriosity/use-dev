@@ -1,6 +1,8 @@
 ﻿namespace AbcShortcutsTests.Setup;
 public abstract class Arrange
 {
-    protected bool WillBeTrue;
-    protected bool WillBeFalse;
+    protected readonly string? NullStr = null;
+
+    protected bool True = true;
+    protected bool False = false;
 }
