@@ -9,5 +9,5 @@ public class Empty(string message) : Exception<NotSet>(message)
         => string.Empty == value ? false : throw new Empty(expr);
 
     public static bool ThrowIfWhitespace(string value, [ArgExpr(nameof(value))] string expr = "") =>
-        string.IsNullOrWhiteSpace(value) ? throw new Empty(expr) : false;
+        !ThrowIf(value, expr) && string.IsNullOrWhiteSpace(value) ? throw new Empty($"whitespace: {expr}") : false;
 }
