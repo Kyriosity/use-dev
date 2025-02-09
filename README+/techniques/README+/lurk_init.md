@@ -1,43 +1,44 @@
 # "Lurking" initialization in 🎼C#
 
-> **Initializing objects isn't an issue until particular wishes are met or limits are hit.**
+<table align="center"><tr></tr><tr><td><b>Initializing objects isn't an issue until particular wishes are met or limits are hit.</b></td></tr></table>
 
 ## Reminder and setup
 
-C# offers two "mainstream" ways of parametrization objects on creation (including required fields).
+C# offers two "mainstream" ways of parametrization objects on creation (with or without required fields).
 
-* **C&thinsp;o&thinsp;n&thinsp;s&thinsp;t&thinsp;r&thinsp;u&thinsp;c&thinsp;t&thinsp;o&thinsp;r&thinsp;s** - `new (..)`
+### ▪️Constructors // <code>&thinsp;<i>new</i> <mark>(&thinsp;</mark>..<mark>&thinsp;)</mark></code>
 
-Many techniques and frameworks (let alone serialization) disregard "parameterful" constructors however they have one distinct and great advantage:
+Many techniques and frameworks (let alone serialization) disregard "parameter-ful" constructors however they have one distinct and great advantage:
 
-> Certain parameters can be exposed only once in the construction call that corresponds to the word "initialization".
+> **Certain parameters can be exposed only once in the construction call that corresponds to the term "_initialization_".**
 
 Other things as `params` are syntax excellence.
 
-* **I&thinsp;n&thinsp;i&thinsp;t&thinsp;i&thinsp;a&thinsp;l&thinsp;i&thinsp;z&thinsp;e&thinsp;r&thinsp;s** - `new {..}`
+### ▪️Initializers // <code>&thinsp;<i>new</i> <mark>{&thinsp;</mark>..<mark>&thinsp;}</mark></code>
 
 [Object initializers](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/object-and-collection-initializers)<sup>🪟</sup> are error-proof and more flexible (can set even readonly fields through `init` props). 
 
-The disadvantage - properties remain exposed in the object (even as read-only) when not required.
+> The disadvantage - properties remain exposed in the object (even as read-only) when not required.
 
 ## Posers
 
-## Construction from type argument
+### Construction from type argument
 
 The [`new`](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/new-constraint)<sup>🪟</sup> constraint allows to instantiate `<T>`.
 
-Constructor patameters and required modifier won't compike with that.
+Constructor parameters and `required` modifier will **not** compile with that.
 
-## Builders 
+### Builders 
 
-Rendering objects through methods encapsulating new() exclude further parameters () or initializers {}.
+Rendering objects through methods encapsulating `new` exclude further parameters `(..)` or initializers `{..}`.
 
-Constructors
+## Answers
 
-## Solutions
+There are no perfect workarounds but ...
 
-### Generic parametrization of generics !
+### "Generic" parametrization
 
+You can't supply parameters to `<T>, new` but you can supply another generic, which can wrap the parameter. Awkward but it works.
 
  🚧 🏗️ 🚧 ... to be continued ... 🚧🐝🚧
 
