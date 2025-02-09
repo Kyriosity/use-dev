@@ -18,6 +18,7 @@
     <Folder Include="Lingua\indo-iranian\" />
     <Folder Include="Lingua\semitic\" />
     <Folder Include="Lingua\turkic\west\" />
+    <Folder Include="Logic\Conjuncts\" />
   </ItemGroup>
 
 </Project>
