@@ -141,6 +141,9 @@ Fn - defines type
    <li><code>string</code> and classes are analogue electronics.</li>
   </ul>
   <p>Generic "markup" is like plugging elements on IO or onto circuits of a functional plate: direct, chaining, cascading, ...</p>
+
+Classes are PLATES to make BOARDS.
+  
   <p>And the running code is the current. We are back to the roots (of machine language).</p>
 </td></tr>
 </table>
