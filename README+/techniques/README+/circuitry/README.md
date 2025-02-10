@@ -1,5 +1,9 @@
 # P<samp>atterns _via_ Techniques:</samp> Object-oriented C<samp>IRCUITRY</samp>
 
+## Inductive reasoning for Intro
+
+let's present the idea by a case study.
+
 > __«C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &mdash; from a case below.__
 
 Consider a bundle of interlaced "_either_"-functions:
