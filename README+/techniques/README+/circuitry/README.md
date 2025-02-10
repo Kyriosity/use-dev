@@ -48,9 +48,9 @@ class Identity : Is<Wire>;
 
 ```
 
-This simplest _unary boolean_ has four variants &mdash; other types, combinatory application and scooe reveal enormous space of ...
+This simplest _unary boolean_ has four variants &mdash; other types and more than one operand will reveal enormous space of ... 
 
-<h2 align="center">opportunities:</h2>
+<h2 align="center">... opportunities, to propose a few:</h2>
 
 ### Bring your own function:
 
@@ -143,16 +143,21 @@ Fn - defines type
 
 \___________</details>
 
-## Implementation examples and details
+## Wrap up
 
+experimental
 
 ## Pros and cons
 
-✅ First of all, the split of design in a good way - as a side abstraction.
+✅ First of all, the split of design in a good way - as a side abstraction or track of logics.
+
+comes hand in hand with generic parametrization. LINK !!
 
 the main logic remains intact.
 
-+ Markup is friendlier for comprehension.
++ Declarative language is friendlier for comprehension.
+
+TEMPLATING 
 
 + sharing. impulse to of elements. invert, multilingual trim are obvious
 
@@ -166,6 +171,11 @@ Design-first will create a test structure that is friendly for exploration and i
 
 **`C#`** doesn't have `Func` generic constraint to be patched
  (DELETGATE doesn't help)
+
+
+## Appendix. Implementation cases
+
+ISIe
 
 \___________\
 🔚 🌘 2024-2025
