@@ -9,8 +9,7 @@
 |-- <a href="README+/frames/README+/calls_on_null.md">Calls on null</a><br />            
 </details>
             <!-- TECHNIQUE / PATTERN --!>
-<details><summary></summary>
-|- <b>T&thinsp;e&thinsp;c&thinsp;h&thinsp;n&thinsp;i&thinsp;q&thinsp;u&thinsp;e&thinsp;s&thinsp;/&thinsp;P&thinsp;a&thinsp;t&thinsp;t&thinsp;e&thinsp;r&thinsp;n&thinsp;s</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+<details><summary><b>T&thinsp;e&thinsp;c&thinsp;h&thinsp;n&thinsp;i&thinsp;q&thinsp;u&thinsp;e&thinsp;s&thinsp;/&thinsp;P&thinsp;a&thinsp;t&thinsp;t&thinsp;e&thinsp;r&thinsp;n&thinsp;s</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</summary>
 |-- <a href="/README+/techniques/README+/lurk_init.md">"Lurking" init</a><br />
 |-- <a href="/README+/techniques/README+/builders/README.md">Builders</a><br />
 |-- <a href="/README+/techniques/PropT_RW-Model/README.md">Prop&lt;T&gt; R/W model</a><br />
