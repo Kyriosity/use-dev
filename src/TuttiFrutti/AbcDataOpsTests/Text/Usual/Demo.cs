@@ -1,4 +1,4 @@
-﻿namespace AbcDataOpsExtTests.Text.Usual;
+﻿namespace AbcDataOpsTests.Text.Usual;
 
 [Obsolete]
 public class Demo

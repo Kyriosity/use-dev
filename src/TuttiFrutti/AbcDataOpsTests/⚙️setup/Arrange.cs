@@ -1,4 +1,4 @@
-﻿namespace AbcDataOpsExtTests.Setup;
+﻿namespace AbcDataOpsTests.Setup;
 public abstract class Arrange
 {
     protected readonly string? NullStr = null;

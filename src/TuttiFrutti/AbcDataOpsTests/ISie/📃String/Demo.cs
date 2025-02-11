@@ -1,4 +1,4 @@
-﻿namespace AbcDataOpsExtTests.ISie.String;
+﻿namespace AbcDataOpsTests.ISie.String;
 
 public class Demo : Setup.Arrange
 {

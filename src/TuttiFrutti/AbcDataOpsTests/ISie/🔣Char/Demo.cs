@@ -1,4 +1,4 @@
-﻿namespace AbcDataOpsExtTests.ISie.Char;
+﻿namespace AbcDataOpsTests.ISie.Char;
 public class Demo : Setup.Arrange
 {
     [SyntaxDemo]

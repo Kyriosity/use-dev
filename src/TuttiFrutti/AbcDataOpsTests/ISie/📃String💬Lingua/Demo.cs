@@ -1,4 +1,4 @@
-﻿namespace AbcDataOpsExtTests.ISie.String_Lingua;
+﻿namespace AbcDataOpsTests.ISie.String_Lingua;
 public class Demo : Setup.Arrange
 {
     [SyntaxDemo]

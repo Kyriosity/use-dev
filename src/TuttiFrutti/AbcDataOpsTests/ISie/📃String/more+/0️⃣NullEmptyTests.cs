@@ -1,4 +1,4 @@
-﻿namespace AbcDataOpsExtTests.ISie.String.more;
+﻿namespace AbcDataOpsTests.ISie.String.more;
 public class NullEmptyTests : Setup.Arrange
 {
     [Test]
