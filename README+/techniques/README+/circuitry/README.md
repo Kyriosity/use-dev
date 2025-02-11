@@ -1,8 +1,8 @@
 # P<samp>atterns _via_ Techniques:</samp> Object-oriented C<samp>IRCUITRY</samp>
 
-## Inductive reasoning for Intro
+## Inductive Reasoning for Intro
 
-let's present the idea by a case study.
+let's present the idea through a case study.
 
 > __«C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &mdash; from a case below.__
 
@@ -52,7 +52,9 @@ class Identity : Is<Wire>;
 
 ```
 
-This simplest _unary boolean_ has four variants &mdash; other types and more than one operand will reveal enormous space of ... 
+This simplest _unary boolean_ has four variants &mdash; add to them extra functions as Random.
+
+Other types and more than one operand will reveal enormous space of ... 
 
 <h2 align="center">... opportunities, to propose a few:</h2>
 

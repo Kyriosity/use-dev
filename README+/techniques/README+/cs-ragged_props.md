@@ -1,6 +1,6 @@
 > 🚧... DRAFT ... 🚧
 
-# C# - Clay T-RW-Modelling
+# C#&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Ragged properties (T-RW-Modelling)
 
 What does the title mean except calembour (Clay folder and Models LINK!)? Let me begin with an example
 
