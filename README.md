@@ -12,7 +12,7 @@
 |- <b>T&thinsp;e&thinsp;c&thinsp;h&thinsp;n&thinsp;i&thinsp;q&thinsp;u&thinsp;e&thinsp;s&thinsp;/&thinsp;P&thinsp;a&thinsp;t&thinsp;t&thinsp;e&thinsp;r&thinsp;n&thinsp;s</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
 |-- <a href="/README+/techniques/README+/lurk_init.md">"Lurking" init</a><br />
 |-- <a href="/README+/techniques/README+/builders/README.md">Builders</a><br />
-|-- <a href="/README+/techniques/README+/cs-jagged_props.md">Ragged properties</a><br />
+|-- <a href="/README+/techniques/README+/cs-ragged_props.md">Ragged properties</a><br />
 |-- <a href="/README+/techniques/README+/circuitry/README.md"><b>C<samp>IRCUITRY</samp></b></a><br />
             <!-- M V V M  --!>
 <details><summary>-<ins>&thinsp;M&thinsp;V&thinsp;V&thinsp;M&thinsp;</ins></summary>
@@ -29,7 +29,7 @@
 |- Motley heap <a href="src/TuttiFrutti/AbcStructTests/Heaps"><i>tests</i></a>🧪<br />
 |- <b>WPF</b><br />
 |-- <a href="README+/snippets/wpf/bool2viz_improved.md">Bool-Vis. converter</a><sup>improved</sup><br />
-<br /><!--               T E S T I N G -->
+<br /><!--               T E S T I N G   --!>
 ◾ <b>T<samp>ESTING</samp></b>&nbsp;📖&thinsp;<a href="README+/tests"><i>Intro</i></a><br />
 |--- <a href="README+/tests/README+/prog_tests-cut_feeds.md">Feed expansion cut</a><br />
 |--- <a href="README+/tests/README+/unit_test-gradual_assert.md">Gradual assert</a><br />
