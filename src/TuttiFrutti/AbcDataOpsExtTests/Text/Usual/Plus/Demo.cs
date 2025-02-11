@@ -10,12 +10,11 @@ public class Demo
         Assert.That(
             nullText.IsNullEmptyOrSpaces() && "".IsNullEmptyOrSpaces() &&
             " ".IsNullEmptyOrSpaces() && "    ".IsNullEmptyOrSpaces() && !"test".IsNullEmptyOrSpaces(),
-    Is.True);
+            Is.True);
 
         Assert.That(
             nullText.IsNullEmptyOrSingleSpace() && "".IsNullEmptyOrSingleSpace() &&
-            " ".IsNullEmptyOrSingleSpace() && !"    ".IsNullEmptyOrSingleSpace() && !"test".IsNullEmptyOrSingleSpace(),
-        Is.True);
+            " ".IsNullEmptyOrSingleSpace() && !"    ".IsNullEmptyOrSingleSpace() && !"test".IsNullEmptyOrSingleSpace(), Is.True);
     }
 }
 

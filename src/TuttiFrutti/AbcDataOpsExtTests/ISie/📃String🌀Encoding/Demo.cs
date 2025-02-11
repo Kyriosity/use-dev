@@ -1,10 +1,10 @@
-﻿namespace AbcShortcutsTests.ISie.String_Encoding;
+﻿namespace AbcDataOpsExtTests.ISie.String_Encoding;
 public class Demo : Setup.Arrange
 {
     [SyntaxDemo]
     public void Ascii() {
-        _ = "abc_123".Is().Ascii;
-        _ = "abc_123".Is().Ascii.AllPrintable;
+        True = "abc_123".Is().Ascii;
+        True = "abc_123".Is().Ascii.AllPrintable;
     }
 
     [SyntaxDemo]
