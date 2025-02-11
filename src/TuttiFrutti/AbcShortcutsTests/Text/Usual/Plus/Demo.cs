@@ -1,4 +1,6 @@
-﻿namespace AbcShortcutsTests.Text.Usual.Plus;
+﻿namespace AbcDataOpsExtTests.Text.Usual.Plus;
+
+[Obsolete]
 public class Demo
 {
     [Test]

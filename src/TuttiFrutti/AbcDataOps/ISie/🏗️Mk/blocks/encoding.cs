@@ -6,7 +6,7 @@ public interface IEncodingOptions : ITruthValuing
     /// <summary>
     /// ASCII symbols
     /// </summary>
-    IMedia Ascii { get; }
+    Media Ascii { get; }
 }
 
 public interface IEndcodingWithGapOption : IEncodingOptions, IGaps;

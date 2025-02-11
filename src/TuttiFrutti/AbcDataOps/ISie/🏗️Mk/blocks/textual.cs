@@ -1,4 +1,7 @@
-﻿namespace AbcDataOps.ISie.Mk.blocks;
+﻿using Abc.Logic.Build;
+using AbcDataOps.Text.Traits;
+
+namespace AbcDataOps.ISie.Mk.blocks;
 public interface ITextual<LTR, TXT>
 {
     LTR Letters { get; }
@@ -21,7 +24,7 @@ public interface IExtraSpace
 public interface IExtraText : ITextCheck
 {
     /// <summary>
-    /// Misc. brackets and quotes, «..»» „..” °  _ / \ * + 
+    /// Misc. brackets and quotes, «..»» „..” °  _ / \ * + % №  Nº  
     /// </summary>
     ITextCheck AllowMiscSymbols { get; }
 }
@@ -32,4 +35,9 @@ public interface ITextCheck
     /// E.g. "it is25inlay"
     /// </summary>
     bool WithoutNumberInlays { get; }
+}
+
+public abstract class Media : ConvertableToResult<bool>, IMedia, ITruthValuing
+{
+    public abstract bool AllPrintable { get; }
 }

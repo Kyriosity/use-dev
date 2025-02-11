@@ -165,7 +165,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcAlt", "AbcAlt\AbcAlt.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcChronoTests", "AbcChronoTests\AbcChronoTests.csproj", "{F69BD5F3-D9E3-4F72-B317-731F6FCA37EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcShortcutsTests", "AbcShortcutsTests\AbcShortcutsTests.csproj", "{A4BBE3FD-0FE0-4A27-B1C3-D4110AB1EA24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcDataOpsExtTests", "AbcShortcutsTests\AbcDataOpsExtTests.csproj", "{A4BBE3FD-0FE0-4A27-B1C3-D4110AB1EA24}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Techniques", "Techniques", "{DABD277C-7D20-4578-AD6B-9957A0F5D214}"
 EndProject

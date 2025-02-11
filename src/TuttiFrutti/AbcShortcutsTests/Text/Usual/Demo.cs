@@ -1,5 +1,7 @@
-﻿namespace AbcShortcutsTests.Text.Usual;
+﻿namespace AbcDataOpsExtTests.Text.Usual;
 
+
+[Obsolete]
 public class Demo
 {
     private const string multilineWhitespaces = @"   

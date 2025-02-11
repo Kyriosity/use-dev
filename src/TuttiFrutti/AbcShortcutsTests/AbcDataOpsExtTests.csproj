@@ -28,8 +28,4 @@
     <Using Include="NUnit.Framework" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ISie\📃String\see+\" />
-  </ItemGroup>
-
 </Project>

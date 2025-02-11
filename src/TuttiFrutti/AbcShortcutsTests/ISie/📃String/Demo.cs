@@ -1,11 +1,10 @@
-﻿namespace AbcShortcutsTests.ISie.String;
+﻿namespace AbcDataOpsExtTests.ISie.String;
 
 public class Demo : Setup.Arrange
 {
     [SyntaxDemo]
-    public void Classics() {
-        True = ((string)null).Is().NullOrEmpty;
-        True = string.Empty.Is().NullEmptyOr.Spaces;
+    public void Shortcuts() {
+        True = NullStr.Is().NullOrEmpty;
 
         True = string.Empty.Is().NullOrEmpty;
         False = "D".Is().NullOrEmpty;
@@ -14,10 +13,13 @@ public class Demo : Setup.Arrange
         False = string.Empty.Is().Whitespace;
 
         True = "  \n  ".Is().NullEmptyOr.Whitespace;
+
+        True = "  \n  ".Is().EmptyOr.Whitespace; // must be exception
+        _ = NullStr.Is().EmptyOr.Whitespace; // must be exception
     }
 
     [SyntaxDemo]
-    public void Blankiness() {
+    public void Blank() {
         False = string.Empty.Is().Spaces;
         True = space.Single.Is().Spaces;
         True = "    ".Is().Spaces;
@@ -27,7 +29,7 @@ public class Demo : Setup.Arrange
         True = space.Single.Is().SingleSpace;
         False = "       ".Is().SingleSpace;
 
-        True = "not whitspace".Is().EmptyOr.Whitespace;
+        True = "not whitespace".Is().EmptyOr.Whitespace;
 
         True = space.Single.Is().EmptyOr.Spaces;
         False = "       ".Is().SingleSpace;

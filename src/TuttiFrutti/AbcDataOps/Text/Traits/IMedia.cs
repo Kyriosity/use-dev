@@ -1,5 +1,6 @@
 ﻿namespace AbcDataOps.Text.Traits;
-public interface IMedia : ITruthValuing
+
+public interface IMedia
 {
     bool AllPrintable { get; }
 }
