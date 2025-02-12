@@ -11,7 +11,8 @@ static class MeasDataRow
 
     private static IEnumerable<T[]> CrossPair<T>(IEnumerable<T> entries) {
         var pairs = Combi.Pair(entries);
-        var reversed = pairs.Select(x => x.Reverse().ToArray());
+
+        var reversed = pairs.Select(pair => ((IEnumerable<T>)pair).Reverse().ToArray());
         return pairs.Concat(reversed);
     }
 }
