@@ -8,7 +8,9 @@ Anong other demands which created OOP was a wish to map real life still models L
 
 And is quite good with this but simple (otherwise it couldn't be a winning paradigm).
 
-it's our job to advance ood further.
+it's our job to advance OOD further.
+
+https://github.com/Kyriosity/read-write/tree/main/README%2B/software/design/samples#still-models
 
 \___________\
 🌘 2023-2025
