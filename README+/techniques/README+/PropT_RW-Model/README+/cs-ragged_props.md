@@ -2,13 +2,9 @@
 
 # C#&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Ragged properties (T-RW-Modelling)
 
-What does the title mean except calembour (Clay folder and Models LINK!)? Let me begin with an example
+In a decent application, a class may represent a document structure.
 
-Example - a counterpart of abstraction, is a grand teacher of everything, within normal rationality.
-
-Example 
-
-Let's learn by example, implemented in Models.
+The business logic may specify miscellaneous .
 
 ## Ideas
 
