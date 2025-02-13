@@ -13,7 +13,7 @@ namespace FuncStore.Convers.Tests.PhysMath.Dims;
 public class LengthsTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum
 {
-    [TestOf<Distances, Elevations, Astro>]
+    [Test<Distances, Elevations, Astro>]
     public override void Match<N>(N valA, TUnit unitA, N valB, TUnit unitB, string title, string cat, double? delta) =>
         base.Match(valA, unitA, valB, unitB, title, cat, delta);
 }

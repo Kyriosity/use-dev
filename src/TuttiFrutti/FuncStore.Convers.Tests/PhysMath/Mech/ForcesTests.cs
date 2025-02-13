@@ -10,7 +10,7 @@ namespace FuncStore.Convers.Tests.PhysMath.Mech;
 public class ForcesTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
       where TStore : IFuncStore<TUnit>, new() where TUnit : Enum, IConvertible
 {
-    [TestOf<Forces>]
+    [Test<Forces>]
     public override void Match<N>(N valA, TUnit unitA, N valB, TUnit unitB, string title, string cat, double? delta) =>
         base.Match(valA, unitA, valB, unitB, title, cat, delta);
 }

@@ -9,7 +9,7 @@ namespace FuncStore.Convers.Tests.Digital;
 public class BinaryPrefixedTests<TStore, TUnit> : ArrangeActAssert<TStore, TUnit>
     where TStore : IFuncStore<TUnit>, new() where TUnit : Enum
 {
-    [TestOf<Calibration>]
+    [Test<Calibration>]
     public override void Match<N>(N valA, TUnit unitA, N valB, TUnit unitB, string title, string cat, double? delta) =>
         base.Match(valA, unitA, valB, unitB, title, cat, delta);
 }
