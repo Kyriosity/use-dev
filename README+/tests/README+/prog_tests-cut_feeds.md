@@ -1,6 +1,6 @@
 # Unit Tests &mdash; Cutting the Feed Expansion
 
-<table align="center"><tr><td><a href=""https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/"><img alt="&nbsp;READ-WRITE meets USE-DEV" width="100px" src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/_nav/read-write_use-dev.jpg" /></a></td><td>
+<table align="center"><tr><td><a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/"><img alt="&nbsp;READ-WRITE meets USE-DEV" width="100px" src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/_nav/read-write_use-dev.jpg" /></a></td><td>
    <p>Let's show how we can meet <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/README+/tests-damp_vs_dry.md#Feed-expansion"><b>Feed expansion</b></a> with practical decisions.</p>
    <p>(It's theory in the counter repository and here's practice.)</p>
 </td></tr></table>
