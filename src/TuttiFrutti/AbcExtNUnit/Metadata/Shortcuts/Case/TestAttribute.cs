@@ -1,8 +1,3 @@
 ﻿namespace AbcExtNUnit.Metadata.Shortcuts.Case;
 
-public class TestVarBAttribute : TestCaseAttribute
-{
-    public TestVarBAttribute(params object[] args) {
-
-    }
-}
+public class TestAttribute(params object[] args) : TestCaseAttribute(args);
