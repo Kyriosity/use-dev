@@ -1,4 +1,4 @@
-﻿namespace AbcExtNUnit.Metadata.Shortcuts.Fixture;
+﻿namespace AbcExtNUnit.Attributes.Fixture;
 
 public abstract class ParametrizedType<T, TargetInterface>(params string[] args)
     : TestFixtureAttribute([TypeOfT, .. DeriveInterfaceParameters(), .. args])

@@ -1,6 +1,6 @@
 ﻿using AbcStuff.Stubs;
 
-namespace AbcExtNUnit.Metadata.Shortcuts.Source.CompileTestSource;
+namespace AbcExtNUnit.Attributes.Source.CompileTestSource;
 
 public class TestAttribute<T>(params string[] args) : TestAttribute<T, NotSupplied>(args);
 public class TestAttribute<T1, T2>(params string[] args) : TestAttribute<T1, T2, NotSupplied>(args);

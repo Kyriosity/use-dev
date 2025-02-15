@@ -1,4 +1,4 @@
-﻿using AbcExtNUnit.Metadata.Shortcuts.Fixture;
+﻿using AbcExtNUnit.Attributes.Fixture;
 
 namespace FuncStore.Convers.Tests.Setup.Metadata;
 

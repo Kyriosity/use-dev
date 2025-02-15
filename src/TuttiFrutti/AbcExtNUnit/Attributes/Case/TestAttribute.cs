@@ -1,3 +1,3 @@
-﻿namespace AbcExtNUnit.Metadata.Shortcuts.Case;
+﻿namespace AbcExtNUnit.Attributes.Case;
 
 public class TestAttribute(params object[] args) : TestCaseAttribute(args);

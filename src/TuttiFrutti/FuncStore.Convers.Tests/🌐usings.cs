@@ -1,6 +1,6 @@
 global using AbcCommu.Errors.Sys;
 global using AbcDataOps;
-global using AbcExtNUnit.Metadata.Shortcuts.Source.CompileTestSource;
+global using AbcExtNUnit.Attributes.Source.CompileTestSource;
 global using FuncStore.Convers.Tests.Setup.Metadata;
 global using FuncStore.Convers.Tests.Setup.Steps;
 global using NUnit.Framework;
