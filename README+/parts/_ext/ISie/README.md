@@ -17,16 +17,17 @@ This isn't a great new idea to announce unless together with:
 
 <h3 align="center">... let's not beat around the bush and show what's out of the box:</h3>
 
-<table align="center"><tr></tr><tr><td>⚡<b>Fast</b> (not recommended)</td><td>🧪<b>By guidance</b> (recommended)</td></tr>
+<table align="center"><tr></tr><tr><td>🧪<b>By guidance</b> (recommended)</td><td>⚡<b>Fast</b> (not recommended)</td></tr>
   <tr valign="top"><td>
-  <div>If you're eager to start without guidance,</div>
+  <p>Here is the entry point:</p>
+  <p align="center"><a href="../../../../src/TuttiFrutti/AbcShortcutsTests/ISie"><b>DEMOS</b> and <b>TESTS</b></a>.</p>
+  <p>And it's optimized for navigation.</p>
+  </td><td>
+    <div>If you're eager to start without guidance,</div>
   <p>refer <a href="../../../../src/TuttiFrutti/AbcDataOps/ISie"><code>using AbcDataOps.ISie</code></a>,</p>
   <p>and let IntelliSense help you!</p>
-</td><td>
-  <div>Here is the entry point:</div>
-  <p><a href="../../../../src/TuttiFrutti/AbcShortcutsTests/ISie">Demos and tests</a>.</p>
-  <p>It's optimized for navigation.</p>
-</td></tr><tr><td colspan="2" align="center">Sure, it's better to explore in Visual Studio or another IDE.</td></tr></table>
+
+  </td></tr><tr><td colspan="2" align="center">It's better to explore in Visual Studio or another IDE.</td></tr></table>
 
 It will also take a few lines of code for your wrappers, say `.IsNullOrWhiteSpace` though not recommended.
 
