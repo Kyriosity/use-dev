@@ -15,9 +15,11 @@ public class TestCases
         Assert.That(isForTest, Is.True);
     }
 
-    [TestCase(-5), TestCase(-20), TestCase(-20), TestCase(-33), TestCase(-40), TestCase(-500)]
+    [TestCase(-5), TestCase(-20), TestCase(-27), TestCase(-33), TestCase(-40), TestCase(-500)]
     [Many(-5, -20, -33, -40, -500)] // 👈🏿 AbcExtNUnit..
-    public void MultiCases_SingleArgument(short core) { Assert.That(core, Is.LessThan(-4)); }
+    [Many(-55, -201, -333)]
+    [Many(-84, -747)]
+    public void MultiCases_SingleArgument(int core) { Assert.That(core, Is.LessThan(-4)); }
 
     [TestCase(1, "Book", true), TestCase(11, "DVD", false), TestCase(111, "Magazine", true)]
     [Many([1, "Book2", true], [11, "DVD2", false], [111, "Magazine2", true])] // 👈🏿 AbcExtNUnit..
