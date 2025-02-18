@@ -4,7 +4,6 @@ namespace MeasData.Digital.Size;
 public partial class Dirs
 {
     Dir Ancient = new() {
-
         ["Punch-card, 12-row/80-col, IBM"] = [(80, bytes), (640, bits), (40, words)],
         ["Drum Series 1100, UNIVAC,"] = [(180_000 * 6, bits), (1_054.6875, KBytes), (1.029_968, MB)],
     };
