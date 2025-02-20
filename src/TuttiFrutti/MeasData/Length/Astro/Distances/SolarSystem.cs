@@ -1,6 +1,4 @@
-﻿using MeasData.Setup.Metadata;
-
-namespace MeasData.Length.Astro.Distances;
+﻿namespace MeasData.Length.Astro.Distances;
 public partial class Dirs
 {
     [NotForTest("Draft")]
@@ -12,7 +10,6 @@ public partial class Dirs
         [" orbit"] = [(0, light_minute), (0, "sdfsd")],
         [" orbit"] = [(0, light_minute), (0, "sdfsd")],
         ["Jupiter orbit"] = [(43.2, light_minute), (0, "sdfsd")],
-
     };
 }
 

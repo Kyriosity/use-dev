@@ -1,4 +1,6 @@
-﻿namespace MeasData.Setup.Metadata;
+﻿using AbcRefl.Metadata;
+
+namespace AbcStuff.Test.Metadata;
 
 [AttributeUsage(AttributeTargets.Field | AttributeTargets.Class | AttributeTargets.Property,
     AllowMultiple = false)]
