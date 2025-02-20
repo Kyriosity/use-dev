@@ -10,22 +10,21 @@ This section branches from conceptual discussions of [Tests](https://github.com/
 
 ## NUnit boost
 
-NUnit is a classical reliable open source platform, which allows us to refine some bulky statements or missing functions.
+NUnit is a classical reliable open source platform, but being a freeware with limited development and support craftsmen there're apparent items which we can imrpove or fis:
 
-### Shortcuts
++ bulky and restrained syntax,
++ pending bugs,
++ missing calls and features.
 
-+ [Attributes](../../src/TuttiFrutti/FeatTest/Shortcuts/Attributes/)
+Without further, 🫴🏿[Feat. Test](../../src/TuttiFrutti/FeatTest/)🧪 demonstrates what's available.
 
+## Supposition and posers
 
-### Datasource
-
-
-
-## Features
+⏭️ 📂[README+](README+)
 
 ## Wrap up. A word on definitions
 
 _Unit Tests_ are only a slice of the test pyramid, but technically they may serve all other types (I can't remember <kbd>New -> Integration test</kbd> in IDEs).
 
 \___________\
-🔚 ... ⏭️ 📂[README+](README+)
+🔚 ... 2023-2025
