@@ -23,6 +23,7 @@ public class TestCases
 
     [TestCase(1, "Book", true), TestCase(11, "DVD", false), TestCase(111, "Magazine", true)]
     [Many([1, "Book2", true], [11, "DVD2", false], [111, "Magazine2", true])] // 👈🏿 AbcExtNUnit..
+    [Many([84, "Fff", true], [101, "BlueRay", false])]
     public void MultiCases_MultiArgument(int id, string title, bool? on) {
         Assert.That(id, Is.Positive);
         Assert.That(title, Is.Not.Empty);
