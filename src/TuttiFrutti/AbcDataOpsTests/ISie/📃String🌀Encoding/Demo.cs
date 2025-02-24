@@ -1,13 +1,13 @@
 ﻿namespace AbcDataOpsTests.ISie.String_Encoding;
 public class Demo : Setup.Arrange
 {
-    [SyntaxDemo]
+    [SyntaxDraft]
     public void Ascii() {
         True = "abc_123".Is().Ascii;
         True = "abc_123".Is().Ascii.AllPrintable;
     }
 
-    [SyntaxDemo]
+    [SyntaxDraft]
     public void WithDisjunction() {
         _ = "abc_123".Is().NullEmptyOr.Ascii;
         _ = "abc_123".Is().EmptyOr.Ascii;

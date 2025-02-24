@@ -5,11 +5,9 @@ public class NullEmptyTests : Setup.Arrange
     public void ExplicitProve() {
         Assert.That(NullStr.Is().NullOrEmpty, Is.True);
         Assert.That(string.Empty.Is().NullOrEmpty, Is.True);
-        Assert.That(space.Single.Is().NullOrEmpty, Is.False);
+        Assert.That(Spaces.Single.Is().NullOrEmpty, Is.False);
         Assert.That("      ".Is().NullOrEmpty, Is.False);
         Assert.That("test".Is().NullOrEmpty, Is.False);
-
-
     }
 
     [Test]

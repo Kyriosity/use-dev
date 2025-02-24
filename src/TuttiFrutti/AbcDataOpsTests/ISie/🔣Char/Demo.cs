@@ -1,7 +1,7 @@
 ﻿namespace AbcDataOpsTests.ISie.Char;
 public class Demo : Setup.Arrange
 {
-    [SyntaxDemo]
+    [SyntaxDraft]
     public void Char() {
         char.IsPunctuation('a');
         char.IsHighSurrogate('a');

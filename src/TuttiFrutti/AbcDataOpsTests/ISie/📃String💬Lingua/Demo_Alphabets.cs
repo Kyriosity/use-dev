@@ -1,7 +1,7 @@
 ﻿namespace AbcDataOpsTests.ISie.String_Lingua;
 public class Demo_Alphabets : Setup.Arrange
 {
-    [SyntaxDemo]
+    [SyntaxDraft]
     public void ExplicitAlphabet() {
         const string greek = "Θεσσαλονίκη";
         True = greek.Is<Greek>().Letters.AllowWhitespace;
@@ -13,13 +13,13 @@ public class Demo_Alphabets : Setup.Arrange
         //bool __ = "".Is<PratoIndian>().EmptyOr.Whitespace;
     }
 
-    [SyntaxDemo]
+    [SyntaxDraft]
     public void MultipleAlphabets() {
 
         //_ = "math".Is<English, Latin>();
     }
 
-    [SyntaxDemo]
+    [SyntaxDraft]
     public void Multiscript() {
         //WillBeTrue = "".Is<Bosnian.Latin>().EmptyOr.Whitespace;
         //WillBeTrue = "".Is<Bosnian.Cyrillic>().EmptyOr.Whitespace;
@@ -30,7 +30,7 @@ public class Demo_Alphabets : Setup.Arrange
     }
 
 
-    [SyntaxDemo]
+    [SyntaxDraft]
     public void CurrentCulture() {
 
     }

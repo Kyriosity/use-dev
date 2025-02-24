@@ -1,7 +1,7 @@
 ﻿namespace AbcDataOpsTests.ISie.String_Lingua;
 public class Demo : Setup.Arrange
 {
-    [SyntaxDemo]
+    [SyntaxDraft]
     public void LettersAndNumbers() {
 
         _ = "AbcDef".Is<Latin>().Letters;
@@ -11,12 +11,12 @@ public class Demo : Setup.Arrange
         _ = "AbcüäßöXZY".Is<German>().Alphanumeric.AllowWhitespace;
     }
 
-    [SyntaxDemo]
+    [SyntaxDraft]
     public void In_AndEx_clusion() {
         //_ = "Asda".Has<Greek>().Letters; // HAS NO !!!
     }
 
-    [SyntaxDemo]
+    [SyntaxDraft]
     public void Text() {
         _ = "lorem ipsum.Et harum quidem reru[d]um facilis est e[r]t expedita distinctio."
             .Is<Latin>().Text;

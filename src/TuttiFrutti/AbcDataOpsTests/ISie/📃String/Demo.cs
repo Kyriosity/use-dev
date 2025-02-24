@@ -2,7 +2,7 @@
 
 public class Demo : Setup.Arrange
 {
-    [SyntaxDemo]
+    [SyntaxDraft]
     public void Shortcuts() {
         True = NullStr.Is().NullOrEmpty;
 
@@ -18,20 +18,20 @@ public class Demo : Setup.Arrange
         _ = NullStr.Is().EmptyOr.Whitespace; // must be exception
     }
 
-    [SyntaxDemo]
+    [SyntaxDraft]
     public void Blank() {
         False = string.Empty.Is().Spaces;
-        True = space.Single.Is().Spaces;
+        True = Spaces.Single.Is().Spaces;
         True = "    ".Is().Spaces;
         False = "  \n  ".Is().Spaces;
 
         False = string.Empty.Is().SingleSpace;
-        True = space.Single.Is().SingleSpace;
+        True = Spaces.Single.Is().SingleSpace;
         False = "       ".Is().SingleSpace;
 
         True = "not whitespace".Is().EmptyOr.Whitespace;
 
-        True = space.Single.Is().EmptyOr.Spaces;
+        True = Spaces.Single.Is().EmptyOr.Spaces;
         False = "       ".Is().SingleSpace;
 
         _ = "text".Is().NullEmptyOr.Whitespace;
@@ -39,19 +39,19 @@ public class Demo : Setup.Arrange
         False = "text".Is().NullEmptyOr.SingleSpace;
     }
 
-    [SyntaxDemo]
+    [SyntaxDraft]
     public void Grayspace() {
         False = string.Empty.Is().Grayspace;
     }
 
-    [SyntaxDemo]
+    [SyntaxDraft]
     public void Space() {
         _ = "text".Is().EmptyOr.Whitespace;
         _ = "text".Is().EmptyOr.Spaces;
         False = "text".Is().EmptyOr.SingleSpace;
     }
 
-    [SyntaxDemo]
+    [SyntaxDraft]
     public void InvalidCallsCheck() {
         //_ = "  \n  ".Is().NullEmptyOr.EmptyOr; // 🚫 Invalid semantics
         //_ = "text".Is().NullOr; // 🚫 Invalid Call !
@@ -63,7 +63,7 @@ public class Demo : Setup.Arrange
     }
 
     // INVALID CAST
-    [SyntaxDemo]
+    [SyntaxDraft]
     public void InvalidCast() {
         _ = "test".Is().NullEmptyOr; // intermediate
         //bool result = "test".Is().NullEmptyOr;  // 🚫 Invalid cast !
