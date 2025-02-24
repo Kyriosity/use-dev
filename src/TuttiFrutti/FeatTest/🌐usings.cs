@@ -1,1 +1,1 @@
-﻿
+﻿global using AbcStuff.Text;
