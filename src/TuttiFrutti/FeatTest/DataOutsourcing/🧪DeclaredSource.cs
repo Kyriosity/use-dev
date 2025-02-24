@@ -9,5 +9,4 @@ public class DeclaredSource
     public void FromConstants(object datasource, object key, object val) {
         Assert.That(string.IsNullOrWhiteSpace($"{val}"), Is.True, $"{datasource}>{key}: NOT proven as whitespace");
     }
-
 }
