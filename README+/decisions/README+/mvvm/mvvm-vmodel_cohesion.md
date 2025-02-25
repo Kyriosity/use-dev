@@ -1,4 +1,4 @@
-# MVVM &mdash; Model & ViewModel cohesion
+# MVVM&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Model <i>&</i> ViewModel cohesion
 
 ## Classic aggregation
 
