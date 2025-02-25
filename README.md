@@ -13,7 +13,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</summary>
 |-- <a href="/README+/techniques/README+/lurk_init.md">"Lurking" init</a><br />
 |-- <a href="/README+/techniques/README+/builders/README.md">Builders</a><br />
-|-- <a href="/README+/techniques/README+/PropT_RW-Model/README.md">Prop&lt;T&gt; R/W model</a><br />
+|-- <a href="/README+/techniques/README+/Vague-Model/README.md">Vague models</a><br />
 |-- <a href="/README+/techniques/README+/circuitry/README.md"><b>C<samp>IRCUITRY</samp></b></a>
 </details>
             <!-- M V V M  --!>
