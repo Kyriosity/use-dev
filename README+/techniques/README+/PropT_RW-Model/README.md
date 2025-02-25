@@ -1,4 +1,4 @@
- # C# - Prop<T> R/W Model
+ # C#&nbsp;Fuzzy model&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Prop<code>&lt;T&gt;</code> R/W classes
 
  or // glyph
 
