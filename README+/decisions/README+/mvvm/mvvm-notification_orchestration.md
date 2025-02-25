@@ -1,4 +1,4 @@
-# MVVM &mdash; Orchestration of notifications
+# MVVM&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Orchestration of notifications
 
 A little reminder. WPF built-in [DataContext](https://learn.microsoft.com/dotnet/desktop/wpf/data/how-to-specify-the-binding-source)<sup>🪟</sup> has only to raise `PropertyChanged`<sup>:raising_hand:</sup> with the name of the item, which value bound elements must re-evaluate.\
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>:raising_hand:</sup>&nbsp;<sub>'Changed' deceives, since it's the most suitable cause but not the essence of the event.</sub>
