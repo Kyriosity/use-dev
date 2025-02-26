@@ -1,5 +1,4 @@
-﻿using Abc.Logic.Build;
-using AbcDataOps.Text.Traits;
+﻿using AbcDataOps.Text.Traits;
 
 namespace AbcDataOps.ISie.Mk.blocks;
 public interface ITextual<LTR, TXT>
@@ -32,12 +31,15 @@ public interface IExtraText : ITextCheck
 public interface ITextCheck
 {
     /// <summary>
-    /// E.g. "it is25inlay"
+    /// E.g. "it is123inlay"
     /// </summary>
     bool WithoutNumberInlays { get; }
 }
 
-public abstract class Media : ConvertableToResult<bool>, IMedia, ITruthValuing
+public class RMedia : RipeCode<string>, IMedia, ITruthValuing
 {
-    public abstract bool AllPrintable { get; }
+    public RMedia() {
+        _ops.Add(() => Value == "HITME");
+    }
+    public bool AllPrintable { get => throw new NotImplementedException(); }
 }

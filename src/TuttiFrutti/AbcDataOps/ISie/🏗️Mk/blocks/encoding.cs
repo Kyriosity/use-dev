@@ -1,12 +1,12 @@
 ﻿using AbcDataOps.Text.Traits;
 
 namespace AbcDataOps.ISie.Mk.blocks;
-public interface IEncodingOptions : ITruthValuing
+public interface StandardCode : ITruthValuing
 {
     /// <summary>
-    /// ASCII symbols
+    /// A-Z, a-z, 0-9, punctuation, control chars
     /// </summary>
-    Media Ascii { get; }
+    public RMedia Ascii { get; }
 }
 
-public interface IEndcodingWithGapOption : IEncodingOptions, IGaps;
+public interface IEndcodingWithGapOption : StandardCode, IGaps;

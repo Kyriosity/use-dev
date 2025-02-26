@@ -2,7 +2,7 @@
 
 public class Demo : Setup.Arrange
 {
-    [SyntaxDraft]
+    [Test]
     public void Shortcuts() {
         True = NullStr.Is().NullOrEmpty;
 
@@ -37,18 +37,16 @@ public class Demo : Setup.Arrange
         _ = "text".Is().NullEmptyOr.Whitespace;
         _ = "text".Is().NullEmptyOr.Spaces;
         False = "text".Is().NullEmptyOr.SingleSpace;
+
+        False = "t e x t".Is().EmptyOr.Whitespace;
     }
 
-    [SyntaxDraft]
-    public void Grayspace() {
-        False = string.Empty.Is().Grayspace;
-    }
 
-    [SyntaxDraft]
-    public void Space() {
-        _ = "text".Is().EmptyOr.Whitespace;
-        _ = "text".Is().EmptyOr.Spaces;
-        False = "text".Is().EmptyOr.SingleSpace;
+    [SyntaxDemo]
+    public void EmptyIsNotSpaceOrWhitespace() {
+        False = "".Is().Whitespace;
+        False = "".Is().Spaces;
+        False = "".Is().SingleSpace;
     }
 
     [SyntaxDraft]
@@ -69,5 +67,11 @@ public class Demo : Setup.Arrange
         //bool result = "test".Is().NullEmptyOr;  // 🚫 Invalid cast !
         _ = "test".Is().EmptyOr;  // intermediate
         // bool result = "test".Is().EmptyOr;  // 🚫 Invalid cast !
+    }
+
+    [SyntaxDraft]
+    public void Grayspace() {
+        // RESERVED for concept discussion!
+        False = string.Empty.Is().Grayspace;
     }
 }

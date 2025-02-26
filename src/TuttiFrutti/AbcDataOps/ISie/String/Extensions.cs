@@ -4,14 +4,14 @@ using AbcDataOps.ISie.Mk.blocks;
 namespace AbcDataOps.ISie.String;
 public static class Extensions
 {
-    public static ICultureNeutral Is(this string val) => new CultureNeutral();
+    public static ICultureNeutral Is(this string value) => new CultureNeutral { Value = value };
     public static ILingua Is<T>(this string val) where T : IScript, ISupported
         => null;
 }
 
 // OTHER TYPES EXTANDABLE ! ? ToString() and Custom calls ?
 
-internal class CultureNeutral : ICultureNeutral
+internal class CultureNeutral : Core<string>, ICultureNeutral
 {
     public bool NullOrEmpty => throw new NotImplementedException();
 
@@ -27,5 +27,5 @@ internal class CultureNeutral : ICultureNeutral
 
     public bool Spaces => throw new NotImplementedException();
 
-    public Media Ascii => throw new NotImplementedException();
+    public RMedia Ascii => Next<RMedia>();
 }
