@@ -16,7 +16,7 @@ NUnit is a classical reliable open source platform, but being a freeware with li
 + pending bugs,
 + missing calls and features.
 
-Without further, 🫴🏿[Feat. Test](../../src/TuttiFrutti/FeatTest/)🧪 demonstrates what's available.
+Without further ado, [Feat. Test](../../src/TuttiFrutti/FeatTest/)🧪 demonstrates what's available.
 
 ## Supposition and posers
 
