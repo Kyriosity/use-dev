@@ -1,28 +1,28 @@
 <table><tr valign="top"><td>
 <!--      O R G    --!>
 ◾ <b>O&thinsp;R&thinsp;G</b><br />
-|-- <a title="&nbsp;&lArr;read-write article" href="https://github.com/Kyriosity/read-write/blob/main/README+/.net/README+/cs-hints.md">C# hints</a><br />
+|&thinsp;- <a title="&nbsp;&lArr;read-write article" href="https://github.com/Kyriosity/read-write/blob/main/README+/.net/README+/cs-hints.md"><b>C#</b>&nbsp;&nbsp;h&thinsp;i&thinsp;n&thinsp;t&thinsp;s</a><br />
             <!-- F R A M E S  /  R U L E S --!>
 <details><summary><ins>&thinsp;<b>F&thinsp;r&thinsp;a&thinsp;m&thinsp;e&thinsp;s</ins>&thinsp;,<ins>&nbsp;&nbsp;g&thinsp;u&thinsp;i&thinsp;d&thinsp;e&thinsp;l&thinsp;i&thinsp;n&thinsp;e&thinsp;s</b>&thinsp;</ins></summary>
-|--&nbsp;📖&thinsp;<a href="README+/frames"><i>Intro</i></a><br />
-|-- <a href="README+/frames/README+/reinforced_inheretance.md">Reinforced inheritance</a><br />
-|-- <a href="README+/frames/README+/calls_on_null.md">Calls on null</a><br />            
+|-&thinsp;-&nbsp;📖&thinsp;<a href="README+/frames"><i>I&thinsp;n&thinsp;t&thinsp;r&thinsp;o</i></a><br />
+|-&thinsp;- <a href="README+/frames/README+/reinforced_inheretance.md">Reinforced inheritance</a><br />
+|-&thinsp;- <a href="README+/frames/README+/calls_on_null.md">Calls on null</a><br />            
 </details>
             <!-- TECHNIQUE / PATTERN --!>
 <details><summary><ins><b>T&thinsp;e&thinsp;c&thinsp;h&thinsp;n&thinsp;i&thinsp;q&thinsp;u&thinsp;e&thinsp;s&thinsp;/&thinsp;P&thinsp;a&thinsp;t&thinsp;t&thinsp;e&thinsp;r&thinsp;n&thinsp;s</b></ins>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</summary>
-|-- <a href="/README+/techniques/README+/lurk_init.md">"Lurking" init</a><br />
-|-- <a href="/README+/techniques/README+/builders/README.md">Builders</a><br />
-|-- <a href="/README+/techniques/README+/Vague-Model/README.md">Vague models</a><br />
-|-- <a href="/README+/techniques/README+/circuitry/README.md"><b>C<samp>IRCUITRY</samp></b></a>
+|-&thinsp;- <a href="/README+/techniques/README+/lurk_init.md">"Lurking" init</a><br />
+|-&thinsp;- <a href="/README+/techniques/README+/builders/README.md">B&thinsp;u&thinsp;i&thinsp;l&thinsp;d&thinsp;e&thinsp;r&thinsp;s</a><br />
+|-&thinsp;- <a href="/README+/techniques/README+/Vague-Model/README.md">Vague models</a><br />
+|-&thinsp;- <a href="/README+/techniques/README+/circuitry/README.md"><b>C<samp>&thinsp;I&thinsp;R&thinsp;C&thinsp;U&thinsp;I&thinsp;T&thinsp;R&thinsp;Y</samp></b></a>
 </details>
             <!-- M V V M  --!>
 <details><summary>-<ins>&thinsp;M&thinsp;V&thinsp;V&thinsp;M&thinsp;</ins></summary>
-|--- <a href="README+/decisions/README+/mvvm/mvvm-notification_orchestration.md">Notificaton orchestration</a><br />
-|--- <a href="README+/decisions/README+/mvvm/mvvm-vmodel_cohesion.md">Model-ViewModel cohesion</a><br />
+|-&thinsp;- <a href="README+/decisions/README+/mvvm/mvvm-notification_orchestration.md">Notificaton orchestration</a><br />
+|-&thinsp;- <a href="README+/decisions/README+/mvvm/mvvm-vmodel_cohesion.md">Model-ViewModel cohesion</a><br />
 </details>
 |- <b>Templates</b><br />
-|-- <a href="README+/decisions/README+/thins_in_tasks/README.md">Tasks as models</a><br />
+|-&thinsp;- <a href="README+/decisions/README+/thins_in_tasks/README.md">Tasks as models</a><br />
 <br /><!--      C L A Y    --!>
 ◾ <b>C&thinsp;L&thinsp;A&thinsp;Y</b><br />
 |- Exception wrappers &nbsp;<a href="src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪<br />
