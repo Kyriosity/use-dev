@@ -1,12 +1,12 @@
 # T<samp>echniques</samp>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Wizards/Builders (hard trail)
 
-Generics are at the pinnacle of **C#** technical embarrassment, but ...
+Generics are at the pinnacle of **C#** technical embarrassment, while...
 
-<blockquote align="center"><ins>&thinsp;«&thinsp;<b>BUILDERS</b>&thinsp;»&thinsp;</ins> <samp>IS A NOTIONAL <b>DEAD-END</samp></b>&thinsp; in this "sharp" and less strongly-typed object-oriented languages.</blockquote>
+<blockquote align="center"><ins>&thinsp;«&thinsp;<b>BUILDERS</b>&thinsp;»&thinsp;</ins> ia an <samp>EXPONENTIAL <b>DISASTER</samp></b>&thinsp; in this "sharp" and less strongly-typed object-oriented languages.</blockquote>
 
 <table><tr valign="top"><td width="40%"><picture><img alt="&nbsp;Construction crane collapse" src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/illus/crane_collapse-CA-2024(globalnews.ca).jpg" /></picture></td><td>
 <div>We talk about multi-variant branching menus with intuitive context-sensitive options, like:</div>
- <p align="center"><code>UndoRedo.Buffer(3).Depth(5).Zip().Of("start");</code></p>
+ <p align="center"><code>= UndoRedo.Buffer(3).Depth(5).Zip().Of("start");</code></p>
 <div>What's often sold as builders is a counter-intuitive syntax tape of setters and operations,</div>
   <p align="center"><code>.Add(...).Set(...).Add(...).Set(...)</code></p>
   <p>which doesn't prevent repetitions and wrong calls.</p>
