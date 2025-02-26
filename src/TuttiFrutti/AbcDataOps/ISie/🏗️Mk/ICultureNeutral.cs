@@ -3,4 +3,4 @@ using AbcDataOps.Text.Traits;
 
 namespace AbcDataOps.ISie.Mk;
 
-public interface ICultureNeutral : Or.INothing<IEndcodingWithGapOption>, IGaps, StandardCode;
+public interface ICultureNeutral : Or.INothing<IEndcodingWithGapOption>, IGaps, IStandardTextCode;

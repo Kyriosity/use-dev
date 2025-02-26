@@ -1,7 +1,7 @@
 ﻿using AbcDataOps.Text.Traits;
 
 namespace AbcDataOps.ISie.Mk.blocks;
-public interface StandardCode : ITruthValuing
+public interface IStandardTextCode : ITruthValuing
 {
     /// <summary>
     /// A-Z, a-z, 0-9, punctuation, control chars
@@ -9,4 +9,4 @@ public interface StandardCode : ITruthValuing
     public RMedia Ascii { get; }
 }
 
-public interface IEndcodingWithGapOption : StandardCode, IGaps;
+public interface IEndcodingWithGapOption : IStandardTextCode, IGaps;
