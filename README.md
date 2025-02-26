@@ -21,7 +21,7 @@
 |-&thinsp;- <a href="README+/decisions/README+/mvvm/mvvm-notification_orchestration.md">Notificaton orchestration</a><br />
 |-&thinsp;- <a href="README+/decisions/README+/mvvm/mvvm-vmodel_cohesion.md">Model-ViewModel cohesion</a><br />
 </details>
-|- <b>Templates</b><br />
+|- <b>T&thinsp;e&thinsp;m&thinsp;p&thinsp;l&thinsp;a&thinsp;t&thinsp;e&thinsp;s</b><br />
 |-&thinsp;- <a href="README+/decisions/README+/thins_in_tasks/README.md">T&thinsp;a&thinsp;s&thinsp;k&thinsp;s&nbsp;&nbsp;&nbsp;as&nbsp;&nbsp;&nbsp;m&thinsp;o&thinsp;d&thinsp;e&thinsp;l&thinsp;s&thinsp;</a><br />
 <br /><!--      C L A Y    --!>
 ◾ <b>C&thinsp;L&thinsp;A&thinsp;Y</b><br />
