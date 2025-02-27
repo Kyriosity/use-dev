@@ -40,7 +40,7 @@
 |-- <a href="README+/tests/README+/prog_tests-semantics.md">S&thinsp;e&thinsp;m&thinsp;a&thinsp;n&thinsp;t&thinsp;i&thinsp;c&nbsp;&nbsp;&nbsp;p&thinsp;o&thinsp;s&thinsp;e&thinsp;r&thinsp;s</a><br />
 <br/><!--           PARTS -->
 ◾ <b>P&thinsp;A&thinsp;R&thinsp;T&thinsp;S</b>&thinsp;📦<br />
-|- <a href="README+/parts/_ext/ISie/README.md"><b>I&thinsp;S&thinsp;i&thinsp;e</b></a> extensions<br />
+|- <a href="README+/parts/_ext/ISie/README.md"><b>Ɪ&thinsp;S&thinsp;i&thinsp;e</b></a> extensions<br />
 |- <a href="README+/parts/AbcChrono">Chrono ABC</a><br />
 |- <b>F&thinsp;u&thinsp;n&thinsp;c&thinsp;w&thinsp;a&thinsp;r&thinsp;e</b><br />
 |-- Conversion&nbsp;<a href="src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪</br />
@@ -52,9 +52,9 @@
       <a href="README+/techniques/README+/circuitry/README.md"><img src="README+/_rsc/img/_nav/tiles/Circuitry_bw-200px.jpg" alt="&nbsp;Object-oriented Circuitry"/></a>
       <br /><div align="center"><h4><a href="README+/techniques/README+/circuitry/README.md">CIRCUITRY</a></h4></div>
      </td>
-     <td>
-      <a href="README+/parts/_ext/ISie/README.md"><img src="README+/_rsc/img/_nav/tiles/ISie_bw-200px.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extenstions"/></a>
-      <br /><div align="center"><h4><a href="README+/parts/_ext/ISie/README.md">I&thinsp;S&thinsp;<samp>I&thinsp;E</samp>&nbsp;&thinsp;extensions</a></h4></div>
+     <td>     <!--    I S i e     --!>
+      <a href="README+/parts/_ext/ISie/README.md"><img src="README+/_rsc/img/_nav/tiles/ISie_bw-200px.jpg" alt="&nbsp;&nbsp;I&nbsp;;S&thinsp;i&thinsp;e&nbsp;&nbsp;&nbsp;extenstions"/></a>
+      <br /><div align="center"><h4><a href="README+/parts/_ext/ISie/README.md">Ɪ&thinsp;S&thinsp;<samp>I&thinsp;E</samp>&nbsp;&thinsp;extensions</a></h4></div>
      </td>
                                       </tr><tr></tr><tr>
     <td>
