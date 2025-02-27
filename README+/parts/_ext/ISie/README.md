@@ -19,8 +19,8 @@ This isn't a great new idea to announce unless together with:
 
 <table align="center"><tr></tr><tr><td>🧪<b>By guidance</b> (recommended)</td><td>⚡<b>Fast</b> (not recommended)</td></tr>
   <tr valign="top"><td>
-  <p>Here is the entry point:</p>
-  <p align="center"><a href="../../../../src/TuttiFrutti/ISieTests/BuiltinTypes"><b>DEMOS</b> and <b>TESTS</b></a>.</p>
+  <div>Here is the entry point:</div>
+  <h2 align="center"><a href="../../../../src/TuttiFrutti/ISieTests/BuiltinTypes">D<samp>&thinsp;E&thinsp;M&thinsp;O&thinsp;S</samp>&nbsp;&nbsp;&nbsp;<samp>a&thinsp;n&thinsp;d</samp>&nbsp;&nbsp;&nbsp;T<samp>&thinsp;E&thinsp;S&thinsp;T&thinsp;S</samp></a></h2>
   <p>Optimized for navigation.</p>
   </td><td>
     <div>If you're eager to start without guidance,</div>
@@ -43,16 +43,16 @@ It will also take a few lines of code for your wrappers, say `.IsNullOrWhiteSpac
 
 ⭐<b>I&thinsp;S&thinsp;<samp>I&thinsp;E</samp></b>⭐ is remarkable (modestly compared to other opuses of mine) as a compact feature which fortuitous condensed many incidents and techniques.
 
-### Props lost «in active development»<sup>📨</sup> ... or Blessing in Disguise
+### Props lost «in active development»<sup>📨</sup> ... 
 
 <p align="right"><sup>📨</sup> <sub>the "official" status still in 2025</sub></p>
 
-This ever pending _Language Feature_ was demotivating<sup>🙋</sup> but later was dropped in favor of existing extension methods:
+This ever-pending _Language Feature_ was demotivating<sup>🙋</sup> but later was dropped in favor of existing extension methods:
 
-+ `()` isolates logical statements to follow,
-+ method allows generics to alleviate building methods (e.g. as tongues selector).
++ `()` may isolate logical statements to follow,
++ method allows generics to alleviate building methods (e.g. as tongues/encoding selector).
 
-> **So there won't be breaking change of methods to properties.**
+> **We'll consider a breaking change to the property if the feature finally appears.**
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>🙋</sup> <sub>Warm greeting to bloggers who advertised it and others as C#13 "what's new".</sub> 
 
