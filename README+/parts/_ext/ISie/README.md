@@ -20,11 +20,11 @@ This isn't a great new idea to announce unless together with:
 <table align="center"><tr></tr><tr><td>🧪<b>By guidance</b> (recommended)</td><td>⚡<b>Fast</b> (not recommended)</td></tr>
   <tr valign="top"><td>
   <p>Here is the entry point:</p>
-  <p align="center"><a href="../../../../src/TuttiFrutti/AbcShortcutsTests/ISie"><b>DEMOS</b> and <b>TESTS</b></a>.</p>
-  <p>And it's optimized for navigation.</p>
+  <p align="center"><a href="../../../../src/TuttiFrutti/ISieTests/BuiltinTypes"><b>DEMOS</b> and <b>TESTS</b></a>.</p>
+  <p>Optimized for navigation.</p>
   </td><td>
     <div>If you're eager to start without guidance,</div>
-  <p>refer <a href="../../../../src/TuttiFrutti/AbcDataOps/ISie"><code>using AbcDataOps.ISie</code></a>,</p>
+  <p>refer <a href="../../../../src/TuttiFrutti/ISie"><code>using ISie</code></a>,</p>
   <p>and let IntelliSense help you!</p>
 
   </td></tr><tr><td colspan="2" align="center">It's better to explore in Visual Studio or another IDE.</td></tr></table>
