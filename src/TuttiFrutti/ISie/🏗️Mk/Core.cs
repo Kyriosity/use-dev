@@ -2,7 +2,7 @@
 
 public abstract class Core<T>
 {
-    public T Value { get; init; } // NotSet.Throw();
+    public T Value { get; init; } = NotSet.Throw();
 
     protected IList<Func<bool>> _ops = [];
 
@@ -22,7 +22,7 @@ public abstract class RipeCode<T> : Core<T>
 
     protected bool Result() {
         if (!_ops.Any())
-            throw new NotImplementedException();
+            NotImplemented.Throw("no operation supplied");
 
         var res = true;
         foreach (var op in _ops) {

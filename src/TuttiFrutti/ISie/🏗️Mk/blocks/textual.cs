@@ -1,4 +1,4 @@
-﻿using ISie.Text.Traits;
+﻿using ISie.String.Traits;
 
 namespace ISie.Mk.blocks;
 public interface ITextual<LTR, TXT>

@@ -21,7 +21,7 @@ internal class CultureNeutral : Core<string>, ICultureNeutral
 
     public bool Whitespace => throw new NotImplementedException();
 
-    public bool Grayspace => throw new NotImplementedException();
+    public bool Grayspace => NotImplemented.Throw("reserved");
 
     public bool SingleSpace => throw new NotImplementedException();
 

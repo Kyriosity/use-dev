@@ -1,5 +1,5 @@
 ﻿using ISie.Mk.blocks;
-using ISie.Text.Traits;
+using ISie.String.Traits;
 
 namespace ISie.Mk;
 
