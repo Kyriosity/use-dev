@@ -13,12 +13,12 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</summary>
 |-&thinsp;- <a href="/README+/techniques/README+/lurk_init.md">"L&thinsp;u&thinsp;r&thinsp;k&thinsp;i&thinsp;n&thinsp;g"&nbsp;&nbsp;&nbsp;i&thinsp;n&thinsp;i&thinsp;t</a><br />
 |-&thinsp;- <a href="/README+/techniques/README+/builders/README.md">B&thinsp;u&thinsp;i&thinsp;l&thinsp;d&thinsp;e&thinsp;r&thinsp;s</a><br />
-|-&thinsp;- <a href="/README+/techniques/README+/Vague-Model/README.md">V&thinsp;a&thinsp;g&thinsp;u&thinsp;e&thinsp;-&thinsp;"J&thinsp;a&thinsp;g&thinsp;g&thinsp;e&thinsp;d"&nbsp;&nbsp;&nbsp;m&thinsp;o&thinsp;d&thinsp;e&thinsp;l&thinsp;s</a><br />
+|-&thinsp;- <a href="/README+/techniques/README+/polymorphism+/README.md">Polymorphism enhanced</a><br />
 |-&thinsp;- <a href="/README+/techniques/README+/circuitry/README.md"><b>C<samp>&thinsp;I&thinsp;R&thinsp;C&thinsp;U&thinsp;I&thinsp;T&thinsp;R&thinsp;Y</samp></b></a>
 </details>
             <!-- M V V M  --!>
 <details><summary>-<ins>&thinsp;M&thinsp;V&thinsp;V&thinsp;M&thinsp;</ins></summary>
-|-&thinsp;- <a href="README+/decisions/README+/mvvm/mvvm-notification_orchestration.md">Notificaton orchestration</a><br />
+|-&thinsp;- <a href="README+/decisions/README+/mvvm/mvvm-notification_orchestration.md">Notification orchestration</a><br />
 |-&thinsp;- <a href="README+/decisions/README+/mvvm/mvvm-vmodel_cohesion.md">Model-ViewModel cohesion</a><br />
 </details>
 |- <b>T&thinsp;e&thinsp;m&thinsp;p&thinsp;l&thinsp;a&thinsp;t&thinsp;e&thinsp;s</b><br />
@@ -32,7 +32,7 @@
 |- <b>W&thinsp;P&thinsp;F</b><br />
 |-- <a href="README+/snippets/wpf/bool2viz_improved.md">Bool-Vis. converter</a><sup>improved</sup><br />
 <br /><!--               T E S T I N G   --!>
-◾ <b>T<samp>&thinsp;E&thinsp;S&thinsp;T&thinsp;I&thinsp;N&thinsp;G</samp></b><br />
+◾ <b>T<samp>&thinsp;E&thinsp;S&thinsp;T&thinsp;I&thinsp;N&thinsp;G</samp></b><br />i
 |-- 📖&thinsp;<a href="README+/tests"><i>B&thinsp;e&thinsp;t&thinsp;t&thinsp;e&thinsp;r&nbsp;&nbsp;&nbsp;t&thinsp;e&thinsp;s&thinsp;t&thinsp;s&thinsp;</i></a><br />
 |-- <a href="README+/tests/README+/prog_tests-cut_feeds.md">F&thinsp;e&thinsp;e&thinsp;d&nbsp;&nbsp;&nbsp;e&thinsp;x&thinsp;p&thinsp;a&thinsp;n&thinsp;s&thinsp;i&thinsp;on&nbsp;&nbsp;&nbsp;c&thinsp;u&thinsp;t</a><br />
 |-- <a href="README+/tests/README+/unit_test-gradual_assert.md">G&thinsp;r&thinsp;a&thinsp;d&thinsp;u&thinsp;a&thinsp;l&nbsp;&nbsp;&nbsp;a&thinsp;s&thinsp;s&thinsp;e&thinsp;r&thinsp;t</a><br />
