@@ -11,9 +11,9 @@
             <!-- TECHNIQUE / PATTERN --!>
 <details><summary><ins><b>T&thinsp;e&thinsp;c&thinsp;h&thinsp;n&thinsp;i&thinsp;q&thinsp;u&thinsp;e&thinsp;s&thinsp;/&thinsp;P&thinsp;a&thinsp;t&thinsp;t&thinsp;e&thinsp;r&thinsp;n&thinsp;s</b></ins>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</summary>
+|-&thinsp;- <a href="/README+/techniques/README+/polymorphism+/README.md">P&thinsp;o&thinsp;l&thinsp;y&thinsp;m&thinsp;o&thinsp;r&thinsp;p&thinsp;h&thinsp;i&thinsp;s&thinsp;m&nbsp;&nbsp;➕</a><br />
 |-&thinsp;- <a href="/README+/techniques/README+/lurk_init.md">"L&thinsp;u&thinsp;r&thinsp;k&thinsp;i&thinsp;n&thinsp;g"&nbsp;&nbsp;&nbsp;i&thinsp;n&thinsp;i&thinsp;t</a><br />
 |-&thinsp;- <a href="/README+/techniques/README+/builders/README.md">B&thinsp;u&thinsp;i&thinsp;l&thinsp;d&thinsp;e&thinsp;r&thinsp;s</a><br />
-|-&thinsp;- <a href="/README+/techniques/README+/polymorphism+/README.md">Polymorphism enhanced</a><br />
 |-&thinsp;- <a href="/README+/techniques/README+/circuitry/README.md"><b>C<samp>&thinsp;I&thinsp;R&thinsp;C&thinsp;U&thinsp;I&thinsp;T&thinsp;R&thinsp;Y</samp></b></a>
 </details>
             <!-- M V V M  --!>
