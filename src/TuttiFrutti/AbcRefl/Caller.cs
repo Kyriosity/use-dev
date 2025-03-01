@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Reflection;
 
-namespace AbcExt.Refl;
+namespace AbcRefl;
 public class Caller
 {
     public static
@@ -9,9 +9,7 @@ public class Caller
         (string? name, string? fullName) type,
         (string? name, string? fullName) container)
 
-
         Report(byte skipFrames = 1) {
-
 
         var caller = new StackFrame(1 + skipFrames)?.GetMethod();
         var callerName = caller?.Name;
