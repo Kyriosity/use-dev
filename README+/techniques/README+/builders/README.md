@@ -30,9 +30,10 @@ However, are there products for which it won't be an over-mega-engineering? Let'
 
 ## Realization
 
-🐝..GREAT IDEAS PENDING..🚧
+🐝... STORIES PENDING ...🚧
 
 Meanwhile, some construction techniques are there:\
+|- [<b>Code Wizard base</b>](../../../../src/TuttiFrutti/WizCode/)\
 |- [AbcChrono](../../../parts/AbcChrono)\
 |- [ISie extensions](../../../parts/_ext/ISie/README.md)
 
@@ -41,7 +42,7 @@ The following topics contemplate object building:\
 
 ## Conclusion
 
-Nevertheless, the best technique when hit against the wall is to cut constructors and make other initializations.
+Nevertheless, the best technique when hit against the wall is to cut constructors and make other bulky but easy initializations.
 
 \___________\
 🔚 ... 2024-2025 .. image credit: https://globalnews.ca/ (2024)
