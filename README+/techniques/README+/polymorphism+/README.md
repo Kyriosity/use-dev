@@ -1,9 +1,11 @@
- # <samp>Polymorphism enhanced</samp>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Properties <i>shifting</i>
+ <h1 align="center">Polymorphism&nbsp;&nbsp;&mdash;&nbsp;&nbsp;<i>expanded</i></h1>
 
 Two of the four pillars beneath object-oriented programming are plain: _**encapsulation**_ and _**inheritance**_. **_Abstraction**_ is abstract by the definition but doesn't need much description. 
 <span title="&nbsp;&thinsp;Greek:&#013;&#010&nbsp;πολύ&nbsp;&nbsp;&mdash;&nbsp;&nbsp;many&#013;&#010&nbsp;μορφ&nbsp;&nbsp;&mdash;&nbsp;&nbsp;form"><ins>_**Polymorphism**_</ins></span> is vague and has many forms of many forms ...
 
 🚧🚧🚧🚧🚧🚧🚧 ... under construction ... 🚧🚧🚧🚧🚧🚧🚧
+
+# <a id="prop-shift" />Properties <i>shifting</i>
 
 Modelling generic properties with ragged access
 
