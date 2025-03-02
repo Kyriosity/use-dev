@@ -1,4 +1,4 @@
-﻿namespace WizCode.Xform;
+﻿namespace WizConstr.Xform;
 
 public abstract class RipeCore<TSeed, TRes> : Core<TSeed, TRes>
 {
