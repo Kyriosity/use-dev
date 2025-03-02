@@ -33,7 +33,7 @@ However, are there products for which it won't be an over-mega-engineering? Let'
 🐝... STORIES PENDING ...🚧
 
 Meanwhile, some construction techniques are there:\
-|- [<b>Code Wizard base</b>](../../../../src/TuttiFrutti/WizCode/)\
+|- [<b>Code Wizard blocks</b>](../../../../src/TuttiFrutti/WizConstr/README.md)\
 |- [AbcChrono](../../../parts/AbcChrono)\
 |- [ISie extensions](../../../parts/_ext/ISie/README.md)
 
