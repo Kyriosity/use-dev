@@ -1,11 +1,11 @@
-# WPF - Boolean-to-Visibility converter - Making it better
+# W&thinsp;P&thinsp;F&nbsp;&nbsp;&mdash;&nbsp;&nbsp; _improved_ `Boolean-to-Visibility` converter
 
 Imagine :high_brightness:Lights:high_brightness: elements on the *View* that are switched by `bool Voltage` in its *ViewModel*. That's appealing to couple them with the .NET native [`BooleanToVisibilityConverter`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.booleantovisibilityconverter).
 
 Now suppose, :flashlight:Emergency lights:flashlight: will be switched on when the _Voltage_ is off. To spare either a `VoltageOff` property with logic, or a counterpart `InvertedBooleanToVisibilityConverter`, or elaborated [`Style.Triggers`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.style.triggers) let's sketch:
 
 <details>
-<summary><ins>&nbsp;Invertible BooleanToVisibility converter&nbsp;</ins></summary>
+<summary><ins>&nbsp;Invertible BooleanToVisibility converter (<i>beta-version</i>):&nbsp;</ins></summary>
 &nbsp;
 
 ```csharp
@@ -29,17 +29,15 @@ XAML:
 \__________________________________________
 </details>
 
-The above draft is fairly acceptable, but let's hone once and for good a decent solution:
+The above draft is fairly acceptable, but let's hone it once and for good, to an accomplished version:
 
 + supporting any constant of [`Visibility`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.visibility)
 + handling *null* for bool
-+ smarter named&nbsp;<sup>:raising_hand:</sup>
++ neater named&nbsp;<sup>:raising_hand:</sup>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>:raising_hand:</sup><sub>Original naming is longish and ambiguous. [Viz](https://en.wikipedia.org/wiki/Viz.)<sup>🔗</sup> will be at least shorter than [Visibility](https://www.merriam-webster.com/dictionary/visibility)<sup>🔗</sup> (which must have been *Display*); *Vs* (versus) implies two-way, while *To* - one-way conversion.</sub>
 
-<details>
-<summary><ins>&nbsp;<b>How these benefits will look in XAML</b>&nbsp;</ins></summary>
-&nbsp;
+### How these benefits will look in XAML:
 
  ```xaml
 <local:BoolVsVizConverter x:Key="BoolToViz/>
@@ -50,10 +48,9 @@ The above draft is fairly acceptable, but let's hone once and for good a decent 
 <local:BoolVsVizConverter x:Key="BoolVsViz" DefaultBack="False"/>
 
 ```
-\__________________________________________
-</details>
 
----
-
-| - **Source code** (C#):\
+| - **Here is the source code** (C#):\
 |--- [BoolVsVizConverter.cs](../../../,./../src/TuttiFrutti/WinClay/Converters/BoolVsVizConverter.cs) 
+
+\___________\
+🔚 .. voilà ..
