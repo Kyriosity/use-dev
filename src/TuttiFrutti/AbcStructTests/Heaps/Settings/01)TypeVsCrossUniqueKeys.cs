@@ -54,7 +54,7 @@ public class TypeVsCrossUniqueKeys
     public void ReferencesTests() {
         var birds = new Writing {
             Title = "The Birds of America", YearPublishedAD = 1827,
-            Tongues = [new CultureInfo("en-US")], Authors = [
+            Tongues = [new CultureInfo("en-GB")], Authors = [
                 new Person<INames>(new Names { First = "John James", Last = "Audubon" }) { Birth = new DateOnly(1785, 4, 26) } ],
             Notes = "March.2000: a copy sold for $8.8M - record for any book at auction"
         };

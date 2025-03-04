@@ -14,7 +14,7 @@ public class ComplexTypesValues
         primes = [];
         Assert.That(bag.Could.Read<int[]>("ints", out _), Is.True);
         Assert.That(bag.Could.Read("ints", out primes), Is.True);
-        Assert.That(primes.Length, Is.EqualTo(origCount));
+        Assert.That(primes, Has.Length.EqualTo(origCount));
 
 
         Colors colors = new Dictionary<string, Color> {
