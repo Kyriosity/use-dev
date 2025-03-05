@@ -1,8 +1,8 @@
  <h1 align="center">OOP&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Polymorphism&nbsp;&nbsp;&mdash;&nbsp;&nbsp;<i>expanded</i></h1>
 
-Two of the four pillars beneath object-oriented programming are plain: _**encapsulation**_ and _**inheritance**_.
+Two of the four pillars beneath object-oriented programming are plain: _**encapsulation**_ and _**inheritance**_, &mdash; when the word makes an explanation.
 
-**_Abstraction_** is abstract by the definition but doesn't need much description and is the essence of programming, not only object-oriented.
+**_Abstraction_** is abstract by definition but doesn't need much portrayal. It is the essence of programming, is it object-oriented or not.
 
 <span title="&nbsp;&thinsp; Greek:&#013;&#010&nbsp;πολύ&nbsp;&nbsp;&mdash;&nbsp;&nbsp;many&#013;&#010&nbsp;μορφ&nbsp;&nbsp;&mdash;&nbsp;&nbsp; form"><ins>_**Polymorphism**_</ins></span> is vague and has many forms of "many forms":
 
@@ -13,11 +13,20 @@ Two of the four pillars beneath object-oriented programming are plain: _**encaps
 
 # <a id="prop-shift" />Properties <i>shifting</i>
 
+The best paradigm and breaktrhrough of OOP is the direct mapping of real life things, structures, and abstractions into objects. 
+In language-level impementations polymorphism comes to fine-tune classes and methods while properties are relatively neglected.
+
+Let's address two major issues:
+
+READ/WRITE/INIT combinations
+
+
+
+MAYVE MORE LATER
+
 🚧🚧🚧🚧🚧🚧🚧 ... under construction ... 🚧🚧🚧🚧🚧🚧🚧
 
 Modelling generic properties with ragged access
-
-Among other demands which created OOP was a wish to map real-life still models LINK onto code: obviously and simply.
 
 And is quite good with this but simple (otherwise it couldn't be a winning paradigm).
 
