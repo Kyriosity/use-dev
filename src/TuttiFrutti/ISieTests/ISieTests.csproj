@@ -32,4 +32,8 @@
     <Using Include="NUnit.Framework" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="BuiltinTypes\📃String🌀Encoding\" />
+  </ItemGroup>
+
 </Project>

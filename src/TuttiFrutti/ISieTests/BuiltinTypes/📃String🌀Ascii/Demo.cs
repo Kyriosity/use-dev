@@ -20,6 +20,7 @@ public class Demo : Setup.Arrange
     [Test]
     public void TestWiz() {
 
+
         bool rootFull = "".Is().Ascii;
     }
 }
