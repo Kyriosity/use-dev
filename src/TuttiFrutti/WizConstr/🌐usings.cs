@@ -1,2 +1,1 @@
-﻿global using AbcCommu.Errors.Data;
-global using AbcRefl;
+﻿global using boolFn = Abc.Logic.Fuse;
