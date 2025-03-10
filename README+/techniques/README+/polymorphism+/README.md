@@ -13,14 +13,12 @@ Two of the four pillars beneath object-oriented programming are plain: _**encaps
 
 # <a id="prop-shift" />Properties <i>shifting</i>
 
-The best paradigm and breaktrhrough of OOP is the direct mapping of real life things, structures, and abstractions into objects. 
+The best evolutionary paradigm of OOP is the direct mapping of real life things, structures, and abstractions onto code objects. 
 In language-level impementations polymorphism comes to fine-tune classes and methods while properties are relatively neglected.
 
 Let's address two major issues:
 
 READ/WRITE/INIT combinations
-
-
 
 MAYVE MORE LATER
 
