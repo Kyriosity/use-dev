@@ -1,8 +1,16 @@
 ﻿namespace WizConstr.Blocks.Fuse;
 
-public abstract class Core_Fn<TSrc, TRes, TFn>(TSrc seed) : _core<TSrc, TRes>(seed), ILeftNoFunc, IApplyRight // ToDo: TFn -> GENERIC!
-   where TFn : fuseFn.IBase<TRes>
+public abstract class Core_Fn<TSrc, TRes, Fn>(TSrc seed)
+    : _core<TSrc, TRes>(seed), ILeftNoFunc, IApplyRight
+   where Fn : fuseFn.IBase<TRes>
 {
     public new TBk Next<TBk>() where TBk : _core<TSrc, TRes>, ILeftNoFunc, new()
         => base.Next<TBk>();
+}
+
+public abstract class Fruit_Fn<TSrc, TRes, Fn>(TSrc seed)
+    : Core_Fn<TSrc, TRes, Fn>(seed)
+    where Fn : fuseFn.IBase<TRes>
+{
+    public static implicit operator TRes(Fruit_Fn<TSrc, TRes, Fn> source) => source.Yield();
 }
