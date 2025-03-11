@@ -36,10 +36,12 @@ public interface ITextCheck
     bool WithoutNumberInlays { get; }
 }
 
-public class RMedia : RipeCode<string>, IMedia, ITruthValuing
+public class RMedia(string seed) : boolBlocks.Fruit<string>(seed), IMedia
 {
-    public RMedia() {
-        _ops.Add(() => Value == "HITME");
-    }
-    public bool AllPrintable { get => throw new NotImplementedException(); }
+
+    public bool AllPrintable => false; // Next<>(); ToDo: // BUILT IN FUNC SUPPLIED 
+
+
+    protected override bool Eval() =>
+        string.Empty != seed && seed.ToCharArray().Any(ch => !char.IsAscii(ch));
 }

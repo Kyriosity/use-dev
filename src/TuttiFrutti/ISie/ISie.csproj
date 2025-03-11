@@ -10,6 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AbcCommu\AbcCommu.csproj" />
     <ProjectReference Include="..\Abc\Abc.csproj" />
+    <ProjectReference Include="..\WizConstr\WizConstr.csproj" />
   </ItemGroup>
 
 </Project>
