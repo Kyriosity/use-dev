@@ -1,1 +1,1 @@
-﻿global using boolFn = Abc.Logic.Fuse;
+﻿global using fuseFn = Abc.Logic.Fuse;

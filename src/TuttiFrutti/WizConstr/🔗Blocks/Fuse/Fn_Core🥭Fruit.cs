@@ -1,0 +1,2 @@
+﻿
+namespace WizConstr.Blocks.Fuse;

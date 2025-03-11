@@ -10,4 +10,8 @@
     <ProjectReference Include="..\AbcCommu\AbcCommu.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="🔗Blocks\Fuse\Num\" />
+  </ItemGroup>
+
 </Project>

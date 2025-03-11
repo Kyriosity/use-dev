@@ -3,8 +3,8 @@
 public abstract class Core<T>
 {
     internal Core() {
-        /// intentionally blank
+        // intentionally blank
     }
 
-    protected abstract T Seed { get; init; }
+    protected T? Seed { get; init; }
 }
