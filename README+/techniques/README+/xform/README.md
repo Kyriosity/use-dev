@@ -1,4 +1,7 @@
-# Transformation &mdash; Techniques and patterns
+# Transformation&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Techniques and patterns
+
+🚧🚧🚧...PLACEHOLDER...CONSTRUCTION...🚧🚧🚧
+
 
 The known patterns that LOOSELY FIT are Adapter, Converter, Invertor, Decorator.
 
@@ -11,6 +14,5 @@ A one-argument function is a generalizing example, with [identity function](http
 
 ELECTROTECHNICA 
 
-🚧🚧🚧...PLACEHOLDER...🚧🚧🚧
 
 🔚
