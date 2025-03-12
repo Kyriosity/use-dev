@@ -8,3 +8,4 @@ public abstract class Core<TSrc, TRes> : Xform.Core<TSrc, TRes>
         => new() { Seed = Seed, Prev = this };
 }
 
+

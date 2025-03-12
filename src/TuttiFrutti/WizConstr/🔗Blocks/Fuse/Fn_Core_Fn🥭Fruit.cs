@@ -1,11 +1,11 @@
 ﻿namespace WizConstr.Blocks.Fuse;
 
 public abstract class Fn_Core_Fn<TSrc, TRes, FnLeft, FnRight>(TSrc seed)
-    : _core<TSrc, TRes>(seed), ILeftNoFunc, IApplyRight
+    : _core<TSrc, TRes>(seed), INoFuncLeft, IApplyRight
     where FnLeft : fuseFn.IBase<TRes>
     where FnRight : fuseFn.IBase<TRes>
 {
-    public new TBk Next<TBk>() where TBk : _core<TSrc, TRes>, ILeftNoFunc, new()
+    public new TBk Next<TBk>() where TBk : _core<TSrc, TRes>, INoFuncLeft, new()
         => base.Next<TBk>();
 }
 

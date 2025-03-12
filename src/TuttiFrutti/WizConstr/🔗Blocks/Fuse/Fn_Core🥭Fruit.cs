@@ -1,7 +1,7 @@
 ﻿namespace WizConstr.Blocks.Fuse;
 
 public abstract class Fn_Core<TSrc, TRes, Fn>(TSrc seed)
-    : _core<TSrc, TRes>(seed), ILeftNoFunc, IApplyRight
+    : _core<TSrc, TRes>(seed), INoFuncLeft, IApplyRight
     where Fn : fuseFn.IBase<TRes>
 {
     public new TBk Next<TBk>() where TBk : _core<TSrc, TRes>, IApplyLeft, new()

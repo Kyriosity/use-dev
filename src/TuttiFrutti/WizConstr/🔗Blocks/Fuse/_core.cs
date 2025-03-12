@@ -6,6 +6,3 @@ public abstract class _core<TSrc, TRes>(TSrc seed) : Blocks.Core<TSrc, TRes>(see
         throw new NotImplementedException(); // ToDo: VALUE by CHAIN
     }
 }
-
-
-

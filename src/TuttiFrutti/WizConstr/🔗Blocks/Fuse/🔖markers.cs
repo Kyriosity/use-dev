@@ -1,7 +1,7 @@
 ﻿namespace WizConstr.Blocks;
 
-public interface ILeftNoFunc;
-public interface IRightNoFunc;
+public interface INoFuncLeft;
+public interface INoFuncRight;
 
 public interface IApplyLeft;
 public interface IApplyRight;
