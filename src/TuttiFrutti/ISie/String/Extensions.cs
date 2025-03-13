@@ -5,11 +5,11 @@ namespace ISie.String;
 public static class Extensions
 {
     public static ICultureNeutral Is(this string value) => new CultureNeutral(value);
-    public static ILingua Is<T>(this string val) where T : IScript, ISupported
-        => null;
+    //public static ILingua Is<T>(this string value) where T : INumber<T> => Encoding, Extended ASCIIs, ?Unicode;
+    public static ILingua Is<T>(this string value) where T : IScript, ISupported => null;
 }
 
-// OTHER TYPES EXTANDABLE ! ? ToString() and Custom calls ?
+// OTHER TYPES EXTENDABLE ! ? ToString() and Custom calls ?
 
 internal class CultureNeutral(string seed) : ICultureNeutral
 {
@@ -19,9 +19,10 @@ internal class CultureNeutral(string seed) : ICultureNeutral
 
     public IEndcodingWithGapOption EmptyOr => throw new NotImplementedException();
 
-    public bool Whitespace => throw new NotImplementedException();
+    public bool Whitespace => new blocks.Ripe.End.Fruit<string>(seed, str =>
+        string.Empty != str && string.IsNullOrWhiteSpace(str));
 
-    public bool Grayspace => NotImplemented.Throw("reserved");
+    public bool Grayspace => NotImplemented.Throw("reserved for the discussion: +control chars?");
 
     public bool SingleSpace => throw new NotImplementedException();
 

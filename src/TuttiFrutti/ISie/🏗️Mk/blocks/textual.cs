@@ -36,10 +36,10 @@ public interface ITextCheck
     bool WithoutNumberInlays { get; }
 }
 
-public class RMedia(string seed) : boolBlocks.Fruit<string>(seed), IMedia
+public class RMedia(string seed) : WizConstr.Blocks.Fuse.Bool.Fruit<string>(seed), IMedia
 {
 
-    public bool AllPrintable => false; // Next<>(); ToDo: // BUILT IN FUNC SUPPLIED 
+    public bool AllPrintable => NotImplemented.Throw("coming next"); // Next<WizConstr.Blocks.Fuse.Bool.Ops.Ripe.End.And_Fruit<string>>();// new (seed, str => string.Empty != str); //
 
 
     protected override bool Eval() =>
