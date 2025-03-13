@@ -7,5 +7,3 @@ public abstract class Core<TSrc, TRes> : Xform.Core<TSrc, TRes>
     public virtual TBk Next<TBk>() where TBk : Core<TSrc, TRes>, new()
         => new() { Seed = Seed, Prev = this };
 }
-
-
