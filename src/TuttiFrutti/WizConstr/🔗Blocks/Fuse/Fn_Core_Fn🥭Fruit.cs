@@ -3,7 +3,7 @@
 public abstract class Fn_Core_Fn<TSrc, TRes, FnL, FnR>(TSrc seed) : _base._rightFn<TSrc, TRes, FnR>(seed), IFnLeftRight
     where FnL : fuseFn.IBase<TRes> where FnR : fuseFn.IBase<TRes>
 {
-    protected override Type? FnLeft { get; } = typeof(FnL);
+    internal override Type? FnLeft { get; set; } = typeof(FnL);
 }
 
 public abstract class Fn_Fruit_Fn<TSrc, TRes, FnLeft, FnRight>(TSrc seed)
