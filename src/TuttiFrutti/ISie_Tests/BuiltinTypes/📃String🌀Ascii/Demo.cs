@@ -1,4 +1,4 @@
-﻿namespace ISieTests.BuiltinTypes.String_Encoding;
+﻿namespace ISie_Tests.BuiltinTypes.String_Encoding;
 public class Demo : Setup.Arrange
 {
     [SyntaxDraft]
@@ -21,6 +21,6 @@ public class Demo : Setup.Arrange
     public void TestWiz() {
 
 
-        bool rootFull = "".Is().Ascii;
+        bool rootFull = "".Is().Ascii.NoControls;
     }
 }

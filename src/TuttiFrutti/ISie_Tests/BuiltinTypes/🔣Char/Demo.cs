@@ -1,4 +1,4 @@
-﻿namespace ISieTests.BuiltinTypes.ISie.Char;
+﻿namespace ISie_Tests.BuiltinTypes.ISie.Char;
 public class Demo : Setup.Arrange
 {
     [SyntaxDraft]

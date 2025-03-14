@@ -1,4 +1,4 @@
-﻿namespace ISieTests.BuiltinTypes.String;
+﻿namespace ISie_Tests.BuiltinTypes.String;
 
 public class Demo : Setup.Arrange
 {

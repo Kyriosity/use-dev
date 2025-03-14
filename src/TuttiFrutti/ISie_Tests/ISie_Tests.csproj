@@ -33,7 +33,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="BuiltinTypes\📃String🌀Encoding\" />
+    <Folder Include="BuiltinTypes\📃String🌀MoreEncoded\" />
   </ItemGroup>
 
 </Project>

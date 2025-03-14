@@ -1,4 +1,4 @@
-﻿namespace ISieTests.Setup;
+﻿namespace ISie_Tests.Setup;
 public abstract class Arrange
 {
     protected readonly string? NullStr = null;
