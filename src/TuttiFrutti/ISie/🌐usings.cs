@@ -2,5 +2,5 @@
 global using Abc.Logic;
 global using Abc.Marks;
 global using AbcCommu.Errors.Sys;
-global using blocks = WizConstr.Blocks.Fuse.Bool;
-global using Or = Abc.Logic.Build.Disjuncts;
+global using LogiOr = Abc.Logic.Build.Disjuncts; // ToDo: better names l & r !
+global using Wiz = WizConstr.Blocks.Fuse.Bool;

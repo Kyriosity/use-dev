@@ -4,7 +4,7 @@ public class Demo : Setup.Arrange
     [SyntaxDraft]
     public void Ascii() {
         True = "abc_123".Is().Ascii;
-        True = "abc_123".Is().Ascii.AllPrintable;
+        True = "abc_123".Is().Ascii.NoControls;
 
         False = " \u1234 ".Is().Ascii;
     }
@@ -13,8 +13,8 @@ public class Demo : Setup.Arrange
     public void WithDisjunction() {
         True = "abc_123".Is().NullEmptyOr.Ascii;
         _ = "abc_123".Is().EmptyOr.Ascii;
-        _ = "abc_123".Is().Ascii.AllPrintable;
-        _ = "abc_123".Is().NullEmptyOr.Ascii.AllPrintable;
+        _ = "abc_123".Is().Ascii.NoControls;
+        _ = "abc_123".Is().NullEmptyOr.Ascii.NoControls;
     }
 
     [Test]

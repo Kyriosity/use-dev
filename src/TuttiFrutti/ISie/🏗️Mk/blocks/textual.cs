@@ -36,12 +36,10 @@ public interface ITextCheck
     bool WithoutNumberInlays { get; }
 }
 
-public class RMedia(string seed) : WizConstr.Blocks.Fuse.Bool.Fruit<string>(seed), IMedia
+public class Encoding(string seed) : Wiz.Fruit<string>(seed), IEncodingChecks // ToDo: enhance for Extended ASCII
 {
-
-    public bool AllPrintable => NotImplemented.Throw("coming next"); // Next<WizConstr.Blocks.Fuse.Bool.Ops.Ripe.End.And_Fruit<string>>();// new (seed, str => string.Empty != str); //
-
-
     protected override bool Eval() =>
         string.Empty != seed && seed.ToCharArray().Any(ch => !char.IsAscii(ch));
+
+    public bool NoControls => And(x => true);
 }
