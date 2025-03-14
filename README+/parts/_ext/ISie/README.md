@@ -20,7 +20,7 @@ This isn't a great new idea to announce unless together with:
 <table align="center"><tr></tr><tr><td>🧪<b>By guidance</b> (recommended)</td><td>⚡<b>Fast</b> (not recommended)</td></tr>
   <tr valign="top"><td>
   <div>Here is the entry point:</div>
-  <h2 align="center"><a href="../../../../src/TuttiFrutti/ISieTests/BuiltinTypes">D<samp>&thinsp;E&thinsp;M&thinsp;O&thinsp;S</samp>&nbsp;&nbsp;&nbsp;<samp>a&thinsp;n&thinsp;d</samp>&nbsp;&nbsp;&nbsp;T<samp>&thinsp;E&thinsp;S&thinsp;T&thinsp;S</samp></a></h2>
+  <h2 align="center"><a href="../../../../src/TuttiFrutti/ISie_Tests/BuiltinTypes">D<samp>&thinsp;E&thinsp;M&thinsp;O&thinsp;S</samp>&nbsp;&nbsp;&nbsp;<samp>a&thinsp;n&thinsp;d</samp>&nbsp;&nbsp;&nbsp;T<samp>&thinsp;E&thinsp;S&thinsp;T&thinsp;S</samp></a></h2>
   <p>Optimized for navigation.</p>
   </td><td>
     <div>If you're eager to start without guidance,</div>
