@@ -1,20 +1,14 @@
 ﻿using Abc.Logic.Fuse;
+using WizConstr.Blocks.Fuse.Bool._base;
 
 namespace WizConstr.Blocks.Fuse.Bool;
 
-public abstract class Core<TSrc>(TSrc seed) : Core<TSrc, bool>(seed)
-{
-    public virtual Fruit<TSrc, bool> Or(Func<TSrc, bool> xform) => Next<IDisjunct>(xform);
-    public virtual Fruit<TSrc, bool> And(Func<TSrc, bool> xform) => Next<IConjunct>(xform);
-    public virtual Fruit<TSrc, bool> Xor(Func<TSrc, bool> xform) => Next<IExclude>(xform);
-}
+public abstract class Core<TSrc>(TSrc seed) : _rightVoid<TSrc>(seed), INoLnkLeft;
 
-public abstract class Lnk_Core<TSrc, Lnk>(TSrc seed) : Lnk_Core<TSrc, bool, Lnk>(seed) where Lnk : IBool
+public abstract class Lnk_Core<TSrc, Lnk>(TSrc seed) : _rightVoid<TSrc>(seed), ILnkLeftOnly
+    where Lnk : IBool
 {
-    // ToDo: GROUP ! INHERIT FROM CORE !
-    public virtual Fruit<TSrc, bool> Or(Func<TSrc, bool> xform) => Next<IDisjunct>(xform);
-    public virtual Fruit<TSrc, bool> And(Func<TSrc, bool> xform) => Next<IConjunct>(xform);
-    public virtual Fruit<TSrc, bool> Xor(Func<TSrc, bool> xform) => Next<IExclude>(xform);
+    internal override Type? LnkLeft { get; set; } = typeof(Lnk);
 }
 
 public abstract class Core_Lnk<TSrc, Lnk>(TSrc seed) : Core_Lnk<TSrc, bool, Lnk>(seed) where Lnk : IBool;
