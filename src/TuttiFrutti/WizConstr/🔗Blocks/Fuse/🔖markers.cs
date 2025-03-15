@@ -1,11 +1,11 @@
 ﻿namespace WizConstr.Blocks;
 
-public interface INoFnLeft;
-public interface INoFnRight;
+public interface INoLnkLeft;
+public interface INoLnkRight;
 
-public interface IFnLeft;
-public interface IFnRight;
+public interface ILnkLeft;
+public interface ILnkRight;
 
-public interface IFnLeftOnly : IFnLeft, INoFnRight;
-public interface IFnRightOnly : IFnRight, INoFnLeft;
-public interface IFnLeftRight : IFnLeft, IFnRight;
+public interface ILnkLeftOnly : ILnkLeft, INoLnkRight;
+public interface ILnkRightOnly : ILnkRight, INoLnkLeft;
+public interface ILnkLeftRight : ILnkLeft, ILnkRight;
