@@ -12,12 +12,12 @@ This isn't a great new idea to announce unless together with:
 
 + much more functionality and features (under the theory to port them to other languages),
 + better syntax (to build intuitively and group),
-+ extend on other candidate types (such as obvious _numbers_ and _chars_),
++ extend on other candidate built-in and custom types (obviously _numbers_ and _chars_),
 + render platform for other extensions&nbsp;&nbsp;**<samp>B&thinsp;U&thinsp;T</samp> ...**
 
 <h3 align="center">... let's not beat around the bush and show what's out of the box:</h3>
 
-<table align="center"><tr></tr><tr><td>🧪<b>By guidance</b> (recommended)</td><td>⚡<b>Fast</b> (not recommended)</td></tr>
+<table align="center"><tr></tr><tr><td>🧪<b>By guidance</b> (recommended)</td><td>⚡<b>Direct</b> (when you need)</td></tr>
   <tr valign="top"><td>
   <div>Here is the entry point:</div>
   <h2 align="center"><a href="../../../../src/TuttiFrutti/ISie_Tests/BuiltinTypes">D<samp>&thinsp;E&thinsp;M&thinsp;O&thinsp;S</samp>&nbsp;&nbsp;&nbsp;<samp>a&thinsp;n&thinsp;d</samp>&nbsp;&nbsp;&nbsp;T<samp>&thinsp;E&thinsp;S&thinsp;T&thinsp;S</samp></a></h2>
@@ -36,12 +36,12 @@ It will also take a few lines of code for your wrappers, say `.IsNullOrWhiteSpac
 **IS<samp>IE</samp>** is a subject of expansion (Unicode alone is the encoding [big fish](https://www.unicode.org/glossary/)<sup>🔗</sup>) and a platform for kin features:
 
 + `.Equal` for strings needs better syntax than the onerous comparison options. 
-+ detecting tongues used in text,
++ detecting tongues used in text (`Has<Greek>`),
 + _many more_ but which will find its users.
 
-## Appendix. Implementation notes
+# Appendix. Implementation notes
 
-⭐<b>I&thinsp;S&thinsp;<samp>I&thinsp;E</samp></b>⭐ is remarkable (modestly compared to other opuses of mine) as a compact feature which fortuitous condensed many incidents and techniques.
+⭐<b>I&thinsp;S&thinsp;<samp>I&thinsp;E</samp></b>⭐ is remarkable centerfold for miscellaneous concepts and other parts/features.
 
 ### Props lost «in active development»<sup>📨</sup> ... 
 
@@ -49,14 +49,14 @@ It will also take a few lines of code for your wrappers, say `.IsNullOrWhiteSpac
 
 This ever-pending _Language Feature_ was demotivating<sup>🙋</sup> but later was dropped in favor of existing extension methods:
 
-+ `()` may isolate logical statements to follow,
++ `()` isolates logical statements to follow,
 + method allows generics to alleviate building methods (e.g. as tongues/encoding selector).
 
 > **We'll consider a breaking change to the property if the feature finally appears.**
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>🙋</sup> <sub>Warm greeting to bloggers who advertised it and others as C#13 "what's new".</sub> 
 
-### Why `Not()`?
+## Why `Not()`?
 
 If it's just <code>❗subj.Is()...</code>. &rArr; **Visibility** - surrounding symbols may shade subtle `!`, and **C#** alone offers `is not`. 
 
@@ -70,24 +70,23 @@ It's up to you which lexis to pick in **each** case.
 <p><code>x => x.<b>Not()</b>.EmptyOr.Whitespace()</code></p>
 </td></tr></table>
 
-#### Beyond syntax alternative
+### Beyond syntax alternative
 
 This qualifier reserves the place for other possible, say, `All()...`, `Can()...`, `None.Ascii...`, `No.Symbols...`  
 
-### TDD ISie
+## TDD ISie
 
 As [example](https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asDrive/README+/TDD-Watershed/README.md#TDD-ISie) in TDD Watershed
 
 Source code:
 
-### Spin-Offs
+## Spin-Offs
 
 This feature launched 
 
 + tongues categorization in [Abc Lingua](../../../../src/TuttiFrutti/Abc/Lingua),
 + [Circuitry](../../../techniques/README+/circuitry) (as a pattern via techniques),
-
-and contributes to discussion of [Builders](../../../techniques/README+/builders).
++ [Code wizards](../../../../src/TuttiFrutti/WizConstr/README.md).
 
 \___________\
 🔚 .. <samp>🐝🐝 <code>OR</code> ❗too 🐝</samp> ... 🌘 **2025** ... <sub>[![C#](https://custom-icon-badges.demolab.com/badge/C%23-but_for_all-orangered.svg?logo=cshrp&logoColor=white&color=turquose)](#)</sub>
