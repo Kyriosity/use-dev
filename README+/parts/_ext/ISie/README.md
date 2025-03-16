@@ -1,4 +1,4 @@
-<h1 align="center">⭐&thinsp;I&thinsp;S&thinsp;i&thinsp;e&thinsp;⭐ &rarr; <samp>extensions</samp></h1>
+<h1 align="center">⭐&thinsp;I&thinsp;S&thinsp;i&thinsp;e&thinsp;⭐ &rarr; <code>Is</code>➕ <samp>extensions</samp></h1>
 
 <table><tr valign="top"><td width="25%"><picture><img src="../../../_rsc/img/ISie.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extensions"/></picture></td><td>
 <p><b>The crossover of these two <code>C#</code> discoveries</b></p>
