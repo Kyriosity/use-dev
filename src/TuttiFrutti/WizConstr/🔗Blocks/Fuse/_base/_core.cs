@@ -6,6 +6,9 @@ public abstract class _core<TSrc, TRes>(TSrc seed) : Blocks.Core<TSrc, TRes>(see
     protected virtual Type? LnkRight { get; } = null;
 
     protected override TRes Yield() {
-        throw new NotImplementedException(); // ToDo: VALUE by CHAIN
+        if (Prev is null)
+            return Eval();
+
+        throw new NotImplementedException();
     }
 }
