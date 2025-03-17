@@ -2,13 +2,10 @@
 
 public abstract class _core<TSrc, TRes>(TSrc seed) : Blocks.Core<TSrc, TRes>(seed)
 {
-    internal virtual Type? LnkLeft { get; set; } = null;
-    protected virtual Type? LnkRight { get; } = null;
+    internal virtual Func<TRes, TRes, TRes>? LnkLeft { get; set; } = null;
+    protected virtual Func<TRes, TRes, TRes>? LnkRight => null;
 
-    protected override TRes Yield() {
-        if (Prev is null)
-            return Eval();
-
-        throw new NotImplementedException();
-    }
+    protected override TRes Yield() =>
+        Prev is null ? Eval() :
+            new[] { LnkLeft, LnkRight }.Single(fn => fn is not null)(Eval(), Prev.Eval());
 }
