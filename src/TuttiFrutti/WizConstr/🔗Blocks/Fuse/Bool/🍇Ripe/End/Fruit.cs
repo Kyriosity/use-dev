@@ -2,5 +2,5 @@
 
 public class Fruit<TSrc>(TSrc seed, Func<TSrc, bool> xform) : Bool.Fruit<TSrc>(seed)
 {
-    protected override bool Eval() => xform(seed);
+    protected internal override bool Eval() => xform(seed);
 }

@@ -2,15 +2,15 @@
 
 public class Or_Fruit<TSrc>(TSrc seed, Func<TSrc, bool> xform) : Ops.Or_Fruit<TSrc>(seed)
 {
-    protected override bool Eval() => xform(seed);
+    protected internal override bool Eval() => xform(seed); // ToDo: COMMON xform()
 }
 
 public class And_Fruit<TSrc>(TSrc seed, Func<TSrc, bool> xform) : Ops.And_Fruit<TSrc>(seed)
 {
-    protected override bool Eval() => xform(seed);
+    protected internal override bool Eval() => xform(seed);
 }
 
 public class Xor_Fruit<TSrc>(TSrc seed, Func<TSrc, bool> xform) : Ops.Xor_Fruit<TSrc>(seed)
 {
-    protected override bool Eval() => xform(seed);
+    protected internal override bool Eval() => xform(seed);
 }
