@@ -1,4 +1,4 @@
-# Unit Tests &mdash; Cutting the Feed Expansion
+# Unit Tests &nbsp;&nbsp; &mdash; &nbsp;&nbsp; Cutting the Feed Expansion
 
 <table align="center"><tr><td><a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/"><img alt="&nbsp;READ-WRITE meets USE-DEV" width="100px" src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/_nav/read-write_use-dev.jpg" /></a></td><td>
    <p>Let's show how we can meet <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/README+/tests-damp_vs_dry.md#Feed-expansion"><b>Feed expansion</b></a> with practical decisions.</p>
@@ -38,4 +38,4 @@ Look as _use-dev_ [funcware tests](../../../src/TuttiFrutti/FuncStore.Convers.Te
 
 \___________
 
-🔚
+🔚 🌘 2024-2025
