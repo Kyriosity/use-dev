@@ -11,11 +11,11 @@ public abstract class _rightVoid<TSrc, TRes>(TSrc seed) : _core<TSrc, TRes>(seed
         where Lnk : fuseFn.IBase<TRes> {
 
         var block = base.Next<Blk>();
-        block.LnkLeft = typeof(Lnk);
+        block.LnkLeft = Extract.Method<TRes, Lnk>("Join");
         return block;
     }
 
-    public virtual Ripe.End.Fruit<TSrc, TRes> Next<Lnk>(Func<TSrc, TRes> xform)
+    public virtual Ripe.End.Lnk_Fruit<TSrc, TRes, Lnk> Next<Lnk>(Func<TSrc, TRes> xform)
         where Lnk : fuseFn.IBase<TRes>
         =>
             new(seed, xform) { Prev = this }; // ToDo: BETTER ALTERNATIVE WITH INI

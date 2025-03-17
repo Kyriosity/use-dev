@@ -4,7 +4,7 @@ namespace WizConstr.Blocks.Fuse.Bool._base;
 
 public abstract class _rightVoid<TSrc>(TSrc seed) : Fuse._base._rightVoid<TSrc, bool>(seed)
 {
-    public virtual Fruit<TSrc, bool> Or(Func<TSrc, bool> xform) => Next<IDisjunct>(xform);
-    public virtual Fruit<TSrc, bool> And(Func<TSrc, bool> xform) => Next<IConjunct>(xform);
-    public virtual Fruit<TSrc, bool> Xor(Func<TSrc, bool> xform) => Next<IExclude>(xform);
+    public virtual Lnk_Fruit<TSrc, bool, IDisjunct> Or(Func<TSrc, bool> xform) => Next<IDisjunct>(xform);
+    public virtual Lnk_Fruit<TSrc, bool, IConjunct> And(Func<TSrc, bool> xform) => Next<IConjunct>(xform);
+    public virtual Lnk_Fruit<TSrc, bool, IExclude> Xor(Func<TSrc, bool> xform) => Next<IExclude>(xform);
 }
