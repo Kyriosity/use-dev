@@ -1,4 +1,4 @@
-# Unit tests &mdash; Gradual assert
+# Unit tests &nbsp;&nbsp; &mdash; &nbsp;&nbsp; Gradual assert
 
 <table><tr valign="top"><td width="40%"><picture><img alt="&nbsp;Passed🟩: 388, failed🟥: 165. Not great, not terrible." 
  src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/memes/Tests-NotGreatNotTerrible.jpg" /></picture>
@@ -49,4 +49,4 @@ and symbolic ranking of failure:\
 Gradual assert interlaces with [evaluation tolerance](val_tests-tolerance.md).
 
 \___________\
-🔚 ... <sub>Image credit: screenshot of Visual Studio; screenshot of HBO mini-series, 2019</sub>
+🔚 ... 2024-2025 <sub>Image credit: screenshot of Visual Studio; screenshot of HBO mini-series, 2019</sub>

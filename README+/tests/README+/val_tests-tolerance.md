@@ -1,4 +1,4 @@
-# Value tests &mdash; Tolerance
+# Value tests &nbsp;&nbsp; &mdash; &nbsp;&nbsp; Tolerance
 
 > This concept interlaces with [gradual assert](unit_test-gradual_assert.md). Both features complement each other.
 
@@ -15,4 +15,4 @@ Current implementation supplies only absolute [[Precision]](../../../src/TuttiFr
 // ... 🚧 TO IMPLEMENT ...
 
 \__________\
-🔚 ... 🚧 pending 🚧 ...
+🔚 2024-2025 ... 🚧 pending 🚧 ...

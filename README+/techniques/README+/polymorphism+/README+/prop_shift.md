@@ -1,13 +1,16 @@
 <h1 align="center"> Properties “Shifting”</h1>
 
 The best evolutionary paradigm of OOP is the direct mapping of real life things, structures, and abstractions onto code objects. 
-In language-level implementations, polymorphism comes to fine-tune classes and methods while properties are relatively neglected.
 
-Let's address two major issues:
+The fine-tuning on language-level traditionally concerns classes and methods while properties conceal even more potential.
+
+Let's address two independent issues:
 
 READ/WRITE/INIT combinations
 
-MAYVE MORE LATER
+which we will put under the umbrella term _shifting_.
+
+MAYbE MORE LATER
 
 🚧🚧🚧🚧🚧🚧🚧 ... under construction ... 🚧🚧🚧🚧🚧🚧🚧
 

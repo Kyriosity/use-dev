@@ -5,13 +5,13 @@
             <!-- F R A M E S  /  R U L E S --!>
 <details><summary><ins>&thinsp;<b>F&thinsp;r&thinsp;a&thinsp;m&thinsp;e&thinsp;s</ins>&thinsp;,<ins>&nbsp;&nbsp;g&thinsp;u&thinsp;i&thinsp;d&thinsp;e&thinsp;l&thinsp;i&thinsp;n&thinsp;e&thinsp;s</b>&thinsp;</ins></summary>
 |-&thinsp;-&nbsp;📖&thinsp;<a href="README+/frames"><i>&thinsp;I&thinsp;n&thinsp;t&thinsp;r&thinsp;o&thinsp;</i></a><br />
-|-&thinsp;- <a href="README+/frames/README+/reinforced_inheretance.md">R&thinsp;e&thinsp;i&thinsp;n&thinsp;f&thinsp;o&thinsp;r&thinsp;c&thinsp;e&thinsp;d&thinsp;&nbsp;&nbsp;&nbsp;i&thinsp;n&thinsp;h&thinsp;e&thinsp;r&thinsp;i&thinsp;t&thinsp;a&thinsp;n&thinsp;c&thinsp;e&thinsp;</a><br />
+|-&thinsp;- <a href="README+/frames/README+/reinforced_inheretance.md"> R&thinsp;e&thinsp;i&thinsp;n&thinsp;f&thinsp;o&thinsp;r&thinsp;c&thinsp;e&thinsp;d&thinsp;&nbsp;&nbsp;&nbsp;i&thinsp;n&thinsp;h&thinsp;e&thinsp;r&thinsp;i&thinsp;t&thinsp;a&thinsp;n&thinsp;c&thinsp;e&thinsp;</a><br />
 |-&thinsp;- <a href="README+/frames/README+/calls_on_null.md">C&thinsp;a&thinsp;l&thinsp;l&thinsp;s&nbsp;&nbsp;&nbsp;o&thinsp;n&nbsp;&nbsp;&nbsp;n&thinsp;u&thinsp;l&thinsp;l</a><br />            
 </details>
             <!-- TECHNIQUE / PATTERN --!>
 <details><summary><ins><b>T&thinsp;e&thinsp;c&thinsp;h&thinsp;n&thinsp;i&thinsp;q&thinsp;u&thinsp;e&thinsp;s&thinsp;/&thinsp;P&thinsp;a&thinsp;t&thinsp;t&thinsp;e&thinsp;r&thinsp;n&thinsp;s</b></ins>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</summary>
-|-&thinsp;- <a href="/README+/techniques/README+/polymorphism+/README.md">P&thinsp;o&thinsp;l&thinsp;y&thinsp;m&thinsp;o&thinsp;r&thinsp;p&thinsp;h&thinsp;i&thinsp;s&thinsp;m&nbsp;&nbsp;➕</a><br />
+|-&thinsp;- <a href="/README+/techniques/README+/polymorphism+/README.md">P&thinsp;o&thinsp;l&thinsp;y&thinsp;m&thinsp;o&thinsp;r&thinsp;p&thinsp;h&thinsp;i&thinsp;s&thinsp;m&thinsp;<sup>➕</sup></a><br />
 |-&thinsp;- <a href="/README+/techniques/README+/lurk_init.md">"L&thinsp;u&thinsp;r&thinsp;k&thinsp;i&thinsp;n&thinsp;g"&nbsp;&nbsp;&nbsp;i&thinsp;n&thinsp;i&thinsp;t</a><br />
 |-&thinsp;- <a href="/README+/techniques/README+/builders/README.md">B&thinsp;u&thinsp;i&thinsp;l&thinsp;d&thinsp;e&thinsp;r&thinsp;s</a><br />
 |-&thinsp;-&thinsp;-&thinsp;-&nbsp;<a href="/src/TuttiFrutti/WizConstr/README.md">Wizard blocks</a><br />
