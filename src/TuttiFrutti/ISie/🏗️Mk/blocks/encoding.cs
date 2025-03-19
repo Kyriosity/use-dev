@@ -9,4 +9,4 @@ public interface IStandardTextCode : ITruthValuing
     public Encoding Ascii { get; }
 }
 
-public interface IEndcodingWithGapOption : IStandardTextCode, IGaps;
+public interface IEncodingWithGapOption : IStandardTextCode, IGaps;

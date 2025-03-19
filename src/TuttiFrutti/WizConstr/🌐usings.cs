@@ -1,1 +1,2 @@
-﻿global using fuseFn = Abc.Logic.Fuse;
+﻿global using AbcRefl;
+global using fuseFn = Abc.Logic.Fuse;

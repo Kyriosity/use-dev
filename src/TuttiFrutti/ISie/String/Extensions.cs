@@ -15,9 +15,9 @@ internal class CultureNeutral(string seed) : ICultureNeutral
 {
     public bool NullOrEmpty => throw new NotImplementedException();
 
-    public IEndcodingWithGapOption NullEmptyOr => throw new NotImplementedException();
+    public IEncodingWithGapOption NullEmptyOr => throw new NotImplementedException();
 
-    public IEndcodingWithGapOption EmptyOr => throw new NotImplementedException();
+    public IEncodingWithGapOption EmptyOr => throw new NotImplementedException();
 
     public bool Whitespace => new Wiz.Ripe.End.Fruit<string>(seed, str =>
         string.Empty != str && string.IsNullOrWhiteSpace(str));

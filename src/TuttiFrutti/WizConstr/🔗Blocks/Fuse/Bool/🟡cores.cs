@@ -8,7 +8,7 @@ public abstract class Core<TSrc>(TSrc seed) : _rightVoid<TSrc>(seed), INoLnkLeft
 public abstract class Lnk_Core<TSrc, Lnk>(TSrc seed) : _rightVoid<TSrc>(seed), ILnkLeftOnly
     where Lnk : IBool
 {
-    internal override Func<bool, bool, bool>? LnkLeft { get; set; } = Extract.Method<bool, Lnk>(nameof(fuseFn.IBool.Join));
+    internal override Func<bool, bool, bool>? LnkLeft { get; set; } = Unpack<Lnk>();
 
 }
 

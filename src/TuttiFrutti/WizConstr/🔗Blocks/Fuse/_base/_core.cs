@@ -1,4 +1,6 @@
-﻿namespace WizConstr.Blocks.Fuse._base;
+﻿using AbcRefl.Implementation;
+
+namespace WizConstr.Blocks.Fuse._base;
 
 public abstract class _core<TSrc, TRes>(TSrc seed) : Blocks.Core<TSrc, TRes>(seed)
 {
@@ -8,4 +10,7 @@ public abstract class _core<TSrc, TRes>(TSrc seed) : Blocks.Core<TSrc, TRes>(see
     protected override TRes Yield() =>
         Prev is null ? Eval() :
             new[] { LnkLeft, LnkRight }.Single(fn => fn is not null)(Eval(), Prev.Eval());
+
+    protected static Func<TRes, TRes, TRes> Unpack<I>() =>
+        (argL, argR) => (TRes)Method.Default<I>("Join").Invoke(argL, argR); // ToDo: replace the literal
 }

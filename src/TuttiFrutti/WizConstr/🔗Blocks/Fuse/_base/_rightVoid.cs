@@ -11,7 +11,7 @@ public abstract class _rightVoid<TSrc, TRes>(TSrc seed) : _core<TSrc, TRes>(seed
         where Lnk : fuseFn.IBase<TRes> {
 
         var block = base.Next<Blk>();
-        block.LnkLeft = Extract.Method<TRes, Lnk>("Join");
+        block.LnkLeft = Unpack<Lnk>();
         return block;
     }
 

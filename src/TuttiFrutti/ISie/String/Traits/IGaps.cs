@@ -8,7 +8,7 @@ public interface IGaps
     /// <summary>
     /// Whitespaces and punctuation (incl. underscore)
     /// </summary>
-    bool Grayspace { get; }
+    bool Grayspace { get; } // SUBJ of DISCUSSION: punctuation, controls, non-printables?
 
     bool SingleSpace { get; }
     bool Spaces { get; }

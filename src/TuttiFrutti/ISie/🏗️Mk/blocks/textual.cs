@@ -7,7 +7,7 @@ public interface ITextual<LTR, TXT>
     LTR Alphanumeric { get; }
 
     /// <summary>
-    /// Includes 
+    /// Includes punctuation
     /// </summary>
     TXT Text { get; }
 }
@@ -41,5 +41,7 @@ public class Encoding(string seed) : Wiz.Fruit<string>(seed), IEncodingChecks //
     protected override bool Eval() =>
         string.Empty != seed && seed.ToCharArray().Any(ch => !char.IsAscii(ch));
 
-    public bool NoControls => And(x => true);
+    public bool NoControls => And
+        (ch => !seed.ToCharArray().Any(char.IsControl));
+
 }
