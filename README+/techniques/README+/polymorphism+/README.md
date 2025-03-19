@@ -1,6 +1,6 @@
  <h1 align="center">OOP&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Polymorphism&nbsp;&nbsp;&mdash;&nbsp;&nbsp;<i>expanded</i></h1>
 
-Two of the four pillars beneath object-oriented programming are plain: <mark>_encapsulation_</mark> and <mark>_inheritance_</mark>, &mdash; when the word makes an explanation.
+Two of the four pillars beneath object-oriented programming are plain: <mark>_encapsulation_</mark> and <mark>_inheritance_</mark>, &mdash; both terms are self-explanatory for programmers.
 
 <mark>_Abstraction_</mark> is abstract by definition but doesn't need much portrayal. It is the essence of thinking and programming: object-oriented or not.
 
