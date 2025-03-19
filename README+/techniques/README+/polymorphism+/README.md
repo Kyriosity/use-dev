@@ -10,8 +10,8 @@ Vague <span title="&nbsp;&thinsp; Greek:&#013;&#010&nbsp;πολύ&nbsp;&nbsp;&md
 + **parametric** &mdash; as generics in C++, Python, Java, or C#,
 + **name sharing** &mdash; [ad hoc] method overriding/overloading,
 + _others_ &mdash; some of which we want to discuss next:\
-|&thinsp;-&thinsp;- [Properties _Shifting_](README+/prop_shift.md)\
-|&thinsp;-&thinsp;- 🐝 _comming next_ ⌛
+|&thinsp;-&thinsp;- [Properties _shifting_](README+/prop_shift.md)\
+|&thinsp;-&thinsp;- 🐝 _more_ ⌛
 
 \___________\
 🔚 2025
