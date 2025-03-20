@@ -1,6 +1,6 @@
 ﻿namespace WizConstr.Blocks.Fuse._base;
 
-public abstract class _rightVoid<TSrc, TRes>(TSrc seed) : _core<TSrc, TRes>(seed), INoLnkRight
+public abstract class _rightVoid<TSrc, TRes> : _core<TSrc, TRes>, INoLnkRight
 {
     public new Blk Next<Blk>() where Blk :
         _core<TSrc, TRes>, ILnkLeft, new()
@@ -18,5 +18,5 @@ public abstract class _rightVoid<TSrc, TRes>(TSrc seed) : _core<TSrc, TRes>(seed
     public virtual Ripe.End.Lnk_Fruit<TSrc, TRes, Lnk> Next<Lnk>(Func<TSrc, TRes> xform)
         where Lnk : fuseFn.IBase<TRes>
         =>
-            new(seed, xform) { Prev = this }; // ToDo: BETTER ALTERNATIVE WITH INI
+            new(xform) { Seed = Seed, Prev = this }; // ToDo: BETTER ALTERNATIVE WITH INI
 }

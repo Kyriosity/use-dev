@@ -3,17 +3,17 @@ using WizConstr.Blocks.Fuse.Bool._base;
 
 namespace WizConstr.Blocks.Fuse.Bool;
 
-public abstract class Core<TSrc>(TSrc seed) : _rightVoid<TSrc>(seed), INoLnkLeft;
+public abstract class Core<TSrc> : _rightVoid<TSrc>, INoLnkLeft;
 
-public abstract class Lnk_Core<TSrc, Lnk>(TSrc seed) : _rightVoid<TSrc>(seed), ILnkLeftOnly
+public abstract class Lnk_Core<TSrc, Lnk> : _rightVoid<TSrc>, ILnkLeftOnly
     where Lnk : IBool
 {
-    internal override Func<bool, bool, bool>? LnkLeft { get; set; } = Unpack<Lnk>();
+    //internal override Func<bool, bool, bool>? LnkLeft { get; set; } = Unpack<Lnk>(); // ToDelete: CHECK IF REMOVABLE !
 
 }
 
-public abstract class Core_Lnk<TSrc, Lnk>(TSrc seed) : Core_Lnk<TSrc, bool, Lnk>(seed) where Lnk : IBool;
+public abstract class Core_Lnk<TSrc, Lnk> : Core_Lnk<TSrc, bool, Lnk> where Lnk : IBool;
 
-public abstract class Lnk_Core_Lnk<TSrc, LnkLeft, Lnk>(TSrc seed) : Lnk_Core_Lnk<TSrc, bool, LnkLeft, Lnk>(seed)
+public abstract class Lnk_Core_Lnk<TSrc, LnkLeft, Lnk> : Lnk_Core_Lnk<TSrc, bool, LnkLeft, Lnk>
     where LnkLeft : IBool
     where Lnk : IBool;

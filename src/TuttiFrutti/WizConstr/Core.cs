@@ -6,5 +6,5 @@ public abstract class Core<T>
         // intentionally blank
     }
 
-    protected T? Seed { get; init; }
+    public T? Seed { get; init; }
 }
