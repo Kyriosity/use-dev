@@ -1,15 +1,13 @@
 ﻿using System.Diagnostics;
 using System.Reflection;
+using RepTuple = ((string? name, System.Reflection.MemberTypes? member) caller,
+    (string? name, string? fullName) type,
+    (string? name, string? fullName) container);
 
 namespace AbcRefl;
 public class Caller
 {
-    public static
-        ((string? name, MemberTypes? member) caller,
-        (string? name, string? fullName) type,
-        (string? name, string? fullName) container)
-
-        Report(byte skipFrames = 1) {
+    public static RepTuple Report(byte skipFrames = 1) {
 
         var caller = new StackFrame(1 + skipFrames)?.GetMethod();
         var callerName = caller?.Name;
@@ -27,14 +25,13 @@ public class Caller
                 var prop = container.GetProperty(propName,
                     BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static);
 
-                if (callerName is not null) {
-                    callerName = propName;
-                    isProp = true;
-                }
+                callerName = propName;
+                isProp = true;
             }
         if (!isProp)
             callerName += "()";
 
         return ((callerName, isProp ? MemberTypes.Property : caller?.MemberType), (retType?.Name, retType?.FullName), (container?.Name, container?.FullName));
     }
+
 }
