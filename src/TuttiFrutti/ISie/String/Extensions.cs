@@ -19,8 +19,8 @@ internal class CultureNeutral(string seed) : ICultureNeutral
 
     public IEncodingWithGapOption EmptyOr => throw new NotImplementedException();
 
-    public bool Whitespace => new Wiz.Ripe.End.Fruit<string>(seed, str =>
-        string.Empty != str && string.IsNullOrWhiteSpace(str));
+    public bool Whitespace => new Wiz.Ripe.End.Fruit<string>(str =>
+        string.Empty != str && string.IsNullOrWhiteSpace(str)) { Seed = seed }; // ToDo: make required seed initialization
 
     public bool Grayspace => NotImplemented.Throw("reserved for the discussion: +control chars?");
 
@@ -28,5 +28,5 @@ internal class CultureNeutral(string seed) : ICultureNeutral
 
     public bool Spaces => throw new NotImplementedException();
 
-    public Encoding Ascii => new(seed);
+    public Encoding Ascii => new() { Seed = seed };
 }

@@ -36,12 +36,12 @@ public interface ITextCheck
     bool WithoutNumberInlays { get; }
 }
 
-public class Encoding(string seed) : Wiz.Fruit<string>(seed), IEncodingChecks // ToDo: enhance for Extended ASCII
+public class Encoding : Wiz.Fruit<string>, IEncodingChecks // ToDo: enhance for Extended ASCII
 {
     protected override bool Eval() =>
-        string.Empty != seed && seed.ToCharArray().Any(ch => !char.IsAscii(ch));
+        string.Empty != Seed && Seed.ToCharArray().Any(ch => !char.IsAscii(ch));
 
     public bool NoControls => And
-        (ch => !seed.ToCharArray().Any(char.IsControl));
+        (ch => !Seed.ToCharArray().Any(char.IsControl));
 
 }
