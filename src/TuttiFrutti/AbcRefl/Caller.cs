@@ -34,4 +34,16 @@ public class Caller
         return ((callerName, isProp ? MemberTypes.Property : caller?.MemberType), (retType?.Name, retType?.FullName), (container?.Name, container?.FullName));
     }
 
+    public class Outer
+    {
+        public static RepTuple Report() {
+            // skip frames till caller is null
+            throw new NotImplementedException("Report call out of current object");
+        }
+
+        public static RepTuple SkipConstructors() {
+            // skip frames while caller is .ctor
+            throw new NotImplementedException("Report call out of constructors chain");
+        }
+    }
 }
