@@ -20,7 +20,7 @@ public class Demo : Setup.Arrange
 
     [SyntaxDraft]
     public void Blank() {
-        False = string.Empty.Is().Spaces;
+        False = "".Is().Spaces;
         True = Spaces.Single.Is().Spaces;
         True = "    ".Is().Spaces;
         False = "  \n  ".Is().Spaces;

@@ -15,12 +15,13 @@ public class Demo : Setup.Arrange
         _ = "abc_123".Is().EmptyOr.Ascii;
         _ = "abc_123".Is().Ascii.NoControls;
         _ = "abc_123".Is().NullEmptyOr.Ascii.NoControls;
+
     }
 
     [Test]
     public void TestWiz() {
 
-
-        bool rootFull = "".Is().Ascii.NoControls;
+        True = "START 1".Is().Ascii.NoControls;
     }
 }
+
