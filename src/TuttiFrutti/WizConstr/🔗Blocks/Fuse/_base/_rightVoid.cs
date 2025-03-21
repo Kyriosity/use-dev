@@ -18,5 +18,5 @@ public abstract class _rightVoid<TSrc, TRes> : _core<TSrc, TRes>, INoLnkRight
     public virtual Ripe.End.Lnk_Fruit<TSrc, TRes, Lnk> Next<Lnk>(Func<TSrc, TRes> xform)
         where Lnk : fuseFn.IBase<TRes>
         =>
-            new(xform) { Seed = Seed, Prev = this }; // ToDo: BETTER ALTERNATIVE WITH INI
+            new() { Seed = Seed, Prev = this, Xform = xform }; // ToDo: BETTER ALTERNATIVE WITH INI
 }

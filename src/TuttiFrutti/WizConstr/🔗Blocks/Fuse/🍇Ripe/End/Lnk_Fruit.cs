@@ -1,7 +1,10 @@
-﻿namespace WizConstr.Blocks.Fuse.Ripe.End;
+﻿using WizConstr.Xform;
 
-public class Lnk_Fruit<TSrc, TRes, Lnk>(Func<TSrc, TRes> xform) : Fuse.Lnk_Fruit<TSrc, TRes, Lnk>
+namespace WizConstr.Blocks.Fuse.Ripe.End;
+
+public class Lnk_Fruit<TSrc, TRes, Lnk> : Fuse.Lnk_Fruit<TSrc, TRes, Lnk>, IXFormSet<TSrc, TRes>
     where Lnk : fuseFn.IBase<TRes>
 {
-    protected internal override TRes Eval() => xform(Seed);
+    protected internal override TRes Eval() => Xform(Seed);
+    public Func<TSrc, TRes> Xform { get; init; }
 }

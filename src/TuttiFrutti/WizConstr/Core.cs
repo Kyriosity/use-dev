@@ -7,4 +7,5 @@ public abstract class Core<T>
     }
 
     public T? Seed { get; init; }
+
 }
