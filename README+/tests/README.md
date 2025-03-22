@@ -10,15 +10,15 @@ This section branches from conceptual discussions of [Tests](https://github.com/
 
 ## NUnit boost
 
-NUnit is a classical reliable open source platform, but being a freeware with limited development and support craftsmen there're apparent items which we can imrpove or fis:
+NUnit is a classical reliable open source platform, but being a freeware with limited development and support craftsmen there are apparent items which we can imrpove or fis:
 
 + bulky and restrained syntax,
 + pending bugs,
 + missing calls and features.
 
-Without further ado, [Feat. Test](../../src/TuttiFrutti/FeatTest/)🧪 demonstrates what's available.
+<h4 align="center">Without further ado, <a href="../../src/TuttiFrutti/FeatTest/">Feat. Test</a>🧪 demonstrates what's available.</h4>
 
-## Supposition and posers
+## Open topics and posers
 
 ⏭️ 📂[README+](README+)
 
