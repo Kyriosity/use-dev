@@ -169,7 +169,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Techniques", "Techniques", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcCircuitry", "AbcCircuitry\AbcCircuitry.csproj", "{8CF3FE90-4561-46BE-BACA-76588D17AB91}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "🧪TestOfTest", "🧪TestOfTest", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "🧪TestOfTest♾️", "🧪TestOfTest♾️", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeatTest", "FeatTest\FeatTest.csproj", "{5A079174-BFF8-4577-8192-6620AF188AF1}"
 EndProject
