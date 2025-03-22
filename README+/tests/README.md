@@ -1,4 +1,4 @@
-# Better tests&nbsp;&nbsp;&mdash;&nbsp;&nbsp;<samp>Techniques, shorcuts and more</samp>
+# Better tests&nbsp;&nbsp;&mdash;&nbsp;&nbsp;<samp>Techniques, shortcuts and more</samp>
 
 <table align="center"><tr></tr><tr><td>
   <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/"><img alt="&nbsp;READ-WRITE meets USE-DEV" width="200px" src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/_nav/read-write_use-dev.jpg" /></a>
