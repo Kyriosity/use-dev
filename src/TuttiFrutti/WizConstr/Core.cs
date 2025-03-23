@@ -2,10 +2,5 @@
 
 public abstract class Core<T>
 {
-    internal Core() {
-        // intentionally blank
-    }
-
-    public T? Seed { get; init; }
-
+    protected internal T? Seed { get; init; }
 }

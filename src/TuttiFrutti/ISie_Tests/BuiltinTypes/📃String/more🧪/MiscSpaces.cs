@@ -1,14 +1,14 @@
 ﻿using AbcExtNUnit.Attributes.Case;
 
 namespace ISie_Tests.BuiltinTypes.String.more;
-public class SpacesMisc : Setup.Arrange
+public class MiscSpaces : Setup.Arrange
 {
-    [Many("", Spaces.Single, "       ", "   ", "                     ")]
+    [Many("", spaces.Single, "       ", "   ", "                     ")]
     public void SingleSpace(string subj) {
 
     }
 
-    [Many("", Spaces.Single, "       ", "   ", "                     ")]
+    [Many("", spaces.Single, "       ", "   ", "                     ")]
     public void AnySpaces(string subj) {
         Assert.That(subj.Is().Spaces, Is.True);
         Assert.That(subj.Is().EmptyOr.Spaces, Is.True);

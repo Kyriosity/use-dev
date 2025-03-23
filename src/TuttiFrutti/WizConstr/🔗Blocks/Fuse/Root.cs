@@ -2,14 +2,14 @@
 
 namespace WizConstr.Blocks.Fuse;
 
-public interface Root<T>
+public abstract class Root<TSrc, TRes>
 {
-    static TCore Plant<TCore>(T seed) where TCore : Core<T>, INoLnkLeft, new() {
+    public static TCore Plant<TCore>(TSrc seed) where TCore : Core<TSrc>, INoLnkLeft, new() {
         // ToDesign: propagate CIRCUITRY
         return new TCore { Seed = seed };
     }
 
-    static TFruit Plant<TFruit, TRes>(T seed, Func<T, TRes> xform) where TFruit : Core<T>, IXFormSet<T, TRes>, new() {
+    public static TFruit Plant<TFruit>(TSrc seed, Func<TSrc, TRes> xform) where TFruit : Core<TSrc>, IXFormSet<TSrc, TRes>, new() {
         return new TFruit { Seed = seed, Xform = xform };
     }
 }

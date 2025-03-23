@@ -1,4 +1,5 @@
-﻿using ISie.String.Traits;
+﻿using ISie.String.Func;
+using ISie.String.Traits;
 
 namespace ISie.Mk.blocks;
 public interface ITextual<LTR, TXT>
@@ -38,10 +39,9 @@ public interface ITextCheck
 
 public class Encoding : Wiz.Fruit<string>, IEncodingChecks // ToDo: enhance for Extended ASCII
 {
-    protected override bool Eval() =>
-        string.Empty != Seed && Seed.ToCharArray().Any(ch => !char.IsAscii(ch));
+    protected override bool Eval() => Seed is "" ? Empty.Throw() :
+        Seed.ToCharArray().Any(ch => !char.IsAscii(ch));
 
-    public bool NoControls => And
-        (ch => !Seed.ToCharArray().Any(char.IsControl));
+    public bool NoControls => And(HasNo.Controls);
 
 }

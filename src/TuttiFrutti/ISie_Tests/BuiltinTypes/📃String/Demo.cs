@@ -3,6 +3,14 @@
 public class Demo : Setup.Arrange
 {
     [Test]
+    public void IMPORTANT_EMPTY_IS_NOT_WHITESPACE() {
+        // but it is in the native method
+        True = string.IsNullOrWhiteSpace(string.Empty);
+        // ⭐ISie treats differently: 
+        False = string.Empty.Is().Whitespace;
+    }
+
+    [SyntaxDraft]
     public void Shortcuts() {
         True = NullStr.Is().NullOrEmpty;
 
@@ -21,17 +29,17 @@ public class Demo : Setup.Arrange
     [SyntaxDraft]
     public void Blank() {
         False = "".Is().Spaces;
-        True = Spaces.Single.Is().Spaces;
+        True = spaces.Single.Is().Spaces;
         True = "    ".Is().Spaces;
         False = "  \n  ".Is().Spaces;
 
         False = string.Empty.Is().SingleSpace;
-        True = Spaces.Single.Is().SingleSpace;
+        True = spaces.Single.Is().SingleSpace;
         False = "       ".Is().SingleSpace;
 
         True = "not whitespace".Is().EmptyOr.Whitespace;
 
-        True = Spaces.Single.Is().EmptyOr.Spaces;
+        True = spaces.Single.Is().EmptyOr.Spaces;
         False = "       ".Is().SingleSpace;
 
         _ = "text".Is().NullEmptyOr.Whitespace;
