@@ -1,8 +1,9 @@
 ﻿# Code construction &nbsp;&nbsp; &mdash; &nbsp;&nbsp; Wizard blocks
 
+> **This project partially answers the [builder challenge](../../../README+/techniques/README+/builders/README.md).**
+
 MERMAID
 
-This project partially answers the [builder challenge](../../../README+/techniques/README+/builders/README.md).
 
 
 <table><tr valign="top"><td width="40%"><picture align="center"><img alt="&nbsp;Mango orchard" src="../../../README+/_rsc/img/illus/SeedFruitCore-Intro.jpg" width="750px"></picture>
@@ -11,6 +12,9 @@ This project partially answers the [builder challenge](../../../README+/techniqu
 ### Horticultural glossary
 
 + **Seed** &mdash; initial value
+
+Consider zero on calculator or raw literal, kick-off meeting
+
 + **Core** &mdash; initial
 + **Fruit** &mdash; initial
 + **Ripe** &mdash; initial
