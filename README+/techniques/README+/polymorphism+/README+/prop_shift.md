@@ -1,8 +1,12 @@
 <h1 align="center"> Properties “Shifting”</h1>
 
-The best evolutionary paradigm of OOP is the direct mapping of real life things, structures, and abstractions onto code objects. 
+<table><tr><td><picture><img alt="&nbsp;fun pic of OOP" src="" /></picture></td><td>
 
-The fine-tuning on language-level traditionally concerns classes and methods while properties conceal even more potential.
+The best evolutionary paradigm of OOP is directly mapping real-life things, structures, and abstractions onto code objects. 
+ 
+</td></tr></table>
+
+Fine-tuning at the language level traditionally concerns classes and methods, while properties conceal even more potential.
 
 Let's address two independent issues:
 
@@ -10,11 +14,11 @@ READ/WRITE/INIT combinations
 
 which we will put under the umbrella term _shifting_.
 
-MAYbE MORE LATER
+Maybe MORE LATER
 
 🚧🚧🚧🚧🚧🚧🚧 ... under construction ... 🚧🚧🚧🚧🚧🚧🚧
 
-Modelling generic properties with ragged access
+Modeling generic properties with ragged access
 
 And is quite good with this but simple (otherwise it couldn't be a winning paradigm).
 
