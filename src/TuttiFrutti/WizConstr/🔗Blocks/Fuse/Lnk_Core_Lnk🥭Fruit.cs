@@ -1,6 +1,6 @@
 ﻿namespace WizConstr.Blocks.Fuse;
 public abstract class Lnk_Core_Lnk<TSrc, TRes, LnkL, LnkR>
-    : _base.RightLnk<TSrc, TRes, LnkR>, ILnkLeftRight
+    : basal.rightLnk<TSrc, TRes, LnkR>, ILnkLeftRight
     where LnkL : fuseFn.IBase<TRes> where LnkR : fuseFn.IBase<TRes>
 {
     internal override Func<TRes, TRes, TRes>? LnkLeft { get; set; } = Unpack<LnkL>();

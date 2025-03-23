@@ -1,13 +1,13 @@
-﻿namespace WizConstr.Blocks.Fuse._base;
+﻿namespace WizConstr.Blocks.Fuse.basal;
 
-public abstract class _rightVoid<TSrc, TRes> : _core<TSrc, TRes>, INoLnkRight
+public abstract class rightVoid<TSrc, TRes> : core<TSrc, TRes>, INoLnkRight
 {
     public new Blk Next<Blk>() where Blk :
-        _core<TSrc, TRes>, ILnkLeft, new()
+        core<TSrc, TRes>, ILnkLeft, new()
         =>
             base.Next<Blk>();
 
-    public virtual Blk Next<Blk, Lnk>() where Blk : _core<TSrc, TRes>, INoLnkLeft, new()
+    public virtual Blk Next<Blk, Lnk>() where Blk : core<TSrc, TRes>, INoLnkLeft, new()
         where Lnk : fuseFn.IBase<TRes> {
 
         var block = base.Next<Blk>();

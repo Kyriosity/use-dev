@@ -1,6 +1,6 @@
 ﻿namespace WizConstr.Blocks.Fuse;
 
-public abstract class Core<TSrc, TRes> : _base._rightVoid<TSrc, TRes>, INoLnkLeft;
+public abstract class Core<TSrc, TRes> : basal.rightVoid<TSrc, TRes>, INoLnkLeft;
 
 public abstract class Fruit<TSrc, TRes> : Core<TSrc, TRes>
 {

@@ -1,6 +1,6 @@
-﻿namespace WizConstr.Blocks.Fuse._base;
+﻿namespace WizConstr.Blocks.Fuse.basal;
 
-public abstract class _core<TSrc, TRes> : Blocks.Core<TSrc, TRes>
+public abstract class core<TSrc, TRes> : Blocks.Core<TSrc, TRes>
 {
 
     protected override TRes Yield() =>

@@ -1,6 +1,6 @@
 ﻿namespace WizConstr.Blocks.Fuse;
 
-public abstract class Core_Lnk<TSrc, TRes, Lnk> : _base.RightLnk<TSrc, TRes, Lnk>, ILnkRightOnly
+public abstract class Core_Lnk<TSrc, TRes, Lnk> : basal.rightLnk<TSrc, TRes, Lnk>, ILnkRightOnly
     where Lnk : fuseFn.IBase<TRes>;
 
 

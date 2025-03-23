@@ -1,11 +1,11 @@
 ﻿using Abc.Logic.Fuse;
-using WizConstr.Blocks.Fuse.Bool._base;
+using WizConstr.Blocks.Fuse.Bool.basal;
 
 namespace WizConstr.Blocks.Fuse.Bool;
 
-public abstract class Core<TSrc> : _rightVoid<TSrc>, INoLnkLeft;
+public abstract class Core<TSrc> : rightVoid<TSrc>, INoLnkLeft;
 
-public abstract class Lnk_Core<TSrc, Lnk> : _rightVoid<TSrc>, ILnkLeftOnly
+public abstract class Lnk_Core<TSrc, Lnk> : rightVoid<TSrc>, ILnkLeftOnly
     where Lnk : IBool
 {
     //internal override Func<bool, bool, bool>? LnkLeft { get; set; } = Unpack<Lnk>(); // ToDelete: CHECK IF REMOVABLE !
