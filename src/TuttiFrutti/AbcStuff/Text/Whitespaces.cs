@@ -16,8 +16,8 @@ public class Whitespaces : IConstsSource
     public class Mix : IConstsSource
     {
         public static readonly string WithCodes = $"  {Char.ParagraphSeparator}   {Char.CharacterTab}  {Char.FormFeed}  ";
-        public static readonly string WithAltSpaced = $"    {Spaces.Char.Thin}   {Spaces.Char.FourPerEm}     ";
-        public static readonly string TuttiFrutti = $" {Char.CarriageReturn}   {Spaces.Char.FourPerEm}      ";
+        public static readonly string WithAltSpaced = $"    {spaces.Char.Thin}   {spaces.Char.FourPerEm}     ";
+        public static readonly string TuttiFrutti = $" {Char.CarriageReturn}   {spaces.Char.FourPerEm}      ";
     }
 
     public class Char : IConstsSource

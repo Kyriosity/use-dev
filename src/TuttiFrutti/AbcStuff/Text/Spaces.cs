@@ -2,7 +2,7 @@
 
 namespace AbcStuff.Text;
 
-public class Spaces : IConstsSource
+public class spaces : IConstsSource
 {
     public const string Single = " ";
     public const string Double = "  ";
