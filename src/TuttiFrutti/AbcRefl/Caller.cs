@@ -9,7 +9,7 @@ public class Caller
 {
     public static RepTuple Report(byte skipFrames = 1) {
 
-        var caller = new StackFrame(1 + skipFrames)?.GetMethod();
+        var caller = new StackFrame(1 + skipFrames).GetMethod();
         var callerName = caller?.Name;
         var container = caller?.DeclaringType;
 
@@ -21,7 +21,7 @@ public class Caller
         const string propPrefix = "get_";
         if (container is not null && callerName is not null)
             if (callerName.StartsWith(propPrefix) && callerName.Length > propPrefix.Length) {
-                var propName = callerName.Substring(propPrefix.Length);
+                var propName = callerName[propPrefix.Length..];
                 var prop = container.GetProperty(propName,
                     BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static);
 
@@ -31,7 +31,10 @@ public class Caller
         if (!isProp)
             callerName += "()";
 
-        return ((callerName, isProp ? MemberTypes.Property : caller?.MemberType), (retType?.Name, retType?.FullName), (container?.Name, container?.FullName));
+        return (
+            (callerName, isProp ? MemberTypes.Property : caller?.MemberType),
+            (retType?.Name, retType?.FullName),
+            (container?.Name, container?.FullName));
     }
 
     public class Outer
