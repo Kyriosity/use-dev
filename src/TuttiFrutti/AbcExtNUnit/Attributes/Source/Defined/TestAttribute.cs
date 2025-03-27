@@ -7,7 +7,7 @@ public class TestAttribute<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11>(params 
     where T7 : IDataSource where T8 : IDataSource where T9 : IDataSource where T10 : IDataSource where T11 : IDataSource
 {
     static IEnumerable<Type> SuppliedTypes => _suppliedTypes ??
-    [.. _typeParameters.TakeWhile(x => x != _ofTypeStub)];
+                                              [.. _typeParameters.TakeWhile(x => x != _ofTypeStub)];
 
     private static readonly IEnumerable<Type>? _suppliedTypes = null;
 

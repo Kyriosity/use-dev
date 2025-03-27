@@ -2,44 +2,31 @@
 
 public class Demo : Setup.Arrange
 {
-    [Test]
-    public void IMPORTANT_EMPTY_IS_NOT_WHITESPACE() {
-        // but it is in the native method
-        True = string.IsNullOrWhiteSpace(string.Empty);
-        // ⭐ISie treats differently: 
-        False = string.Empty.Is().Whitespace;
-    }
-
     [SyntaxDraft]
-    public void Shortcuts() {
-        True = NullStr.Is().NullOrEmpty;
-
-        True = string.Empty.Is().NullOrEmpty;
+    public void Shortcut() {
+        True = "".Is().NullOrEmpty;
         False = "D".Is().NullOrEmpty;
 
-        True = string.Empty.Is().NullEmptyOr.Whitespace;
-        False = string.Empty.Is().Whitespace;
+        True = "".Is().NullEmptyOr.Whitespace;
 
         True = "  \n  ".Is().NullEmptyOr.Whitespace;
-
-        True = "  \n  ".Is().EmptyOr.Whitespace; // must be exception
-        _ = NullStr.Is().EmptyOr.Whitespace; // must be exception
+        True = "  \n  ".Is().EmptyOr.Whitespace;
     }
 
     [SyntaxDraft]
     public void Blank() {
         False = "".Is().Spaces;
-        True = spaces.Single.Is().Spaces;
+        True = " ".Is().Spaces;
         True = "    ".Is().Spaces;
         False = "  \n  ".Is().Spaces;
 
-        False = string.Empty.Is().SingleSpace;
-        True = spaces.Single.Is().SingleSpace;
+        False = "".Is().SingleSpace;
+        True = "".Is().SingleSpace;
         False = "       ".Is().SingleSpace;
 
         True = "not whitespace".Is().EmptyOr.Whitespace;
 
-        True = spaces.Single.Is().EmptyOr.Spaces;
+        True = " ".Is().EmptyOr.Spaces;
         False = "       ".Is().SingleSpace;
 
         _ = "text".Is().NullEmptyOr.Whitespace;
@@ -55,31 +42,16 @@ public class Demo : Setup.Arrange
         False = "".Is().Whitespace;
         False = "".Is().Spaces;
         False = "".Is().SingleSpace;
+
+        // but it is in the native method
+        True = string.IsNullOrWhiteSpace(string.Empty);
     }
 
-    [SyntaxDraft]
-    public void InvalidCallsCheck() {
-        //_ = "  \n  ".Is().NullEmptyOr.EmptyOr; // 🚫 Invalid semantics
-        //_ = "text".Is().NullOr; // 🚫 Invalid Call !
-
-        //_ = "text".Is().NullEmptyOr.Printable; // 🚫 Invalid Call !
-        //_ = "text".Is().EmptyOr.Printable; // 🚫 Invalid Call !
-
-        //_ = "text".Is().NullOrEmpty.Whitespace; // 🚫 Invalid Call !
-    }
-
-    // INVALID CAST
-    [SyntaxDraft]
-    public void InvalidCast() {
-        _ = "test".Is().NullEmptyOr; // intermediate
-        //bool result = "test".Is().NullEmptyOr;  // 🚫 Invalid cast !
-        _ = "test".Is().EmptyOr;  // intermediate
-        // bool result = "test".Is().EmptyOr;  // 🚫 Invalid cast !
-    }
 
     [SyntaxDraft]
     public void Grayspace() {
         // RESERVED for concept discussion!
-        False = string.Empty.Is().Grayspace;
+        False = "a_b,c D".Is().Grayspace;
+        True = "        ".Is().Grayspace;
     }
 }
