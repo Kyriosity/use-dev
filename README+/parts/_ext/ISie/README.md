@@ -1,4 +1,4 @@
-<h1 align="center">⭐&thinsp;I&thinsp;S&thinsp;i&thinsp;e&thinsp;⭐ &rarr; <code>Is</code>➕ <samp>extensions</samp></h1>
+<h1 align="center">⭐&thinsp;I&thinsp;S&thinsp;i&thinsp;e&thinsp;⭐ &rarr; <code>Is</code><sup>➕</sup> <samp>extensions</samp></h1>
 
 <table><tr valign="top"><td width="25%"><picture><img src="../../../_rsc/img/ISie.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extensions"/></picture></td><td>
 <p><b>The crossover of these two <code>C#</code> discoveries</b></p>
@@ -84,9 +84,10 @@ Source code:
 
 This feature launched 
 
-+ tongues categorization in [Abc Lingua](../../../../src/TuttiFrutti/Abc/Lingua),
-+ [Circuitry](../../../techniques/README+/circuitry) (as a pattern via techniques),
-+ [Code wizards](../../../../src/TuttiFrutti/WizConstr/README.md).
++ 🗣️&thinsp;tongues categorization in [Abc Lingua](../../../../src/TuttiFrutti/Abc/Lingua),
++ 🪫&thinsp;[Circuitry](../../../techniques/README+/circuitry) (as a pattern via techniques),
++ 🏗️&thinsp;[Code wizards](../../../../src/TuttiFrutti/WizConstr/README.md),
++ 🧪&thinsp;[Assert shortcuted to assign](../../../../src/TuttiFrutti/FeatTest/Shortcuts/Asserts)
 
 \___________\
 🔚 .. <samp>🐝🐝 <code>OR</code> ❗too 🐝</samp> ... 🌘 **2025** ... <sub>[![C#](https://custom-icon-badges.demolab.com/badge/C%23-but_for_all-orangered.svg?logo=cshrp&logoColor=white&color=turquose)](#)</sub>
