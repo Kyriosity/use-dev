@@ -17,7 +17,7 @@ Verbal, documented, and, **programmatic** communications frequently rely on titl
 - One apple may mean an electronic device too,
 - The weekly payment of `1'000` dollars has a national hue: Australian, Canadian, Jamaican, and twenty more. 
 
-Concurrent measurement systems can make matters even worse, e.g. flight height can be communicated in <i>feet</i> while cockpit variometers may show <i>meters</i>.
+Concurrent measurement systems can make matters even worse, e.g., flight height can be communicated in <i>feet</i> while cockpit variometers may show <i>meters</i>.
 
 \____________________________________________________________________________________________________ </details>
 
@@ -25,12 +25,12 @@ Not _denominated_ numbers in applications may imply a single system of categoriz
 
 Coding like `const OuterSpace_Baseline_Kelvin = 2.7` is univocal but inflexible and ugly to the object-oriented eye. As picky pros, we'd propose trailblazing syntax and features.
 
-### <code><<samp>BAIT</samp><sub>🪝</sub>></code> Mars Orbiter, or "The Empire [unit] Strikes Back"
+### <a id="mars-orbiter" /><code>&lt;<samp>BAIT</samp><sub>🪝</sub>&gt;</code> Mars Orbiter, or "The Empire [unit] Strikes Back"
 
 <details><summary><ins>&nbsp;<i>Pound-force</i> [lbf] taken for <i>Newton</i> [N] destroyed the NASA Mars Climate Observer in 1999.&nbsp;</ins></summary>
 &nbsp;
  
-NASA part of the software relied on metric data from the "contractor" (the report doesn't name the known company and neither do I). Still, the latter sent thrust in the _US Customary units_, based on the good old British **Imperial Pound**. Thus the poor
+NASA part of the software relied on metric data from the "contractor" (the report doesn't name the known company, and neither do I). Still, the latter sent thrust in the _US Customary units_, based on the good old British **Imperial Pound**. Thus the poor
 [Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter)<sup><b>w</b></sup> was put below the "survival altitude" orbit. 
 
 ```mermaid
@@ -125,9 +125,8 @@ public enum In
     poundal = 138_254_954_376, // since 1877, Absolute English system
 }
 ```
-{}
 
-And it's only one on the list of 
+And it's only one on the list of ...
 
 ## Other cases
 
@@ -183,4 +182,4 @@ This [shabby meme](https://github.com/Kyriosity/read-write/blob/main/readme%2B/p
  
 You must already know the right conclusion: only for common-zero factored units.
 
-
+... 🚧🚧🚧 WORK in PROGRESS 🚧🚧🚧 ...
