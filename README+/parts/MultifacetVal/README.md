@@ -3,27 +3,28 @@
 <p dir="rtl">?Gauges&nbsp;-<br />!<b>300</b>&nbsp;-<br />
 ?What 300&nbsp;-<br />?What gauges&nbsp;-</p>
 
- You may find the folklore right above dull but not pointless.&nbsp;&mdash; Math deals with <mark>abstract numbers</mark> (_numerus numerans_), computers operate on pure digits but not software developers and users.
+ You may find the folklore right above dull but not pointless.&nbsp;&mdash; Math deals with <mark>abstract numbers</mark> (_numerus numerans_), and computers operate on pure digits but not software developers and users.
  The "inputs" and "outputs" of software anchor to the material world, where numbers can be <mark>concrete</mark> (_numerus numeratus_) or <mark>denominated</mark> (_numerus denominatus_).
  
-Verbal, documented, and, **programmatic** communications frequently rely on titles and contexts and omit denominations/units. Shall a context wane - values may "roam" between measurement systems:
+Verbal, documented, and, **programmatic** communications frequently rely on titles and contexts and omit denominations/units. Shall a context wane - values may "roam" between denominators:
+
 <details><summary>&nbsp;<ins>&nbsp; Temperature <code>2.7</code> is&thinsp;</ins><b> .&nbsp;.&nbsp;.</b></summary>
-... <ins>the baseline of outer space in <i>Kelvin</i></ins> but in earthly <i>Celsius</i> or <i>Fahrenheit</i> a normal winter forecast (placewhere on 40° or higher latitude) .
+... <ins>the baseline of outer space in <i>Kelvin</i></ins> but in earthly <i>Celsius</i> or <i>Fahrenheit</i>    (placewhere on 40° or higher latitude) it can be a winter forecast.
 <br /><br />
             
 - A close approach of Earth to Mars is ca. `33'900'000` _miles_ but seems credible in _kilometers_ and _nmi_.
-- An unknown child's age of 7` can mean months and years.
+- A child's age of 7` can mean months and years.
 - _`Jack`_ can be family, given (not only on birth), and branded name.
-- One apple may mean an electronic device too,
-- The weekly payment of `1'000` dollars has a national hue: Australian, Canadian, Jamaican, and twenty more. 
+- The weekly payment of `1'000` dollars has a national hue: Australian, Canadian, Jamaican, and twenty more.
+- Five stars can mean observation and estimation.
 
 Concurrent measurement systems can make matters even worse, e.g., flight height can be communicated in <i>feet</i> while cockpit variometers may show <i>meters</i>.
 
-\____________________________________________________________________________________________________ </details>
+</details>
 
 Not _denominated_ numbers in applications may imply a single system of categorization (e.g. **SI** for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters.<sup>🔄️</sup>
 
-Coding like `const OuterSpace_Baseline_Kelvin = 2.7` is univocal but inflexible and ugly to the object-oriented eye. As picky pros, we'd propose trailblazing syntax and features.
+Coding like `const OuterSpace_Baseline_Kelvin = 2.7` is univocal but inflexible and ugly to the object-oriented eye. As picky pros, we will define trailblazing syntax and features.
 
 ### <a id="mars-orbiter" /><code>&lt;<samp>BAIT</samp><sub>🪝</sub>&gt;</code> Mars Orbiter, or "The Empire [unit] Strikes Back"
 
