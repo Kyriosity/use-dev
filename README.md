@@ -68,11 +68,11 @@
     </td>
                                         </tr><tr></tr><tr align="center">
     <td>
-      <a href="README+/parts/MultifacetVal/README.md"><img src="README+/_rsc/img/_nav/tiles/U-Val_200px.jpg" alt="&nbsp;Multifacet value"/></a>
+      <a href="README+/parts/MultifacetVal/README.md"><img src="README+/_rsc/img/_nav/tiles/U-Val_bw-200px.png" alt="&nbsp;Multifacet value"/></a>
       <h4>✒️&thinsp;<a href="README+/parts/MultifacetVal/README.md">MULTIFACET VALUE</a>&thinsp;🐝</h4>
     </td>
    <td>                 <!--    U N D O     --!>
-      <a href="README+/parts/Rvrs/README.md"><img src="README+/_rsc/img/_nav/tiles/UndoRedo_bw_200px.jpg" alt="&nbsp;Undo-Redo"/></a>
+      <a href="README+/parts/Rvrs/README.md"><img src="README+/_rsc/img/_nav/tiles/UndoRedo_bw_200px.png" alt="&nbsp;Undo-Redo"/></a>
       <h4>🚧&thinsp;<a href="README+/parts/Rvrs/README.md">REVERSIBLE</a>&thinsp;🚧</h4></div>
     </td>
                                  </tr><tr></tr><tr align="center">
