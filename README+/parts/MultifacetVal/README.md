@@ -1,15 +1,17 @@
-# Multifaceted Value 💠 (**Π-Val**) 
+# <samp>Multifaceted Value</samp> 💠 **Π-Val**
 
 <p dir="rtl">?Gauges&nbsp;-<br />!<b>300</b>&nbsp;-<br />
 ?What 300&nbsp;-<br />?What gauges&nbsp;-</p>
 
- You may find the folklore right above dull but not pointless.&nbsp;&mdash; Math deals with <mark>abstract numbers</mark> (_numerus numerans_), and computers operate on pure digits but not software developers and users.
- The "inputs" and "outputs" of software anchor to the material world, where numbers can be <mark>concrete</mark> (_numerus numeratus_) or <mark>denominated</mark> (_numerus denominatus_).
+ You may find the folklore right above dull but not pointless.
  
-Verbal, documented, and, **programmatic** communications frequently rely on titles and contexts and omit denominations/units. Shall a context wane - values may "roam" between denominators:
+ > **Math deals with <mark>abstract numbers</mark> (_numerus numerans_), and computers operate on pure digits but not software developers and users.
+ The "inputs" and "outputs" of software anchor to the material world, where numbers can be <mark>concrete</mark> (_numerus numeratus_) or <mark>denominated</mark> (_numerus denominatus_).**
+ 
+Verbal, documented, and **programmatic** communications frequently rely on titles and contexts and omit tags/units. Shall a context wane - values may "roam" between denominators:
 
 <details><summary>&nbsp;<ins>&nbsp; Temperature <code>2.7</code> is&thinsp;</ins><b> .&nbsp;.&nbsp;.</b></summary>
-... <ins>the baseline of outer space in <i>Kelvin</i></ins> but in earthly <i>Celsius</i> or <i>Fahrenheit</i>    (placewhere on 40° or higher latitude) it can be a winter forecast.
+... <ins>the baseline of outer space in <i>Kelvin</i></ins> but in earthly <i>Celsius</i> or <i>Fahrenheit</i> (placewhere on 40° or higher latitude) it can be a winter forecast.
 <br /><br />
             
 - A close approach of Earth to Mars is ca. `33'900'000` _miles_ but seems credible in _kilometers_ and _nmi_.
@@ -35,12 +37,19 @@ NASA part of the software relied on metric data from the "contractor" (the repor
 [Mars Climate Orbiter](https://en.wikipedia.org/wiki/Mars_Climate_Orbiter)<sup><b>w</b></sup> was put below the "survival altitude" orbit. 
 
 ```mermaid
+---
+config:
+  look: handDrawn
+  theme: neutral
+noteBkgColor: rgb(255, 175, 175)
+---
 sequenceDiagram
 participant NAV as Navigation Sofware<br />(Ground)
 participant SF as Small Forces<br />Software (Ground)
 participant SFO as Small Forces<br />Software (Spacecraft)
 participant MCO as Mars Climate<br />Orbiter
-participant M as Mars<br />(Planet)
+participant MARS
+ Note right of MARS: Red Planet
        MCO->>SFO: angular momentum!!
       SFO->>MCO: command: thrust to de-spun
       SFO->>SF: AMD with thrust in pound
@@ -52,17 +61,17 @@ rect rgb(255, 175, 175)
 Note over NAV,NAV: pound-second taken as newton-second 
 end
       NAV->>MCO: Trajectory Correction Maneuver
-      MCO--)M: approaches
-Note over MCO,M: below the estimated trajectory
-      M--xMCO: destroys
-Note over M,MCO: atmospheric stress
+      MCO--)MARS: approaches
+Note over MCO,MARS: below the estimated trajectory
+      MARS--xMCO: destroys
+Note over MARS,MCO: atmospheric stress
 destroy participant MCO
 ```
 <div dir="rtl"><sub>Source: <a href="https://sma.nasa.gov/docs/default-source/safety-messages/safetymessage-2009-08-01-themarsclimateorbitermishap.pdf?sfvrsn=eaa1ef8_4">NASA: Lost in Translation, 2009</a></sub></div>
 
 \____________________________________________________________________________________________________ </details>
 
-Our framework could save astronomical bucks:
+<details><summary><ins>&nbsp;Our framework could save astronomical bucks:&nbsp;</ins></summary>
 
 ```diff
 
@@ -96,6 +105,7 @@ OnForce(Thrust thrust) {
 
 Conversion here is trivial, and <sub><picture><img alt="&nbsp;f&thinsp;u&thinsp;n&thinsp;c&thinsp;w&thinsp;a&thinsp;r&thinsp;e&thinsp;" src="../../_rsc/img/symb/funcware/funcware-bar_16px.jpg" /></picture></sub> offers an implementation [you can test🧪](../../../src/TuttiFrutti/FuncStore.Convers.Tests/PhysMath/Mech/ForcesTests.cs).
 
+\____________________________________________________________________________________________________ </details>
 
 ### Looks good ... `</🪝>`
 
