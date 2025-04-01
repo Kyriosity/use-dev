@@ -54,7 +54,7 @@
       <h4><a href="README+/techniques/README+/circuitry/README.md">CIRCUITRY</a></h4>
      </td>
      <td>          <!--    I S i e     --!>
-      <a href="README+/parts/_ext/ISie/README.md"><img src="README+/_rsc/img/_nav/tiles/ISie_bw-200px_highlight.png" alt="&nbsp;&nbsp;⭐I&nbsp;S&thinsp;i&thinsp;e⭐&nbsp;&nbsp;&nbsp;"/></a>
+      <a href="README+/parts/_ext/ISie/README.md"><img src="README+/_rsc/img/_nav/tiles/ISie_highlight-200px.png" alt="&nbsp;&nbsp;⭐I&nbsp;S&thinsp;i&thinsp;e⭐&nbsp;&nbsp;&nbsp;"/></a>
       <h4><a href="README+/parts/_ext/ISie/README.md">Ɪ&thinsp;S&thinsp;<samp>I&thinsp;E</samp>&nbsp;&thinsp;extensions</a></h4>
      </td>
                                       </tr><tr></tr><tr align="center">
@@ -62,12 +62,12 @@
       <a href="README+/parts/AbcChrono/README.md"><img src="README+/_rsc/img/_nav/tiles/Chrono_bw-200px.jpg" alt="&nbsp;Chronology lib"/></a>
       <h4><a href="README+/parts/AbcChrono/README.md">CHRONO ABC</a></h4>
     </td>
-    <td>
-      <a href="README+/decisions/README+/think_in_tasks/README.md"><img src="README+/_rsc/img/_nav/tiles/TaskAsModel_bw-200px.jpg" alt="&nbsp;Value as promise"/></a>
+    <td>      <!--    T A S K S   a s   M O D E L     --!>
+      <a href="README+/decisions/README+/think_in_tasks/README.md"><img src="README+/_rsc/img/_nav/tiles/TaskAsModel_bw-200px.png" alt="&nbsp;&nbsp;Value as promise"/></a>
       <h4>🐝&thinsp;<a href="/README+/decisions/README+/think_in_tasks/README.md">THINKING in TASKS</a>&thinsp;⏰</h4>
     </td>
                                         </tr><tr></tr><tr align="center">
-    <td>
+    <td>               
       <a href="README+/parts/MultifacetVal/README.md"><img src="README+/_rsc/img/_nav/tiles/U-Val_bw-200px.png" alt="&nbsp;Multifacet value"/></a>
       <h4>✒️&thinsp;<a href="README+/parts/MultifacetVal/README.md">MULTIFACET VALUE</a>&thinsp;🐝</h4>
     </td>
