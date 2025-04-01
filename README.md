@@ -50,11 +50,11 @@
 </td><td> 
   <table><tr align="center">
     <td>             <!--    C I R C U I T R Y     --!>
-      <a href="README+/techniques/README+/circuitry/README.md"><img src="README+/_rsc/img/_nav/tiles/Circuitry_bw-200px.jpg" alt="&nbsp;Object-oriented Circuitry"/></a>
+      <a href="README+/techniques/README+/circuitry/README.md"><img src="README+/_rsc/img/_nav/tiles/Circuitry_bw-200px.png" alt="&nbsp;Object-oriented Circuitry"/></a>
       <h4><a href="README+/techniques/README+/circuitry/README.md">CIRCUITRY</a></h4>
      </td>
      <td>          <!--    I S i e     --!>
-      <a href="README+/parts/_ext/ISie/README.md"><img src="README+/_rsc/img/_nav/tiles/ISie_bw-200px_highlight.jpg" alt="&nbsp;&nbsp;⭐I&nbsp;S&thinsp;i&thinsp;e⭐&nbsp;&nbsp;&nbsp;"/></a>
+      <a href="README+/parts/_ext/ISie/README.md"><img src="README+/_rsc/img/_nav/tiles/ISie_bw-200px_highlight.png" alt="&nbsp;&nbsp;⭐I&nbsp;S&thinsp;i&thinsp;e⭐&nbsp;&nbsp;&nbsp;"/></a>
       <h4><a href="README+/parts/_ext/ISie/README.md">Ɪ&thinsp;S&thinsp;<samp>I&thinsp;E</samp>&nbsp;&thinsp;extensions</a></h4>
      </td>
                                       </tr><tr></tr><tr align="center">
