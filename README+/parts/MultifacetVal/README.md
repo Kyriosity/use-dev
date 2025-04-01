@@ -5,26 +5,29 @@
 
  You may find the folklore right above dull but not pointless.
  
- > **Math deals with <mark>abstract numbers</mark> (_numerus numerans_), and computers operate on pure digits but not software developers and users.
- The "inputs" and "outputs" of software anchor to the material world, where numbers can be <mark>concrete</mark> (_numerus numeratus_) or <mark>denominated</mark> (_numerus denominatus_).**
+> &nbsp;\
+> **Math deals with <mark>abstract numbers</mark>** (_numerus numerans_), **and computers operate on pure digits but not software developers and users.\
+> \
+ The "inputs" and "outputs" of software anchor to the material world, where numbers can be <mark>concrete</mark>** (_numerus numeratus_) **or <mark>denominated</mark>** (_numerus denominatus_).\
+> &nbsp;
  
 Verbal, documented, and **programmatic** communications frequently rely on titles and contexts and omit tags/units. Shall a context wane - values may "roam" between denominators:
 
 <details><summary>&nbsp;<ins>&nbsp; Temperature <code>2.7</code> is&thinsp;</ins><b> .&nbsp;.&nbsp;.</b></summary>
-... <ins>the baseline of outer space in <i>Kelvin</i></ins> but in earthly <i>Celsius</i> or <i>Fahrenheit</i> (placewhere on 40° or higher latitude) it can be a winter forecast.
+<ins>the baseline of the Universe space in <i>Kelvin</i></ins> but in  <i>Celsius</i> or <i>Fahrenheit</i> &nbsp;&mdash;&nbsp; a casual weather for many non-astronauts.
 <br /><br />
             
-- A close approach of Earth to Mars is ca. `33'900'000` _miles_ but seems credible in _kilometers_ and _nmi_.
-- A child's age of 7` can mean months and years.
-- _`Jack`_ can be family, given (not only on birth), and branded name.
+- Earth's closest approach to Mars is ca. `33'900'000` _miles_ but it seems credible in _kilometers_ and _nmi_.
+- A child's age of `7` can imply months and years.
 - The weekly payment of `1'000` dollars has a national hue: Australian, Canadian, Jamaican, and twenty more.
-- Five stars can mean observation and estimation.
-
-Concurrent measurement systems can make matters even worse, e.g., flight height can be communicated in <i>feet</i> while cockpit variometers may show <i>meters</i>.
+- _`Jack`_ can be family, given (not only on birth), and branded name.
+- Five stars can mean 🌌 a constellation and 🌟an estimation.
 
 </details>
 
-Not _denominated_ numbers in applications may imply a single system of categorization (e.g. **SI** for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters.<sup>🔄️</sup>
+Concurrent measurement systems can make matters even worse, e.g., flight height can be communicated in <i>feet</i> while cockpit variometers will show <i>meters</i>.
+
+Not _denominated_ numbers in applications may imply a single system of categorization (e.g. **SI** for physical values) and ... open wide the gate to errors, including ill-famed techno-disasters.
 
 Coding like `const OuterSpace_Baseline_Kelvin = 2.7` is univocal but inflexible and ugly to the object-oriented eye. As picky pros, we will define trailblazing syntax and features.
 
