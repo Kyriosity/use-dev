@@ -1,14 +1,14 @@
-# Chronology &mdash; Timelines &mdash; Events
+# Chronology &nbsp; &mdash; &nbsp; Timelines &nbsp; &mdash; &nbsp; Events
 
 > **Time** is the _driver_ for all and the "solvent" of everything. The former is for software and the latter for its hardware.
 
 Exact time measurement<sup>🔬</sup> and timestamping aren't an issue for regular solutions but chronology.
 
-Software of the previous millennium gave bits for dates (when bits means bits literally), thus nurturing the giant Y2K bug (and maybe [Y2038](https://en.wikipedia.org/wiki/Year_2038_problem)<sup><b>w</b></sup>).
+Software of the previous millennium gave bits for dates (when bits means bits literally), thus nurturing the giant **<samp>Y2K</samp>** bug (and maybe [Y2038](https://en.wikipedia.org/wiki/Year_2038_problem)<sup><b>w</b></sup>).
 Contemporary languages can support a vast range of past and future dates<sup>📆</sup>, but badly organize them (not intuitive and error-prone).
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>🔬</sup> <sub>Unless you need accuracy close to [physics on steroids](https://www.nobelprize.org/prizes/physics/2023/summary/).<sup>🔗</sup></sub>\
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>📆</sup> <sub>C# `DateTime`, astonishingly giving way to Java, supports only Common Era. Though there are [`Calendar`](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendar) classes to limited rescue.</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>📆</sup> <sub>C# `DateTime`, astonishingly giving way to Java, supports only the Common Era. Though there are [`Calendar`](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendar) classes to limited rescue.</sub>
 
 ## Framework - Theses
 
