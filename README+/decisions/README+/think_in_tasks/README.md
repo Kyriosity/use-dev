@@ -9,7 +9,7 @@ It treats models as snapped in a moment when every property is known and their s
 as values can be predictably (pre)set/reset, or coded in a time slot, imperceptible for users or insignificant for hardware/software clients. 
 
 <h3 align="center">However</h3>
-<table><tr valign="top"><td width="40%"><picture><img src="../../../_rsc/img/illus/TaskAsModel.jpg" alt="&nbsp;Layers delayed communication" /></picture></td><td>
+<table><tr valign="center"><td align="center" width="40%"><picture><img src="../../../_rsc/img/illus/TaskAsModel.png" alt="&nbsp;Layers delayed communication" /></picture></td><td>
 <div>Domain <b>and</b> IT realities are not always under the best of circumstances with:</div>
 <ul>
 <li>heavy or long calculations, <samp>(heavy isn't always long and vice versa)</samp></li>
@@ -26,7 +26,7 @@ as values can be predictably (pre)set/reset, or coded in a time slot, impercepti
 
 > Modern languages and frameworks grant superb multitasking and synchro tools out-of-the-box. **, Even so,**  "classical" prevalent implementation incurs perpetual "async" patching of unpredictable values for reactive experience. 
 
-Now, spice these reactive courses with `async`: you must break queues of values and calls into orchestration. To make things worse recall that besides multitasking there's multi-dispatching (that's how auto-save, or spellcheck runs).
+Now, spice these reactive courses with `async`: you must break queues of values and calls into orchestration. To make things worse, recall that besides multitasking, there's multi-dispatching (that's how auto-save or spellcheck runs).
 
 Not to forget that the statuses of properties and operations are asynchronous values too.
 
@@ -65,7 +65,7 @@ Some established techniques and tricks can still contribute to async thinking or
 
 ### Caching
 
-The most obvious and simplest to add technique. Only growing cache may concern but its size can be dramatically reduced when big parts are "hashed" and stored only once (floating window method to help). Along with easy-to-apply <samp>FIFO</samp>.
+The most obvious and simplest to add technique. Only the growing cache may concern, but its size can be dramatically reduced when big parts are "hashed" and stored only once (floating window method to help). Along with easy-to-apply <samp>FIFO</samp>.
 
 ### Laziness (not of developers)
 
@@ -81,11 +81,11 @@ private BigAndHeavy? _ram;
 \_______________
 </details>
 
-This technique looks attractive when <mark>$`(performance/hit)*probability`$</mark> is too low. Being advanced we may think of making an on-the-fly reevaluation of this formula to unleash the lazy, which implies a smart realization of the next technique - _preloading_.
+This technique looks attractive when <mark>$`(performance/hit)*probability`$</mark> is too low. Being advanced, we may think of making an on-the-fly reevaluation of this formula to unleash the lazy, which implies a smart realization of the next technique - _preloading_.
 
 #### Examples?
 
-Consider custom number sequences (relying on previous values). The first must be easy to calculate unconditionally while attributing as lazy the next ones when it's getting harder to compute. When the computer is idle, next _lazy_ number gets calculated to have a reasonable supply (say of a hundred in sequence).
+Consider custom number sequences (relying on previous values). The first must be easy to calculate unconditionally while attributing as lazy the next ones when it's getting harder to compute. When the computer is idle, the next _lazy_ number gets calculated to have a reasonable supply (say of a hundred in sequence).
 
 ### Preloading: praise and critique
 
@@ -93,10 +93,10 @@ The power and storage even of home tablets are multiprocessor<sup>⚛️</sup>, 
 
 The story has much reverted the _Lazy Loading_ - it's not crucial to delay tasks but to complete them as much as possible earlier and in the background, and then smoothly render results on demand.
 
-It doesn't matter if you "pre-load" a dozen things, of which only one will be selected by the user (e.g. a next wizard page dependent on differing paths). Compare this to maintaining gross warehouses for a single well-founded purpose: to deliver goods within a day on customer orders.
+It doesn't matter if you "pre-load" a dozen things, of which only one will be selected by the user (e.g., a next wizard page dependent on differing paths). Compare this to maintaining gross warehouses for a single well-founded purpose: to deliver goods within a day on customer orders.
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>⚛️</sup> <sub> There are at least three: main, math, and video.</sub>\
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>:video_game:</sup> <sub>Assumed: usual office, browsers, business applications, and dev environments (not high-performance servers, top games, video processing or mining).</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>:video_game:</sup> <sub>Assumed: usual office, browsers, business applications, and dev environments (not high-performance servers, top games, video processing, or mining).</sub>
 
 **Eco-harmful?** Let's consider it when most blockchain mining farms are shut down.
 
