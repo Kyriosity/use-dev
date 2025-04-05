@@ -1,4 +1,6 @@
-﻿namespace AbcDataOps.Compare;
+﻿using AbcDataOps.Text.Alter;
+
+namespace AbcDataOps.Compare;
 public class Match
 {
     public static Type? ObjectType(object subject, IEnumerable<string> matches) =>
@@ -15,7 +17,7 @@ public class Match
         var typeOfT = typeof(T);
 
         while (typeOfT.IsAssignableFrom(type)) {
-            if (matches.Any(sample => RightMatch(type.FullName, sample)))
+            if (matches.Any(sample => type.FullName.Right() == sample))
                 return type;
 
             type = type?.BaseType;
@@ -24,12 +26,4 @@ public class Match
         return null;
     }
 
-    private static bool RightMatch(string name, string sample) {
-        var len = sample.Length;
-        if (name.Length < len)
-            return false;
-
-        var subject = name.Substring(name.Length - len, len);
-        return subject.Equals(sample, StringComparison.Ordinal);
-    }
 }
