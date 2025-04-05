@@ -1,5 +1,4 @@
-﻿using AbcAlt.Pass;
-using Funcware.Numeric.SameType.InUnit.Custom;
+﻿using Funcware.Numeric.SameType.InUnit.Custom;
 using MeasUnits.Phys.Temperature;
 
 namespace MeasFuncware.Convert.Temperature;

@@ -1,2 +1,1 @@
-﻿global using Abc.Logic;
-global using System.Text.RegularExpressions;
+﻿global using System.Text.RegularExpressions;

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AbcCommu\AbcCommu.csproj" />
+    <ProjectReference Include="..\Abc\Abc.csproj" />
   </ItemGroup>
 
   <ItemGroup>

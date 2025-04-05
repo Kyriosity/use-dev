@@ -1,4 +1,5 @@
 ﻿namespace AbcDataOps.Text.Func;
+
 public class Is
 {
     public static readonly Func<string, bool> Spaces = subj =>
