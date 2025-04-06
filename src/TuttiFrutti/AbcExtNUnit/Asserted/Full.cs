@@ -1,5 +1,5 @@
 ﻿namespace AbcExtNUnit.Asserted;
-public class Full : Exceptions
+public class Full : Errors
 {
 
 }

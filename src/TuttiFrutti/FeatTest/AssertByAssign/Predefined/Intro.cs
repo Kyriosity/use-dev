@@ -1,7 +1,7 @@
 ﻿using AbcExtNUnit.Attributes.Directive;
 
-namespace FeatTest.Shortcuts.Asserts;
-public class AssertOnAssign : AbcExtNUnit.Asserted.Full
+namespace FeatTest.AssertByAssign.Predefined;
+public class Intro : Basal
 {
     [SyntaxDemo]
     public void Idea() {
@@ -14,18 +14,18 @@ public class AssertOnAssign : AbcExtNUnit.Asserted.Full
 
     [Test]
     public void Predefined_Demo() {
-        //Null = ReturnNothing(true);
-        //Null = ReturnNothing(false); // will fail
+        Null = ReturnNothing(true);
+        Null = ReturnNothing(false); // will fail
 
-        //NotNull = "definitely not null";
-        //NotNull = NullStr; // will fail
+        NotNull = "definitely not null";
+        NotNull = NullStr; // will fail
 
-        //var arg = 2;
-        //True = TruthValueFunction(arg);
-        //False = TruthValueFunction(arg); // will fail
-        //NotNull = TruthValueFunction(arg);
+        var arg = 2;
+        True = TruthValueFunction(arg);
+        False = TruthValueFunction(arg); // will fail
+        NotNull = TruthValueFunction(arg);
 
-        //False = 2 * 2 == 5;
+        False = 2 * 2 == 5;
 
         Zero = 125 * 0;
         NonZero = 125 / 5;
