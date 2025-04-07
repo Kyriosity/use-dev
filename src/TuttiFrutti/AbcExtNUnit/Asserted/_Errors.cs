@@ -43,21 +43,26 @@ public class Errors : Variable
     }
 
     private static IEnumerable<string> NormalizeParameters(LambdaExpression expression, string callerArg) {
-        var parameters = expression.Parameters.Select(x =>
-            x.ToString().Trim()).ToList();
+        var parameters = expression.Parameters.Select(x => x.ToString().Trim()).ToList();
 
         if (parameters.Any(string.IsNullOrWhiteSpace)) // NOTE: don't throw empty / argument exception, which may be expected ...
             TestFixture.Throw($"\"{callerArg}\" submitted whitespace parameters: {parameters.Count(string.IsNullOrWhiteSpace)}"); // ... but testbed specific
 
-        parameters = parameters.Select(Normalize).ToList();
+        parameters = parameters.Select(x => x.Replace("__", ".")).ToList();
+        EnsureExceptionSuffixOption(parameters);
 
-        var duplicates = parameters.GroupBy(x => x).Where(g => g.Count() > 1);
+        var duplicates = parameters.GroupBy(x => x).Where(g => g.Count() > 1).ToList();
         if (duplicates.Any())
             TestFixture.Throw($"Duplicated arguments: {string.Join(',', duplicates.Select(y => y.Key).ToList())}");
 
         return parameters;
     }
 
-    private static string Normalize(string source) =>
-         source.Replace("__", ".").SuffixIfNone("Exception");
+    private static void EnsureExceptionSuffixOption(List<string> source) {
+        const string option = "Exception";
+        var nonSuffixed = source.Where(x => x.Right() != option).ToList();
+
+        if (nonSuffixed.Any())
+            source.AddRange(nonSuffixed.Select(x => x + option));
+    }
 }
