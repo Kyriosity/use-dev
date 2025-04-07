@@ -38,7 +38,7 @@
 |&thinsp;-&thinsp;- <a href="README+/tests/README+/prog_tests-cut_feeds.md">F&thinsp;e&thinsp;e&thinsp;d&nbsp;&nbsp;&nbsp;e&thinsp;x&thinsp;p&thinsp;a&thinsp;n&thinsp;s&thinsp;i&thinsp;on&nbsp;&nbsp;&nbsp;c&thinsp;u&thinsp;t</a><br />
 |&thinsp;-&thinsp;- <a href="README+/tests/README+/unit_test-gradual_assert.md">G&thinsp;r&thinsp;a&thinsp;d&thinsp;u&thinsp;a&thinsp;l&nbsp;&nbsp;&nbsp;a&thinsp;s&thinsp;s&thinsp;e&thinsp;r&thinsp;t</a><br />
 |&thinsp;-&thinsp;- <a href="README+/tests/README+/val_tests-tolerance.md">F&thinsp;i&thinsp;n&thinsp;e&thinsp;r&nbsp;&nbsp;&nbsp;t&thinsp;o&thinsp;l&thinsp;e&thinsp;r&thinsp;a&thinsp;n&thinsp;c&thinsp;e</a><br />
-|&thinsp;-&thinsp;- <a href="README+/tests/README+/prog_tests-semantics.md">S&thinsp;e&thinsp;m&thinsp;a&thinsp;n&thinsp;t&thinsp;i&thinsp;c&nbsp;&nbsp;&nbsp;p&thinsp;o&thinsp;s&thinsp;e&thinsp;r&thinsp;s</a><br />
+|&thinsp;-&thinsp;- <a href="README+/tests/README+/prog_tests-posers.md">P&thinsp;o&thinsp;s&thinsp;e&thinsp;r&thinsp;s</a><br />
 <br/><!--           PARTS -->
 ◾ <b>P&thinsp;A&thinsp;R&thinsp;T&thinsp;S</b>&thinsp;📦<br />
 |&thinsp;- <a href="README+/parts/_ext/ISie/README.md"><b>Ɪ&thinsp;S&thinsp;i&thinsp;e</b></a> extensions<br />
@@ -49,22 +49,22 @@
 |&thinsp;- 🚧<a href="README+/parts/Rvrs">Undo/Redo</a> (Reversible)<br />
 </td><td> 
   <table><tr align="center">
-    <td>             <!--    C I R C U I T R Y     --!>
-      <a href="README+/techniques/README+/circuitry/README.md"><img src="README+/_rsc/img/_nav/tiles/Circuitry_bw-200px.png" alt="&nbsp;Object-oriented Circuitry"/></a>
-      <h4><a href="README+/techniques/README+/circuitry/README.md">CIRCUITRY</a></h4>
-     </td>
      <td>          <!--    I S i e     --!>
       <a href="README+/parts/_ext/ISie/README.md"><img src="README+/_rsc/img/_nav/tiles/ISie_highlight-200px.png" alt="&nbsp;&nbsp;⭐I&nbsp;S&thinsp;i&thinsp;e⭐&nbsp;&nbsp;&nbsp;"/></a>
       <h4><a href="README+/parts/_ext/ISie/README.md">Ɪ&thinsp;S&thinsp;<samp>I&thinsp;E</samp>&nbsp;&thinsp;extensions</a></h4>
      </td>
+    <td>             <!--    C I R C U I T R Y     --!>
+      <a href="README+/techniques/README+/circuitry/README.md"><img src="README+/_rsc/img/_nav/tiles/Circuitry_bw-200px.png" alt="&nbsp;Object-oriented Circuitry"/></a>
+      <h4><a href="README+/techniques/README+/circuitry/README.md">CIRCUITRY</a></h4>
+     </td>
                                       </tr><tr></tr><tr align="center">
+    <td>      <!--    B U I L D E R   W I Z A R D    B L O C K S     --!>
+      <a href="src/TuttiFrutti/WizConstr/README.md"><img src="README+/_rsc/img/_nav/tiles/ConstrWiz_bw-200px.png" alt="&nbsp;&nbsp;Wizard of Code Blocks" /></a>
+      <h4><a href="src/TuttiFrutti/WizConstr/README.md">BUILDER WIZARD</a></h4>
+    </td>
     <td>             <!--    C H R O N O     --!>
       <a href="README+/parts/AbcChrono/README.md"><img src="README+/_rsc/img/_nav/tiles/Chrono_bw-200px.jpg" alt="&nbsp;Chronology lib"/></a>
-      <h4><a href="README+/parts/AbcChrono/README.md">CHRONO ABC</a></h4>
-    </td>
-    <td>      <!--    T A S K S   a s   M O D E L     --!>
-      <a href="README+/decisions/README+/think_in_tasks/README.md"><img src="README+/_rsc/img/_nav/tiles/TaskAsModel_bw-200px.png" alt="&nbsp;&nbsp;Value as promise"/></a>
-      <h4>🐝&thinsp;<a href="/README+/decisions/README+/think_in_tasks/README.md">THINKING in TASKS</a>&thinsp;⏰</h4>
+      <h4><a href="README+/parts/AbcChrono/README.md">ABC CHRONO</a></h4>
     </td>
                                         </tr><tr></tr><tr align="center">
     <td>               
@@ -76,6 +76,10 @@
       <h4>🚧&thinsp;<a href="README+/parts/Rvrs/README.md">REVERSIBLE</a>&thinsp;🚧</h4></div>
     </td>
                                  </tr><tr></tr><tr align="center">
+                    <td>      <!--    T A S K S   a s   M O D E L     --!>
+      <a href="README+/decisions/README+/think_in_tasks/README.md"><img src="README+/_rsc/img/_nav/tiles/TaskAsModel_bw-200px.png" alt="&nbsp;&nbsp;Value as promise"/></a>
+      <h4>🐝&thinsp;<a href="/README+/decisions/README+/think_in_tasks/README.md">THINKING in TASKS</a>&thinsp;⏰</h4>
+    </td>
     <td>                                                  <!--    R E A D - W R I T E     --!>
       <a href="https://github.com/Kyriosity/read-write/blob/main/README+/pencraft/README+/essays/README.md"><img src="README+/_rsc/img/_nav/tiles/read-write_200px.jpg" alt="&nbsp;READ-WRITE repo" title="&nbsp;Collection in the read-write repository"/></a>
        <h4>⬅️&thinsp;<a href="https://github.com/Kyriosity/read-write/blob/main/README+/pencraft/README+/essays/README.md">E&thinsp;S&thinsp;S&thinsp;A&thinsp;Y&thinsp;S</a></h4>

@@ -1,4 +1,12 @@
-# Programmatic tests&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Semantic posers
+# <samp>Programmatic tests</samp> &nbsp;&nbsp;&mdash;&nbsp;&nbsp; Posers
+
+## Technical
+
+### Separating framework and subject errors
+
+Test fixtures can throw intentionally or not.
+
+And the worst case: 🚧🚧🚧
 
 ## Valid syntax but wrong logic
 
@@ -8,7 +16,7 @@ Debunking "silent" logical errors that don't affect success paths is **much more
 
 Most language paradigms (such as casting, access modifiers, and inheritance) and constructs won't allow sophisms (valid code that will throw run-time syntax errors). 
 
-However, custom chain calls and builders are error-prone to exposing repeating or illogical members. The next _NUnit_ call will run but throw the exception:\
+However, custom chain calls and builders are prone to exposing repeating or illogical members. The next _NUnit_ call will run but throw the exception:\
 &nbsp;&nbsp;&nbsp;&nbsp;<code>Assert.That(1, Is.EqualTo(1).<mark>Within</mark>(1).<mark>Within</mark>(1).<mark>Percent</mark>.<mark>Ulps</mark>)</code>
 
 Consider a contribution to NUnit to prevent such statements.<sup>🙋</sup> Which tests will we attach in the commit?
