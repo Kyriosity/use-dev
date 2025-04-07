@@ -15,7 +15,7 @@ public static class TestSource
             return false;
         }
 
-        rows = rec.Select(x => new object[] {
+        rows = rec.Select(x => new[] {
             x.leftVal, x.leftUnit, x.rightVal, x.rightUnit, x.note, source.name, source.delta })
             .ToArray();
 

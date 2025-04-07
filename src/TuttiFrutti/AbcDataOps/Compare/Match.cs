@@ -6,7 +6,6 @@ public class Match
     public static Type? ObjectType(object subject, IEnumerable<string> matches) =>
         ObjectType<object>(subject, matches);
 
-
     public static Type? ClassHierarchy(Type? type, IList<string> matches) =>
         ClassHierarchy<object>(type, matches);
 
@@ -17,13 +16,13 @@ public class Match
         var typeOfT = typeof(T);
 
         while (typeOfT.IsAssignableFrom(type)) {
-            if (matches.Any(sample => type.FullName.Right() == sample))
+            if (matches.Any(sample => type.
+                    FullName != null && type.FullName.Right() == sample))
                 return type;
 
-            type = type?.BaseType;
+            type = type.BaseType;
         }
 
         return null;
     }
-
 }
