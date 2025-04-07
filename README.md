@@ -49,22 +49,22 @@
 |&thinsp;- 🚧<a href="README+/parts/Rvrs">Undo/Redo</a> (Reversible)<br />
 </td><td> 
   <table><tr align="center">
-    <td>             <!--    C I R C U I T R Y     --!>
-      <a href="README+/techniques/README+/circuitry/README.md"><img src="README+/_rsc/img/_nav/tiles/Circuitry_bw-200px.png" alt="&nbsp;Object-oriented Circuitry"/></a>
-      <h4><a href="README+/techniques/README+/circuitry/README.md">CIRCUITRY</a></h4>
-     </td>
      <td>          <!--    I S i e     --!>
       <a href="README+/parts/_ext/ISie/README.md"><img src="README+/_rsc/img/_nav/tiles/ISie_highlight-200px.png" alt="&nbsp;&nbsp;⭐I&nbsp;S&thinsp;i&thinsp;e⭐&nbsp;&nbsp;&nbsp;"/></a>
       <h4><a href="README+/parts/_ext/ISie/README.md">Ɪ&thinsp;S&thinsp;<samp>I&thinsp;E</samp>&nbsp;&thinsp;extensions</a></h4>
      </td>
+    <td>             <!--    C I R C U I T R Y     --!>
+      <a href="README+/techniques/README+/circuitry/README.md"><img src="README+/_rsc/img/_nav/tiles/Circuitry_bw-200px.png" alt="&nbsp;Object-oriented Circuitry"/></a>
+      <h4><a href="README+/techniques/README+/circuitry/README.md">CIRCUITRY</a></h4>
+     </td>
                                       </tr><tr></tr><tr align="center">
+    <td>      <!--    B U I L D E R   W I Z A R D    B L O C K S     --!>
+      <a href="src/TuttiFrutti/WizConstr/README.md"><img src="README+/_rsc/img/_nav/tiles/ConstrWiz_bw-200px.png" alt="&nbsp;&nbsp;Wizard of Code Blocks" /></a>
+      <h4><a href="src/TuttiFrutti/WizConstr/README.md">BUILDER WIZARD</a></h4>
+    </td>
     <td>             <!--    C H R O N O     --!>
       <a href="README+/parts/AbcChrono/README.md"><img src="README+/_rsc/img/_nav/tiles/Chrono_bw-200px.jpg" alt="&nbsp;Chronology lib"/></a>
-      <h4><a href="README+/parts/AbcChrono/README.md">CHRONO ABC</a></h4>
-    </td>
-    <td>      <!--    T A S K S   a s   M O D E L     --!>
-      <a href="README+/decisions/README+/think_in_tasks/README.md"><img src="README+/_rsc/img/_nav/tiles/TaskAsModel_bw-200px.png" alt="&nbsp;&nbsp;Value as promise"/></a>
-      <h4>🐝&thinsp;<a href="/README+/decisions/README+/think_in_tasks/README.md">THINKING in TASKS</a>&thinsp;⏰</h4>
+      <h4><a href="README+/parts/AbcChrono/README.md">ABC CHRONO</a></h4>
     </td>
                                         </tr><tr></tr><tr align="center">
     <td>               
@@ -76,6 +76,10 @@
       <h4>🚧&thinsp;<a href="README+/parts/Rvrs/README.md">REVERSIBLE</a>&thinsp;🚧</h4></div>
     </td>
                                  </tr><tr></tr><tr align="center">
+                    <td>      <!--    T A S K S   a s   M O D E L     --!>
+      <a href="README+/decisions/README+/think_in_tasks/README.md"><img src="README+/_rsc/img/_nav/tiles/TaskAsModel_bw-200px.png" alt="&nbsp;&nbsp;Value as promise"/></a>
+      <h4>🐝&thinsp;<a href="/README+/decisions/README+/think_in_tasks/README.md">THINKING in TASKS</a>&thinsp;⏰</h4>
+    </td>
     <td>                                                  <!--    R E A D - W R I T E     --!>
       <a href="https://github.com/Kyriosity/read-write/blob/main/README+/pencraft/README+/essays/README.md"><img src="README+/_rsc/img/_nav/tiles/read-write_200px.jpg" alt="&nbsp;READ-WRITE repo" title="&nbsp;Collection in the read-write repository"/></a>
        <h4>⬅️&thinsp;<a href="https://github.com/Kyriosity/read-write/blob/main/README+/pencraft/README+/essays/README.md">E&thinsp;S&thinsp;S&thinsp;A&thinsp;Y&thinsp;S</a></h4>
