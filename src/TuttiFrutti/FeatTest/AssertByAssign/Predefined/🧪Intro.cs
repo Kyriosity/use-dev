@@ -1,17 +1,6 @@
-﻿using AbcExtNUnit.Attributes.Directive;
-
-namespace FeatTest.AssertByAssign.Predefined;
+﻿namespace FeatTest.AssertByAssign.Predefined;
 public class Intro : Basal
 {
-    [SyntaxDemo]
-    public void Idea() {
-        // descriptive, meaningful but long
-        Assert.That(TruthValueFunction("important argument"), Is.True);
-
-        // dubious but shorter with emphasized subjects 
-        True = TruthValueFunction("important argument");
-    }
-
     [Test]
     public void Predefined_Demo() {
         Null = ReturnNothing(true);
@@ -37,9 +26,4 @@ public class Intro : Basal
 
     public void Exceptions() {
     }
-
-    private static bool TruthValueFunction(int seed) => true;
-    private static bool TruthValueFunction(string seed) => "" != seed;
-
-    private static bool? ReturnNothing(bool yes) => yes ? null : yes;
 }

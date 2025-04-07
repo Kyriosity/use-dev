@@ -2,8 +2,9 @@
 
 using AbcExtNUnit.Attributes.Directive;
 
-namespace FeatTest.AssertByAssign;
-public class AssertOnAssign_Var : Basal
+
+namespace FeatTest.AssertByAssign.Vars;
+public class Intro : Basal
 {
     [SyntaxDemo]
     public void Numbers() {

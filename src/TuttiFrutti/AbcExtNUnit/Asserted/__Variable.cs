@@ -4,13 +4,13 @@ public class Variable : Strings
 {
     // Tribute to and mix of FORTRAN and ALGOL68 - https://en.wikipedia.org/wiki/Relational_operator#cite_note-6
 
-    public Dictionary<KeyWrap, Socket> Eq = new();
+    public Dictionary<KeyWrap, Mediator> Eq = new();
 
-    public Dictionary<KeyWrap, Socket> NE = new();
-    public Dictionary<KeyWrap, Socket> Gt = new();
-    public Dictionary<KeyWrap, Socket> Lt = new();
-    public Dictionary<KeyWrap, Socket> GE = new();
-    public Dictionary<KeyWrap, Socket> LE = new();
+    public Dictionary<KeyWrap, Mediator> NE = new();
+    public Dictionary<KeyWrap, Mediator> Gt = new();
+    public Dictionary<KeyWrap, Mediator> Lt = new();
+    public Dictionary<KeyWrap, Mediator> GE = new();
+    public Dictionary<KeyWrap, Mediator> LE = new();
 
     // ToDesign:
     // - Multiple values
@@ -19,12 +19,12 @@ public class Variable : Strings
     // - Custom func
 }
 
-public class Socket // ToDesign: name !
+public class Mediator // ToDesign: name !
 {
-    public static implicit operator Socket(int assigned) {
+    public static implicit operator Mediator(int assigned) {
         // GET CURRENT KEY ?
 
-        return new Socket();
+        return new Mediator();
     }
 }
 

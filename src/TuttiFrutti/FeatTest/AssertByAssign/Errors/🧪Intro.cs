@@ -27,7 +27,7 @@ public class Intro : Basal
     }
 
     [Test]
-    public void PropsThrow() {
+    public void PropertiesThatThrow() {
         Error = FieldAccessException => Dummy.ErrorGetter;
         Error = Exception => Dummy.ErrorGetter; // will work but generalization is a bad practice
         //Error = Exception => Dummy.Ok; // will fail
@@ -38,8 +38,6 @@ public class Intro : Basal
         var wrap = () => Dummy.SetFail = "set to cause exception";
         Error = NotImplementedException => wrap();
     }
-
-
 
     [Test]
     public void NonExistingException() {

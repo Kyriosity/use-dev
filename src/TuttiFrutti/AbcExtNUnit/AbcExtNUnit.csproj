@@ -28,8 +28,4 @@
     <ProjectReference Include="..\AbcCommu\AbcCommu.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="⚙️setup\" />
-  </ItemGroup>
-
 </Project>

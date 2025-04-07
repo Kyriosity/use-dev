@@ -1,7 +1,8 @@
-﻿namespace FeatTest.AssertByAssign;
+﻿namespace FeatTest.setup;
 public abstract class Basal : AbcExtNUnit.Asserted.Full
 {
     internal TestClass Dummy = new();
+
     protected static int DivideBy(int divisor) => 5 / divisor;
 
     protected void Increment(byte arg) {
@@ -17,21 +18,8 @@ public abstract class Basal : AbcExtNUnit.Asserted.Full
 
     protected void InvalidAction(int arg) => throw new InvalidOperationException("for test purposes only");
 
-}
+    protected static bool TruthValueFunction(int seed) => true;
+    protected static bool TruthValueFunction(string seed) => "" != seed;
 
-public class TestClass
-{
-    internal bool ThrowNotReturnIf(bool doThrow)
-        => doThrow ? throw new ArgumentException($"{doThrow}") : doThrow;
-
-    public bool Ok => true;
-
-    public bool ErrorGetter {
-        get => throw new FieldAccessException("for demo purposes only");
-        set { }
-    }
-    public string SetFail {
-        get => "CANT SET THIS";
-        set => throw new NotImplementedException("FOR DEMO PURPOSES");
-    }
+    protected static bool? ReturnNothing(bool yes) => yes ? null : yes;
 }

@@ -1,10 +1,11 @@
-﻿using AbcRefl;
-// ReSharper disable InconsistentNaming
-
+﻿// ReSharper disable InconsistentNaming
 namespace AbcExtNUnit.Asserted;
 
 public class Predefined
 {
+    protected static dynamic ERR_STUB =>
+        InvalidOperation.Throw($"Getter can't be defined for <{Caller.Report().caller.name}>");
+
     protected virtual bool? False { get => false; set => Assert.That(value, Is.False); }
 
     protected virtual bool? True { get => true; set => Assert.That(value, Is.False); }
@@ -19,9 +20,6 @@ public class Predefined
         get => ERR_STUB;
         set => Assert.That(value, Is.Not.Null);
     }
-
-    protected static dynamic ERR_STUB =>
-        InvalidOperation.Throw($"Getter can't be defined for <{Caller.Report().caller.name}>");
 
     protected static (string subject, string expected, string digest) Parse(LambdaExpression expression) {
         var subject = expression.Body.ToString()
@@ -52,20 +50,5 @@ public class Predefined
 
         return (subject, expected, $"\"{subject}\"=>⚡{expected}⚡: ");
     }
-
-    // Invoke(value(FeatTest.AssertByAssign.AssertOnAssign_Err+<>c__DisplayClass3_0).wrap)
-    // FeatTest.AssertByAssign.AssertOnAssign_Err+<>c__DisplayClass3_0).wrap)
-
-    // FUNC:
-    // DivideByZeroException => Convert(DivideBy(0), Object)
-    // Convert(DivideBy(0), Object)
-
-    // SUB:
-    // InvalidOperationException => value(FeatTest.AssertByAssign.AssertOnAssign_Err).InvalidAction(5)
-    // value(FeatTest.AssertByAssign.AssertOnAssign_Err).InvalidAction(5)
-
-    // PROP:
-    // FieldAccessException => Convert(value(FeatTest.AssertByAssign.AssertOnAssign_Err).Dummy.ErrorGetter, Object)
-    // Convert(value(FeatTest.AssertByAssign.AssertOnAssign_Err).Dummy.ErrorGetter, Object)
 }
 

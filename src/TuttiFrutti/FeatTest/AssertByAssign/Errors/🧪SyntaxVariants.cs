@@ -1,4 +1,6 @@
-﻿namespace FeatTest.AssertByAssign.Errors;
+﻿using AbcCommu.Errors.Argument;
+
+namespace FeatTest.AssertByAssign.Errors;
 public class SyntaxVariants : Basal
 {
     [Test]
@@ -17,6 +19,13 @@ public class SyntaxVariants : Basal
     public void QualifyFullOrPartialNamespace() {
         // double underscore to prevent collisions
         Error = System__FieldAccessException => Dummy.ErrorGetter;
+
+        var wrap = (string arg) => {
+            DuplicatedArgument.Throw("for demo only");
+            return true;
+        };
+        Error = AbcCommu__Errors__Argument__DuplicatedArgument => wrap("test it");
+
 
         // AbcCommu.Errors.Argument.DuplicatedArgument
     }
