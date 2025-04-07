@@ -1,9 +1,13 @@
 # Tests *featuring* tests
 
-## Assert by assign 
+## Shorter attributes
 
-This is experimantal syntax on questionable backend.
+## Variable-like data sources 
 
-The idea is not only to shorten syntax but to release the subject of test from the parentheses.
+## EXPERIMENTAL: Assert by assign 
+
+This is experimantal syntax on questionable premises.
+
+The idea is not [only](https://youtu.be/U3P6BzP5JHA?feature=shared) to shorten syntax but to release the subject of test from the parentheses.
 
 :end:
