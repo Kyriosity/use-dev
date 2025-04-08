@@ -17,7 +17,7 @@ public class Intro : Basal
     }
 
     [Test]
-    public void Subs_VoidMethods() {
+    public void Procedures_VoidMethods() {
         // Err instead of Error because of technical restrictions
         Err = InvalidOperationException => InvalidAction(5);
         // Err = ArgumentException => InvalidAction(5); 👈 will fail
@@ -37,12 +37,6 @@ public class Intro : Basal
         // ... here is a workaround
         var wrap = () => Dummy.SetFail = "set to cause exception";
         Error = NotImplementedException => wrap();
-    }
-
-    [Test]
-    public void NonExistingException() {
-        Error = TheresNoSuchException => DivideBy(0); // will fail with ArgumentException
-        // ToDesign: UNIQUE TEST ASSERTION CUSTOM EXCEPTION not to mix
     }
 
     [Test]

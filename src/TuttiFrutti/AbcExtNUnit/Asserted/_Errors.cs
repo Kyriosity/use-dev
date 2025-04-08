@@ -1,8 +1,6 @@
 ﻿namespace AbcExtNUnit.Asserted;
 public class Errors : Variable
 {
-    //public virtual Expression<Func<object, object>> OkOrErr;
-
     public virtual Expression<Func<object, object>> Error {
         get => ERR_STUB;
         set => Check(value.Compile(), value);
@@ -60,9 +58,8 @@ public class Errors : Variable
 
     private static void EnsureExceptionSuffixOption(List<string> source) {
         const string option = "Exception";
-        var nonSuffixed = source.Where(x => x.Right() != option).ToList();
 
-        if (nonSuffixed.Any())
-            source.AddRange(nonSuffixed.Select(x => x + option));
+        var nonSuffixed = source.Where(x => x.Right() != option).ToList();
+        source.AddRange(nonSuffixed.Select(x => x + option));
     }
 }

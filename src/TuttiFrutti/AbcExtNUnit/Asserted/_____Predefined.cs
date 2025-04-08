@@ -50,5 +50,6 @@ public class Predefined
 
         return (subject, expected, $"\"{subject}\"=>⚡{expected}⚡: ");
     }
+
 }
 

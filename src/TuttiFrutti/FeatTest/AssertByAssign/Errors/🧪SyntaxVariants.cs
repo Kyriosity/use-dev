@@ -25,8 +25,5 @@ public class SyntaxVariants : Basal
             return true;
         };
         Error = AbcCommu__Errors__Argument__DuplicatedArgument => wrap("test it");
-
-
-        // AbcCommu.Errors.Argument.DuplicatedArgument
     }
 }
