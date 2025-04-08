@@ -1,4 +1,4 @@
-# Guidelines &mdash; Communcation &mdash; Errors
+# Guidelines &nbsp;&mdash;&nbsp; Communcation &nbsp;&mdash;&nbsp; Errors
 
 ## Limitations
 
@@ -22,8 +22,8 @@ They can "**stub**" calls or serve as bookmarks for work-in-progress, and other 
 <ul>
  <li>Users get fake UI actions enabled.</li>
  <li>Actions pop ugly error message boxes (the last thing after a crash users love to see).</li>
- <li>APIs ans services provide ghost methods. (What's worse, they may fail silently.) </li>
- <li>Requests, which just worked with these or those parameters, fail with others.</li>
+ <li>APIs and services provide ghost methods. (What's worse, they may fail silently.) </li>
+ <li>Requests that just worked with these or those parameters fail with others.</li>
 </ul>
 </td></tr></table>
 
