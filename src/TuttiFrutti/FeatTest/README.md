@@ -4,10 +4,13 @@
 
 ## Variable-like data sources 
 
-## EXPERIMENTAL: Assert by assign 
+Automatic discovery of datasource
 
-This is experimantal syntax on questionable premises.
+## EXPERIMENTAL: Assert by assign<a id="assert-by-assign" />
 
-The idea is not [only](https://youtu.be/U3P6BzP5JHA?feature=shared) to shorten syntax but to release the subject of test from the parentheses.
+This is experimental syntax on questionable premises.
 
-:end:
+The idea is not only to shorten syntax but to release the subject of the test from the parentheses.
+
+\___________\
+🔚 2025
