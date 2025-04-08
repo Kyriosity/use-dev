@@ -1,3 +1,3 @@
 ﻿namespace ISie_Tests.Setup;
 
-public abstract class Arrange : AbcExtNUnit.Asserted.Full;
+public abstract class Arrange : AbcExtNUnit.Asserted.plusErrors;

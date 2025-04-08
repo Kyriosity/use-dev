@@ -1,6 +1,6 @@
 ﻿// ReSharper disable InconsistentNaming
 namespace AbcExtNUnit.Asserted;
-public class Variable : Strings
+public abstract class plusVars : plusNumbers
 {
     // Tribute to and mix of FORTRAN and ALGOL68 - https://en.wikipedia.org/wiki/Relational_operator#cite_note-6
 
@@ -17,6 +17,8 @@ public class Variable : Strings
     // - Range
     // - Compare
     // - Custom func
+
+    // COUNT Count.EQ[1] = 
 }
 
 public class Mediator // ToDesign: name !

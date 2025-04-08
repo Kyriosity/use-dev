@@ -1,5 +1,5 @@
 ﻿namespace FeatTest.setup;
-public abstract class Basal : AbcExtNUnit.Asserted.Full
+public abstract class Basal : AbcExtNUnit.Asserted.plusNumbers
 {
     internal TestClass Dummy = new();
 
@@ -22,4 +22,6 @@ public abstract class Basal : AbcExtNUnit.Asserted.Full
     protected static bool TruthValueFunction(string seed) => "" != seed;
 
     protected static bool? ReturnNothing(bool yes) => yes ? null : yes;
+
+    protected T IdentityMap<T>(T arg) => arg;
 }

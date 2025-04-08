@@ -26,14 +26,24 @@ public class Demo : Basal
     }
 
     [SyntaxDemo]
+    public void EmptyOrNot() {
+        Assert.That(IdentityMap(""), Is.Not.Empty);
+        NotEmpty = IdentityMap("");
+
+        var blank = new List<int>();
+        Assert.That(blank, Is.Empty);
+        NotEmpty = blank;
+    }
+
+    [SyntaxDemo]
     public void Variables() { // ALGOL68/Fortran fashion
-        Eq[-5] = -5;
-        NE[1] = 1;
+        //Eq[-5] = -5;
+        //NE[1] = 1;
 
-        Gt[7] = 10;
-        GE[7] = 15;
+        //Gt[7] = 10;
+        //GE[7] = 15;
 
-        LE[1] = 1;
-        Lt[1] = 2;
+        //LE[1] = 1;
+        //Lt[1] = 2;
     }
 }

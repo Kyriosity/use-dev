@@ -1,6 +1,6 @@
 ﻿namespace AbcExtNUnit.Asserted;
 
-public class Numbers : Predefined
+public abstract class plusNumbers : plusErrors
 {
     protected double Zero {
         get => 0; set => Assert.That(value, Is.Zero);

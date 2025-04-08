@@ -1,10 +1,21 @@
 ﻿// ReSharper disable InconsistentNaming
+
 namespace AbcExtNUnit.Asserted;
 
-public class Predefined
+public abstract class Basal
 {
-    protected static dynamic ERR_STUB =>
-        InvalidOperation.Throw($"Getter can't be defined for <{Caller.Report().caller.name}>");
+    protected const string? NullStr = null;
+
+    public dynamic Empty {
+        get => ERR_STUB;
+        set => Assert.That(value, Is.Empty);
+    }
+
+    public dynamic NotEmpty {
+        get => string.Empty;
+        set => Assert.That(value, Is.Not.Empty);
+    }
+
 
     protected virtual bool? False { get => false; set => Assert.That(value, Is.False); }
 
@@ -20,6 +31,9 @@ public class Predefined
         get => ERR_STUB;
         set => Assert.That(value, Is.Not.Null);
     }
+
+    protected static dynamic ERR_STUB =>
+        InvalidOperation.Throw($"Getter can't be defined for <{Caller.Report().caller.name}>");
 
     protected static (string subject, string expected, string digest) Parse(LambdaExpression expression) {
         var subject = expression.Body.ToString()
