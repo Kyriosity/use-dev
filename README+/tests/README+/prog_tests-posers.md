@@ -1,16 +1,27 @@
 # <samp>Programmatic tests</samp> &nbsp;&nbsp;&mdash;&nbsp;&nbsp; Posers
 
-## Technical
+<h1 align="center">Testing facilities</h1>
 
-### Separating framework and subject errors
+## Separating framework and subject errors and bugs
 
-Test fixtures can throw intentionally or not.
+Testbeds and fixtures can throw _things_ intentionally or not. 
+
+Intentionally when wrong conditions are met or misuse occurs &mdash; for such cases, it's obvious to define specific exceptions.
+
+For errors and bugs, you wouldn't write separate test projects but try to make them as sound as possible. Other guidelines are:
+
++ Max. focus and best practices
++ "Patch" utilities with CATCH
+
 
 And the worst case: 🚧🚧🚧
 
+
+<h1 align="center">Syntax</h1>
+
 ## Valid syntax but wrong logic
 
-Debunking "silent" logical errors that don't affect success paths is **much more important** than the discovery of explicit errors (<s>users</s> testers will do &mdash; sorry for a dense gag).
+> Debunking "silent" logical errors that don't affect success paths is **much more important** than the discovery of explicit errors (<s>users</s> testers will do &mdash; sorry for a dense gag).
 
 ### <a id="non-comp-calls">Excluding wrong calls
 
