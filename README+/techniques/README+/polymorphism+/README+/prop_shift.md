@@ -1,12 +1,12 @@
 <h1 align="center"><samp>Polymorphism<sup>➕</sup></samp> &nbsp; &mdash; &nbsp; Properties “Shifting”, or T-R/W Modelling</h1>
 
-<table><tr><td><picture><img alt="&nbsp;Shape shifter pic" title="The catman as shape shifter species" 
+<table><tr><td><picture><img alt="&nbsp;Shape shifter pic" title="The Catman of Paris as&#013;&#010;a shape shifter species" 
  src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/snap/movies/1946.TheCatmanOfParis-poster_frag.jpg" /></picture></td><td>
 
-The best evolutionary paradigm of OOP is directly mapping real-life things or ideas, structures, and their abstractions onto code objects. 
+The best evolutionary paradigm of OOP is directly mapping real-life things or abstractions,  their structures, and collections onto code objects. 
 
-Implementing OOP paradigms, each language will offer less or more specific means and techniques to fine-tune or expand them. 
-Next we will bundle disparate **`C#`** techniques for "properties shifting".
+Any object-oriented language will offer not only common paradigms but specific means and techniques to fine-tune or expand them. 
+Next, we will bundle disparate **`C#`** techniques for _properties shifting_.
 
 </td></tr></table>
 
@@ -15,20 +15,20 @@ Next we will bundle disparate **`C#`** techniques for "properties shifting".
 mindmap
     props)"`**T-R/W** 
 MODELLING`"(
-      T["`TYPE parametrization`"]
+      T["`GENERIC parametrization`"]
 
-      EQ("`**ASSIGN EVERYTHING**
+      EQ("`**ASSIGN overload**
 implicit operators will do the job.*`")
 
       RW("`**READ-WRITE**
 varying get|_init_|set`")
 
       DYN{{ ̶ ̶D̶Y̶N̶A̶M̶I̶C̶
-something to welcomed and to be replaced with other techniques}}
+something unwelcomed and to be replaced with other techniques}}
 
 ```
 
-* <sub>While your job is to define these operators</sub>
+<p align="right">* <sub>While your job is to define these operators</sub></p>
 
 Fine-tuning at the language level traditionally concerns classes and methods, while properties conceal even more potential.
 
