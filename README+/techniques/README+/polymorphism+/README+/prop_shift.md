@@ -3,11 +3,10 @@
 <table><tr><td><picture><img alt="&nbsp;Shape shifter pic" title="The catman as shape shifter species" 
  src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/snap/movies/1946.TheCatmanOfParis-poster_frag.jpg" /></picture></td><td>
 
-The best evolutionary paradigm of OOP is directly mapping real-life things, structures, and abstractions onto code objects. 
-
+The best evolutionary paradigm of OOP is directly mapping real-life things or ideas, structures, and their abstractions onto code objects. 
 
 Implementing OOP paradigms, each language will offer less or more specific means and techniques to fine-tune or expand them. 
-Here we will discuss miscellaneous `**C#**` techniques to bundle with "properties shifting" staple.
+Next we will bundle disparate **`C#`** techniques for "properties shifting".
 
 </td></tr></table>
 
@@ -16,13 +15,16 @@ Here we will discuss miscellaneous `**C#**` techniques to bundle with "propertie
 mindmap
     props)"`**T-R/W** 
 MODELLING`"(
-      id2["`TYPE parametrization`"]
+      T["`TYPE parametrization`"]
+
       EQ("`**ASSIGN EVERYTHING**
 implicit operators will do the job.*`")
+
       RW("`**READ-WRITE**
 varying get|_init_|set`")
-      DYN{{"`<s>DYNAMIC</s>
-not recommended`"}}
+
+      DYN{{ ̶ ̶D̶Y̶N̶A̶M̶I̶C̶
+something to welcomed and to be replaced with other techniques}}
 
 ```
 
