@@ -3,10 +3,11 @@
 <table><tr><td><picture><img alt="&nbsp;Shape shifter pic" title="The Catman of Paris as&#013;&#010;a shape shifter species" 
  src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/snap/movies/1946.TheCatmanOfParis-poster_frag.jpg" /></picture></td><td>
 
-The best evolutionary paradigm of OOP is directly mapping real-life things or abstractions,  their structures, and collections onto code objects. 
+> **The best evolutionary paradigm of OOP is directly mapping real-life things or abstractions,  their structures, and collections onto code objects.**
 
-Any object-oriented language will offer not only common paradigms but specific means and techniques to fine-tune or expand them. 
-Next, we will bundle disparate **`C#`** techniques for _properties shifting_.
+Object-oriented languages offer common paradigms with specific means and techniques to fine-tune or expand them.
+
+Such customization traditionally involves classes and methods, while properties conceal even more potential. Next, we will bundle disparate **`C#`** techniques for _properties shifting_.
 
 </td></tr></table>
 
@@ -34,21 +35,56 @@ something unwelcome and to be replaced with other techniques}}
 
 ```
 
-<p align="right">* <sub>While your job is to define these operators</sub></p>
+<p align="right">* <sub>While your job is to define these operators.</sub><br />
+** <sub>More techniques can be added later.</sub></p>
 
-Fine-tuning at the language level traditionally concerns classes and methods, while properties conceal even more potential.
+Let's keep a _**book**_ as a convenient sample of our survey. It has a title, author(s), ID(s), publishing agent, year and tongue, and other traits. 
+If some of them fluctuate, as proposed below, then the inheritance approach will break on combinatory explosion.
 
-Let's address two independent issues:
+```mermaid
+classDiagram
+  direction RL
+  class Book {
+    title : string
+    tongues: Tongue
+  }
+  class Person{
+    -id : int
+    -name : string
+  }
+  class Organization{
+    -id : int
+    -name : string
+  }
+  Book "1" --o "1-n" Person : authored
+  Book "1" --o "1" Organization : published
 
-READ/WRITE/INIT combinations
+  style Student fill:#bbf,stroke:#333,stroke-width:4px
+```
 
-which we will put under the umbrella term _shifting_.
+## Read-write ragged properties
 
-Maybe MORE LATER
+The first solution will be to have a 
 
-🚧🚧🚧🚧🚧🚧🚧 ... under construction ... 🚧🚧🚧🚧🚧🚧🚧
+Create new()
+   all fields are editable 
+Present
+
+Edit
+   Summary, status, person info,
+
+
+Consider that there must be read-only book views
+
+Summary open for edit.
+
+## Assign operator overloading
+
+## Generic parametrization
 
 Modeling generic properties with ragged access
+
+Different ISBN formats or even no ISBN.
 
 And is quite good with this but simple (otherwise it couldn't be a winning paradigm).
 
@@ -82,7 +118,7 @@ The set of items is quite usual and fixed: Title, ISBN, genre, years written, fi
 
 > :exclamation: This is not REPLACEMENT of FIRM interfaces
 
-## Realization
+## Appendix. Realization 
 
 We can't escape making the number of interfaces, which equals the required combinations, but the technique matters.
 
