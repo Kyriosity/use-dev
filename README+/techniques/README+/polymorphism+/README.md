@@ -11,9 +11,10 @@ Vague <span title="&nbsp;&thinsp; Greek:&#013;&#010&nbsp;πολύ&nbsp;&nbsp;&md
 + **name sharing** &mdash; [ad hoc] method overriding/overloading,
 + _others_ &mdash; some of which we want to discuss next:\
 |&thinsp;-&thinsp;- [T-R/W Modelling](README+/prop_shift.md) (Properties _shifting_)\
-|&thinsp;-&thinsp;- _dynamic_ / reflection in lieu of inheritance\
+|&thinsp;-&thinsp;- _dynamic_<sup>❗</sup> code generation / reflection in lieu of inheritance\
 |&thinsp;-&thinsp;- 🐝 _more_ ⌛
 
 \___________\
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <sup>❗</sup> <sub>It's not type-loose casting to dynamic objects.</sub>\
 🔚 2025
 
