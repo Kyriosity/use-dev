@@ -13,18 +13,24 @@ Next, we will bundle disparate **`C#`** techniques for _properties shifting_.
 ```mermaid
 
 mindmap
-    props)"`**T-R/W** 
-MODELLING`"(
-      T["`GENERIC parametrization`"]
+    props)"`**PROPERTIES** 
+SHIFTING`"(
+      T["`**GENERIC**
+parametrization`"]
 
       EQ("`**ASSIGN overload**
+#0010;
 implicit operators will do the job.*`")
 
       RW("`**READ-WRITE**
-varying get|_init_|set`")
+#0010;
+combinations of
+get|_init_|set`")
 
       DYN{{ ̶ ̶D̶Y̶N̶A̶M̶I̶C̶
-something unwelcomed and to be replaced with other techniques}}
+cast override
+#0010;
+something unwelcome and to be replaced with other techniques}}
 
 ```
 
