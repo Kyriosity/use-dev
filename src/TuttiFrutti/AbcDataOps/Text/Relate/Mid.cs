@@ -1,7 +1,7 @@
 ﻿namespace AbcDataOps.Text.Relate;
-public class Mediator
+public class Mid
 {
-    internal Mediator(bool leftNotRight, string source, StringComparison comparison) {
+    internal Mid(bool leftNotRight, string source, StringComparison comparison) {
         _leftNotRight = leftNotRight;
         _source = source;
         _comparison = comparison;
@@ -10,8 +10,8 @@ public class Mediator
     private readonly string _source;
     private readonly StringComparison _comparison;
 
-    public static bool operator ==(Mediator obj, string operand) => Match(obj._leftNotRight, obj._source, operand, obj._comparison);
-    public static bool operator !=(Mediator obj, string operand) => !Match(obj._leftNotRight, obj._source, operand, obj._comparison);
+    public static bool operator ==(Mid obj, string operand) => Match(obj._leftNotRight, obj._source, operand, obj._comparison);
+    public static bool operator !=(Mid obj, string operand) => !Match(obj._leftNotRight, obj._source, operand, obj._comparison);
 
 
     private static bool Match(bool leftNotRight, string whole, string part, StringComparison comparison) {
