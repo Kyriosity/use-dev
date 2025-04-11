@@ -1,4 +1,4 @@
- <h1 align="center">OOP&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Polymorphism&nbsp;&nbsp;&mdash;&nbsp;&nbsp;<i>expanded</i></h1>
+ <h1 align="center">OOP and Polymorphism&nbsp;&nbsp;&mdash;&nbsp;&nbsp;<i>expanded</i></h1>
 
 Two of the four pillars beneath object-oriented programming are plain: <mark>_encapsulation_</mark> and <mark>_inheritance_</mark>, &mdash; you can't misinterpret both bald-faced terms.
 
@@ -10,10 +10,11 @@ Vague <span title="&nbsp;&thinsp; Greek:&#013;&#010&nbsp;πολύ&nbsp;&nbsp;&md
 + **parametric** &mdash; as generics in C++, Python, Java, or C#,
 + **name sharing** &mdash; [ad hoc] method overriding/overloading,
 + _others_ &mdash; some of which we want to discuss next:\
-|&thinsp;-&thinsp;- [Properties _shifting_](README+/prop_shift.md)\
-|&thinsp;-&thinsp;- _dynamic_ / reflection in lieu of inheritance\
+|&thinsp;-&thinsp;- [T-R/W Modelling](README+/prop_shift.md) (Properties _shifting_)\
+|&thinsp;-&thinsp;- _dynamic_<sup>❗</sup> code generation / reflection in lieu of inheritance\
 |&thinsp;-&thinsp;- 🐝 _more_ ⌛
 
 \___________\
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <sup>❗</sup> <sub>It's not type-loose casting to dynamic objects.</sub>\
 🔚 2025
 
