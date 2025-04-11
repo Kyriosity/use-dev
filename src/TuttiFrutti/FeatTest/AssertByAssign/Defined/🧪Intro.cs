@@ -1,10 +1,12 @@
-﻿namespace FeatTest.AssertByAssign.Predefined;
+﻿namespace FeatTest.AssertByAssign.Defined;
+
 public class Intro : Basal
 {
 #if DEBUG
     [Test]
 #endif
     public void Predefined_Demo() {
+
         Null = ReturnNothing(true);
         Null = ReturnNothing(false); // 👈 will fail
 

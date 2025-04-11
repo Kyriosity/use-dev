@@ -1,5 +1,7 @@
-﻿namespace AbcExtNUnit.Asserted;
-public abstract class plusErrors : Basal
+﻿using AbcExtNUnit.AssertOnAssign;
+
+namespace AbcExtNUnit.Asserted;
+public abstract class Defined_Errors : Defined
 {
     public virtual Expression<Func<object, object>> Error {
         get => ERR_STUB;

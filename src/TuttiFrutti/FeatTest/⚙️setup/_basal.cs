@@ -1,5 +1,5 @@
 ﻿namespace FeatTest.setup;
-public abstract class Basal : AbcExtNUnit.Asserted.plusNumbers
+public abstract class Basal : AbcExtNUnit.AssertOnAssign.Defined_Errors_Vars
 {
     internal TestClass Dummy = new();
 

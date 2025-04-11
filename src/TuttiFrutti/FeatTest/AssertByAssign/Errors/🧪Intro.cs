@@ -10,7 +10,7 @@ public class Intro : Basal
         Error = ArithmeticException => DivideBy(0);
         Error = SystemException => DivideBy(0); // for demo only, bad practice of generalizing exceptions
 
-        //Error = ArgumentException => DivideBy(0); 👈 test will fail
+        // Error = ArgumentException => DivideBy(0); 👈 test will fail
 
         Error = ArgumentException => Dummy.ThrowNotReturnIf(true);
         // Error = ArgumentException => ThrowNotReturnIf(false); 👈 will fail
@@ -46,11 +46,5 @@ public class Intro : Basal
 
         OkOrErr = OverflowException => Increment(byte.MaxValue);
         OkOrErr = OverflowException => Increment(5);
-
     }
-
-
-    // ToDiscussAndDesign: more than one type of exception possible
-    // Error = ExceptionA, ExceptionB, ..
-    //
 }
