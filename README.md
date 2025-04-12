@@ -28,7 +28,7 @@
 ◾ <b>C&thinsp;L&thinsp;A&thinsp;Y</b><br />
 |&thinsp;- Exception wrappers &nbsp;<a href="src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪<br />
 |&thinsp;- Extensions/shortcuts<br />
-|&thinsp;- 🚧Models<br />
+|&thinsp;- 🚧Models on T-R/W<br />
 |&thinsp;- Motley heap <a href="src/TuttiFrutti/AbcStructTests/Heaps"><i>tests</i></a>🧪<br />
 |&thinsp;- <b>W&thinsp;P&thinsp;F</b><br />
 |&thinsp;-&thinsp;- <a href="README+/snippets/wpf/bool2viz_improved.md">Bool-Vis. converter</a><sup>improved</sup><br />
@@ -59,8 +59,8 @@
      </td>
                                       </tr><tr></tr><tr align="center">
     <td>      <!--    B U I L D E R   W I Z A R D    B L O C K S     --!>
-      <a href="src/TuttiFrutti/WizConstr/README.md"><img src="README+/_rsc/img/_nav/tiles/ConstrWiz_bw-200px.png" alt="&nbsp;&nbsp;Wizard of Code Blocks" /></a>
-      <h4><a href="src/TuttiFrutti/WizConstr/README.md">BUILDER WIZARD</a></h4>
+      <a href="src/TuttiFrutti/WizConstr/README.md"><img src="README+/_rsc/img/_nav/tiles/ConstrWiz-deco_bw-200px.png" alt="&nbsp;&nbsp;Wizard of Code Blocks" /></a>
+      <h4><a href="src/TuttiFrutti/WizConstr/README.md">BUILDER-WIZARD</a></h4>
     </td>
     <td>             <!--    C H R O N O     --!>
       <a href="README+/parts/AbcChrono/README.md"><img src="README+/_rsc/img/_nav/tiles/Chrono_bw-200px.jpg" alt="&nbsp;Chronology lib"/></a>
