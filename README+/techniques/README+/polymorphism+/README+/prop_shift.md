@@ -95,6 +95,10 @@ partial class Book<TId> where TId : ISBN
    TId Id;
    ..............
 }
+
+interface ISBN_10 : ISBN { ... }
+interface ISBN_13 : ISBN { ... }
+interface ISBN_UK : ISBN { ... }
 ```
 
 + [**IBook**](https://github.com/Kyriosity/use-dev/blob/main/src/TuttiFrutti/AbcModels/Library/IBook.cs) written in  [AbcModels](https://github.com/Kyriosity/use-dev/blob/main/src/TuttiFrutti/AbcModels/) shows parametrization with casting parameters.
@@ -118,15 +122,15 @@ Sample implementation can or shall be based on the previous `<T>`-technique as i
 If previous techniques deal with compatible (casted/inherited) interfaces, the overloaded `=` allows to cast non-castable. 
 Technically not, but logically compatible models will require this technique. As well, it can be particularly useful for _foreign_ entities, which you can't "cross-interface".
 
-## Conclusion
+## Wrap-up
 
 These techniques allow the creation of fluctuating but compatible models. It's not for security/access limitations but to make the models flexible and prevent accidental changes of non-relevant parts.
 
 ## Appendix. Realization ideas
 
-The easiest way is to have the "full open" class or few and render them through the set of interfaces. Or dynamice code generation, which is now much more simplier with Roslyn.
+The easiest way is to have the "full open" class or few and render them through the set of interfaces. Or dynamic code generation &mdash; now much more facilitated by Roslyn.
 
-We can't escape making the number of interfaces, which equals the required combinations, but the technique matters. In too vast scenarios, they could be auto-generated (e.g., T4 templates).
+We can't escape making the number of interfaces, which equals the required combinations, but the technique matters. In too explosive scenarios, they could be auto-generated (e.g., T4 templates).
 
 \___________\
-🌘 2023-2025 .. image credit: the poster fragment of "The Catman of Paris", 1946, dir. Lesley Selander
+🌘 2023-2025 &nbsp; ... &nbsp; (image credit for shape shifter: the poster fragment of "The Catman of Paris", 1946, dir. Lesley Selander)
