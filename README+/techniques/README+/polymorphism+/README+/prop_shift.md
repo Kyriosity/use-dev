@@ -39,22 +39,31 @@ something unwelcome and to be replaced with other techniques}}
 ** <sub>More techniques can be added later.</sub></p>
 
 Let's keep a _**book**_ as a convenient sample of our survey. It has a title, author(s), ID(s), publishing agent, year and tongue, and other traits. 
-If some of them fluctuate, as proposed below, then the inheritance approach will break on combinatory explosion.
+If some of them _shift_, as proposed below, then the inheritance approach will break on combinatory explosion.
 
 ```mermaid
 classDiagram
   direction RL
   class Book {
     title : string
-    tongues: Tongue
+    id: ISBN
+    tongues: Tongue[]
+    abstract: Media
+    status: Status
+    ...
   }
   class Person{
-    -id : int
-    -name : string
+    id : int
+    name : Name
+    birth: Date
+    nationality: Country[]
+    ...
   }
   class Organization{
-    -id : int
-    -name : string
+    id : int
+    name : Name
+    location : Location[]
+    ...
   }
   Book "1" --o "1-n" Person : authored
   Book "1" --o "1" Organization : published
@@ -62,7 +71,23 @@ classDiagram
   style Student fill:#bbf,stroke:#333,stroke-width:4px
 ```
 
-## Read-write ragged properties
+## Generic properties (`<T>`-Properties)
+
+Properties can't be generic like methods, but class generics can specify their _tuned_ type. This can be useful for selecting "fluctuating" model traits.
+
+For example, there are two formats of ISBN or none; the author's birth can be known as an exact date, but for Homer, it's _circa_ 8th century BCE. 
+
+Book authors may have dissimilar name patterns (even the Western can differ). 
+An abstract can be some plain text or reference to an audio snippet.
+
+```csharp
+partial class Book<TId> Book where TId : ISBN
+{
+   TId Id;
+}
+```
+
+## Read-write ragged properties (R/W-Properties)
 
 The first solution will be to have a 
 
