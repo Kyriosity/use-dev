@@ -4,6 +4,7 @@ public abstract class Exception<Exc>(string? message = "", Exception? inner = nu
 
     where Exc : Exception
 {
+
     public static dynamic Throw(string message, Exception? inner = null, [ArgExpr(nameof(message))] string _ = argEx)
         => throw New(message, inner);
 

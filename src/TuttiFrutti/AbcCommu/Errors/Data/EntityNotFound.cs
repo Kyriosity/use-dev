@@ -1,4 +1,5 @@
 ﻿namespace AbcCommu.Errors.Data;
 
-public class EntityNotFound(string message)
-    : Exception<EntityNotFound>(message);
+public class EntityNotFound(string message) :
+    Exception<EntityNotFound>(message),
+    IHasAmbiguousSignature;
