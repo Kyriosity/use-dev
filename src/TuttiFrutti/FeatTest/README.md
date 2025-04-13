@@ -12,19 +12,14 @@ This project presents _prêt-à-porter_ testing goodies already running in test/
 
 <h2 align="center">Variable-like data sources</h2>
 
-NUnit provides dynamic data sources but in quite a surplus fashion, and requiring much Repeat Yourself.
+Because of C# limitations, NUnit may specify only constants and literals in attributes. 
+The boilerplate and verbosity of variable/dynamic (run-time) datasources may be annoying and involve much _Repeat Yourself_.
 
-Automatic discovery of datasource
+The alternative in [DataOutsourcing](DataOutsourcing) must be shorter, more explicit, and with some auto-discovery. 
 
-And look hot they are already running in ...
+👆 You may extend the technique for less or more specific custom formats, deriving from `IDataSource`, or even implement sophisticated cases like [convert 🧪tests](../FuncStore.Convers.Tests) of 
+<sub><picture><img alt="&nbsp;Funcware" src="../../../README+/_rsc/img/symb/funcware/funcware-bar_16px.jpg" title="Conversion functions"/></picture></sub>.
 
-It's better once to try and see how it runs in available test projects
-
-LINK REQUIRED !
-
-INFO: this is a feature opened for extension
-
-SIMILAR APPROACH IS USED in FUNCWARE.
 
 <h2 align="center">Assert-by-assign <a id="assert-by-assign" /></h2>
 
