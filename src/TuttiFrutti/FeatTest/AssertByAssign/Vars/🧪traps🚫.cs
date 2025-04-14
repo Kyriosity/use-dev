@@ -4,13 +4,14 @@ public class Traps : Basal
 #if DEBUG
     [Test]
 #endif
-    public void NullMustBeTyped() {
+    public void NullMustBeTypeSpecific() {
         int? nulledWhole = null;
         double? nulledFloat = null;
 
-        Eq[1] = nulledWhole; // ✅
-        Eq[1] = nulledFloat; // ✅
+        Eq[null] = nulledWhole; // ✅
+        Eq[null] = nulledFloat; // ✅
 
-        Eq[1] = null; // ❌👈 must throw fixture exception
+        Eq[1] = null; // ❌👈 will not run the check but will not throw fixture exception unless next check following
+        Eq[1] = 1;
     }
 }

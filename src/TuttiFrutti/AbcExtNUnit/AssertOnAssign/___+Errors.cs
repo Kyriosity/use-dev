@@ -1,4 +1,5 @@
-﻿using AbcExtNUnit.AssertOnAssign;
+﻿using AbcCommu.Errors.Data;
+using AbcExtNUnit.AssertOnAssign;
 
 namespace AbcExtNUnit.Asserted;
 public abstract class Defined_Errors : Defined
@@ -46,14 +47,14 @@ public abstract class Defined_Errors : Defined
         var parameters = expression.Parameters.Select(x => x.ToString().Trim()).ToList();
 
         if (parameters.Any(string.IsNullOrWhiteSpace)) // NOTE: don't throw empty / argument exception, which may be expected ...
-            TestFixture.Throw($"\"{callerArg}\" submitted whitespace parameters: {parameters.Count(string.IsNullOrWhiteSpace)}"); // ... but testbed specific
+            FixtureError.Throw($"\"{callerArg}\" submitted whitespace parameters: {parameters.Count(string.IsNullOrWhiteSpace)}"); // ... but testbed specific
 
         parameters = parameters.Select(x => x.Replace("__", ".")).ToList();
         EnsureExceptionSuffixOption(parameters);
 
         var duplicates = parameters.GroupBy(x => x).Where(g => g.Count() > 1).ToList();
         if (duplicates.Any())
-            TestFixture.Throw($"Duplicated arguments: {string.Join(',', duplicates.Select(y => y.Key).ToList())}");
+            FixtureError.Throw($"Duplicated arguments: {string.Join(',', duplicates.Select(y => y.Key).ToList())}");
 
         return parameters;
     }
