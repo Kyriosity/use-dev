@@ -6,7 +6,7 @@ namespace AbcExtNUnit.AssertOnAssign;
 public abstract class Defined_Errors_Vars : Asserted.Defined_Errors
 {
     // Tribute to and mix of FORTRAN and ALGOL68 - https://en.wikipedia.org/wiki/Relational_operator#cite_note-6
-    public readonly Dictionary<Mid<TMidKey>, Mid<IEqual>> Eq = [];
+    public readonly Dictionary<Mid<TMidKey>?, Mid<IEqual>> Eq = [];
     public readonly Dictionary<Mid<TMidKey>, Mid<INotEqual>?> Not = []; // derogation of .NE but better
     public readonly Dictionary<Mid<TMidKey>, Mid<IGreater>?> Gt = [];
     public readonly Dictionary<Mid<TMidKey>, Mid<ILesser>?> Lt = [];
@@ -60,15 +60,21 @@ internal class Proc<T>
             Semaphore.Valued = true;
             _right = value;
         }
-
-        // ⚠️ this is a draft implementation for demo only
+        // ⚠️ 
+        // ⚒️ this is a dirty draft implementation for demo only
+        // ⚠️ 
         if (Semaphore.Keyed && Semaphore.Valued) {
             Semaphore.Reset();
-            if (typeof(IEqual).IsAssignableFrom(typeOfT))
+            if (typeof(IEqual).IsAssignableFrom(typeOfT)) {
                 if (!_right.Equals(_expected))
                     Assertion.Throw($"{Caller.Report(3).caller.name}: {_right} not equals {_expected}");
-                else
-                    FixtureError.Throw($"{Caller.Report(2).caller.name}: op still not supported: {typeOfT}");
+            }
+            else if (typeof(INotEqual).IsAssignableFrom(typeOfT)) {
+                if (_right.Equals(_expected))
+                    Assertion.Throw($"{Caller.Report(3).caller.name}: {_right} not equals {_expected}");
+            }
+            else
+                FixtureError.Throw($"{Caller.Report(2).caller.name}: op still not supported: {typeOfT}");
         }
     }
 }

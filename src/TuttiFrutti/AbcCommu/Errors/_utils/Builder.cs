@@ -26,4 +26,3 @@ internal static class Builder
 }
 
 public interface IHasAmbiguousSignature;
-
