@@ -1,8 +1,9 @@
-﻿namespace AbcExtNUnit.AssertOnAssign;
+﻿
+namespace AbcExtNUnit.AssertOnAssign;
 public abstract class Setup
 {
     protected static dynamic ERR_STUB =>
-    InvalidOperation.Throw($"Getter can't be defined for <{Caller.Report().caller.name}>");
+    InvalidOperation.Throw($"Getter can't be defined for <{Caller.Digest}>");
 
     protected static (string subject, string expected, string digest) Parse(LambdaExpression expression) {
         var subject = expression.Body.ToString()

@@ -1,5 +1,4 @@
 ﻿using AbcRefl.Scripting;
-using System.Reflection;
 
 namespace AbcRefl.Implementation;
 public class Method

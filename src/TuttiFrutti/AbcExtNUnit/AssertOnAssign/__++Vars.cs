@@ -28,7 +28,6 @@ public abstract class Defined_Errors_Vars : Asserted.Defined_Errors
 public abstract class TMidKey
 {
     internal static readonly Type _type = typeof(TMidKey);
-
 }
 
 public class Mid<T>
@@ -47,9 +46,6 @@ internal class Proc<T>
     private static T _right;
 
     internal static void Report<P>(T value) {
-
-
-        var env = Caller.Report(2); // ToDo: for debug only
         var typeOfT = typeof(P);
 
         if (TMidKey._type.IsAssignableFrom(typeOfT)) {
@@ -61,20 +57,21 @@ internal class Proc<T>
             _right = value;
         }
         // ⚠️ 
-        // ⚒️ this is a dirty draft implementation for demo only
+        // This is a dirty draft implementation for demo only
+        // ⚒️ The subject of developing as Task with circuitry when - passing test project found.
         // ⚠️ 
         if (Semaphore.Keyed && Semaphore.Valued) {
             Semaphore.Reset();
             if (typeof(IEqual).IsAssignableFrom(typeOfT)) {
                 if (!_right.Equals(_expected))
-                    Assertion.Throw($"{Caller.Report(3).caller.name}: {_right} not equals {_expected}");
+                    Assertion.Throw($"{Caller.Digest}: {_right} not equals {_expected}");
             }
             else if (typeof(INotEqual).IsAssignableFrom(typeOfT)) {
                 if (_right.Equals(_expected))
-                    Assertion.Throw($"{Caller.Report(3).caller.name}: {_right} not equals {_expected}");
+                    Assertion.Throw($"{Caller.Digest}: {_right} not equals {_expected}");
             }
             else
-                FixtureError.Throw($"{Caller.Report(2).caller.name}: op still not supported: {typeOfT}");
+                FixtureError.Throw($"{Caller.Digest}: op still not supported: {typeOfT}");
         }
     }
 }
@@ -84,7 +81,7 @@ internal static class Semaphore
     internal static bool Keyed {
         get; set {
             field = value && field ?
-                FixtureError.Throw($"{Caller.Report(3).caller.name}: Repetitive KEY set while VALUE expected")
+                FixtureError.Throw($"{Caller.Digest}: Repetitive KEY set while VALUE expected")
                 : value;
         }
     } = false;
@@ -92,7 +89,7 @@ internal static class Semaphore
     internal static bool Valued {
         get; set {
             field = value && field ?
-                FixtureError.Throw($"{Caller.Report(3).caller.name}: Repetitive VALUE set while KEY expected")
+                FixtureError.Throw($"{Caller.Digest}: Repetitive VALUE set while KEY expected")
                 : value;
         }
     } = false;
