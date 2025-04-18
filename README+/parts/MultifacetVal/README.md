@@ -3,25 +3,27 @@
 <p dir="rtl">?Gauges&nbsp;-<br />!<b>300</b>&nbsp;-<br />
 ?What 300&nbsp;-<br />?What gauges&nbsp;-</p>
 
- You may find the folklore right above dull but not pointless.
+ You may find the folklore right above dull, but not pointless.
  
 > &nbsp;\
-> **Math deals with <mark>abstract numbers</mark>** (_numerus numerans_), **and computers operate on pure digits but not software developers and users.\
+> **Math deals with <mark>abstract numbers</mark>** (_numerus numerans_), **and computers operate on pure digits, but not software developers and users.\
 > \
- The "inputs" and "outputs" of software anchor to the material world, where numbers can be <mark>concrete</mark>** (_numerus numeratus_) **or <mark>denominated</mark>** (_numerus denominatus_).\
+ The "inputs" and "outputs" of software are anchored to the material world, where numbers can be <mark>concrete</mark>** (_numerus numeratus_) **or <mark>denominated</mark>** (_numerus denominatus_).\
 > &nbsp;
  
 Verbal, documented, and **programmatic** communications frequently rely on titles and contexts and omit tags/units. Shall a context wane - values may "roam" between denominators:
 
 <details><summary>&nbsp;<ins>&nbsp; Temperature <code>2.7</code> is&thinsp;</ins><b> .&nbsp;.&nbsp;.</b></summary>
-<ins>the baseline of the Universe space in <i>Kelvin</i></ins> but in  <i>Celsius</i> or <i>Fahrenheit</i> &nbsp;&mdash;&nbsp; a casual weather for many non-astronauts.
+<ins>the baseline of the Universe space in <i>Kelvin</i></ins> but in  <i>Celsius</i> or <i>Fahrenheit</i> &nbsp;&mdash;&nbsp; a casual weather for many non-astronauts.<sup>🌡️</sup>
 <br /><br />
             
 - Earth's closest approach to Mars is ca. `33'900'000` _miles_ but it seems credible in _kilometers_ and _nmi_.
 - A child's age of `7` can imply months and years.
 - The weekly payment of `1'000` dollars has a national hue: Australian, Canadian, Jamaican, and twenty more.
-- _`Jack`_ can be family, given (not only on birth), and branded name.
-- Five stars can mean 🌌 a constellation and 🌟an estimation.
+- _`Jack`_ can be family, given (not only at birth), and a branded name.
+- Five stars can mean a constellation and an estimation.
+
+&nbsp; &nbsp;  &nbsp; &nbsp; <sup>🌡️</sup> <samp>`-40°` where **C** and **F** intercept is even more flawed &thinsp;&mdash;&thinsp; is a case required?</samp>
 
 </details>
 
@@ -117,7 +119,7 @@ Conversion here is trivial, and <sub><picture><img alt="&nbsp;f&thinsp;u&thinsp;
 ❗The contractor team of SmallForces knew that the thrust must be communicated in _newtons_. 
 They took the hardware reported value (the engineers there traditionally operated in the "house" system) and honestly submitted it as _N_. 
 
-Thus the first issue would be to allow limitation of the unit selection. 
+Thus, the first issue would be providing the unit selection's limitations. 
 
 ```csharp
 
@@ -137,7 +139,7 @@ public enum In
 
     [Abbr("pdl")]
     poundal = 138_254_954_376, // since 1877, Absolute English system
-}
+} 
 ```
 
 And it's only one on the list of ...
@@ -152,7 +154,11 @@ And it's only one on the list of ...
 
 ### Beyond a single crystal
 
-Temp dep on pressure
+Example: Temperature dependency on pressure
+
+```csharp
+Pressure(val, In).Temperature(val, In)
+```
 
 
 |- **Features and omissions**\
