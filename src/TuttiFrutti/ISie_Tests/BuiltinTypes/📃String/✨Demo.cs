@@ -2,9 +2,13 @@
 
 public class Demo : Setup.Arrange
 {
-    [SyntaxDraft]
+    [SyntaxDemo]
     public void Shortcut() {
-        True = "".Is().NullOrEmpty;
+        var dummy = "for demo only";
+
+        _ = string.IsNullOrEmpty(dummy);
+        _ = dummy.Is().NullOrEmpty;
+
         False = "D".Is().NullOrEmpty;
 
         True = "".Is().NullEmptyOr.Whitespace;
@@ -13,7 +17,7 @@ public class Demo : Setup.Arrange
         True = "  \n  ".Is().EmptyOr.Whitespace;
     }
 
-    [SyntaxDraft]
+    [SyntaxDemo]
     public void Blank() {
         False = "".Is().Spaces;
         True = " ".Is().Spaces;

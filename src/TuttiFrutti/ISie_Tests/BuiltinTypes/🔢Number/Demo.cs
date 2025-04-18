@@ -7,7 +7,7 @@ public class Demo : Setup.Arrange
     [Test]
     public void InWords() {
         //var res = 1.In<Latin>().FRACTION_STYLE - words or ?; // .Words;
-        // in Roman Numbers
+        // in Roman WithNumbers
         // ? minus wording
 
         Func<bool, bool, bool> testMe = Unpack<bool, IDisjunct>();

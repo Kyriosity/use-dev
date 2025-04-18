@@ -1,4 +1,6 @@
-﻿namespace ISie_Tests.BuiltinTypes.String.more;
+﻿// ReSharper disable CheckNamespace
+#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
+namespace ISie_Tests.BuiltinTypes.String.more;
 public class NullEmptyTests : Setup.Arrange
 {
     [Test]

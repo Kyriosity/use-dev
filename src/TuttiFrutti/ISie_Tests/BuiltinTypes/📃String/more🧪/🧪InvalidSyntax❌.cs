@@ -1,13 +1,6 @@
-﻿// ReSharper disable InconsistentNaming
-#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
-namespace ISie_Tests.BuiltinTypes.String.more;
-public class ErrorsAndExceptions : Setup.Arrange
+﻿namespace ISie_Tests.BuiltinTypes.__String.more__;
+public class InvalidSyntax : Setup.Arrange
 {
-    [Test]
-    public void Null() {
-        Throw = NullReferenceException => NullStr.Is().EmptyOr.Whitespace;
-    }
-
     [SyntaxDraft]
     public void InvalidCallsCheck() {
         //_ = "  \n  ".Is().NullEmptyOr.EmptyOr; // 🚫 Invalid semantics

@@ -10,7 +10,6 @@ internal class EmptyCheckMenu : Fruit_Or<string>, IEncodingWithGapOption
 
     public bool Whitespace => Next(Is.Whitespace);
 
-
     public bool SingleSpace => Next(str => str is spaces.Single);
 
     public bool Spaces => Next(Is.Spaces);
