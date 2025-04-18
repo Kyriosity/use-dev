@@ -18,7 +18,7 @@ public abstract class Defined : Setup
 
     protected virtual bool? False { get => false; set => Assert.That(value, Is.False); }
 
-    protected virtual bool? True { get => true; set => Assert.That(value, Is.False); }
+    protected virtual bool? True { get => true; set => Assert.That(value, Is.True); }
 
 
     protected dynamic? Null {
