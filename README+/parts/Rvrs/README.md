@@ -1,10 +1,10 @@
-# Reversible on .NET &mdash; Intro
+# Reversible on .NET &nbsp; &mdash; &nbsp; Intro
 
 <p dir="rtl";><span style="font-variant:small-caps;"><b><samp>R&thinsp;E&thinsp;V&thinsp;E&thinsp;R&thinsp;S&thinsp;I&thinsp;B&thinsp;L&thinsp;E</samp></b>&nbsp;&nbsp;&nbsp;</span><br><b>a:</b>&nbsp;capable of going through a series of actions<br/>such as changes) either backward or forward)</p>
 <p dir="rtl";><i>Merriam-Webster dictionary</i></p>
 
 &nbsp;\
-The ability to __undo__ and then, likely, __redo__ actions is constituent and multi-plugged for most applications. Besides traditional usage Undo-Redo may replace tedious confirmation ("are you sure"), run wizards, and explore tree structures. 
+The ability to __undo__ and then, likely, __redo__ actions is constituent and multi-plugged for most applications. Besides traditional usage, Undo-Redo may replace tedious confirmation ("are you sure"), run wizards, and explore tree structures. 
 
 Let's knock ourselves out to implement _reversible_ in a project, deserving just two words of others:&nbsp;`using Reversible;`.
 
@@ -68,7 +68,7 @@ If these "antipasti" have aroused your appetite to *redo*, the __[Handbook](READ
 However ... __isn't that all an over-engineering of the indexed element?__ <sup>:hammer:</sup>&nbsp; You decide, while [Rationale](README+/reversible_reason.md) along with [Posers & Decisions](README+/reversible_posers.md) tries to advocate our efforts.\
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>:hammer:</sup><sub>For instance, `Moves[i]` for current value, `i--` for undo and `i++` for redo.</sub>
 
-`UndoOnly` for the snippet above is too trivial to deserve your look into the repository but not the whole project, which you may follow in [Developer book](README+/devbook), contribute to it, or rework for your own purposes.
+`UndoOnly` for the snippet above is too trivial to deserve your look into the repository, but not the whole project, which you may follow in [Developer book](README+/devbook), contribute to it, or rework for your own purposes.
 
 \___________\
 🔚 ... but [README+](README+)
