@@ -1,4 +1,4 @@
-# Reversible on .NET - Handbook
+# Reversible on .NET &nbsp; &mdash; &nbsp; Handbook
 
 ## Undo only vs. Undo-Redo
 
