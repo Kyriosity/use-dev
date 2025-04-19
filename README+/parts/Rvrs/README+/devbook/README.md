@@ -1,8 +1,8 @@
-# Reversible on .NET &mdash; Development book
+# Reversible on .NET &nbsp; &mdash; &nbsp; Development book
 
 ## Some groundstones
 
-Inspired by [intro snippet](../../) let's sketch minimum valuable functionality and grant it the best optimal syntax:
+Inspired by [intro snippet](../../) let's sketch a minimum valuable functionality and grant it the best optimal syntax:
 
 ```csharp
 var angle = UndoOnly.Of<byte>(0);
@@ -26,7 +26,7 @@ interface ICounted<T> { T Value {get; set; }; int Count { get; } }
 
 ```
 
-The next step, is to add Redo
+The next step is to add Redo
 
 ```csharp
 var subj = UndoRedo.Of({ "rotate 30°", "flop", "fill blue", "UNDO", "fill white", "blur", "contrast +20" });
