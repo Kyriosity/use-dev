@@ -1,13 +1,13 @@
-# Reversible &mdash; Q&A
+# Reversible &nbsp; &mdash; &nbsp; Q&A
 
-+ **Is stack homogenous?**\
++ **Is the stack homogenous?**\
 Yes, but generic.
 
-+ **What for could I need Undo only without Redo?**\
-The nature of the application may not suppose the ability to redo. Consider a seat reservation in highly competitive scenarios, dependency on other decisions, or must-be-unique random actions.
++ **What for could I need Undo only (without Redo)&thinsp;?**\
+The nature of the application may not imply the ability to redo. Consider a seat reservation in highly competitive scenarios, dependency on other decisions, or must-be-unique random actions.
 
 + **Why there's RedoAll() but no UndoAll()?**\
-`RedoAll()` will unconditionally restore the most recent state, while limited size stack only the oldest stored (which can be original or not).
+`RedoAll()` will unconditionally restore the most recent state, while a limited-size stack &mdash; only the oldest stored (which can be original or not).
 
 + **Where's `Clear()`?**\
 Use `new()`.
@@ -15,7 +15,7 @@ Use `new()`.
 + **Is stack's limit mandatory?**\
 Nope. When not specified/applied, no check is done. It's reasonable when the number of actions is predictable.
 
-+ **How to raise events like PropertyChanged for value itself, CanUndo i.a.? Or get hooks, like <code>OnChanged</code>.**
++ **How to raise events like PropertyChanged for value itself, CanUndo, i.a.? Or get hooks, like <code>OnChanged</code>.**
 - [x] Override setters and realization methods
 
 + **Why not to overload `=` and get rid of `.Value`**
