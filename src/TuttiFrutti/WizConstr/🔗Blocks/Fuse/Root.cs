@@ -9,7 +9,7 @@ public abstract class Root<TSrc, TRes>
         return new TCore { Seed = seed };
     }
 
-    public static TFruit Plant<TFruit>(TSrc seed, Func<TSrc, TRes> xform) where TFruit : Core<TSrc>, IXFormSet<TSrc, TRes>, new() {
+    public static TFruit Plant<TFruit>(TSrc seed, Func<TSrc, TRes> xform) where TFruit : Core<TSrc>, IXFormFunction<TSrc, TRes>, new() {
         return new TFruit { Seed = seed, Xform = xform };
     }
 }

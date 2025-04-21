@@ -2,7 +2,7 @@
 
 namespace WizConstr.Blocks;
 
-public abstract class Core<TSrc, TRes> : Xform.Core<TSrc, TRes>
+public abstract class Pulp<TSrc, TRes> : Xform.Pulp<TSrc, TRes>
 {
     internal virtual Func<TRes, TRes, TRes>? LnkLeft { get; set; } = null;
     internal virtual Func<TRes, TRes, TRes>? LnkRight => null;
@@ -10,7 +10,7 @@ public abstract class Core<TSrc, TRes> : Xform.Core<TSrc, TRes>
     protected static Func<TRes, TRes, TRes> Unpack<I>() =>
         (argL, argR) => (TRes)Method.Default<I>(nameof(fuseFn.IBase<TRes>.Join)).Invoke(argL, argR);
 
-    internal Core<TSrc, TRes>? Prev { get; init; }
-    public virtual TBk Next<TBk>() where TBk : Core<TSrc, TRes>, new()
+    internal Pulp<TSrc, TRes>? Prev { get; init; }
+    public virtual TBk Next<TBk>() where TBk : Pulp<TSrc, TRes>, new()
         => new() { Seed = Seed, Prev = this };
 }

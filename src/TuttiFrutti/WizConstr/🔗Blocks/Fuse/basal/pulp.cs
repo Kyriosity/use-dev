@@ -1,6 +1,6 @@
 ﻿namespace WizConstr.Blocks.Fuse.basal;
 
-public abstract class core<TSrc, TRes> : Blocks.Core<TSrc, TRes>
+public abstract class pulp<TSrc, TRes> : Blocks.Pulp<TSrc, TRes>
 {
 
     protected override TRes Yield() =>

@@ -1,5 +1,6 @@
 ﻿namespace WizConstr.Xform;
-public interface IXFormSet<TSrc, TRes>
+
+public interface IXFormFunction<TSrc, TRes>
 {
     Func<TSrc, TRes> Xform { get; init; }
 }
