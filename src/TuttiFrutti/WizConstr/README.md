@@ -4,20 +4,17 @@
 
 MERMAID
 
-
+### Horticultural glossary
 
 <table><tr valign="top"><td width="40%"><picture align="center"><img alt="&nbsp;Mango orchard" src="../../../README+/_rsc/img/illus/SeedFruitCore-Intro.jpg" width="750px"></picture>
 </td><td>
 
-### Horticultural glossary
-
-+ **Seed** &mdash; initial value
-
-Consider zero on calculator or raw literal, kick-off meeting
-
-+ **Core** &mdash; initial
-+ **Fruit** &mdash; initial
-+ **Ripe** &mdash; initial
++ **Seed** &mdash; initial value of any type:\
+consider zero on a calculator or raw literal, kick-off meeting, ...
++ **Core** &mdash; basic wrapper of _seed_ without linking,
++ **Pulp** &mdash; linked
++ **Fruit** &mdash; all above but with casting to the expected type value.
++ **Ripe** &mdash; ready universal blocks
   
 </td></tr>
 </table>
