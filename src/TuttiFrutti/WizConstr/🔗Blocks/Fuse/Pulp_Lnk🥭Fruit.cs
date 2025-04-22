@@ -3,7 +3,6 @@
 public abstract class Pulp_Lnk<TSrc, TRes, Lnk> : basal.rightLnk<TSrc, TRes, Lnk>, ILnkRightOnly
     where Lnk : fuseFn.IBase<TRes>;
 
-
 public abstract class Fruit_Lnk<TSrc, TRes, Lnk> : Pulp_Lnk<TSrc, TRes, Lnk>
     where Lnk : fuseFn.IBase<TRes>
 {

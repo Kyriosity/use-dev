@@ -3,4 +3,4 @@ using ISie.String.Traits;
 
 namespace ISie.Mk;
 
-public interface ICultureNeutral : LogiOr.INothing<IEncodingWithGapOption>, IGaps, IStandardTextCode;
+public interface ICultureNeutral : BlankMenus.INothing<IEncodingWithGapOption>, IGaps, IStandardTextCode;

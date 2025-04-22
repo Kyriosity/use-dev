@@ -36,7 +36,7 @@ public interface ITextCheck
     bool WithoutNumberInlays { get; }
 }
 
-public class Encoding : Wiz.Fruit<string>, IEncodingChecks // ToDo: enhance for Extended ASCII
+public class Encoding : Fruit<string>, IEncodingChecks // ToDo: enhance for Extended ASCII
 {
     protected override bool Eval() => Seed is "" ? Empty.Throw() :
         Seed.ToCharArray().Any(ch => !char.IsAscii(ch));

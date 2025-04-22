@@ -1,6 +1,4 @@
-﻿using ISie.Mk;
-
-namespace ISie.String;
+﻿namespace ISie.String;
 public static class Extensions
 {
     public static ICultureNeutral Is(this string value) => new Root.CultureNeutralMenu(value);
