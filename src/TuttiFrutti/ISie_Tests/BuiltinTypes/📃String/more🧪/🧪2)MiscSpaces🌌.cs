@@ -10,9 +10,9 @@ public class MiscSpaces : Setup.Arrange
 
     [Many("", spaces.Single, "       ", "   ", "                     ")]
     public void AnySpaces(string subj) {
-        Assert.That(subj.Is().Spaces, Is.True);
-        Assert.That(subj.Is().EmptyOr.Spaces, Is.True);
-        Assert.That(subj.Is().NullEmptyOr.Spaces, Is.True);
+        True = subj.Is().Spaces;
+        True = subj.Is().EmptyOr.Spaces;
+        True = subj.Is().NullEmptyOr.Spaces;
     }
 
     [Many("", "   test    ", " %  ", "      ___               ")]

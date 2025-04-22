@@ -3,18 +3,26 @@
 public class Demo : Setup.Arrange
 {
     [SyntaxDemo]
-    public void Shortcut() {
-        var dummy = "for demo only";
+    public void Shortcuts() {
+        _ = string.IsNullOrEmpty(anyText);
+        _ = anyText.Is().NullOrEmpty; // 👈 no literal overhead
 
-        _ = string.IsNullOrEmpty(dummy);
-        _ = dummy.Is().NullOrEmpty;
+        _ = string.IsNullOrWhiteSpace(""); // ⚠️ empty is admitted as whitespace but it's not
+        _ = "".Is().NullEmptyOr.Whitespace;
+        _ = anyText.Is().EmptyOr.Whitespace; // 👈 doesn't soft-pedal Null
+        _ = "\n".Is().Whitespace; // 👈 must contain at least one
+    }
 
-        False = "D".Is().NullOrEmpty;
+    [SyntaxDemo]
+    public void NewFeat_PureSpaces() {
+        tryMe = anyText.Is().Spaces;
 
-        True = "".Is().NullEmptyOr.Whitespace;
+        True = " ".Is().SingleSpace;
 
-        True = "  \n  ".Is().NullEmptyOr.Whitespace;
-        True = "  \n  ".Is().EmptyOr.Whitespace;
+        _ = "".Is().Whitespace;
+
+        False = "".Is().Spaces;
+        False = "  \n  ".Is().Spaces;
     }
 
     [SyntaxDemo]
@@ -40,22 +48,17 @@ public class Demo : Setup.Arrange
         False = "t e x t".Is().EmptyOr.Whitespace;
     }
 
-
     [SyntaxDemo]
     public void EmptyIsNotSpaceOrWhitespace() {
         False = "".Is().Whitespace;
         False = "".Is().Spaces;
         False = "".Is().SingleSpace;
-
-        // but it is in the native method
-        True = string.IsNullOrWhiteSpace(string.Empty);
     }
-
 
     [SyntaxDraft]
     public void Grayspace() {
         // RESERVED for concept discussion!
-        False = "a_b,c D".Is().Grayspace;
-        True = "        ".Is().Grayspace;
+        _ = "a_b,c D".Is().Grayspace;
+        _ = "        ".Is().Grayspace;
     }
 }
