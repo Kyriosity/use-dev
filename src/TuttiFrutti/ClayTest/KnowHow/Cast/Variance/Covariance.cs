@@ -1,4 +1,5 @@
 ﻿using Abc.Marks;
+
 namespace ClayTest.KnowHow.Cast.Variance;
 
 public class Covariance
