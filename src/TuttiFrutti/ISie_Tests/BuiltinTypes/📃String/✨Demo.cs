@@ -2,7 +2,9 @@
 
 public class Demo : Setup.Arrange
 {
-    [SyntaxDemo]
+#if DEBUG
+    [Test]
+#endif
     public void Shortcuts() {
         _ = string.IsNullOrEmpty(anyText);
         _ = anyText.Is().NullOrEmpty; // 👈 no literal overhead
@@ -13,7 +15,9 @@ public class Demo : Setup.Arrange
         _ = "\n".Is().Whitespace; // 👈 must contain at least one
     }
 
-    [SyntaxDemo]
+#if DEBUG
+    [Test]
+#endif
     public void NewFeat_PureSpaces() {
         tryMe = anyText.Is().Spaces;
 
@@ -25,7 +29,9 @@ public class Demo : Setup.Arrange
         False = "  \n  ".Is().Spaces;
     }
 
-    [SyntaxDemo]
+#if DEBUG
+    [Test]
+#endif
     public void Blank() {
         False = "".Is().Spaces;
         True = " ".Is().Spaces;
@@ -48,14 +54,18 @@ public class Demo : Setup.Arrange
         False = "t e x t".Is().EmptyOr.Whitespace;
     }
 
-    [SyntaxDemo]
+#if DEBUG
+    [Test]
+#endif
     public void EmptyIsNotSpaceOrWhitespace() {
         False = "".Is().Whitespace;
         False = "".Is().Spaces;
         False = "".Is().SingleSpace;
     }
 
-    [SyntaxDraft]
+#if DEBUG
+    [Test]
+#endif
     public void Grayspace() {
         // RESERVED for concept discussion!
         _ = "a_b,c D".Is().Grayspace;

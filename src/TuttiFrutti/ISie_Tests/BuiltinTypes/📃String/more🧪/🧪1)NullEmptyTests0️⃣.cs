@@ -13,11 +13,12 @@ public class NullEmptyTests : Setup.Arrange
     }
 
     [Test]
-    public void Disjunct() {
+    public void CutByPrecondition() {
         True = NullStr.Is().NullEmptyOr.Whitespace;
-        False = string.Empty.Is().NullEmptyOr.Whitespace;
+        True = "".Is().NullEmptyOr.Whitespace;
+        True = "".Is().EmptyOr.Whitespace;
 
-        True = string.Empty.Is().NullEmptyOr.Ascii;
+        True = "".Is().NullEmptyOr.Ascii;
         True = NullStr.Is().NullEmptyOr.Ascii.NoControls;
 
         True = NullStr.Is().NullEmptyOr.SingleSpace;
