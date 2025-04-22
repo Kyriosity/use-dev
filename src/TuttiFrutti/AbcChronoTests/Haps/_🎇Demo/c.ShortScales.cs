@@ -1,7 +1,4 @@
-﻿
-using AbcChrono.Timescales;
-
-namespace ExtensionsTests.Chrono.Haps.Demo;
+﻿namespace ExtensionsTests.Chrono.Haps.Demo;
 public class ShortScales
 {
     [Test]

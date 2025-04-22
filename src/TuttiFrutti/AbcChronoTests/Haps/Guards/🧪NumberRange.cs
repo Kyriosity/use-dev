@@ -1,6 +1,4 @@
-﻿using AbcChrono.Timescales;
-
-namespace ExtensionsTests.Chrono.Haps.Guards;
+﻿namespace ExtensionsTests.Chrono.Haps.Guards;
 public class NumberRange
 {
     [Test]

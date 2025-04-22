@@ -1,2 +1,1 @@
-﻿global using AbcChrono;
-
+﻿global using AbcChrono.Timescales;
