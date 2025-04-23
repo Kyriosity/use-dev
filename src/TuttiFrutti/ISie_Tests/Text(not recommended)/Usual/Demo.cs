@@ -15,11 +15,11 @@ public class Demo
         Assert.That(
             string.Empty.IsNullOrWhiteSpace() && multilineWhitespaces.IsNullOrWhiteSpace() && tabAmongSpaces.IsNullOrWhiteSpace()
             && "".IsNullOrEmpty() && "         ".IsNullOrWhiteSpace(),
-        Is.True);
+        NUnit.Framework.Is.True);
 
         Assert.That(
             " LOREM ipsum  ".IsNullOrWhiteSpace() || " ".IsNullOrEmpty(),
-            Is.False);
+            NUnit.Framework.Is.False);
     }
 
     [Test]
@@ -30,32 +30,32 @@ public class Demo
         Assert.That(
             nullableText.IsNullOrEmpty() && nullableText.IsNullOrWhiteSpace() &&
             text.IsNullOrEmpty() && ((string)null).IsNullOrWhiteSpace(),
-            Is.True);
+            NUnit.Framework.Is.True);
     }
 
     [Test]
     public void BlankTraits_Changed() {
         var text = string.Empty;
-        Assert.That(text.IsNullOrEmpty(), Is.True);
+        Assert.That(text.IsNullOrEmpty(), NUnit.Framework.Is.True);
 
         text += "  ";
         Assert.That(
             text.IsNullOrWhiteSpace() && !text.IsNullOrEmpty(),
-            Is.True);
+            NUnit.Framework.Is.True);
 
         text += ".";
         Assert.That(
             text.IsNullOrWhiteSpace(),
-            Is.False);
+            NUnit.Framework.Is.False);
 
         text = string.Empty;
-        Assert.That(text.IsNullOrEmpty() && text.IsNullOrWhiteSpace(), Is.True);
+        Assert.That(text.IsNullOrEmpty() && text.IsNullOrWhiteSpace(), NUnit.Framework.Is.True);
 
         string nulledText = null;
-        Assert.That(nulledText.IsNullOrEmpty(), Is.True);
+        Assert.That(nulledText.IsNullOrEmpty(), NUnit.Framework.Is.True);
 
         nulledText = "   ";
-        Assert.That(nulledText.IsNullOrEmpty(), Is.False);
+        Assert.That(nulledText.IsNullOrEmpty(), NUnit.Framework.Is.False);
 
     }
 

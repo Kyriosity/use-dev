@@ -1,5 +1,5 @@
 ﻿namespace ISie_Tests.BuiltinTypes.ISie.Char;
-public class Demo : Setup.Arrange
+public class Demo_Is : Setup.Arrange
 {
     [SyntaxDraft]
     public void Char() {
@@ -8,14 +8,14 @@ public class Demo : Setup.Arrange
         char.IsWhiteSpace('a');
         char.IsSeparator('a');
 
-        char.IsAscii('a');
-        char.IsAsciiDigit('a');
-        char.IsAsciiHexDigit('a');
-        char.IsAsciiHexDigit('a');
-        char.IsAsciiHexDigitLower('a');
-        char.IsAsciiHexDigitUpper('a');
         char.IsControl('a');
         //char.IsSurrogatePair(' ');
         char.IsSymbol('s');
+        // Digit
+
+
+        //char.Is
+
+        // To
     }
 }

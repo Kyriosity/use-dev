@@ -13,12 +13,12 @@ internal class CultureNeutralMenu : WizConstr.Core<string, bool>, ICultureNeutra
     public IEncodingWithGapOption EmptyOr => Next<EmptyCheckMenu>();
 
     public IEncodingWithGapOption NullEmptyOr => Next<NullEmptyCheckMenu>();
-    public bool Whitespace => Next<Ripe.Fruit<string>>(Is.Whitespace);
+    public bool Whitespace => Next<Ripe.Fruit<string>>(AbcDataOps.Text.Func.Is.Whitespace);
 
     public bool SingleSpace => Next<Ripe.Fruit<string>>(str => str is spaces.Single);
 
-    public bool Spaces => Next<bool, Ripe.Fruit<string>>(Is.Spaces);
+    public bool Spaces => Next<bool, Ripe.Fruit<string>>(AbcDataOps.Text.Func.Is.Spaces);
 
     public Encoding Ascii => Next<Encoding>();
-    public bool Grayspace => Next<Ripe.Fruit<string>>(Is.Grayspace);
+    public bool Grayspace => Next<Ripe.Fruit<string>>(AbcDataOps.Text.Func.Is.Grayspace);
 }
