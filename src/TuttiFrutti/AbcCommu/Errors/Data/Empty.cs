@@ -1,6 +1,7 @@
 ﻿namespace AbcCommu.Errors.Data;
 
-public class Empty(string message) : Exception<NotSet>(message)
+public class Empty(string message) : Exception<Empty>(message),
+    IHasAmbiguousSignature
 {
     public static bool ThrowIf<T>(IEnumerable<T> coll, [ArgExpr(nameof(coll))] string expr = "") =>
         coll.Any() ? false : throw new Empty(expr);
