@@ -5,7 +5,7 @@ public abstract class rightLnk<TSrc, TRes, Lnk> : pulp<TSrc, TRes>, ILnkRight
 {
     internal override Func<TRes, TRes, TRes>? LnkRight { get; } = Unpack<Lnk>();
 
-    public new Blk Next<Blk>()
+    protected new Blk Next<Blk>()
         where Blk : pulp<TSrc, TRes>, INoLnkLeft, new()
 
         => base.Next<Blk>();

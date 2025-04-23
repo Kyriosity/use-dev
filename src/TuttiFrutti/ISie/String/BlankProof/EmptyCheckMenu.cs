@@ -6,7 +6,7 @@ internal class EmptyCheckMenu : Fruit_Or<string>, IEncodingWithGapOption
 {
     protected override bool Eval() => Seed is "";
 
-    public Encoding Ascii => throw new NotImplementedException();
+    public Encoding Ascii => Next<Encoding>();
 
     public bool Whitespace => Next(Is.Whitespace);
 

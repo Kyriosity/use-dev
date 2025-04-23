@@ -2,7 +2,7 @@
 
 namespace WizConstr.Blocks.Fuse.Ripe.End;
 
-public class Fruit<TSrc, TRes> : Fuse.Fruit<TSrc, TRes>, IXFormFunction<TSrc, TRes>
+public class Fruit<TSrc, TRes> : Fuse.Fruit<TSrc, TRes>, IXFormFuncd<TSrc, TRes>
 {
     protected internal override TRes Eval() => Xform(Seed);
 

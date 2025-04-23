@@ -11,6 +11,6 @@ public abstract class Pulp<TSrc, TRes> : Xform.Pulp<TSrc, TRes>
         (argL, argR) => (TRes)Method.Default<I>(nameof(fuseFn.IBase<TRes>.Join)).Invoke(argL, argR);
 
     internal Pulp<TSrc, TRes>? Prev { get; init; }
-    public virtual TBk Next<TBk>() where TBk : Pulp<TSrc, TRes>, new()
+    protected virtual TBk Next<TBk>() where TBk : Pulp<TSrc, TRes>, new()
         => new() { Seed = Seed, Prev = this };
 }

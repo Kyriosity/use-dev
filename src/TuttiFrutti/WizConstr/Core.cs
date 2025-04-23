@@ -7,25 +7,26 @@ public abstract class Core<T>
 {
     protected internal T? Seed { get; init; }
 
-    public static TCore Next<TCore>(T seed) where TCore : Core<T>, INoLnkLeft, new() {
+    protected TCore Next<TCore>() where TCore : Core<T>, INoLnkLeft, new() {
+        // ToDesign: MUST BE USED in DESCENDANTS !
         // ToDesign: propagate CIRCUITRY
-        return new TCore { Seed = seed };
+        return new TCore { Seed = Seed };
     }
 
-    public static TFruit Next<TRes, TFruit>(T seed, Func<T, TRes> xform)
+    protected TFruit Next<TRes, TFruit>(Func<T, TRes> xform)
 
-        where TFruit : Core<T>, IXFormFunction<T, TRes>, new() {
+        where TFruit : Core<T>, IXFormFuncd<T, TRes>, new() {
 
-        return new TFruit { Seed = seed, Xform = xform };
+        return new TFruit { Seed = Seed, Xform = xform };
     }
 }
 
 public abstract class Core<T, TRes> : Core<T>
 {
-    public static TFruit Next<TFruit>(T seed, Func<T, TRes> xform)
+    protected TFruit Next<TFruit>(Func<T, TRes> xform)
 
-        where TFruit : Core<T>, IXFormFunction<T, TRes>, new() {
+        where TFruit : Core<T>, IXFormFuncd<T, TRes>, new() {
 
-        return new TFruit { Seed = seed, Xform = xform };
+        return new TFruit { Seed = Seed, Xform = xform };
     }
 }
