@@ -1,4 +1,4 @@
-﻿namespace ISie_Tests.Setup;
+﻿namespace ISie_Eval.Setup;
 
 public abstract class Arrange : AbcExtNUnit.Asserted.Defined_Errors
 {

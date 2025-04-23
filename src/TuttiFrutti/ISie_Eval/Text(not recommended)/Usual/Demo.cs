@@ -1,4 +1,4 @@
-﻿namespace AbcDataOpsTests.Text.Usual;
+﻿namespace ISie_Eval.Text.Usual;
 
 [Obsolete]
 public class Demo

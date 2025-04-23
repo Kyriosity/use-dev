@@ -1,7 +1,7 @@
 ﻿using Abc.Logic.Fuse;
 using AbcRefl.Implementation;
 
-namespace ISie_Tests.BuiltinTypes.Number;
+namespace ISie_Eval.BuiltinTypes.Number;
 public class Demo : Setup.Arrange
 {
     [Test]

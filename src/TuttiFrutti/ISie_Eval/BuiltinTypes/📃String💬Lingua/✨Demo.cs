@@ -1,4 +1,4 @@
-﻿namespace ISie_Tests.BuiltinTypes.String_Lingua;
+﻿namespace ISie_Eval.BuiltinTypes.String_Lingua;
 public class Demo : Setup.Arrange
 {
     [SyntaxDraft]

@@ -1,4 +1,4 @@
-﻿namespace ISie_Tests.BuiltinTypes.String_Encoding;
+﻿namespace ISie_Eval.BuiltinTypes.String_Encoding;
 public class Demo : Setup.Arrange
 {
 #if DEBUG
