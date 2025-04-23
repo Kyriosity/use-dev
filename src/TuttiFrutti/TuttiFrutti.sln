@@ -157,8 +157,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcRefl", "AbcRefl\AbcRefl.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcDataOps", "AbcDataOps\AbcDataOps.csproj", "{6724F2F8-1960-4573-9C55-855F3E20AD95}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shortcuts", "Shortcuts", "{2E70E4F6-BC6C-4E9F-8F87-7943FEA17071}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcChronoTests", "AbcChronoTests\AbcChronoTests.csproj", "{F69BD5F3-D9E3-4F72-B317-731F6FCA37EC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Techniques", "Techniques", "{DABD277C-7D20-4578-AD6B-9957A0F5D214}"
