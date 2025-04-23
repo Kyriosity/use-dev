@@ -1,4 +1,4 @@
-﻿namespace AbcCircuitry.Bool;
+﻿namespace Abc.Circuitry.Bool;
 public interface IO : IO<bool>;
 
 public interface IOInverter : IO

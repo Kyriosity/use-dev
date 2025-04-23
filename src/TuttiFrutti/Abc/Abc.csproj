@@ -21,8 +21,4 @@
     <Folder Include="Logic\Conjuncts\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\AbcCircuitry\AbcCircuitry.csproj" />
-  </ItemGroup>
-
 </Project>

@@ -1,4 +1,4 @@
-﻿namespace AbcCircuitry;
+﻿namespace Abc.Circuitry;
 
 public interface IO;
 
@@ -16,4 +16,3 @@ public interface IODefault<T> : IO<T>
 {
     new Func<T, T> Plug => _ => default;
 }
-
