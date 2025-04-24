@@ -1,21 +1,35 @@
-﻿namespace ISie_Eval.BuiltinTypes.ISie.Char;
+﻿using ISie.Char;
+
+namespace ISie_Eval.BuiltinTypes.ISie.Char;
 public class Demo_Is : Setup.Arrange
 {
-    [SyntaxDraft]
-    public void Char() {
-        char.IsPunctuation('a');
-        char.IsHighSurrogate('a');
-        char.IsWhiteSpace('a');
-        char.IsSeparator('a');
+    [Test]
+    public void Alphanumeric() {
+        True = 'ö'.Is().Letter;
+        True = 'ß'.Is().LetterOrDigit;
+        True = '9'.Is().Digit;
 
-        char.IsControl('a');
-        //char.IsSurrogatePair(' ');
-        char.IsSymbol('s');
-        // Digit
+        True = ','.Is().Punctuation;
+        True = '\t'.Is().Whitespace;
+        True = '\u2029'.Is().Separator; // paragraph
 
+        True = '\u0001'.Is().Control;
+        True = '+'.Is().Symbol;
+    }
 
-        //char.Is
+    [Test]
+    public void Range() {
+        True = 'x'.Is().Between('a', 'z');
+        False = 'X'.Is().Between('C', 'T');
 
-        // To
+        True = 'δ'.Is().Lower;
+        True = 'Δ'.Is().Upper;
+    }
+
+    [Test]
+    public void Surrogate() {
+        _ = '\uDFFF'.Is().Surrogate;
+        True = '\uD800'.Is().Surrogate.High;
+        True = '\uDC00'.Is().Surrogate.Low;
     }
 }

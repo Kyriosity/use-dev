@@ -7,27 +7,25 @@ public class Demo_Is_Ascii : Setup.Arrange
     [Test]
 #endif
     public void General() {
-        True = char.IsAscii('a');
-        _ = 'a'.Is().Ascii;
+        _ = 'd'.Is().Ascii;
 
-
-        // LetterOr
-        // Letter + .Upper / Lower
-
-        char.IsAsciiDigit('a');
-
-        char.IsAsciiHexDigit('a');
-        char.IsAsciiHexDigitLower('a');
-        char.IsAsciiHexDigitUpper('a');
-        char.IsAsciiLetterOrDigit('b');
+        True = 'W'.Is().Ascii.LetterOrDigit;
+        True = '5'.Is().Ascii.LetterOrDigit;
     }
 
-#if DEBUG
     [Test]
-#endif
-    public void LetterCase() {
-        True = 'd'.Is().Ascii.Letter.Lower;
-        True = 'D'.Is().Ascii.Letter.Upper;
+    public void Letters() {
+        _ = 'D'.Is().Ascii.Letter;
+        True = 't'.Is().Ascii.Letter.Lower;
+        True = 'T'.Is().Ascii.Letter.Upper;
     }
 
+    [Test]
+    public void Digits() {
+        True = '5'.Is().Ascii.Digit;
+
+        _ = 'a'.Is().Ascii.HexDigit;
+        True = 'a'.Is().Ascii.HexDigit.Lower;
+        True = 'A'.Is().Ascii.HexDigit.Upper;
+    }
 }
