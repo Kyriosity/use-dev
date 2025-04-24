@@ -1,15 +1,13 @@
 ﻿namespace ISie.Char;
 public static class Go
 {
-    public static ICharMenu Is(this char c) => null;
+    public static ICharTraitsMenu Is(this char seed) => null;
+    public static To.IMenu To(this char seed) => new To.Menu(seed);
 }
 
-public interface ICharMenu
+public interface ICharTraitsMenu
 {
     IAscii Ascii { get; }
-
-
-
 }
 
 public interface IAscii

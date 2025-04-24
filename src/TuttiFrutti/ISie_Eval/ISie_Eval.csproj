@@ -34,6 +34,7 @@
 
   <ItemGroup>
     <Folder Include="BuiltinTypes\📃String🌀MoreEncoded\" />
+    <Folder Include="BuiltinTypes\🔣Char\Tests🧪\" />
   </ItemGroup>
 
 </Project>
