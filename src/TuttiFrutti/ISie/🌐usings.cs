@@ -1,4 +1,6 @@
-﻿global using Abc.Lingua;
+﻿global using Abc.Char;
+global using Abc.Char.Blanks;
+global using Abc.Lingua;
 global using Abc.Logic;
 global using Abc.Marks;
 global using AbcCommu.Errors.Data;

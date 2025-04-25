@@ -1,4 +1,4 @@
-﻿using Abc.Char;
+﻿using Abc.Char.Blanks;
 using Abc.Selection;
 
 namespace ISie.Char.Is.Menus;

@@ -1,5 +1,4 @@
-﻿using Abc.Char;
-using Abc.Selection;
+﻿using Abc.Selection;
 
 namespace ISie.Char.Is.Menus;
 public interface IAscii :

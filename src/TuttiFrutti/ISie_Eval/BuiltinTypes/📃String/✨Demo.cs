@@ -23,7 +23,7 @@ public class Demo : Setup.Arrange
 
         True = " ".Is().SingleSpace;
 
-        _ = "".Is().Whitespace;
+        False = "".Is().Whitespace;
 
         False = "".Is().Spaces;
         False = "  \n  ".Is().Spaces;
