@@ -1,6 +1,4 @@
-﻿using ISie.Char;
-
-namespace ISie_Eval.BuiltinTypes.Char;
+﻿namespace ISie_Eval.BuiltinTypes.Char;
 public class Demo_To : Setup.Arrange
 {
     [Test]
