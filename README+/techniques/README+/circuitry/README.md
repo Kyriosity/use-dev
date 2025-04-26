@@ -52,9 +52,7 @@ class Identity : Is<Wire>;
 
 ```
 
-This simplest _unary boolean_ has four variants &mdash; add to them extra functions as Random.
-
-Other types and more than one operand will reveal enormous space of ... 
+This simplest _unary boolean_ has four variants &mdash; other types with more than one operand will reveal an enormous space of ... 
 
 <h2 align="center">... opportunities, to propose a few:</h2>
 
@@ -135,7 +133,8 @@ Fn - defines type
 
 <details><summary><a id="why-circuitry" /><ins>&nbsp;&nbsp;&nbsp;<b>Now the electrical metaphor must have taken shapes&thinsp;:</b>&nbsp;&nbsp;&nbsp;</ins></summary>
 
-<table><tr valign="top"><td width="40%"><img alt="&nbsp;electrical circuit collage" src="../../../_rsc/img/illus/Circuitry.jpg" /></td><td>
+<table><tr valign="top"><td width="40%"><picture><img alt="&nbsp;electrical circuit collage" src="../../../_rsc/img/illus/Circuitry.jpg" /></picture></td>
+<td>
   <p>You may have already grasped the similarities of the proposed solution to electric and electronic circuits and boards.</p>
   <ul>
   <li><code>Booleans</code> match logic gates .</li>
@@ -147,8 +146,8 @@ Fn - defines type
 Classes are PLATES to make BOARDS.
   
   <p>And the running code is the current. We are back to the roots (of machine language).</p>
-</td></tr>
-</table>
+</td>
+</tr></table>
 
 \___________</details>
 
