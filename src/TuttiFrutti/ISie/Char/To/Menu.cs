@@ -1,6 +1,4 @@
-﻿using WizConstr;
-
-namespace ISie.Char.To;
+﻿namespace ISie.Char.To;
 public interface IMenu
 {
     char Upper { get; }
@@ -9,11 +7,9 @@ public interface IMenu
     char LowerInvariant { get; }
 }
 
-internal class Menu : Core<char>, IMenu
+internal class Menu : RootMenu<char>, IMenu
 {
-    internal Menu(char seed) {
-        Seed = seed;
-    }
+    public Menu(char seed) : base(seed) { }
 
     public char Upper => char.ToUpper(Seed);
 

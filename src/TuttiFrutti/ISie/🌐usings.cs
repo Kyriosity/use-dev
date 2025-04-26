@@ -8,5 +8,6 @@ global using AbcDataOps.Text.Func;
 global using AbcStuff.Text;
 global using ISie.Mk;
 global using WizConstr.Blocks.Fuse.Bool;
+global using WizConstr.Blocks.Fuse.Bool.Ops;
 global using BlankMenus = Abc.Logic.Build.Disjuncts;
 global using Ripe = WizConstr.Blocks.Fuse.Bool.Ripe.End;

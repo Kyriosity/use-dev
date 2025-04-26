@@ -11,4 +11,12 @@ public class Demo_Traps : Setup.Arrange
         Error = ArgumentNull => symb.Is().Letter;
         Error = ArgumentNull => symb.To().Lower;
     }
+
+    [Test]
+    public void DubiousCases() {
+        // German "Eszett" has no upper
+        True = 'ß'.To().Lower == 'ß'.To().Upper;
+        // compare to "umlaut"
+        False = 'Ö'.To().Lower == 'ö'.To().Upper;
+    }
 }

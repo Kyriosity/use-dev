@@ -14,12 +14,4 @@ public class Demo_To : Setup.Arrange
     public void InvariantCases() {
         /// https://www.moserware.com/2008/02/does-your-code-pass-turkey-test.html
     }
-
-    [Test]
-    public void DubiousCases() {
-        // German "Eszett" has no upper
-        True = 'ß'.To().Lower == 'ß'.To().Upper;
-        // compare to "umlaut"
-        False = 'Ö'.To().Lower == 'ö'.To().Upper;
-    }
 }
