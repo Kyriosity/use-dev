@@ -6,7 +6,7 @@ public abstract class Lnk_Pulp<TSrc, TRes, Lnk> : basal.rightVoid<TSrc, TRes>, I
     internal override Func<TRes, TRes, TRes>? LnkLeft { get; set; } = Unpack<Lnk>();
 }
 
-public abstract class Lnk_Fruit<TSrc, TRes, Lnk> : Lnk_Pulp<TSrc, TRes, Lnk>
+public class Lnk_Fruit<TSrc, TRes, Lnk> : Lnk_Pulp<TSrc, TRes, Lnk>
     where Lnk : fuseFn.IBase<TRes>
 {
     public static implicit operator TRes(Lnk_Fruit<TSrc, TRes, Lnk> source) => source.Yield();

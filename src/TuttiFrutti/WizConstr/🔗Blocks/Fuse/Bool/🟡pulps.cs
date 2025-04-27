@@ -3,7 +3,7 @@ using WizConstr.Blocks.Fuse.Bool.basal;
 
 namespace WizConstr.Blocks.Fuse.Bool;
 
-public abstract class Pulp<TSrc> : rightVoid<TSrc>, INoLnkLeft;
+public abstract class Pulp<T> : rightVoid<T>, INoLnkLeft;
 
 public abstract class Lnk_Pulp<TSrc, Lnk> : rightVoid<TSrc>, ILnkLeftOnly
     where Lnk : IBool

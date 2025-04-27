@@ -8,5 +8,5 @@ internal class Full : DirectCalls, IFull
 
     public ILowHigh<bool> Surrogate => throw new NotImplementedException();
 
-    public EncodingOptions Ascii => Next<EncodingOptions>();
+    public EncodingOptions Ascii => Next<EncodingOptions>(char.IsAscii);
 }

@@ -1,8 +1,8 @@
 ﻿namespace WizConstr.Blocks.Fuse;
 
-public abstract class Pulp<TSrc, TRes> : basal.rightVoid<TSrc, TRes>, INoLnkLeft;
+public class Pulp<T, TRes> : basal.rightVoid<T, TRes>, INoLnkLeft;
 
-public abstract class Fruit<TSrc, TRes> : Pulp<TSrc, TRes>
+public class Fruit<T, TRes> : Pulp<T, TRes>
 {
-    public static implicit operator TRes(Fruit<TSrc, TRes> source) => source.Yield();
+    public static implicit operator TRes(Fruit<T, TRes> source) => source.Yield();
 }

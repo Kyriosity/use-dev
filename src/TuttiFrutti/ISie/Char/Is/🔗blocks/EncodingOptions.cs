@@ -7,10 +7,7 @@ public class EncodingOptions : Fruit_And<char>, IEncodingOptions
 
     public bool LetterOrDigit => char.IsLetterOrDigit(Seed);
 
-    public LowerUpper Letter => Next<LowerUpper>();
+    public LowerUpper Letter => Next<LowerUpper>(char.IsLetter);
 
-    public LowerUpper HexDigit => Next<LowerUpper>();
-
-    protected override bool Eval() => char.IsAscii(Seed);
-    // ToDesign: could be parametrized for other encodings
+    public LowerUpper HexDigit => Next<LowerUpper>(char.IsAsciiHexDigit);
 }

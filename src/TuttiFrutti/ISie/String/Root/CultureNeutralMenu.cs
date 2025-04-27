@@ -6,17 +6,17 @@ internal class CultureNeutralMenu : RootMenu<string>, ICultureNeutral
 {
     public CultureNeutralMenu(string seed) : base(seed) { }
 
-    public bool NullOrEmpty => Next<Ripe.Fruit<string>>(string.IsNullOrEmpty);
+    public bool NullOrEmpty => Next<Fruit<string>>(string.IsNullOrEmpty);
 
-    public IEncodingWithGapOption EmptyOr => Next<EmptyCheckMenu>();
+    public IEncodingWithGapOption EmptyOr => Next<EncodingWithGap>(seed => seed is "");
 
-    public IEncodingWithGapOption NullEmptyOr => Next<NullEmptyCheckMenu>();
-    public bool Whitespace => Next<Ripe.Fruit<string>>(Is.Whitespace);
+    public IEncodingWithGapOption NullEmptyOr => Next<EncodingWithGap>(seed => seed is null | seed is "");
+    public bool Whitespace => Next<Fruit<string>>(Is.Whitespace);
 
-    public bool SingleSpace => Next<Ripe.Fruit<string>>(str => str is spaces.Single);
+    public bool SingleSpace => Next<Fruit<string>>(str => str is spaces.Single);
 
-    public bool Spaces => Next<bool, Ripe.Fruit<string>>(Is.Spaces);
+    public bool Spaces => Next<bool, Fruit<string>>(Is.Spaces);
 
     public Encoding Ascii => Next<Encoding>();
-    public bool Grayspace => Next<Ripe.Fruit<string>>(Is.Grayspace);
+    public bool Grayspace => Next<Fruit<string>>(Is.Grayspace);
 }

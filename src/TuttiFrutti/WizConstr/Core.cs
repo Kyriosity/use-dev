@@ -1,5 +1,4 @@
 ﻿using WizConstr.Blocks;
-using WizConstr.Xform;
 
 namespace WizConstr;
 
@@ -13,20 +12,16 @@ public abstract class Core<T>
         return new TCore { Seed = Seed };
     }
 
-    protected TFruit Next<TRes, TFruit>(Func<T, TRes> xform)
+    protected TPulp Next<TRes, TPulp>(Func<T, TRes> xform)
+        where TPulp : Xform.Pulp<T, TRes>, new()
 
-        where TFruit : Core<T>, IXFormFuncd<T, TRes>, new() {
-
-        return new TFruit { Seed = Seed, Xform = xform };
-    }
+        => new() { Seed = Seed, XForm = xform };
 }
 
 public abstract class Core<T, TRes> : Core<T>
 {
-    protected TFruit Next<TFruit>(Func<T, TRes> xform)
+    protected TPulp Next<TPulp>(Func<T, TRes> xform)
+        where TPulp : Xform.Pulp<T, TRes>, new()
 
-        where TFruit : Core<T>, IXFormFuncd<T, TRes>, new() {
-
-        return new TFruit { Seed = Seed, Xform = xform };
-    }
+        => new() { Seed = Seed, XForm = xform };
 }

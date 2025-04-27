@@ -1,8 +1,12 @@
-﻿namespace WizConstr.Xform;
+﻿using AbcCommu.Errors.Data;
 
-public abstract class Pulp<TSrc, TRes> : Core<TSrc>
+namespace WizConstr.Xform;
+
+public abstract class Pulp<T, TRes> : Core<T>
 {
-    protected internal abstract TRes Eval();
-    protected abstract TRes Yield();
+    protected internal Func<T, TRes> XForm { get => _eval ?? NotSet.Throw($"{GetType().Name}.{nameof(XForm)}"); set => _eval = value; }
+    private Func<T, TRes>? _eval = null;
+
+    protected virtual TRes Yield() => XForm(Seed);
 }
 

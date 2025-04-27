@@ -38,9 +38,10 @@ public interface ITextCheck
 
 public class Encoding : Fruit<string>, IEncodingChecks // ToDo: enhance for Extended ASCII
 {
-    protected override bool Eval() => Seed is "" ?
-        Empty.Throw("Value checked for encoding can't be empty") :
-        Seed.ToCharArray().All(char.IsAscii);
+    // ToDesign: override xForm
+    //protected override bool Eval() => Seed is "" ?
+    //    Empty.Throw("Value checked for encoding can't be empty") :
+    //    Seed.ToCharArray().All(char.IsAscii);
 
     public bool NoControls => And(HasNo.Controls); // ToDesign: Empty.Throw
 

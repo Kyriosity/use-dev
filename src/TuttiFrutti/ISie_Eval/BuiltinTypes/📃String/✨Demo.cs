@@ -61,6 +61,8 @@ public class Demo : Setup.Arrange
         False = "".Is().Whitespace;
         False = "".Is().Spaces;
         False = "".Is().SingleSpace;
+
+        True = "".Is().EmptyOr.Whitespace;
     }
 
 #if DEBUG
