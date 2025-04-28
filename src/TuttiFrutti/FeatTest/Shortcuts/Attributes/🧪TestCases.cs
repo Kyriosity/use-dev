@@ -4,12 +4,14 @@ using AbcExtNUnit.Attributes.Case;
 public class TestCases
 {
     [TestCase("Abc")]
-    [Single("Abc")] // 👈🏿 AbcExtNUnit..
+    [TestCase("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...")]
+    [One("Abc")] // 👈🏿 AbcExtNUnit..
+    [One("Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore...")]
     public void SingleCase_SingleArgument(string arg) { Assert.That(arg, Is.EqualTo("Abc")); }
 
     [TestCase(-5, "name", true)]
-    [Single(-5, "name", true)] // 👈🏿 AbcExtNUnit..
-    public void SingleCase_Multiargument(int id, string title, bool isForTest) {
+    [One(-5, "name", true)] // 👈🏿 AbcExtNUnit..
+    public void SingleCase_MultiArgument(int id, string title, bool isForTest) {
         Assert.That(id, Is.EqualTo(-5));
         Assert.That(title, Is.EqualTo("name"));
         Assert.That(isForTest, Is.True);
