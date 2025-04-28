@@ -3,7 +3,7 @@
 namespace ISie_Eval.BuiltinTypes.String.Tests;
 public class MiscSpaces : Setup.Arrange
 {
-    [AbcExtNUnit.Attributes.Case.Test]
+    [Test]
     public void SingleSpace() {
         True = " ".Is().SingleSpace;
         True = " ".Is().EmptyOr.SingleSpace;

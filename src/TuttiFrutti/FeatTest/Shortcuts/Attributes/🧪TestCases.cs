@@ -4,11 +4,11 @@ using AbcExtNUnit.Attributes.Case;
 public class TestCases
 {
     [TestCase("Abc")]
-    [Test("Abc")] // 👈🏿 AbcExtNUnit..
+    [Single("Abc")] // 👈🏿 AbcExtNUnit..
     public void SingleCase_SingleArgument(string arg) { Assert.That(arg, Is.EqualTo("Abc")); }
 
     [TestCase(-5, "name", true)]
-    [Test(-5, "name", true)] // 👈🏿 AbcExtNUnit..
+    [Single(-5, "name", true)] // 👈🏿 AbcExtNUnit..
     public void SingleCase_Multiargument(int id, string title, bool isForTest) {
         Assert.That(id, Is.EqualTo(-5));
         Assert.That(title, Is.EqualTo("name"));
