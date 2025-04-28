@@ -2,6 +2,7 @@
 public static class Marks
 {
     public const char Question = '\u2753';
+    public const char Paragraph = '\u2029';
 
     public const char BallotX = '\u2717';
     public const char BallotX_Heavy = '\u2718';
