@@ -5,7 +5,6 @@ public class Or_Fruit<T> : Ops.Or_Fruit<T>
     public Or_Fruit(Func<T, bool> xform) {
         XForm = xform;
     }
-    // ToDesign: COMMON xform()
 }
 
 public class And_Fruit<T> : Ops.And_Fruit<T>

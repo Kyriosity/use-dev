@@ -16,7 +16,6 @@ public abstract class rightVoid<T, TRes> : pulp<T, TRes>, INoLnkRight
     }
 
     protected new Lnk_Fruit<T, TRes, Lnk> Next<Lnk>(Func<T, TRes> xform)
-        where Lnk : fuseFn.IBase<TRes>
-        =>
-            new() { Seed = Seed, Prev = this, XForm = xform }; // ToDo: BETTER ALTERNATIVE WITH INI
+        where Lnk : fuseFn.IBase<TRes> =>
+           new() { Seed = Seed, Prev = this, XForm = xform };
 }

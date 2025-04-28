@@ -6,11 +6,7 @@ namespace WizConstr.Blocks.Fuse.Bool;
 public abstract class Pulp<T> : rightVoid<T>, INoLnkLeft;
 
 public abstract class Lnk_Pulp<T, Lnk> : rightVoid<T>, ILnkLeftOnly
-    where Lnk : IBool
-{
-    //internal override Func<bool, bool, bool>? LnkLeft { get; set; } = Unpack<Lnk>(); // ToDelete: CHECK IF REMOVABLE !
-
-}
+    where Lnk : IBool;
 
 public abstract class Pulp_Lnk<T, Lnk> : Pulp_Lnk<T, bool, Lnk> where Lnk : IBool;
 
