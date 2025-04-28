@@ -23,13 +23,12 @@ public class MiscSpaces : Setup.Arrange
     [Many($" \u2029  ", "   test    ", " %  ", "      __            ")] // \u2029 = paragraph
     public void Not_AnySpaces(string subj) {
 
-        TestBy(subj, false);
+        TestBy(subj, true);
     }
 
     protected void TestBy(string subj, bool expected) {
-        //Eq[expected] = true;
-        Assert.That(subj.Is().Spaces, Is.EqualTo(expected));
-        Assert.That(subj.Is().EmptyOr.Spaces, Is.EqualTo(expected));
-        Assert.That(subj.Is().NullEmptyOr.Spaces, Is.EqualTo(expected));
+        Eq[expected] = subj.Is().Spaces;
+        Eq[expected] = subj.Is().EmptyOr.Spaces;
+        Eq[expected] = subj.Is().NullEmptyOr.Spaces;
     }
 }

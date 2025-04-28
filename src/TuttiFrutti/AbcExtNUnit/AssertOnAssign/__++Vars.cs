@@ -38,6 +38,11 @@ public class Mid<T>
         Proc<double?>.Report<T>(value);
         return new Mid<T>();
     }
+
+    public static implicit operator Mid<T>?(bool? value) {
+        Proc<bool?>.Report<T>(value);
+        return new Mid<T>();
+    }
 }
 
 internal class Proc<T>
