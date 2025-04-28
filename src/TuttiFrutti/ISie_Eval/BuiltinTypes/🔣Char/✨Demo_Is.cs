@@ -1,4 +1,6 @@
-﻿namespace ISie_Eval.BuiltinTypes.ISie.Char;
+﻿using AbcStuff.Glyphs;
+
+namespace ISie_Eval.BuiltinTypes.ISie.Char;
 public class Demo_Is : Setup.Arrange
 {
     [Test]
@@ -9,7 +11,7 @@ public class Demo_Is : Setup.Arrange
 
         True = ','.Is().Punctuation;
         True = '\t'.Is().Whitespace;
-        True = '\u2029'.Is().Separator; // paragraph
+        True = Marks.Paragraph.Is().Separator;
 
         True = '\u0001'.Is().Control;
         True = '+'.Is().Symbol;
@@ -22,6 +24,7 @@ public class Demo_Is : Setup.Arrange
 
         True = 'δ'.Is().Lower;
         True = 'Δ'.Is().Upper;
+        False = 'Δ'.To().Lower.Is().Upper;
     }
 
     [Test]
