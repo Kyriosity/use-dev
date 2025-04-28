@@ -3,6 +3,7 @@ global using Abc.Char.Blanks;
 global using Abc.Lingua;
 global using Abc.Logic;
 global using Abc.Marks;
+global using Abc.Selection;
 global using AbcDataOps.Text.Func;
 global using AbcStuff.Text;
 global using ISie.Mk;

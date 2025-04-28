@@ -33,6 +33,7 @@ public class Demo : Setup.Arrange
     [Test]
 #endif
     public void Blank() {
+        False = "".Is().Whitespace;
         False = "".Is().Spaces;
         True = " ".Is().Spaces;
         True = "    ".Is().Spaces;

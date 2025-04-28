@@ -26,8 +26,10 @@ public class Demo_Is : Setup.Arrange
 
     [Test]
     public void Surrogate() {
-        _ = '\uDFFF'.Is().Surrogate;
+        True = '\uDFFF'.Is().Surrogate;
         True = '\uD800'.Is().Surrogate.High;
         True = '\uDC00'.Is().Surrogate.Low;
+
+        False = '1'.Is().Surrogate;
     }
 }

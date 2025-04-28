@@ -6,5 +6,3 @@ public static class Go
     public static ILingua Is<T>(this string value) where T : IScript, ISupported => null;
 }
 
-// OTHER TYPES EXTENDABLE ! ? ToString() and Custom calls ?
-

@@ -8,7 +8,7 @@ public class MiscSpaces : Setup.Arrange
 
     }
 
-    [Many("", spaces.Single, "       ", "   ", "                     ")]
+    [Many(" ", spaces.Single, "       ", "   ", "                     ")]
     public void AnySpaces(string subj) {
         True = subj.Is().Spaces;
         True = subj.Is().EmptyOr.Spaces;
@@ -22,8 +22,7 @@ public class MiscSpaces : Setup.Arrange
     }
 
     protected void TestBy(string subj, bool expected) {
-
-
+        //Eq[expected] = true;
         Assert.That(subj.Is().Spaces, Is.EqualTo(expected));
         Assert.That(subj.Is().EmptyOr.Spaces, Is.EqualTo(expected));
         Assert.That(subj.Is().NullEmptyOr.Spaces, Is.EqualTo(expected));
