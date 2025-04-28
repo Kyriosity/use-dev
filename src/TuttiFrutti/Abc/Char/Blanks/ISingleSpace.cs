@@ -2,7 +2,7 @@
 public interface ISingleSpace<TRes>
 {
     /// <summary>
-    /// ASCII space character
+    /// Single ASCII space character
     /// </summary>
     TRes SingleSpace { get; }
 }
