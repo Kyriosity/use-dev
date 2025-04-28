@@ -7,7 +7,7 @@ public abstract class rightVoid<T, TRes> : pulp<T, TRes>, INoLnkRight
         =>
             base.Next<Blk>();
 
-    protected virtual Blk Next<Blk, Lnk>() where Blk : pulp<T, TRes>, INoLnkLeft, new()
+    protected Blk Next<Blk, Lnk>() where Blk : pulp<T, TRes>, INoLnkLeft, new()
         where Lnk : fuseFn.IBase<TRes> {
 
         var block = base.Next<Blk>();
@@ -15,7 +15,7 @@ public abstract class rightVoid<T, TRes> : pulp<T, TRes>, INoLnkRight
         return block;
     }
 
-    protected virtual Lnk_Fruit<T, TRes, Lnk> Next<Lnk>(Func<T, TRes> xform)
+    protected new Lnk_Fruit<T, TRes, Lnk> Next<Lnk>(Func<T, TRes> xform)
         where Lnk : fuseFn.IBase<TRes>
         =>
             new() { Seed = Seed, Prev = this, XForm = xform }; // ToDo: BETTER ALTERNATIVE WITH INI
