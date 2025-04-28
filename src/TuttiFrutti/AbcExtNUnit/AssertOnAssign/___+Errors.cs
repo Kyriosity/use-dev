@@ -1,7 +1,4 @@
-﻿using AbcCommu.Errors.Data;
-using AbcExtNUnit.AssertOnAssign;
-
-namespace AbcExtNUnit.Asserted;
+﻿namespace AbcExtNUnit.AssertOnAssign;
 public abstract class Defined_Errors : Defined
 {
     public virtual Expression<Func<object, object>> Error {

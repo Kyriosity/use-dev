@@ -3,7 +3,7 @@ using Abc.Logic.Compare;
 
 namespace AbcExtNUnit.AssertOnAssign;
 
-public abstract class Defined_Errors_Vars : Asserted.Defined_Errors
+public abstract class Defined_Errors_Vars : Defined_Errors
 {
     // Tribute to and mix of FORTRAN and ALGOL68 - https://en.wikipedia.org/wiki/Relational_operator#cite_note-6
     public readonly Dictionary<Mid<TMidKey>?, Mid<IEqual>> Eq = [];
