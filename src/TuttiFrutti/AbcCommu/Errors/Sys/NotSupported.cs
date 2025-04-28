@@ -1,6 +1,6 @@
 ﻿namespace AbcCommu.Errors.Sys;
 
-public class NotSupported : Basal.Exception<NotSupportedException>
+public class NotSupported : Exception<NotSupportedException>
 {
     private NotSupported() { /* to prevent direct instantiation */ }
 }
