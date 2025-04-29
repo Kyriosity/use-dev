@@ -6,7 +6,7 @@ public abstract class Exception<Exc>(string? message = "", Exception? inner = nu
 {
 
     public static dynamic Throw(string message, Exception? inner = null, [ArgExpr(nameof(message))] string _ = argEx)
-        => throw New(message, inner);
+        => message is "" ? throw New(inner) : throw New(message, inner);
 
     public static dynamic Throw<T>(T subject, Exception? inner = null, [ArgExpr(nameof(subject))] string argCall = argEx)
         => Throw($"*{argCall}*={(subject is null ? "<null>" : subject)}", inner);
