@@ -5,10 +5,10 @@ internal class EncodingWithGap : Fruit_Or<string>, IEncodingWithGapOption
 {
     public Encoding Ascii => Next<Encoding>(); // ToDesign: common encoding w/ CHAR !
 
-    public bool Whitespace => Next(Is.Whitespace);
+    public bool Whitespace => Next(string.IsNullOrWhiteSpace);
 
-    public bool SingleSpace => Next(str => str is spaces.Single);
+    public bool SingleSpace => Next(seed => seed is spaces.Single);
 
-    public bool Spaces => Next(Is.Spaces);
-    public bool Grayspace => Next(Is.Grayspace);
+    public bool Spaces => Next(seed => seed.ToCharArray().All(ch => ch is ' '));
+    public bool Grayspace => Next(NotImplemented.Throw("reserved for further discussions"));
 }
