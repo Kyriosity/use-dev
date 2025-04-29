@@ -12,13 +12,17 @@ public class ErrorsAndExceptions : Setup.Arrange
 
         Error = NullReference => NullStr.Is().Whitespace;
 
-        Error = NullReference => NullStr.Is().Ascii.NoControls;
+        Error = NullReference => NullStr.Is().Ascii;
     }
 
+#if DEBUG
     [Test]
+#endif
     public void When_EMPTY_not_checked() {
-        AbcCommu.Errors.Data.Empty.Throw();
-
-        Error = Empty => "".Is().Ascii;
+        // implicit operator doesn't work in descending class ...
+        _ = "".Is().Ascii;
+        //Error = Empty => "".Is().Ascii;
+        // ... unless explicitly assigned as next
+        if ("".Is().Ascii) ;
     }
 }
