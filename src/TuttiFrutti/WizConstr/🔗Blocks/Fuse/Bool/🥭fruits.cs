@@ -22,5 +22,4 @@ public class Lnk_Fruit_Lnk<T, LnkLeft, LnkRight> : Lnk_Pulp_Lnk<T, LnkLeft, LnkR
     where LnkRight : fuseFn.IBool
 {
     public static implicit operator bool(Lnk_Fruit_Lnk<T, LnkLeft, LnkRight> source) => source.Yield();
-
 }
