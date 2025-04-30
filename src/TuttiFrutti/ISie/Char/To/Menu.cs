@@ -7,10 +7,8 @@ public interface IMenu
     char LowerInvariant { get; }
 }
 
-internal class Menu : RootMenu<char>, IMenu
+internal class Menu(char seed) : Root<char>(seed), IMenu
 {
-    public Menu(char seed) : base(seed) { }
-
     public char Upper => char.ToUpper(Seed);
 
     public char UpperInvariant => char.ToUpperInvariant(Seed);

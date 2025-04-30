@@ -1,7 +1,7 @@
 ﻿using ISie.String.Traits;
 
 namespace ISie.Mk.Blocks;
-public class Gaps : Fruit_Or<string>, IGaps // ToDesign: common with menu
+public class Gaps : Fruit_Or<string>, IGaps
 {
     public bool Whitespace => Next(str => string.IsNullOrWhiteSpace(str.NotNull()) && str is not "");
 

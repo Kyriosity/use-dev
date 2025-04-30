@@ -2,10 +2,8 @@
 using ISie.String.BlankProof;
 
 namespace ISie.String.Is;
-internal class CultureNeutralMenu : RootMenu<string>, ICultureNeutral
+internal class CultureNeutralMenu(string seed) : Root<string>(seed), ICultureNeutral
 {
-    public CultureNeutralMenu(string seed) : base(seed) { }
-
     public bool NullOrEmpty => Next<Fruit<string>>(seed => seed is null or "");
 
     public AsciiWithGaps EmptyOr => Next<AsciiWithGaps>(seed => seed.NotNull() is "");

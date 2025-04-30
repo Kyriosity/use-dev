@@ -1,8 +1,6 @@
 ﻿namespace ISie.Char.Is.Menus;
-internal abstract class DirectCalls : RootMenu<char>, IDirectCalls
+internal abstract class DirectCalls(char seed) : Root<char>(seed), IDirectCalls
 {
-    internal DirectCalls(char seed) : base(seed) { }
-
     public bool Whitespace => char.IsWhiteSpace(Seed);
 
     public bool Separator => char.IsSeparator(Seed);
