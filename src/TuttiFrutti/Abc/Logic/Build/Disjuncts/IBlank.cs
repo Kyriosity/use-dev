@@ -1,5 +1,5 @@
 ﻿namespace Abc.Logic.Build.Disjuncts;
-public interface IBlank<Rtrn> : IDisjunction where Rtrn : ITruthValuing
+public interface IBlank<TRet>
 {
-    Rtrn EmptyOr { get; }
+    TRet EmptyOr { get; }
 }
