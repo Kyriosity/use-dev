@@ -24,29 +24,31 @@ public class Demo : Setup.Arrange
         True = " ".Is().SingleSpace;
 
         False = "".Is().Whitespace;
+        True = "   ".Is().Whitespace;
 
         False = "".Is().Spaces;
         False = "  \n  ".Is().Spaces;
+        True = "  ".Is().Spaces;
     }
 
 #if DEBUG
     [Test]
 #endif
-    public void Blank() {
+    public void BlanksAndGaps() {
         False = "".Is().Whitespace;
         False = "".Is().Spaces;
         True = " ".Is().Spaces;
         True = "    ".Is().Spaces;
         False = "  \n  ".Is().Spaces;
 
+        True = " ".Is().SingleSpace;
         False = "".Is().SingleSpace;
-        True = "".Is().SingleSpace;
         False = "       ".Is().SingleSpace;
 
-        True = "not whitespace".Is().EmptyOr.Whitespace;
+        False = "not whitespace".Is().EmptyOr.Whitespace;
 
         True = " ".Is().EmptyOr.Spaces;
-        False = "       ".Is().SingleSpace;
+        True = "       ".Is().Spaces;
 
         _ = "text".Is().NullEmptyOr.Whitespace;
         _ = "text".Is().NullEmptyOr.Spaces;
@@ -70,8 +72,8 @@ public class Demo : Setup.Arrange
     [Test]
 #endif
     public void Grayspace() {
-        // RESERVED for concept discussion!
-        _ = "a_b,c D".Is().Grayspace;
-        _ = "        ".Is().Grayspace;
+        // RESERVED for discussions!
+        False = "a_b,c D".Is().Grayspace;
+        _ = "  _ ,     ".Is().Grayspace;
     }
 }

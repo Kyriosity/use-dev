@@ -1,13 +1,20 @@
 ﻿using ISie.String.Traits;
 
-namespace ISie.Mk.blocks;
+namespace ISie.Mk.Blocks;
 public interface ITextual<LTR, TXT>
 {
+    /// <summary>
+    /// Only letter glyphs of known alphabets
+    /// </summary>
     LTR Letters { get; }
+
+    /// <summary>
+    /// Letters of known alphabets and characters 0-9
+    /// </summary>
     LTR Alphanumeric { get; }
 
     /// <summary>
-    /// Includes punctuation
+    /// Alphabet constructions, which includes punctuation and separators
     /// </summary>
     TXT Text { get; }
 }
@@ -38,6 +45,9 @@ public interface ITextCheck
 
 public class Encoding : Fruit<string>, IEncodingChecks
 {
+    /// <summary>
+    /// Contains no control characters
+    /// </summary>
     public bool NoControls => And(seed => seed.NotEmpty().
         ToCharArray().All(ch => !char.IsControl(ch)));
 }

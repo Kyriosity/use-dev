@@ -1,6 +1,5 @@
-﻿using ISie.Mk.blocks;
-using ISie.String.Traits;
+﻿using ISie.String.BlankProof;
 
 namespace ISie.Mk;
 
-public interface ICultureNeutral : BlankMenus.INothing<IEncodingWithGapOption>, IGaps, IStandardTextCode;
+public interface ICultureNeutral : BlankMenus.INothing<AsciiWithGaps>, IAsciiWithGaps;

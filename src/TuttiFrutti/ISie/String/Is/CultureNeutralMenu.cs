@@ -1,4 +1,4 @@
-﻿using ISie.Mk.blocks;
+﻿using ISie.Mk.Blocks;
 using ISie.String.BlankProof;
 
 namespace ISie.String.Is;
@@ -8,12 +8,12 @@ internal class CultureNeutralMenu : RootMenu<string>, ICultureNeutral
 
     public bool NullOrEmpty => Next<Fruit<string>>(seed => seed is null or "");
 
-    public IEncodingWithGapOption EmptyOr => Next<EncodingWithGap>(seed => seed.NotNull() is "");
+    public AsciiWithGaps EmptyOr => Next<AsciiWithGaps>(seed => seed.NotNull() is "");
 
-    public IEncodingWithGapOption NullEmptyOr => Next<EncodingWithGap>(seed => seed is null or "");
-    public bool Whitespace => Next<Fruit<string>>(seed => string.IsNullOrWhiteSpace(seed.NotNull().NotEmpty()));
+    public AsciiWithGaps NullEmptyOr => Next<AsciiWithGaps>(seed => seed is null or "");
+    public bool Whitespace => Next<Fruit<string>>(seed => string.IsNullOrWhiteSpace(seed.NotNull()) && seed is not "");
 
-    public bool SingleSpace => Next<Fruit<string>>(seed => seed is spaces.Single);
+    public bool SingleSpace => Next<Fruit<string>>(seed => seed.NotNull() is spaces.Single);
 
     public bool Spaces => Next<bool, Fruit<string>>(seed => seed.NotNull() is not "" &&
         seed.All(chr => ' ' == chr));
