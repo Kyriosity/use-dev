@@ -12,5 +12,4 @@ public static class GuardExtensions
         value is "" ? Empty.Throw(message) : value;
     public static string NotEmpty(this ICollection value, string message = "") =>
        value.Count is 0 ? Empty.Throw(message) : value;
-
 }
