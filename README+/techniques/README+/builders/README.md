@@ -1,6 +1,10 @@
 # T<samp>echniques</samp>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Wizards/Builders (hard trail)
 
-Generics are at the pinnacle of **C#** technical embarrassment, while...
+Builders / wizards are much more than coding convenience. It's a way of design thinking and dynamic templates.
+
+Only the over difficulty of their true  implementation in both languages and applications put them out of the main road.
+
+Let's take C#. Generics there are at the pinnacle of **C#** technical embarrassment, while...
 
 <blockquote align="center"><ins>&thinsp;«&thinsp;<b>BUILDERS</b>&thinsp;»&thinsp;</ins> ia an <samp>EXPONENTIAL <b>DISASTER</samp></b>&thinsp; in this "sharp" and less strongly-typed object-oriented languages.</blockquote>
 
