@@ -19,7 +19,8 @@ internal static class Builder
     }
 
     private static readonly Type[] AmbiguousSignatureTypes =
-        [typeof(ArgumentException), typeof(ArgumentNullException), typeof(InvalidEnumArgumentException)];
+        [typeof(NullReferenceException), typeof(ArgumentNullException),
+        typeof(ArgumentException), typeof(InvalidEnumArgumentException)];
     //👆 list other system and foreign types when added here
 
     private static readonly Type _ambiguousSignatureType = typeof(IHasAmbiguousSignature);
