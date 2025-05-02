@@ -4,7 +4,7 @@ public abstract class Lnk_Pulp_Lnk<T, TRes, LnkL, LnkR>
 
     where LnkL : fuseFn.IBase<TRes> where LnkR : fuseFn.IBase<TRes>
 {
-    internal override Func<TRes, TRes, TRes>? LnkLeft { get; set; } = Unpack<LnkL>();
+    internal override Func<Func<TRes>, Func<TRes>, TRes>? LnkLeft { get; set; } = Unpack<LnkL>();
 }
 
 public abstract class Lnk_Fruit_Lnk<T, TRes, LnkLeft, LnkRight>

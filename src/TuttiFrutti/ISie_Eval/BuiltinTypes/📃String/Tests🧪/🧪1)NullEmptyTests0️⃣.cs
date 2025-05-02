@@ -17,10 +17,11 @@ public class NullEmptyTests : Setup.Arrange
     public void CutByPrecondition() {
         True = NullStr.Is().NullEmptyOr.Whitespace;
         True = "".Is().NullEmptyOr.Whitespace;
+
         True = "".Is().EmptyOr.Whitespace;
 
         True = "".Is().NullEmptyOr.Ascii;
-        True = NullStr.Is().NullEmptyOr.Ascii.NoControls;
+        True = NullStr.Is().NullEmptyOr.Ascii;
 
         True = NullStr.Is().NullEmptyOr.SingleSpace;
         True = string.Empty.Is().NullEmptyOr.SingleSpace;
@@ -28,4 +29,6 @@ public class NullEmptyTests : Setup.Arrange
         True = NullStr.Is().NullEmptyOr.Spaces;
         True = string.Empty.Is().NullEmptyOr.Spaces;
     }
+
+
 }

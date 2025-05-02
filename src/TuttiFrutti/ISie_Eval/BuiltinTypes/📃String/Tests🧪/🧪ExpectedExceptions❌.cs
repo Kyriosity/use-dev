@@ -7,11 +7,8 @@ public class ErrorsAndExceptions : Setup.Arrange
 {
     [Test]
     public void When_NULL_not_checked() {
-
         Error = NullReference => NullStr.Is().EmptyOr.Whitespace;
-
         Error = NullReference => NullStr.Is().Whitespace;
-
         Error = NullReference => NullStr.Is().Ascii;
     }
 

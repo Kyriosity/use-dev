@@ -4,11 +4,11 @@ namespace WizConstr.Blocks;
 
 public abstract class Pulp<T, TRes> : Xform.Pulp<T, TRes>
 {
-    internal virtual Func<TRes, TRes, TRes>? LnkLeft { get; set; } = null;
-    internal virtual Func<TRes, TRes, TRes>? LnkRight => null;
+    internal virtual Func<Func<TRes>, Func<TRes>, TRes>? LnkLeft { get; set; } = null;
+    internal virtual Func<Func<TRes>, Func<TRes>, TRes>? LnkRight => null;
 
-    protected static Func<TRes, TRes, TRes> Unpack<I>() => (argL, argR) =>
-               (TRes)Method.Default<I>(nameof(fuseFn.IBase<TRes>.Join)).Invoke(argL, argR);
+    protected static Func<Func<TRes>, Func<TRes>, TRes> Unpack<I>() => (left, right) =>
+        (TRes)Method.Default<I>(nameof(fuseFn.IBase<TRes>.Join)).Invoke(left, right);
 
     internal Pulp<T, TRes>? Prev { get; init; }
     protected new TBk Next<TBk>()

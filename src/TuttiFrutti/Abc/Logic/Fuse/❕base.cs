@@ -2,5 +2,5 @@
 
 public interface IBase<T>
 {
-    T Join(T op1, T op2) => throw new NotImplementedException();
+    T Join(Func<T> left, Func<T> right) => throw new NotImplementedException();
 }

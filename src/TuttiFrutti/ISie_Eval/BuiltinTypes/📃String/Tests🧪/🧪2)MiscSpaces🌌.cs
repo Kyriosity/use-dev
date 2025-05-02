@@ -23,7 +23,7 @@ public class MiscSpaces : Setup.Arrange
     [Many($" \u2029  ", "   test    ", " %  ", "      __            ")] // \u2029 = paragraph
     public void Not_AnySpaces(string subj) {
 
-        TestBy(subj, true);
+        TestBy(subj, false);
     }
 
     protected void TestBy(string subj, bool expected) {

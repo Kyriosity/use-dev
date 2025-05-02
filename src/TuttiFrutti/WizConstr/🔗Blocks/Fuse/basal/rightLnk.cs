@@ -3,7 +3,7 @@
 public abstract class rightLnk<T, TRes, Lnk> : pulp<T, TRes>, ILnkRight
     where Lnk : fuseFn.IBase<TRes>
 {
-    internal override Func<TRes, TRes, TRes>? LnkRight { get; } = Unpack<Lnk>();
+    internal override Func<Func<TRes>, Func<TRes>, TRes>? LnkRight { get; } = Unpack<Lnk>();
 
     protected new Blk Next<Blk>()
         where Blk : pulp<T, TRes>, INoLnkLeft, new()
