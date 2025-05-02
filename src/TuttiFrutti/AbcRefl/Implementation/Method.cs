@@ -26,8 +26,19 @@ public class Method
     public static Method Default<I>(string name, Type[]? signature = null) =>
         new(typeof(I), name, signature);
 
-    public object? Invoke(params object?[] args) =>
-        _method is null ?
-            throw new ArgumentException($"{_declType.FullName}.{_name}(): not found") :
-            _method.Invoke(Dummy, args);
+    public object? Invoke(params object?[] args) {
+
+        if (_method is null)
+            throw new ArgumentException($"{_declType.FullName}.{_name}(): not found");
+        try {
+            return _method.Invoke(Dummy, args);
+        } catch (Exception exception) {
+            if (targetInvocation.IsAssignableFrom(exception.GetType()) && exception.InnerException != null)
+                throw exception.InnerException;
+            throw;
+        }
+    }
+
+    private static readonly Type targetInvocation = typeof(TargetInvocationException);
+
 }
