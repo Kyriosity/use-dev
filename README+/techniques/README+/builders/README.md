@@ -1,6 +1,6 @@
 # T<samp>echniques</samp>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Wizards/Builders (hard trail)
 
-<ins>Real</ins> <samp>Builders / wizards</samp> beyond chained calls are far more than coding convenience and error-proof input. As scrpting or meta-language they must become an alternative design paradigm.
+<ins>Real</ins> <samp>builders&thinsp;/&thinsp;wizards</samp> beyond chained calls are far more than coding convenience and error-proof input. As scrpting or meta-language they must become an alternative design paradigm (not simple patterns).
 
 And only the over complexity of the uncompromising language feature or a library, and heavy overhead of tailored endeavors made them exotic in our projects.
 
