@@ -1,10 +1,10 @@
 # T<samp>echniques</samp>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Wizards/Builders (hard trail)
 
-Builders / wizards are much more than coding convenience. It's a way of design thinking and dynamic templates.
+<ins>Real</ins> <samp>Builders / wizards</samp> beyond chained calls are far more than coding convenience and error-proof input. As scrpting or meta-language they must become an alternative design paradigm.
 
-Only the over difficulty of their true  implementation in both languages and applications put them out of the main road.
+And only the over complexity of the uncompromising language feature or a library, and heavy overhead of tailored endeavors made them exotic in our projects.
 
-Let's take C#. Generics there are at the pinnacle of **C#** technical embarrassment, while...
+To compare. Generics are at the pinnacle of **C#** technical embarrassment, while...
 
 <blockquote align="center"><ins>&thinsp;«&thinsp;<b>BUILDERS</b>&thinsp;»&thinsp;</ins> ia an <samp>EXPONENTIAL <b>DISASTER</samp></b>&thinsp; in this "sharp" and less strongly-typed object-oriented languages.</blockquote>
 
@@ -12,19 +12,19 @@ Let's take C#. Generics there are at the pinnacle of **C#** technical embarrassm
 <div>We talk about multi-variant branching menus with intuitive context-sensitive options, like:</div>
  <p align="center"><code>= UndoRedo.Buffer(3).Depth(5).Zip().Of("start");</code></p>
 <div>What's often sold as builders is a counter-intuitive syntax tape of setters and operations,</div>
-  <p align="center"><code>.Add(...).Set(...).Add(...).Set(...)</code></p>
-  <p>which doesn't prevent repetitions and wrong calls.</p>
+  <p align="center"><code>.Add(...).Set(...).Add(...).Set(...) ... Make();</code></p>
+  <p>which doesn't prevent repetitions, redundancies and wrong calls.</p>
 <p align="center"><b>The challenge is the <ins>combinatorial explosion</ins>.</b></p>
 </td></tr></table>
 
-> But we are here not to yammer but to collect techniques and ideas that mitigate the complexities and still render intuitive builders (to some extent).
+> We are here not to yammer but to collect techniques and ideas that mitigate the complexities and still render intuitive builders (to some extent).
 
 First of all, creating unlimited context constructors is possible with
 
 + auto-generating templates under defined scenarios,
 + dynamic code generation to stuff the selected interface.
 
-However, are there products for which it won't be an over-mega-engineering? Let's go to the next:
+However, are there custom applications for which it won't be an over-mega-engineering? Let's consider other possibilities:
 
 <table><tr><td><picture><img alt="&nbsp;🚧  W&thinsp;O&thinsp;R&thinsp;K  i&thinsp;n  P&thinsp;R&thinsp;O&thinsp;G&thinsp;R&thinsp;E&thinsp;S&thinsp;S&thinsp; 🐝" src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/_nav/tiles/_WorkInProgress_200px.jpg" /></picture></td><td>
 <p>GENERIC PARAMETRIZAION</p>
