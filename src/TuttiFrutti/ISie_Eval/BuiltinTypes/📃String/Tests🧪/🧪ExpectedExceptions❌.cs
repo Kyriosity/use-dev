@@ -7,9 +7,12 @@ public class ErrorsAndExceptions : Setup.Arrange
 {
     [Test]
     public void When_NULL_not_checked() {
-        Error = NullReference => NullStr.Is().EmptyOr.Whitespace;
+        Error = NullReference => NullStr.Is().Spaces;
+        Error = NullReference => NullStr.Is().SingleSpace;
         Error = NullReference => NullStr.Is().Whitespace;
-        Error = NullReference => NullStr.Is().Ascii;
+        Error = NullReference => NullStr.Is().Ascii; // ! won't throw when no explicit assignment
+
+        Error = NullReference => NullStr.Is().EmptyOr.Whitespace;
     }
 
 #if DEBUG
