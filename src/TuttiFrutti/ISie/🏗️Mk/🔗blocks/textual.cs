@@ -45,6 +45,7 @@ public interface ITextCheck
 
 public class Encoding : Fruit<string>, IEncodingChecks
 {
+
     /// <summary>
     /// Contains no control characters
     /// </summary>
