@@ -151,17 +151,15 @@ Classes are PLATES to make BOARDS.
 
 \___________</details>
 
-## Wrap up
+## Wrap up. ✅Pros and 🧩 Cons
 
-experimental
+🧩 Both dis- and advantage is that it's an <samp>EXPERIMENTAL</samp> feature.
 
-## Pros and cons
+✅ **First of all**, the split of design in a good way - as a "side" abstraction or a "lane" of logics.
 
-✅ First of all, the split of design in a good way - as a side abstraction or track of logics.
+✅It omes hand in hand with generic parametrization.
 
-comes hand in hand with generic parametrization. LINK !!
-
-the main logic remains intact.
+The main logic flow remains intact.
 
 + Declarative language is friendlier for comprehension.
 
