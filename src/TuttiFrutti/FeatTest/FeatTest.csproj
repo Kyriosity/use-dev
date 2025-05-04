@@ -32,6 +32,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AbcExtNUnit\AbcExtNUnit.csproj" />
+    <ProjectReference Include="..\ISie\ISie.csproj" />
   </ItemGroup>
 
   <ItemGroup>

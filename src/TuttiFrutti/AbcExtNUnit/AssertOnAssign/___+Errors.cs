@@ -43,10 +43,11 @@ public abstract class Defined_Errors : Defined
     private static IEnumerable<string> NormalizeParameters(LambdaExpression expression, string callerArg) {
         var parameters = expression.Parameters.Select(x => x.ToString().Trim()).ToList();
 
-        if (parameters.Any(string.IsNullOrWhiteSpace)) // NOTE: don't throw empty / argument exception, which may be expected ...
-            FixtureError.Throw($"\"{callerArg}\" submitted whitespace parameters: {parameters.Count(string.IsNullOrWhiteSpace)}"); // ... but testbed specific
+        var wsCount = parameters.Count(param => param.Is().NullEmptyOr.Whitespace);
+        if (wsCount is not 0) // NOTE: don't throw empty / argument exception, which may be expected ...
+            FixtureError.Throw($"\"{callerArg}\" submitted whitespace parameters: " + wsCount); // ... but testbed specific
 
-        parameters = parameters.Select(x => x.Replace("__", ".")).ToList();
+        parameters = [.. parameters.Select(x => x.Replace("__", "."))];
         EnsureExceptionSuffixOption(parameters);
 
         var duplicates = parameters.GroupBy(x => x).Where(g => g.Count() > 1).ToList();

@@ -4,5 +4,6 @@ global using AbcDataOps.Text.Alter;
 global using AbcExtNUnit.Exceptions;
 global using AbcRefl.Stack;
 global using AbcStuff.Stubs;
+global using ISie.String;
 global using NUnit.Framework;
 global using System.Linq.Expressions;
