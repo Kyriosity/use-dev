@@ -1,4 +1,6 @@
-﻿namespace WizConstr.Blocks.Fuse.basal;
+﻿using Abc.Logic.Fuse.Lazy;
+
+namespace WizConstr.Blocks.Fuse.basal;
 
 public abstract class rightVoid<T, TRes> : pulp<T, TRes>, INoLnkRight
 {
@@ -8,7 +10,7 @@ public abstract class rightVoid<T, TRes> : pulp<T, TRes>, INoLnkRight
             base.Next<Blk>();
 
     protected Blk Next<Blk, Lnk>() where Blk : pulp<T, TRes>, INoLnkLeft, new()
-        where Lnk : fuseFn.IBase<TRes> {
+        where Lnk : IBase<TRes> {
 
         var block = base.Next<Blk>();
         block.LnkLeft = Unpack<Lnk>();
@@ -16,6 +18,6 @@ public abstract class rightVoid<T, TRes> : pulp<T, TRes>, INoLnkRight
     }
 
     protected new Lnk_Fruit<T, TRes, Lnk> Next<Lnk>(Func<T, TRes> xform)
-        where Lnk : fuseFn.IBase<TRes> =>
+        where Lnk : IBase<TRes> =>
            new() { Seed = Seed, Prev = this, XForm = xform };
 }

@@ -13,10 +13,3 @@ public class And_Fruit<T> : Ops.And_Fruit<T>
         XForm = xform;
     }
 }
-
-public class Xor_Fruit<T> : Ops.Xor_Fruit<T>
-{
-    public Xor_Fruit(Func<T, bool> xform) {
-        XForm = xform;
-    }
-}

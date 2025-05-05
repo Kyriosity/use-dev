@@ -6,8 +6,8 @@ public abstract class pulp<T, TRes> : Blocks.Pulp<T, TRes>
         if (Prev is null)
             return XForm(Seed);
 
-        Func<TRes> left = () => Prev.XForm(Prev.Seed);
-        Func<TRes> right = () => XForm(Seed);
+        var left = Prev.XForm(Prev.Seed);
+        var right = () => XForm(Seed);
 
         var join = new[] { Prev.LnkRight, LnkLeft }.Single(fn => fn is not null);
 

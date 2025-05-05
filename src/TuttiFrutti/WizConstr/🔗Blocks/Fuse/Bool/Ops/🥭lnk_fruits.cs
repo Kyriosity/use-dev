@@ -1,5 +1,7 @@
-﻿namespace WizConstr.Blocks.Fuse.Bool.Ops;
+﻿using Abc.Logic.Fuse.Lazy;
 
-public abstract class Or_Fruit<T> : Lnk_Fruit<T, fuseFn.IDisjunct>;
-public abstract class And_Fruit<T> : Lnk_Fruit<T, fuseFn.IConjunct>;
-public abstract class Xor_Fruit<T> : Lnk_Fruit<T, fuseFn.IExclude>;
+namespace WizConstr.Blocks.Fuse.Bool.Ops;
+
+public abstract class Or_Fruit<T> : Lnk_Fruit<T, IDisjunct>;
+public abstract class And_Fruit<T> : Lnk_Fruit<T, IConjunct>;
+//public abstract class Xor_Fruit<T> : Lnk_Fruit<T, IExclude>;

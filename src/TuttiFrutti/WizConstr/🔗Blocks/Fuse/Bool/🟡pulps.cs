@@ -1,4 +1,4 @@
-﻿using Abc.Logic.Fuse;
+﻿using Abc.Logic.Fuse.Lazy;
 using WizConstr.Blocks.Fuse.Bool.basal;
 
 namespace WizConstr.Blocks.Fuse.Bool;

@@ -1,4 +1,6 @@
-﻿namespace WizConstr.Blocks.Fuse.Bool;
+﻿using Abc.Logic.Fuse.Lazy;
+
+namespace WizConstr.Blocks.Fuse.Bool;
 
 public class Fruit<T> : Pulp<T>
 {
@@ -6,20 +8,20 @@ public class Fruit<T> : Pulp<T>
 }
 
 public class Lnk_Fruit<T, Lnk> : Lnk_Pulp<T, Lnk>
-    where Lnk : fuseFn.IBool
+    where Lnk : IBool
 {
     public static implicit operator bool(Lnk_Fruit<T, Lnk> source) => source.Yield();
 }
 
 public class Fruit_Lnk<T, Lnk> : Pulp_Lnk<T, Lnk>
-    where Lnk : fuseFn.IBool
+    where Lnk : IBool
 {
     public static implicit operator bool(Fruit_Lnk<T, Lnk> source) => source.Yield();
 }
 
 public class Lnk_Fruit_Lnk<T, LnkLeft, LnkRight> : Lnk_Pulp_Lnk<T, LnkLeft, LnkRight>
-    where LnkLeft : fuseFn.IBool
-    where LnkRight : fuseFn.IBool
+    where LnkLeft : IBool
+    where LnkRight : IBool
 {
     public static implicit operator bool(Lnk_Fruit_Lnk<T, LnkLeft, LnkRight> source) => source.Yield();
 }

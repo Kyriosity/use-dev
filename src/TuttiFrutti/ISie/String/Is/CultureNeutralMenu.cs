@@ -6,17 +6,17 @@ internal class CultureNeutralMenu(string seed) : Root<string>(seed), ICultureNeu
 {
     public bool NullOrEmpty => Next<Fruit<string>>(seed => seed is null or "");
 
-    public AsciiWithGaps EmptyOr => Next<AsciiWithGaps>(seed => seed.NotNull() is "");
+    public AsciiWithGaps EmptyOr => Next<AsciiWithGaps>(seed => seed.NoNull() is "");
 
     public AsciiWithGaps NullEmptyOr => Next<AsciiWithGaps>(seed => seed is null or "");
-    public bool Whitespace => Next<Fruit<string>>(seed => string.IsNullOrWhiteSpace(seed.NotNull()) && seed is not "");
+    public bool Whitespace => Next<Fruit<string>>(seed => string.IsNullOrWhiteSpace(seed.NoNull()) && seed is not "");
 
-    public bool SingleSpace => Next<Fruit<string>>(seed => seed.NotNull() is spaces.Single);
+    public bool SingleSpace => Next<Fruit<string>>(seed => seed.NoNull() is spaces.Single);
 
-    public bool Spaces => Next<bool, Fruit<string>>(seed => seed.NotNull() is not "" &&
+    public bool Spaces => Next<bool, Fruit<string>>(seed => seed.NoNull() is not "" &&
         seed.All(chr => ' ' == chr));
 
-    public Encoding Ascii => Next<Encoding>(seed => seed.NotNull().NotEmpty("can't check empty for encoding")
+    public Encoding Ascii => Next<Encoding>(seed => seed.NoNull().NoEmpty("can't check empty for encoding")
         .ToCharArray().All(ch => char.IsAscii(ch)));
     public bool Grayspace => Next<Fruit<string>>(NotImplemented.Throw("reserved for discussions"));
 }

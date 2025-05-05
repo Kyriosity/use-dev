@@ -4,7 +4,7 @@ using ISie.String.Traits;
 namespace ISie.String.BlankProof;
 public class AsciiWithGaps : Gaps, IAsciiWithGaps
 {
-    public Encoding Ascii => Next<Encoding>(seed => seed.NotNull().NotEmpty("can't check empty for encoding")
+    public Encoding Ascii => Next<Encoding>(seed => seed.NoNull().NoEmpty("can't check empty for encoding")
         .ToCharArray().All(ch => char.IsAscii(ch)));
 }
 
