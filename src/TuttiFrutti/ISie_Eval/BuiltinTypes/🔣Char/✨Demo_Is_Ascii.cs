@@ -33,14 +33,14 @@ public class Demo_Is_Ascii : Setup.Arrange
     [Test]
     public void HexDigits() {
         True = '5'.Is().Ascii.HexDigit;
-        True = '5'.Is().Ascii.HexDigit.Lower;
-        True = '5'.Is().Ascii.HexDigit.Upper;
+        False = '5'.Is().Ascii.HexDigit.Lower;
+        False = '5'.Is().Ascii.HexDigit.Upper;
 
         False = 'g'.Is().Ascii.HexDigit;
+        False = 'G'.Is().Ascii.HexDigit.Upper;
 
         True = 'a'.Is().Ascii.HexDigit;
         True = 'c'.Is().Ascii.HexDigit.Lower;
         True = 'F'.Is().Ascii.HexDigit.Upper;
-        False = 'g'.Is().Ascii.HexDigit;
     }
 }
