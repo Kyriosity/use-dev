@@ -1,27 +1,7 @@
-﻿using AbcCommu.Errors.Sys;
-using System.Runtime.CompilerServices;
-
-namespace ISie_Eval.BuiltinTypes.String;
+﻿namespace ISie_Eval.BuiltinTypes.String;
 
 public class Demo : Setup.Arrange
 {
-    [Test]
-    public void LazyCallsForLogic() {
-        //True = NullStr.Is().NullEmptyOr.Whitespace;
-        var res = CutFail(Ident(""), FailBool("dd"));
-    }
-
-    private bool CutFail(bool left, bool right,
-        [CallerArgumentExpressionAttribute(nameof(left))] string exp1 = "",
-        [CallerArgumentExpressionAttribute(nameof(right))] string exp2 = "") {
-        return true;
-    }
-
-    private Func<string, bool> Ident = _ => false;
-
-    private Func<string, bool> FailBool = _ => NotImplemented.Throw("demo");
-
-
 #if DEBUG
     [Test]
 #endif
