@@ -23,7 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AbcCommu\AbcStoppers.csproj" />
     <ProjectReference Include="..\AbcExtNUnit\AbcExtNUnit.csproj" />
     <ProjectReference Include="..\ISie\ISie.csproj" />
   </ItemGroup>

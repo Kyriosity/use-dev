@@ -1,6 +1,4 @@
-﻿using AbcStuff.Glyphs;
-
-namespace ISie_Eval.BuiltinTypes.ISie.Char;
+﻿namespace ISie_Eval.BuiltinTypes.Char;
 public class Demo_Is : Setup.Arrange
 {
     [Test]
@@ -11,7 +9,7 @@ public class Demo_Is : Setup.Arrange
 
         True = ','.Is().Punctuation;
         True = '\t'.Is().Whitespace;
-        True = Marks.Paragraph.Is().Separator;
+        True = Glyph.Marks.Paragraph.Is().Separator;
 
         True = '\u0001'.Is().Control;
         True = '+'.Is().Symbol;
