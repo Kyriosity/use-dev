@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Abc.Prop\Abc.Item.csproj" />
-    <ProjectReference Include="..\AbcCommu\AbcCommu.csproj" />
+    <ProjectReference Include="..\AbcStoppers\AbcStoppers.csproj" />
   </ItemGroup>
 
 </Project>

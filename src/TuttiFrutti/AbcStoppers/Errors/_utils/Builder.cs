@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace AbcCommu.Errors.Utils;
+namespace AbcStoppers.Errors.Utils;
 internal static class Builder
 {
     internal static Exc Make<Exc>(string? message = "", Exception? inner = null) where Exc : Exception =>

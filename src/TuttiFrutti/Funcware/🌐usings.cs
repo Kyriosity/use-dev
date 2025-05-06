@@ -1,4 +1,4 @@
-﻿global using AbcCommu.Errors.Sys;
-global using AbcRefl.Metadata.Ratio;
+﻿global using AbcRefl.Metadata.Ratio;
+global using AbcStoppers.Errors.Sys;
 global using System.Numerics;
 

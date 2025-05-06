@@ -1,4 +1,4 @@
-﻿namespace AbcCommu.Errors.Basal;
+﻿namespace AbcStoppers.Errors.Basal;
 public abstract class MultiparameterConditional<Exc>(string? message = "", Exception? inner = null)
     : Multiparameter<Exc>(message, inner) where Exc : Exception
 {

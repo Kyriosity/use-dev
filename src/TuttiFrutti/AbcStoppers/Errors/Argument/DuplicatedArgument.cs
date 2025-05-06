@@ -1,6 +1,6 @@
-﻿using AbcCommu.Errors.Sys;
+﻿using AbcStoppers.Errors.Sys;
 
-namespace AbcCommu.Errors.Argument;
+namespace AbcStoppers.Errors.Argument;
 public class DuplicatedArgument(string message) : Exception<DuplicatedArgument>(message), IHasAmbiguousSignature
 {
     public static bool ThrowIfAny<T>(T arg1, T arg2, T arg3 = default, T arg4 = default, T arg5 = default,

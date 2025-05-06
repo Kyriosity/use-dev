@@ -1,4 +1,4 @@
-﻿namespace AbcCommu.Errors.Sys;
+﻿namespace AbcStoppers.Errors.Sys;
 
 public class InvalidOperation : Exception<InvalidOperationException>
 {

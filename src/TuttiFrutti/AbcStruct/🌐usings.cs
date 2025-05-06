@@ -1,3 +1,3 @@
-﻿global using AbcCommu.Errors.Data;
-global using AbcCommu.Errors.Sys;
+﻿global using AbcStoppers.Errors.Data;
+global using AbcStoppers.Errors.Sys;
 global using System.Collections;

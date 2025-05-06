@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AbcCommu\AbcCommu.csproj" />
+    <ProjectReference Include="..\AbcStoppers\AbcStoppers.csproj" />
     <ProjectReference Include="..\N-Val\N-Val.csproj" />
   </ItemGroup>
 

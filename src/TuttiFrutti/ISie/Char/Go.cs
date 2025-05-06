@@ -1,4 +1,4 @@
-﻿using AbcCommu.Errors.Sys;
+﻿using AbcStoppers.Errors.Sys;
 using ISie.Char.Is.Menus;
 
 namespace ISie.Char;

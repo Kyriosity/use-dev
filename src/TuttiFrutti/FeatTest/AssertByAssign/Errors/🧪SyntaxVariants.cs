@@ -1,4 +1,4 @@
-﻿using AbcCommu.Errors.Argument;
+﻿using AbcStoppers.Errors.Argument;
 
 namespace FeatTest.AssertByAssign.Errors;
 public class SyntaxVariants : Basal

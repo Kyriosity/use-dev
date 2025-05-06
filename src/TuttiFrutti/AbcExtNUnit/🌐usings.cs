@@ -1,8 +1,8 @@
-global using AbcCommu.Errors.Sys;
 global using AbcDataOps.Compare;
 global using AbcDataOps.Text.Alter;
 global using AbcExtNUnit.Exceptions;
 global using AbcRefl.Stack;
+global using AbcStoppers.Errors.Sys;
 global using AbcStuff.Stubs;
 global using ISie.String;
 global using NUnit.Framework;

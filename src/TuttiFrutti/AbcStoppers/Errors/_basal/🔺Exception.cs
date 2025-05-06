@@ -1,4 +1,6 @@
-﻿namespace AbcCommu.Errors.Basal;
+﻿using AbcStoppers.Errors.Utils;
+
+namespace AbcStoppers.Errors.Basal;
 public abstract class Exception<Exc>(string? message = "", Exception? inner = null)
     : Exception(message, inner)
 

@@ -1,4 +1,4 @@
-﻿using AbcCommu.Errors.Data;
+﻿using AbcStoppers.Errors.Data;
 
 namespace WizConstr.Xform;
 

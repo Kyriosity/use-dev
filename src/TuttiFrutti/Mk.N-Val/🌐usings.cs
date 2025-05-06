@@ -1,1 +1,1 @@
-﻿global using AbcCommu.Errors.Sys;
+﻿global using AbcStoppers.Errors.Sys;

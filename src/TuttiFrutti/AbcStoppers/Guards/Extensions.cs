@@ -1,8 +1,8 @@
-﻿using AbcCommu.Errors.Data;
-using AbcCommu.Errors.Sys;
+﻿using AbcStoppers.Errors.Data;
+using AbcStoppers.Errors.Sys;
 using System.Collections;
 
-namespace AbcCommu.Guards;
+namespace AbcStoppers.Guards;
 public static class GuardExtensions
 {
     public static T NoNull<T>(this T value, string message = "") =>

@@ -1,7 +1,7 @@
-﻿using AbcCommu.Errors.Utils;
+﻿using AbcStoppers.Errors.Utils;
 
 namespace AbcExtNUnit.Exceptions;
 
 public class FixtureError(string message) :
-    AbcCommu.Errors.Basal.Exception<FixtureError>(message),
+    AbcStoppers.Errors.Basal.Exception<FixtureError>(message),
     IHasAmbiguousSignature;

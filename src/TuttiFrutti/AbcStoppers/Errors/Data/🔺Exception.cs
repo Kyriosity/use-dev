@@ -1,6 +1,6 @@
 ﻿using AbcRefl.Stack;
 
-namespace AbcCommu.Errors.Data;
+namespace AbcStoppers.Errors.Data;
 
 public abstract class Exception<Exc>(string message) : Basal.Exception<Exc>(message)
     where Exc : Exception

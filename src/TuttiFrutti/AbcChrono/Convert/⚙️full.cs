@@ -1,5 +1,6 @@
 ﻿using AbcChrono.Timescales;
 
+
 namespace AbcChrono.Convert;
 class Full<NRes> : IYears<NRes> where NRes : INumber<NRes>
 {

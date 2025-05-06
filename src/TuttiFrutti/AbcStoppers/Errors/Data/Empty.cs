@@ -1,4 +1,4 @@
-﻿namespace AbcCommu.Errors.Data;
+﻿namespace AbcStoppers.Errors.Data;
 
 public class Empty(string message) : Exception<Empty>(message),
     IHasAmbiguousSignature

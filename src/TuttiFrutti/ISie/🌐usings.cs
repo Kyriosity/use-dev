@@ -1,11 +1,10 @@
 ﻿global using Abc.Char;
 global using Abc.Char.Blanks;
 global using Abc.Lingua;
-global using Abc.Logic;
 global using Abc.Marks;
 global using Abc.Selection;
-global using AbcCommu.Errors.Sys;
-global using AbcCommu.Guards;
+global using AbcStoppers.Errors.Sys;
+global using AbcStoppers.Guards;
 global using AbcStuff.Text;
 global using ISie.Mk;
 global using WizConstr.Blocks.Fuse.Bool;

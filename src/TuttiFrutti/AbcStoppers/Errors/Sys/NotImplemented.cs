@@ -1,6 +1,6 @@
 ﻿using System.Data.SqlTypes;
 
-namespace AbcCommu.Errors.Sys;
+namespace AbcStoppers.Errors.Sys;
 public class NotImplemented : Exception<NotImplementedException>
 {
     private NotImplemented() { /* to prevent direct instantiation */ }
