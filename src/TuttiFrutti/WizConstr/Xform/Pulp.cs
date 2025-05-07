@@ -1,5 +1,4 @@
 ﻿using AbcStoppers.Errors.Data;
-
 namespace WizConstr.Xform;
 
 public abstract class Pulp<T, TRes> : Core<T>
@@ -10,7 +9,5 @@ public abstract class Pulp<T, TRes> : Core<T>
         set => _eval = value;
     }
     private Func<T, TRes>? _eval = null;
-
-    protected virtual TRes Yield() => XForm(Seed); // ToDesign: FIND its place
 }
 

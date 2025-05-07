@@ -1,16 +1,19 @@
-﻿namespace WizConstr.Blocks.Fuse.basal;
+﻿using Abc.Logic.Fuse.Lazy;
+using AbcRefl.Implementation;
+
+namespace WizConstr.Blocks.Fuse.basal;
 
 public abstract class pulp<T, TRes> : Blocks.Pulp<T, TRes>
 {
-    protected override TRes Yield() {
-        if (Prev is null)
-            return XForm(Seed);
+    internal virtual Func<TRes, Func<TRes>, TRes>? LnkLeft { get; set; } = null;
+    internal virtual Func<TRes, Func<TRes>, TRes>? LnkRight => null;
 
-        var left = Prev.XForm(Prev.Seed);
-        var right = () => XForm(Seed);
+    protected static Func<TRes, Func<TRes>, TRes> Unpack<I>() => (left, right) =>
+        (TRes)Method.Default<I>(nameof(IBase<TRes>.Join)).Invoke(left, right);
 
-        var join = new[] { Prev.LnkRight, LnkLeft }.Single(fn => fn is not null);
 
-        return join(left, right);
+    protected override TRes Fuse() {
+        var join = new[] { (Prev as pulp<T, TRes>).LnkRight, LnkLeft }.Single(fn => fn is not null);
+        return join(Prev.Yield(), () => XForm(Seed));
     }
 }
