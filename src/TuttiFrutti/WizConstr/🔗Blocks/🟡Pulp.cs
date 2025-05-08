@@ -12,10 +12,10 @@ public abstract class Pulp<T, TRes> : Xform.Pulp<T, TRes>
         return isInterim ? result : Circuitry(result);
     }
 
-    protected new TBk Next<TBk>() where TBk : Pulp<T, TRes>, new() =>
+    protected TBk Next<TBk>() where TBk : Pulp<T, TRes>, new() =>
         new() { Seed = Seed, Circuitry = Circuitry, Prev = this };
 
-    protected TBk Next<TBk>(Func<T, TRes> xform) where TBk : Pulp<T, TRes>, new() {
+    protected new TBk Next<TBk>(Func<T, TRes> xform) where TBk : Pulp<T, TRes>, new() {
         var pulp = Next<TBk>(); pulp.XForm = xform;
 
         return pulp;
