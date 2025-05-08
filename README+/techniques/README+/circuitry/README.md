@@ -2,7 +2,7 @@
 
 ## Inductive Reasoning for Intro
 
-let's present the idea through a case study.
+Let's present the idea through a case study.
 
 > __«C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &mdash; from a case below.__
 
@@ -71,8 +71,7 @@ This simplest _unary boolean_ has four variants &mdash; other types with more th
 
 ```csharp
 
-"yada yada".Compare<LooseContent>("blah blah",
-   CompareOptions.IgnoreCase);
+"yada yada".Compare<LooseContent>("blah blah");
 
 ```
 
@@ -151,13 +150,13 @@ Classes are PLATES to make BOARDS.
 
 \___________</details>
 
-## Wrap up. ✅Pros and 🧩 Cons
+## Wrap up. Pros and Cons
 
 🧩 Both dis- and advantage is that it's an <samp>EXPERIMENTAL</samp> feature.
 
 ✅ **First of all**, the split of design in a good way - as a "side" abstraction or a "lane" of logics.
 
-✅It omes hand in hand with generic parametrization.
+✅It goes hand in hand with generic parametrization.
 
 The main logic flow remains intact.
 
@@ -165,15 +164,15 @@ The main logic flow remains intact.
 
 TEMPLATING 
 
-+ sharing. impulse to of elements. invert, multilingual trim are obvious
++ sharing. impulse of elements. invert, multilingual trim are obvious
 
 declarative is plus
 
-Design-first will create a test structure that is friendly for exploration and introduction of applications and features (even for non-developers).
+Design-first will create a test structure that is friendly for exploring and introducing applications and features (even for non-developers).
 
 🛑 Overengineering
 
-🗝️🕰️ implementation obstacles 
+🗝️🕰️ Implementation Obstacles 
 
 **`C#`** doesn't have `Func` generic constraint to be patched
  (DELETGATE doesn't help)
@@ -181,7 +180,7 @@ Design-first will create a test structure that is friendly for exploration and i
 
 ## Appendix. Implementation cases
 
-ISIe
+* [⭐**ISie**⭐](../../../README+/parts/_ext/ISie/README.md) and WizConstr
 
 \___________\
 🔚 🌘 2024-2025
