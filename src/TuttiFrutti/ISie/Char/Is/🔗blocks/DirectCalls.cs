@@ -1,25 +1,27 @@
 ﻿namespace ISie.Char.Is.Menus;
-internal abstract class DirectCalls(char seed) : Root<char>(seed), IDirectCalls
+internal abstract class DirectCalls<IO>(char seed) : Root<char, IO>(seed), IDirectCalls
+    where IO : Circuitry.IO
 {
-    public bool Whitespace => char.IsWhiteSpace(Seed);
+    public bool Whitespace => Next<Fruit<char>>(char.IsWhiteSpace);
 
-    public bool Separator => char.IsSeparator(Seed);
+    public bool Separator => Next<Fruit<char>>(char.IsSeparator);
 
-    public bool Punctuation => char.IsPunctuation(Seed);
+    public bool Punctuation => Next<Fruit<char>>(char.IsPunctuation);
 
-    public bool Letter => char.IsLetter(Seed);
+    public bool Letter => Next<Fruit<char>>(char.IsLetter);
 
-    public bool Digit => char.IsDigit(Seed);
+    public bool Digit => Next<Fruit<char>>(char.IsDigit);
 
-    public bool LetterOrDigit => char.IsLetterOrDigit(Seed);
+    public bool LetterOrDigit => Next<Fruit<char>>(char.IsLetterOrDigit);
 
-    public bool Symbol => char.IsSymbol(Seed);
+    public bool Symbol => Next<Fruit<char>>(char.IsSymbol);
 
-    public bool Control => char.IsControl(Seed);
+    public bool Control => Next<Fruit<char>>(char.IsControl);
 
-    public bool Lower => char.IsLower(Seed);
+    public bool Lower => Next<Fruit<char>>(char.IsLower);
 
-    public bool Upper => char.IsUpper(Seed);
+    public bool Upper => Next<Fruit<char>>(char.IsUpper);
 
-    public bool Between(char minInclusive, char maxInclusive) => char.IsBetween(Seed, minInclusive, maxInclusive);
+    public bool Between(char minInclusive, char maxInclusive) =>
+        Next<Fruit<char>>(ch => char.IsBetween(ch, minInclusive, maxInclusive));
 }

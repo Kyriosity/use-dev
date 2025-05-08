@@ -11,9 +11,8 @@ public abstract class pulp<T, TRes> : Blocks.Pulp<T, TRes>
     protected static Func<TRes, Func<TRes>, TRes> Unpack<I>() => (left, right) =>
         (TRes)Method.Default<I>(nameof(IBase<TRes>.Join)).Invoke(left, right);
 
-
     protected override TRes Fuse() {
-        var join = new[] { (Prev as pulp<T, TRes>).LnkRight, LnkLeft }.Single(fn => fn is not null);
-        return join(Prev.Yield(), () => XForm(Seed));
+        var link = new[] { (Prev as pulp<T, TRes>).LnkRight, LnkLeft }.Single(fn => fn is not null);
+        return link(Prev.Yield(true), () => XForm(Seed));
     }
 }

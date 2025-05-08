@@ -1,4 +1,6 @@
-﻿namespace ISie.Char.To;
+﻿using Abc.Logic.Circuitry.Bool;
+
+namespace ISie.Char.To;
 public interface IMenu
 {
     char Upper { get; }
@@ -7,7 +9,7 @@ public interface IMenu
     char LowerInvariant { get; }
 }
 
-internal class Menu(char seed) : Root<char>(seed), IMenu
+internal class Menu(char seed) : Root<char, IOWire>(seed), IMenu
 {
     public char Upper => char.ToUpper(Seed);
 

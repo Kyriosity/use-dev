@@ -19,5 +19,5 @@ public abstract class rightVoid<T, TRes> : pulp<T, TRes>, INoLnkRight
 
     protected new Lnk_Fruit<T, TRes, Lnk> Next<Lnk>(Func<T, TRes> xform)
         where Lnk : IBase<TRes> =>
-           new() { Seed = Seed, Prev = this, XForm = xform };
+           new() { Seed = Seed, Prev = this, XForm = xform, Circuitry = Circuitry };
 }

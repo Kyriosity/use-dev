@@ -4,6 +4,8 @@ public class Demo_Is : Setup.Arrange
     [Test]
     public void Alphanumeric() {
         True = 'ö'.Is().Letter;
+        False = 'ö'.Not().Letter;
+
         True = 'ß'.Is().LetterOrDigit;
         True = '9'.Is().Digit;
 

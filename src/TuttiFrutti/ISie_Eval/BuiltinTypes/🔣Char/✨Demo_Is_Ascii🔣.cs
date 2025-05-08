@@ -7,6 +7,7 @@ public class Demo_Is_Ascii : Setup.Arrange
     public void General() {
         True = 'd'.Is().Ascii;
         False = '§'.Is().Ascii;
+        True = '§'.Not().Ascii;
 
         True = 'W'.Is().Ascii.LetterOrDigit;
         True = '5'.Is().Ascii.LetterOrDigit;
@@ -16,11 +17,13 @@ public class Demo_Is_Ascii : Setup.Arrange
     [Test]
     public void Letters() {
         True = 'D'.Is().Ascii.Letter;
+        False = 'D'.Not().Ascii.Letter;
         True = 't'.Is().Ascii.Letter.Lower;
         True = 'T'.Is().Ascii.Letter.Upper;
 
         False = '9'.Is().Ascii.Letter;
         False = 'Λ'.Is().Ascii.Letter;
+        True = 'Λ'.Not().Ascii.Letter;
     }
 
     [Test]
@@ -36,7 +39,7 @@ public class Demo_Is_Ascii : Setup.Arrange
         False = '5'.Is().Ascii.HexDigit.Lower;
         False = '5'.Is().Ascii.HexDigit.Upper;
 
-        False = 'g'.Is().Ascii.HexDigit;
+        True = 'g'.Not().Ascii.HexDigit;
         False = 'G'.Is().Ascii.HexDigit.Upper;
 
         True = 'a'.Is().Ascii.HexDigit;

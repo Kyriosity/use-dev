@@ -25,7 +25,7 @@ public class Demo : Setup.Arrange
         _ = "".Is<English>().Text.AllowMiscSymbols.WithoutNumberInlays;
     }
 
-    [Test]
+    [SyntaxDraft]
     public void TestNew() {
 
         _ = "papier-mâché.".Is<French>().Text;

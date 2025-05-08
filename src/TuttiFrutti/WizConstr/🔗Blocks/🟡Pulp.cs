@@ -6,17 +6,14 @@ public abstract class Pulp<T, TRes> : Xform.Pulp<T, TRes>
 
     protected abstract TRes Fuse();
 
-    protected internal virtual TRes Yield() {
+    protected internal virtual TRes Yield(bool isInterim = false) {
         var result = Prev is null ? XForm(Seed) : Fuse();
 
-        // ToDesign: Circuitry here;
-
-        return result;
+        return isInterim ? result : Circuitry(result);
     }
 
-
     protected new TBk Next<TBk>() where TBk : Pulp<T, TRes>, new() =>
-    new() { Seed = Seed, Prev = this };
+        new() { Seed = Seed, Circuitry = Circuitry, Prev = this };
 
     protected TBk Next<TBk>(Func<T, TRes> xform) where TBk : Pulp<T, TRes>, new() {
         var pulp = Next<TBk>(); pulp.XForm = xform;

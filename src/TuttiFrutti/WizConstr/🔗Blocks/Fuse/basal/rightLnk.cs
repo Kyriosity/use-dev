@@ -17,5 +17,6 @@ public abstract class rightLnk<T, TRes, Lnk> : pulp<T, TRes>, ILnkRight
 
       => base.Next<Blk>(func);
 
-    protected Fruit<T, TRes> Next(Func<T, TRes> xform) => new() { XForm = xform, Seed = Seed, Prev = this };
+    // ToDesign: move up to common use
+    protected Fruit<T, TRes> Next(Func<T, TRes> xform) => new() { XForm = xform, Seed = Seed, Prev = this, Circuitry = Circuitry };
 }

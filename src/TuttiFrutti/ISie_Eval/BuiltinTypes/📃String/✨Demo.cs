@@ -9,6 +9,9 @@ public class Demo : Setup.Arrange
         _ = string.IsNullOrEmpty(anyText);
         _ = anyText.Is().NullOrEmpty; // 👈 no literal overhead
 
+        _ = !string.IsNullOrEmpty(anyText);
+        _ = anyText.Not().NullOrEmpty;
+
         _ = string.IsNullOrWhiteSpace(""); // ⚠️ empty is admitted as whitespace but it's not
         _ = "".Is().NullEmptyOr.Whitespace; // 👈 explicitly specifies empty
         _ = anyText.Is().EmptyOr.Whitespace; // 👈 doesn't soft-pedal Null
@@ -22,8 +25,10 @@ public class Demo : Setup.Arrange
         tryMe = anyText.Is().Spaces;
 
         True = " ".Is().SingleSpace;
+        False = " ".Not().SingleSpace;
 
         False = "".Is().Whitespace;
+        True = "".Not().Whitespace;
         True = "   ".Is().Whitespace;
 
         False = "".Is().Spaces;
@@ -36,14 +41,14 @@ public class Demo : Setup.Arrange
 #endif
     public void BlanksAndGaps() {
         False = "".Is().Whitespace;
-        False = "".Is().Spaces;
+        True = "".Not().Spaces;
         True = " ".Is().Spaces;
         True = "    ".Is().Spaces;
         False = "  \n  ".Is().Spaces;
 
         True = " ".Is().SingleSpace;
         False = "".Is().SingleSpace;
-        False = "       ".Is().SingleSpace;
+        True = "       ".Not().SingleSpace;
 
         False = "not whitespace".Is().EmptyOr.Whitespace;
 
@@ -68,9 +73,7 @@ public class Demo : Setup.Arrange
         True = "".Is().EmptyOr.Whitespace;
     }
 
-#if DEBUG
-    [Test]
-#endif
+    [SyntaxDraft]
     public void Grayspace() {
         // RESERVED for discussions!
         False = "a_b,c D".Is().Grayspace;

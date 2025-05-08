@@ -1,7 +1,7 @@
 ﻿using AbcStoppers.Errors.Data;
 namespace WizConstr.Xform;
 
-public abstract class Pulp<T, TRes> : Core<T>
+public abstract class Pulp<T, TRes> : Core<T, TRes>
 {
     protected internal Func<T, TRes> XForm {
         get => _eval ??

@@ -3,9 +3,9 @@
 namespace ISie.Char.Is.Blocks;
 public class EncodingOptions : Fruit_And<char>, IEncodingOptions
 {
-    public bool Digit => char.IsDigit(Seed);
+    public bool Digit => Next<Fruit<char>>(char.IsDigit);
 
-    public bool LetterOrDigit => char.IsLetterOrDigit(Seed);
+    public bool LetterOrDigit => Next<Fruit<char>>(char.IsLetterOrDigit);
 
     public LowerUpper Letter => Next<LowerUpper>(char.IsLetter);
 

@@ -1,7 +1,8 @@
 ﻿using ISie.Char.Is.Blocks;
 
 namespace ISie.Char.Is.Menus;
-internal class AllInclusive(char seed) : DirectCalls(seed), IFull
+internal class AllInclusive<IO>(char seed) : DirectCalls<IO>(seed), IFull
+    where IO : Circuitry.IO
 {
     public Surrogates Surrogate => Next<Surrogates>(char.IsSurrogate);
 

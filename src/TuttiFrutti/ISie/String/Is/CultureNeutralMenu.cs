@@ -2,7 +2,8 @@
 using ISie.String.BlankProof;
 
 namespace ISie.String.Is;
-internal class CultureNeutralMenu(string seed) : Root<string>(seed), ICultureNeutral
+internal class CultureNeutralMenu<IO>(string seed) : Root<string, IO>(seed), ICultureNeutral
+    where IO : Circuitry.IO
 {
     public bool NullOrEmpty => Next<Fruit<string>>(seed => seed is null or "");
 
@@ -13,7 +14,7 @@ internal class CultureNeutralMenu(string seed) : Root<string>(seed), ICultureNeu
 
     public bool SingleSpace => Next<Fruit<string>>(seed => seed.NoNull() is spaces.Single);
 
-    public bool Spaces => Next<bool, Fruit<string>>(seed => seed.NoNull() is not "" &&
+    public bool Spaces => Next<Fruit<string>>(seed => seed.NoNull() is not "" &&
         seed.All(chr => ' ' == chr));
 
     public Encoding Ascii => Next<Encoding>(seed => seed.NoNull().NoEmpty("can't check empty for encoding")
