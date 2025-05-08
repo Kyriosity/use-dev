@@ -6,16 +6,15 @@ public class Method
     private Method(Type declType, string name, Type[]? signature) {
         _name = name;
         _declType = declType;
+
         _method = signature is null
             ? declType.GetMethod(name)
             : declType.GetMethod(name, signature);
-
     }
 
     private readonly Type _declType;
     private readonly string _name;
     private readonly MethodInfo? _method;
-
 
     private object? Dummy {
         get {
