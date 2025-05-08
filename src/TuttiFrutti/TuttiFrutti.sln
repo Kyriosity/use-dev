@@ -181,6 +181,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISie_Eval", "ISie_Eval\ISie
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcStoppers", "AbcStoppers\AbcStoppers.csproj", "{09FB0E3E-944F-7DCA-FE37-17B349346FF0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcLingua", "AbcLingua\AbcLingua.csproj", "{42FF7CCD-3551-4A74-8757-F34711555B6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -379,6 +381,10 @@ Global
 		{09FB0E3E-944F-7DCA-FE37-17B349346FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09FB0E3E-944F-7DCA-FE37-17B349346FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09FB0E3E-944F-7DCA-FE37-17B349346FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42FF7CCD-3551-4A74-8757-F34711555B6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42FF7CCD-3551-4A74-8757-F34711555B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42FF7CCD-3551-4A74-8757-F34711555B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42FF7CCD-3551-4A74-8757-F34711555B6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -458,6 +464,7 @@ Global
 		{D8A3DC8A-4EB1-44C6-B4C4-1290AC607071} = {F7B61D03-3AA9-45B3-B13F-0943CB215EBA}
 		{502A43E5-5EAE-642F-B9EC-F3F1B6F4AF40} = {F15CF562-C8DB-4EED-9BEB-0569163D0CD5}
 		{09FB0E3E-944F-7DCA-FE37-17B349346FF0} = {4BE97A0C-F948-49F0-A073-C59CFB559CA6}
+		{42FF7CCD-3551-4A74-8757-F34711555B6F} = {4BE97A0C-F948-49F0-A073-C59CFB559CA6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C57594B1-16AE-49CA-8B93-C41A39EB7666}

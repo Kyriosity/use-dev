@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+	  <LangVersion>preview</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Tongues\indo-euro\balto-slavic\slavic\east\" />
+    <Folder Include="Tongues\indo-euro\balto-slavic\slavic\west\" />
+    <Folder Include="Tongues\indo-euro\celtic\" />
+    <Folder Include="Tongues\indo-iranian\" />
+    <Folder Include="Tongues\semitic\" />
+    <Folder Include="Tongues\turkic\west\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Abc\Abc.csproj" />
+  </ItemGroup>
+
+</Project>

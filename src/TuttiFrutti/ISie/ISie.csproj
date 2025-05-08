@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\AbcLingua\AbcLingua.csproj" />
     <ProjectReference Include="..\AbcStoppers\AbcStoppers.csproj" />
     <ProjectReference Include="..\Abc\Abc.csproj" />
     <ProjectReference Include="..\WizConstr\WizConstr.csproj" />

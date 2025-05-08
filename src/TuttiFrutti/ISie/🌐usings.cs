@@ -1,8 +1,8 @@
 ﻿global using Abc.Char;
 global using Abc.Char.Blanks;
-global using Abc.Lingua;
 global using Abc.Marks;
 global using Abc.Selection;
+global using AbcLingua.Tongues;
 global using AbcStoppers.Errors.Sys;
 global using AbcStoppers.Guards;
 global using AbcStuff.Text;

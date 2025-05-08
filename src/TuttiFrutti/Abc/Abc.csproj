@@ -12,12 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Lingua\indo-euro\balto-slavic\slavic\east\" />
-    <Folder Include="Lingua\indo-euro\balto-slavic\slavic\west\" />
-    <Folder Include="Lingua\indo-euro\celtic\" />
-    <Folder Include="Lingua\indo-iranian\" />
-    <Folder Include="Lingua\semitic\" />
-    <Folder Include="Lingua\turkic\west\" />
     <Folder Include="Logic\Conjuncts\" />
   </ItemGroup>
 

@@ -1,9 +1,9 @@
-﻿global using Abc.Lingua.indo_euro.germanic.western;
-global using Abc.Lingua.indo_euro.hellenic;
-global using Abc.Lingua.indo_euro.italic;
-global using Abc.Lingua.indo_euro.italic.romance.west.gallic;
-global using Abc.Lingua.japonic;
-global using AbcExtNUnit.Attributes.Directive;
+﻿global using AbcExtNUnit.Attributes.Directive;
+global using AbcLingua.Tongues.indo_euro.germanic.western;
+global using AbcLingua.Tongues.indo_euro.hellenic;
+global using AbcLingua.Tongues.indo_euro.italic;
+global using AbcLingua.Tongues.indo_euro.italic.romance.west.gallic;
+global using AbcLingua.Tongues.japonic;
 global using AbcStuff.Text;
 global using ISie.Char;
 global using ISie.String;
