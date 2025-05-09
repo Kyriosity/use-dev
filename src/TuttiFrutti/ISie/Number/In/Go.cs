@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using AbcLingua.Rules;
+using System.Numerics;
 
 namespace ISie.Number.In;
 /// <summary>
@@ -75,4 +76,3 @@ static class Hub<T>
     internal static string In<N>(N seed) where N : INumber<N> => NotImplemented.Throw("under construction");
 }
 
-public interface IInclination;
