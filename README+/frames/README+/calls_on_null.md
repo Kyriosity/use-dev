@@ -14,7 +14,7 @@ Console.WriteLine("now you see me");
 
 ## Use or abuse?
 
-Continuation on `null` may look worse than [its billion-dollar mistake](https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare)<sup>🔗</sup>.  
+Continuation on `null` may look worse than [its billion-dollar mistake](https://github.com/Kyriosity/read-write/blob/main/README%2B/pencraft/README%2B/essays/README+/NullRefError.md).  
 Correct ... **unless** the semantics and job _after dot_ assume this `null`:
 
 ```csharp
@@ -27,13 +27,13 @@ void JustDemo(string? title, N? id, Book? book) where N : INumber<N> {
 
     book.IsNullOrDefault();
 
-  //Everything else up to your phantasy
+  //Everything else up to your fantasy
 }
 ```
 
 ### References
 
-[<samp><b>I&thinsp;S&thinsp;i&thinsp;e</b></samp>&nbsp; extensions](../../parts/_ext/ISie/README.md) checks run on null.
+[<samp>⭐<b>ISie</b>⭐</samp>&nbsp; extensions](../../parts/_ext/ISie/README.md) checks run on nullable things.
 
 \___________\
 🔚 .. 2024-2025 .. please share similar solutions in other languages you may know ...
