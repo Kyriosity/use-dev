@@ -1,2 +1,1 @@
-﻿global using Abc.Marks;
-global using System.Numerics;
+﻿global using System.Numerics;
