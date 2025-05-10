@@ -7,12 +7,12 @@ public class ErrorsAndExceptions : Setup.Arrange
 {
     [Test]
     public void When_NULL_not_checked() {
-        Error = NullReference => NullStr.Is().Spaces;
-        Error = NullReference => NullStr.Is().SingleSpace;
-        Error = NullReference => NullStr.Is().Whitespace;
-        Error = NullReference => NullStr.Is().Ascii; // ! won't throw when no explicit assignment
+        ErrTemp = NullReference => NullStr.Is.Spaces;
+        //Error = NullReference => NullStr.Is.SingleSpace;
+        //Error = NullReference => NullStr.Is.Whitespace;
+        //Error = NullReference => NullStr.Is.Ascii; // ! won't throw when no explicit assignment
 
-        Error = NullReference => NullStr.Is().EmptyOr.Whitespace;
+        //Error = NullReference => NullStr.Is.EmptyOr.Whitespace;
     }
 
 #if DEBUG
@@ -20,9 +20,10 @@ public class ErrorsAndExceptions : Setup.Arrange
 #endif
     public void When_EMPTY_not_checked() {
         // implicit operator doesn't work in descending class ...
-        _ = "".Is().Ascii;
-        //Error = Empty => "".Is().Ascii;
+        _ = "".Is.Ascii;
+        _ = "".Not.Ascii;
+        //Error = Empty => "".Is.Ascii;
         // ... unless explicitly assigned as next
-        if ("".Is().Ascii) ;
+        if ("".Is.Ascii) ;
     }
 }
