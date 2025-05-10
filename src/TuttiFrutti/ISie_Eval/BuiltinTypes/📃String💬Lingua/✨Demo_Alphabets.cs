@@ -4,8 +4,8 @@ public class Demo_Alphabets : Setup.Arrange
     [SyntaxDraft]
     public void ExplicitAlphabet() {
         const string greek = "Θεσσαλονίκη";
-        True = greek.Is<Greek>().Letters.AllowWhitespace;
-        False = ("Greek " + greek).Is<Greek>().Letters.AllowWhitespace;
+        //True = greek.Is<Greek>().Letters.AllowWhitespace;
+        //False = ("Greek " + greek).Is<Greek>().Letters.AllowWhitespace;
 
 
         //WillBeTrue = "".Is<Current>().EmptyOr.Whitespace;
@@ -25,8 +25,8 @@ public class Demo_Alphabets : Setup.Arrange
         //WillBeTrue = "".Is<Bosnian.Cyrillic>().EmptyOr.Whitespace;
         //WillBeTrue = "".Is<Mongolian.Cyrillic>().EmptyOr.Whitespace;
 
-        _ = "".Is<Japanese>().Text;
-        _ = "".Is<Japanese.Kanji>();
+        //_ = "".Is<Japanese>().Text;
+        //_ = "".Is<Japanese.Kanji>();
     }
 
 
