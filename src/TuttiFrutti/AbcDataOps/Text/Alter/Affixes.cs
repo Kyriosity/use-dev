@@ -3,12 +3,16 @@
 namespace AbcDataOps.Text.Alter;
 public static class Affixes
 {
-    public static string SuffixIfNone(this string source, string affix, StringComparison comparison = StringComparison.Ordinal) =>
-        source.Right() == affix ? source : $"{source}{affix}";
+    extension(string source)
+    {
 
-    public static string PrefixIfNone(this string source, string affix, StringComparison comparison = StringComparison.Ordinal) =>
-        source.Left() == affix ? source : $"{source}{affix}";
+        public string SuffixIfNone(string affix, StringComparison comparison = StringComparison.Ordinal) =>
+            source.Right() == affix ? source : $"{source}{affix}";
 
-    public static Mid Right(this string source, StringComparison comparison = StringComparison.Ordinal) => new(false, source, comparison);
-    public static Mid Left(this string source, StringComparison comparison = StringComparison.Ordinal) => new(true, source, comparison);
+        public string PrefixIfNone(string affix, StringComparison comparison = StringComparison.Ordinal) =>
+            source.Left() == affix ? source : $"{source}{affix}";
+
+        public Mid Right(StringComparison comparison = StringComparison.Ordinal) => new(false, source, comparison);
+        public Mid Left(StringComparison comparison = StringComparison.Ordinal) => new(true, source, comparison);
+    }
 }

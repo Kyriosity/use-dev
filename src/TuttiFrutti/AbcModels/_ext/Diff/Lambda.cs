@@ -3,12 +3,15 @@
 namespace AbcModels.Ext.Diff;
 public static class Extensions
 {
-    public static bool? Lambda(this IApply source, object? target) {
-        var unnull = ArgumentNull.DenyOrThrow(target);
+    extension(IApply source)
+    {
+        public bool? Lambda(object? target) {
+            var unnull = ArgumentNull.DenyOrThrow(target);
 
-        return true;
+            return true;
+        }
+
+        public bool? Lambda(IApply? target) =>
+            true;
     }
-
-    public static bool? Lambda(this IApply source, IApply? target) =>
-        true;
 }
