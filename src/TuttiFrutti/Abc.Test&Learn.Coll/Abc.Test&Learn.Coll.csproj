@@ -9,7 +9,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
   </PropertyGroup>
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
 	  <LangVersion>preview</LangVersion>
     <RootNamespace>Abc.Coll.Test_Learn</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
