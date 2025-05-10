@@ -3,12 +3,14 @@
 <table align="center"><tr valign="top"><td><picture><img src="../../../_rsc/img/ISie.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extensions"/></picture></td><td>
 <p><b>The crossover of these two <code>C#</code> discoveries</b></p>
 <div>&nbsp; &nbsp; ✔️ &thinsp;legit <a href="../../../frames/README+/calls_on_null.md">calls on null</a>&thinsp;,</div>
-<p>&nbsp; &nbsp; ✔️ &thinsp;extension properties <a href="https://github.com/dotnet/roslyn/issues/11159">promised</a></p>
+<p>&nbsp; &nbsp; ✔️ &thinsp;extension properties <a href="https://github.com/dotnet/roslyn/issues/11159">promised</a>&thinsp;<sup>⏳</sup></p>
 <div>suggested me to shortcut ubiquitous </div>
   <div align="center"><code>string.IsNullOrWhiteSpace(<i>abracadabra</i>)</code><br />into<br /><code><i><b>abracadabra</b></i>.IsNullOrWhitespace</code>,<br />
   which finally became<br /><code><i><b>abracadabra</b></i>.Is.NullEmptyOr.Whitespace</code>&thinsp;.</div>
 </td><td><picture><img src="../../../_rsc/img/_nav/tiles/ISieCircuitry_200px.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extensions"/></picture><br />
   <div align="center"><samp>uses circuitry</samp></div></td></tr></table>
+
+<div align="right"><sup>⏳</sup>&thinsp;<sub>This ever-pending feature must be C#13 "what's new",<br />but finally appeared only as a C#14 preview (April/2025).</sub></div>
 
 This isn't a great new idea to announce unless together with:
 
@@ -32,8 +34,6 @@ This isn't a great new idea to announce unless together with:
 
   </td></tr><tr><td colspan="2" align="center">It's better to explore in Visual Studio or another IDE.</td></tr></table>
 
-It will also take a few lines of code for your wrappers, say `.IsNullOrWhiteSpace`, though not recommended.
-
 ## What's next
 
 **IS<samp>IE</samp>** is a subject of expansion (Unicode alone is the encoding [big fish](https://www.unicode.org/glossary/)<sup>🔗</sup>) and a platform for kin features:
@@ -45,12 +45,6 @@ It will also take a few lines of code for your wrappers, say `.IsNullOrWhiteSpac
 # Appendix. Implementation notes
 
 ⭐<b>I&thinsp;S&thinsp;<samp>I&thinsp;E</samp></b>⭐ is a remarkable centerfold for miscellaneous concepts and other parts/features.
-
-### Extension properties lost «in active development»... 
-
-This ever-pending _Language Feature_ was demotivating<sup>🙋</sup>, was later dropped in favor of existing extension methods, but finally appeared as a preview (April/2025).
-
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>🙋</sup> <sub>Warm greeting to bloggers who advertised it and others as C#13 "what's new".</sub> 
 
 ## Why `Not`?
 
@@ -70,13 +64,11 @@ It's up to you which lexis to pick in **each** case.
 
 This qualifier reserves the place for other possibilities, say, `All()...`, `Can()...`, `None.Ascii...`, `No.Symbols...`  
 
-## TDD ISie
-
-As [example](https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asDrive/README+/TDD-Watershed/README.md#TDD-ISie) in TDD Watershed
-
-Source code:
+With ⭐ISie⭐, it will be easy to enhance available menus, define new modules, or cover custom types.
 
 ## Spin-Offs
+
+⭐ISie⭐ was referred in [TDD watershed](https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asDrive/README+/TDD-Watershed/README.md#TDD-ISie).
 
 This feature launched 
 
