@@ -4,12 +4,20 @@ using ISie.Char.Is.Menus;
 namespace ISie.Char;
 public static class Go
 {
-    public static IFull Is(this char seed) => new AllIncluded<IOWire>(seed);
-    public static IFull Not(this char seed) => new AllIncluded<IOInverter>(seed);
-    public static IFull Is(this char? seed) => seed is null ? ArgumentNull.Throw(err_hint) : Is((char)seed);
-    public static IFull Not(this char? seed) => seed is null ? ArgumentNull.Throw(err_hint) : Not((char)seed);
-    public static To.IMenu To(this char seed) => new To.Menu(seed);
-    public static To.IMenu To(this char? seed) => seed is null ? ArgumentNull.Throw(err_hint) : To((char)seed);
+    extension(char seed)
+    {
+        public IFull Is => new AllIncluded<IOWire>(seed);
+        public IFull Not => new AllIncluded<IOInverter>(seed);
+        public To.IMenu To => new To.Menu(seed);
+    }
 
+
+    extension(char? seed)
+    {
+        public IFull Is => seed is null ? ArgumentNull.Throw(err_hint) : ((char)seed).Is;
+        public IFull Not => seed is null ? ArgumentNull.Throw(err_hint) : ((char)seed).Not;
+        public To.IMenu To => seed is null ? ArgumentNull.Throw(err_hint) : ((char)seed).To;
+
+    }
     private const string err_hint = "No check for null done!";
 }

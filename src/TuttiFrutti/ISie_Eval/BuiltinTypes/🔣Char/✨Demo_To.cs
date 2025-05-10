@@ -3,12 +3,12 @@ public class Demo_To : Setup.Arrange
 {
     [Test]
     public void Shortcut() {
-        True = 'D' == 'd'.To().Upper;
-        True = 'D' == 'd'.To().UpperInvariant;
-        True = 'a' == 'A'.To().Lower;
-        True = 'a' == 'A'.To().LowerInvariant;
+        True = 'D' == 'd'.To.Upper;
+        True = 'D' == 'd'.To.UpperInvariant;
+        True = 'a' == 'A'.To.Lower;
+        True = 'a' == 'A'.To.LowerInvariant;
 
-        False = 'd' == 'A'.To().Lower;
+        False = 'd' == 'A'.To.Lower;
     }
 
     public void InvariantCases() {
