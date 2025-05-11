@@ -7,7 +7,9 @@ global using AbcStoppers.Errors.Sys;
 global using AbcStoppers.Guards;
 global using AbcStuff.Text;
 global using ISie.Mk;
+global using System.Numerics;
 global using WizConstr.Blocks.Fuse.Bool;
 global using WizConstr.Blocks.Fuse.Bool.Ops;
 global using BlankMenus = Abc.Logic.Build.Disjuncts;
 global using Circuitry = Abc.Logic.Circuitry.Bool;
+
