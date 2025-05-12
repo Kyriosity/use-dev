@@ -1,9 +1,9 @@
 ﻿using ISie.Number.Calc;
 
 namespace ISie_Eval.BuiltinTypes.Number;
-public class Demo_Calculations : Setup.ArrangeWithNumbers
+public class Demo_Calculations : ArrangeWithNumbers
 {
-    [Test]
+    [SyntaxDemo]
     public void Absolute() {
         True = double.Abs(negativeDbl) == negativeDbl.Abs();
         True = int.Abs(minus100) == minus100.Abs();
@@ -13,7 +13,7 @@ public class Demo_Calculations : Setup.ArrangeWithNumbers
         //❌ bitsInByte.Abs();
     }
 
-    [Test]
+    [SyntaxDemo]
     public void SquareRoot() {
         True = Math.Sqrt(fourUnsigned) == fourUnsigned.Sqrt();
         True = 0 < samplePositiveFloat.Sqrt();
@@ -26,7 +26,7 @@ public class Demo_Calculations : Setup.ArrangeWithNumbers
         // ❌ int.MaxValue.Sqrt();
     }
 
-    [Test]
+    [SyntaxDemo]
     public void Power() {
 
         True = Math.Pow(2, 1_000) == 2.Pow(1_000);
@@ -35,6 +35,21 @@ public class Demo_Calculations : Setup.ArrangeWithNumbers
         _ = 10.Pow(-5);
         _ = samplePositiveFloat.Pow(2.345);
     }
+
+    [SyntaxDemo]
+    public void Power_Shortcuts() {
+        Eq[4] = 2.Square;
+        Eq[4] = (-2).Square;
+        Eq[3 * 3 * 3] = 3.Cube;
+        Eq[-27] = (-3).Cube;
+
+        Eq[16_129] = sbyte.MaxValue.Square;
+        Eq[2_048_383] = sbyte.MaxValue.Cube;
+
+        True = 0 < samplePositiveFloat.Cube;
+
+    }
+
 
     // ToTest: NaN cases
 
