@@ -14,6 +14,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AbcRefl\AbcRefl.csproj" />
     <ProjectReference Include="..\AbcStoppers\AbcStoppers.csproj" />
+    <ProjectReference Include="..\ISie\ISie.csproj" />
     <ProjectReference Include="..\MeasOrg\MeasOrg.csproj" />
   </ItemGroup>
 

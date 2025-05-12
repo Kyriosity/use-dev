@@ -1,7 +1,7 @@
 ﻿using AbcLingua.Tongues;
 using ISie.Number.In;
 namespace ISie_Eval.BuiltinTypes.Number;
-public class Demo_In : Setup.Arrange
+public class Demo_In : Setup.ArrangeWithNumbers
 {
     [SyntaxDemo]
     public void Basic_Wording() {

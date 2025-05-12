@@ -54,7 +54,9 @@ public abstract class ArrangeActAssert<TStore, TUnit> : ArrangeAct<TStore, TUnit
         return $"Precision: {precision * 100}%{extraInfo}\n{new string(Stars.Filled, filledLen)}{new string(Stars.Hollow, scaleLen - filledLen)}";
     }
 
-    private static char MarkDiff<N1, N2>(N1 delta, N2 diff) where N1 : INumber<N1> where N2 : INumber<N2> {
+    private static char MarkDiff<N1, N2>(N1 delta, N2 diff)
+        where N1 : INumber<N1> where N2 : INumber<N2> {
+
         if (N1.Zero == delta)
             return Greek.Capital.O_middleTilde;
 

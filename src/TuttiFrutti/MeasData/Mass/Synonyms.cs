@@ -30,7 +30,7 @@ public partial class Synonyms
     // DO NOT USE protected const int billion = 1_000_000_000; // double meaning (short vs. long scale)
 
     protected static readonly ulong peta = 1_000_000_000_000_000; // Math.Pow(10, 15);
-    protected static readonly double yotta = Math.Pow(10, 24);
-    protected static readonly double ronna = Math.Pow(10, 27);
+    protected static readonly double yotta = 10.Pow(24);
+    protected static readonly double ronna = 10.Pow(27);
     protected static readonly double tenX15 = ronna;
 }
