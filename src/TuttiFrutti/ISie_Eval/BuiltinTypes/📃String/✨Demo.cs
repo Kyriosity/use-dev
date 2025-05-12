@@ -1,6 +1,6 @@
 ﻿namespace ISie_Eval.BuiltinTypes.String;
 
-public class Demo : Setup.Arrange
+public class Demo : Arrange
 {
 #if DEBUG
     [Test]

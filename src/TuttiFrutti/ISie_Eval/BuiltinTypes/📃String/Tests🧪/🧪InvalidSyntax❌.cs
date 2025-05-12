@@ -1,5 +1,5 @@
 ﻿namespace ISie_Eval.BuiltinTypes.String.Tests;
-public class InvalidSyntax : Setup.Arrange
+public class InvalidSyntax : Arrange
 {
     [SyntaxDraft]
     public void InvalidCallsCheck() {

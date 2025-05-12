@@ -1,7 +1,7 @@
 ﻿using AbcExtNUnit.Attributes.Case;
 
 namespace ISie_Eval.BuiltinTypes.String.Tests;
-public class MiscSpaces : Setup.Arrange
+public class MiscSpaces : Arrange
 {
     [Test]
     public void SingleSpace() {

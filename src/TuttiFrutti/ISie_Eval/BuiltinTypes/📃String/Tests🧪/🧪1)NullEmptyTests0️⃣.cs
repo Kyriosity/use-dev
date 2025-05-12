@@ -2,7 +2,7 @@
 #pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
 
 namespace ISie_Eval.BuiltinTypes.String.Tests;
-public class NullEmptyTests : Setup.Arrange
+public class NullEmptyTests : Arrange
 {
     [Test]
     public void DirectProof() {

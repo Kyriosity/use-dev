@@ -1,5 +1,5 @@
 ﻿namespace ISie_Eval.BuiltinTypes.Char;
-public class Demo_Is_Ascii : Setup.Arrange
+public class Demo_Is_Ascii : Arrange
 {
 #if DEBUG
     [Test]

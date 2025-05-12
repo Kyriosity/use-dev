@@ -1,5 +1,5 @@
 ﻿namespace ISie_Eval.BuiltinTypes.String_Lingua;
-public class Demo : Setup.Arrange
+public class Demo : Arrange
 {
     [SyntaxDraft]
     public void LettersAndNumbers() {

@@ -3,7 +3,7 @@
 #pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
 
 namespace ISie_Eval.BuiltinTypes.String.Tests;
-public class ErrorsAndExceptions : Setup.Arrange
+public class ErrorsAndExceptions : Arrange
 {
     [Test]
     public void When_NULL_not_checked() {

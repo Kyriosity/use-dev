@@ -1,5 +1,5 @@
 ﻿namespace ISie_Eval.BuiltinTypes.Char;
-public class Demo_Is : Setup.Arrange
+public class Demo_Is : Arrange
 {
     [Test]
     public void Alphanumeric() {

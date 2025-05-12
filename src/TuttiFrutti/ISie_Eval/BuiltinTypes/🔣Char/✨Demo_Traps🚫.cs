@@ -1,5 +1,5 @@
 ﻿namespace ISie_Eval.BuiltinTypes.Char;
-public class Demo_Traps : Setup.Arrange
+public class Demo_Traps : Arrange
 {
     [Test]
     public void You_Must_Check_for_Null() {

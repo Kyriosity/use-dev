@@ -1,5 +1,5 @@
 ﻿namespace ISie_Eval.BuiltinTypesString_Lingua;
-public class Demo_Alphabets : Setup.Arrange
+public class Demo_Alphabets : Arrange
 {
     [SyntaxDraft]
     public void ExplicitAlphabet() {
