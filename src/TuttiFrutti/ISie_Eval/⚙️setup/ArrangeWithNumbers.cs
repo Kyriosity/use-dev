@@ -9,4 +9,9 @@ public abstract class ArrangeWithNumbers : Arrange
     protected const uint fourUnsigned = 4;
 
     protected const byte bitsInByte = 8;
+
+    protected const int int100 = 100;
+    protected const int intNegative = -100;
+
+    protected const decimal gdpEU = 17_255_100_000_000;
 }
