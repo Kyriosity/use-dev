@@ -1,6 +1,4 @@
-﻿using Abc.Selection;
-
-namespace ISie.Char.Is.Menus;
+﻿namespace ISie.Char.Is.Menus;
 public interface IDirectCalls :
     IWhitespace<bool>, ISeparator<bool>, IPunctuation<bool>,
 
