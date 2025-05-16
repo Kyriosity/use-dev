@@ -5,6 +5,10 @@ public class PolyStub
         IsPow2 = () => byte.IsPow2(value)
     };
 
+    public static PolyStub<sbyte> Of(sbyte value) => new(value) {
+        // MUST THROW  IsPow2 = () => byte.IsPow2(value)
+    };
+
     public static PolyStub<int> Of(int value) => new(value) {
         IsPow2 = () => int.IsPow2(value)
     };
