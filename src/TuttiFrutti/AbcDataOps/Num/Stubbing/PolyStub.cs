@@ -12,6 +12,8 @@ public class PolyStub<N>(N value) : IBinary where N : INumber<N>
     private Func<bool> _isPow2 = null;
 
     public Func<bool> IsNaturalOr0 => () => N.IsInteger(Value) && N.Zero <= Value;
+
+    public Func<bool> IsNaN => () => N.IsNaN(Value);
 }
 
 // ToDesign: derive classes for BigInteger
