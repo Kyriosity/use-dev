@@ -1,8 +1,7 @@
 ﻿namespace AbcExtNUnit.AssertOnAssign;
 public abstract class Defined_Errors : Defined
 {
-
-    public virtual Func<object, object> ErrTemp {
+    public virtual Func<object, object> ErrTemp { // ToDelete: Temp test 
         get => ERR_STUB;
         set {
             _ = value("df");

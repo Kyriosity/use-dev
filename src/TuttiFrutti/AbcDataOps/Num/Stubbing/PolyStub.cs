@@ -17,4 +17,3 @@ public class PolyStub<N>(N value) : IBinary where N : INumber<N>
 }
 
 // ToDesign: derive classes for BigInteger
-
