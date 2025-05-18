@@ -1,6 +1,4 @@
 ﻿using ISie.Number.Is.Menu.Options;
 
 namespace ISie.Number.Is.Menu.TypeBreak;
-public interface IsNatural : IIntegral, INatural
-{
-}
+public interface INavNatural : INatural;

@@ -1,5 +1,4 @@
 ﻿using AbcLingua.Rules;
-using System.Numerics;
 
 namespace ISie.Number.In;
 /// <summary>

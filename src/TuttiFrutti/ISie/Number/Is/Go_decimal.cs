@@ -6,6 +6,6 @@ public static partial class Go
     extension(decimal seed)
     {
         // IsCanonical always return true - no must to include it
-        public IsFloatPtWithoutFraction Is => NotImplemented.Throw("under dev");
+        public INavFloatPtWithoutFraction Is => NotImplemented.Throw("under dev");
     }
 }

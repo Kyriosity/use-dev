@@ -1,4 +1,4 @@
 ﻿using ISie.Number.Is.Menu.Options;
 
 namespace ISie.Number.Is.Menu.TypeBreak;
-public interface IsFloatPt : IFloatPt, IsFloatPtWithoutFraction;
+public interface INavFloatPt : IFloatPt, INavFloatPtWithoutFraction;
