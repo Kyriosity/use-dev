@@ -51,6 +51,7 @@ public class Demo_Integral_Is : ArrangeWithNumbers
     public void FloatingAsIntegral() {
         //_ = (10 / 2.0).Is.Integer;
         //_ = (2.0 / 5.0).Is.Integer;
+
     }
 
     [SyntaxDraft]

@@ -5,5 +5,5 @@ public interface IFloatPt
     bool Normal { get; }
     bool Subnormal { get; }
     bool Finite { get; }
-    bool Infinity { get; }
+    IZeroSide Infinity { get; }
 }

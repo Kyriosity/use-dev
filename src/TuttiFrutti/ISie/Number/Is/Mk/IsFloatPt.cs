@@ -1,4 +1,5 @@
-﻿using ISie.Number.Is.Menu.TypeBreak;
+﻿using ISie.Number.Is.Menu.Options;
+using ISie.Number.Is.Menu.TypeBreak;
 using ISie.Number.Is.Mk.blocks;
 
 namespace ISie.Number.Is.Mk;
@@ -11,11 +12,11 @@ public class IsFloatPt<N, PS, IO>(PS seed) : Root<N, PS, IO>(seed), INavFloatPt<
 
     public bool NaN => Next(seed => seed.IsNaN());
 
-    public bool Normal => throw new NotImplementedException();
+    public bool Normal => Next(seed => N.IsNormal(seed.Value));
 
-    public bool Subnormal => throw new NotImplementedException();
+    public bool Subnormal => N.IsSubnormal(seed.Value);
 
-    public bool Finite => throw new NotImplementedException();
+    public bool Finite => Next(seed => N.IsFinite(seed.Value));
 
-    public bool Infinity => throw new NotImplementedException();
+    public IZeroSide Infinity => NotImplemented.Throw("coming next"); // And<>(seed => N.IsInfinity(seed.Value)); // ToDesign: Positive and Negative
 }

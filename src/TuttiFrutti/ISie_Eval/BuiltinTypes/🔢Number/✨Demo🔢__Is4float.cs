@@ -7,14 +7,22 @@ public class Demo_Float_Is : ArrangeWithNumbers
 #if DEBUG
     [Test]
 #endif
-    public void Integral() {
+    public void Intro() {
         double probe = 3.238;
+        False = probe.Is.NaN;
 
-        //_ = probe.Is.Integer.Natural0;
-        False = probe.Is.NaturalOr0.PowOf2;
-        False = probe.Is.Integer.Odd;
+        False = probe.Is.NaturalOr0;
+        False = probe.Is.NaturalOr0;
 
         False = probe.Is.NaturalOr0.Odd;
         False = probe.Is.Integer.Even;
+    }
+
+#if DEBUG
+    [Test]
+#endif
+    public void WhenIntegral() {
+        False = negativeDbl.Is.Integer;
+        True = negativeDbl.Not.Integer;
     }
 }
