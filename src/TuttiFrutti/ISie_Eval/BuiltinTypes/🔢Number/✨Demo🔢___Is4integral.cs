@@ -1,7 +1,7 @@
 ﻿using ISie.Number.Is;
 using System.Numerics;
 namespace ISie_Eval.BuiltinType.Number;
-public class Demo_Is : ArrangeWithNumbers
+public class Demo_Integral_Is : ArrangeWithNumbers
 {
 
 #if DEBUG
@@ -10,10 +10,12 @@ public class Demo_Is : ArrangeWithNumbers
     public void Integral() {
         var bob = 0;
         True = bob.Is.NaturalOr0;
+        False = bob.Not.NaturalOr0;
+
         False = (--bob).Is.NaturalOr0;
         bob = 9;
         True = bob.Is.Odd;
-        False = bob--.Is.Even;
+        True = bob--.Not.Even;
 
         True = bob.Is.NaturalOr0.PowOf2;
         False = (++bob).Is.NaturalOr0.PowOf2;
@@ -28,12 +30,13 @@ public class Demo_Is : ArrangeWithNumbers
         False = bitsInByte.Is.Odd;
         True = bitsInByte.Is.Even;
         True = bitsInByte.Is.PowOf2;
-        //False = (1 + bitsInByte).Is.PowOf2;
+
+        False = (1 + bitsInByte).Is.NaturalOr0.PowOf2;
 
         INumber<double> dbl = 23.2;
 
-        //_ = int100.Is.NaturalOr0;
-        //False = int100.Is.NaturalOr0.PowOf2;
+        _ = int100.Is.NaturalOr0;
+        False = int100.Is.NaturalOr0.PowOf2;
     }
 
     [SyntaxDraft]
@@ -55,8 +58,9 @@ public class Demo_Is : ArrangeWithNumbers
         sbyte signed = 9;
         True = signed.Is.NaturalOr0;
 
+        //False = gdpEU.Is.NaturalOr0.PowOf2;
 
-        //_ = intNegative.Is.NaturalOr0;
+        _ = intNegative.Is.NaturalOr0;
 
         //_ = gdpEU.Is.NaturalOr0;
         //True = gdpEU.Is.NaturalOr0.Odd;

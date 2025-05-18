@@ -12,16 +12,19 @@ public static partial class Go // unsigned
 
     extension(ushort seed)
     {
-        public INavNatural Is => NotImplemented.Throw("under dev");
+        public INavNatural Is => new IsNatural<ushort, PolyStub<ushort>, IOWire>(PolyStub.Of(seed));
+        public INavNatural Not => new IsNatural<ushort, PolyStub<ushort>, IOInverter>(PolyStub.Of(seed));
     }
 
     extension(uint seed)
     {
-        public INavNatural Is => NotImplemented.Throw("under dev");
+        public INavNatural Is => new IsNatural<uint, PolyStub<uint>, IOWire>(PolyStub.Of(seed));
+        public INavNatural Not => new IsNatural<uint, PolyStub<uint>, IOInverter>(PolyStub.Of(seed));
     }
 
     extension(ulong seed)
     {
-        public INavNatural Is => NotImplemented.Throw("under dev");
+        public INavNatural Is => new IsNatural<ulong, PolyStub<ulong>, IOWire>(PolyStub.Of(seed));
+        public INavNatural Not => new IsNatural<ulong, PolyStub<ulong>, IOInverter>(PolyStub.Of(seed));
     }
 }

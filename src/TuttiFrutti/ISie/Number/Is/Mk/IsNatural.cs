@@ -1,4 +1,5 @@
 ﻿using ISie.Number.Is.Menu.TypeBreak;
+using ISie.Number.Is.Mk.blocks;
 
 namespace ISie.Number.Is.Mk;
 public class IsNatural<N, PS, IO>(PS seed) : CommonIntegralOps<N, PS, IO>(seed), INavNatural

@@ -1,5 +1,5 @@
 ﻿using ISie.Number.Is.Menu.Options;
-using ISie.Number.Is.Mk;
+using ISie.Number.Is.Mk.blocks;
 
 namespace ISie.Number.Is.Menu.TypeBreak;
 public interface INavIntegral<N, PS> : IIntegral

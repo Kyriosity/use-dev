@@ -10,12 +10,10 @@ public static partial class Go // +/- integral
         public INavIntegral<sbyte, PolyStub<sbyte>> Not => new IsIntegral<sbyte, PolyStub<sbyte>, IOInverter>(PolyStub.Of(seed));
     }
 
-
     extension(short seed)
     {
-        //public INavIntegral<short, PolyStub<short>> Is => new IsIntegral<short, PolyStub<short>, IOWire>(PolyStub.Of(seed));
-        //public INavIntegral<short, PolyStub<short>> Not => new IsIntegral<short, PolyStub<short>, IOInverter>(PolyStub.Of(seed));
-
+        public INavIntegral<short, PolyStub<short>> Is => new IsIntegral<short, PolyStub<short>, IOWire>(PolyStub.Of(seed));
+        public INavIntegral<short, PolyStub<short>> Not => new IsIntegral<short, PolyStub<short>, IOInverter>(PolyStub.Of(seed));
     }
 
     extension(int seed)
@@ -27,6 +25,7 @@ public static partial class Go // +/- integral
 
     extension(long seed)
     {
-
+        public INavIntegral<long, PolyStub<long>> Is => new IsIntegral<long, PolyStub<long>, IOWire>(PolyStub.Of(seed));
+        public INavIntegral<long, PolyStub<long>> Not => new IsIntegral<long, PolyStub<long>, IOInverter>(PolyStub.Of(seed));
     }
 }
