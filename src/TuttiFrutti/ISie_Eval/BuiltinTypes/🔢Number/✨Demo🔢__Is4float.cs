@@ -25,4 +25,13 @@ public class Demo_Float_Is : ArrangeWithNumbers
         False = negativeDbl.Is.Integer;
         True = negativeDbl.Not.Integer;
     }
+
+#if DEBUG
+    [Test]
+#endif
+    public void InFinity() {
+        True = negativeDbl.Not.Infinity;
+        False = negativeDbl.Is.Infinity.Negative;
+        False = negativeDbl.Is.Infinity.Positive;
+    }
 }

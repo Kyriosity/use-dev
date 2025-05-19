@@ -1,5 +1,4 @@
-﻿using ISie.Number.Is.Menu.Options;
-using ISie.Number.Is.Menu.TypeBreak;
+﻿using ISie.Number.Is.Menu.TypeBreak;
 using ISie.Number.Is.Mk.blocks;
 
 namespace ISie.Number.Is.Mk;
@@ -18,5 +17,5 @@ public class IsFloatPt<N, PS, IO>(PS seed) : Root<N, PS, IO>(seed), INavFloatPt<
 
     public bool Finite => Next(seed => N.IsFinite(seed.Value));
 
-    public IZeroSide Infinity => NotImplemented.Throw("coming next"); // And<>(seed => N.IsInfinity(seed.Value)); // ToDesign: Positive and Negative
+    public ZeroSide<N, PS> Infinity => Next<ZeroSide<N, PS>>(n => N.IsInfinity(seed.Value));
 }
