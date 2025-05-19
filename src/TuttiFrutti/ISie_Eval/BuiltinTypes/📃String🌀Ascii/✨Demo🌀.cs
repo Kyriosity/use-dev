@@ -43,8 +43,8 @@ public class Demo : Arrange
 
     [SyntaxDemo]
     public void ExpectedExceptions() {
-        ErrTemp = NullReference => NullStr.Is.Ascii;
-        ErrTemp = Empty => "".Is.Ascii;
+        //ErrToDesign = NullReference => NullStr.Is.Ascii;
+        //ErrToDesign = Empty => "".Is.Ascii;
     }
 }
 

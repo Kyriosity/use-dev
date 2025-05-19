@@ -7,8 +7,10 @@ public class ErrorsAndExceptions : Arrange
 {
     [Test]
     public void When_NULL_not_checked() {
-        ErrTemp = NullReference => NullStr.Is.Spaces;
-        //Error = NullReference => NullStr.Is.SingleSpace;
+        /// Expression trees DONT support extensions
+        /// ToDesign: workaround
+
+        // Error = NullReference => NullStr.Is.SingleSpace;
         //Error = NullReference => NullStr.Is.Whitespace;
         //Error = NullReference => NullStr.Is.Ascii; // ! won't throw when no explicit assignment
 
