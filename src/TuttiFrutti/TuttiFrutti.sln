@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33617.297
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abc_2Port (Prev .NET ver)", "Abc_2Port (Prev .NET ver)", "{1614A4D0-2346-4B46-A7BF-08558A77E046}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "🧳Abc_2Port (Prev .NET ver)", "🧳Abc_2Port (Prev .NET ver)", "{1614A4D0-2346-4B46-A7BF-08558A77E046}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Parts🔄️Reversible", "P
 		Rvrs\README.md = Rvrs\README.md
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "z_Test🦉Learn (Prev)", "z_Test🦉Learn (Prev)", "{F7B61D03-3AA9-45B3-B13F-0943CB215EBA}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "🧳Test🦉Learn (Archive)", "🧳Test🦉Learn (Archive)", "{F7B61D03-3AA9-45B3-B13F-0943CB215EBA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abc", "Abc", "{165121F7-C307-4E2A-A5BD-AE59D3D824CB}"
 	ProjectSection(SolutionItems) = preProject
@@ -181,7 +181,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcStoppers", "AbcStoppers\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcLingua", "AbcLingua\AbcLingua.csproj", "{42FF7CCD-3551-4A74-8757-F34711555B6F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "📦Frontend", "📦Frontend", "{51CAA693-F594-406A-856E-930EC0CEEB25}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{51CAA693-F594-406A-856E-930EC0CEEB25}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "React", "React", "{8792F9E6-E60A-417F-B796-C4F437101CBC}"
 EndProject
