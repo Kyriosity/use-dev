@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36119.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "primus.client", "primus.client\primus.client.esproj", "{90F4CDB8-DEFB-F661-6885-DCB8E244776B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primus.Server", "Primus.Server\Primus.Server.csproj", "{6ED773E3-E9B6-49D2-9EEC-3431E1B724EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90F4CDB8-DEFB-F661-6885-DCB8E244776B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90F4CDB8-DEFB-F661-6885-DCB8E244776B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90F4CDB8-DEFB-F661-6885-DCB8E244776B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{90F4CDB8-DEFB-F661-6885-DCB8E244776B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90F4CDB8-DEFB-F661-6885-DCB8E244776B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90F4CDB8-DEFB-F661-6885-DCB8E244776B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6ED773E3-E9B6-49D2-9EEC-3431E1B724EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ED773E3-E9B6-49D2-9EEC-3431E1B724EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ED773E3-E9B6-49D2-9EEC-3431E1B724EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ED773E3-E9B6-49D2-9EEC-3431E1B724EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0226FF0-C410-47C0-B549-606D573B534F}
+	EndGlobalSection
+EndGlobal
