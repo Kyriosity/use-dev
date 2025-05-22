@@ -4,7 +4,7 @@
 
 This writing is now <samp>DRAFT</samp> but not <samp>DEBRIS</samp> &thinsp;&mdash;&thinsp; its project is experimental but working, and extensible.
 
-Nevertheless, this project must be a trial and a collector of ideas for the real production version.
+Nevertheless, this project must be a trial and a collector of ideas for the real production version. Even its title must be improved. Other pending ideas are marked below with 💡.
 
 ## Scheme
 
@@ -31,7 +31,7 @@ consider zero on a calculator or raw literal, kick-off meeting, ...
 + No manager, aggregator, or monolith -> blocks are stand-alone.
 
 Loose coupling - min data xfer:\
-`// ToDesign:` blocks of different seed types
+💡 `// ToDesign:` blocks of different seed types
 
 ## Application
 
