@@ -2,23 +2,31 @@
 
 > **This project partially answers the [builder challenge](../../../README+/techniques/README+/builders/README.md).**
 
-This writing is now <samp>DRAFT</samp> but not <samp>DEBRIS</samp> &thinsp;&mdash;&thinsp; its project is experimental but working, and extensible.
-
-Nevertheless, this project must be a trial and a collector of ideas for the real production version. Even its title must be improved. Other pending ideas are marked below with 💡.
+> [!IMPORTANT]
+>  This writing is now <samp>DRAFT</samp> **but not** <samp>DEBRIS</samp> &thinsp;&mdash;&thinsp; its project is experimental but working, extensible, and already tested/applied.
+> &nbsp;\
+> &nbsp;\
+> Nevertheless, this project must be a trial and a collector of ideas for the real production version.\
+> First, its **title** asks for refiтement. Other pending ideas are marked below with 💡.\
+> &nbsp;
 
 ## Scheme
 
-// DRAWING PENDING
+<picture><img alt="&nbsp;  🚧... is being pictured ... 🖌️" src="../../../README+/_rsc/img/illus/WizConstr/Blocks-Intro.jpg" /></picture>
 
 ### Horticultural glossary
 
-<table><tr valign="top"><td width="40%"><picture align="center"><img alt="&nbsp;Mango orchard" src="../../../README+/_rsc/img/illus/SeedFruitCore-Intro.jpg" width="750px"></picture>
+<table><tr valign="top"><td width="40%"><picture align="center"><img alt="&nbsp; Mango from orchard pic" src="../../../README+/_rsc/img/illus/WizConstr/SeedFruitCore-Intro.jpg" width="750px"></picture>
 </td><td>
 
 + **Seed** &mdash; initial value of any type:\
-consider zero on a calculator or raw literal, kick-off meeting, ...
-+ **Core** &mdash; basic wrapper of _seed_ without linking, may contain seed transformation functionality (e.g., `string` -> `bool`)
-+ **Pulp** &mdash; supports functionality to transform end result
+Consider it like _zero_ on a calculator or raw literal, kick-off meeting, etc.
++ **Core** &mdash; basic wrapper of _seed_ without linking, 
+"may contain" _seed_ transformation functionality (e.g., `string` -> `bool`)\
+Starts a chain of _Pulps_&thinsp;/&thinsp;_Fruits_
++ **Pulp** &mdash; functional wrapper over the core\
+must/shall yield the result, even if it's not supposed to be returned there\
+may contain predefined linking to the previous or next block (in wizards these can be boolean `and`, `or`, or xor),
 + **Fruit** &mdash; yield result.
 + **Ripe** &mdash; ready universal blocks, which can be put in the wizard chain (in fact, a non-abstract class)
   
