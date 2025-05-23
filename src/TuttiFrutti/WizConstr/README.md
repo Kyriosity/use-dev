@@ -1,9 +1,14 @@
-﻿# Code construction &nbsp;&nbsp; &mdash; &nbsp;&nbsp; Wizard blocks
+﻿# <samp>Code construction</samp> &nbsp; &mdash; &nbsp; Wizard blocks
 
 > **This project partially answers the [builder challenge](../../../README+/techniques/README+/builders/README.md).**
 
-This writing is now <samp>DRAFT</samp> but not <samp>DEBRIS</samp> because its project is experimental but working, and extensible.
+This writing is now <samp>DRAFT</samp> but not <samp>DEBRIS</samp> &thinsp;&mdash;&thinsp; its project is experimental but working, and extensible.
 
+Nevertheless, this project must be a trial and a collector of ideas for the real production version. Even its title must be improved. Other pending ideas are marked below with 💡.
+
+## Scheme
+
+// DRAWING PENDING
 
 ### Horticultural glossary
 
@@ -22,11 +27,11 @@ consider zero on a calculator or raw literal, kick-off meeting, ...
 
 ## Peculiarities
 
-No manager -> blocks
++ Parametrized: by type and connecting functions
++ No manager, aggregator, or monolith -> blocks are stand-alone.
 
-Loose coupling - min data xfer
-
-Diff types:
+Loose coupling - min data xfer:\
+💡 `// ToDesign:` blocks of different seed types
 
 ## Application
 
@@ -34,6 +39,8 @@ Diff types:
 * Yours coming
 
 ## Bottom line
+
+🚧 TO BE WRITTEN
 
 \___________\
 🔚 🌙2025
