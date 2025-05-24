@@ -10,7 +10,7 @@
 </details>
             <!-- TECHNIQUE / PATTERN --!>
 <details><summary><ins><b>T&thinsp;e&thinsp;c&thinsp;h&thinsp;n&thinsp;i&thinsp;q&thinsp;u&thinsp;e&thinsp;s&thinsp;/&thinsp;P&thinsp;a&thinsp;t&thinsp;t&thinsp;e&thinsp;r&thinsp;n&thinsp;s</b></ins>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</summary>
+&nbsp; &nbsp; &nbsp; &nbsp; </summary>
 |&thinsp;-&thinsp;- <a href="/README+/techniques/README+/polymorphism+/README.md">P&thinsp;o&thinsp;l&thinsp;y&thinsp;m&thinsp;o&thinsp;r&thinsp;p&thinsp;h&thinsp;i&thinsp;s&thinsp;m&thinsp;<sup>➕</sup></a><br />
 |&thinsp;-&thinsp;- <a href="/README+/techniques/README+/lurk_init.md">"L&thinsp;u&thinsp;r&thinsp;k&thinsp;i&thinsp;n&thinsp;g"&nbsp;&nbsp;&nbsp;i&thinsp;n&thinsp;i&thinsp;t</a><br />
 |&thinsp;-&thinsp;- <a href="/README+/techniques/README+/builders/README.md">B&thinsp;u&thinsp;i&thinsp;l&thinsp;d&thinsp;e&thinsp;r&thinsp;s</a><br />
@@ -23,7 +23,7 @@
 |&thinsp;-&thinsp;- <a href="README+/decisions/README+/mvvm/mvvm-vmodel_cohesion.md">Model-ViewModel cohesion</a><br />
 </details>
 |&thinsp;- <b>T&thinsp;e&thinsp;m&thinsp;p&thinsp;l&thinsp;a&thinsp;t&thinsp;e&thinsp;s</b><br />
-|&thinsp;-&thinsp;- <a href="README+/decisions/README+/think_in_tasks/README.md">T&thinsp;a&thinsp;s&thinsp;k&thinsp;s&nbsp;&nbsp;&nbsp;as&nbsp;&nbsp;&nbsp;m&thinsp;o&thinsp;d&thinsp;e&thinsp;l&thinsp;s&thinsp;</a><br />
+|&thinsp;-&thinsp;- <a href="README+/decisions/README+/think_in_tasks/README.md">T&thinsp;a&thinsp;s&thinsp;k&thinsp;s&nbsp;&nbsp; a&thinsp;s &nbsp;&nbsp;m&thinsp;o&thinsp;d&thinsp;e&thinsp;l&thinsp;s&thinsp;</a><br />
 <br /><!--      C L A Y    --!>
 ◾ <b>C&thinsp;L&thinsp;A&thinsp;Y</b><br />
 |&thinsp;- Exception wrappers &nbsp;<a href="src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪<br />
@@ -39,7 +39,7 @@
 |&thinsp;-&thinsp;- <a href="README+/tests/README+/unit_test-gradual_assert.md">G&thinsp;r&thinsp;a&thinsp;d&thinsp;u&thinsp;a&thinsp;l&nbsp;&nbsp;&nbsp;a&thinsp;s&thinsp;s&thinsp;e&thinsp;r&thinsp;t</a><br />
 |&thinsp;-&thinsp;- <a href="README+/tests/README+/val_tests-tolerance.md">F&thinsp;i&thinsp;n&thinsp;e&thinsp;r&nbsp;&nbsp;&nbsp;t&thinsp;o&thinsp;l&thinsp;e&thinsp;r&thinsp;a&thinsp;n&thinsp;c&thinsp;e</a><br />
 |&thinsp;-&thinsp;- <a href="README+/tests/README+/prog_tests-posers.md">P&thinsp;o&thinsp;s&thinsp;e&thinsp;r&thinsp;s</a><br />
-<br/><!--           PARTS -->
+<br/><!--           P A R T S -->
 ◾ <b>P&thinsp;A&thinsp;R&thinsp;T&thinsp;S</b>&thinsp;📦<br />
 |&thinsp;- <a href="README+/parts/_ext/ISie/README.md"><b>Ɪ&thinsp;S&thinsp;i&thinsp;e</b></a> extensions<br />
 |&thinsp;- <a href="README+/parts/AbcChrono">Chrono ABC</a><br />
@@ -47,6 +47,8 @@
 |&thinsp;-&thinsp;- Conversion&nbsp;<a href="src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪</br />
 |&thinsp;- 🐝<a name="UVal" href="README+/parts/MultifacetVal"><b>Multifacet value</b></a> (<b>Π</b>-Val)<br />
 |&thinsp;- 🚧<a href="README+/parts/Rvrs">Undo/Redo</a> (Reversible)<br />
+<br/><!--           F R O N T E N D -->
+◾ <b>F&thinsp;r&thinsp;o&thinsp;n&thinsp;t&thinsp;e&thinsp;n&thinsp;d</b>&thinsp;🪟<br />
 </td><td> 
   <table><tr align="center">
      <td>          <!--    I S i e     --!>
