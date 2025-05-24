@@ -1,8 +1,8 @@
-# W&thinsp;P&thinsp;F&nbsp;&nbsp;&mdash;&nbsp;&nbsp; _improved_ `Boolean-to-Visibility` converter
+# W&thinsp;P&thinsp;F &nbsp;&mdash;&nbsp; _improved_ `Boolean-to-Visibility` converter
 
 Imagine :high_brightness:Lights:high_brightness: elements on the *View* that are switched by `bool Voltage` in its *ViewModel*. That's appealing to couple them with the .NET native [`BooleanToVisibilityConverter`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.booleantovisibilityconverter).
 
-Now suppose, :flashlight:Emergency lights:flashlight: will be switched on when the _Voltage_ is off. To spare either a `VoltageOff` property with logic, or a counterpart `InvertedBooleanToVisibilityConverter`, or elaborated [`Style.Triggers`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.style.triggers) let's sketch:
+Now suppose, :flashlight:Emergency lights:flashlight: will be switched on when the _Voltage_ is off. To spare either a `VoltageOff` property with logic, or a counterpart `InvertedBooleanToVisibilityConverter`, or elaborated [`Style.Triggers`](https://docs.microsoft.com/en-us/dotnet/api/system.windows.style.triggers), let's sketch:
 
 <details>
 <summary><ins>&nbsp;Invertible BooleanToVisibility converter (<i>beta-version</i>):&nbsp;</ins></summary>
@@ -49,7 +49,7 @@ The above draft is fairly acceptable, but let's hone it once and for good, to an
 
 ```
 
-| - **Here is the source code** (C#):\
+| - **Here is the source code** (**`C#`**):\
 |--- [BoolVsVizConverter.cs](../../../,./../src/TuttiFrutti/WinClay/Converters/BoolVsVizConverter.cs) 
 
 \___________\
