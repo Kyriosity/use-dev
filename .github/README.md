@@ -14,7 +14,7 @@
 |&thinsp;-&thinsp;- <a href="/README+/techniques/README+/polymorphism+/README.md">P&thinsp;o&thinsp;l&thinsp;y&thinsp;m&thinsp;o&thinsp;r&thinsp;p&thinsp;h&thinsp;i&thinsp;s&thinsp;m&thinsp;<sup>➕</sup></a><br />
 |&thinsp;-&thinsp;- <a href="/README+/techniques/README+/lurk_init.md">"L&thinsp;u&thinsp;r&thinsp;k&thinsp;i&thinsp;n&thinsp;g"&nbsp;&nbsp;&nbsp;i&thinsp;n&thinsp;i&thinsp;t</a><br />
 |&thinsp;-&thinsp;- <a href="/README+/techniques/README+/builders/README.md">B&thinsp;u&thinsp;i&thinsp;l&thinsp;d&thinsp;e&thinsp;r&thinsp;s</a><br />
-|&thinsp;-&thinsp;-&thinsp;-&thinsp;-&nbsp;<a href="/src/TuttiFrutti/WizConstr/README.md">Wizard blocks</a><br />
+|&thinsp;-&thinsp;-&thinsp;-&thinsp;-&nbsp;<a href="../src/TuttiFrutti/WizConstr/README.md">Wizard blocks</a><br />
 |&thinsp;-&thinsp;- <a href="/README+/techniques/README+/circuitry/README.md"><b>C<samp>&thinsp;I&thinsp;R&thinsp;C&thinsp;U&thinsp;I&thinsp;T&thinsp;R&thinsp;Y</samp></b></a>
 </details>
             <!-- M V V M  --!>
@@ -26,10 +26,10 @@
 |&thinsp;-&thinsp;- <a href="../README+/decisions/README+/think_in_tasks/README.md">T&thinsp;a&thinsp;s&thinsp;k&thinsp;s&nbsp;&nbsp; a&thinsp;s &nbsp;&nbsp;m&thinsp;o&thinsp;d&thinsp;e&thinsp;l&thinsp;s&thinsp;</a><br />
 <br /><!--      C L A Y    --!>
 ◾ <b>C&thinsp;L&thinsp;A&thinsp;Y</b><br />
-|&thinsp;- Exception wrappers &nbsp;<a href="src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪<br />
+|&thinsp;- Exception wrappers &nbsp;<a href="../src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪<br />
 |&thinsp;- Extensions/shortcuts<br />
 |&thinsp;- 🚧Models on T-R/W<br />
-|&thinsp;- Motley heap <a href="src/TuttiFrutti/AbcStructTests/Heaps"><i>tests</i></a>🧪<br />
+|&thinsp;- Motley heap <a href="../src/TuttiFrutti/AbcStructTests/Heaps"><i>tests</i></a>🧪<br />
 |&thinsp;- <b>W&thinsp;P&thinsp;F</b><br />
 |&thinsp;-&thinsp;- <a href="../README+/snippets/wpf/bool2viz_improved.md">Bool-Vis. converter</a><sup>improved</sup><br />
 <br /><!--               T E S T I N G   --!>
@@ -44,7 +44,7 @@
 |&thinsp;- <a href="../README+/parts/_ext/ISie/README.md"><b>Ɪ&thinsp;S&thinsp;i&thinsp;e</b></a> extensions<br />
 |&thinsp;- <a href="../README+/parts/AbcChrono">Chrono ABC</a><br />
 |&thinsp;- <b>F&thinsp;u&thinsp;n&thinsp;c&thinsp;w&thinsp;a&thinsp;r&thinsp;e</b><br />
-|&thinsp;-&thinsp;- Conversion&nbsp;<a href="src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪</br />
+|&thinsp;-&thinsp;- Conversion&nbsp;<a href="../src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪</br />
 |&thinsp;- 🐝<a name="UVal" href="../README+/parts/MultifacetVal"><b>Multifacet value</b></a> (<b>Π</b>-Val)<br />
 |&thinsp;- 🚧<a href="../README+/parts/Rvrs">Undo/Redo</a> (Reversible)<br />
 <br/><!--           F R O N T E N D -->
@@ -61,8 +61,8 @@
      </td>
                                       </tr><tr></tr><tr align="center">
     <td>      <!--    B U I L D E R   W I Z A R D    B L O C K S     --!>
-      <a href="src/TuttiFrutti/WizConstr/README.md"><img src="../README+/_rsc/img/_nav/tiles/ConstrWiz-deco_bw-200px.png" alt="&nbsp;&nbsp;Wizard of Code Blocks" /></a>
-      <h4><a href="src/TuttiFrutti/WizConstr/README.md">BUILDER-WIZARD</a></h4>
+      <a href="../src/TuttiFrutti/WizConstr/README.md"><img src="../README+/_rsc/img/_nav/tiles/ConstrWiz-deco_bw-200px.png" alt="&nbsp;&nbsp;Wizard of Code Blocks" /></a>
+      <h4><a href="../src/TuttiFrutti/WizConstr/README.md">BUILDER-WIZARD</a></h4>
     </td>
     <td>             <!--    C H R O N O     --!>
       <a href="../README+/parts/AbcChrono/README.md"><img src="../README+/_rsc/img/_nav/tiles/Chrono_bw-200px.jpg" alt="&nbsp;Chronology lib"/></a>
