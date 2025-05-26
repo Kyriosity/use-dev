@@ -31,7 +31,7 @@
 |&thinsp;- 🚧Models on T-R/W<br />
 |&thinsp;- Motley heap <a href="../src/TuttiFrutti/AbcStructTests/Heaps"><i>tests</i></a>🧪<br />
 |&thinsp;- <b>W&thinsp;P&thinsp;F</b><br />
-|&thinsp;-&thinsp;- <a href="../README+/snippets/wpf/bool2viz_improved.md">Bool-Vis. converter</a><sup>improved</sup><br />
+|&thinsp;-&thinsp;- <a href="../src/TuttiFrutti/WinClay/Converters/bool2viz_improved.md">Bool-Vis. converter</a><sup>improved</sup><br />
 <br /><!--               T E S T I N G   --!>
 ◾ <b>T<samp>&thinsp;E&thinsp;S&thinsp;T&thinsp;I&thinsp;N&thinsp;G</samp></b><br />
 |&thinsp;- 📖&thinsp;<a href="../README+/tests"><i>B&thinsp;e&thinsp;t&thinsp;t&thinsp;e&thinsp;r&nbsp;&nbsp;&nbsp;t&thinsp;e&thinsp;s&thinsp;t&thinsp;s&thinsp;</i></a><br />
