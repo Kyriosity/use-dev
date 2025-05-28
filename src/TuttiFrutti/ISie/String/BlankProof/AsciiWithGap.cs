@@ -10,5 +10,8 @@ public class AsciiWithGaps : Gaps, IAsciiWithGaps
 
 public interface IAsciiWithGaps : IGaps
 {
+    /// <summary>
+    /// Traits relevant to ASCII-128 set of characters
+    /// </summary>
     Encoding Ascii { get; }
 }
