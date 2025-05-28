@@ -1,11 +1,10 @@
-# MVVM&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Model <i>&</i> ViewModel cohesion
+# MVVM &nbsp;&mdash;&nbsp; Model <i>&</i> ViewModel cohesion
 
 ## Classic aggregation
 
 As [Microsoft guidelines](https://docs.microsoft.com/en-us/archive/msdn-magazine/2009/february/patterns-wpf-apps-with-the-model-view-viewmodel-design-pattern)<sup>🪟</sup> suggest ViewModels will usually straightforwardly aggregate Models:
 
-<details>
-<summary><ins>&nbsp;Example: Book with Editor VM - sketch&nbsp;</ins></summary>
+<details><summary><ins>&nbsp;Example: Book with Editor VM - sketch&nbsp;</ins></summary>
 &nbsp;
 
 ```csharp
@@ -37,7 +36,7 @@ As [Microsoft guidelines](https://docs.microsoft.com/en-us/archive/msdn-magazine
 </details>
 
 This practice isn't foul but leaves an itchy call of "Don't repeat yourself". 
-Furthermore, there can be more ViewModels: *BookViewer* for display, *BookAbstract* for listing, and *NewBook* for creation, - all multiplying the mere propagation of the same properties.
+Furthermore, there can be more ViewModels: *BookViewer* for display, *BookAbstract* for listing, and *NewBook* for creation, all multiplying the mere propagation of the same properties.
 
 ## Inheritance variant
 
@@ -54,13 +53,13 @@ Furthermore, there can be more ViewModels: *BookViewer* for display, *BookAbstra
 
 ### Downcasting workaround
 
-An issue of the inheritance is that C# prevents pure downcasting, but there are workarounds possible:\
+An issue with inheritance is that C# prevents pure downcasting, but there are workarounds possible:\
 |- [Downcast unblock](../../../techniques/README+/cs-unblock_downcast.md)
 
-### What about base ViewModel
+### What about the base ViewModel
 
 In the classic realization, ViewModel will reasonably extend the commonly named `ViewModelBase` with everyday functionality, like notifications. 
-C# doesn't support multi-inheritance, so a base is much more suitable for aggregation (injection) thus freeing the place for the model as root. 
+C# doesn't support multi-inheritance, so a base is much more suitable for aggregation (injection), thus freeing the place for the model as root. 
 
 ### Contraindications
 
