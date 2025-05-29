@@ -34,7 +34,7 @@
 |&thinsp;-&thinsp;- <a href="../src/TuttiFrutti/WinClay/Converters/bool2viz_improved.md">Bool-Vis. converter</a><sup>improved</sup><br />
 <br /><!--               T E S T I N G   --!>
 ◾ <b>T<samp>&thinsp;E&thinsp;S&thinsp;T&thinsp;I&thinsp;N&thinsp;G</samp></b><br />
-|&thinsp;- 📖&thinsp;<a href="../README+/tests"><i>B&thinsp;e&thinsp;t&thinsp;t&thinsp;e&thinsp;r&nbsp;&nbsp;&nbsp;t&thinsp;e&thinsp;s&thinsp;t&thinsp;s&thinsp;</i></a><br />
+|&thinsp;- 📖&thinsp;<a href="../README+/tests"><b><i>B&thinsp;e&thinsp;t&thinsp;t&thinsp;e&thinsp;r&nbsp;&nbsp;&nbsp;t&thinsp;e&thinsp;s&thinsp;t&thinsp;s&thinsp;</i></b></a><br />
 |&thinsp;-&thinsp;- <a href="../README+/tests/README+/prog_tests-cut_feeds.md">F&thinsp;e&thinsp;e&thinsp;d&nbsp;&nbsp;&nbsp;e&thinsp;x&thinsp;p&thinsp;a&thinsp;n&thinsp;s&thinsp;i&thinsp;on&nbsp;&nbsp;&nbsp;c&thinsp;u&thinsp;t</a><br />
 |&thinsp;-&thinsp;- <a href="../README+/tests/README+/unit_test-gradual_assert.md">G&thinsp;r&thinsp;a&thinsp;d&thinsp;u&thinsp;a&thinsp;l&nbsp;&nbsp;&nbsp;a&thinsp;s&thinsp;s&thinsp;e&thinsp;r&thinsp;t</a><br />
 |&thinsp;-&thinsp;- <a href="../README+/tests/README+/val_tests-tolerance.md">F&thinsp;i&thinsp;n&thinsp;e&thinsp;r&nbsp;&nbsp;&nbsp;t&thinsp;o&thinsp;l&thinsp;e&thinsp;r&thinsp;a&thinsp;n&thinsp;c&thinsp;e</a><br />

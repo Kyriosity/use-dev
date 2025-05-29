@@ -3,7 +3,7 @@
 <table align="center"><tr valign="top"><td><picture><img src="../../../_rsc/img/ISie.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extensions"/></picture></td><td>
 <p><b>The crossover of these two <code>C#</code> discoveries</b></p>
 <div>&nbsp; &nbsp; ✔️ &thinsp;legit <a href="../../../frames/README+/calls_on_null.md">calls on null</a>&thinsp;,</div>
-<p>&nbsp; &nbsp; ✔️ &thinsp;extension properties <a href="https://github.com/dotnet/roslyn/issues/11159">promised</a>&thinsp;<sup>⏳</sup></p>
+<p>&nbsp; &nbsp; ✔️ &thinsp;<a href="https://github.com/dotnet/roslyn/issues/11159">proposal</a>&thinsp;<sup>⏳</sup> of extension properties</p>
 <div>suggested me to shortcut ubiquitous </div>
   <div align="center"><code>string.IsNullOrWhiteSpace(<i>abracadabra</i>)</code><br />into<br /><code><i><b>abracadabra</b></i>.IsNullOrWhitespace</code>,<br />
   which finally became<br /><code><i><b>abracadabra</b></i>.Is.NullEmptyOr.Whitespace</code>&thinsp;.</div>
@@ -18,9 +18,10 @@ This isn't a great new idea to announce unless together with:
 + reconsider available `Is`, `To`, ... methods of built-in types.
 + better syntax (to build intuitively and group),
 + extend on other candidate built-in and custom types (obviously _numbers_ and _chars_),
-+ render platform for other extensions&nbsp;&nbsp;**<samp>B&thinsp;U&thinsp;T</samp> ...**
++ render platform for other extensions,
++ **.&thinsp;.&thinsp;.**
 
-<h3 align="center">... let's not beat around the bush and show what's out of the box:</h3>
+<h3 align="center">... let's not beat around the bush and open the box:</h3>
 
 <table align="center"><tr></tr><tr><td>🧪<b>By guidance</b> (recommended)</td><td>⚡<b>Direct</b> (when you need)</td></tr>
   <tr valign="top"><td>
@@ -36,7 +37,7 @@ This isn't a great new idea to announce unless together with:
 
 ## What's next
 
-**IS<samp>IE</samp>** is a subject of expansion (Unicode alone is the encoding [big fish](https://www.unicode.org/glossary/)<sup>🔗</sup>) and a platform for kin features:
+**IS<samp>IE</samp>** is a subject of expansion (Unicode alone is a big [cluent](https://www.unicode.org/glossary/)<sup>🔗</sup>) and a platform for kin features:
 
 + `.Equal` for strings needs better syntax than the onerous comparison options. 
 + detecting tongues used in text (`Has<Greek>`),
@@ -46,9 +47,10 @@ This isn't a great new idea to announce unless together with:
 
 ⭐<b>I&thinsp;S&thinsp;<samp>I&thinsp;E</samp></b>⭐ is a remarkable centerfold for miscellaneous concepts and other parts/features.
 
-## Why `Not`?
+## Why `.Not.`?
 
-If it's just <code>❗subj.Is...</code>. &rArr; **Visibility** &thinsp;&mdash;&thinsp; surrounding symbols may shade subtle `!`, and **C#** itself offers `is not`. 
+If it's just <code>❗subj.Is...</code>. The answer is "**discern**" &thinsp;&mdash;&thinsp; surrounding symbols may shade subtle `!`. 
+**C#** itself offers `is not`. 
 
 It's up to you which lexis to pick in **each** case.
 
