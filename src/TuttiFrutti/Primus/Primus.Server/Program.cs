@@ -12,8 +12,7 @@ app.UseDefaultFiles();
 app.MapStaticAssets();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
+if (app.Environment.IsDevelopment()) {
     app.MapOpenApi();
 }
 
@@ -23,6 +22,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// ToDo: ANOTHER FALLBACK REQUIRED
 app.MapFallbackToFile("/index.html");
 
 app.Run();

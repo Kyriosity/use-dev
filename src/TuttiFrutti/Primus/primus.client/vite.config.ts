@@ -45,9 +45,9 @@ export default defineConfig({
             '@': fileURLToPath(new URL('./src', import.meta.url))
         }
     },
-    server: {
+    server: { // ToDo: REST API ?
         proxy: {
-            '^/weatherforecast': {
+            '^/measdata': {
                 target,
                 secure: false
             }

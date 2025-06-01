@@ -1,6 +1,6 @@
 @Primus.Server_HostAddress = http://localhost:5160
 
-GET {{Primus.Server_HostAddress}}/weatherforecast/
+GET {{Primus.Server_HostAddress}}/measdata/
 Accept: application/json
 
 ###
