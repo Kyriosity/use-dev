@@ -21,7 +21,7 @@ They can "**stub**" calls or serve as bookmarks for work-in-progress, and other 
 <p>What's decent for developers is not for releases:</p> 
 <ul>
  <li>Users get fake UI actions enabled.</li>
- <li>Actions pop ugly error message boxes (the last thing after a crash users love to see).</li>
+ <li>Actions pop ugly error message boxes (the last thing after a crash, users love to see).</li>
  <li>APIs and services provide ghost methods. (What's worse, they may fail silently.) </li>
  <li>Requests that just worked with these or those parameters fail with others.</li>
 </ul>
@@ -30,9 +30,13 @@ They can "**stub**" calls or serve as bookmarks for work-in-progress, and other 
 #### Alternatives
 
 * Disable or, if UI, provide an explanation message (though also not great).
-* Design return value that envisages errors.
+* Design a return value that envisages errors.
 * In conditional cases: raise a sort of _Argument Exception_.
 * **Most exotic**: implement.
+
+## Afterword. The exception every language must have ...
+
+`MyFault`. // ToBe Described
 
 \___________\
 🔚 ... to be continued 🐝 ...
