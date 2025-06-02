@@ -26,7 +26,7 @@ This isn't a great new idea to announce unless together with:
 <table align="center"><tr></tr><tr><td>🧪<b>By guidance</b> (recommended)</td><td>⚡<b>Direct</b> (when you need)</td></tr>
   <tr valign="top"><td>
   <div>Here is the entry point:</div>
-  <h2 align="center"><a href="../../../../src/TuttiFrutti/ISie_Tests/BuiltinTypes">D<samp>&thinsp;E&thinsp;M&thinsp;O&thinsp;S</samp>&nbsp;&nbsp;&nbsp;<samp>a&thinsp;n&thinsp;d</samp>&nbsp;&nbsp;&nbsp;T<samp>&thinsp;E&thinsp;S&thinsp;T&thinsp;S</samp></a></h2>
+  <h2 align="center"><a href="../../../../src/TuttiFrutti/ISie_Eval/BuiltinTypes">D<samp>&thinsp;E&thinsp;M&thinsp;O&thinsp;S</samp>&nbsp;&nbsp;&nbsp;<samp>a&thinsp;n&thinsp;d</samp>&nbsp;&nbsp;&nbsp;T<samp>&thinsp;E&thinsp;S&thinsp;T&thinsp;S</samp></a></h2>
   <p>Optimized for navigation.</p>
   </td><td>
     <div>If you're eager to start without guidance,</div>
@@ -37,7 +37,7 @@ This isn't a great new idea to announce unless together with:
 
 ## What's next
 
-**IS<samp>IE</samp>** is a subject of expansion (Unicode alone is a big [cluent](https://www.unicode.org/glossary/)<sup>🔗</sup>) and a platform for kin features:
+**IS<samp>IE</samp>** is a subject of expansion (Unicode alone is a [big candidate](https://www.unicode.org/glossary/)<sup>🔗</sup>) and a platform for kin features:
 
 + `.Equal` for strings needs better syntax than the onerous comparison options. 
 + detecting tongues used in text (`Has<Greek>`),
@@ -62,7 +62,14 @@ It's up to you which lexis to pick in **each** case.
 <p><code>x => x.<b>Not</b>.EmptyOr.Whitespace()</code></p>
 </td></tr></table>
 
-### Beyond syntax alternative
+## Not only `Is/Not`
+
+It wasn't a big deal to add some other evident shortcuts: 
+
++ for ✨[`.To` for chars](../../../../src/TuttiFrutti/ISie_Eval/BuiltinTypes/🔣Char/✨Demo_To.cs)
++ for ✨[numeric operations](../../../../src/TuttiFrutti/ISie_Eval/BuiltinTypes/🔢Number/✨Demo🔢Calc🧮.cs) as `Abs`
+
+### Beyond syntax shortcuts
 
 This qualifier reserves the place for other possibilities, say, `All()...`, `Can()...`, `None.Ascii...`, `No.Symbols...`  
 
