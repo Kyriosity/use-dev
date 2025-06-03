@@ -2,7 +2,7 @@
 
 ## Limitations
 
-### Not Implemented / Not Supported / Invalid Operation - are not "true" exceptions and not for clients
+### `Not Implemented` / `Not Supported` / `Invalid Operation` are not "true" exceptions and not for clients
 
 There are languages native<sup>🌩️</sup> and customs exceptions/errors, which programs can raise to tell that a method/feature/module is under development, delayed or its call/parameters are deprived of sense (under certain conditions):
 
@@ -33,6 +33,10 @@ They can "**stub**" calls or serve as bookmarks for work-in-progress, and other 
 * Design a return value that envisages errors.
 * In conditional cases: raise a sort of _Argument Exception_.
 * **Most exotic**: implement.
+
+## Other chapters
+
+🚧✒️🚧 ... TO WRITE ... 🚧✒️🚧 
 
 ## Afterword. The exception every language must have ...
 
