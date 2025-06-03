@@ -7,6 +7,7 @@ public abstract class ArrangeWithNumbers : Arrange
     protected const int minus100 = -100;
 
     protected const uint fourUnsigned = 4;
+    protected const uint four = 4;
 
     protected const byte bitsInByte = 8;
 

@@ -15,13 +15,12 @@ public class Demo_Calculations : ArrangeWithNumbers
 
     [SyntaxDemo]
     public void SquareRoot() {
-        True = Math.Sqrt(fourUnsigned) == fourUnsigned.Sqrt();
-        True = 0 < samplePositiveFloat.Sqrt();
-        var c = (-samplePositiveFloat).Sqrt();
+        True = Math.Sqrt(four) == four.Sqrt();
+        True = 0 < Math.PI.Sqrt();
+        var rootFromNegative = (-samplePositiveFloat).Sqrt();
         True = double.IsNaN((-samplePositiveFloat).Sqrt()); // ToDo replace with coming extension Is.Nan
 
         // ToDesign: solution on float-point, which can be NaN and negative
-
         // doesn't apply to integral signed types
         // ❌ int.MaxValue.Sqrt();
     }
@@ -38,6 +37,10 @@ public class Demo_Calculations : ArrangeWithNumbers
 
     [SyntaxDemo]
     public void Power_Shortcuts() {
+        var r = 0.23;
+        var circle = r.Square * Math.PI;
+        var sphere = r.Cube * Math.PI * 4 / 3;
+
         Eq[4] = 2.Square;
         Eq[4] = (-2).Square;
         Eq[3 * 3 * 3] = 3.Cube;
@@ -50,7 +53,5 @@ public class Demo_Calculations : ArrangeWithNumbers
 
     }
 
-
     // ToTest: NaN cases
-
 }
