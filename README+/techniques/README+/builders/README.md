@@ -1,8 +1,10 @@
 # T<samp>echniques</samp>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Wizards/Builders (hard trail)
 
-<ins>True</ins> <samp>builders/wizards</samp> beyond chained calls are far more than coding convenience and mistake-proof input. As a scripting or meta-language, they must become an alternative design paradigm (not simple patterns).
+> ### True **`builders`/`wizards`** beyond chained calls mean far more than coding convenience and mistake-proof input. 
 
-Only the overcomplexity of an uncompromising language feature or library and the heavy overhead of tailored endeavors made them exotic in our projects.
+#### As a scripting or meta-language, they must become an alternative design paradigm (not simple patterns).
+
+Only the theoretical overcomplexity of being an uncompromising language feature or library, and the heavy practical overhead of endeavors, made them exotic in our projects.
 
 To compare. Generics are at the pinnacle of **C#** technical embarrassment, while...
 
