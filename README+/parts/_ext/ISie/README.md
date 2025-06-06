@@ -12,45 +12,34 @@
 
 <div align="right"><sup>⏳</sup>&thinsp;<sub>This ever-pending feature must be C#13 "what's new",<br />but finally appeared only as a C#14 preview (April/2025).</sub></div>
 
-This isn't a great new idea to announce unless together with:
+### This isn't an idea to announce unless together with:
 
-+ much more functionality and features (under the theory to port them to other languages),
-+ reconsider available `Is`, `To`, ... methods of built-in types.
-+ better syntax (to build intuitively and group),
-+ extend on other candidate built-in and custom types (obviously _numbers_ and _chars_),
-+ render platform for other extensions,
-+ **.&thinsp;.&thinsp;.**
++ Reconsideration of all available `Is`, `To`, `Equal`, ... methods of built-in types.
++ **Better syntax**: shorter, intuitive, and grouped,
++ **New functionality** beyond shortcuts (theoretically to port them to other languages),
++ **.&thinsp;.&thinsp;.** but ...
 
-<h3 align="center">... let's not beat around the bush and open the box:</h3>
+<h3 align="center">... let's not beat around the bush and show what's the box:</h3>
 
 <table align="center"><tr></tr><tr><td>🧪<b>By guidance</b> (recommended)</td><td>⚡<b>Direct</b> (when you need)</td></tr>
   <tr valign="top"><td>
   <div>Here is the entry point:</div>
-  <h2 align="center"><a href="../../../../src/TuttiFrutti/ISie_Tests/BuiltinTypes">D<samp>&thinsp;E&thinsp;M&thinsp;O&thinsp;S</samp>&nbsp;&nbsp;&nbsp;<samp>a&thinsp;n&thinsp;d</samp>&nbsp;&nbsp;&nbsp;T<samp>&thinsp;E&thinsp;S&thinsp;T&thinsp;S</samp></a></h2>
+  <h2 align="center"><a href="../../../../src/TuttiFrutti/ISie_Eval/BuiltinTypes">D<samp>&thinsp;E&thinsp;M&thinsp;O&thinsp;S</samp>&nbsp;&nbsp;&nbsp;<samp>a&thinsp;n&thinsp;d</samp>&nbsp;&nbsp;&nbsp;T<samp>&thinsp;E&thinsp;S&thinsp;T&thinsp;S</samp></a></h2>
   <p>Optimized for navigation.</p>
   </td><td>
-    <div>If you're eager to start without guidance,</div>
-  <p>refer <a href="../../../../src/TuttiFrutti/ISie"><code>using ISie</code></a>,</p>
-  <p>and let IntelliSense help you!</p>
+    
+  If you're eager to start without guidance, just add
+    
+   [<ode>using ISie</code>](../../../../src/TuttiFrutti/ISie),
+  
+  and let IntelliSense help you!</p>
 
-  </td></tr><tr><td colspan="2" align="center">It's better to explore in Visual Studio or another IDE.</td></tr></table>
-
-## What's next
-
-**IS<samp>IE</samp>** is a subject of expansion (Unicode alone is a big [cluent](https://www.unicode.org/glossary/)<sup>🔗</sup>) and a platform for kin features:
-
-+ `.Equal` for strings needs better syntax than the onerous comparison options. 
-+ detecting tongues used in text (`Has<Greek>`),
-+ _many more_ but which will find its users.
-
-# Appendix. Implementation notes
-
-⭐<b>I&thinsp;S&thinsp;<samp>I&thinsp;E</samp></b>⭐ is a remarkable centerfold for miscellaneous concepts and other parts/features.
+  </td></tr><tr><td colspan="2" align="center">It's better to explore in Visual Studio 2022 or another compatible IDE.</td></tr></table>
 
 ## Why `.Not.`?
 
 If it's just <code>❗subj.Is...</code>. The answer is "**discern**" &thinsp;&mdash;&thinsp; surrounding symbols may shade subtle `!`. 
-**C#** itself offers `is not`. 
+(**C#** itself offers `is not`.)
 
 It's up to you which lexis to pick in **each** case.
 
@@ -62,15 +51,28 @@ It's up to you which lexis to pick in **each** case.
 <p><code>x => x.<b>Not</b>.EmptyOr.Whitespace()</code></p>
 </td></tr></table>
 
-### Beyond syntax alternative
+## Not only `Is/Not`
 
-This qualifier reserves the place for other possibilities, say, `All()...`, `Can()...`, `None.Ascii...`, `No.Symbols...`  
+It wasn't a big deal to add some other evident shortcuts: 
 
-With ⭐ISie⭐, it will be easy to enhance available menus, define new modules, or cover custom types.
++ for ✨[`.To` for chars](../../../../src/TuttiFrutti/ISie_Eval/BuiltinTypes/🔣Char/✨Demo_To.cs)
++ for ✨[numeric operations](../../../../src/TuttiFrutti/ISie_Eval/BuiltinTypes/🔢Number/✨Demo🔢Calc🧮.cs) as `Abs`
+
+## What's next
+
+**IS<samp>IE</samp>** is a subject of expansion (Unicode alone is a [big candidate](https://www.unicode.org/glossary/)<sup>🔗</sup>) and a platform for kin features:
+
++ `.Equal` for strings needs better syntax than the onerous comparison options. 
++ detecting tongues used in text (`Has<Greek>`),
++ micecllaneoud `All.`, `Can.`, `None...`,
++ _many more_ but which will find its users.
+
 
 ## Spin-Offs
 
-⭐ISie⭐ was referred in [TDD watershed](https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asDrive/README+/TDD-Watershed/README.md#TDD-ISie).
+⭐<b>I&thinsp;S&thinsp;<samp>I&thinsp;E</samp></b>⭐ is a remarkable centerfold for miscellaneous concepts and other parts/features.
+
+[TDD watershed](https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asDrive/README+/TDD-Watershed/README.md#TDD-ISie) refers ⭐ISie⭐ for explanation.
 
 This feature launched 
 

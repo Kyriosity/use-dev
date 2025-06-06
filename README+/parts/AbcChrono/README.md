@@ -8,7 +8,7 @@ Software of the previous millennium gave bits for dates (when bits means bits li
 Contemporary languages can support a vast range of past and future dates<sup>📆</sup>, but badly organize them (not intuitive and error-prone).
 
 &nbsp;&nbsp;&nbsp;&nbsp;<sup>🔬</sup> <sub>Unless you need accuracy close to [physics on steroids](https://www.nobelprize.org/prizes/physics/2023/summary/).<sup>🔗</sup></sub>\
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>📆</sup> <sub>C# `DateTime`, astonishingly giving way to Java, supports only the Common Era. Though there are [`Calendar`](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendar) classes to limited rescue.</sub>
+&nbsp;&nbsp;&nbsp;&nbsp;<sup>📆</sup> <sub>C# `DateTime`, astonishingly giving way to Java, supports only the Common Era. Though there are [`Calendar`](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendar) classes to rescue.</sub>
 
 ## Framework - Theses
 
@@ -22,7 +22,7 @@ Contemporary languages can support a vast range of past and future dates<sup>�
  <h3>Initial requirement</h3>
 <ul>
 <li>Definition of timescales: eras, epochs, or calendars.</li>
-<li>Intuitive syntax rooting from Era/Epoch/Calendar specification.</li>
+<li>Intuitive syntax rooted in Era/Epoch/Calendar specification.</li>
 <li>Approximation to specify events known as <b><i>circa</i></b>.</li>
 <li>Compile/run-time guards and constraints:<br />range limit (e.g. 1-28/29/30/31 for months) compile- and run-time.</li>
 </ul>

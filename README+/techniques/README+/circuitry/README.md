@@ -1,10 +1,10 @@
 # P<samp>atterns _via_ Techniques:</samp> Object-oriented C<samp>IRCUITRY</samp>
 
-## Inductive Reasoning for Intro
+## Inductive Reasoning to introduce
 
 Let's present the idea through a case study.
 
-> __«C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &mdash; from a case below.__
+> __«C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &thinsp;&mdash;&thinsp; from a case below.__
 
 Consider a bundle of interlaced "_either_"-functions:
 
@@ -59,9 +59,9 @@ This simplest _unary boolean_ has four variants &mdash; other types with more th
 ### Bring your own function:
 
 <table><tr></tr><tr align="center"><td><b>Template</b></td><td><b>Use</b></td></tr><tr valign="top"><td>
-    <code><i>Bag</i> diff&lt;<b><mark>T</mark></b>&gt; = <br />&nbsp;&nbsp;&nbsp;&nbsp;
+    <code><i>Bag</i> diff&lt;<b><mark>T</mark></b>&gt; = <br />&nbsp &nbsp 
       <mark>T</mark>Compare&lt;T, <mark>Fn</mark>&gt;(<b><mark></mark>T</b> sample, CompareOptions options)</code><br />
-&nbsp;&nbsp;&nbsp;where,
+&nbsp &nbsp;where,
 <ul>
 <li><code>Bag</code> collects differences (of possibly different types) as <a href="../../../../src/TuttiFrutti/AbcStructTests/Heaps">collection</a>,</li>
 <li><code><b>T</b></code> is the type which instances are extended,</li>
@@ -75,7 +75,7 @@ This simplest _unary boolean_ has four variants &mdash; other types with more th
 
 ```
 
-&nbsp;&nbsp;&nbsp;where,
+&nbsp &nbsp;where,
 
 `LooseContent` means a compare function that ignores\
 whitespace and punctuation 
@@ -130,7 +130,7 @@ Fn - defines type
   
 </td></tr></table>
 
-<details><summary><a id="why-circuitry" /><ins>&nbsp;&nbsp;&nbsp;<b>Now the electrical metaphor must have taken shapes&thinsp;:</b>&nbsp;&nbsp;&nbsp;</ins></summary>
+<details><summary><a id="why-circuitry" /><ins>&nbsp &nbsp;<b>Now the electrical metaphor must have taken shapes&thinsp;:</b>&nbsp &nbsp;</ins></summary>
 
 <table><tr valign="top"><td width="40%"><picture><img alt="&nbsp;electrical circuit collage" src="../../../_rsc/img/illus/Circuitry.jpg" /></picture></td>
 <td>
@@ -180,7 +180,7 @@ Design-first will create a test structure that is friendly for exploring and int
 
 ## Appendix. Implementation cases
 
-* [⭐**ISie**⭐](../../../README+/parts/_ext/ISie/README.md) and WizConstr
+* [⭐**ISie**⭐](../../../parts/_ext/ISie/README.md) and WizConstr
 
 \___________\
 🔚 🌘 2024-2025
