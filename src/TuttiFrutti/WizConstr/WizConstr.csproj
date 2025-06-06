@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <Folder Include="🔗Blocks\Fuse\Num\" />
+    <Folder Include="🔗Blocks\Build\" />
   </ItemGroup>
 
 </Project>
