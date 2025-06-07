@@ -3,14 +3,16 @@
 > **This project partially answers the [builder challenge](../../../README+/techniques/README+/builders/README.md).**
 
 > [!IMPORTANT]
->  This writing is now <samp>DRAFT</samp> **but not** <samp>DEBRIS</samp> &thinsp;&mdash;&thinsp; its project is experimental but working, extensible, and already tested/applied.
-> &nbsp;\
-> &nbsp;\
+>  #### This writing is now <samp>DRAFT</samp> **but not** <samp>DEBRIS</samp> &thinsp;&mdash;&thinsp; its project is experimental but working (already tested and applied).
 > Nevertheless, this project must be a trial and a collector of ideas for the real production version.\
 > First, its **title** asks for refiтement. Other pending ideas are marked below with 💡.\
 > &nbsp;
 
 ## Scheme
+
++ Builder
++ Parameters accumulator
++ Fuser
 
 <picture><img alt="&nbsp;  🚧... is being pictured ... 🖌️" src="../../../README+/_rsc/img/illus/WizConstr/Blocks-Intro.jpg" /></picture>
 
