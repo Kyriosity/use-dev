@@ -1,6 +1,4 @@
-﻿using Abc.Logic.Circuitry.Bool;
-
-namespace ISie.String;
+﻿namespace ISie.String;
 public static class Go
 {
     extension(string seed)

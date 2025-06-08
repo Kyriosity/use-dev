@@ -24,6 +24,6 @@ public class SyntaxVariants : Basal
             DuplicatedArgument.Throw("for demo only");
             return true;
         };
-        Error = AbcCommu__Errors__Argument__DuplicatedArgument => wrap("test it");
+        Error = AbcStoppers__Errors__Argument__DuplicatedArgument => wrap("test it");
     }
 }

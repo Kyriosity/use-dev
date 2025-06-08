@@ -1,6 +1,4 @@
-﻿using Abc.Logic.Circuitry.Bool;
-
-namespace ISie.Char.To;
+﻿namespace ISie.Char.To;
 public interface IMenu
 {
     char Upper { get; }

@@ -75,3 +75,5 @@ static class Hub<T>
     internal static string In<N>(N seed) where N : INumber<N> => NotImplemented.Throw("under construction");
 }
 
+//class NumToStr : Fruit<int, string>
+//{ }

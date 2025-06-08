@@ -1,6 +1,4 @@
-﻿// ReSharper disable InconsistentNaming
-// ReSharper disable CheckNamespace
-#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
+﻿#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
 
 namespace ISie_Eval.BuiltinTypes.String.Tests;
 public class ErrorsAndExceptions : Arrange

@@ -6,11 +6,8 @@ public class Demo : Arrange
     [Test]
 #endif
     public void Shortcuts() {
-        _ = string.IsNullOrEmpty(anyText);
-        _ = anyText.Is.NullOrEmpty; // 👈 no overhead
-
-        _ = !string.IsNullOrEmpty(anyText);
-        _ = anyText.Not.NullOrEmpty;
+        True = string.IsNullOrEmpty(anyText) == anyText.Is.NullOrEmpty; // 👈 no overhead
+        True = !string.IsNullOrEmpty(anyText) == anyText.Not.NullOrEmpty;
 
         _ = string.IsNullOrWhiteSpace(""); // ⚠️ empty is admitted as whitespace but it's not
         _ = "".Is.NullEmptyOr.Whitespace; // 👈 explicitly specifies empty
@@ -21,7 +18,7 @@ public class Demo : Arrange
 #if DEBUG
     [Test]
 #endif
-    public void NewFeat_PureSpaces() {
+    public void NewFeature_PureSpaces() {
         tryMe = anyText.Is.Spaces;
 
         True = " ".Is.SingleSpace;
@@ -78,5 +75,7 @@ public class Demo : Arrange
         // RESERVED for discussions!
         False = "a_b,c D".Is.Grayspace;
         _ = "  _ ,     ".Is.Grayspace;
+        _ = "Apple".Replace(" ", "_");
+
     }
 }

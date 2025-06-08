@@ -1,5 +1,4 @@
-﻿using Abc.Logic.Circuitry.Bool;
-using ISie.Char.Is.Menus;
+﻿using ISie.Char.Is.Menus;
 
 namespace ISie.Char;
 public static class Go
