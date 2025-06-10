@@ -4,18 +4,12 @@
 
 ## Separating framework and subject errors and bugs
 
-Testbeds and fixtures can throw _things_ intentionally or not. 
+The subject of the tests may contain errors and throw exceptions &thinsp;&mdash;&thinsp; **expected** or not. The same for test framework (testbed and fixtures): intentional or not.
 
-Intentionally when wrong conditions are met or misuse occurs &mdash; for such cases, it's obvious to define specific exceptions.
+That's why test frameworks deserve a special focus on quality, and it's obvious to 
 
-For errors and bugs, you wouldn't write separate test projects but try to make them as sound as possible. Other guidelines are:
-
-+ Max. focus and best practices
-+ "Patch" utilities with CATCH
-
-
-And the worst case: 🚧🚧🚧
-
++ define specific exceptions for frameworks (like in [NUnit extensions](../../../src/TuttiFrutti/AbcExtNUnit/Exceptions) here),
++ separate unexpected error conditions from the subject (e.g., examining the call stack).
 
 <h1 align="center">Syntax</h1>
 
