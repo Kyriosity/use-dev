@@ -1,10 +1,10 @@
  <h1 align="center">OOP and Polymorphism&nbsp;&nbsp;&mdash;&nbsp;&nbsp;<i>expanded</i></h1>
 
-Two of the four pillars beneath object-oriented programming are plain: <mark>_encapsulation_</mark> and <mark>_inheritance_</mark>, &mdash; you can't misinterpret both bald-faced terms.
+Two of the four pillars beneath object-oriented programming are plain: <mark>_encapsulation_</mark> and <mark>_inheritance_</mark>, &thinsp;&mdash;&thinsp; one can't misinterpret these two.
 
-<mark>_Abstraction_</mark> is abstract by definition but doesn't need much portrayal. It is the essence of thinking and programming: object-oriented or not.
+<mark>_Abstraction_</mark> is abstract by definition, but doesn't need much portrayal. It is the essence of thinking and programming: object-oriented or not.
 
-Vague <span title="&nbsp;&thinsp; Greek:&#013;&#010&nbsp;πολύ&nbsp;&nbsp;&mdash;&nbsp;&nbsp;many&#013;&#010&nbsp;μορφ&nbsp;&nbsp;&mdash;&nbsp;&nbsp; form"><ins><mark>&thinsp;**polymorphism**&thinsp;</mark></ins></span> has many forms of "many forms":
+But vague <span title="&nbsp;&thinsp; Greek:&#013;&#010&nbsp;πολύ&nbsp;&nbsp;&mdash;&nbsp;&nbsp;many&#013;&#010&nbsp;μορφ&nbsp;&nbsp;&mdash;&nbsp;&nbsp; form"><ins><mark>&thinsp;**polymorphism**&thinsp;</mark></ins></span> has many forms of "many forms"<sup>☁️</sup>:
 
 + **subtypes** &mdash; an outcome of inheritance,
 + **parametric** &mdash; as generics in C++, Python, Java, or C#,
@@ -15,6 +15,7 @@ Vague <span title="&nbsp;&thinsp; Greek:&#013;&#010&nbsp;πολύ&nbsp;&nbsp;&md
 |&thinsp;-&thinsp;- 🐝 _more_ ⌛
 
 \___________\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <sup>❗</sup> <sub>It's not type-loose casting to dynamic objects.</sub>\
-🔚 2025
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <sup>❗</sup> <samp>It's not type-loose casting to dynamic objects.</samp>\
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <sup>☁️</sup> <samp>Polymorphism _Greek_: πολυ&thinsp;=&thinsp;many, μορφή &thinsp;=&thinsp;form.</samp>
 
+🔚 2025
