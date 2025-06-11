@@ -18,5 +18,5 @@ internal class CultureNeutralMenu<IO>(string seed) : Root<string, IO>(seed), ICu
 
     public Encoding Ascii => Next<Encoding>(seed => seed.NoNull().NoEmpty("can't check empty for encoding")
         .ToCharArray().All(ch => char.IsAscii(ch)));
-    public bool Grayspace => NotImplemented.Throw("reserved for discussions");
+    public bool Grayspace => NotImplemented.Throw("reserved for experimental feature (TBD)");
 }
