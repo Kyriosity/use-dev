@@ -1,13 +1,10 @@
 # P<samp>atterns _via_ Techniques:</samp> Object-oriented C<samp>IRCUITRY</samp>
 
-## Inductive Reasoning to introduce
-
-Let's present the idea through a case study.
+## _Inductive Reasoning_ to introduce
 
 > __«C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &thinsp;&mdash;&thinsp; from a case below.__
 
-Consider a bundle of interlaced "_either_"-functions:
-
+<div>Consider a bundle of interlaced "<i>either</i>"-functions:</div>
 <div align="right"><sub><i>C#-like pseudo-code for brevity</i></sub></div>
 
 ```csharp
