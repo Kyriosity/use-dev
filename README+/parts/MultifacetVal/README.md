@@ -194,12 +194,9 @@ Pressure(val, In).Temperature(val, In)
 
 ## Overload of math ops
 
-It looks first absolutely natural and a must.
+It applies to common-zero factored units, for example:
 
 ``` var sum = Length.Meter(1) + Length.Centimeter(2)```
-
-This [shabby meme](https://github.com/Kyriosity/read-write/blob/main/readme%2B/pencraft/readme%2B/_rsc/_img/memes/CalmDown_0Cplus0Cis64F.jpg) must remind the obstacle. 
  
-You must already know the right conclusion: only for common-zero factored units.
 
 ... 🚧🚧🚧 WORK in PROGRESS 🚧🚧🚧 ...
