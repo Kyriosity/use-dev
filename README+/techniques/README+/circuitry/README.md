@@ -1,6 +1,6 @@
 # P<samp>atterns _via_ Techniques:</samp> Object-oriented C<samp>IRCUITRY</samp>
 
-## _Inductive Reasoning_ to introduce
+## Introduction by case
 
 > __«C<samp>IRCUITRY</samp>» as an idea is better presented by _inductive reasoning_ &thinsp;&mdash;&thinsp; from a case below.__
 
@@ -20,7 +20,7 @@ class Is {
 
 ```
 
-and there's a demand for these functions as **`neither`**.
+... and there's a demand for these functions as **`neither`**.
 
 When there's no magic out-of-the-hat<sup>🪄</sup> _Boolean Inverter_ a predictable realization will be a wrapper:
 
@@ -104,30 +104,11 @@ Alphabet (rules)
 text.Is<Greek, Latin>.Alphanumeric;
 ```
 
-### Custom objects
-
-### <sup>🪄</sup>Dynamic "Majic Wand"
+## <sup>🪄</sup>Dynamic "Majic Wand"
 
 This must be the most powerful and controversial proposition.
 
-<table><tr></tr><tr align="center"><td><samp><b>Template</b></samp></td><td>Use</td></tr><tr valign="top"><td>
-
-```csharp
-custom_object.Return<Fn>.For<IScope>();
-
-ALL_IN
-
-Fn - defines type
-
-.Input<Fn>
-
-```
-
-</td><td>
-  
-</td></tr></table>
-
-<details><summary><a id="why-circuitry" /><ins>&nbsp &nbsp;<b>Now the electrical metaphor must have taken shapes&thinsp;:</b>&nbsp &nbsp;</ins></summary>
+<details><summary><a id="why-circuitry" /><ins>&nbsp &nbsp;<h3>Now the electrical metaphor must have taken shapes&thinsp;:</h3>&nbsp &nbsp;</ins></summary>
 
 <table><tr valign="top"><td width="40%"><picture><img alt="&nbsp;electrical circuit collage" src="../../../_rsc/img/illus/Circuitry.jpg" /></picture></td>
 <td>
