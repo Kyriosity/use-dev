@@ -9,5 +9,10 @@ public abstract class Pulp<T, TRes> : Core<T, TRes>
         set => _eval = value;
     }
     private Func<T, TRes>? _eval = null;
+
+    protected virtual TRes Result => XForm(Seed);
+
+    protected internal TRes Yield(bool isInterim = false) =>
+        isInterim ? Result : Circuitry(Result);
 }
 
