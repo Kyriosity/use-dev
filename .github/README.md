@@ -80,7 +80,7 @@
                                  </tr><tr></tr><tr align="center">
                     <td>      <!--    T A S K S   a s   M O D E L     --!>
       <a href="../README+/decisions/README+/think_in_tasks/README.md"><img src="../README+/_rsc/img/_nav/tiles/TaskAsModel_bw-200px.png" alt="&nbsp;&nbsp;Value as promise"/></a>
-      <h4>🐝&thinsp;<a href="/README+/decisions/README+/think_in_tasks/README.md">THINKING in TASKS</a>&thinsp;⏰</h4>
+      <h4><a href="/README+/decisions/README+/think_in_tasks/README.md">THINKING in TASKS</a></h4>
     </td>
     <td>                                                  <!--    R E A D - W R I T E     --!>
       <a href="https://github.com/Kyriosity/read-write/blob/main/README+/pencraft/README+/essays/README.md"><img src="../README+/_rsc/img/_nav/tiles/read-write_200px.jpg" alt="&nbsp;READ-WRITE repo" title="&nbsp;Collection in the read-write repository"/></a>
