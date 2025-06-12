@@ -1,4 +1,4 @@
-﻿namespace ISie_Eval.BuiltinTypes.String_Encoding;
+﻿namespace ISie_Eval.BuiltinTypes.String.Ascii;
 public class Demo : Arrange
 {
 #if DEBUG

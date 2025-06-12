@@ -1,4 +1,4 @@
-﻿namespace ISie_Eval.BuiltinTypes.StringEq;
+﻿namespace ISie_Eval.BuiltinTypes.String.Eq;
 public class Demo : Arrange
 {
     [SyntaxDemo]

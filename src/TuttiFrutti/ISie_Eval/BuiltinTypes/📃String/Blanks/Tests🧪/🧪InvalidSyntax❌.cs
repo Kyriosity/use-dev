@@ -1,4 +1,4 @@
-﻿namespace ISie_Eval.BuiltinTypes.String.Tests;
+﻿namespace ISie_Eval.BuiltinTypes.String.Blanks.Tests;
 public class InvalidSyntax : Arrange
 {
     [SyntaxDraft]

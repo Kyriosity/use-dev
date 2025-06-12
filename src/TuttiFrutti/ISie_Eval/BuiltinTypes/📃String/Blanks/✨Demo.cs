@@ -1,4 +1,4 @@
-﻿namespace ISie_Eval.BuiltinTypes.String;
+﻿namespace ISie_Eval.BuiltinTypes.String.Blanks;
 
 public class Demo : Arrange
 {

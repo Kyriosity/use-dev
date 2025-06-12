@@ -1,6 +1,6 @@
 ﻿#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
 
-namespace ISie_Eval.BuiltinTypes.String.Tests;
+namespace ISie_Eval.BuiltinTypes.String.Blanks.Tests;
 public class ErrorsAndExceptions : Arrange
 {
     [Test]
@@ -8,10 +8,9 @@ public class ErrorsAndExceptions : Arrange
         /// Expression trees DONT support extensions
         /// ToDesign: workaround
 
-        // Error = NullReference => NullStr.Is.SingleSpace;
+        //Error = NullReference => NullStr.Is.SingleSpace;
         //Error = NullReference => NullStr.Is.Whitespace;
         //Error = NullReference => NullStr.Is.Ascii; // ! won't throw when no explicit assignment
-
         //Error = NullReference => NullStr.Is.EmptyOr.Whitespace;
     }
 
