@@ -19,16 +19,16 @@
 + **New functionality** beyond shortcuts (theoretically to port them to other languages),
 + **.&thinsp;.&thinsp;.** but ...
 
-<h3 align="center">... let's not beat around the bush and show what's the box:</h3>
+<h3 align="center">... let's not beat around the bush and show what's ready:</h3>
 
-<table align="center"><tr></tr><tr><td>🧪<b>By guidance</b> (recommended)</td><td>⚡<b>Direct</b> (when you need)</td></tr>
+<table align="center"><tr></tr><tr><td>🧪<b>By guidance</b> (recommended)</td><td>⚡<b>Direct</b> (if you want)</td></tr>
   <tr valign="top"><td>
   <div>Here is the entry point:</div>
-  <h2 align="center"><a href="../../../../src/TuttiFrutti/ISie_Eval/BuiltinTypes">D<samp>&thinsp;E&thinsp;M&thinsp;O&thinsp;S</samp>&nbsp;&nbsp;&nbsp;<samp>a&thinsp;n&thinsp;d</samp>&nbsp;&nbsp;&nbsp;T<samp>&thinsp;E&thinsp;S&thinsp;T&thinsp;S</samp></a></h2>
-  <p>Optimized for navigation.</p>
+  <h3 align="center"><a href="../../../../src/TuttiFrutti/ISie_Eval/BuiltinTypes">D<samp>&thinsp;E&thinsp;M&thinsp;O&thinsp;S</samp>&nbsp;&nbsp;&nbsp;<samp>a&thinsp;n&thinsp;d</samp>&nbsp;&nbsp;&nbsp;T<samp>&thinsp;E&thinsp;S&thinsp;T&thinsp;S</samp></a></h2>
+  <p>For a quick example: <a href="../../../../src/TuttiFrutti/ISie_Eval/BuiltinTypes/📃String/Blanks/✨Demo.cs"><code>string.<b>Is</b>...</code></a></p>
   </td><td>
     
-  If you're eager to start without guidance, just add
+  When you prefer to explore without guidance, just add
     
    [<ode>using ISie</code>](../../../../src/TuttiFrutti/ISie),
   
