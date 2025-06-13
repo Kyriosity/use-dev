@@ -10,7 +10,7 @@ as values can be predictably (pre)set/reset, or coded in a time slot, impercepti
 
 <h3 align="center">However</h3>
 <table><tr valign="center"><td align="center" width="40%"><picture><img src="../../../_rsc/img/illus/TaskAsModel.png" alt="&nbsp;Layers delayed communication" /></picture></td><td>
-<div>Domain <b>and</b> IT realities are not always under the best of circumstances with:</div>
+<div>Domain <b>and</b> IT realities are not always under the best of circumstances and meet:</div>
 <ul>
 <li>heavy or long calculations, <samp>(heavy isn't always long and vice versa)</samp></li>
 <li>lagging network and services,</li>
@@ -66,7 +66,7 @@ Some established techniques and tricks can still contribute to async thinking or
 
 ### Caching
 
-The most obvious and simplest technique to add. Only the growing cache may concern, but its size can be dramatically reduced when big parts are "hashed" and stored only once (floating window method to help). Along with easy-to-apply <samp>FIFO</samp>.
+The most obvious and simplest technique to add. Only the growing cache may be a concern, but its size can be dramatically reduced when big parts are "hashed" and stored only once (floating window method to help). Along with easy-to-apply <samp>FIFO</samp>.
 
 ### Laziness (not of developers)
 
