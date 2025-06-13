@@ -36,9 +36,11 @@
 
   </td></tr><tr><td colspan="2" align="center">It's better to explore in Visual Studio 2022 or another compatible IDE.</td></tr></table>
 
+<h3 align="center">... narattive resumed ...</h3>
+
 ## Why `.Not.`?
 
-If it's just <code>❗subj.Is...</code>. The answer is "**discern**" &thinsp;&mdash;&thinsp; surrounding symbols may shade subtle `!`. 
+If it's just <code>❗subj.Is...</code>. The answer is "**to discern**" &thinsp;&mdash;&thinsp; surrounding symbols may shade subtle `!`. 
 (**C#** itself offers `is not`.)
 
 It's up to you which lexis to pick in **each** case.
@@ -66,7 +68,6 @@ It wasn't a big deal to add some other evident shortcuts:
 + detecting tongues used in text (`Has<Greek>`),
 + micecllaneoud `All.`, `Can.`, `None...`,
 + _many more_ but which will find its users.
-
 
 ## Spin-Offs
 
