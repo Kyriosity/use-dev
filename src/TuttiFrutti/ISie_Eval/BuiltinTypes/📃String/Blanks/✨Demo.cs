@@ -6,7 +6,7 @@ public class Demo : Arrange
     [Test]
 #endif
     public void Shortcuts() {
-        True = string.IsNullOrEmpty(anyText) == anyText.Is.NullOrEmpty; // 👈 no overhead
+        True = string.IsNullOrEmpty("abc") == "abc".Is.NullOrEmpty; // 👈 no overhead
         True = !string.IsNullOrEmpty(anyText) == anyText.Not.NullOrEmpty;
 
         _ = string.IsNullOrWhiteSpace(""); // ⚠️ empty is admitted as whitespace but it's not
