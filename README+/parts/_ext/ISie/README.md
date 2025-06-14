@@ -19,16 +19,16 @@
 + **New functionality** beyond shortcuts (theoretically to port them to other languages),
 + **.&thinsp;.&thinsp;.** but ...
 
-<h3 align="center">... let's not beat around the bush and show what's the box:</h3>
+<h3 align="center">... let's not beat around the bush and show what's ready:</h3>
 
-<table align="center"><tr></tr><tr><td>🧪<b>By guidance</b> (recommended)</td><td>⚡<b>Direct</b> (when you need)</td></tr>
+<table align="center"><tr></tr><tr><td>🧪<b>By guidance</b> (recommended)</td><td>⚡<b>Direct</b> (if you want)</td></tr>
   <tr valign="top"><td>
   <div>Here is the entry point:</div>
-  <h2 align="center"><a href="../../../../src/TuttiFrutti/ISie_Eval/BuiltinTypes">D<samp>&thinsp;E&thinsp;M&thinsp;O&thinsp;S</samp>&nbsp;&nbsp;&nbsp;<samp>a&thinsp;n&thinsp;d</samp>&nbsp;&nbsp;&nbsp;T<samp>&thinsp;E&thinsp;S&thinsp;T&thinsp;S</samp></a></h2>
-  <p>Optimized for navigation.</p>
+  <h3 align="center"><a href="../../../../src/TuttiFrutti/ISie_Eval/BuiltinTypes">D<samp>&thinsp;E&thinsp;M&thinsp;O&thinsp;S</samp>&nbsp;&nbsp;&nbsp;<samp>a&thinsp;n&thinsp;d</samp>&nbsp;&nbsp;&nbsp;T<samp>&thinsp;E&thinsp;S&thinsp;T&thinsp;S</samp></a></h2>
+  <p>For a quick example: <a href="../../../../src/TuttiFrutti/ISie_Eval/BuiltinTypes/📃String/Blanks/✨Demo.cs"><code>string.<b>Is</b>...</code></a></p>
   </td><td>
     
-  If you're eager to start without guidance, just add
+  When you prefer to explore without guidance, just add
     
    [<ode>using ISie</code>](../../../../src/TuttiFrutti/ISie),
   
@@ -36,9 +36,11 @@
 
   </td></tr><tr><td colspan="2" align="center">It's better to explore in Visual Studio 2022 or another compatible IDE.</td></tr></table>
 
+<h3 align="center">... narattive resumed ...</h3>
+
 ## Why `.Not.`?
 
-If it's just <code>❗subj.Is...</code>. The answer is "**discern**" &thinsp;&mdash;&thinsp; surrounding symbols may shade subtle `!`. 
+If it's just <code>❗subj.Is...</code>. The answer is "**to discern**" &thinsp;&mdash;&thinsp; surrounding symbols may shade subtle `!`. 
 (**C#** itself offers `is not`.)
 
 It's up to you which lexis to pick in **each** case.
@@ -66,7 +68,6 @@ It wasn't a big deal to add some other evident shortcuts:
 + detecting tongues used in text (`Has<Greek>`),
 + micecllaneoud `All.`, `Can.`, `None...`,
 + _many more_ but which will find its users.
-
 
 ## Spin-Offs
 
