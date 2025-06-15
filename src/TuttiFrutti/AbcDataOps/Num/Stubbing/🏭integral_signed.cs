@@ -1,6 +1,8 @@
 ﻿namespace AbcDataOps.Num.Stubbing;
 public partial class PolyStub
 {
+    public static PolyStub<N> Of<N>(N value) where N : INumber<N> => new(value);
+
     public static PolyStub<sbyte> Of(sbyte value) => new(value) {
         IsPow2 = () => sbyte.IsPow2(value)
     };
