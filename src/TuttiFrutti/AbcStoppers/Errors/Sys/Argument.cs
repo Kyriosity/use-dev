@@ -1,5 +1,5 @@
 ﻿namespace AbcStoppers.Errors.Sys;
-public class Argument : MultiparameterConditional<ArgumentException>
+public partial class Argument : MultiparameterConditional<ArgumentException>
 {
     private Argument() { /* to prevent direct instantiation */ }
 
@@ -17,7 +17,7 @@ public class Argument : MultiparameterConditional<ArgumentException>
         var args = new[] { (arg1, exp1), (arg2, exp2), (arg3, exp3), (arg4, exp4), (arg5, exp5),
             (arg6, exp6), (arg7, exp7), (arg8, exp8), (arg9, exp9), (arg10, exp10), (arg11, exp11) };
 
-        return OnCondition<T>(predicate, (i, _) => 0 < i, args, condition);
+        return OnCondition(predicate, (i, _) => 0 < i, args, condition);
     }
 
     public static bool ThrowIfTogether<T>(Predicate<IEnumerable<T>> predicate, T arg1, T arg2, T arg3 = default, T arg4 = default, T arg5 = default,
@@ -33,7 +33,7 @@ public class Argument : MultiparameterConditional<ArgumentException>
         var args = new[] { (arg1, exp1), (arg2, exp2), (arg3, exp3), (arg4, exp4), (arg5, exp5),
             (arg6, exp6), (arg7, exp7), (arg8, exp8), (arg9, exp9), (arg10, exp10), (arg11, exp11) };
 
-        return OnCondition<T>(predicate, args, condition);
+        return OnCondition(predicate, args, condition);
     }
 
     [Obsolete("This criteria (each) seeks to lack the sense for guarding")]
