@@ -9,13 +9,14 @@ It treats models as snapped in a moment when every property is known and their s
 as values can be predictably (pre)set/reset, or coded in a time slot, imperceptible to users or insignificant for hardware/software clients. 
 
 <h3 align="center">However</h3>
-<table><tr valign="center"><td align="center" width="40%"><picture><img src="../../../_rsc/img/illus/TaskAsModel.png" alt="&nbsp;Layers delayed communication" /></picture></td><td>
+
+<table><tr valign="center"><td align="center" width="40%"><picture><img src="../../../_rsc/img/illus/TaskAsModel_deco.png" alt="&nbsp; Layers delayed communication" /></picture></td><td>
 <div>Domain <b>and</b> IT realities are not always under the best of circumstances and meet:</div>
 <ul>
 <li>heavy or long calculations, <samp>(heavy isn't always long and vice versa)</samp></li>
 <li>lagging network and services,</li>
 <li>slow rudimentary storages,</li>
-<li>pending answers and asynchronous events,</li>
+<li>pending answers, scheduled and asynchronous events,</li>
 </ul>
 <p>and any operation can break, fail, run out of time, or be suspended/canceled/retried on both sides.</p>
 <p>Enough scenarios shall mock delays to catch user attention or show proof of work. For example:
