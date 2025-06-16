@@ -8,7 +8,7 @@ public static partial class Integral_Signed
 {
     public static string In<T>(this sbyte seed, IInclination? _ = null) where T : IScript, ISupported => Hub<T>.In(seed);
     public static string In<T>(this short seed, IInclination? _ = null) where T : IScript, ISupported => Hub<T>.In(seed);
-    public static string In<T>(this int seed, IInclination? _ = null) where T : IScript, ISupported => Hub<T>.In(seed);
+    public static NumToStr<int> In<T>(this int seed, IInclination? _ = null) where T : IScript, ISupported => Hub<T>.In(seed);
     public static string In<T>(this long seed, IInclination? _ = null) where T : IScript, ISupported => Hub<T>.In(seed);
     public static string In<T>(this nint seed, IInclination? _ = null) where T : IScript, ISupported => Hub<T>.In(seed);
 
@@ -72,8 +72,10 @@ public static class FloatingPoint
 
 static class Hub<T>
 {
-    internal static string In<N>(N seed) where N : INumber<N> => NotImplemented.Throw("under construction");
+    internal static NumToStr<N> In<N>(N seed) where N : INumber<N> => NotImplemented.Throw("under construction");
 }
 
-//class NumToStr : Fruit<int, string>
-//{ }
+public class NumToStr<N> : WizConstr.Blocks.Fruit<N, string> where N : INumber<N>
+{
+    public string Ordinal => Next(_ => NotImplemented.Throw("uC"));
+}

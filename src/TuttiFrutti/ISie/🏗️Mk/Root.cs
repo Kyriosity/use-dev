@@ -3,8 +3,7 @@ using AbcRefl.Implementation;
 using WizConstr.Xform;
 
 namespace ISie.Mk;
-public abstract class Root<T, IO> : Core<T, bool>
-    where IO : Circuitry.IO
+public abstract class Root<T, IO> : Core<T, bool> where IO : Circuitry.IO
 {
     internal Root(T seed) {
         Seed = seed;

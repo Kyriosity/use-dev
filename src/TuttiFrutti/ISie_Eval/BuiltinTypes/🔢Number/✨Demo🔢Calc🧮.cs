@@ -53,5 +53,9 @@ public class Demo_Calculations : ArrangeWithNumbers
 
     }
 
+    [SyntaxDemo]
+    public void TruncateAndRound() {
+        Eq[3] = Math.PI.Truncate();
+    }
     // ToTest: NaN cases
 }
