@@ -1,5 +1,5 @@
 ﻿namespace FeatTest.AssertByAssign;
-public class Demo_Errors : Basal
+public class Demo_Errors : Arrange
 {
     [SyntaxDemo]
     public void Exceptions() {

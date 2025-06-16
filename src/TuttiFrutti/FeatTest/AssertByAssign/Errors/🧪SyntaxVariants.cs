@@ -1,7 +1,7 @@
 ﻿using AbcStoppers.Errors.Argument;
 
 namespace FeatTest.AssertByAssign.Errors;
-public class SyntaxVariants : Basal
+public class SyntaxVariants : Arrange
 {
     [Test]
     public void AcronymsPossible() {

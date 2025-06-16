@@ -1,7 +1,7 @@
 ﻿// ReSharper disable InconsistentNaming
 
 namespace FeatTest.AssertByAssign.Errors;
-public class Intro : Basal
+public class Intro : Arrange
 {
     [Test]
     public void Functions_MethodsWithReturn() {

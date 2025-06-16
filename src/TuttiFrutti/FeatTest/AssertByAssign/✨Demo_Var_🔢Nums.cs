@@ -1,5 +1,5 @@
 ﻿namespace FeatTest.AssertByAssign;
-public class Demo_Vars_Numbers : Basal
+public class Demo_Vars_Numbers : Arrange
 {
     [SyntaxDemo]
     public void Intro() { // tribute to ALGOL68/Fortran

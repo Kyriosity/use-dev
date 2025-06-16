@@ -1,5 +1,5 @@
 ﻿namespace FeatTest.AssertByAssign;
-public class Demo : Basal
+public class Demo : Arrange
 {
     [SyntaxDemo]
     public void Basics() {

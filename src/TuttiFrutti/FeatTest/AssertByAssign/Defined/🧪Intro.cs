@@ -1,6 +1,6 @@
 ﻿namespace FeatTest.AssertByAssign.Defined;
 
-public class Intro : Basal
+public class Intro : Arrange
 {
 #if DEBUG
     [Test]

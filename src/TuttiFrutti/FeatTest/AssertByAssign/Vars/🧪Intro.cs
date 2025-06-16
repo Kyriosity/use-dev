@@ -1,7 +1,7 @@
 ﻿// ReSharper disable InconsistentNaming
 
 namespace FeatTest.AssertByAssign.Vars;
-public class Intro : Basal
+public class Intro : Arrange
 {
 #if DEBUG
     [Test]

@@ -1,5 +1,5 @@
 ﻿namespace FeatTest.AssertByAssign;
-public class Demo_Var_Strings : Basal
+public class Demo_Var_Strings : Arrange
 {
     [SyntaxDemo]
     public void Comparison() {

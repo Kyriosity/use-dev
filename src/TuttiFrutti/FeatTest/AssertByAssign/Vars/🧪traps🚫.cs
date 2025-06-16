@@ -1,5 +1,5 @@
 ﻿namespace FeatTest.AssertByAssign.Vars;
-public class Traps : Basal
+public class Traps : Arrange
 {
 #if DEBUG
     [Test]
