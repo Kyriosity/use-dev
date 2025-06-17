@@ -23,7 +23,7 @@
 |&thinsp;-&thinsp;- <a href="../README+/decisions/README+/mvvm/mvvm-vmodel_cohesion.md">Model-ViewModel cohesion</a><br />
 </details>
 |&thinsp;- <b>T&thinsp;e&thinsp;m&thinsp;p&thinsp;l&thinsp;a&thinsp;t&thinsp;e&thinsp;s</b><br />
-|&thinsp;-&thinsp;- <a href="../README+/decisions/README+/think_in_tasks/README.md">T&thinsp;a&thinsp;s&thinsp;k&thinsp;s&nbsp;&nbsp; a&thinsp;s &nbsp;&nbsp;m&thinsp;o&thinsp;d&thinsp;e&thinsp;l&thinsp;s&thinsp;</a><br />
+|&thinsp;-&thinsp;- <a href="../README+/decisions/README+/think_in_tasks/README.md">T&thinsp;h&thinsp;i&thinsp;n&thinsp;k&nbsp;&nbsp; i&thinsp;n &nbsp;&nbsp;t&thinsp;a&thinsp;s&thinsp;k&thinsp;s&thinsp;</a><br />
 <br /><!--      C L A Y    --!>
 ◾ <b>C&thinsp;L&thinsp;A&thinsp;Y</b><br />
 |&thinsp;- Exception wrappers &nbsp;<a href="../src/TuttiFrutti/ExtensionsTests/Exceptions"><i>tests</i></a>🧪<br />
