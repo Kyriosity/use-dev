@@ -55,7 +55,11 @@ public class Demo_Calculations : ArrangeWithNumbers
 
     [SyntaxDemo]
     public void TruncateAndRound() {
-        Eq[3] = Math.PI.Truncate();
+        Eq[3] = 3.51.Truncate();
+        Eq[4] = 3.51.Round();
+
+        Eq[3.14] = Math.PI.Round(2);
     }
+
     // ToTest: NaN cases
 }

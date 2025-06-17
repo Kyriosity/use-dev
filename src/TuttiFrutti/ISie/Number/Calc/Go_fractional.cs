@@ -11,6 +11,7 @@ public static partial class MiscForIntegerAndFloat // floating PT and decimal
         public double Cube => num * num * num;
 
         public double Truncate() => double.Truncate(num);
+        public double Round(byte digits = 0) => double.Round(num, digits);
     }
 
     extension(float num)
@@ -23,6 +24,7 @@ public static partial class MiscForIntegerAndFloat // floating PT and decimal
         public float Cube => num * num * num;
 
         public float Truncate() => float.Truncate(num);
+        public float Round(byte digits = 0) => float.Round(num, digits);
     }
 
     extension(decimal num)
@@ -35,5 +37,7 @@ public static partial class MiscForIntegerAndFloat // floating PT and decimal
         public decimal Cube => num * num * num;
 
         public decimal Truncate() => decimal.Truncate(num);
+        public decimal Round(byte digits = 0) => decimal.Round(num, digits);
+
     }
 }
