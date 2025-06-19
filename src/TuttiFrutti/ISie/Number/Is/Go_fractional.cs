@@ -22,6 +22,5 @@ public static partial class Go
     //{
     //    public INavFloatPt<decimal, PolyStub<decimal>> Is => NotImplemented.Throw("under dev");
     //}
-
 }
 

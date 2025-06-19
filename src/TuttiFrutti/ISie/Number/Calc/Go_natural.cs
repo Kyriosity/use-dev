@@ -1,5 +1,4 @@
-﻿using System;
-namespace ISie.Number.Calc;
+﻿namespace ISie.Number.Calc;
 
 public static partial class MiscForIntegerAndFloat // UNsigned integral types
 {
