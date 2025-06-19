@@ -15,4 +15,3 @@ public abstract class Pulp<T, TRes> : Core<T, TRes>
     protected internal TRes Yield(bool isInterim = false) =>
         isInterim ? Result : Circuitry(Result);
 }
-
