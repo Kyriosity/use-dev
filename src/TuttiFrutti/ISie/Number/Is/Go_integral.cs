@@ -20,7 +20,6 @@ public static partial class Go // +/- integral
     {
         public INavIntegral<int, PolyStub<int>> Is => new IsIntegral<int, PolyStub<int>, IOWire>(PolyStub.Of(seed));
         public INavIntegral<int, PolyStub<int>> Not => new IsIntegral<int, PolyStub<int>, IOInverter>(PolyStub.Of(seed));
-
     }
 
     extension(long seed)
