@@ -13,5 +13,7 @@ public abstract class Pulp<T, TRes> : Core<T, TRes>
     protected virtual TRes Result => XForm(Seed);
 
     protected internal TRes Yield(bool isInterim = false) =>
-        isInterim ? Result : Circuitry(Result);
+        isInterim || Circuitry is null ? Result : Circuitry(Result);
+
+    public override string ToString() => Yield().ToString();
 }
