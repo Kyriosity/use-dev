@@ -5,14 +5,13 @@ public class Demo_In : ArrangeWithNumbers
 {
     [SyntaxDemo]
     public void Basic_Wording() {
-        _ = $"This project began in the year: {2025.In<English>()}";
-        _ = DateTime.Today.Day.In<Latin>();
-        _ = ulong.MaxValue.In<English>();
+        var intro = $"This project began in the year: {2025.In<English>()}";
+        string first = 1.In<English>().Ordinal;
 
         short angle = 45;
         _ = angle.In<Greek>();
 
-        string first = 1.In<English>().Ordinal;
+        _ = DateTime.Today.Day.In<Latin>();
         var minusOne = (1 - 2).In<Current>();
 
         // ToDo: add nullable variants
