@@ -5,6 +5,7 @@ global using Abc.Marks;
 global using Abc.Selection;
 global using AbcDataOps.Num.Stubbing;
 global using AbcLingua.Rules.ext;
+global using AbcLingua.Rules.Grammar;
 global using AbcLingua.Tongues;
 global using AbcStoppers.Errors.Sys;
 global using AbcStoppers.Guards;

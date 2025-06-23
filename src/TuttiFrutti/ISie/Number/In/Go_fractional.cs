@@ -1,6 +1,4 @@
-﻿using AbcLingua.Rules;
-
-namespace ISie.Number.In;
+﻿namespace ISie.Number.In;
 public static partial class Go
 {
     public static Mk.Root<float, T> In<T>(this float seed, IInclination? _ = null)

@@ -1,6 +1,4 @@
-﻿using AbcLingua.Rules;
-
-namespace ISie.Number.In;
+﻿namespace ISie.Number.In;
 /// <summary>
 /// IMPORTANT: no extension for INumber since 1) `char` will get it, 2) generic parameter can't be specified implicitly
 /// </summary>
