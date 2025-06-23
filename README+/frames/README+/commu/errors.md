@@ -36,6 +36,10 @@ They can "**stub**" calls or serve as bookmarks for work-in-progress, and other 
 
 ## Other chapters
 
+### Avoid a error to mask a bigger
+
+consider a call to translate. Latin, o.
+
 🚧✒️🚧 ... TO WRITE ... 🚧✒️🚧 
 
 ## Afterword. The exception every language must have ...
