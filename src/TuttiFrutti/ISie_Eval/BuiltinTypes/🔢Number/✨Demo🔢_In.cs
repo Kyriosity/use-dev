@@ -5,8 +5,12 @@ public class Demo_In : ArrangeWithNumbers
 {
     [SyntaxDemo]
     public void Basic_Wording() {
+        var one = 1.In<English>();
+        var first = 1.In<English>().Ordinal;
+        var alsoFirst = 1.In<English>().Ordinal.Plural;
+
         var intro = $"This project began in the year: {2025.In<English>()}";
-        string first = 1.In<English>().Ordinal;
+
 
         short angle = 45;
         _ = angle.In<Greek>();
