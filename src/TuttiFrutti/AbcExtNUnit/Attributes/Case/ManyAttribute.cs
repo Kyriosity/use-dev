@@ -7,7 +7,7 @@ public class ManyAttribute : TestCaseSourceAttribute
     public ManyAttribute(object item1, object item2, params object[] rest)
         : base(typeof(CasesOutsource), nameof(CasesOutsource.YieldSingle), [item1, item2, rest]) { }
 
-    public ManyAttribute(object[] a0, object[] a1, object[] a2, object[] a3 = null, object[] a4 = null,
+    public ManyAttribute(object[] a0, object[] a1, object[] a2 = null, object[] a3 = null, object[] a4 = null,
         object[] a5 = null, object[] o6 = null, object[] a7 = null, object[] a8 = null, object[] a9 = null,
         object[] b0 = null, object[] b1 = null, object[] b2 = null, object[] b3 = null, object[] b4 = null,
         object[] b5 = null, object[] b6 = null, object[] b7 = null, object[] b8 = null, object[] b9 = null,
