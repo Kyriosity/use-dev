@@ -25,7 +25,7 @@ as values can be predictably (pre)set/reset, or coded in a time slot, impercepti
 </p>
 </td></tr></table>
 
-🚧🪡🚧ANOTHER THEME: THROTTLING!
+🚧🪡🚧ANOTHER THEME: STREAMING !
 
 > **Modern languages and frameworks grant superb multitasking and synchronization tools out of the box.
 > <mark>Even so</mark>, "classical" prevalent implementation incurs perpetual "async" patching of unpredictable values for reactive experience.**
@@ -56,7 +56,7 @@ Not to forget that the statuses of properties and operations are asynchronous va
     <li>Find application.</li>
     <li>Implement.</li>
     <li>Document.</li>
-    <li><i>Repeat.</i></li>
+    <li><i>Submit doctoral theses.</i></li>
   </lu>
 <p align="center"><b><samp>voilà</samp></b></p>
 </td></tr></table>
