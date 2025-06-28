@@ -2,7 +2,7 @@
 
 namespace AbcExtNUnit.AssertOnAssign;
 
-public abstract class Defined : Setup
+public abstract class Defined : Basal
 {
     protected const string? NullStr = null;
 

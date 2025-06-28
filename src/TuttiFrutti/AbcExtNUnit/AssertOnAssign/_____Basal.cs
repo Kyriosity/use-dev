@@ -1,6 +1,6 @@
 ﻿
 namespace AbcExtNUnit.AssertOnAssign;
-public abstract class Setup
+public abstract class Basal
 {
     protected static dynamic ERR_STUB =>
     InvalidOperation.Throw($"Getter can't be defined for <{Caller.Digest}>");
