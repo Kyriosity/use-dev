@@ -7,4 +7,5 @@ global using AbcStuff.Text;
 global using ISie.Char;
 global using ISie.String;
 global using ISie_Eval.Setup;
+global using System.Numerics;
 global using Glyph = AbcStuff.Glyphs;
