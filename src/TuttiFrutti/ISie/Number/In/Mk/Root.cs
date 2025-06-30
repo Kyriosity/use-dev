@@ -10,5 +10,5 @@ public class Root<N, T> : WizConstr.Blocks.Fruit<Seed<N, T>, string>
     protected override Func<Seed<N, T>, string> XForm =>
         seed => seed.Rank.ToString(); // ToDo: PLACEHOLDER FOR CALL
 
-    public string Ordinal => Next(Seed.Ordinal());
+    public string Ordinal => Next<Pluralizable<N, T>>(Seed.Ordinal());
 }
