@@ -8,7 +8,7 @@ public class Root<N, T> : WizConstr.Blocks.Fruit<Seed<N, T>, string>
     }
 
     protected override Func<Seed<N, T>, string> XForm =>
-        seed => seed.IsOrdinal ? "ordinal" : "cardinal";
+        seed => seed.Rank.ToString(); // ToDo: PLACEHOLDER FOR CALL
 
     public string Ordinal => Next(Seed.Ordinal());
 }

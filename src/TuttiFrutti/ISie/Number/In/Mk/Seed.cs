@@ -1,8 +1,8 @@
-﻿using AbcLingua.Rules.Numeric;
+﻿using AbcLingua.Rules.Numbers.Rank;
 
 namespace ISie.Number.In.Mk;
-public class Seed<N, T>(N num) : IRank_Edit where T : IScript where N : INumber<N>
+public class Seed<N, T>(N num) : IEdit where T : IScript where N : INumber<N>
 {
     protected internal N Num => num;
-    public bool IsOrdinal { get; set; } = false;
+    public Values Rank { get; set; }
 }

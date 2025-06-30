@@ -1,21 +1,18 @@
-﻿using AbcLingua.Rules.Grammar;
-using AbcLingua.Rules.Numeric;
-
-namespace AbcLingua.Rules.ext;
+﻿namespace AbcLingua.Rules.ext;
 public static class SetterShortcuts
 {
-    extension<T>(T core) where T : IRank_Edit
+    extension<T>(T core) where T : Numbers.Rank.IEdit
     {
-        public T Ordinal(bool val = true) {
-            core.IsOrdinal = val;
+        public T Ordinal() {
+            core.Rank = Numbers.Rank.Values.Ordinal;
             return core;
         }
     }
 
-    extension<T>(T core) where T : IQuantity_Edit
+    extension<T>(T core) where T : Grammar.Quantity.IEdit
     {
         public T Plural() {
-            core.Plurality = Quantity.Plural;
+            core.Quantity = Grammar.Quantity.Values.Plural;
             return core;
         }
     }

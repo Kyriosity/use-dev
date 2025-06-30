@@ -1,5 +1,5 @@
-﻿namespace AbcLingua.Rules.Grammar;
-public enum Quantity
+﻿namespace AbcLingua.Rules.Grammar.Quantity;
+public enum Values
 {
     Undefined = 0,
     Singular,
