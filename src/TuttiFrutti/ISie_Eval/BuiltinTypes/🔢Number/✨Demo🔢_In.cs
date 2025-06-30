@@ -30,14 +30,10 @@ public class Demo_In : ArrangeWithNumbers
         _ = double.Pi.In<French>(); // challenge - how many numbers at long fraction?
     }
 
-    [SyntaxDemo]
-    public void RomanNumbers() {
-        // no zero and negatives
-    }
-
     public void MiscFormats() {
 
     }
 
     // .FRACTION_STYLE - words or ?; // .Words;
+    // ToDesign: make integer of fraction and submit
 }

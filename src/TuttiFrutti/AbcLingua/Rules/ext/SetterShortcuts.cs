@@ -16,4 +16,6 @@ public static class SetterShortcuts
             return core;
         }
     }
+
+    //https://worldschoolbooks.com/number-systems-in-different-languages/
 }
