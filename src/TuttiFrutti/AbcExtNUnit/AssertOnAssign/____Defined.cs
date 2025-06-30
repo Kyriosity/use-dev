@@ -20,7 +20,6 @@ public abstract class Defined : Basal
 
     protected virtual bool? True { get => true; set => Assert.That(value, Is.True); }
 
-
     protected dynamic? Null {
         get => null;
         set => Assert.That(value, Is.Null);
@@ -39,4 +38,3 @@ public abstract class Defined : Basal
     }
     protected double One { get => 1; set => Assert.That(value, Is.EqualTo(1)); }
 }
-

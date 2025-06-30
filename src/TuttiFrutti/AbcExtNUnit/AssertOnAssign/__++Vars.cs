@@ -11,7 +11,7 @@ public abstract class Defined_Errors_Vars : Defined_Errors
     public readonly Dictionary<Mid<TMidKey>, Mid<INotEqual>?> Not = []; // derogation of ".NE" but better
     public readonly Dictionary<Mid<TMidKey>, Mid<IGreater>?> Gt = [];
     public readonly Dictionary<Mid<TMidKey>, Mid<ILesser>?> Lt = [];
-    public readonly Dictionary<Mid<TMidKey>, Mid<IGreaterOrEqual>?> GE = []; // = NOT Lt .......... DO INVERSE FUNCS!
+    public readonly Dictionary<Mid<TMidKey>, Mid<IGreaterOrEqual>?> GE = []; // = NOT Lt .. DO INVERSE FUNCS!
     public readonly Dictionary<Mid<TMidKey>, Mid<ILessOrEqual>?> LE = []; // = NOT Gt
 
     // ToDesign:
