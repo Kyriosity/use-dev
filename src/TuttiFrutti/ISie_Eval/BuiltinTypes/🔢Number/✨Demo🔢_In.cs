@@ -11,7 +11,6 @@ public class Demo_In : ArrangeWithNumbers
 
         var intro = $"This project began in the year: {2025.In<English>()}";
 
-
         short angle = 45;
         _ = angle.In<Greek>();
 

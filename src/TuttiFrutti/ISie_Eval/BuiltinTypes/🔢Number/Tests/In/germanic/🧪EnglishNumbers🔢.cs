@@ -12,18 +12,21 @@ public class EnglishNumbers : ArrangeWithNumbers
         [17, "seventeen", "seventeenth"], [18, "eighteen", "eighteenth"], [19, "nineteen", "nineteenth"],
         [20, "twenty", "twentieth"], [30, "thirty", "thirtieth"], [40, "forty", "fortieth"], [50, "fifty", "Fiftieth"],
         [60, "sixty", ""], [70, "seventy", "seventieth"], [80, "eighty", "Eightieth"], [90, "ninety", "Ninetieth"])]
-    public void MonoNatural(int value, string cardinal, string ordinal) {
-        True = cardinal == value.In<English>();
-        // ASSERT = 
-        //Eq[cardinal] = value.In<English>();
+    public void MonoNatural(int num, string cardinal, string ordinal) {
+        True = cardinal == num.In<English>();
+        True = ordinal == num.In<English>().Ordinal;
+        True = ordinal == num.In<English>().Ordinal.Plural;
+
+        //Eq[cardinal] = num.In<English>();
         // NEGATE => "minus";
+        //RULES FRACTION
     }
 
     [Many([0, "zero", "zeroth"], [1, "one", "first"], [2, "two", "second"])]
-    public void CompoundNatural<N>(N value, string cardinal, string ordinal) where N : INumber<N> {
+    public void CompoundNatural<N>(N num, string cardinal, string ordinal) where N : INumber<N> {
+
     }
 
-
-    public void Fractional<N>(N value, string cardinal, string ordinal) where N : INumber<N> {
+    public void Fractional<N>(N num, string cardinal, string ordinal) where N : INumber<N> {
     }
 }
