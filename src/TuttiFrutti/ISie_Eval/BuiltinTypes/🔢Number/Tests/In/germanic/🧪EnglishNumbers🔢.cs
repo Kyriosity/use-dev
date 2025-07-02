@@ -3,7 +3,7 @@ using ISie.Number.In;
 
 
 namespace ISie_Eval.BuiltinTypes.Number.Tests.In.germanic;
-public class EnglishNumbers : ArrangeWithNumbers
+public class EnglishNumbers : Setup.Numbers.Arrange
 {
     [Many([0, "zero", "zeroth"], [1, "one", "first"], [2, "two", "second"], [3, "three", "third"], [4, "four", "fourth"],
         [4, "five", "fifth"], [6, "six", "sixth"], [7, "seven", "seventh"], [8, "eight", "eighth"], [9, "nine", "nineth"],

@@ -1,7 +1,6 @@
 ﻿using ISie.Number.Is;
-using System.Numerics;
 namespace ISie_Eval.BuiltinType.Number;
-public class Demo_Integral_Is : ArrangeWithNumbers
+public class Demo_Integral_Is : Setup.Numbers.Arrange
 {
 
 #if DEBUG

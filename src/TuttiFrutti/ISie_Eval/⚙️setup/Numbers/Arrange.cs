@@ -1,5 +1,7 @@
-﻿namespace ISie_Eval.Setup;
-public abstract class ArrangeWithNumbers : Arrange
+﻿using ISie_Eval._️setup.Numbers;
+
+namespace ISie_Eval.Setup.Numbers;
+public abstract class Arrange : Setup.Arrange
 {
     protected const float samplePositiveFloat = 8_984_160.093_431_489f;
 
@@ -15,4 +17,6 @@ public abstract class ArrangeWithNumbers : Arrange
     protected const int intNegative = -100;
 
     protected const decimal gdpEU = 17_255_100_000_000;
+
+    public RomanNumerals Roman => new();
 }

@@ -1,7 +1,7 @@
 ﻿using ISie.Number.Is;
 
 namespace ISie_Eval.BuiltinTypes.Number;
-public class Demo_Float_Is : ArrangeWithNumbers
+public class Demo_Float_Is : Setup.Numbers.Arrange
 {
 
 #if DEBUG

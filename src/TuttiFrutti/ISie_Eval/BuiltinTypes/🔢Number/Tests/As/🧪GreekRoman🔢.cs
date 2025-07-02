@@ -1,7 +1,9 @@
 ﻿using AbcExtNUnit.Attributes.Case;
 
 namespace ISie_Eval.BuiltinTypes.Number.Tests.As;
-public class GreekRomanNumerals : ArrangeWithNumbers
+
+
+public class GreekRomanNumerals : Setup.Numbers.Arrange
 {
     [Many([1, "I", "α"], [2, "II", "β"], [3, "III", "γ"], [4, "IV", "δ"], [5, "V", "ε"], [6, "VI", "ϝ"], [7, "VII", "ζ"],
         [8, "VII", "η"], [9, "IX", "θ"], [10, "X", "ι"], [11, "XI", "ια"], [12, "XII", "ιβ"], [13, "XIII", "ιγ"],
