@@ -8,7 +8,6 @@ public class NumberRange
         Assert.Throws<ArgumentOutOfRangeException>(() => _ = at.circa().August(0));
     }
 
-
     [Test]
     public void NoZeroYears() {
         Assert.Throws<ArgumentOutOfRangeException>(() => _ = Era.Common.Year(0));
@@ -35,6 +34,5 @@ public class NumberRange
 
         Assert.That(at.December(31).Year(2021), Is.Not.Null);
         Assert.Throws<ArgumentOutOfRangeException>(() => _ = at.December(32).Year(2021));
-
     }
 }
