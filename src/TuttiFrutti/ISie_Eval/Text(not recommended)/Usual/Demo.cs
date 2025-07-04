@@ -56,9 +56,7 @@ public class Demo
 
         nulledText = "   ";
         Assert.That(nulledText.IsNullOrEmpty(), NUnit.Framework.Is.False);
-
     }
-
 }
 
 [Obsolete]
