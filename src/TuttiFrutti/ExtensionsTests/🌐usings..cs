@@ -1,4 +1,5 @@
-﻿global using AbcModels.Dir;
+﻿global using AbcExtNUnit.Attributes.Directive;
+global using AbcModels.Dir;
 global using AbcStoppers.Errors.Argument;
 global using AbcStoppers.Errors.Basal;
 global using AbcStoppers.Errors.Data;

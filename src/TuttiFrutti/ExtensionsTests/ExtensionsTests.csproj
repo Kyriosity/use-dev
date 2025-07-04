@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
+	  <LangVersion>preview</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
@@ -24,7 +25,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AbcChrono\AbcChrono.csproj" />
+    <ProjectReference Include="..\AbcExtNUnit\AbcExtNUnit.csproj" />
     <ProjectReference Include="..\AbcModels\AbcModels.csproj" />
+    <ProjectReference Include="..\AbcStoppers\AbcStoppers.csproj" />
     <ProjectReference Include="..\AbcStuff\AbcStuff.csproj" />
   </ItemGroup>
 
