@@ -1,16 +1,39 @@
 ﻿namespace ISie.Number.In;
 public static partial class Go
 {
-    public static Mk.Root<float, T> In<T>(this float seed, IInclination? _ = null)
-        where T : IScript, ISupported => new(seed);
-    public static Mk.Root<double, T> In<T>(this double seed, IInclination? _ = null)
-        where T : IScript, ISupported => new(seed);
-    public static Mk.Root<decimal, T> In<T>(this decimal seed, IInclination? _ = null)
-        where T : IScript, ISupported => new(seed);
-    public static Mk.Root<float, T> In<T>(this float? seed, IInclination? _ = null)
-        where T : IScript, ISupported => new(seed.Value);
-    public static Mk.Root<double, T> In<T>(this double? seed, IInclination? _ = null)
-        where T : IScript, ISupported => new(seed.Value);
-    public static Mk.Root<decimal, T> In<T>(this decimal? seed, IInclination? _ = null)
-        where T : IScript, ISupported => new(seed.Value);
+    extension(float seed)
+    {
+        public Mk.Root<float, T> In<T>(IInclination? _ = null) where T : IScript, ISupported
+            => new(seed);
+    }
+
+    extension(double seed)
+    {
+        public Mk.Root<double, T> In<T>(IInclination? _ = null) where T : IScript, ISupported
+            => new(seed);
+    }
+
+    extension(decimal seed)
+    {
+        public Mk.Root<decimal, T> In<T>(IInclination? _ = null) where T : IScript, ISupported
+            => new(seed);
+    }
+
+    extension(float? seed)
+    {
+        public Mk.Root<float, T> In<T>(IInclination? _ = null) where T : IScript, ISupported
+            => new(seed.Value);
+    }
+
+    extension(double? seed)
+    {
+        public Mk.Root<double, T> In<T>(IInclination? _ = null) where T : IScript, ISupported
+            => new(seed.Value);
+    }
+
+    extension(decimal? seed)
+    {
+        public Mk.Root<decimal, T> In<T>(IInclination? _ = null) where T : IScript, ISupported
+            => new(seed.Value);
+    }
 }
