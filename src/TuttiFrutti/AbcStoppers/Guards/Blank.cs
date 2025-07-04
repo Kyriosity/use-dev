@@ -7,16 +7,18 @@ public static class Blank
 {
     extension(string val)
     {
-        public string NoEmpty(string message = "") => val is "" ? Empty.Throw(message) : val;
+        public string NoEmpty => val is "" ? Empty.Throw() : val;
+        public string NoWhite => val is not "" && string.IsNullOrWhiteSpace(val) ?
+            Argument.Throw("whitespace") : val;
     }
 
-    extension<T>(T seed)
+    extension<T>(T val)
     {
-        public T NoNull(string message = "") => seed is null ? NullReference.Throw(message) : seed;
+        public T NoNull => val is null ? NullReference.Throw(val) : val;
     }
 
     extension(ICollection val)
     {
-        public string NoEmpty(string message = "") => val.Count is 0 ? Empty.Throw(message) : val;
+        public string NoEmpty => val.Count is 0 ? Empty.Throw() : val;
     }
 }

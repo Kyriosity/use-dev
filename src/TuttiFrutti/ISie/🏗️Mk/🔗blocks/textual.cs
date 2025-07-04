@@ -49,6 +49,6 @@ public class Encoding : Fruit<string>, IEncodingChecks
     /// <summary>
     /// Contains no control characters
     /// </summary>
-    public bool NoControls => And(seed => seed.NoEmpty().
+    public bool NoControls => And(seed => seed.NoEmpty.
         ToCharArray().All(ch => !char.IsControl(ch)));
 }

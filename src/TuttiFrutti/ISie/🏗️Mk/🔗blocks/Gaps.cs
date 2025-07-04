@@ -3,7 +3,7 @@
 namespace ISie.Mk.Blocks;
 public class Gaps : Fruit_Or<string>, IGaps
 {
-    public bool Whitespace => Next(str => string.IsNullOrWhiteSpace(str.NoNull()) && str is not "");
+    public bool Whitespace => Next(str => string.IsNullOrWhiteSpace(str.NoNull) && str is not "");
 
     public bool SingleSpace => Next(seed => seed is spaces.Single);
 
