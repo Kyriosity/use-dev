@@ -1,6 +1,4 @@
-﻿using System.Numerics;
-
-namespace AbcStoppers.Errors.Argument;
+﻿namespace AbcStoppers.Errors.Argument;
 public class NegativeArgument(string message) : OutOfRange<NegativeArgument>(message),
     IHasAmbiguousSignature
 {
