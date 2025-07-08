@@ -34,6 +34,11 @@ However, are there custom applications for which it wouldn't be a "mega-engineer
 <p>DYNAMIC FILL OUT</p>
 </td></tr></table>
 
+## Theory
+
+|- Builder for side effects\
+|- Undo/Redo as a builder
+
 ## Realization
 
 Meanwhile, some construction techniques are there:\
@@ -50,4 +55,4 @@ The following topics contemplate object building:\
 Nevertheless, the best technique when hit against the wall is to cut constructors and make other bulky but easy initializations.
 
 \___________\
-🔚 ... 2024-2025 .. image credit: https://globalnews.ca/ (2024)
+🔚 ... 2024-2025 .. image credit: https://globalnews.ca (2024)
