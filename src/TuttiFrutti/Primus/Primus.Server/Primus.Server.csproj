@@ -16,6 +16,7 @@
       <Version>10.0.0-preview.5.25277.114</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.0-preview.5.25277.114" />
+    <PackageReference Include="Tailwind.Extensions.AspNetCore" Version="1.1.0-beta1" />
   </ItemGroup>
 
   <ItemGroup>
