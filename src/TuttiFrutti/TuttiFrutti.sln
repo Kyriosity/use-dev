@@ -193,8 +193,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "🐝🌥️R&D", "🐝🌥�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbcAsync_Eval", "AbcAsync_Eval\AbcAsync_Eval.csproj", "{9F166244-A560-4A38-BB27-0BFBB7B6CFBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimusBackend", "PrimusBackend\PrimusBackend.csproj", "{22947701-47F1-4945-9836-E7C952FD23F6}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -407,10 +405,6 @@ Global
 		{9F166244-A560-4A38-BB27-0BFBB7B6CFBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F166244-A560-4A38-BB27-0BFBB7B6CFBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F166244-A560-4A38-BB27-0BFBB7B6CFBE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{22947701-47F1-4945-9836-E7C952FD23F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{22947701-47F1-4945-9836-E7C952FD23F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{22947701-47F1-4945-9836-E7C952FD23F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{22947701-47F1-4945-9836-E7C952FD23F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -498,7 +492,6 @@ Global
 		{7BF5BC87-A65C-C63D-AD59-54C9C34BFE27} = {8792F9E6-E60A-417F-B796-C4F437101CBC}
 		{1EE61713-850E-CEA0-604E-098671931502} = {8792F9E6-E60A-417F-B796-C4F437101CBC}
 		{9F166244-A560-4A38-BB27-0BFBB7B6CFBE} = {E8E4359A-AA24-4CB4-89B7-7F6D04400D05}
-		{22947701-47F1-4945-9836-E7C952FD23F6} = {8792F9E6-E60A-417F-B796-C4F437101CBC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C57594B1-16AE-49CA-8B93-C41A39EB7666}
