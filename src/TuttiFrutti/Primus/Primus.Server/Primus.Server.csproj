@@ -12,6 +12,8 @@
 
   <ItemGroup>
     <PackageReference Include="Grpc" Version="2.46.6" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.71.0" />
+    <PackageReference Include="Grpc.AspNetCore.Server" Version="2.71.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.0-preview.5.25277.114" />
     <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
       <Version>10.0.0-preview.5.25277.114</Version>
