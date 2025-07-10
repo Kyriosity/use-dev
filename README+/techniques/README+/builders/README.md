@@ -1,4 +1,4 @@
-# T<samp>echniques</samp>&nbsp;&nbsp;&mdash;&nbsp;&nbsp;Wizards/Builders (hard trail)
+# Wizards&thinsp;/&thinsp;Builders &nbsp;&mdash;&nbsp; Challenge (hard trail)
 
 > ### True **`builders`/`wizards`** beyond chained calls mean far more than coding convenience and mistake-proof input. 
 
@@ -36,7 +36,7 @@ However, are there custom applications for which it wouldn't be a "mega-engineer
 
 ## Theory
 
-|- Builder for side effects\
+|- Builder for side effects // with open subscriptions for specified steps \
 |- Undo/Redo as a builder
 
 ## Realization
