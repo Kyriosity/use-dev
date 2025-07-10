@@ -1,5 +1,7 @@
-import { useEffect, useState } from 'react';
+﻿import { useEffect, useState } from 'react';
 import './App.css';
+import UVal from './Elements/UVal';
+import Button from './Elements/Button';
 
 interface MeasData {
     id: number;
@@ -14,7 +16,12 @@ function App() {
     // https://react.dev/reference/react/useEffect
     useEffect(() => {
         populateMeasData();
+        alert('load data begins...');
     }, []);
+
+    useEffect(() => {
+        alert(`MeasData changed + ${measData?.length}`); }, [measData?.length]);
+
 
     const contents = measData === undefined
         ? <p>Check that the ASP.NET backend started and then refresh.</p>
@@ -38,15 +45,24 @@ function App() {
         </table>;
 
     return (
-        <div>
+        <>
+            <div>
             <h1 id="tableLabel">Measurement data</h1>
             <p>This component demonstrates fetching data from the server.</p>
             {contents}
-        </div>
+            </div>
+            <div>
+                <Button name="pro forma" />
+            </div>
+            <div>
+                <UVal />
+            </div>
+        </>
+
     );
 
     async function populateMeasData() {
-        const response = await fetch('measdata'); // ToDo: remove literal
+        const response = await fetch('measdata') // .then(() => alert('loaded data')); // ToDo: remove literal
         if (response.ok) {
             const data = await response.json();
             setMeasdata(data);
