@@ -7,17 +7,17 @@ public class Demo_Integral_Is : Setup.Numbers.Arrange
     [Test]
 #endif
     public void Integral() {
-        var bob = 0;
-        True = bob.Is.NaturalOr0;
-        False = bob.Not.NaturalOr0;
+        var num = 0;
+        True = num.Is.NaturalOr0;
+        False = num.Not.NaturalOr0;
 
-        False = (--bob).Is.NaturalOr0;
-        bob = 9;
-        True = bob.Is.Odd;
-        True = bob--.Not.Even;
+        False = (--num).Is.NaturalOr0;
+        num = 9;
+        True = num.Is.Odd;
+        True = num--.Not.Even;
 
-        True = bob.Is.NaturalOr0.PowOf2;
-        False = (++bob).Is.NaturalOr0.PowOf2;
+        True = num.Is.NaturalOr0.PowOf2;
+        False = (++num).Is.NaturalOr0.PowOf2;
     }
 
 
