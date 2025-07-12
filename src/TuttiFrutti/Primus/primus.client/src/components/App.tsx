@@ -2,6 +2,8 @@
 import './App.css';
 import UVal from './Elements/UVal';
 import Button from './Elements/Button';
+import Diagram from './Graph/Diagram';
+
 
 interface MeasData {
     id: number;
@@ -18,10 +20,6 @@ function App() {
         populateMeasData();
         alert('load data begins...');
     }, []);
-
-    useEffect(() => {
-        alert(`MeasData changed + ${measData?.length}`); }, [measData?.length]);
-
 
     const contents = measData === undefined
         ? <p>Check that the ASP.NET backend started and then refresh.</p>
@@ -56,6 +54,9 @@ function App() {
             </div>
             <div>
                 <UVal />
+            </div>
+            <div>
+                <Diagram />
             </div>
         </>
 
