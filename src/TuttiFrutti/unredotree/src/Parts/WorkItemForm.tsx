@@ -1,17 +1,22 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState, useRef, type FormEvent } from 'react'
-import { Form, Stack, Row, Col, Button, } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Form, Stack, Row, Col, Button } from 'react-bootstrap'
+import { Link, useNavigate } from 'react-router-dom'
 import CreateableReactSelect from 'react-select/creatable'
-import type { WorkItemData } from "../App"
+import type { WorkItemData, Tag } from "../App"
+import { v4 as uuidV4 } from 'uuid' 
 
 type WorkItemFormProps = {
     onSubmit: (data: WorkItemData) => void
+    onAddTag: (tag: Tag) => void
+    availableTags: Tag[]
 }
 
-function WorkItemForm( { onSubmit } : WorkItemFormProps ) {
+function WorkItemForm( { onSubmit, onAddTag, availableTags } : WorkItemFormProps ) {
     const titleRef = useRef<HTMLInputElement>(null)
     const markdownRef = useRef<HTMLTextAreaElement>(null)
     const [selectedTags, setSelectedTags] = useState<Tag[]>([])
+    const navigate = useNavigate()
 
     function handleSubmit(ev : FormEvent) {
         ev.preventDefault()
@@ -19,8 +24,9 @@ function WorkItemForm( { onSubmit } : WorkItemFormProps ) {
         onSubmit({
             title: titleRef.current!.value,
             markdown: markdownRef.current!.value,
-            tags: []
+            tags: selectedTags
         })
+        navigate("..")
     }
 
     return (
@@ -38,6 +44,12 @@ function WorkItemForm( { onSubmit } : WorkItemFormProps ) {
                           <Form.Label>Tags</Form.Label>
                             <CreateableReactSelect isMulti
                                 value={selectedTags.map(tag => { return { label: tag.label, value: tag.id } })}
+                                options={availableTags.map(tag => { return { label: tag.label, value: tag.id } } )}
+                                onCreateOption={label => {
+                                    const newTag = { id: uuidV4(), label }
+                                    onAddTag(newTag)
+                                    setSelectedTags(prev => [...prev, newTag])
+                                }}
                                 onChange={tags => {
                                     setSelectedTags(tags.map(tag => {
                                         return { label: tag.label, id: tag.value }

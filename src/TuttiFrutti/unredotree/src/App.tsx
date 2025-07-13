@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container } from 'react-bootstrap'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import WorkItemNew from './Parts/WorkItemNew'
+import WorkItemsList from './Parts/WorkItemsList'
 import { useLocalStorage } from './useLocalStorage'
 import { useMemo } from 'react'
 import { v4 as uuidV4 } from 'uuid' 
@@ -48,10 +49,15 @@ function App() {
         setWorkItems(prev => { return [...prev, {...data, id: uuidV4(), tagsIds: tags.map(tag => tag.id)}] })
     }
 
+    function addTag(tag: Tag) {
+        setTags(prev => [...prev, tag])
+    }
+
     return <Container className="my-4">
         <Routes>
-        <Route path="/" element={<h1>Un-Re-Do Tree</h1>} />
-            <Route path="/new" element={<WorkItemNew onSubmit={ onCreateWorkItem} /> } />
+        <Route path="/" element={ <WorkItemsList /> } />
+            <Route path="/new" element={<WorkItemNew onSubmit={onCreateWorkItem}
+                onAddTag={addTag} availableTags={ tags } />} />
         <Route path="/:id">
             <Route index element={ <h1>View </h1> } />
         <Route path="edit" element={<h1>Edit</h1>} />
