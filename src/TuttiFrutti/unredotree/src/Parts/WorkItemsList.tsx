@@ -1,5 +1,5 @@
 import { useState, useMemo } from "react"
-import { Row, Col, Stack, Button, Form, Card } from "react-bootstrap"
+import { Row, Col, Stack, Button, Form, Card, Badge } from "react-bootstrap"
 import { Link } from 'react-router-dom'
 import ReactSelect from 'react-select'
 import type { Tag, WorkItem } from '../App'
@@ -65,13 +65,19 @@ function WorkItemsList({ availableTags, items }: WorkItemsListProps) {
                     <ItemCard id={item.id} title={item.title} tags={ item.tags } markdown="" />
                 ))}
             </Row>
+           
       </>
   );
 }
 
+
 function ItemCard({ id, title, tags, markdown }: WorkItem) {
     return <Card as={Link} to={`/${id}`} className={`h-100 text-reset text-decoration-none ${styles.card}}`}>
-        <Card.Body></Card.Body>
+        <Card.Body><Stack gap={2} className="h-100 align-items-center justify-conten-center">
+            <span className="fs-5">{title}</span>
+            {tags.map(tag => (<Badge key={ tag.id } className="text-truncate">{ tag.label }</Badge>)) }
+        </Stack>
+        </Card.Body>
     </Card>
 }
 

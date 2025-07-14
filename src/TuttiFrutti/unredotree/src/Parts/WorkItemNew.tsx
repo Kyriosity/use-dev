@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import type { WorkItemData, Tag } from "../App";
 import WorkItemForm from "./WorkItemForm";
 

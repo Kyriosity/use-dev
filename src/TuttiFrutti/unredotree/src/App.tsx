@@ -6,6 +6,9 @@ import WorkItemsList from './Parts/WorkItemsList'
 import { useLocalStorage } from './useLocalStorage'
 import { useMemo } from 'react'
 import { v4 as uuidV4 } from 'uuid' 
+import WorkItemLayout from './Parts/WorkItemLayout'
+import WorkItem from './Parts/WorkItem'
+import WorkItemEdit from './Parts/WorkItemEdit'
 
 export type WorkItem = {
     id: string
@@ -48,6 +51,21 @@ function App() {
         setWorkItems(prev => { return [...prev, {...data, id: uuidV4(), tagsIds: tags.map(tag => tag.id)}] })
     }
 
+    function onDeleteWorkItem(id: string) {
+        setWorkItems(prev => {
+            return prev.filter(item => item.id !== id)
+        })
+    }
+
+    function onUpdateWorkItem(id: string, { tags, ...data }: WorkItemData) {
+        setWorkItems(prev => {
+            return prev.map(item => {
+                return item.id === id ?
+                    { ...item, ...data, tagsIds: tags.map(tg => tg.id) } : item
+            })
+        })
+    }
+
     function addTag(tag: Tag) {
         setTags(prev => [...prev, tag])
     }
@@ -55,11 +73,17 @@ function App() {
     return <Container className="my-4">
         <Routes>
             <Route path="/" element={<WorkItemsList items={workItemsWithTags } availableTags={ tags } /> } />
-            <Route path="/new" element={<WorkItemNew onSubmit={onCreateWorkItem}
-                onAddTag={addTag} availableTags={ tags } />} />
-        <Route path="/:id">
-            <Route index element={ <h1>View </h1> } />
-        <Route path="edit" element={<h1>Edit</h1>} />
+            <Route path="/new" element={<WorkItemNew
+                onSubmit={onCreateWorkItem}
+                onAddTag={addTag}
+                availableTags={tags} />} />
+            <Route path="/:id" element={<WorkItemLayout items={ workItemsWithTags } />}>
+                <Route index element={<WorkItem onDelete={ onDeleteWorkItem } />} />
+                <Route path="edit" element={<WorkItemEdit
+                    onSubmit={onUpdateWorkItem}
+                    onAddTag={addTag}
+                    availableTags={tags} 
+                />} />
         </Route>
         <Route path='/*' element={<Navigate to="/" /> } />
         </Routes>
