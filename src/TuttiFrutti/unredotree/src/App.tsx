@@ -66,13 +66,22 @@ function App() {
         })
     }
 
+    function updateTag(id: string, label: string) {
+        setTags(prev => { return prev.map(tag => { return tag.id === id ? {... tag, label } : tag } ) })
+    }
+
     function addTag(tag: Tag) {
         setTags(prev => [...prev, tag])
     }
 
+    function deleteTag(id: string) {
+        setTags(prev => { return prev.filter(tag => tag.id !== id) })
+    }
+
     return <Container className="my-4">
         <Routes>
-            <Route path="/" element={<WorkItemsList items={workItemsWithTags } availableTags={ tags } /> } />
+            <Route path="/" element={<WorkItemsList items={workItemsWithTags}
+                availableTags={tags} onUpdateTag={ updateTag } onDeleteTag={ deleteTag  } />} />
             <Route path="/new" element={<WorkItemNew
                 onSubmit={onCreateWorkItem}
                 onAddTag={addTag}
