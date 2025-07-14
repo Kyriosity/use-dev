@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Container } from 'react-bootstrap'
 import { Routes, Route, Navigate } from 'react-router-dom'
@@ -55,7 +54,7 @@ function App() {
 
     return <Container className="my-4">
         <Routes>
-        <Route path="/" element={ <WorkItemsList /> } />
+            <Route path="/" element={<WorkItemsList items={workItemsWithTags } availableTags={ tags } /> } />
             <Route path="/new" element={<WorkItemNew onSubmit={onCreateWorkItem}
                 onAddTag={addTag} availableTags={ tags } />} />
         <Route path="/:id">
