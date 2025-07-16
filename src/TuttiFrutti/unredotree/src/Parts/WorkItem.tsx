@@ -2,11 +2,7 @@ import { Row, Col, Stack, Badge, Button } from "react-bootstrap";
 import { Link, useNavigate } from 'react-router-dom'
 import { useWorkItem } from "./WorkItemLayout";
 import ReactMarkdown from 'react-markdown'
-
-
-type WorkItemProps = {
-    onDelete: (id: string) => void
-}
+import { type WorkItemProps } from '../Types/Props/workiteming'
 
 function WorkItem({ onDelete } : WorkItemProps) {
     const item = useWorkItem()

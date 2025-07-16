@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState } from 'react'
 export function useLocalStorage<T>(key: string, initVal: T | (() => T)) {
     const [value, setValue] = useState<T>(() => {

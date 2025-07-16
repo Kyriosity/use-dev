@@ -1,16 +1,10 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useState, useRef, type FormEvent } from 'react'
 import { Form, Stack, Row, Col, Button } from 'react-bootstrap'
 import { Link, useNavigate } from 'react-router-dom'
 import CreateableReactSelect from 'react-select/creatable'
-import type { WorkItemData, Tag } from "../App"
+import type { Tag } from "../Types/tagging"
 import { v4 as uuidV4 } from 'uuid' 
-
-type WorkItemFormProps = {
-    onSubmit: (data: WorkItemData) => void
-    onAddTag: (tag: Tag) => void
-    availableTags: Tag[]
-} & Partial<WorkItemData>
+import type { WorkItemFormProps } from '../Types/Props/workiteming'
 
 function WorkItemForm( { onSubmit, onAddTag, availableTags, title="", markdown="", tags=[] } : WorkItemFormProps ) {
     const titleRef = useRef<HTMLInputElement>(null)

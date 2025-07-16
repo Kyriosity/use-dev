@@ -1,9 +1,7 @@
 import { Navigate, useParams, Outlet, useOutletContext } from "react-router-dom";
-import { type WorkItem } from "../App";
+import { type WorkItem } from "../Types/workiteming";
+import { type ItemLayoutProps } from "../Types/Props/workiteming";
 
-type ItemLayoutProps = {
-    items : WorkItem[]
-}
 
 function WorkItemLayout({ items }: ItemLayoutProps) {
     const { id } = useParams()

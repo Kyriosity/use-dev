@@ -1,11 +1,5 @@
-import type { WorkItemData, Tag } from "../App";
 import WorkItemForm from "./WorkItemForm";
-
-type NewWorkItemProps = {
-    onSubmit: (data: WorkItemData) => void
-    onAddTag: (tag: Tag) => void
-    availableTags: Tag[]
-}
+import { type NewWorkItemProps } from "../Types/Props/workiteming";
 
 function WorkItemNew({ onSubmit, onAddTag, availableTags } : NewWorkItemProps) {
     return (

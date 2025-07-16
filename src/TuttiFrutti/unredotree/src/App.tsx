@@ -1,39 +1,17 @@
+import { useMemo } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { v4 as uuidV4 } from 'uuid'
 import { Container } from 'react-bootstrap'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import WorkItemNew from './Parts/WorkItemNew'
 import WorkItemsList from './Parts/WorkItemsList'
-import { useLocalStorage } from './useLocalStorage'
-import { useMemo } from 'react'
-import { v4 as uuidV4 } from 'uuid' 
+import { useLocalStorage } from './Funcs/useLocalStorage'
 import WorkItemLayout from './Parts/WorkItemLayout'
 import WorkItem from './Parts/WorkItem'
 import WorkItemEdit from './Parts/WorkItemEdit'
+import type { Tag } from './Types/tagging'
+import type { RawWorkItem, WorkItemData } from './Types/workiteming'
 
-export type WorkItem = {
-    id: string
-} & WorkItemData
-
-export type RawWorkItem = {
-    id : string
-} & RawWorkItemData
-
-export type RawWorkItemData = {
-    title: string
-    markdown: string
-    tagsIds : string[]
-}
-
-export type WorkItemData = {
-    title: string
-    markdown: string
-    tags: Tag[]
-}
-
-export type Tag = {
-    id: string
-    label: string
-}
 function App() {
     const [workItems, setWorkItems] = useLocalStorage<RawWorkItem[]>("WORKITEMS", [])
     const [tags, setTags] = useLocalStorage<Tag[]>("TAGS", [])

@@ -1,12 +1,6 @@
-import type { WorkItemData, Tag } from "../App";
-import WorkItemForm from "./WorkItemForm";
-import { useWorkItem } from "./WorkItemLayout";
-
-type EditWorkItemProps = {
-    onSubmit: (id: string, data: WorkItemData) => void
-    onAddTag: (tag: Tag) => void
-    availableTags: Tag[]
-}
+import WorkItemForm from './WorkItemForm'
+import { useWorkItem } from './WorkItemLayout'
+import type { EditWorkItemProps } from '../Types/Props/workiteming'
 
 function WorkItemEdit({ onSubmit, onAddTag, availableTags }: EditWorkItemProps) {
     const item = useWorkItem();

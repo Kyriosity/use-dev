@@ -1,24 +1,12 @@
 import { useState, useMemo } from "react"
-import { Row, Col, Stack, Button, Form, Card, Badge, Modal } from "react-bootstrap"
+import { Row, Col, Stack, Button, Form, Card, Badge } from "react-bootstrap"
 import { Link } from 'react-router-dom'
 import ReactSelect from 'react-select'
-import type { Tag, WorkItem } from '../App'
+import type { WorkItem } from '../Types/workiteming'
+import type { Tag } from '../Types/tagging'
 import styles from '../ItemsList.module.css'
-
-type WorkItemsListProps = {
-    availableTags: Tag[]
-    items: WorkItem[]
-    onDeleteTag: (id: string) => void
-    onUpdateTag: (id: string, lable: string) => void
-}
-
-type EditTagsModalProps = {
-    show: boolean
-    availableTags: Tag[]
-    handleClose: () => void
-    onDeleteTag: (id: string) => void
-    onUpdateTag: (id: string, lable: string) => void
-}
+import type { WorkItemsListProps } from '../Types/Props/workiteming'
+import { EditTagsDialog } from './Modal/EditTagsDialog'
 
 function WorkItemsList({ availableTags, items, onUpdateTag, onDeleteTag }: WorkItemsListProps) {
     const [title, setTitle] = useState("")
@@ -78,32 +66,11 @@ function WorkItemsList({ availableTags, items, onUpdateTag, onDeleteTag }: WorkI
                     <ItemCard id={item.id} title={item.title} tags={ item.tags } markdown="" />
                 ))}
             </Row>
-            <EditTagsModal show={editTagsModalIsOpen}
+            <EditTagsDialog show={editTagsModalIsOpen}
                 onDeleteTag={onDeleteTag} onUpdateTag={ onUpdateTag }
                 handleClose={() => setEditTagsModalIsOpen(false)} availableTags={availableTags} />
       </>
   );
-}
-
-function EditTagsModal({ availableTags, handleClose, show, onDeleteTag, onUpdateTag } : EditTagsModalProps  ) {
-    return <Modal show={show} onHide={ handleClose } >
-        <Modal.Header closeButton />
-        <Modal.Title>Edit/Remove Tags</Modal.Title>
-        <Modal.Body>
-            <Form>
-                <Stack gap={2}>
-                    {availableTags.map(tag => (<Row key={ tag.id }>
-                        <Col>
-                            <Form.Control type="text" value={tag.label} onChange={ev => onUpdateTag(tag.id, ev.target.value) } />
-                        </Col>
-                        <Col xs="auto">
-                            <Button variant="outline-danger" onClick={ () => onDeleteTag(tag.id)}>&times;</Button>
-                        </Col>
-                    </Row>))}
-                </Stack>
-            </Form>
-        </Modal.Body>
-    </Modal>
 }
 
 function ItemCard({ id, title, tags, markdown }: WorkItem) {
