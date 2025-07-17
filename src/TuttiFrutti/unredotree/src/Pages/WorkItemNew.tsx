@@ -1,4 +1,4 @@
-import WorkItemForm from "./WorkItemForm";
+import WorkItemForm from "../Parts/WorkItemForm";
 import { type NewWorkItemProps } from "../Types/Props/workiteming";
 
 function WorkItemNew({ onSubmit, onAddTag, availableTags } : NewWorkItemProps) {

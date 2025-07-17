@@ -1,7 +1,5 @@
-import { Navigate, useParams, Outlet, useOutletContext } from "react-router-dom";
-import { type WorkItem } from "../Types/workiteming";
+import { Navigate, useParams, Outlet } from "react-router-dom";
 import { type ItemLayoutProps } from "../Types/Props/workiteming";
-
 
 function WorkItemLayout({ items }: ItemLayoutProps) {
     const { id } = useParams()
@@ -13,7 +11,3 @@ function WorkItemLayout({ items }: ItemLayoutProps) {
 }
 
 export default WorkItemLayout;
-
-export function useWorkItem() {
-    return useOutletContext<WorkItem>()
-}

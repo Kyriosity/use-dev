@@ -1,5 +1,5 @@
-import WorkItemForm from './WorkItemForm'
-import { useWorkItem } from './WorkItemLayout'
+import WorkItemForm from '../Parts/WorkItemForm'
+import { useWorkItem } from '../Funcs/useWorkItem'
 import type { EditWorkItemProps } from '../Types/Props/workiteming'
 
 function WorkItemEdit({ onSubmit, onAddTag, availableTags }: EditWorkItemProps) {

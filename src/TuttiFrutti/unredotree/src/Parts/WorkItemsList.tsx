@@ -1,12 +1,11 @@
-import { useState, useMemo } from "react"
-import { Row, Col, Stack, Button, Form, Card, Badge } from "react-bootstrap"
+import { useState, useMemo } from 'react'
+import { Row, Col, Stack, Button, Form} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import ReactSelect from 'react-select'
-import type { WorkItem } from '../Types/workiteming'
 import type { Tag } from '../Types/tagging'
-import styles from '../ItemsList.module.css'
 import type { WorkItemsListProps } from '../Types/Props/workiteming'
-import { EditTagsDialog } from './Modal/EditTagsDialog'
+import { EditTagsDialog } from '../Pages/Modal/EditTagsDialog'
+import { ItemCard } from './ItemCard'
 
 function WorkItemsList({ availableTags, items, onUpdateTag, onDeleteTag }: WorkItemsListProps) {
     const [title, setTitle] = useState("")
@@ -30,7 +29,7 @@ function WorkItemsList({ availableTags, items, onUpdateTag, onDeleteTag }: WorkI
                 <Col xs="auto">
                     <Stack gap={2} direction="horizontal">
                         <Link to="/new">
-                        <Button variant="primary">New Workitem</Button>
+                            <Button variant="primary">New Workitem</Button>
                         </Link>
                         <Button onClick={() => setEditTagsModalIsOpen(true) } variant="outline-secondary">Edit Tags</Button>
                     </Stack>
@@ -71,16 +70,6 @@ function WorkItemsList({ availableTags, items, onUpdateTag, onDeleteTag }: WorkI
                 handleClose={() => setEditTagsModalIsOpen(false)} availableTags={availableTags} />
       </>
   );
-}
-
-function ItemCard({ id, title, tags, markdown }: WorkItem) {
-    return <Card as={Link} to={`/${id}`} className={`h-100 text-reset text-decoration-none ${styles.card}}`}>
-        <Card.Body><Stack gap={2} className="h-100 align-items-center justify-conten-center">
-            <span className="fs-5">{title}</span>
-            {tags.map(tag => (<Badge key={ tag.id } className="text-truncate">{ tag.label }</Badge>)) }
-        </Stack>
-        </Card.Body>
-    </Card>
 }
 
 export default WorkItemsList;

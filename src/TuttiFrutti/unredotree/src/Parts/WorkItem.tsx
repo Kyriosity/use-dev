@@ -1,6 +1,6 @@
 import { Row, Col, Stack, Badge, Button } from "react-bootstrap";
 import { Link, useNavigate } from 'react-router-dom'
-import { useWorkItem } from "./WorkItemLayout";
+import { useWorkItem } from "../Funcs/useWorkItem";
 import ReactMarkdown from 'react-markdown'
 import { type WorkItemProps } from '../Types/Props/workiteming'
 
