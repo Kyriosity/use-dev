@@ -49,6 +49,8 @@
 |&thinsp;- 🚧<a href="../README+/parts/Rvrs">Undo/Redo</a> (Reversible)<br />
 <br/><!--           F R O N T E N D -->
 ◾ <b>F&thinsp;r&thinsp;o&thinsp;n&thinsp;t&thinsp;e&thinsp;n&thinsp;d</b>&thinsp;🪟<br />
+ &thinsp;- 📝 front-back impedance
+            
 </td><td> 
   <table><tr align="center">
      <td>          <!--    I S i e     --!>
