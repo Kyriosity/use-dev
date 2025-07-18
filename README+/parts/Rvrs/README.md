@@ -1,6 +1,6 @@
-# Reversible on .NET &nbsp; &mdash; &nbsp; Intro
+# Reversible on .NET &nbsp;&mdash;&nbsp; Intro
 
-<p dir="rtl";><span style="font-variant:small-caps;"><b><samp>R&thinsp;E&thinsp;V&thinsp;E&thinsp;R&thinsp;S&thinsp;I&thinsp;B&thinsp;L&thinsp;E</samp></b>&nbsp;&nbsp;&nbsp;</span><br><b>a:</b>&nbsp;capable of going through a series of actions<br/>such as changes) either backward or forward)</p>
+<p dir="rtl";><span style="font-variant:small-caps;"><b><samp>R&thinsp;E&thinsp;V&thinsp;E&thinsp;R&thinsp;S&thinsp;I&thinsp;B&thinsp;L&thinsp;E</samp></b>&nbsp; &nbsp;</span><br><b>a:</b>&nbsp;capable of going through a series of actions<br/>such as changes) either backward or forward)</p>
 <p dir="rtl";><i>Merriam-Webster dictionary</i></p>
 
 &nbsp;\
@@ -59,14 +59,14 @@ game.Move("e6");
 // ...
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>:information_source:</sup>&nbsp;<sub>Game sample inspired by [Champions Chess Tour 2022](https://en.wikipedia.org/wiki/Carlsen%E2%80%93Niemann_controversy)<sup><b>w</b></sup></sub>
+&nbsp; &nbsp; <sup>:information_source:</sup>&nbsp;<sub>Game sample inspired by [Champions Chess Tour 2022](https://en.wikipedia.org/wiki/Carlsen%E2%80%93Niemann_controversy)<sup><b>w</b></sup></sub>
 </details>  
 
 &nbsp;\
 If these "antipasti" have aroused your appetite to *redo*, the __[Handbook](README+/handbook)__ will share recipes of further features and use cases backed by [Q&A](README+/reversible_q-a.md).
 
 However ... __isn't that all an over-engineering of the indexed element?__ <sup>:hammer:</sup>&nbsp; You decide, while [Rationale](README+/reversible_reason.md) along with [Posers & Decisions](README+/reversible_posers.md) tries to advocate our efforts.\
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>:hammer:</sup><sub>For instance, `Moves[i]` for current value, `i--` for undo and `i++` for redo.</sub>
+&nbsp; &nbsp; <sup>:hammer:</sup><sub>For instance, `Moves[i]` for current value, `i--` for undo and `i++` for redo.</sub>
 
 `UndoOnly` for the snippet above is too trivial to deserve your look into the repository, but not the whole project, which you may follow in [Developer book](README+/devbook), contribute to it, or rework for your own purposes.
 
