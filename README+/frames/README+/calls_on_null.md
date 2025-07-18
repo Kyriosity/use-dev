@@ -14,7 +14,7 @@ Console.WriteLine("now you see me");
 
 ## Use or abuse?
 
-Continuation on `null` may look worse than [its billion-dollar mistake](https://github.com/Kyriosity/read-write/blob/main/README%2B/pencraft/README%2B/essays/README+/NullRefError.md).  
+Continuation on `null` may look worse than [its billion-dollar mistake](https://github.com/Kyriosity/read-write/blob/main/README%2B/pencraft/README%2B/essays/README+/bool/NullRefError.md).  
 Correct ... **unless** the semantics and job _after dot_ assume this `null`:
 
 ```csharp
