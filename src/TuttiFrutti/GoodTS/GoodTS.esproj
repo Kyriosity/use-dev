@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.2752196">
+	<PropertyGroup>
+		<JavaScriptTestRoot>src\</JavaScriptTestRoot>
+		<JavaScriptTestFramework>Vitest</JavaScriptTestFramework>
+	</PropertyGroup>
+</Project>
