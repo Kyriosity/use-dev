@@ -22,12 +22,12 @@ function WorkItemsList({ availableTags, items, onUpdateTag, onDeleteTag }: WorkI
 
     return (
         <>
-            <Row classname="align-items-center mb-4">
+            <Row className="align-items-center mb-4">
                 <Col>
                 <h2>Work Items</h2>
                 </Col>
                 <Col xs="auto">
-                    <Stack gap={2} direction="horizontal">
+                    <Stack gap={ 2 } direction="horizontal">
                         <Link to="/new">
                             <Button variant="primary">New Workitem</Button>
                         </Link>
@@ -62,7 +62,7 @@ function WorkItemsList({ availableTags, items, onUpdateTag, onDeleteTag }: WorkI
             </Form>
             <Row xs={1} sm={2} lg={3} xl={4} className="g-3">
                 {filteredItems.map(item => (
-                    <ItemCard id={item.id} title={item.title} tags={ item.tags } markdown="" />
+                    <ItemCard key={item.id} id={item.id} title={item.title} tags={ item.tags } markdown="" />
                 ))}
             </Row>
             <EditTagsDialog show={editTagsModalIsOpen}

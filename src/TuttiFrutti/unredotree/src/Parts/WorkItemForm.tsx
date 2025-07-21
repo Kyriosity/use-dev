@@ -30,7 +30,7 @@ function WorkItemForm( { onSubmit, onAddTag, availableTags, title="", markdown="
                   <Col>
                       <Form.Group controlId="title">
                           <Form.Label>Title</Form.Label>
-                            <Form.Control ref={titleRef} required defaultValue={ title } />
+                            <Form.Control ref={ titleRef } required defaultValue={ title } />
                       </Form.Group>
                   </Col>
                   <Col>
@@ -51,7 +51,8 @@ function WorkItemForm( { onSubmit, onAddTag, availableTags, title="", markdown="
                                 }} />
                       </Form.Group>
                   </Col>
-              </Row>
+                </Row>
+              <input type="text" />
               <Form.Group controlId="markdown">
                   <Form.Label>Body</Form.Label>
                     <Form.Control ref={markdownRef} required as="textarea" rows={15} defaultValue={ markdown } />

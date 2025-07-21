@@ -1,4 +1,4 @@
-import styles from '../ItemsList.module.css'
+import styles from '../styling/ItemsList.module.css'
 import type { WorkItem } from '../Types/workiteming'
 import { Stack, Card, Badge } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
