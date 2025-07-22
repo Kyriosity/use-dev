@@ -1,4 +1,4 @@
-# <samp>Multifaceted Value</samp> 💠 **Π-Val**
+<h1 align="center">Multifaceted Value 💠 **Π-Val**</h1>
 
 <p dir="rtl">?Gauges&nbsp;-<br />!<b>300</b>&nbsp;-<br />
 ?What 300&nbsp;-<br />?What gauges&nbsp;-</p>
@@ -13,7 +13,7 @@
  
 Verbal, documented, and **programmatic** communications frequently rely on titles and contexts and omit tags/units. Shall a context wane - values may "roam" between denominators:
 
-<details><summary>&nbsp;<ins>&nbsp; Temperature <code>2.7</code> is&thinsp;</ins><b> .&nbsp;.&nbsp;.</b></summary>
+<details><summary>&nbsp;<ins>&nbsp; <b>Temperature <code>2.7</code> is</b>&thinsp;</ins><b> .&nbsp;.&nbsp;.</b></summary>
 <ins>the baseline of the Universe space in <i>Kelvin</i></ins> but in  <i>Celsius</i> or <i>Fahrenheit</i> &nbsp;&mdash;&nbsp; a casual weather for many non-astronauts.<sup>🌡️</sup>
 <br /><br />
             
@@ -198,5 +198,5 @@ It applies to common-zero factored units, for example:
 
 ``` var sum = Length.Meter(1) + Length.Centimeter(2)```
  
-
-... 🚧🚧🚧 WORK in PROGRESS 🚧🚧🚧 ...
+__________\
+🔚 ..2024-2025 ... 🚧🚧🚧 WORK in PROGRESS 🚧🚧🚧 ...
