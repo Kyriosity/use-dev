@@ -1,4 +1,4 @@
-# Intercom - Errors, Exceptions and Fails
+# Intercom &thinsp;&mdash;&thinsp; Errors, Exceptions, and Fails
 
 🚧🚧🚧 ... DRAFT ... 🚧🚧🚧
 
@@ -23,6 +23,6 @@ LINK TO THE DESIGN DECISIONS
 Before throwing an exception
 
 
-### Catching w.out respect to origin
+### Catching w/out respect to origin
 
 #### NullPointer softpedalling
