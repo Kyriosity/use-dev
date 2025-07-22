@@ -13,11 +13,10 @@ More comparison in ✒️<a href="https://github.com/Kyriosity/read-write/blob/m
     
 </td></tr></table>
 
-The metaphor of code as <mark>cement</mark> was applied to underline <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/QA/README+/code-quality.md">code quality</a>.
-     Then design activities can be <mark>formworks</mark> of the concrete, and coding rules, guidelines, and frames can be seen as <mark>reinforcement</mark>.
-   
+The metaphor of code as <mark>cement</mark> was applied to underline <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/QA/README+/code-quality.md">code quality</a>. 
+Then design activities can be <mark>formworks</mark> of the concrete, and coding rules, guidelines, and frames can be seen as <mark>reinforcement</mark>.   
 
-Welcome to these modest contributions - 📁[<span title="&nbsp;The README+ subfolder oranises topic docs"><samp>README+</samp></span>](README+).
+Welcome to these modest contributions &thinsp;&mdash;&thinsp; 📁[<span title="&nbsp;The README+ subfolder oranises topic docs"><samp>README+</samp></span>](README+).
 
 \___________\
 🔚 ... 2023-2025 <sub>Collage background credit: jkcement.com&#013;&#010;(for illustration purposes only)</sub> 
