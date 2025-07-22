@@ -1,6 +1,6 @@
 🚧🚧🚧 DRAFT...
 
-# C# - Motley heap
+# C# &thinsp;&mdash;&thinsp; Motley heap
 
 It started just as a patch in a particular method: to cache parsed, or not, values of logically similar but different types in one container. 
 
