@@ -199,6 +199,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "⚛️Typescript", "⚛️T
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "GoodTS", "GoodTS\GoodTS.esproj", "{B43A4E61-5C55-A943-E8D3-5779E9651959}"
 EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "multifacetvalue", "MultiFacetValue\multifacetvalue.esproj", "{980211AD-6F2C-47FD-A56E-7D9350B48BD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -423,6 +425,12 @@ Global
 		{B43A4E61-5C55-A943-E8D3-5779E9651959}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B43A4E61-5C55-A943-E8D3-5779E9651959}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B43A4E61-5C55-A943-E8D3-5779E9651959}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{980211AD-6F2C-47FD-A56E-7D9350B48BD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{980211AD-6F2C-47FD-A56E-7D9350B48BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{980211AD-6F2C-47FD-A56E-7D9350B48BD1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{980211AD-6F2C-47FD-A56E-7D9350B48BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{980211AD-6F2C-47FD-A56E-7D9350B48BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{980211AD-6F2C-47FD-A56E-7D9350B48BD1}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -513,6 +521,7 @@ Global
 		{2ECF98F7-D5C2-1AE7-3723-04C0969DF5E4} = {8792F9E6-E60A-417F-B796-C4F437101CBC}
 		{896C914C-06A9-4FAB-A4E7-9344749D2F05} = {E26A5ADC-D63C-44C4-AC01-0596B815545D}
 		{B43A4E61-5C55-A943-E8D3-5779E9651959} = {896C914C-06A9-4FAB-A4E7-9344749D2F05}
+		{980211AD-6F2C-47FD-A56E-7D9350B48BD1} = {8792F9E6-E60A-417F-B796-C4F437101CBC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C57594B1-16AE-49CA-8B93-C41A39EB7666}
