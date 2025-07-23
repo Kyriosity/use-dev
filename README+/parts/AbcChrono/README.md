@@ -1,16 +1,16 @@
-# Chronology &nbsp; &mdash; &nbsp; Timelines &nbsp; &mdash; &nbsp; Events
+# Chronology &nbsp;&mdash;&nbsp; Timelines &nbsp; &mdash; &nbsp; Events
 
-> **Time** is the _driver_ for all and the "solvent" of everything. The former is for software and the latter for its hardware.
+> <h3>Time is the <i>driver</i> for all and the "solvent" of everything.<br />The former is for software and the latter for its hardware.</h3>
 
-Exact time measurement<sup>🔬</sup> and timestamping aren't an issue for regular solutions but chronology.
+Exact time measurement<sup>🔬</sup> and timestamping aren't an issue for regular solutions but **chronology**.
 
 Software of the previous millennium gave bits for dates (when bits means bits literally), thus nurturing the giant **<samp>Y2K</samp>** bug (and maybe [Y2038](https://en.wikipedia.org/wiki/Year_2038_problem)<sup><b>w</b></sup>).
 Contemporary languages can support a vast range of past and future dates<sup>📆</sup>, but badly organize them (not intuitive and error-prone).
 
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>🔬</sup> <sub>Unless you need accuracy close to [physics on steroids](https://www.nobelprize.org/prizes/physics/2023/summary/).<sup>🔗</sup></sub>\
-&nbsp;&nbsp;&nbsp;&nbsp;<sup>📆</sup> <sub>C# `DateTime`, astonishingly giving way to Java, supports only the Common Era. Though there are [`Calendar`](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendar) classes to rescue.</sub>
+&nbsp; &nbsp; <sup>🔬</sup> <samp>Unless you need accuracy close to [physics on steroids](https://www.nobelprize.org/prizes/physics/2023/summary/).<sup>🔗</sup></samp>\
+&nbsp; &nbsp; <sup>📆</sup> <samp>C# `DateTime`, astonishingly giving way to Java, supports only the Common Era. Though there are [`Calendar`](https://learn.microsoft.com/en-us/dotnet/api/system.globalization.calendar) classes to rescue.</samp>
 
-## Framework - Theses
+## Framework &thinsp;&mdash;&thinsp; Theses
 
 <table><tr valign="top"><td width="60%">
 <p align="center"><ins>&nbsp;<b>Overall Wizard diagram</b>&nbsp;</ins></p>
