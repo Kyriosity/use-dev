@@ -1,20 +1,18 @@
-# Wizards&thinsp;/&thinsp;Builders &nbsp;&mdash;&nbsp; Challenge (hard trail)
+<h1 align="center">Wizards&thinsp;/&thinsp;Builders &nbsp;&mdash;&nbsp; Challenge (hard trail)</h1>
 
-> ### True **`builders`/`wizards`** beyond chained calls mean far more than coding convenience and mistake-proof input. 
-
-#### As a scripting or meta-language, they must become an alternative design paradigm (not simple patterns).
+> ### True **`builders`/`wizards`** are not only for chained calls, coding convenience, and mistake-proof input. And not only far advanced Intellisense but ...
+> <h3 align="center">Scripting meta-language as an alternative design paradigm (not simple patterns).</h3>
+> &nbsp;
 
 Only the theoretical overcomplexity of being an uncompromising language feature or library, and the heavy practical overhead of endeavors, made them exotic in our projects.
 
-To compare. Generics are at the pinnacle of **C#** technical embarrassment, while...
-
-<blockquote align="center"><ins>&thinsp;«&thinsp;<b>BUILDERS</b>&thinsp;»&thinsp;</ins> is an <samp>EXPONENTIAL <b>DISASTER</samp></b>&thinsp; in this "sharp" and less strongly-typed object-oriented languages.</blockquote>
+<blockquote align="center"><ins>&thinsp;«&thinsp;<b>BUILDERS</b>&thinsp;»&thinsp;</ins> are both <samp>GRAPH COMPLEXITY</samp> and <samp>EXPONENTIAL <b>DISASTER</samp></b>&thinsp; in less or strongly-typed languages.</blockquote>
 
 <table><tr valign="top"><td width="40%"><picture><img alt="&nbsp;Construction crane collapse" src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/illus/crane_collapse-CA-2024(globalnews.ca).jpg" /></picture></td><td>
 <div>We talk about multi-variant branching menus with intuitive context-sensitive options, like:</div>
- <p align="center"><code>_ = UndoRedo.Buffer(3).Depth(5).Zip().Of("start");</code></p>
+ <p align="center"><code>var stack = UndoRedo.Buffer(3).Depth(5).Zip().Of("start");</code></p>
 <div>What's often sold as builders is a counter-intuitive syntax tape of setters and operations,</div>
-  <p align="center"><code>_ = Builder.Add(...).Set(...).Add(...).Set(...) ... Make();</code></p>
+  <p align="center"><code>var product = Builder.Add(...).Set(...).Add(...).Set(...) ... Make();</code></p>
   <p>which doesn't prevent redundancies, dubious repetitions, and wrong calls.</p>
 <p align="center"><b>The challenge is the <ins>combinatorial explosion</ins>.</b></p>
 </td></tr></table>
