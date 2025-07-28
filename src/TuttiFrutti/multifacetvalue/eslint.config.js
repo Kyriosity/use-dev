@@ -6,6 +6,16 @@ import tseslint from 'typescript-eslint'
 import { globalIgnores } from 'eslint/config'
 
 export default tseslint.config([
+    "rules" {
+        '@typescript-eslint/no-unused-vars': 'off',
+        "no-unused-vars": ["off", {
+            "vars": "all",
+            "args": "after-used",
+            "caughtErrors": "all",
+            "ignoreRestSiblings": false,
+            "reportUsedIgnorePattern": false
+        }]
+    },
   globalIgnores(['dist']),
   {
     files: ['**/*.{ts,tsx}'],
