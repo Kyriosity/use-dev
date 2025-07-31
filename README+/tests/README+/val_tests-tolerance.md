@@ -1,4 +1,4 @@
-# Value tests &nbsp;&nbsp; &mdash; &nbsp;&nbsp; Tolerance
+# Value tests &nbsp; &mdash; &nbsp; Tolerance
 
 > This concept interlaces with [gradual assert](unit_test-gradual_assert.md). Both features complement each other.
 
