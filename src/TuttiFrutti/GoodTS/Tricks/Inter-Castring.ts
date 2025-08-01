@@ -7,7 +7,6 @@ interface ISubject  {
 type Subject = {
     id: number
     title: string
-
 }
 
 
