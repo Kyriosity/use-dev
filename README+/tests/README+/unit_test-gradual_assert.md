@@ -1,4 +1,4 @@
-# Unit tests &nbsp;&nbsp; &mdash; &nbsp;&nbsp; Gradual assert
+# Unit tests &nbsp;&mdash;&nbsp; Gradual assert
 
 <table><tr valign="top"><td width="40%"><picture><img alt="&nbsp;Passed🟩: 388, failed🟥: 165. Not great, not terrible." 
  src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/memes/Tests-NotGreatNotTerrible.jpg" /></picture>
