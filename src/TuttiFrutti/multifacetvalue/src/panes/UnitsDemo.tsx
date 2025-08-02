@@ -1,7 +1,11 @@
 //import { Row, Col, Stack, Badge, Button, Container } from "react-bootstrap"
 
-function UnitsDemo() {
-    return <h1>Units Demo</h1>
+export type DemoProps = {
+    id: string
+}
+
+function UnitsDemo({ id } : DemoProps) {
+    return <h1>Units Demo { id }</h1>
 }
 
 export default UnitsDemo;

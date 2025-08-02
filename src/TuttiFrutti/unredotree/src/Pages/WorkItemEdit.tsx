@@ -6,9 +6,9 @@ import SelectUnit from '../Parts/Elements/SelectUnit'
 import type { SelectOption } from '../Parts/Elements/SelectUnit'
 
 const ambient = [
-    {label: "Kelvin", value: "K" },
-    {label: "Celcius", value: "C" },
-    {label: "Fahrenheit", value: "F" }
+    { label: "Kelvin", value: "K" },
+    { label: "Celcius", value: "C" },
+    { label: "Fahrenheit", value: "F" }
 ]
 
 function WorkItemEdit({ onSubmit, onAddTag, availableTags }: EditWorkItemProps) {
@@ -19,7 +19,6 @@ function WorkItemEdit({ onSubmit, onAddTag, availableTags }: EditWorkItemProps) 
     return (
         <>
             <h1 className="mb-4" >Edit WorkItem</h1>
-
             <div><SelectUnit multiple options={ ambient } value={ unit1 } onChange={opt => setUnit1( opt )} /></div>
             <br />
             <div><SelectUnit options={ ambient } value={ unit2 } onChange={opt => setUnit2(opt)} /></div>
@@ -33,4 +32,4 @@ function WorkItemEdit({ onSubmit, onAddTag, availableTags }: EditWorkItemProps) 
     );
 }
 
-export default WorkItemEdit;
+export default WorkItemEdit

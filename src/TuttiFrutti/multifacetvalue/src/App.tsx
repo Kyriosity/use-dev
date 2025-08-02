@@ -7,8 +7,10 @@ function App() {
         <Container className="my-4">
         <Router>
             <Routes>
-                <Route path="/" element={<UnitsDemo />} />
-                <Route path='/*' element={<Navigate to="/" />} />
+                    <Route path="/A" element={<UnitsDemo id ="A" />} />
+                <Route path="/B" element={<UnitsDemo id="B" />} />
+                <Route path="/C" element={<UnitsDemo id="C" />} />
+                <Route path="/*" element={<Navigate to="/" />} />
                 </Routes>
             </Router >
         </Container>
