@@ -1,6 +1,6 @@
-# <samp>Programmatic tests</samp> &nbsp;&mdash;&nbsp; Posers
+<h1 align="center">Programmatic tests<sup>🧪</sup> &nbsp;&mdash;&nbsp; P<samp>OSERS</samp><sup>🤔</sup></h1>
 
-<h1 align="center">Testing facilities</h1>
+# Testing facilities</h1>
 
 ## Separating framework and subject errors and bugs
 
@@ -10,6 +10,12 @@ That's why test frameworks deserve a special focus on quality, and it's obvious 
 
 + define specific exceptions for frameworks (like in [NUnit extensions](../../../src/TuttiFrutti/AbcExtNUnit/Exceptions) here),
 + separate unexpected error conditions from the subject (e.g., examining the call stack).
+
+## Distinguishing the error
+
+COINCIDENCE ... the same exception but ...
+
+Null as an example.
 
 <h1 align="center">Syntax</h1>
 
