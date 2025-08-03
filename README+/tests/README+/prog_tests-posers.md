@@ -1,8 +1,16 @@
-<h1 align="center">Programmatic tests<sup>🧪</sup> &nbsp;&mdash;&nbsp; P<samp>OSERS</samp><sup>🤔</sup></h1>
+# Programmatic tests<sup>🧪</sup> &nbsp;&mdash;&nbsp; P<samp>OSERS</samp><sup>🤔</sup></h1>
 
-# Testing facilities</h1>
+<h1 align="right">Testing facilities</h1>
 
-## Separating framework and subject errors and bugs
+## Distinguishing the _expected_ error
+
+
+
+COINCIDENCE ... the same exception but ...
+
+Null as an example.
+
+### Separating framework and subject errors and bugs
 
 The subject of the tests may contain errors and throw exceptions &thinsp;&mdash;&thinsp; **expected** or not. The same for test framework (testbed and fixtures): intentional or not.
 
@@ -11,13 +19,8 @@ That's why test frameworks deserve a special focus on quality, and it's obvious 
 + define specific exceptions for frameworks (like in [NUnit extensions](../../../src/TuttiFrutti/AbcExtNUnit/Exceptions) here),
 + separate unexpected error conditions from the subject (e.g., examining the call stack).
 
-## Distinguishing the error
 
-COINCIDENCE ... the same exception but ...
-
-Null as an example.
-
-<h1 align="center">Syntax</h1>
+<h1 align="right">Syntax</h1>
 
 ## Valid syntax but wrong logic
 
