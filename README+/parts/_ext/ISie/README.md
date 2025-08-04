@@ -1,7 +1,9 @@
 <h1 align="center">⭐&thinsp;I&thinsp;S&thinsp;i&thinsp;e&thinsp;⭐ &nbsp; &mdash; &nbsp; <code>Is.</code><sup>➕</sup> <samp>extensions</samp></h1>
 
 <table align="center"><tr valign="top"><td><picture><img src="../../../_rsc/img/ISie.jpg" alt="&nbsp;&nbsp;I&thinsp;S&thinsp;i&thinsp;e&nbsp;&nbsp;extensions"/></picture></td><td>
-<p><b>The crossover of these two <code>C#</code> discoveries</b></p>
+
+**The crossover of the next two `C#` discoveries**
+
 <div>&nbsp; &nbsp; ✔️ &thinsp;legit <a href="../../../frames/README+/calls_on_null.md">calls on null</a>&thinsp;,</div>
 <p>&nbsp; &nbsp; ✔️ &thinsp;<a href="https://github.com/dotnet/roslyn/issues/11159">proposal</a>&thinsp;<sup>⏳</sup> of extension properties</p>
 <div>suggested me to shortcut ubiquitous </div>
