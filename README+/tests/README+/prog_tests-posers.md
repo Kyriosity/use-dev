@@ -4,7 +4,10 @@
 
 ## Distinguishing the _expected_ error
 
+If an error isn't
 
+IDEAS: 
++ OWN EXCEPTION STACK (though not much recommended by )
 
 COINCIDENCE ... the same exception but ...
 
