@@ -1,7 +1,6 @@
-<h1 align="center"><samp>Polymorphism<sup>➕</sup></samp> &nbsp; &mdash; &nbsp; Properties “Shifting”, or T-R/W Modelling</h1>
+# Polymorphism<sup>➕</sup></samp> &nbsp; &mdash; &nbsp; _Properties “Shifting”_, or _T-R/W Modelling_
 
-<table><tr><td><picture><img alt="&nbsp;Shape shifter pic" title="The Catman of Paris as&#013;&#010;a shape shifter species" 
- src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/snap/movies/1946.TheCatmanOfParis-poster_frag.jpg" /></picture></td><td>
+<table><tr><td>
 
 > **The best evolutionary paradigm of OOP is directly mapping real-life things or abstractions,  their structures, and collections onto code objects.**
 
@@ -9,6 +8,9 @@ Object-oriented languages offer common paradigms with specific means and techniq
 
 Such customization traditionally involves classes and methods, while properties conceal even more potential. Next, we will bundle disparate **`C#`** techniques for _properties shifting_.
 
+</td><td>
+ <picture><img alt="&nbsp;Shape shifter pic" title="The Catman of Paris as&#013;&#010;a shape shifter species" 
+ src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/snap/movies/1946.TheCatmanOfParis-poster_frag.jpg" /></picture></td>
 </td></tr></table>
 
 ```mermaid
@@ -35,10 +37,10 @@ something unwelcome and to be replaced with other techniques}}
 
 ```
 
-<p align="right">* <sub>While your job is to define these operators.</sub><br />
-** <sub>More techniques can be added later.</sub></p>
+<p align="right"><b>*</b> <samp>While your job is to define these operators.</samp><br />
+<b>**</b> <samp>More techniques can be added later.</samp></p>
 
-Let's keep a _**book**_ as a convenient sample of our survey. It has a title, author(s), ID(s), publishing agent, year and tongue, and other traits. 
+Let's keep a _**book**_ as a convenient sample of our survey. It has a title, author(s), ID(s), publishing agent, year, and tongue, and other traits. 
 If some of them _shift_, as proposed below, then the inheritance approach will break on combinatory explosion.
 
 ```mermaid
