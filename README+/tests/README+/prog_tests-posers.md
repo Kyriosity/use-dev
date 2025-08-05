@@ -1,6 +1,6 @@
 # Programmatic tests<sup>🧪</sup> &nbsp;&mdash;&nbsp; P<samp>OSERS</samp><sup>🤔</sup></h1>
 
-<h1 align="right">Testing facilities</h1>
+<h1 align="right">Testbed</h1>
 
 ## Distinguishing the _expected_ error
 
