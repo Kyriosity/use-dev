@@ -35,7 +35,9 @@ The above draft is fairly acceptable, but let's hone it once and for good, to an
 + handling *null* for bool
 + neater named&nbsp;<sup>:raising_hand:</sup>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>:raising_hand:</sup><sub>Original naming is longish and ambiguous. [Viz](https://en.wikipedia.org/wiki/Viz.)<sup>🔗</sup> will be at least shorter than [Visibility](https://www.merriam-webster.com/dictionary/visibility)<sup>🔗</sup> (which must have been *Display*); *Vs* (versus) implies two-way, while *To* - one-way conversion.</sub>
+<div align="right"><sup>🙋</sup> <samp>Original naming is longish and ambiguous.<br />
+<b><i>Viz</i></b> will be at least shorter than <a href="https://www.merriam-webster.com/dictionary/visibility">Visibility</a><sup>🔗</sup> (which must have been <i>Display</i>);
+<br /><i><b>Vs</b></i> (versus) implies two-way, while <i><b>To</b></i> &thinsp;&mdash;&thinsp; one-way conversion.</samp></div>
 
 ### How these benefits will look in XAML:
 
@@ -49,8 +51,8 @@ The above draft is fairly acceptable, but let's hone it once and for good, to an
 
 ```
 
-| - **Here is the source code** (**`C#`**):\
-|--- [BoolVsVizConverter.cs](../../../,./../src/TuttiFrutti/WinClay/Converters/BoolVsVizConverter.cs) 
+|&thinsp;- **Here is the source code** (**`C#`**):\
+|&thinsp;-&thinsp;- [BoolVsVizConverter.cs](../../../,./../../src/TuttiFrutti/WinClay/Converters/BoolVsVizConverter.cs) 
 
 \___________\
 🔚 .. voilà ..
