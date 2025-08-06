@@ -18,6 +18,7 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "typescript": "5.9.2"
   }
 }
