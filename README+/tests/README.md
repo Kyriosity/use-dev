@@ -8,8 +8,19 @@ This section branches from conceptual discussions of [Tests](https://github.com/
   
 </td></tr></table>
 
-<table>
-<tr><td></td><td></td><td></td></tr>
+<table><tr align="center" valign="bottom">
+<td>
+<h3>SYNTAX</h3>
+</td>
+<td>
+  <!-- VAGUE ASSERT --!>
+  <h3>ASSERT</h3>
+</td>>
+<td>
+<a href=""><img src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/_nav/tiles/ArcDeco_bw-200px.png" /></a><br />
+<h2>SOURCING</h2>
+</td>
+<td></td><td></td></tr>
 <tr><td></td><td></td><td></td></tr>
 <tr><td></td><td></td><td></td></tr>
 </table>
