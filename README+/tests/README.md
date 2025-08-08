@@ -1,4 +1,4 @@
-# Better tests&nbsp;&nbsp;&mdash;&nbsp;&nbsp;<samp>Techniques, shortcuts and more</samp>
+# Test frameworks&nbsp;&nbsp;&mdash;&nbsp;&nbsp;<samp>Patchwork</samp>
 
 <table align="center"><tr></tr><tr><td>
   <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/"><img alt="&nbsp; READ-WRITE meets USE-DEV" width="200px" src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/_nav/read-write_use-dev.png" /></a>
@@ -8,9 +8,16 @@ This section branches from conceptual discussions of [Tests](https://github.com/
   
 </td></tr></table>
 
+<table>
+<tr><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td></tr>
+<tr><td></td><td></td><td></td></tr>
+</table>
+
+
 ## NUnit boosting
 
-NUnit is a conventional, reliable, and universal test framework, but like most FOSS, it has limited resources and its contributors aren't obliged to any delivery.
+NUnit is a conventional, reliable, and universal test framework, but like most FOSS, it has limited resources, and its contributors aren't obliged to any delivery.
 
 There are apparent items to estimate:
 

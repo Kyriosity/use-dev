@@ -1,5 +1,22 @@
 # Programmatic tests<sup>🧪</sup> &nbsp;&mdash;&nbsp; P<samp>OSERS</samp><sup>🤔</sup></h1>
 
+This summary lists the problems and challenges of 
+
+* abstract to the solution
+* no tech solution
+* difficult to tech
+
+
+  ADD BADGES
+  
+HERE THE CASES WHICH HAV NO OR PARTIAL ONLY SOLUTION
+
+<h1 align="right">Headliner</h1>
+
+## False true
+
+> Debunking "silent" logical errors that don't affect success paths is **much more important** than discovering explicit errors (<s>users</s> testers will do &mdash; sorry for a dense gag).
+
 <h1 align="right">Testbed</h1>
 
 ## Distinguishing the _expected_ error
@@ -27,8 +44,6 @@ That's why test frameworks deserve a special focus on quality, and it's obvious 
 
 ## Valid syntax but wrong logic
 
-> Debunking "silent" logical errors that don't affect success paths is **much more important** than the discovery of explicit errors (<s>users</s> testers will do &mdash; sorry for a dense gag).
-
 ### <a id="non-comp-calls">Excluding wrong calls
 
 Most language paradigms (such as casting, access modifiers, and inheritance) and constructs won't allow sophisms (valid code that will throw run-time syntax errors). 
@@ -45,6 +60,8 @@ Cumbersome?
 > A better solution will be a non-trivial metaphysical challenge.
 
 &nbsp; &nbsp; <sup>🙋</sup> <sub>That will be another story how many test projects won't build and how many tests (after syntax fix) will fail - those `Expect.Throw<Exception>`.</sub>
+
+### REVERS: wrong syntax valid logic
 
 **P.S. Tip:** `// // real comment` will allow quick manual tests: _Select&nbsp;All_, _Uncomment_, and _Undo_ (<kbd>Ctrl+A</kbd>, <kbd>Ctrl+K+U</kbd>, and <kbd>Ctrl+Z</kbd> in Visual Studio).
 
