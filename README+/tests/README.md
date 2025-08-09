@@ -8,19 +8,21 @@ This section branches from conceptual discussions of [Tests](https://github.com/
   
 </td></tr></table>
 
-<table><tr align="center" valign="bottom">
+<h1 align="center">Patch If Can't Reframe</h1>
+
+<table align="center"><tr align="center" valign="bottom">
+<!--                                                                                                 S Y N T A X    --!>
 <td>
-<h3>SYNTAX</h3>
+  <a href="README+/tests-better_syntax.md"><img alt="&nbsp; R&thinsp;E&thinsp;S&thinsp;E&thinsp;R&thinsp;V&thinsp;E&thinsp;D" src="../_rsc/img/_nav/tiles/test/reserved_200px.jpg" /></a>
+</td>
+<!--                                                                                                 L O O S E   A S S E R T    --!>
+<td>
+  <a href="README+/tests-better_syntax.md"><img alt="&nbsp; LOOSE ASERT" src="../_rsc/img/_nav/tiles/test/assert_art.jpg" /></a>
 </td>
 <td>
-  <!-- VAGUE ASSERT --!>
-  <h3>ASSERT</h3>
-</td>>
-<td>
-<a href=""><img src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/_nav/tiles/ArcDeco_bw-200px.png" /></a><br />
-<h2>SOURCING</h2>
+<a href=""><img src="" /></a><br />
 </td>
-<td></td><td></td></tr>
+</tr><tr></tr>
 <tr><td></td><td></td><td></td></tr>
 <tr><td></td><td></td><td></td></tr>
 </table>
