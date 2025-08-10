@@ -54,39 +54,44 @@
 </td><td> 
   <table><tr align="center">
      <td>          <!--    I S i e     --!>
-      <a href="../README+/parts/_ext/ISie/README.md"><img src="../README+/_rsc/img/_nav/tiles/ISie_highlight-200px.png" alt="&nbsp;&nbsp;⭐I&nbsp;S&thinsp;i&thinsp;e⭐&nbsp;&nbsp;&nbsp;"/></a>
-      <h4><a href="../README+/parts/_ext/ISie/README.md">Ɪ&thinsp;S&thinsp;<samp>I&thinsp;E</samp>&nbsp;&thinsp;extensions</a></h4>
+      <a href="../README+/parts/_ext/ISie/README.md"><img src="../README+/_rsc/img/_nav/tiles/ISie_highlight-200px.png" alt="&nbsp;&nbsp;⭐I&nbsp;S&thinsp;i&thinsp;e⭐&nbsp;&nbsp;&nbsp;"/>
+      <br /><b>Ɪ&thinsp;S&thinsp;<samp>IE</samp>&nbsp;&thinsp;extensions</b></a>
      </td>
     <td>             <!--    C I R C U I T R Y     --!>
-      <a href="../README+/techniques/README+/circuitry/README.md"><img src="../README+/_rsc/img/_nav/tiles/Circuitry_bw-200px.png" alt="&nbsp;Object-oriented Circuitry"/></a>
-      <h4><a href="../README+/techniques/README+/circuitry/README.md">CIRCUITRY</a></h4>
+      <a href="../README+/techniques/README+/circuitry/README.md"><img src="../README+/_rsc/img/_nav/tiles/Circuitry_bw-200px.png" alt="&nbsp;Object-oriented Circuitry"/>
+      <br /><b>CIRCUITRY</b></a>
      </td>
                                       </tr><tr></tr><tr align="center">
     <td>      <!--    B U I L D E R   W I Z A R D    B L O C K S     --!>
-      <a href="../src/TuttiFrutti/WizConstr/README.md"><img src="../README+/_rsc/img/_nav/tiles/ConstrWiz-deco_bw-200px.png" alt="&nbsp;&nbsp;Wizard of Code Blocks" /></a>
-      <h4><a href="../src/TuttiFrutti/WizConstr/README.md">BUILDER-WIZARD</a></h4>
+      <a href="../src/TuttiFrutti/WizConstr/README.md"><img src="../README+/_rsc/img/_nav/tiles/ConstrWiz-deco_bw-200px.png" alt="&nbsp;&nbsp;Wizard of Code Blocks" />
+      <br /><b>BUILDER-WIZARD</b></a>
     </td>
-    <td>             <!--    C H R O N O     --!>
-      <a href="../README+/parts/AbcChrono/README.md"><img src="../README+/_rsc/img/_nav/tiles/Chrono_bw-200px.jpg" alt="&nbsp;Chronology lib"/></a>
-      <h4><a href="../README+/parts/AbcChrono/README.md">ABC CHRONO</a></h4>
+    <td>             <!--   T E S T I N G     --!>
+      <a href="../README+/tests/README.md"><img src="../README+/_rsc/img/_nav/tiles/TestPatch_bw-200px.png" alt="&nbsp;Test frameworks"/>
+      <br /><b>TEST PATCH/FRAME</b></a>
     </td>
                                         </tr><tr></tr><tr align="center">
-    <td>               
-      <a href="../README+/parts/MultifacetVal/README.md"><img src="../README+/_rsc/img/_nav/tiles/U-Val_bw-200px.png" alt="&nbsp;Multifacet value"/></a>
-      <h4>✒️&thinsp;<a href="../README+/parts/MultifacetVal/README.md">MULTIFACET VALUE</a>&thinsp;🐝</h4>
+    <td>             <!--    C H R O N O     --!>
+      <a href="../README+/parts/AbcChrono/README.md"><img src="../README+/_rsc/img/_nav/tiles/Chrono_bw-200px.jpg" alt="&nbsp;Chronology lib"/>
+      <br /><b>ABC CHRONO</b></a>
     </td>
-   <td>                 <!--    U N D O     --!>
-      <a href="../README+/parts/Rvrs/README.md"><img src="../README+/_rsc/img/_nav/tiles/UndoRedo_bw_200px.png" alt="&nbsp;Undo-Redo"/></a>
-      <h4>🚧&thinsp;<a href="../README+/parts/Rvrs/README.md">REVERSIBLE</a>&thinsp;🚧</h4></div>
+    <td>             <!--     M U L T I F A C E T    --!>
+      <a href="../README+/parts/MultifacetVal/README.md"><img src="../README+/_rsc/img/_nav/tiles/U-Val_bw-200px.png" alt="&nbsp;Multifacet value"/>
+      <br /><b>✒️&thinsp;MULTIFACET VALUE<b></a>&thinsp;🐝
     </td>
-                                 </tr><tr></tr><tr align="center">
+</tr><tr></tr><tr align="center">
                     <td>      <!--    T A S K S   a s   M O D E L     --!>
-      <a href="../README+/decisions/README+/think_in_tasks/README.md"><img src="../README+/_rsc/img/_nav/tiles/TaskAsModel_bw-200px.png" alt="&nbsp;&nbsp;Value as promise"/></a>
-      <h4><a href="/README+/decisions/README+/think_in_tasks/README.md">THINKING in TASKS</a></h4>
+      <a href="../README+/decisions/README+/think_in_tasks/README.md"><img src="../README+/_rsc/img/_nav/tiles/TaskAsModel_bw-200px.png" alt="&nbsp;&nbsp;Value as promise"/>
+      <br /><b>THINKING in TASKS</b></a>
     </td>
+ <td>                 <!--    U N D O     --!>
+      <a href="../README+/parts/Rvrs/README.md"><img src="../README+/_rsc/img/_nav/tiles/UndoRedo_bw_200px.png" alt="&nbsp;Undo-Redo"/>
+      <br /><b>🚧&thinsp;REVERSIBLE</b></a>&thinsp;🚧
+    </td>
+</tr><tr></tr><tr align="center">
     <td>                                                  <!--    R E A D - W R I T E     --!>
-      <a href="https://github.com/Kyriosity/read-write/blob/main/README+/pencraft/README+/essays/README.md"><img src="../README+/_rsc/img/_nav/tiles/read-write_200px.jpg" alt="&nbsp;READ-WRITE repo" title="&nbsp;Collection in the read-write repository"/></a>
-       <h4>⬅️&thinsp;<a href="https://github.com/Kyriosity/read-write/blob/main/README+/pencraft/README+/essays/README.md">E&thinsp;S&thinsp;S&thinsp;A&thinsp;Y&thinsp;S</a></h4>
+      <a href="https://github.com/Kyriosity/read-write/blob/main/README+/pencraft/README+/essays/README.md"><img src="../README+/_rsc/img/_nav/tiles/read-write_200px.jpg" alt="&nbsp;READ-WRITE repo" title="&nbsp;Collection in the read-write repository"/>
+       <br />⬅️&thinsp;<b>E&thinsp;S&thinsp;S&thinsp;A&thinsp;Y&thinsp;S</b></a>
     </td>
   </tr></table>
 </td></tr></table>
