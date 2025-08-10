@@ -1,6 +1,8 @@
-# Test frameworks &nbsp;&mdash;&nbsp; Patch If Can't Reframe
+Test frameworks are essentials but ...
 
-<h1 align="center">Patchwork on Framework</h1>
+patch if can't reframe
+
+<h1 align="center">Patchwork<br />on<br />Framework</h1>
 
 <table align="center"><tr align="center" valign="bottom">
 <!--                                                                                                     S O U R C I N G    --!>
