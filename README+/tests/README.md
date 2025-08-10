@@ -2,7 +2,7 @@ Test frameworks are essentials but ...
 
 patch if can't reframe
 
-<h1 align="center">Patchwork<br />on<br />Framework</h1>
+<h1 align="center"><picture><img alt="&nbsp; PATCH/FRAME WORK" src="../_rsc/img/labels/PatchFrameWork_h50px.png" /></picture></h1>
 
 <table align="center"><tr align="center" valign="bottom">
 <!--                                                                                                     S O U R C I N G    --!>
@@ -18,7 +18,7 @@ patch if can't reframe
   <a href="README+/tests-better_syntax.md"><img alt="&nbsp; SYNTAX" src="../_rsc/img/_nav/tiles/test/syntax_art.jpg" /></a>
 </td>
 </tr><tr></tr><tr align="center">
-<!--                                                                                                     FEED CUTS    --!>
+<!--                                                                                                     F E E D   C U T S    --!>
 <td>
   <a href="README+/prog_tests-cut_feeds.md"><img alt="&nbsp; FEEDS" src="../_rsc/img/_nav/tiles/test/feeds-ext_art.jpg" /></a>
 </td>
