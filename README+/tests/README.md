@@ -1,8 +1,11 @@
-Test frameworks are essentials but ...
+Tests and their frameworks are the essential counterpart of software. However, besides [theoretical puzzles](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests/README%2B/theory), popular test frameworks concede the development in everything.
+are far to match development. 
 
-patch if can't reframe
+New principal test approach and its frameworking would be a Turing-award-winning breakthrough, but let's first PATCH what we can do.
 
-<h1 align="center"><picture><img alt="&nbsp; PATCH/FRAME WORK" src="../_rsc/img/labels/PatchFrameWork_h50px.png" /></picture></h1>
+<div align="right"><samp><i><kbd>patch if can't reframe</kbd></i></samp></div>
+
+<h1 align="center"><picture><img alt="&nbsp; PATCH/FRAME WORK" src="../_rsc/img/labels/TestPatchFrameWork_h50px.png" /></picture></h1>
 
 <table align="center"><tr align="center" valign="bottom">
 <!--                                                                                                     S O U R C I N G    --!>
@@ -13,7 +16,7 @@ patch if can't reframe
 <td>
   <a href="README+/tests-loose_assert.md"><img alt="&nbsp; LOOSE ASERT" src="../_rsc/img/_nav/tiles/test/assert_art.jpg" /></a>
 </td>
-<!--                                                                                                     S Y N T A X    --!>
+<!--                                                                                                      S Y N T A X    --!>
 <td>
   <a href="README+/tests-better_syntax.md"><img alt="&nbsp; SYNTAX" src="../_rsc/img/_nav/tiles/test/syntax_art.jpg" /></a>
 </td>
@@ -42,25 +45,6 @@ This section branches from conceptual discussions of [Tests](https://github.com/
   
 </td></tr></table>
 
-## NUnit boosting
-
-NUnit is a conventional, reliable, and universal test framework, but like most FOSS, it has limited resources, and its contributors aren't obliged to any delivery.
-
-There are apparent items to estimate:
-
-+ bulky and restrained syntax (and it's not [DAMP](https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/README+/tests-damp_vs_dry.md)),
-+ pending bugs,
-+ missing calls and features.
-
-<h4 align="center">Without further ado, <a href="../../src/TuttiFrutti/FeatTest/">Feat. Test</a>🧪 demonstrates what's already available.</h4>
-
-## Challenges, posers, and their solutions
-
-⏭️ 📂[README+](README+)
-
-## Wrap up. A word on definitions
-
-_Unit Tests_ are only a slice of the test pyramid, but technically they may serve all other types and layers (I can't remember <kbd>New -> Integration test</kbd> in IDEs).
 
 \___________\
 🔚 ... 2023-2025
