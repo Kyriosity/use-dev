@@ -68,7 +68,7 @@
     </td>
     <td>             <!--   T E S T I N G     --!>
       <a href="../README+/tests/README.md"><img src="../README+/_rsc/img/_nav/tiles/TestPatch_bw-200px.png" alt="&nbsp;Test frameworks"/>
-      <br /><b>TEST PATCH/FRAME</b></a>
+      <br /><b>TESTS PATCH/FRAME</b></a>
     </td>
                                         </tr><tr></tr><tr align="center">
     <td>             <!--    C H R O N O     --!>
