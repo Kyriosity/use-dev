@@ -1,4 +1,4 @@
-# Value tests &nbsp; &mdash; &nbsp; Tolerance
+# Software Tests &nbsp;&mdash;&nbsp; Loose Assert &nbsp;&mdash;&nbsp; Value Tolerance
 
 > This concept interlaces with [gradual assert](unit_test-gradual_assert.md). Both features complement each other.
 

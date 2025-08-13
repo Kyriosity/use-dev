@@ -1,11 +1,11 @@
-# Unit tests &nbsp;&mdash;&nbsp; Gradual assert
+# Software Tests &nbsp;&mdash;&nbsp; _Loose Assert_ &nbsp;&mdash;&nbsp; Graduality
 
 <table><tr valign="top"><td width="40%"><picture><img alt="&nbsp;Passed🟩: 388, failed🟥: 165. Not great, not terrible." 
  src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/memes/Tests-NotGreatNotTerrible.jpg" /></picture>
  </td><td>
 <h4>Despite our preferences for programming languages and frameworks, we are used to categorical feedback from tests:</h4>
 <p align="center">either 🟢<b>success</b> or 🔴<b>fail</b>.</p>
-<p>The majority of proofs don't ask for more and many developers may never need anything else but there are cases with fuzzy and changeable criteria:</p>
+<p>The majority of proofs don't ask for more, and many developers may never need anything else, but there are cases with fuzzy and changeable criteria:</p>
 <lu>
  <li>precision of calculations/deviations,</li>
 <li>success probability (of response, reservation, or a win),</li>
