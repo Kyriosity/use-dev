@@ -1,6 +1,14 @@
-# Software Tests &nbsp;&mdash;&nbsp; Loose Assert &nbsp;&mdash;&nbsp; Value Tolerance
+# Software Tests &nbsp;<samp>&mdash;</samp>&nbsp; _Loose Assert_ &nbsp;<samp>&mdash;</samp>&nbsp; Value Tolerance
 
-> This concept interlaces with [gradual assert](unit_test-gradual_assert.md). Both features complement each other.
+<table><tr><td><a href="tests-loose_assert.md"><img alt="&nbsp; LOOSE ASSERT" src="../../_rsc/img/_nav/tiles/test/assert_art.jpg" /></a>
+</td><td>
+
+This is a subtopic of the _Loose Assert_ patch for Test Frameworks.
+
+This concept interlaces with [gradual assert](unit_test-gradual_assert.md). Both features complement each other.
+
+</td></tr></table>
+
 
 Known test frameworks support deltas for comparing numbers to expected values, like [`Within`](https://docs.nunit.org/articles/nunit/writing-tests/constraints/EqualConstraint.html)<sup><b>NUnit</b></sup>.
 Aside from absolute values, these asserts may specify percent, [ULP](https://en.wikipedia.org/wiki/Unit_in_the_last_place)<sup><b>w</b></sup> or time units.

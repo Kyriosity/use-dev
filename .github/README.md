@@ -34,11 +34,13 @@
 |&thinsp;-&thinsp;- <a href="../src/TuttiFrutti/WinClay/Converters/bool2viz_improved.md">Bool-Vis. converter</a><sup>improved</sup><br />
 <br /><!--               T E S T I N G   --!>
 ◾ <b>T<samp>&thinsp;E&thinsp;S&thinsp;T&thinsp;I&thinsp;N&thinsp;G</samp></b><br />
-|&thinsp;- 📖&thinsp;<a href="../README+/tests"><b><i>B&thinsp;e&thinsp;t&thinsp;t&thinsp;e&thinsp;r&nbsp;&nbsp;&nbsp;t&thinsp;e&thinsp;s&thinsp;t&thinsp;s&thinsp;</i></b></a><br />
+|&thinsp;- &thinsp;<b>P&thinsp;a&thinsp;t&thinsp;c&thinsp;h-/&thinsp;F&thinsp;r&thinsp;a&thinsp;m&thinsp;e&thinsp;w&thinsp;o&thinsp;r&thinsp;k</b><br />
+|&thinsp;-&thinsp;- <a href="../README+/tests/README+/prog_tests-sources.md">S&thinsp;o&thinsp;u&thinsp;r&thinsp;c&thinsp;i&thinsp;n&thinsp;g</a><br />
 |&thinsp;-&thinsp;- <a href="../README+/tests/README+/prog_tests-cut_feeds.md">F&thinsp;e&thinsp;e&thinsp;d&nbsp;&nbsp;&nbsp;e&thinsp;x&thinsp;p&thinsp;a&thinsp;n&thinsp;s&thinsp;i&thinsp;on&nbsp;&nbsp;&nbsp;c&thinsp;u&thinsp;t</a><br />
-|&thinsp;-&thinsp;- <a href="../README+/tests/README+/unit_test-gradual_assert.md">G&thinsp;r&thinsp;a&thinsp;d&thinsp;u&thinsp;a&thinsp;l&nbsp;&nbsp;&nbsp;a&thinsp;s&thinsp;s&thinsp;e&thinsp;r&thinsp;t</a><br />
-|&thinsp;-&thinsp;- <a href="../README+/tests/README+/val_tests-tolerance.md">F&thinsp;i&thinsp;n&thinsp;e&thinsp;r&nbsp;&nbsp;&nbsp;t&thinsp;o&thinsp;l&thinsp;e&thinsp;r&thinsp;a&thinsp;n&thinsp;c&thinsp;e</a><br />
-|&thinsp;-&thinsp;- <a href="../README+/tests/README+/prog_tests-posers.md"><b>P&thinsp;o&thinsp;s&thinsp;e&thinsp;r&thinsp;s</b></a><br />
+|&thinsp;-&thinsp;- <a href="../README+/tests/README+/tests-gradual_assert.md">G&thinsp;r&thinsp;a&thinsp;d&thinsp;u&thinsp;a&thinsp;l&nbsp;&nbsp;&nbsp;a&thinsp;s&thinsp;s&thinsp;e&thinsp;r&thinsp;t</a><br />
+|&thinsp;-&thinsp;- <a href="../README+/tests/README+/tests-value_tolerance.md">F&thinsp;i&thinsp;n&thinsp;e&thinsp;r&nbsp;&nbsp;&nbsp;t&thinsp;o&thinsp;l&thinsp;e&thinsp;r&thinsp;a&thinsp;n&thinsp;c&thinsp;e</a><br />
+|&thinsp;-&thinsp;- <a href="../README+/tests/README+/prog_tests-errors.md">E&thinsp;r&thinsp;r&thinsp;o&thinsp;r&thinsp;s</a><br />
+|&thinsp;-&thinsp;- <a href="../README+/tests/README+/prog_tests-syntax.md">S&thinsp;y&thinsp;n&thinsp;t&thinsp;a&thinsp;x &nbsp; b&thinsp;e&thinsp;t&thinsp;t&thinsp;e&thinsp;r</a><br />
 <br/><!--           P A R T S -->
 ◾ <b>P&thinsp;A&thinsp;R&thinsp;T&thinsp;S</b>&thinsp;📦<br />
 |&thinsp;- <a href="../README+/parts/_ext/ISie/README.md"><b>Ɪ&thinsp;S&thinsp;i&thinsp;e</b></a> extensions<br />

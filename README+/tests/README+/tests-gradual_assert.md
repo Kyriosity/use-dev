@@ -1,4 +1,4 @@
-# Software Tests &nbsp;&mdash;&nbsp; _Loose Assert_ &nbsp;&mdash;&nbsp; Graduality
+# Software Tests &nbsp;<samp>&mdash;</samp>&nbsp; _Loose Assert_ &nbsp;<samp>&mdash;</samp>&nbsp; Graduality
 
 <table><tr valign="top"><td width="40%"><picture><img alt="&nbsp;Passed🟩: 388, failed🟥: 165. Not great, not terrible." 
  src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/memes/Tests-NotGreatNotTerrible.jpg" /></picture>
@@ -32,7 +32,7 @@ To my knowledge, neither widespread test framework supports shades of 🟢green 
 
 There are no magic solutions to adjust the frameworks. The following options can make it fast but not elegant:
 
-+ programmatically setting auxiliary test statuses: e.g. [`Inconclusive`](https://learn.microsoft.com/en-us/dotnet/api/nunit.framework.assert.inconclusive?view=xamarin-ios-sdk-12)<sup>🪟</sup> to indicated not exact but passing result, 
++ programmatically setting auxiliary test statuses: e.g. [`Inconclusive`](https://learn.microsoft.com/en-us/dotnet/api/nunit.framework.assert.inconclusive?view=xamarin-ios-sdk-12)<sup>🪟</sup> to indicate not exact but passing result, 
 + printing relative results with available symbols
 
 ### <samp>C#.NET</samp>
@@ -49,4 +49,4 @@ and symbolic ranking of failure:\
 Gradual assert interlaces with [evaluation tolerance](val_tests-tolerance.md).
 
 \___________\
-🔚 ... 2024-2025 <sub>Image credit: screenshot of Visual Studio; screenshot of HBO mini-series, 2019</sub>
+🔚 ...2024-2025... <sub>Collage credit: screenshot of Visual Studio 2022; [HBO mini-series](https://m.imdb.com/title/tt7366338/), 2019</sub>
