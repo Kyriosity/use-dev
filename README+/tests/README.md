@@ -1,7 +1,6 @@
-Enough [reasons](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests/README%2B/theory) speak for a new testing doctrine and deep rework of test frameworks.
+> ### Enough [reasons](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests/README%2B/theory) speak for a new testing doctrine and deep rework of test frameworks.<br />This is an enormously great task to do straightforwardly, so let's first mend what's rational.
 
-<div align="right"><samp><i><b>PATCH IF CAN'T REFRAME OR REWORK</b></i></samp></div>
-
+<table><tr valign="top"><td>
 <h3 align="center"><picture><img alt="&nbsp; PATCH/FRAME WORK" src="../_rsc/img/labels/TestPatchFrameWork_h50px.png" /></picture></h1>
 
 <table align="center"><tr align="center" valign="bottom">
@@ -23,12 +22,20 @@ Enough [reasons](https://github.com/Kyriosity/read-write/tree/main/README%2B/sof
 </td>
 <td><!--                                                                                                 R E A D - W R I T E    --!>
   <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/"><img alt="&nbsp; READ-WRITE meets USE-DEV" width="200px" src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/_nav/read-write_use-dev.png" /></a>
-</td>
-</tr></table>
+</td></tr></table></td><td>
 
-## Wrap up. A word on definitions
+<samp><i><b>PATCH if CAN'T REFRAME or REWORK</b></i></samp>
 
-_Unit Tests_ are only a slice of the test pyramid, but technically they may serve all other types and layers (I can't remember <kbd>New -> Integration test</kbd> in IDEs).
+## &nbsp;
+
+> [!NOTE]
+> * Patches are very embossed by `C#` and [NUnit](https://nunit.org/), but challenges and solutions must be common for other languages and frameworks.
+> 
+> * _Unit Tests_ are only a slice of the test pyramid, but technically they may serve all other types and layers.<sup>🙋</sup>
+
+<div align="right"><sup>🙋</sup> <samp>I can't remember <kbd>New -> Integration test</kbd> in IDEs.</samp></div>
+
+</td></tr></table>
 
 \___________\
-🔚 ... 2023-2025
+🔚 ... 2023-2025 ...
