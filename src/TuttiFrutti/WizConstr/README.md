@@ -18,7 +18,7 @@
 
 ### Horticultural glossary
 
-<table><tr valign="top"><td width="40%"><picture align="center"><img alt="&nbsp; Mango from orchard pic" src="../../../README+/_rsc/img/illus/WizConstr/SeedFruitCore-Intro.jpg" width="750px"></picture>
+<table><tr valign="top"><td width="40%"><picture align="center"><img alt="&nbsp; Mango from orchard pic" src="../../../README+/_rsc/img/illus/WizConstr/SeedCoreFruit_block.jpg" width="750px"></picture>
 </td><td>
 
 + **Seed** &mdash; initial value of any type:\
