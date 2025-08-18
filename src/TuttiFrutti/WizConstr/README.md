@@ -8,6 +8,12 @@
 > First, its **title** asks for refiтement. Other pending ideas are marked below with 💡.\
 > &nbsp;
 
+```mermaid
+flowchart TB
+    A & B--> C & D
+   D-->|Next|E
+```
+
 ## Scheme
 
 + Builder
