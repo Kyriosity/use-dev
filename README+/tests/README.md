@@ -29,11 +29,11 @@
 ## &nbsp;
 
 > [!NOTE]
-> * Patches are very embossed by `C#` and [NUnit](https://nunit.org/), but challenges and solutions must be common for other languages and frameworks.
+> * "Patches" are very embossed by `C#` and [NUnit](https://nunit.org/), but challenges and solutions must be common for other languages and frameworks.
 > 
 > * _Unit Tests_ are only a slice of the test pyramid, but technically they may serve all other types and layers.<sup>🙋</sup>
 
-<div align="right"><sup>🙋</sup> <samp>I can't remember <kbd>New -> Integration test</kbd> in IDEs.</samp></div>
+<sup>🙋</sup> <samp>I can't remember IDEs with <kbd>New &rarr; Integration test</kbd>.</samp>
 
 </td></tr></table>
 
