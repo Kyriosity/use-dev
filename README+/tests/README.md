@@ -1,4 +1,4 @@
-> ### Enough [reasons](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests/README%2B/theory) speak for a new testing doctrine and deep rework of test frameworks.<br />This is an enormously great task to do straightforwardly, so let's first mend what's rational.
+> ### Enough reasons speak for a new testing doctrine and deep rework of test frameworks.<br />This is an enormous and great [<samp>CHALLENGE</samp>](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests/README%2B/theory), and to put it off, let's first mend what's reasonable.
 
 <table><tr valign="top"><td>
 <h3 align="center"><picture><img alt="&nbsp; TEST PATCH/FRAME WORK" src="../_rsc/img/labels/TestPatchFrameWork_h50px.jpg" /></picture></h1>
@@ -24,7 +24,7 @@
   <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/"><img alt="&nbsp;READ/WRITE&thinsp;&larr;&thinsp;USE/DEV" width="200px" src="../_rsc/img/_nav/tiles/read-write_use-dev_200px.png" /></a>
 </td></tr></table></td><td>
 
-<samp><i><b>PATCH if CAN'T REFRAME or REWORK</b></i></samp>
+<div align="right"><samp><i><b>PATCH if CAN'T REFRAME or REWORK</b></i></samp></div>
 
 ## &nbsp;
 
@@ -33,7 +33,7 @@
 > 
 > * _Unit Tests_ are only a slice of the test pyramid, but technically they may serve all other types and layers.<sup>🙋</sup>
 
-<sup>🙋</sup> <samp>Have you ever seen IDEs with <kbd>New &rarr; Integration test</kbd>.</samp>
+<sup>🙋</sup> <samp>Have you ever seen IDEs with <kbd>New &rarr; Integration test</kbd>?</samp>
 
 </td></tr></table>
 
