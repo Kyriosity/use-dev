@@ -1,7 +1,7 @@
 > ### Enough [reasons](https://github.com/Kyriosity/read-write/tree/main/README%2B/software/tests/README%2B/theory) speak for a new testing doctrine and deep rework of test frameworks.<br />This is an enormously great task to do straightforwardly, so let's first mend what's rational.
 
 <table><tr valign="top"><td>
-<h3 align="center"><picture><img alt="&nbsp; PATCH/FRAME WORK" src="../_rsc/img/labels/TestPatchFrameWork_h50px.png" /></picture></h1>
+<h3 align="center"><picture><img alt="&nbsp; TEST PATCH/FRAME WORK" src="../_rsc/img/labels/TestPatchFrameWork_h50px.jpg" /></picture></h1>
 
 <table align="center"><tr align="center" valign="bottom">
 <td><!--                                                                                                     S O U R C I N G    --!>
@@ -20,8 +20,8 @@
 <td><!--                                                                                                     E R R O R S    --!>
     <a href="README+/prog_tests-errors.md"><img alt="&nbsp; ERRORS" src="../_rsc/img/_nav/tiles/test/errors_art.jpg" /></a>
 </td>
-<td><!--                                                                                                 R E A D - W R I T E    --!>
-  <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/"><img alt="&nbsp; READ-WRITE meets USE-DEV" width="200px" src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/_nav/read-write_use-dev.png" /></a>
+<td><!--                                                                                                 R E A D / W R I T E    --!>
+  <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/"><img alt="&nbsp;READ/WRITE&thinsp;&larr;&thinsp;USE/DEV" width="200px" src="../_rsc/img/_nav/tiles/read-write_use-dev_200px.png" /></a>
 </td></tr></table></td><td>
 
 <samp><i><b>PATCH if CAN'T REFRAME or REWORK</b></i></samp>
@@ -33,7 +33,7 @@
 > 
 > * _Unit Tests_ are only a slice of the test pyramid, but technically they may serve all other types and layers.<sup>🙋</sup>
 
-<sup>🙋</sup> <samp>I can't remember IDEs with <kbd>New &rarr; Integration test</kbd>.</samp>
+<sup>🙋</sup> <samp>Have you ever seen IDEs with <kbd>New &rarr; Integration test</kbd>.</samp>
 
 </td></tr></table>
 
