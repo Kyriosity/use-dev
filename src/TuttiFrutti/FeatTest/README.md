@@ -1,5 +1,7 @@
 <h1 align="center">Tests<sub>🧪</sub> <samp><i>featuring</i></samp> ... tests<sup>🧪</sup></h1>
 
+NUnit is a conventional, reliable, and universal test framework, but like most FOSS, it has limited resources, and its contributors aren't obliged to any delivery.
+
 This project presents _prêt-à-porter_ testing goodies already running in test/demo projects of this solution (Tutti Frutti).
 
 **You are welcome to use them as well.**
