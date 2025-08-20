@@ -21,7 +21,7 @@
     <a href="README+/prog_tests-errors.md"><img alt="&nbsp; ERRORS" src="../_rsc/img/_nav/tiles/test/errors_art.jpg" /></a>
 </td>
 <td><!--                                                                                                 R E A D / W R I T E    --!>
-  <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/asQA/"><img alt="&nbsp;READ/WRITE&thinsp;&larr;&thinsp;USE/DEV" width="200px" src="../_rsc/img/_nav/tiles/read-write_use-dev_200px.png" /></a>
+  <a href="https://github.com/Kyriosity/read-write/blob/main/README+/software/tests/README.md"><img alt="&nbsp;READ/WRITE&thinsp;&larr;&thinsp;USE/DEV" width="200px" src="../_rsc/img/_nav/tiles/read-write_use-dev_200px.png" /></a>
 </td></tr></table></td><td>
 
 <div align="right"><samp><i><b>PATCH if CAN'T REFRAME or REWORK</b></i></samp></div>
