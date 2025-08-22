@@ -1,18 +1,28 @@
 # Tests &nbsp;&mdash;&nbsp; Loose Asserts
 
-<picture><img alt="&nbsp; LOOSE ASERT" src="../../_rsc/img/_nav/tiles/test/assert_art.jpg" /></picture>
+### We are accustomed to thinking of proofs in categorical ("black-and-white") conditions, which a subject either meets<sup>✔️</sup> or misses<sup>❌</sup>. 
 
-We are accustomed to think of proofs in categorical ("black-and-white") conditions, which a subject either meets (success) or misses (failure).
+That's nothing wrong with this _truth telling_ in most test cases: <b>`5x5`</b> must be **25** (not `25.001`), a <samp>password</samp> must exactly match to alphabet, added glyphs, and case in every char, or an element must be either **visible** or not &thinsp;&mdash;&thinsp; but challgenges of this truth telling postulate.
 
-And it's based for many cases. 
+Let's take a sports break to compare and illustrate:
 
-ATomic vs quartz clock as variants.
++ 🏀 A point (two or three) is added when the standard basketball "equator" crosses the hoop from above - it's a usual test case.
++ 🎯 The picture of an archery target must suggest the deviation:
 
-GOAL and ROBIN
+<table><tr><td>
+<picture><img alt="&nbsp; Archery target with arrors" src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/illus/_sports/archery_pixabay.com_christianplass.png" /></picture>
+</td><td>
 
-[Gradual](tests-gradual_assert.md)
+To make things looser, there could be different bows, distances, and even winds and illumination in open-air tournaments are a factor.
 
-[Tolerance](tests-value_tolerance.md)
+ACCURACY https://en.wikipedia.org/wiki/Accuracy_and_precision
+  
+</td></tr></table>
 
-___________\
-🔚 .. 2025 ..
+The designated issues are further processed in 
+
++ [**Graduality**](tests-gradual_assert.md)
++ [**Tolerance**](tests-value_tolerance.md)
++ _something else coming next_
+
+<div align="right">___________<br />🔚 .. 2025 .. (image credit: christianplass on pixabay.com)</div>
