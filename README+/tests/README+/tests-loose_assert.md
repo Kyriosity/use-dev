@@ -1,22 +1,22 @@
 # Tests &nbsp;&mdash;&nbsp; Loose Asserts
 
-### We are accustomed to thinking of proofs in categorical ("black-and-white") conditions, which a subject either meets<sup>✔️</sup> or misses<sup>❌</sup>. 
+### We are accustomed to thinking of proofs in categorical conditions, which a subject either meets<sup>✔️</sup> or misses<sup>❌</sup>. 
 
-That's nothing wrong with this _truth telling_ in most test cases: <b>`5x5`</b> must be **25** (not `25.001`), a <samp>password</samp> must exactly match to alphabet, added glyphs, and case in every char, or an element must be either **visible** or not &thinsp;&mdash;&thinsp; but challgenges of this truth telling postulate.
+That's nothing wicked in this _truth telling_ in most test cases &thinsp;&mdash;&thinsp; <b>`5x5`</b> must be **25** (not `25.001`), a <samp>password</samp> must exactly match to alphabet, _diactrics_, and case in every char, or an element must be either **visible** or not &thinsp;&mdash;&thinsp; but challenges that rend the "black-and-white" postulate.
 
 Let's take a sports break to compare and illustrate:
 
-+ 🏀 A point (two or three) is added when the standard basketball "equator" crosses the hoop from above - it's a usual test case.
-+ 🎯 The picture of an archery target must suggest the deviation:
+&nbsp; &nbsp; 🏀 One point (2 or 3) is added when the basketball's "equator" crosses the hoop from above &thinsp;&mdash;&thinsp; a definite `true` or `false`.\
+&nbsp; &nbsp; 🎯 The picture of an archery target must loosen such evaluation:
 
-<table><tr><td>
+<table><tr valign="top"><td>
 <picture><img alt="&nbsp; Archery target with arrors" src="https://github.com/Kyriosity/read-write/blob/main/README%2B/_rsc/_img/illus/_sports/archery_pixabay.com_christianplass.png" /></picture>
 </td><td>
 
-To make things looser, there could be different bows, distances, and even winds and illumination in open-air tournaments are a factor.
+### Except for the _golden 10_<sup>✔️</sup> and _out_<sup>❌</sup>, everything else is relative.
 
-ACCURACY https://en.wikipedia.org/wiki/Accuracy_and_precision
-  
+To make things more tangled, there could be different bows, distances, and even winds and illumination in open-air tournaments, impacting the result. Besides precision, there's [accuracy](https://en.wikipedia.org/wiki/Accuracy_and_precision).
+
 </td></tr></table>
 
 The designated issues are further processed in 
