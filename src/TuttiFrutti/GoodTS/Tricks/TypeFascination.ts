@@ -23,7 +23,6 @@ function Narrowing(status: Success | Loading) {
     }
 }
 
-
 // ---- UTILITY TYPES ---
 // Partial
 // Omit

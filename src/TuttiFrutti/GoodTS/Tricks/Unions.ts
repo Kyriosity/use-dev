@@ -33,4 +33,8 @@ const Level = {
 
 type LogLevel = keyof typeof Level
 
-let aaa = LogLevel.Inf
+
+
+type Return = ReturnType<typeof myfunc>
+
+var myfunc = () => { }

@@ -1,25 +1,9 @@
-type Temperature = Readonly<{
-    readonly Kelvin: 1,
-    readonly Celcius: 2,
-    Fahrenheit: 3
-} & Units>
+import type { Root } from "./Root"
 
+export type Temperature = "Kelvin" | "Celcius" | "Fahrenheit" & Root
 
-type Units = {
-    readonly Unknown: 0
-}
+class UVal<T extends Root> { }
 
-const Kelvin = "Kelvin"
-type temper = "Kelvin" | "Celcius"
-type extrTemp = "OHER" | temper
+var a = new UVal<Temperature>()
 
-let te: temper = "Kelvin";
-
-// #if DEBUG
-
-class Tempo<T extends Units> {
-
-}
-
-let a = new Tempo<Temperature>
 
