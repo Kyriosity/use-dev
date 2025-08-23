@@ -4,7 +4,7 @@ public class Demo : Arrange
     [SyntaxDraft]
     public void LettersAndNumbers() {
 
-        //_ = "AbcDef".Is<Latin>().Letters;
+        // _ = "AbcDef".Is<Latin>().Letters;
         //_ = " Hi  there ".Is<English>().Letters.AllowWhitespace;
 
         //_ = "français".Is<French>().Alphanumeric;

@@ -7,7 +7,6 @@ public class Demo_Alphabets : Arrange
         //True = greek.Is<Greek>().Letters.AllowWhitespace;
         //False = ("Greek " + greek).Is<Greek>().Letters.AllowWhitespace;
 
-
         //WillBeTrue = "".Is<Current>().EmptyOr.Whitespace;
         //WillBeTrue = "".Is<Current.UI>().EmptyOr.Whitespace;
         //bool __ = "".Is<PratoIndian>().EmptyOr.Whitespace;
@@ -28,7 +27,6 @@ public class Demo_Alphabets : Arrange
         //_ = "".Is<Japanese>().Text;
         //_ = "".Is<Japanese.Kanji>();
     }
-
 
     [SyntaxDraft]
     public void CurrentCulture() {
