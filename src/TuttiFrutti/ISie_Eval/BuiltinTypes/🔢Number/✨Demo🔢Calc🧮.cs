@@ -1,5 +1,4 @@
 ﻿using ISie.Number.Calc;
-
 namespace ISie_Eval.BuiltinTypes.Number;
 public class Demo_Calculations : Setup.Numbers.Arrange
 {
