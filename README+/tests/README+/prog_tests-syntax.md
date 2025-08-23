@@ -2,7 +2,7 @@
 
 ASSERT as filler word.
 
-NUnit is a conventional, reliable, and universal test framework, but like most FOSS, it has limited resources, and its contributors aren't obliged to any delivery.
+
 
 There are apparent items to estimate:
 
@@ -10,9 +10,11 @@ There are apparent items to estimate:
 + pending bugs,
 + missing calls and features.
 
-<h4 align="center">Without further ado, <a href="../../src/TuttiFrutti/FeatTest/">Feat. Test</a>🧪 demonstrates what's already available.</h4>
+<h4 align="center">Without further ado, <a href="../../../src/TuttiFrutti/FeatTest/">Feat. Test</a>🧪 demonstrates what's already available.</h4>
 
 
 testing invalid calls
 
 must be more elaborate
+
+🔚 .. 2023-2025 ..
