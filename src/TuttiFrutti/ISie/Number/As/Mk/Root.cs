@@ -1,10 +1,36 @@
 ﻿namespace ISie.Number.As.Mk;
-public class Root
+public class Root<N>(N seed) where N : INumber<N>
 {
-    public string Roman => NotImplemented.Throw("XXI");
+    private N _seed = seed;
+
+    public string Roman => "XXI " + _seed;
+    // RomanOrFormat()
+
     public string Greek => NotImplemented.Throw("ΔΔΙ");
 
     public bool Ancient => false; // Aegean
     public string Other<T>() => "TO DO";
-}
 
+    private bool TryParse(out string result) {
+        const string CantDoPrefix = "Roman number can't be";
+
+        var success = false;
+
+        if (N.IsNegative(_seed))
+            result = $"{CantDoPrefix} negative";
+        else if (N.Zero == _seed)
+            result = "{CantDoPrefix} zero";
+        else {
+            var num = ulong.CreateChecked(_seed);
+            ulong maxRom = 1;
+
+            if (maxRom < num)
+                result = "{CantDoPrefix} bigger than {maxRom}";
+            else {
+                result = "ACTUAL CONV";
+                success = true;
+            }
+        }
+        return success;
+    }
+}
