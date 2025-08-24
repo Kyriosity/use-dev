@@ -3,8 +3,15 @@ public class Root<N>(N seed) where N : INumber<N>
 {
     private N _seed = seed;
 
-    public string Roman => "XXI " + _seed;
-    // RomanOrFormat()
+    /// <summary>
+    /// Represents numbers 1-3999 as Roman or throws OutOfRange 
+    /// </summary>
+    public string Roman => NotImplemented.Throw("XXI");
+
+    /// <summary>
+    /// Represents numbers 1-3999 as Roman or formats them according to a standard specifier
+    /// </summary>
+    public string RomanOrFormat(string specifier = "") => NotImplemented.Throw("XXI");
 
     public string Greek => NotImplemented.Throw("ΔΔΙ");
 
