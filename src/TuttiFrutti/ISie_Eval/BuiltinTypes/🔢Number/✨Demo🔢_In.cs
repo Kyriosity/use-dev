@@ -1,7 +1,7 @@
 ﻿using AbcLingua.Tongues;
 using ISie.Number.In;
 namespace ISie_Eval.BuiltinTypes.Number;
-public class Demo_In : Setup.Numbers.Arrange
+public class Demo_In : setup.Numbers.Arrange
 {
     [SyntaxDemo]
     public void Basic_Wording() {
@@ -9,7 +9,7 @@ public class Demo_In : Setup.Numbers.Arrange
         var first = 1.In<English>().Ordinal;
         var alsoFirst = 1.In<English>().Ordinal.Plural;
 
-        var intro = $"This project began in the year: {2025.In<English>()}";
+        var intro = $"This project began in the year {2025.In<English>()}";
 
         short angle = 45;
         _ = angle.In<Greek>();

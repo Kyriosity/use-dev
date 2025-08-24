@@ -1,6 +1,6 @@
 ﻿namespace ISie_Eval.BuiltinTypes.Number.Tests.Calc;
 
-public class Powers : Setup.Numbers.Arrange
+public class Powers : setup.Numbers.Arrange
 {
     // ToDo: test exponents incl. on Max values
 

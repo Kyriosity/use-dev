@@ -1,6 +1,7 @@
 ﻿using ISie.Number.As;
+
 namespace ISie_Eval.BuiltinTypes.Number;
-public class Demo_As : Setup.Numbers.Arrange
+public class Demo_As : setup.Numbers.Arrange
 {
     [SyntaxDemo]
     public void RomanNumbers() {
@@ -12,6 +13,11 @@ public class Demo_As : Setup.Numbers.Arrange
         True = Roman.Pangram == 1949.As.Roman;
         True = Roman.Max == (3_000 + 900 + 90 + 9).As.Roman;
         False = Roman.Max == ((3_000 + 900 + 90 + 9) - 1).As.Roman;
+    }
+
+    [SyntaxDraft]
+    public void GreekNumbers() {
+        _ = 1.As.Greek;
     }
 
     [SyntaxDemo]

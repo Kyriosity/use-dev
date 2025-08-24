@@ -1,6 +1,6 @@
 ﻿using ISie.Number.Is;
 namespace ISie_Eval.BuiltinType.Number;
-public class Demo_Integral_Is : Setup.Numbers.Arrange
+public class Demo_Integral_Is : setup.Numbers.Arrange
 {
 
 #if DEBUG
