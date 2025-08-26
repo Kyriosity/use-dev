@@ -18,4 +18,4 @@
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <sup>☁️</sup> <samp>Polymorphism _Greek_: πολυ&thinsp;=&thinsp;many, μορφή &thinsp;=&thinsp;form.</samp>\
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <sup>❗</sup> <samp>It's not type-loose casting to dynamic objects.</samp>
 
-🔚 2025 ...
+<div align="right">🔚 2025 ...</div>
