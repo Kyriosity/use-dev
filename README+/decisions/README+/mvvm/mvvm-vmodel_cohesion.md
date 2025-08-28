@@ -59,7 +59,7 @@ An issue with inheritance is that C# prevents pure downcasting, but there are wo
 ### What about the base ViewModel
 
 In the classic realization, ViewModel will reasonably extend the commonly named `ViewModelBase` with everyday functionality, like notifications. 
-C# doesn't support multi-inheritance, so a base is much more suitable for aggregation (injection), thus freeing the place for the model as root. 
+`C#` doesn't support multi-inheritance, so a base is much more suitable for aggregation (injection), thus freeing the place for the model as the root. 
 
 ### Contraindications
 
@@ -75,4 +75,4 @@ Inheriting miscellaneous ViewModels from the root Model for different needs may 
 + 3d party frameworks and libraries provide their own _prêt-à-porter_ MVVM suites. 
 + You may select another, more suitable and advanced option or your own design pattern.
 
-🔚
+🔚 ..2022-2025..

@@ -2,7 +2,7 @@
 
 <table><tr><td>
 
-> **The best evolutionary paradigm of OOP is directly mapping real-life things or abstractions,  their structures, and collections onto code objects.**
+> ### The best evolutionary paradigm of OOP is directly mapping real-life things or abstractions,  their structures, and collections onto code objects.
 
 Object-oriented languages offer common paradigms with specific means and techniques to fine-tune or expand them.
 
@@ -23,7 +23,7 @@ parametrization`"]
 
       EQ("`**ASSIGN overload**
 #0010;
-implicit operators will do the job.*`")
+implicit operators will do the job.⭐`")
 
       RW("`**READ-WRITE**
 #0010;
@@ -37,7 +37,7 @@ something unwelcome and to be replaced with other techniques}}
 
 ```
 
-<p align="right"><b>*</b> <samp>While your job is to define these operators.</samp><br />
+<p align="right"><sup>⭐</sup> <samp>While your job is to define these operators.</samp><br />
 <b>**</b> <samp>More techniques can be added later.</samp></p>
 
 Let's keep a _**book**_ as a convenient sample of our survey. It has a title, author(s), ID(s), publishing agent, year, and tongue, and other traits. 
@@ -106,7 +106,7 @@ interface ISBN_UK : ISBN { ... }
 + [**IBook**](https://github.com/Kyriosity/use-dev/blob/main/src/TuttiFrutti/AbcModels/Library/IBook.cs) written in  [AbcModels](https://github.com/Kyriosity/use-dev/blob/main/src/TuttiFrutti/AbcModels/) shows parametrization with casting parameters.
 + This technique was also utilized in more practical and mature [AbcChrono](../../../../parts/AbcChrono).
 
-## Read-write ragged properties (R/W-Properties)
+## Read-write rAg<samp>G</samp>e<samp>d</samp> properties (R/W-Properties)
 
 Classes as `Book` represent entities greater than objects &mdash; _documents_. Consider a book register.
 
