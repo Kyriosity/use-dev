@@ -34,7 +34,7 @@ Now, spice these reactive courses with `async`: you must break queues of values 
 
 Not to forget that the statuses of properties and operations are asynchronous values too.
 
-<details align="center"><summary>___<ins><b>and now the&nbsp; <samp>T&thinsp;W&thinsp;I&thinsp;S&thinsp;T</samp></b>&nbsp;</ins>❗<b>.&thinsp;.&thinsp;.</b> ___</summary>
+<details align="center"><summary>___<ins>and now the <b><samp>IMPORTANT</samp>&nbsp; T&thinsp;W&thinsp;I&thinsp;S&thinsp;T</b>&nbsp;</ins>❗<b>.&thinsp;.&thinsp;.</b> ___</summary>
 &nbsp;
 
 <p><b>Imagine that a user (view) input/action can be a <i>promise</i>.</b></p>
@@ -45,7 +45,7 @@ Not to forget that the statuses of properties and operations are asynchronous va
 
 \___________</details>
 
-## Re-thinking model and presentation
+# Part 2. Re-thinking the Model and presentation
 
 **Let's cast async means to templates!**
 
